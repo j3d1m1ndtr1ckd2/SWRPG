@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Character Description" section_id="56d29150dbee88542901de90cf9619b8" sys_domain="global" table="x_176383_star_wars_character" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>6ad29150dbee88542901de90cf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>height</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>eed29150dbee88542901de90cf9619ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hair</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>66d29150dbee88542901de90cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>ead29150dbee88542901de90cf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>age</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>62d29150dbee88542901de90cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>build</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>e6d29150dbee88542901de90cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>eyes</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>6ed29150dbee88542901de90cf9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>e2d29150dbee88542901de90cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notable_features</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:53</sys_created_on>
+            <sys_id>6ad29150dbee88542901de90cf9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Character Description" display_value="Character Description" name="x_176383_star_wars_character" sys_domain="global" view="Default view">56d29150dbee88542901de90cf9619b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Character Description</caption>
+            <header>false</header>
+            <name>x_176383_star_wars_character</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 18:15:52</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>56d29150dbee88542901de90cf9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Character Description</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_ui_section_56d29150dbee88542901de90cf9619b8</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 18:15:52</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

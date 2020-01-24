@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a65c3e70db2e4c542901de90cf961960</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Incidental, out of turn) When the character suffers a hit from a Ranged (Light), Ranged (Heavy), or Gunnery combat check and uses the Reflect incidental to reduce the damage from that hit, after the attack is resolved, the character may spend one despair or 3 threat to automatically hit one target within medium range, dealing the same damage as the hit from the initial ranged attack.&#13;
+&#13;
+The ranged attack's hit must be one that is able to be reflected and redirected (generally only blaster weapons or other energy attacks fall into this category; anything else is subject to GM oversight). This talent may not be used if the original attack incapacitates the character.</description>
+        <field_to_update/>
+        <force_talent>true</force_talent>
+        <name>Reflect (Improved)</name>
+        <number>TAL0001112</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 15:13:48</sys_created_on>
+        <sys_id>a65c3e70db2e4c542901de90cf961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 15:13:48</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-24 22:09:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b5cee6a5dba240942901de90cf9619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reflect (Improved)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b5cee6a5dba240942901de90cf9619b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-24 22:09:56</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

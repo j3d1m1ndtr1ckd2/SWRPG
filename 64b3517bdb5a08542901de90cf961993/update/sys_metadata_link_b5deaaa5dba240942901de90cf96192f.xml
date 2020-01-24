@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8bd50628db660c542901de90cf96196f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>The character removes ■ per rank of Codebreaker from his attempts to break codes or decrypt communications. In addition, the character decreases the difficulty of his Computers and Intellect checks made to break codes or decrypt communications by one (this does not increase with additional ranks of Codebreaker).</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <name>Codebreaker</name>
+        <number>TAL0001016</number>
+        <passive_or_active>passive</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-21 16:43:02</sys_created_on>
+        <sys_id>8bd50628db660c542901de90cf96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-21 16:43:02</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-24 22:10:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b5deaaa5dba240942901de90cf96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Codebreaker</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b5deaaa5dba240942901de90cf96192f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-24 22:10:12</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

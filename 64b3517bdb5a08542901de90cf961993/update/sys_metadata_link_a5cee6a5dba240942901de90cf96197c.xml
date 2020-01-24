@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>7958ecf4db624c542901de90cf961941</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Incidental, out of turn) When the character suffers a hit from a Brawl, Melee, or Lightsaber combat check and uses the Parry incidental to reduce the damage from that hit, after the attack is resolved, the character may spend one despair or 3 threat to automatically hit the attacker once with a wielded Brawl, Melee, or Lightsaber weapon. This hit deals the weapon's base damage plus any damage from applicable talents or abilities. This talent may not be used if the original attack incapacitates the character.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <name>Parry (Improved)</name>
+        <number>TAL0001101</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 04:27:07</sys_created_on>
+        <sys_id>7958ecf4db624c542901de90cf961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 04:27:07</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-24 22:09:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a5cee6a5dba240942901de90cf96197c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Parry (Improved)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a5cee6a5dba240942901de90cf96197c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-24 22:09:54</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

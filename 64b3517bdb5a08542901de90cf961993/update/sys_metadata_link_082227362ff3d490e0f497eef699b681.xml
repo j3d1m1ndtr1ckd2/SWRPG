@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6628dc2a2fbf1490e0f497eef699b68a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>The character makes one piece of equipment more modifiable. He chooses one piece of equipment and increases its number of hard points by one. He can only do this once per piece of equipment, but can&#13;
+modify a number of pieces of equipment equal to his ranks in Tinkerer. If he loses a modified piece of equipment, he may apply Tinkerer to a new one.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Tinkerer</name>
+        <number>TAL0001233</number>
+        <passive_or_active>passive</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-14 13:16:00</sys_created_on>
+        <sys_id>6628dc2a2fbf1490e0f497eef699b68a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-14 13:16:00</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 22:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>082227362ff3d490e0f497eef699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tinkerer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_082227362ff3d490e0f497eef699b681</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 22:36:19</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

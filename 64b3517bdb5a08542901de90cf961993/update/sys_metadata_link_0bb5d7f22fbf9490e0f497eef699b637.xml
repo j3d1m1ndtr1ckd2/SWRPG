@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>156b731a2f3f1490e0f497eef699b69c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Action) The character may use his Hard Headed action to recover from being incapacitated due to exceeding his strain threshold.  On his next turn after being incapacitated, he may make a Formidable (5 difficulty dice) Discipline check as his Hard Headed action (this action can specifically be performed even through he is normally barred from performing actions).  If he succeeds, decrease his strain to one below his strain threshold.  The difficulty of this check decreases by one per rank of Hard Headed, to a minimum of Easy (1 difficulty die).</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Hard Headed (Improved)</name>
+        <number>TAL0001181</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-14 11:11:55</sys_created_on>
+        <sys_id>156b731a2f3f1490e0f497eef699b69c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-14 11:11:55</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 21:42:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0bb5d7f22fbf9490e0f497eef699b637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hard Headed (Improved)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_0bb5d7f22fbf9490e0f497eef699b637</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 21:42:11</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

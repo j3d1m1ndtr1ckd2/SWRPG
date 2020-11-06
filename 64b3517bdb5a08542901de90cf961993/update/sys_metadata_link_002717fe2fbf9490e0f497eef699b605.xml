@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>eb17ac962fbfd090e0f497eef699b6f8</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>Remove setback dice equal to the character's ranks in Bypass Security from Skulduggery or Computers skill checks made to disable a security device or open a locked door.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Bypass Security</name>
+        <number>TAL0001164</number>
+        <passive_or_active>passive</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-13 19:42:48</sys_created_on>
+        <sys_id>eb17ac962fbfd090e0f497eef699b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-13 19:42:48</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 21:48:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>002717fe2fbf9490e0f497eef699b605</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bypass Security</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_002717fe2fbf9490e0f497eef699b605</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 21:48:15</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

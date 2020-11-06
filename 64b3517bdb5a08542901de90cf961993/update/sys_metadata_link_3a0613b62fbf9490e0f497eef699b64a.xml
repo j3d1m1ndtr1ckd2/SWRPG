@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5467281a2fbfd090e0f497eef699b628</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Action) Once per game session, the character can take a Contraption action. With a successful Hard (3 difficulty dice) Mechanics check, the character can fashion a device to solve a current problem using the tools and parts on hand. This device must be approved by the GM and functions for the duration of the current encounter only. Those tools are destroyed in the process. Triumph may be spent to allow the tools to be recovered to be reused later.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Contraption</name>
+        <number>TAL0001165</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-13 19:44:56</sys_created_on>
+        <sys_id>5467281a2fbfd090e0f497eef699b628</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-13 19:44:56</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 21:43:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3a0613b62fbf9490e0f497eef699b64a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contraption</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_3a0613b62fbf9490e0f497eef699b64a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 21:43:32</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

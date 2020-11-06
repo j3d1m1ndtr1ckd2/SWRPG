@@ -7,6 +7,7 @@
         <description>(Incidental) The character may voluntarily increase the difficulty of a combat check by one to deal a crippling blow.  If he succeeds and deals damage to the target's wound threshold, the target suffers 1 strain whenever he moves for the remainder of the encounter.</description>
         <field_to_update/>
         <force_talent>false</force_talent>
+        <how_much_to_add/>
         <name>Crippling blow</name>
         <number>TAL0001024</number>
         <passive_or_active>active</passive_or_active>
@@ -25,7 +26,7 @@
         <sys_created_on>2020-01-24 22:10:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0edeaaa5dba240942901de90cf961947</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Crippling blow</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -33,7 +34,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_0edeaaa5dba240942901de90cf961947</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-24 22:10:13</sys_updated_on>
+        <sys_updated_on>2020-10-15 21:54:21</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

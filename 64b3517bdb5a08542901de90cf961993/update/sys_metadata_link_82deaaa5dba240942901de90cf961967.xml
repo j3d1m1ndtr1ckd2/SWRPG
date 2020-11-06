@@ -7,6 +7,7 @@
         <description>(Action) The character may take a Field Commander action. By successfully passing an Average (2 purple d8) Leadership check, a number of allies equal to his Presence may immediately suffer 1 strain to perform one maneuver. This does not count against the number of maneuvers they may perform in their turn. If there are any questions as to the order in which allies act, the character using Field Commander is the final arbiter.</description>
         <field_to_update/>
         <force_talent>false</force_talent>
+        <how_much_to_add/>
         <name>Field commander</name>
         <number>TAL0001043</number>
         <passive_or_active>active</passive_or_active>
@@ -25,7 +26,7 @@
         <sys_created_on>2020-01-24 22:10:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>82deaaa5dba240942901de90cf961967</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Field commander</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -33,7 +34,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_82deaaa5dba240942901de90cf961967</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-24 22:10:13</sys_updated_on>
+        <sys_updated_on>2020-10-15 22:23:35</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

@@ -7,6 +7,7 @@
         <description>(Maneuver) The character may take the Saber Swarm maneuver, suffering 1 strain. His next Light- saber (Agility) combat check this turn gains the Linked item quality, with ranks equal to Force rating.</description>
         <field_to_update/>
         <force_talent>true</force_talent>
+        <how_much_to_add/>
         <name>Saber swarm</name>
         <number>TAL0001116</number>
         <passive_or_active>active</passive_or_active>
@@ -25,7 +26,7 @@
         <sys_created_on>2020-01-24 22:09:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c5cee6a5dba240942901de90cf96194f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Saber swarm</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -33,7 +34,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_c5cee6a5dba240942901de90cf96194f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-24 22:09:53</sys_updated_on>
+        <sys_updated_on>2020-10-15 22:32:59</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

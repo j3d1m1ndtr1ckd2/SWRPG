@@ -7,6 +7,7 @@
         <description>(Incident, out of turn) When an animal bonded to the character by the Animal Empathy talent suffers wounds, the character may take the Share Pain incidental. He reduces the wounds'the animal suffered by half (rounded up), then suffers a number of wounds equal to the number reduced.</description>
         <field_to_update/>
         <force_talent>true</force_talent>
+        <how_much_to_add/>
         <name>Share pain</name>
         <number>TAL0001123</number>
         <passive_or_active>active</passive_or_active>
@@ -25,7 +26,7 @@
         <sys_created_on>2020-01-24 22:09:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1acee6a5dba240942901de90cf9619fa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Share pain</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -33,7 +34,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_1acee6a5dba240942901de90cf9619fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-24 22:09:57</sys_updated_on>
+        <sys_updated_on>2020-10-15 22:35:31</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

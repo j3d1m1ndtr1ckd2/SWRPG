@@ -7,6 +7,7 @@
         <description>When the character recovers strain after an encounter has concluded, he recovers one additional strain per rank in Rapid Recovery.</description>
         <field_to_update/>
         <force_talent>false</force_talent>
+        <how_much_to_add/>
         <name>Rapid recovery</name>
         <number>TAL0001110</number>
         <passive_or_active>passive</passive_or_active>
@@ -25,7 +26,7 @@
         <sys_created_on>2020-01-24 22:09:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>31cee6a5dba240942901de90cf9619b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Rapid recovery</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -33,7 +34,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_31cee6a5dba240942901de90cf9619b9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-24 22:09:56</sys_updated_on>
+        <sys_updated_on>2020-10-15 22:33:37</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

@@ -7,6 +7,7 @@
         <description>(Action) Once per session, the character may spend several minutes meditating, then take the One with the Universe action, making an Average (2 purple d8) Astrogation check. If successful, during the next encounter he adds a light side force point to all Force power checks. However, if he succeeded with threat, he adds 1 dark side force point to all Force power checks instead.</description>
         <field_to_update/>
         <force_talent>true</force_talent>
+        <how_much_to_add/>
         <name>One with the universe</name>
         <number>TAL0001098</number>
         <passive_or_active>active</passive_or_active>
@@ -25,7 +26,7 @@
         <sys_created_on>2020-01-24 22:09:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>89cee6a5dba240942901de90cf961937</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>One with the universe</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -33,7 +34,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_89cee6a5dba240942901de90cf961937</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-24 22:09:52</sys_updated_on>
+        <sys_updated_on>2020-10-15 22:31:32</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

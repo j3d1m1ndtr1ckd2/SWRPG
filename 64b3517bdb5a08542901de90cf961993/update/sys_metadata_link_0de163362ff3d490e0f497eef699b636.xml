@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>bc5254ea2f7f1490e0f497eef699b697</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Maneuver) Once per round before making a non-thrown ranged attack, the character may perform a maneuver to attempt a sniper shot.  Sniper Shot increases the maximum range of his ranged weapon up to one range band per rank.  For each rank beyond the normal maximum of the weapon, upgrade the difficulty of the check by one (this is in addition to the increased difficulty of the shot due to longer range).</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Sniper Shot</name>
+        <number>TAL0001220</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-14 12:55:06</sys_created_on>
+        <sys_id>bc5254ea2f7f1490e0f497eef699b697</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-14 12:55:06</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 22:35:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0de163362ff3d490e0f497eef699b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sniper Shot</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_0de163362ff3d490e0f497eef699b636</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 22:35:18</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

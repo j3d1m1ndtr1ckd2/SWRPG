@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>7afb76202f90a450e0f497eef699b6d4</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense>0</defense>
+        <description>A good leather jacket, technician's jumpsuit, or thick woolen cloak won't stop much damage, but it's certainly better than nothing.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required/>
+        <name>Heavy Clothing</name>
+        <number>GEAR0001038</number>
+        <price>50</price>
+        <range/>
+        <rarity>0</rarity>
+        <skill_used/>
+        <soak>1</soak>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:35:40</sys_created_on>
+        <sys_id>7afb76202f90a450e0f497eef699b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:35:40</sys_updated_on>
+        <type>armor</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:50:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>17c2ba992fd06850e0f497eef699b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Heavy Clothing</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_17c2ba992fd06850e0f497eef699b6d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:50:03</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

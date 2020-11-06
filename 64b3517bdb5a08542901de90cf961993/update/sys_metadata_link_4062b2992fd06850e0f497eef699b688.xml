@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>46e0ba202f50a450e0f497eef699b694</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>3</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Force pikes are one-meter long metallic staves topped with power-tips. One setting on the power-tip vibrates powerfully enough to shatter flesh, steel, and stone. The other setting provides an electric shock that can be set relatively low to prod or control, or high to cause excruciating pain or death. Either setting is designed for ease of use—it takes little skill to swing a stick and cause devastating injury with the vibro or electricity setting. In the hands of a skilled user, however, it's almost as powerful as a lightsaber.&#13;
+&#13;
+When used with its Stun Setting, a Force Pike does not benefit from the Pierce 2 Quality. Force pikes require two hands to wield.&#13;
+&#13;
+Models Include: SoroSuub Controller FP.</description>
+        <encumbrance>3</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Force Pike</name>
+        <number>GEAR0001026</number>
+        <price>500</price>
+        <range>engaged</range>
+        <rarity>4</rarity>
+        <skill_used display_value="Melee (Br)">0c90dd5cdbae88542901de90cf9619a4</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:48:18</sys_created_on>
+        <sys_id>46e0ba202f50a450e0f497eef699b694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:48:18</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:48:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4062b2992fd06850e0f497eef699b688</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Force Pike</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_4062b2992fd06850e0f497eef699b688</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:48:11</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>43f088b82f14a450e0f497eef699b621</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Not all planets or environments are hospitable to all species, and thus many species require breathing devices to survive on them. The most basic are simple nose plugs which filter out contaminants; there are also higher quality items such as wearable face masks with gas canisters, filtration masks for poisonous atmospheres, and even aquatic rebreathers for sustained activity underwater. The Candorthral Atmospherics Roamer-6 is a fairly simple variant stored aboard many starships that filters harmful atmospheres and provides additional gases to produce a proper oxygen-nitrogen mix. Other variants (especially those made for alien species who must spend long periods of time in hostile atmospheres) can be more unobtrusive or comfortable to wear, but essentially do the same thing. Breathing aids can be set to provide nearly any atmosphere, although oxygen-nitrogen atmospheres are the most common. Some variants of Gand, however, use rebreathers to inhale an ammonia mix that mimics the atmosphere of their home planet. &#13;
+&#13;
+Models Include: Gandorthral Atmospherics Roamer-6.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Breath Mask and Respirator</name>
+        <number>GEAR0001086</number>
+        <price>25</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:36:56</sys_created_on>
+        <sys_id>43f088b82f14a450e0f497eef699b621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:36:56</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:47:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9b4272992fd06850e0f497eef699b615</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Breath Mask and Respirator</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_9b4272992fd06850e0f497eef699b615</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:47:53</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

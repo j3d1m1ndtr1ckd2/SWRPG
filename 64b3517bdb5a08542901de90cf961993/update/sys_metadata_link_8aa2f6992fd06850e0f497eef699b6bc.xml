@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>60bcdf202f14a450e0f497eef699b689</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>This is a general poison synthetically produced on hundreds of worlds (often illegally) that affects the biochemical reactions of most creatures, sometimes fatally. This poison may be introduced into the target's body via aerosol deployment, food ingestion, or injection (via an applicator or dart). Resisting a single dose has an Average (2 difficulty dice) difficulty, while two or more doses combined into a single application have a Hard (3 difficulty dice) difficulty. The poison inflicts 5 wounds if the target fails the check. Each threat generated inflicts one strain on the target as the effort of fighting the poison&#13;
+overwhelms him. Finally, the GM can spend 1 despair to make the target test against the poison again during the next round, as the poison remains in his system.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Synthetic Standard Neurotoxin (1 dose)</name>
+        <number>GEAR0001048</number>
+        <price>50</price>
+        <range/>
+        <rarity>6</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:00:02</sys_created_on>
+        <sys_id>60bcdf202f14a450e0f497eef699b689</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:00:02</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:49:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8aa2f6992fd06850e0f497eef699b6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Synthetic Standard Neurotoxin (1 dose)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_8aa2f6992fd06850e0f497eef699b6bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:49:26</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

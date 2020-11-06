@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6046be282f50a450e0f497eef699b6bb</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>5</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Essentially miniaturized lightsabers, shotos are one of the more common lightsaber variants. A lightsaber created for duelists, the shoto was initially designed as an offhand weapon for individuals who practiced the two-handed Jar'Kai school of lightsaber combat. As they grew in popularity, shotos were adopted as a primary weapon by Jedi and Sith whose small statures made the use of a standard-sized lightsaber difficult or impossible. Some, especially students of the Ataru school, forsook standard-sized lightsabers altogether, instead wielding two shotos. This allowed these individuals to make good use of the acrobatic forms inherent in Ataru to deliver quicker and more accurate blows than an individual wielding a single full-sized lightsaber or even a lightsaber/shoto combination. Perhaps the most famous shoto user was the Jedi Master Yoda, who carried a green-bladed shoto which he used to shocking effect.&#13;
+&#13;
+This lightsaber is a basic shoto hilt containing an unmodded Ilum lightsaber crystal (see page 197). This crystal occupies two of the weapon's hard points.&#13;
+&#13;
+When installing a lightsaber crystal into a shoto, reduce the damage of that lightsaber crystal by 1.&#13;
+&#13;
+Models Include: None; each of these weapons is individually constructed.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Shoto</name>
+        <number>GEAR0001030</number>
+        <price>9300</price>
+        <range>engaged</range>
+        <rarity>10</rarity>
+        <skill_used display_value="Lightsaber (Br)">9e4ce9962fe3d050e0f497eef699b630</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:11:03</sys_created_on>
+        <sys_id>6046be282f50a450e0f497eef699b6bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:32:50</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:49:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a4a2f6992fd06850e0f497eef699b6b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shoto</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a4a2f6992fd06850e0f497eef699b6b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:49:19</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

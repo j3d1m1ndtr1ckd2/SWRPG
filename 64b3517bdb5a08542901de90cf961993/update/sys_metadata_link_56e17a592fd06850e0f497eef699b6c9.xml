@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0700eba02f14a450e0f497eef699b680</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Bacta is a liquid used for healing, made of an artificially grown bacteria developed thousands of years ago. It is nothing short of miraculous, working on a wide variety of species and healing terrible wounds with little or no scarring. It is commonly used in large tanks for total immersion, but can also be administered in pre-treated patches, injection, portable pouches, and even through direct consumption. While full-size bacta tanks are rare outside of major installations, some ships often have portable tanks, and most medpacs and field kits have bacta patches.&#13;
+&#13;
+Bacta provides greatly accelerated healing rates, as described on page 220 (Edge of the Empire).</description>
+        <encumbrance>1</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Bacta (liter)</name>
+        <number>GEAR0001057</number>
+        <price>20</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:13:28</sys_created_on>
+        <sys_id>0700eba02f14a450e0f497eef699b680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:13:28</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:46:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>56e17a592fd06850e0f497eef699b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bacta (liter)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_56e17a592fd06850e0f497eef699b6c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:46:10</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

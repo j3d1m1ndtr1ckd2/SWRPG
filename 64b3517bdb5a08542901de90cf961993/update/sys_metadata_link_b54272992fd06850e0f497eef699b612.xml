@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>373080742f94a450e0f497eef699b60e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>While life is usually controlled and comfortable, there are many times when physical survival becomes an issue. A forced landing might strand a crew deep in Tatooine's deserts, or a speeder failure&#13;
+could result in extended durations in glacial snow. Most ships, especially smaller ones such as fighters and escape pods, contain kits to help ensure survival until rescue or repair. Pretormin Environmental (a company specializing in exploration and survival gear) makes a popular model of survival kit small enough to fit into an escape pod or snubfighter. Their contents include a thermal cloak, multipurpose knife, distress beacon, two emergency comlinks, wire spool, ration bars, basic medpac (equivalent of the CLiS Emergency Medpac), two respirators, water filter and jug, glow rod, 50 meters of high strength microfiber, ten ration packs, and a flare gun. Some pirates would augment their kits with compact blasters or other weapons, knowing that often their enemies will also be eagerly searching for them,  although Pretormin Environmental doesn't equip their kits with weapons as standard.&#13;
+&#13;
+Models Include: Pretormin Environmental Crash Survival Kit.</description>
+        <encumbrance>5</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Crash Survival Kit</name>
+        <number>GEAR0001083</number>
+        <price>300</price>
+        <range/>
+        <rarity>2</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:34:06</sys_created_on>
+        <sys_id>373080742f94a450e0f497eef699b60e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:34:06</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:47:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b54272992fd06850e0f497eef699b612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Crash Survival Kit</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b54272992fd06850e0f497eef699b612</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:47:46</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

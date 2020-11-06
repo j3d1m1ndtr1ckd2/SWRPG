@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>57ed08342fd4a450e0f497eef699b6e0</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Lesai is a variety of spice that is not mined, but grown in a fungus found only on certain kinds of lizards from the planets Zebitrope IV and VIII. By harvesting the distinctive purple mold and applying it underneath the jaw, members of many sentient species can eliminate their need to sleep. The stains that the fungus leaves are hard to disguise, but it has few other confirmed side-effects. Most species become psychologically if not physically dependent on the drug very quickly, however, and users who miss a dose frequently collapse and only awake days later. &#13;
+&#13;
+A character who partakes in lesai at least once every twenty-four hours does not need to sleep, and suffers no penalties or strain for lack of sleep. The character may remove strain as if he had slept a full night after any period of eight or more hours in which he did not engage in any stressful activities (such as combat, intense mental effort, or emotionally charged discussion). Lesai's only noticeable side-effect is that it leaves odd purple stains where applied. If a character under the effects of lesai ever goes twenty-four full hours without a dose of the drug, he finds it increasingly difficult to stay awake until he receives more lesai or sleeps. Some Imperial officials claim that lesai turns users into amoral monsters without feelings or compassion. Whether this is true or not is entirely up to the GM, and he should feel free to keep his decision secret from any players whose characters use lesai.&#13;
+&#13;
+Restrictions: Lesai is illegal on most worlds with a strong Imperial presence.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Lesai (20 dose enviro-sealed cargo pod)</name>
+        <number>GEAR0001108</number>
+        <price>7500</price>
+        <range/>
+        <rarity>10</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 22:32:45</sys_created_on>
+        <sys_id>57ed08342fd4a450e0f497eef699b6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 22:32:45</sys_updated_on>
+        <type>black_market_items</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:52:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5f4376d92fd06850e0f497eef699b674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lesai (20 dose enviro-sealed cargo pod)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_5f4376d92fd06850e0f497eef699b674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:52:15</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

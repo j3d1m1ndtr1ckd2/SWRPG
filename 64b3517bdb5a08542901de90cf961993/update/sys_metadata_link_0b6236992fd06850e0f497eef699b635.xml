@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4954be602f50a450e0f497eef699b61e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>6</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Known colloquially among Force adherents as light-staffs or Sith lightsabers, the dangerous double-bladed lightsabers were first designed by the Dark Lords of the Old Sith Empire. Double-bladed lightsabers consist of an oversized lightsaber hilt equipped with an upgraded power supply and twin emitter systems and crystals, one at either end of the hilt. When activated, a full-sized lightsaber blade springs from each emitter, making an exceptionally potent weapon nearly as long as a full-grown human. The weapon's twin blades allow a user to strike more rapidly, and sometimes fight multiple foes at once. Although quite dangerous and effective in combat, double-bladed lightsabers are also exceptionally difficult to master. Nevertheless, some Jedi constructed double-bladed lightsabers for themselves, including some notable figures in ancient Jedi myth.&#13;
+&#13;
+Although technically, this weapon contains two lightsaber crystals (one for each blade), for the purposes of gameplay it is treated as having a single crystal. This lightsaber is a double-bladed lightsaber hilt containing an unmodded Ilum lightsaber crystal (see page 197). This crystal occupies two of the weapon's hard points.&#13;
+&#13;
+When purchasing attachments for this weapon (including crystals), each attachment costs double the listed price. This represents the fact that the double-bladed lightsaber generally requires two of each attachment (one for each end). However, when installing and modding these attachments, follow all normal rules.&#13;
+&#13;
+Models Include: None; each of these weapons is individually constructed.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points>4</hard_points>
+        <hp_required/>
+        <name>Double-Bladed Lightsaber</name>
+        <number>GEAR0001028</number>
+        <price>18600</price>
+        <range>engaged</range>
+        <rarity>10</rarity>
+        <skill_used display_value="Lightsaber (Br)">9e4ce9962fe3d050e0f497eef699b630</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:04:01</sys_created_on>
+        <sys_id>4954be602f50a450e0f497eef699b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:04:01</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:48:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0b6236992fd06850e0f497eef699b635</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Double-Bladed Lightsaber</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_0b6236992fd06850e0f497eef699b635</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:48:24</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

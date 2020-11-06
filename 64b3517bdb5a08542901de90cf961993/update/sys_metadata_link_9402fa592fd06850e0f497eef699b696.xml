@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1a1762a82f10a450e0f497eef699b6db</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>8</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Flame-producing devices are primarily used to destroy material such as structures or crops, rather than as anti-personnel weapons. Of course, they excel at scorching flesh and bone as well. &#13;
+&#13;
+Flame projectors are popular partially because of their wide and indiscriminate cone of fire, able to catch several individuals in a gout of flame. When triggering the weapon's Burn quality, the user may&#13;
+choose to apply it to any one target hit by the attack; this quality may be triggered multiple times, affecting a different target each time. However, the GM can spend 2 threat or 1 despair to apply the weapon's Burn quality to an ally hit by the original attack.&#13;
+&#13;
+Models Include: Merr-Sonn C-22 Flame Carbine, Merr-Sonn CR-24 Flame Rifle.</description>
+        <encumbrance>6</encumbrance>
+        <hard_points>2</hard_points>
+        <hp_required/>
+        <name>Flame Projector</name>
+        <number>GEAR0001017</number>
+        <price>1000</price>
+        <range>short</range>
+        <rarity>6</rarity>
+        <skill_used display_value="Ranged - Heavy (Ag)">d8a0d55cdbae88542901de90cf9619c0</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:07:01</sys_created_on>
+        <sys_id>1a1762a82f10a450e0f497eef699b6db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:07:01</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:46:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9402fa592fd06850e0f497eef699b696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Flame Projector</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_9402fa592fd06850e0f497eef699b696</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:46:35</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

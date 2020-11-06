@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8e3580782f94a450e0f497eef699b659</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>A jet pack is ideal for fast maneuverability and surprise attacks. Most use small thrusters to blast into the air for short periods, though some augment this with anti-grav devices. Their only drawbacks are their large size and weight, limited fuel, and the not inconsiderable skill needed to pilot them safely. The Z-6 uses an air-breathing jet turbine to propel the user, maintaining stability via directional exhaust &#13;
+nozzles and a gyro-stabilizer. The pilot uses a verbal control interface and wrist controls to fly the jet pack. A jet pack allows a person to function as a Silhouette 1, Speed 2, Handling 0, System Strain Threshold 3 vehicle that can only operate in atmosphere, and requires Piloting (Planetary) to operate.&#13;
+&#13;
+Models Include: Mitrinomon Z-6 Jet Pack.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Jet Pack</name>
+        <number>GEAR0001096</number>
+        <price>4500</price>
+        <range/>
+        <rarity>7</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:57:03</sys_created_on>
+        <sys_id>8e3580782f94a450e0f497eef699b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:57:03</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:50:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>23d2ba992fd06850e0f497eef699b6dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jet Pack</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_23d2ba992fd06850e0f497eef699b6dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:50:21</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

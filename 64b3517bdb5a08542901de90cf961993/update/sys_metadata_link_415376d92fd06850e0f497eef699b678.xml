@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6cfe887c2f94a450e0f497eef699b65d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Personal stealth fields, as the name suggests, are miniaturized stealth fields that allow their user to vanish from the sight of organic creatures and droids without sufficiently acute optics. Most of them are relics of an age long-past, though several contemporary efforts have been made by various military organizations to recreate this technology. While they are undeniably effective for those who wish to pass unnoticed, the major flaw of most personalized stealth fields is that they are prone to collapsing. Scientists have theorized that this may be an unavoidable result of miniaturizing technology meant for starships, a design flaw, or a result of many of the active devices being antiques. In any case, few are lucky enough to possess one of these devices, and their infamous unreliability makes many prospective&#13;
+users wary. When using this device, it is impossible to see the user visually. In addition, any checks to ascertain the user's location by other means (such as hearing, smell, or observing the surrounding environment) have their difficulty set at Formidable (5 difficulty dice) &#13;
+&#13;
+Restrictions: Personalized stealth fields are vanishingly rare, and so few governments bother to place restrictions on their use. Some are legitimate artifacts of ages past, while others are stolen military technology, and the particulars of their creation dictate their legality. Of course, law enforcement officers tend not to see these fine distinctions when apprehending people using them to commit crimes.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Personal Stealth Field</name>
+        <number>GEAR0001113</number>
+        <price>20000</price>
+        <range/>
+        <rarity>9</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 22:38:29</sys_created_on>
+        <sys_id>6cfe887c2f94a450e0f497eef699b65d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 22:38:29</sys_updated_on>
+        <type>black_market_items</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:52:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>415376d92fd06850e0f497eef699b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Personal Stealth Field</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_415376d92fd06850e0f497eef699b678</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:52:21</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

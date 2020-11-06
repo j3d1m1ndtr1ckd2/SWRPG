@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>469bfeec2f50a450e0f497eef699b677</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense>1</defense>
+        <description>Certain heavy stormtroopers, bounty hunters, and even droids are fitted with heavy armor. Ostensibly, heavy armor protects against most normal blaster shots, but in the arms race of offense versus defense, the offensive power of a good blaster is still far ahead of most anything a humanoid can wear. &#13;
+&#13;
+Heavy battle armor can be sealed and provide the same benefits as full-body laminate armor as above, or it can take the form of a heavy vest and blast helmet. &#13;
+&#13;
+Models Include: Mandalorian Shock Trooper Armor.</description>
+        <encumbrance>6</encumbrance>
+        <hard_points>4</hard_points>
+        <hp_required/>
+        <name>Heavy Battle Armor</name>
+        <number>GEAR0001037</number>
+        <price>5000</price>
+        <range/>
+        <rarity>7</rarity>
+        <skill_used/>
+        <soak>2</soak>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:34:29</sys_created_on>
+        <sys_id>469bfeec2f50a450e0f497eef699b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:34:29</sys_updated_on>
+        <type>armor</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:48:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5e52b2992fd06850e0f497eef699b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Heavy Battle Armor</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_5e52b2992fd06850e0f497eef699b684</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:48:05</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>305d08342fd4a450e0f497eef699b625</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Glitterstim is a vanishingly rare variety of spice, refined from the webs spun by the energy spiders of Kessel and mined by the unfortunate slaves sent into those pitch-black depths. Because of its photoactive qualities, it cannot be exposed to light at any stage before consumption, and so laborers at various stages carefully move it from the darkness of the caverns to special holding containers, and then to the small, opaque packets in which it is sold. Its production is jealously guarded by the Empire, and thus a hold full of glitterstim is a treasure for any smuggler ambitious enough to try to sell it. &#13;
+&#13;
+The value of glitterstim comes as much from the uniqueness of its properties as its rarity. While it certainly provides a powerful high and is as addictive as many of its equivalents, rumors whisper that it has another, much more interesting effect when consumed. Glitterstim is said to provide those who ingest it with limited telepathic abilities. Of course, there are those who claim that this so-called telepathy is merely a drug-induced delusion, but many swear by the intuitive abilities that each dose imparts. Unfortunately, along with these supposed powers comes another certain effect—glitterstim slowly but surely erodes the mind, burning away certain nerves in the brain connected to sight and coordination, as well as mental balance. &#13;
+&#13;
+Glitterstim is a highly addictive drug with hallucinogenic properties. Using it adds three boost dice to all Perception and Vigilance checks for the remainder of a scene. Additionally, some users report  gaining temporary telepathic abilities, which the GM may choose to grant to any user at his discretion. &#13;
+&#13;
+Restrictions: Glitterstim is illegal on most worlds, and its trade is aggressively monitored and controlled by Imperial authorities.</description>
+        <encumbrance>5</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Glitterstim (100 dose cargo container)</name>
+        <number>GEAR0001106</number>
+        <price>5000</price>
+        <range/>
+        <rarity>8</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 22:30:07</sys_created_on>
+        <sys_id>305d08342fd4a450e0f497eef699b625</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 22:30:07</sys_updated_on>
+        <type>black_market_items</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:51:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fa33f2d92fd06850e0f497eef699b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glitterstim (100 dose cargo container)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_fa33f2d92fd06850e0f497eef699b647</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:51:56</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

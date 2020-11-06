@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>778e73642f94a450e0f497eef699b6c0</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Where there are people wishing to communicate, there are people wishing to prevent it, and thus there are jammers. Smaller versions can shut out local signals, while others are so powerful as to cut entire planets off from the rest of the galaxy. The Miradyne "Hail" is one of the former, a relatively portable device that can blanket standard comlink frequencies over a quarter-kilometer radius. It can also focus on a single target (such as an individual building) from up to three kilometers away.&#13;
+&#13;
+Cutting through the noise created by a comm jammer requires a Computers check, with a difficulty proportional to the distance from the jammer and the power of the device. The closer and more powerful the jammer, the harder the difficulty. The "Hail" forces an Average (2 difficulty dice) check, which becomes more difficult at close ranges (the exact difficulty is up to the GM, but should increase to Hard or&#13;
+Daunting if at medium range or closer to the device). &#13;
+&#13;
+Models Include: Miradyne 1 x-Hail Comm Jammer.</description>
+        <encumbrance>4</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Comm Jammer</name>
+        <number>GEAR0001077</number>
+        <price>400</price>
+        <range/>
+        <rarity>3</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:26:57</sys_created_on>
+        <sys_id>778e73642f94a450e0f497eef699b6c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:26:57</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:49:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c0c27a992fd06850e0f497eef699b64b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comm Jammer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c0c27a992fd06850e0f497eef699b64b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:49:50</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

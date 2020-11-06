@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>72d1a6e02f10a450e0f497eef699b671</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>10</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Illegal throughout most of the civilized worlds, disruptors focus such a highly energized beam of particles that they can disintegrate limbs or other large parts of their victim's bodies. The technology is essentially that of a blaster rifle, but with an oversized XCiter and a specialized actuating module that processes a much higher volume of blaster gas than usual. This combines with a galven cylinder that super-focuses the resultant beam. Most disruptor weapons have a very poor range, although some rifle variants have a boosted range through expensive reinforced galven cylinders and are designed specifically for snipers and sharpshooters.&#13;
+&#13;
+The Tenloss Syndicate manufactures one of the few mass-produced disruptors, the DXR-6 rifle and the DX-2 pistol. Their main client is the notorious Black Sun criminal organization, but they also service a smattering of ruthless rogues and other scoundrels. A few Imperial inquisitors and interrogators have been known to brandish these weapons as well, but perhaps more for the intimidation and terror factor than their practicality.&#13;
+&#13;
+Whenever a victim is hit by a disruptor, any Critical Hit results in a "Crippled" effect unless the roll on Table 6-10 would result in an even more grievous injury. Disruptors may never benefit from upgrades or attachments that improve their range or grant multiple shots. &#13;
+&#13;
+Models Include: Tenloss DXR-6 Disruptor Rifle, Tenloss DX-2 Disruptor Pistol.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points>2</hard_points>
+        <hp_required/>
+        <name>Disruptor Pistol</name>
+        <number>GEAR0001012</number>
+        <price>3000</price>
+        <range>short</range>
+        <rarity>6</rarity>
+        <skill_used display_value="Ranged - Light (Ag)">d290dd5cdbae88542901de90cf9619a6</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 14:42:37</sys_created_on>
+        <sys_id>72d1a6e02f10a450e0f497eef699b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 14:42:37</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:49:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>eeb27a992fd06850e0f497eef699b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Disruptor Pistol</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_eeb27a992fd06850e0f497eef699b647</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:49:44</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>603baae82f10a450e0f497eef699b6ad</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>8</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Stun grenades use sonic waves, concussion shocks, and other methods to stun their targets. &#13;
+&#13;
+Like frag grenades, stun grenades can be set to detonate on impact or set with a timer to detonate up to 3 rounds after being activated. Stun grenades rarely have pressure detonators.&#13;
+&#13;
+Models Include: Merr-Sonn C-10 Stun Grenade.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required/>
+        <name>Stun Grenade</name>
+        <number>GEAR0001020</number>
+        <price>75</price>
+        <range>short</range>
+        <rarity>4</rarity>
+        <skill_used display_value="Ranged - Light (Ag)">d290dd5cdbae88542901de90cf9619a6</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:22:21</sys_created_on>
+        <sys_id>603baae82f10a450e0f497eef699b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:22:21</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:49:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8392f6992fd06850e0f497eef699b6b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Stun Grenade</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_8392f6992fd06850e0f497eef699b6b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:49:13</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>11f063642f14a450e0f497eef699b6c3</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Slightly larger and infinitely more advanced than a standard emergency medpac, the FastFlesh is a good example of a medpac carried by a trained medic. The medpac carries instruments for emergency held surgery, a better diagnostic computer and mediscanner, advanced synth-nutrient replicators for sustaining a patient's vital nutrients, spray splints, and counter-radiation and biological poison drugs.&#13;
+&#13;
+This medpac allows the user to perform relatively complicated medical procedures in the held, and can rival the infirmaries on smaller starships. It allows characters to attempt to heal others using Medicine checks without penalty as described on page 219, and additionally grants a boost die on all attempts. In addition, the internal stim storage grants the user the equivalent of one stimpack per scene (although the GM can rule the device has run out of stims if the supplies are used continuously).&#13;
+&#13;
+Models Include: Athakam MedTech First Responder, BioTech FastFlesh Medpac.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Medpac</name>
+        <number>GEAR0001060</number>
+        <price>400</price>
+        <range/>
+        <rarity>2</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:17:11</sys_created_on>
+        <sys_id>11f063642f14a450e0f497eef699b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:17:11</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:46:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>59f1fa592fd06850e0f497eef699b68f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medpac</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_59f1fa592fd06850e0f497eef699b68f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:46:22</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8282a7e02f14a450e0f497eef699b663</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>One fascinating invention in the field of cybernetics is the cybernetic implant, a computer device designed to augment the user's brainpower. One example, the AjA6 implant, is a common enhancement for those who must oversee large operations or process vast amounts of data on a regular basis. The implant fits around the user's ears and back of the head, melding with the user's brain to achieve superior reasoning speeds as well as to store information for later analysis. The popular unit also allows for remote computer control as well as comlink capability. &#13;
+&#13;
+A cybernetic brain implant provides + 1 Intelligence and includes a comlink and computer access link. &#13;
+&#13;
+Models Include: BioTech Borg Construct AjA6 Cybernetic Implant.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Cybernetic Brain Implant</name>
+        <number>GEAR0001065</number>
+        <price>10000</price>
+        <range/>
+        <rarity>6</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:24:21</sys_created_on>
+        <sys_id>8282a7e02f14a450e0f497eef699b663</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:24:21</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:50:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>38d2ba992fd06850e0f497eef699b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cybernetic Brain Implant</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_38d2ba992fd06850e0f497eef699b6d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:50:09</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

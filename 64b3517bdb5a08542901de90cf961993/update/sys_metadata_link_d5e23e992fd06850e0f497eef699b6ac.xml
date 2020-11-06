@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8e4363602f14a450e0f497eef699b697</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Given the wide variety of life forms and the frequency with which many travel the galaxy, it is little wonder that diseases can become a major concern. Most have to rely on treatment or some form of local resistance meds, but these can vary from world to world. Athakam MedTech's Immune Implant solves such problems with simplicity and efficiency through use of a subdermal wide-spectrum defense mixture, designed to protect against almost every disease known. The Mod I implant is the most commonly used version, combining broad effectiveness and long-term results in a single package that rests just below the skin. &#13;
+&#13;
+Possessing an Immune Implant grants the wearer +1 Resilience.&#13;
+&#13;
+Models Include: Athakam MedTech Immune Implant Mod I.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Immune Implant</name>
+        <number>GEAR0001067</number>
+        <price>5000</price>
+        <range/>
+        <rarity>6</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:27:10</sys_created_on>
+        <sys_id>8e4363602f14a450e0f497eef699b697</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:27:10</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:50:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d5e23e992fd06850e0f497eef699b6ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Immune Implant</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_d5e23e992fd06850e0f497eef699b6ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:50:28</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

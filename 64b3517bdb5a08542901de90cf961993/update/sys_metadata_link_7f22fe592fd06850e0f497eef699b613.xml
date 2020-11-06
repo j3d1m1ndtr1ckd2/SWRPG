@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2d4ca6ec2f10a450e0f497eef699b64e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>1</base_damage>
+        <critical_rating>4</critical_rating>
+        <defense/>
+        <description>Dirty fighters and those looking to protect their fists from the tough hides of certain alien species rely on metallic knuckles, gauntlets, or other hand or limb coverings. Hoodlums on some worlds refer to them as "negotiation enhancers."&#13;
+&#13;
+Another great advantage of brass knuckles is their ability to be concealed in a pocket or other compartment until they're needed. Add one setback die to a character's Perception check when attempting to find brass knuckles on a person's body.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required/>
+        <name>Brass Knuckles</name>
+        <number>GEAR0001022</number>
+        <price>25</price>
+        <range>engaged</range>
+        <rarity>0</rarity>
+        <skill_used display_value="Brawl (Br)">72705d5cdbae88542901de90cf9619f1</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:27:30</sys_created_on>
+        <sys_id>2d4ca6ec2f10a450e0f497eef699b64e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:27:30</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:47:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7f22fe592fd06850e0f497eef699b613</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Brass Knuckles</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_7f22fe592fd06850e0f497eef699b613</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:47:22</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

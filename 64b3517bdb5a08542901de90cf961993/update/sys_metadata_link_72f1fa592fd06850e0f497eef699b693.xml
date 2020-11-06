@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>16f2e4e82fd46450e0f497eef699b643</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>7</base_damage>
+        <critical_rating>3</critical_rating>
+        <defense/>
+        <description>Heavy blasters are for those spacers who definitely want everyone to know they're packing. They're very powerful, sacrificing range, subtlety, and concealment for intimidation and the ability to tear big holes in most anything short of a blast door. Heavy blaster pistols are intended to combine the strength of a blaster rifle with the compactness of a pistol. Though they do not quite succeed at either (being slightly weaker than a blaster rifle and bulkier than a pistol) they still provide an excellent and deadly compromise weapon. Their only major drawback is that they carry fewer shots than either, a trade-off for the increased power. &#13;
+&#13;
+Game Masters have the option to spend 3 threat or 1 despair to force a heavy blaster pistol to run out of ammo (see page 207).&#13;
+&#13;
+Models Include: BlasTech DL-44 Heavy Blaster Pistol, Merr-Sonn Model 434.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Heavy Blaster Pistol</name>
+        <number>GEAR0001004</number>
+        <price>700</price>
+        <range>medium</range>
+        <rarity>6</rarity>
+        <skill_used display_value="Ranged - Light (Ag)">d290dd5cdbae88542901de90cf9619a6</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 05:26:13</sys_created_on>
+        <sys_id>16f2e4e82fd46450e0f497eef699b643</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 05:26:13</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-04 23:46:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>72f1fa592fd06850e0f497eef699b693</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Heavy Blaster Pistol</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_72f1fa592fd06850e0f497eef699b693</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-04 23:46:28</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

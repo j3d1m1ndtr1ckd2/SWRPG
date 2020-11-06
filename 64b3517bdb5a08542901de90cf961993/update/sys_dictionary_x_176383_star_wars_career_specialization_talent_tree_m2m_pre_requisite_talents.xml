@@ -3,7 +3,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>ref_ac_columns=rank;career_specialization,ref_ac_columns_search=true,ref_ac_order_by=rank,ref_auto_completer=AJAXTableCompleter</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -44,8 +44,10 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>career_specializationSAMEAScareer_specialization^EQ</reference_qual>
+        <reference_qual_condition table="x_176383_star_wars_career_specialization_talent_tree_m2m">career_specializationSAMEAScareer_specialization^EQ<item endquery="false" field="career_specialization" goto="false" newquery="false" operator="SAMEAS" or="false" value="career_specialization"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -55,7 +57,7 @@
         <sys_created_on>2020-01-20 22:25:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b63ac214dbe2c8542901de90cf96195f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Pre-requisite talents</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -63,7 +65,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_dictionary_x_176383_star_wars_career_specialization_talent_tree_m2m_pre_requisite_talents</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 22:25:20</sys_updated_on>
+        <sys_updated_on>2020-10-30 18:19:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

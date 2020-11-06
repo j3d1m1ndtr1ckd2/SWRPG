@@ -3,17 +3,32 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_176383_star_wars_career_specialization" element="NULL" name="x_176383_star_wars_career_specialization" parent="NULL" relationship="NULL" sys_domain="global" view="3976271090300300a21c513b6aad7680">ee595258dbe2c8542901de90cf9619e5</list_id>
+            <list_id display_value="x_176383_star_wars_career_specialization" element="NULL" name="x_176383_star_wars_career_specialization" parent="NULL" relationship="NULL" sys_domain="global" view="3976271090300300a21c513b6aad7680">7b1fb7e32fc0a050e0f497eef699b6b4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 23:23:55</sys_created_on>
-            <sys_id>2a595258dbe2c8542901de90cf9619e6</sys_id>
+            <sys_created_on>2020-10-30 18:54:08</sys_created_on>
+            <sys_id>bf1fb7e32fc0a050e0f497eef699b6b5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 23:23:55</sys_updated_on>
+            <sys_updated_on>2020-10-30 18:54:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>career</element>
+            <list_id display_value="x_176383_star_wars_career_specialization" element="NULL" name="x_176383_star_wars_career_specialization" parent="NULL" relationship="NULL" sys_domain="global" view="3976271090300300a21c513b6aad7680">7b1fb7e32fc0a050e0f497eef699b6b4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-30 18:54:08</sys_created_on>
+            <sys_id>771fb7e32fc0a050e0f497eef699b6b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-30 18:54:08</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -27,11 +42,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 23:23:55</sys_created_on>
+            <sys_created_on>2020-10-30 18:54:08</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ee595258dbe2c8542901de90cf9619e5</sys_id>
+            <sys_id>7b1fb7e32fc0a050e0f497eef699b6b4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_176383_star_wars_career_specialization</sys_name>
             <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
@@ -40,7 +55,7 @@
             <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
             <sys_update_name>sys_ui_list_x_176383_star_wars_career_specialization_sys_ref_list</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 23:23:55</sys_updated_on>
+            <sys_updated_on>2020-10-30 18:54:08</sys_updated_on>
             <sys_user/>
             <view display_value="Reference List" name="sys_ref_list">3976271090300300a21c513b6aad7680</view>
             <view_name/>

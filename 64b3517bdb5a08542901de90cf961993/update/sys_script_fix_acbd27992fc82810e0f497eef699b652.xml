@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>create image records from field</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[try {
+	gs.addInfoMessage('hi');
+    var species = new GlideRecord('x_176383_star_wars_species');
+    //species.addQuery('name', '>=', 'c');
+    species.orderBy('name');
+    species.query();
+    while (species.next()) {
+        gs.info('I am running');
+    }
+} catch (e) {
+    gs.info(e.message);
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-23 17:52:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>acbd27992fc82810e0f497eef699b652</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>create image records from field</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_script_fix_acbd27992fc82810e0f497eef699b652</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-23 17:56:35</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

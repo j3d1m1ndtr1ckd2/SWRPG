@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_176383_star_wars_character" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Character - Default view" name="x_176383_star_wars_character" related_list="NULL" sys_domain="global" view="Default view">1c546dbc2f1ca450e0f497eef699b67a</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_176383_star_wars_m2m_character_skills.character</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-03 04:50:11</sys_created_on>
+            <sys_id>90546dbc2f1ca450e0f497eef699b67c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-03 04:50:11</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Character - Default view" name="x_176383_star_wars_character" related_list="NULL" sys_domain="global" view="Default view">1c546dbc2f1ca450e0f497eef699b67a</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_176383_star_wars_character_talents_m2m.character</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-03 04:50:11</sys_created_on>
+            <sys_id>5c546dbc2f1ca450e0f497eef699b67c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-03 04:50:11</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Character - Default view" name="x_176383_star_wars_character" related_list="NULL" sys_domain="global" view="Default view">1c546dbc2f1ca450e0f497eef699b67a</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_176383_star_wars_character_gear_m2m.character</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-03 04:50:11</sys_created_on>
+            <sys_id>d0546dbc2f1ca450e0f497eef699b67d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-03 04:50:11</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Character - Default view</calculated_name>
+            <filter/>
+            <name>x_176383_star_wars_character</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-03 04:50:11</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c546dbc2f1ca450e0f497eef699b67a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Character - Default view</sys_name>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_ui_related_x_176383_star_wars_character_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-03 04:50:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

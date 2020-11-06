@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $location, spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.stashName = function(){
+		$location.search('character_name', document.getElementById('characterName').value);
+		$location.search('spa', 1);
+	}
+	
+	$scope.openLargeImage = function(img){
+		$scope.data.currentImage = img;
+		spUtil.update($scope);
+		document.getElementById('largeImgContainer').style.display = 'inline';
+	}
+	
+	$scope.closeLargerImage = function(){
+		document.getElementById('largeImgContainer').style.display = 'none';
+	}
+	
+	$scope.showInfo = function(element, obj){
+		if(element == 'species'){
+			$scope.data.currentSpecies = obj;
+			document.getElementById('speciesInfoContainer').style.display = 'inline';
+			document.getElementById('speciesInfoContainer').scrollIntoView();
+		} else if(element == 'career'){
+			$scope.data.currentCareer = obj;
+			document.getElementById('careerInfoContainer').style.display = 'inline';
+			document.getElementById('careerInfoContainer').scrollIntoView();
+		} else if(element == 'specialization'){
+			$scope.data.currentSpecialization = obj;
+			document.getElementById('specializationInfoContainer').style.display = 'inline';
+			document.getElementById('specializationInfoContainer').scrollIntoView();
+		} else if(element == 'talent'){
+			$scope.data.currentTalent = obj;
+			document.getElementById('talentInfoContainer').style.display = 'inline';
+			document.getElementById('talentInfoContainer').scrollIntoView();
+		} else if(element == 'investSpec'){
+			$scope.data.currentSpecialization = obj;
+			document.getElementById('investSpecInfoContainer').style.display = 'inline'
+			document.getElementById('investSpecInfoContainer').scrollIntoView();
+		}
+	}
+	
+	$scope.closeInfo = function(element){
+		if(element == 'species'){
+			document.getElementById('speciesInfoContainer').style.display = 'none';
+		} else if(element == 'career'){
+			document.getElementById('careerInfoContainer').style.display = 'none';			
+		} else if(element == 'specialization'){
+			document.getElementById('specializationInfoContainer').style.display = 'none';
+		} else if(element == 'talent'){
+			document.getElementById('talentInfoContainer').style.display = 'none';
+		} else if(element == 'investSpec'){
+			document.getElementById('investSpecInfoContainer').style.display = 'none';
+		}
+	}
+	
+	$scope.makeSelection = function(objID){
+		if($scope.data.step == 1){
+			$location.search('step', 2);
+			$location.search('species', objID);
+			$location.search('spa', 1);
+			$scope.closeInfo('species');
+			$scope.serverRefresh();
+			document.getElementById('characterCreatorHeader').scrollIntoView();
+		} else if($scope.data.step == 2){
+			$location.search('career', objID);
+			$location.search('step', 3);
+			$scope.closeInfo('career');
+			$scope.serverRefresh();
+			document.getElementById('characterCreatorHeader').scrollIntoView();
+		} else if($scope.data.step == 3){
+			$location.search('specialization', objID);
+			$location.search('step', 4);
+			$scope.closeInfo('specialization');
+			$scope.serverRefresh();
+			document.getElementById('characterCreatorHeader').scrollIntoView();
+		}
+	}
+	
+	$scope.goBack = function(step){
+		if(step == 2){
+			$location.search('species', null);
+			$location.search('step', 1);
+			$scope.serverRefresh();
+			document.getElementById('characterCreatorHeader').scrollIntoView();
+		} else if(step == 3){
+			$location.search('career', null);
+			$location.search('step', 2);
+			$scope.serverRefresh();
+			document.getElementById('characterCreatorHeader').scrollIntoView();
+		} else if(step == 4){
+			$location.search('specialization', null);
+			$location.search('step', 3);
+			$scope.serverRefresh();
+			document.getElementById('characterCreatorHeader').scrollIntoView();
+		}
+	}
+	
+	$scope.investXP = function(table, element){
+		if(table == 'characteristic'){
+			switch(element){
+				case "brawn":
+				$scope.data.investXPSpecies.startingXPInt -= $scope.data.investXPSpecies.costOfBrawnIncrease;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedBrawnInt++;
+				$scope.data.investXPSpecies.brawnString = $scope.data.investXPSpecies.investedBrawnInt + '';
+				$scope.data.investXPSpecies.costOfBrawnIncrease = ($scope.data.investXPSpecies.investedBrawnInt + 1) * 10;
+				break;
+					
+				case "agility":
+				$scope.data.investXPSpecies.startingXPInt -= $scope.data.investXPSpecies.costOfAgilityIncrease;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedAgilityInt++;
+				$scope.data.investXPSpecies.agilityString = $scope.data.investXPSpecies.investedAgilityInt + '';
+				$scope.data.investXPSpecies.costOfAgilityIncrease = ($scope.data.investXPSpecies.investedAgilityInt + 1) * 10;
+				break;
+					
+				case "intellect":
+				$scope.data.investXPSpecies.startingXPInt -= $scope.data.investXPSpecies.costOfIntellectIncrease;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedIntellectInt++;
+				$scope.data.investXPSpecies.intellectString = $scope.data.investXPSpecies.investedIntellectInt + '';
+				$scope.data.investXPSpecies.costOfIntellectIncrease = ($scope.data.investXPSpecies.investedIntellectInt + 1) * 10;
+				break;
+					
+				case "cunning":
+				$scope.data.investXPSpecies.startingXPInt -= $scope.data.investXPSpecies.costOfCunningIncrease;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedCunningInt++;
+				$scope.data.investXPSpecies.cunningString = $scope.data.investXPSpecies.investedCunningInt + '';
+				$scope.data.investXPSpecies.costOfCunningIncrease = ($scope.data.investXPSpecies.investedCunningInt + 1) * 10;
+				break;
+					
+				case "willpower":
+				$scope.data.investXPSpecies.startingXPInt -= $scope.data.investXPSpecies.costOfWillpowerIncrease;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedWillpowerInt++;
+				$scope.data.investXPSpecies.willpowerString = $scope.data.investXPSpecies.investedWillpowerInt + '';
+				$scope.data.investXPSpecies.costOfWillpowerIncrease = ($scope.data.investXPSpecies.investedWillpowerInt + 1) * 10;
+				break;
+					
+				case "presence":
+				$scope.data.investXPSpecies.startingXPInt -= $scope.data.investXPSpecies.costOfPresenceIncrease;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedPresenceInt++;
+				$scope.data.investXPSpecies.presenceString = $scope.data.investXPSpecies.investedPresenceInt + '';
+				$scope.data.investXPSpecies.costOfPresenceIncrease = ($scope.data.investXPSpecies.investedPresenceInt + 1) * 10;
+				break;
+					
+				default:
+				alert('something went wrong with the invest XP switch');
+				break;
+			}
+		} else if(table == 'skill'){
+			for(var i = 0; i < $scope.data.skills.length; i++){
+				if(element.sysID == $scope.data.skills[i].sysID){
+					$scope.data.investXPSpecies.startingXPInt -= $scope.data.skills[i].costToNextRank;
+					$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + ''; 
+					$scope.data.skills[i].rank++;
+					$scope.data.skills[i].rankString = $scope.data.skills[i].rank + '';
+					if($scope.data.skills[i].isCareer){
+						$scope.data.skills[i].costToNextRank = (($scope.data.skills[i].rank + 1) * 5);	 
+					} else{
+						$scope.data.skills[i].costToNextRank = ((($scope.data.skills[i].rank + 1) * 5) + 5);
+					}
+				}
+			}
+		} else if(table == 'talent'){
+			$scope.data.purchasedTalents.push(element);
+			for(var i = 0; i < $scope.data.talents.length; i++){
+				if($scope.data.talents[i].sysID == element.sysID){
+					$scope.data.talents[i].isPurchased = true;
+					$scope.data.investXPSpecies.startingXPInt -= $scope.data.talents[i].costToPurchase;
+					$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				}
+			}
+			
+			for(var j = 0; j < $scope.data.talents.length; j++){
+				for(var p = 0; p < $scope.data.talents[j].preReqs.length; p++){
+					if($scope.data.talents[j].preReqs[p] == element.sysID){
+						 $scope.data.talents[j].canPurchase = true;
+					}
+				}
+			}
+		} else if(table == 'investSpec'){
+			$scope.data.investXPSpecies.startingXPInt -= element.costToPurchase;
+			$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+			$scope.data.specializations.push(element.sysID);
+			for(var i = 0; i < $scope.data.availableCareerSpecializations.length; i++){
+				if($scope.data.availableCareerSpecializations[i].sysID == element.sysID){
+					$scope.data.availableCareerSpecializations[i].isPurchased = true;
+				} else if(!$scope.data.availableCareerSpecializations[i].isPurchased){
+					$scope.data.availableCareerSpecializations[i].costToPurchase = ($scope.data.specializations.length + 1) * 10;
+				}
+			}
+			
+			c.server.get({action: 'getNewTalents', spec: element.sysID, talents: $scope.data.talents}).then(function(response){
+				$scope.data.talents = response.data.talents;
+				$scope.data.skills = response.data.skills;
+			});
+		}
+	}
+	
+	$scope.divestXP = function(table, element){
+		if(table == 'characteristic'){
+			switch(element){
+				case "brawn":
+				var xpRefund = $scope.data.investXPSpecies.investedBrawnInt * 10;
+				$scope.data.investXPSpecies.startingXPInt += xpRefund;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedBrawnInt--;
+				$scope.data.investXPSpecies.brawnString = $scope.data.investXPSpecies.investedBrawnInt + '';
+				$scope.data.investXPSpecies.costOfBrawnIncrease = ($scope.data.investXPSpecies.investedBrawnInt + 1) * 10;
+				break;
+					
+				case "agility":
+				var xpRefund = $scope.data.investXPSpecies.investedAgilityInt * 10;
+				$scope.data.investXPSpecies.startingXPInt += xpRefund;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedAgilityInt--;
+				$scope.data.investXPSpecies.agilityString = $scope.data.investXPSpecies.investedAgilityInt + '';
+				$scope.data.investXPSpecies.costOfAgilityIncrease = ($scope.data.investXPSpecies.investedAgilityInt + 1) * 10;
+				break;
+					
+				case "intellect":
+				var xpRefund = $scope.data.investXPSpecies.investedIntellectInt * 10;
+				$scope.data.investXPSpecies.startingXPInt += xpRefund;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedIntellectInt--;
+				$scope.data.investXPSpecies.intellectString = $scope.data.investXPSpecies.investedIntellectInt + '';
+				$scope.data.investXPSpecies.costOfIntellectIncrease = ($scope.data.investXPSpecies.investedIntellectInt + 1) * 10;
+				break;
+					
+				case "cunning":
+				var xpRefund = $scope.data.investXPSpecies.investedCunningInt * 10;
+				$scope.data.investXPSpecies.startingXPInt += xpRefund;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedCunningInt--;
+				$scope.data.investXPSpecies.cunningString = $scope.data.investXPSpecies.investedCunningInt + '';
+				$scope.data.investXPSpecies.costOfCunningIncrease = ($scope.data.investXPSpecies.investedCunningInt + 1) * 10;
+				break;
+					
+				case "willpower":
+				var xpRefund = $scope.data.investXPSpecies.investedWillpowerInt * 10;
+				$scope.data.investXPSpecies.startingXPInt += xpRefund;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedWillpowerInt--;
+				$scope.data.investXPSpecies.willpowerString = $scope.data.investXPSpecies.investedWillpowerInt + '';
+				$scope.data.investXPSpecies.costOfWillpowerIncrease = ($scope.data.investXPSpecies.investedWillpowerInt + 1) * 10;
+				break;
+					
+				case "presence":
+				var xpRefund = $scope.data.investXPSpecies.investedPresenceInt * 10;
+				$scope.data.investXPSpecies.startingXPInt += xpRefund;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				$scope.data.investXPSpecies.investedPresenceInt--;
+				$scope.data.investXPSpecies.presenceString = $scope.data.investXPSpecies.investedPresenceInt + '';
+				$scope.data.investXPSpecies.costOfPresenceIncrease = ($scope.data.investXPSpecies.investedPresenceInt + 1) * 10;
+				break;
+					
+				default:
+				alert('something went wrong with the divest XP switch');
+				break;
+			}
+		} else if(table == 'skill'){
+			for(var i = 0; i < $scope.data.skills.length; i++){
+				if(element.sysID == $scope.data.skills[i].sysID){
+					$scope.data.skills[i].rank--;
+					$scope.data.skills[i].rankString = $scope.data.skills[i].rank + '';
+					if($scope.data.skills[i].isCareer){
+						$scope.data.skills[i].costToNextRank = (($scope.data.skills[i].rank + 1) * 5);	 
+					} else{
+						$scope.data.skills[i].costToNextRank = ((($scope.data.skills[i].rank + 1) * 5) + 5);
+					}
+					$scope.data.investXPSpecies.startingXPInt += $scope.data.skills[i].costToNextRank;
+					$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + ''; 
+				}
+			}
+		} else if(table == 'talent'){
+			for(var t = 0; t < $scope.data.purchasedTalents.length; t++){
+				if($scope.data.purchasedTalents[t].sysID == element.sysID){
+					 $scope.data.purchasedTalents.splice(t, 1);
+				}
+			}
+			for(var i = 0; i < $scope.data.talents.length; i++){
+				if($scope.data.talents[i].sysID == element.sysID){
+					$scope.data.talents[i].isPurchased = false;
+					$scope.data.investXPSpecies.startingXPInt += $scope.data.talents[i].costToPurchase;
+					$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				}
+			}
+			
+			for(var j = 0; j < $scope.data.talents.length; j++){
+				for(var p = 0; p < $scope.data.talents[j].preReqs.length; p++){
+					if($scope.data.talents[j].preReqs[p] == element.sysID){
+						 $scope.data.talents[j].canPurchase = false;
+					}
+				}
+			}
+		} else if(table == 'investSpec'){
+				$scope.data.investXPSpecies.startingXPInt += element.costToPurchase;
+				$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+				
+				for(var s = 0; s < $scope.data.specializations.length; s++){
+					if($scope.data.specializations[s] == element.sysID){
+						 $scope.data.specializations.splice(s, 1);
+					}
+				}
+			
+				for(var i = 0; i < $scope.data.availableCareerSpecializations.length; i++){
+					if($scope.data.availableCareerSpecializations[i].sysID == element.sysID){
+						$scope.data.availableCareerSpecializations[i].isPurchased = false;
+					}
+					if(!$scope.data.availableCareerSpecializations[i].isPurchased){
+						$scope.data.availableCareerSpecializations[i].costToPurchase = ($scope.data.specializations.length + 1) * 10;
+					}
+				}	
+			
+			//collect the indexes in the talents array to remove talents related to the removed specialization
+				var spliceIndexes = [];
+				for(var t = 0; t < $scope.data.talents.length; t++){
+					if($scope.data.talents[t].specID == element.sysID){
+						spliceIndexes.push(t);
+						if($scope.data.talents[t].isPurchased){
+							 $scope.divestXP('talent', $scope.data.talents[t]);
+						}
+					}
+				}
+			//remove the talents
+			spliceIndexes.sort(function(a,b){return(b-a)});
+				for(t = 0; t < spliceIndexes.length; t++){
+					$scope.data.talents.splice(spliceIndexes[t], 1);
+				}
+			
+			//remove the career skills tag
+			var skillsToRemove = [];
+			for(t = 0; t < element.careerSkills.length; t++){
+				var removeSkill = true;
+				for(var k = 0; k < $scope.data.skillsFromCareer.length; k++){
+					if(element.careerSkills[t] == $scope.data.skillsFromCareer[k]){
+						removeSkill = false;
+					}
+				}
+				
+				for(var i = 0; i < $scope.data.availableCareerSpecializations.length; i++){
+					for(var l = 0; l < $scope.data.availableCareerSpecializations[i].careerSkills.length; l++){
+						if($scope.data.availableCareerSpecializations[i].careerSkills[l] == element.careerSkills[t] && $scope.data.availableCareerSpecializations[i].sysID != element.sysID){
+							 removeSkill = false;
+						}
+					}
+				}
+				if(removeSkill){
+					 skillsToRemove.push(element.careerSkills[t]);
+				}
+			}
+			for(var skill = 0; skill < $scope.data.skills.length; skill++){
+				for(var s = 0; s < skillsToRemove.length; s++){
+					if($scope.data.skills[skill].sysID == skillsToRemove[s]){
+							$scope.data.skills[skill].isCareer = false;
+					}
+				}
+			}
+		}
+	}
+	
+	$scope.useFreeCareerRank = function(skill){
+		for(var i = 0; i < $scope.data.freeCareerSkillRanks.length; i++){
+			if($scope.data.freeCareerSkillRanks[i].sysID == skill.sysID){
+				if(!$scope.data.freeCareerSkillRanks[i].freeRankUsed && $scope.data.freeCareerSkillsRemaining > 0){
+					$scope.data.freeCareerSkillRanks[i].freeRankUsed = true;
+					$scope.data.freeCareerSkillsRemaining--;
+				} else if($scope.data.freeCareerSkillRanks[i].freeRankUsed){
+					$scope.data.freeCareerSkillRanks[i].freeRankUsed = false;
+					$scope.data.freeCareerSkillsRemaining++;
+				}
+			}
+		}
+	}
+	
+	$scope.useFreeSpecRank = function(skill){
+		for(var i = 0; i < $scope.data.freeSpecSkillRanks.length; i++){
+			if($scope.data.freeSpecSkillRanks[i].sysID == skill.sysID){
+				if(!$scope.data.freeSpecSkillRanks[i].freeRankUsed && $scope.data.freeSpecSkillsRemaining > 0){
+					$scope.data.freeSpecSkillRanks[i].freeRankUsed = true;
+					$scope.data.freeSpecSkillsRemaining--;
+				} else if($scope.data.freeSpecSkillRanks[i].freeRankUsed){
+					$scope.data.freeSpecSkillRanks[i].freeRankUsed = false;
+					$scope.data.freeSpecSkillsRemaining++;
+				}
+			}
+		}
+	}
+	
+	$scope.useFreeSpeciesRank = function(skill){
+		for(var i = 0; i < $scope.data.freeSpeciesRanks.length; i++){
+			if($scope.data.freeSpeciesRanks[i].sysID == skill.sysID){
+				if(!$scope.data.freeSpeciesRanks[i].freeRankUsed && $scope.data.freeSpeciesSkillsRemaining > 0){
+					$scope.data.freeSpeciesRanks[i].freeRankUsed = true;
+					$scope.data.freeSpeciesSkillsRemaining--;
+				} else if($scope.data.freeSpeciesRanks[i].freeRankUsed){
+					$scope.data.freeSpeciesRanks[i].freeRankUsed = false;
+					$scope.data.freeSpeciesSkillsRemaining++;
+				}
+			}
+		}
+	}
+	
+	$scope.confirmFreeSkills = function(){
+		for(var i = 0; i < $scope.data.skills.length; i++){
+			for(var j = 0; j < $scope.data.freeCareerSkillRanks.length; j++){
+				if($scope.data.skills[i].sysID == $scope.data.freeCareerSkillRanks[j].sysID && $scope.data.freeCareerSkillRanks[j].freeRankUsed){
+					$scope.data.skills[i].rank++;
+					$scope.data.skills[i].baseRank++;
+					$scope.data.skills[i].rankString = $scope.data.skills[i].rank + '';
+					$scope.data.skills[i].freeRanks++;
+					$scope.data.skills[i].costToNextRank = (($scope.data.skills[i].rank + 1) * 5);	 
+				}
+			}
+			
+			for(var k = 0; k < $scope.data.freeSpecSkillRanks.length; k++){
+				if($scope.data.skills[i].sysID == $scope.data.freeSpecSkillRanks[k].sysID && $scope.data.freeSpecSkillRanks[k].freeRankUsed){
+					$scope.data.skills[i].rank++;
+					$scope.data.skills[i].baseRank++;
+					$scope.data.skills[i].rankString = $scope.data.skills[i].rank + '';
+					$scope.data.skills[i].freeRanks++;
+					$scope.data.skills[i].costToNextRank = (($scope.data.skills[i].rank + 1) * 5);
+				}
+			}
+			
+			for(var k = 0; k < $scope.data.freeSpeciesRanks.length; k++){
+				if($scope.data.skills[i].sysID == $scope.data.freeSpeciesRanks[k].sysID && $scope.data.freeSpeciesRanks[k].freeRankUsed){
+					$scope.data.skills[i].rank++;
+					$scope.data.skills[i].baseRank++;
+					$scope.data.skills[i].rankString = $scope.data.skills[i].rank + '';
+					$scope.data.skills[i].freeRanks++;
+					$scope.data.skills[i].costToNextRank = (($scope.data.skills[i].rank + 1) * 5);
+				}
+			}
+		}
+		$scope.data.freeSkillRanksSelected = true;
+	}
+	
+	$scope.switchInvestmentTabs = function(tab){
+		if(tab == 'skills'){
+			$scope.data.investingXPCategory = 'skills';
+			document.getElementById('skillInvestHeader').style.borderBottom = '3px groove white';
+			document.getElementById('talentInvestHeader').style.border = 'none';
+			document.getElementById('specInvestHeader').style.border = 'none';
+			document.getElementById('forceInvestHeader').style.border = 'none';
+		} else if(tab == 'talents'){
+			$scope.data.investingXPCategory = 'talents';
+			document.getElementById('skillInvestHeader').style.border = 'none';
+			document.getElementById('talentInvestHeader').style.borderBottom = '3px groove white';
+			document.getElementById('specInvestHeader').style.border = 'none';
+			document.getElementById('forceInvestHeader').style.border = 'none';
+		} else if(tab == 'specializations'){
+			$scope.data.investingXPCategory = 'specializations';
+			document.getElementById('skillInvestHeader').style.border = 'none';
+			document.getElementById('talentInvestHeader').style.border = 'none';
+			document.getElementById('specInvestHeader').style.borderBottom = '3px groove white';
+			document.getElementById('forceInvestHeader').style.border = 'none';
+		} else{
+			$scope.data.investingXPCategory = 'force';
+			document.getElementById('skillInvestHeader').style.border = 'none';
+			document.getElementById('talentInvestHeader').style.border = 'none';
+			document.getElementById('specInvestHeader').style.border = 'none';
+			document.getElementById('forceInvestHeader').style.borderBottom = '3px groove white';
+		}
+	}
+	
+	$scope.serverRefresh = function(){
+		c.server.get().then(function(){
+			c.server.refresh();
+		});
+	}
+	
+	$scope.finalizeCharacter = function(){
+		c.server.get({action: 'finalizeCharacter', skills: $scope.data.skills, talents: $scope.data.talents, characterDetails: $scope.data.investXPSpecies, specializations: $scope.data.specializations}).then(function(response){
+			$location.search('id', 'star_wars_character_sheet');
+			$location.search('character_id', response.data.characterID);
+		});
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.character-creator-container{
+	margin-bottom:50px;
+}
+
+.header-container{
+	text-align:center;
+  margin-bottom:50px;
+}
+
+input{
+	border-radius: 15px;
+  background: black;
+  border:2px groove #e21414;
+  font-size:18px;
+}
+
+#speciesSkillsChoice{
+	margin-bottom:20px;
+}
+
+.starting-xp,.base-wound,.base-strain{
+	font-weight:bold;
+}
+
+#characterNameLabel{
+	font-size:24px;
+}
+
+.specialization-item{
+	border:1px groove #e21414;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 3px lightgray;
+  margin-bottom: 20px;
+  background: black;
+  padding-top:10px;
+  padding-bottom:10px;
+  min-height: 90px;
+}
+
+.species-record{
+	border:1px groove #e21414;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 3px lightgray;
+  margin-bottom: 20px;
+  background: black;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.career-name{
+	font-size:22px;
+  margin-top:20px;
+}
+
+.career-item{
+	border:1px groove #e21414;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 3px lightgray;
+  margin-bottom: 20px;
+  background: black;
+  padding-top:10px;
+  padding-bottom:10px;
+  min-height: 90px;
+}
+
+.careers-header-container{
+	text-align:center;
+}
+
+.species-name{
+	font-size: 18px;
+  text-align: center;
+}
+
+.species-name-sw{
+	text-align: center;
+  font-size: 14px;
+}
+
+.species-record,.species-list,.species-image{
+	z-index:0;
+}
+
+.fa-expand-alt{
+	position:absolute;
+  top:0;
+  left:80px;
+}
+
+.fa-expand-alt:hover{
+	cursor:pointer;
+}
+
+.large-image-container{
+	position:fixed;
+  top:100px;
+  left:43%;
+}
+
+.fa-times{
+	color: #e21414;
+  padding-left:15px;
+}
+
+.large-image-container{
+	display:none;
+}
+
+.info-button,.select-button,.career-info-button,.career-select-button{
+  min-width:50px;
+  text-align:center;
+  background-color:black;
+}
+
+.info-button, .career-info-button{
+  position:absolute;
+  right:0;
+	border:1px groove #54f403;
+  border-radius:15px;
+  box-shadow: 0px 0px 4px 2px #54f403;
+  margin-bottom:15px;
+}
+
+.career-select-button{
+	position:absolute;
+  right:0;
+  margin-top:40px;
+	border:1px groove #1933f4;
+  border-radius:15px;
+  box-shadow: 0px 0px 4px 2px #1933f4;
+}
+
+.select-button{
+  position:absolute;
+  right:0;
+  margin-top:15px;
+	border:1px groove #1933f4;
+  border-radius:15px;
+  box-shadow: 0px 0px 4px 2px #1933f4;
+}
+
+.close-button{
+	padding-top:15px;
+}
+
+.info-container{
+	display:none;
+  position:fixed;
+  max-height:90%;
+  overflow-y:scroll;
+  top:10%;
+  left:2.5%;
+  width:95%;
+  background-color:black;
+  padding-bottom:50px;
+  z-index:5;
+}
+
+.characteristic{
+  text-align:center;
+  border:1px groove #e21414;
+  border-radius:5px;
+  margin-right:5px;
+  padding-left:0;
+  padding-right:0;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.starting-values{
+	text-align:center;
+  margin-top: 40px;
+  margin-bottom:40px;
+  padding:0;
+}
+
+.species-detail-image{
+	padding:0;
+}
+
+.select-species-button, .select-career-button, .select-spec-button{
+	text-align:center;
+  margin-top:40px;
+}
+
+.select-button-details-container{
+	border:1px groove #1933f4;
+  border-radius:15px;
+  box-shadow: 0px 0px 4px 2px #1933f4;
+  text-align:center;
+  padding-left:50px;
+  padding-right:50px;
+  background:transparent;
+}
+
+.spec-name{
+	font-size: 18px;
+  margin-top:20px;
+}
+
+.back-button{
+  padding:0;
+	text-align:left;
+  z-index:4;
+  margin-top:40px;
+}
+
+.center-text{
+	text-align:center;
+}
+
+.description{
+	margin-top:25px;
+}
+
+#backButtonText{
+	font-size:18px;
+}
+
+#starfighterBackButton{
+	transform: rotate(270deg);
+  color:#e17012;
+}
+
+.characteristics-investment-container{
+	background-color:black;
+  padding-top:10px;
+}
+
+.xp-tracker{
+  background-color:black;
+  z-index:1;
+  position:fixed;
+  top:80px;
+  right:20px;
+  padding:1%;
+	border:2px groove #e21414;
+  text-align:center;
+  border-radius:15px;
+  margin-bottom:20px;
+}
+
+#xpValue{
+	font-size:28px;
+}
+
+#xpValueSW{
+	font-size:22px;
+}
+
+#xpNumber{
+	font-size: 34px;
+}
+
+.finalize-button{
+	margin-top:15px;
+}
+
+#finalizeButton{
+  padding: 2px 15px 2px 15px;
+	border:1px groove #54f403;
+  border-radius:15px;
+  box-shadow: 0px 0px 4px 2px #54f403;
+  background:transparent;
+}
+
+.increase-characteristic{
+	margin-top:10px;
+  margin-bottom:10px;
+  padding:0;
+}
+
+.characteristic-plus-button{
+	border:1px groove #1933f4;
+  border-radius:15px;
+  background:transparent;
+  //padding: 5px 25px 5px 25px;
+}
+
+.characteristic-minus-button{
+	border:1px groove #e21414;
+  border-radius:15px;
+  background: transparent;
+  padding: 5px 25px 5px 25px;
+}
+
+.lightsabers-plus-minus{
+	transform: rotate(45deg);
+  color:lightgray;
+  font-size:22px;
+  padding-top:5px;
+  padding-bottom:5px;
+ }
+
+.invest-characteristics{
+  //padding-top: 6px;
+  //padding-bottom:6px;
+  padding-left:0;
+  padding-right:0;
+	text-align:center;
+  border:1px groove #e21414;
+  border-radius:15px;
+  min-height:180px;
+}
+
+.characteristic-value{
+  padding:0;
+	text-align:center;
+  //border:1px groove #54f403;
+  border-radius:15px;
+  margin-bottom: 5px;
+  font-size:18px;
+}
+
+.decrease-characteristic{
+	margin-top:10px;
+  margin-bottom:10px;
+  padding:0;
+}
+
+.skills-investment-container, .talent-investment-container, .specialization-investment-container{
+	margin-top:20px;
+}
+
+.skill, .talent, .specialization{
+	background-color:black;
+  border: 1px groove #e21414;
+  font-size:18px;
+  padding:5px 0px 5px 0px;
+  border-radius:15px;
+  margin-bottom:10px;
+  min-height:85px;
+  box-shadow: 0px 0px 5px 3px lightgray;
+}
+
+.skill-name-header, .skill-rank-header, .talent-name-header,.talent-tier-header, .spec-name-header{
+  margin-top:10px;
+	text-align: left;
+  font-size: 18px;
+  margin-bottom:10px;
+}
+
+.skill-name, .skill-rank, .talent-name, .talent-tier{
+	margin-top:25px;
+}
+
+.fa-medal{
+	color:#54f403;
+  font-size:16px;
+}
+
+.icon-definition{
+	text-align:center;
+  margin-top:15px;
+}
+
+.skill-rank, .skill-rank-header{
+	text-align:center;
+}
+
+#investCharacteristicsHeader, #skillInvestHeader, .investment-tab-header{
+	font-size:22px;
+}
+
+#skillInvestHeader{
+	border-bottom:3px groove white;
+}
+
+#investCharacteristicsHeaderSW, #investCharacteristicsHeader{
+	text-align:center;
+}
+
+.investment-tabs-container{
+	margin-top:30px;
+  padding:0;
+}
+
+.skill-increase-button{
+  border:1px groove #1933f4;
+  border-radius:15px;
+  background:transparent;
+  padding: 0px 7px 0px 7px;
+}
+
+.skill-decrease-button{
+	border:1px groove #e21414;
+  border-radius:15px;
+  background: transparent;
+  padding: 0px 10px 0px 10px;
+  margin-top:10px;
+}
+
+#freeSkillHeader{
+	text-align:center;
+  font-size:22px;
+  margin-top:20px;
+}
+
+#freeSkillHeaderSW{
+	text-align:center;
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+#careerSkillsLabel,.free-skills-label{
+	font-size:16px;
+  font-weight:bold;
+}
+
+.free-career-skill-rank{
+	background-color:black;
+  border: 1px groove #e21414;
+  border-radius:15px;
+  padding:0;
+}
+
+.free-career-skill-rank[free-rank-used="true"]{
+	background-color:#1933f4;
+}
+
+.free-skill-name{
+	padding: 10px 0px 10px 0px;
+  text-align:center;
+}
+
+.specialization-skill-selection{
+	margin-top:20px;
+}
+
+.confirm-button-container{
+	margin-top:40px;
+}
+
+.increase-skill-button,.decrease-skill-button{
+	text-align:right;
+}
+
+#confirmFreeSkillsButton{
+	background-color:black;
+  border: 1px groove #1933f4;
+  border-radius:15px;
+  box-shadow: 0px 0px 8px 3px #1933f4;
+  text-align:center;
+  font-size:24px;
+  font-weight:bold;
+  padding: 5px 15px 5px 15px;
+}
+
+.buttons{
+	margin-top:-10px;
+}
+
+.talent-specialization-name{
+	font-size:14px !important;
+}
+
+@media only screen and (min-width:762px) and (max-width:1600px){
+  .characteristic{
+  	font-size:12px;
+    padding-left:0;
+    padding-right:0;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+}
+
+@media only screen and (max-width:762px){  
+  .investment-tab-header{
+  	word-break: break-word;
+  }
+  
+  .species-description, .description{
+  	padding-left:10px !important;
+    padding-right:10px !important;
+  }
+  
+  .species-image{
+  	margin:5px 0px 5px 10px;
+  }
+  
+  .career-buttons,.spec-buttons,.buttons{
+  	padding-top:10px;
+    margin-left:-20px;
+  }
+  
+  .mobile-sw-text{
+  	font-size:10px;
+  }
+  
+  .col-xs-12, .col-xs-3{
+  	padding:0;
+  }
+  
+  .investments-container{
+  	padding:0px 7px 0px 7px !important;
+  }
+  
+  .investment-tabs-container{
+ 		font-size:12px; 
+	}
+  
+  .free-career-skill-rank{
+  	margin-bottom:10px; 
+  }
+  
+  .free-skill-name{
+  	min-height:60px;
+    font-size:12px;
+  }
+  
+  .xp-tracker{
+   top: 170px; 
+  }
+  
+  #xpValue{
+		font-size:22px;
+	}
+
+#xpValueSW{
+	font-size:18px;
+}
+
+#xpNumber{
+	font-size: 26px;
+}
+  
+  .invest-characteristics{
+  	 border:none;
+  }
+  
+  .fa-expand-alt{
+  	display:none;
+  }
+  
+  .top-characteristic{
+  	margin-bottom:10px;
+  }
+  
+  .large-image-container{
+  	left:85px;
+  }
+  
+  .species-list{
+  	padding-left:0;
+    padding-right:0;
+  }
+  
+  .characteristic{
+  	margin-right:0;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_character_creator</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Character Creator</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+data.step = $sp.getParameter('step') || 1;
+data.characterName = $sp.getParameter('character_name') || '';
+	
+if(data.step == 1){
+	data.species = [];
+	var species = new GlideRecord('x_176383_star_wars_species');
+	species.orderBy('name');
+	species.query();
+	while(species.next()){
+		var rec = {
+			name: species.name + '',
+			sysID: species.sys_id + '',
+			startingXP: species.starting_xp + '',
+			baseWound: species.base_wound_threshold + '',
+			baseStrain: species.base_strain_threshold + '',
+			brawn: species.brawn + '',
+			agility: species.agility + '',
+			intellect: species.intellect + '',
+			cunning: species.cunning + '',
+			willpower: species.willpower + '',
+			presence: species.presence + '',
+			description: species.description.toString(),
+			image: species.name.toLowerCase() + '.png'
+		};
+		data.species.push(rec);
+	}
+} else if(data.step == 2){
+	data.careers = [];
+	var career = new GlideRecord('x_176383_star_wars_career');
+	career.orderBy('name');
+	career.query();
+	while(career.next()){
+		var rec = {
+			name: career.name + '',
+			sysID: career.sys_id + '',
+			skills: career.career_skills + '',
+			description: career.description + ''
+		};
+		data.careers.push(rec);
+	}
+} else if(data.step == 3){
+	data.specializations = [];
+	var chosenCareer = $sp.getParameter('career');
+	var spec = new GlideRecord('x_176383_star_wars_career_specialization');
+	spec.addQuery('career', chosenCareer);
+	spec.orderBy('name');
+	spec.query();
+	while(spec.next()){
+		var rec = {
+			name: spec.name + '',
+			desc: spec.description + '',
+			sysID: spec.sys_id + ''
+		};
+		data.specializations.push(rec);
+	}
+} else if(data.step == 4){
+	data.investingXPCategory = 'skills';
+	data.freeSkillRanksSelected = false;
+	var chosenSpecies = $sp.getParameter('species');
+	var career = $sp.getParameter('career');
+	var specialization = $sp.getParameter('specialization');
+	data.specializations = [];
+	data.specializations.push(specialization);
+	data.freeCareerSkillRanks = [];
+	data.freeSpecSkillRanks = [];
+	data.freeSpeciesRanks = [];
+	var jediCareers = gs.getProperty('x_176383_star_wars.sw.jedi_careers');
+	data.isJedi = false;
+	if(jediCareers.indexOf(career) > -1){
+		data.freeCareerSkillsRemaining = 3;
+		data.isJedi = true;
+	} else{
+		data.freeCareerSkillsRemaining = 4;
+	}
+	data.freeSpecSkillsRemaining = 2;
+	
+	var species = new GlideRecord('x_176383_star_wars_species');
+	species.get(chosenSpecies);
+	
+	data.investXPSpecies = {
+		brawnString: species.brawn + '',
+		baseBrawnInt: parseInt(species.brawn),
+		investedBrawnInt: parseInt(species.brawn),
+		costOfBrawnIncrease: (parseInt(species.brawn) + 1) * 10,
+		agilityString: species.agility + '',
+		baseAgilityInt: parseInt(species.agility),
+		investedAgilityInt: parseInt(species.agility),
+		costOfAgilityIncrease: (parseInt(species.agility) + 1) * 10,
+		intellectString: species.intellect + '',
+		baseIntellectInt: parseInt(species.intellect),
+		investedIntellectInt: parseInt(species.intellect),
+		costOfIntellectIncrease: (parseInt(species.intellect) + 1) * 10,
+		cunningString: species.cunning + '',
+		baseCunningInt: parseInt(species.cunning),
+		investedCunningInt: parseInt(species.cunning),
+		costOfCunningIncrease: (parseInt(species.cunning) + 1) * 10,
+		willpowerString: species.willpower + '',
+		baseWillpowerInt: parseInt(species.willpower),
+		investedWillpowerInt: parseInt(species.willpower),
+		costOfWillpowerIncrease: (parseInt(species.willpower) + 1) * 10,
+		presenceString: species.presence + '',
+		basePresenceInt: parseInt(species.presence),
+		investedPresenceInt: parseInt(species.presence),
+		costOfPresenceIncrease: (parseInt(species.presence) + 1) * 10,
+		baseXP: parseInt(species.starting_xp),
+		startingXPString: species.starting_xp + '',
+		startingXPInt: parseInt(species.getValue('starting_xp')),
+		autoSkillRanks: species.skill_ranks_list.toString().split(','),
+		skillChoice: species.skills_choice.toString().split(','),
+		sysID: species.sys_id + '',
+		baseWound: parseInt(species.base_wound_threshold),
+		baseStrain: parseInt(species.base_strain_threshold)
+	};
+	
+	var careerGR = new GlideRecord('x_176383_star_wars_career');
+	careerGR.get(career);
+	data.careerID = careerGR.sys_id + '';
+	var careerSkills = careerGR.career_skills.toString().split(',');
+	data.skillsFromCareer = careerSkills;
+	
+	var specGR = new GlideRecord('x_176383_star_wars_career_specialization');
+	specGR.get(specialization);
+	var specSkills = specGR.specialization_skills.toString().split(',');
+	
+	data.skills = [];
+	var skillsGR = new GlideRecord('x_176383_star_wars_skills');
+	skillsGR.orderBy('name');
+	skillsGR.query();
+	while(skillsGR.next()){
+		var rec = {
+			name: skillsGR.name + '',
+			type: skillsGR.type + '',
+			sysID: skillsGR.sys_id + '',
+			desc: skillsGR.description + '',
+			isCareer: false,
+			costToNextRank: 10,
+			rank: 0,
+			freeRanks: 0,
+			rankString: '0'
+		};
+		data.skills.push(rec);
+	}
+	
+	for(var i = 0; i < data.skills.length; i++){
+		if(data.investXPSpecies.autoSkillRanks.length > 0){
+			for(var j = 0; j < data.investXPSpecies.autoSkillRanks.length; j++){
+				if(data.skills[i].sysID == data.investXPSpecies.autoSkillRanks[j]){
+					data.skills[i].rank++;
+					data.skills[i].rankString = data.skills[i].rank + '';
+					if(data.skills[i].isCareer){
+						data.skills[i].costToNextRank = (data.skills[i].rank + 1) * 5;
+					} else{
+						data.skills[i].costToNextRank = ((data.skills[i].rank + 1) * 5) + 5;
+					}
+				}
+			}
+		}
+		data.skills[i].baseRank = data.skills[i].rank;
+	}
+	
+	for(var skill = 0; skill < careerSkills.length; skill++){
+		for(var s = 0; s < data.skills.length; s++){
+			if(data.skills[s].sysID == careerSkills[skill]){
+				data.skills[s].isCareer = true;
+				data.skills[s].costToNextRank = 5;
+				var careerSkillObj = {
+					sysID: careerSkills[skill],
+					freeRankUsed: false,
+					name: data.skills[s].name
+				};
+				data.freeCareerSkillRanks.push(careerSkillObj);
+			}
+		}
+	}
+		
+	for(var specSkill = 0; specSkill < specSkills.length; specSkill++){
+		for(var ss = 0; ss < data.skills.length; ss++){
+			if(data.skills[ss].sysID == specSkills[specSkill]){
+				data.skills[ss].isCareer = true;
+				data.skills[ss].costToNextRank = 5;
+				var specSkillsObj = {
+					sysID: specSkills[specSkill],
+					freeRankUsed: false,
+					name: data.skills[ss].name
+				};
+				data.freeSpecSkillRanks.push(specSkillsObj);
+			}
+		}
+	}
+	
+	if(data.investXPSpecies.skillChoice.length > 0){
+		data.freeSpeciesSkillsRemaining = 1;
+		for(i = 0; i < data.investXPSpecies.skillChoice.length; i++){
+			for(var s = 0; s < data.skills.length; s++){
+				if(data.investXPSpecies.skillChoice[i] == data.skills[s].sysID){
+					var speciesSkill = {
+						name: data.skills[s].name + '',
+						freeRankUsed: false,
+						sysID: data.skills[s].sysID + ''
+					};
+					data.freeSpeciesRanks.push(speciesSkill);
+				}
+			}
+		}
+	}
+	
+	//retrieve talent trees for specializations
+	data.talents = [];
+	data.purchasedTalents = [];
+	var talent = new GlideRecord('x_176383_star_wars_career_specialization_talent_tree_m2m');
+	talent.addQuery('career_specialization', 'IN', data.specializations.join(','));
+	talent.orderBy('career_specialization');
+	talent.orderBy('rank');
+	talent.query();
+	while(talent.next()){
+		var t = {
+			sysID: talent.sys_id + '',
+			name: talent.talent.getDisplayValue(),
+			tier: parseInt(talent.rank),
+			tierString: talent.rank + '',
+			specID: talent.career_specialization.sys_id + '',
+			specName: talent.career_specialization.getDisplayValue(),
+			costToPurchase: parseInt(talent.xp_cost),
+			isPurchased: false,
+			description: talent.talent.description + '',
+			activeOrPassive: talent.talent.passive_or_active.getDisplayValue(),
+			forceTalent: talent.talent.force_talent + '',
+			preReqs: talent.pre_requisite_talents.toString().split(',')
+		};
+		if(t.tier == 1 || t.preReqs[0] == ''){
+			 t.canPurchase = true;
+		}
+		data.talents.push(t);
+	}
+	
+	//retrieve career specializations
+	data.availableCareerSpecializations = [];
+	var careerSpecs = new GlideRecord('x_176383_star_wars_career_specialization');
+	careerSpecs.addQuery('career', career).addCondition('sys_id', '!=', specialization);
+	careerSpecs.orderBy('name');
+	careerSpecs.query();
+	while(careerSpecs.next()){
+		var cs = {
+			name: careerSpecs.name + '',
+			sysID: careerSpecs.sys_id + '',
+			description: careerSpecs.description + '',
+			careerSkills: careerSpecs.specialization_skills.toString().split(','),
+			costToPurchase: (data.specializations.length + 1) * 10,
+			isPurchased: false
+		};
+		data.availableCareerSpecializations.push(cs);
+	}
+	
+	if(input && input.action == 'getNewTalents'){
+		var talent = new GlideRecord('x_176383_star_wars_career_specialization_talent_tree_m2m');
+		talent.addQuery('career_specialization', input.spec);
+		talent.orderBy('career_specialization');
+		talent.orderBy('rank');
+		talent.query();
+		while(talent.next()){
+			var t = {
+				sysID: talent.sys_id + '',
+				name: talent.talent.getDisplayValue(),
+				tier: parseInt(talent.rank),
+				tierString: talent.rank + '',
+				specID: talent.career_specialization.sys_id + '',
+				specName: talent.career_specialization.getDisplayValue(),
+				costToPurchase: parseInt(talent.xp_cost),
+				isPurchased: false,
+				description: talent.talent.description + '',
+				activeOrPassive: talent.talent.passive_or_active.getDisplayValue(),
+				forceTalent: talent.talent.force_talent + '',
+				preReqs: talent.pre_requisite_talents.toString().split(',')
+			};
+			if(t.tier == 1 || t.preReqs[0] == ''){
+				t.canPurchase = true;
+			}
+			input.talents.push(t);
+		}
+		data.talents = input.talents;
+		
+		//update career skills
+		specGR.get(input.spec);
+		specSkills = specGR.specialization_skills.toString().split(',');
+		for(specSkill = 0; specSkill < specSkills.length; specSkill++){
+			for(var ss = 0; ss < data.skills.length; ss++){
+				if(data.skills[ss].sysID == specSkills[specSkill]){
+					data.skills[ss].isCareer = true;
+					data.skills[ss].costToNextRank = ((data.skills[ss].rank + 1) * 5);
+				}
+			}
+		}
+	} else if(input && input.action == 'finalizeCharacter'){
+		var char = new GlideRecord('x_176383_star_wars_character');
+		char.initialize();
+		char.species = input.characterDetails.sysID;
+		char.career = data.careerID;
+		char.career_specializations = input.specializations.join(',');
+		if(data.isJedi){
+			char.force_rating = 1;
+		} else{
+			char.force_rating = 0;
+		}
+		char.brawn = input.characterDetails.investedBrawnInt;
+		char.agility = input.characterDetails.investedAgilityInt;
+		char.intellect = input.characterDetails.investedIntellectInt;
+		char.cunning = input.characterDetails.investedCunningInt;
+		char.willpower = input.characterDetails.investedWillpowerInt;
+		char.presence = input.characterDetails.investedPresenceInt;
+		char.player = gs.getUserID();
+		char.wounds_threshold = input.characterDetails.baseWound + input.characterDetails.investedBrawnInt;
+		char.strain_threshold = input.characterDetails.baseStrain + input.characterDetails.investedWillpowerInt;
+		char.soak_value = input.characterDetails.investedBrawnInt;
+		char.total_xp = input.characterDetails.baseXP;
+		char.available_xp = input.characterDetails.startingXPInt;
+		char.name = data.characterName;
+		char.insert();
+		data.characterID = char.sys_id + '';
+		char.get(data.characterID);
+		
+		var skillGR = new GlideRecord('x_176383_star_wars_m2m_character_skills');
+		for(var i = 0; i < input.skills.length; i++){
+			skillGR.initialize();
+			skillGR.character = data.characterID;
+			skillGR.career = input.skills[i].isCareer;
+			skillGR.skill = input.skills[i].sysID;
+			skillGR.rank = input.skills[i].rank;
+			skillGR.cost_to_next_rank = input.skills[i].costToNextRank;
+			skillGR.insert();
+		}
+		
+		var talentGR = new GlideRecord('x_176383_star_wars_character_talents_m2m');
+		for(i = 0; i < input.talents.length; i++){
+			if(input.talents[i].isPurchased){
+				talentGR.initialize();
+				talentGR.character = data.characterID;
+				talentGR.talent = input.talents[i].sysID;
+				talentGR.description = input.talents[i].description;
+				talentGR.insert();
+			}
+		}
+	}
+}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-16 18:34:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fd44b3432f771890e0f497eef699b611</sys_id>
+        <sys_mod_count>695</sys_mod_count>
+        <sys_name>Star Wars Character Creator</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_fd44b3432f771890e0f497eef699b611</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-31 20:32:14</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 character-creator-container">
+	<div class="col-xs-12 header-container">
+    <h1 id="characterCreatorHeader">Character Creation</h1>
+    <h4 id="characterCreatorHeaderAurebesh" class="star-wars-text">Character Creation</h4>
+  </div>
+  
+  <!-- choosing species -->
+  <div ng-if="data.step == 1" class="col-xs-12 species-selection-container">
+    <div class="col-xs-12 character-name-container">
+    	<label id="characterNameLabel" for="characterName">Character Name:</label><br>
+    	<input type="text" ng-blur="stashName()" id="characterName" name="characterName" value="{{data.characterName}}"><br><br>
+    </div>
+    <div class="col-xs-12 species-list-container">
+      <div class="col-xs-12 header-container">
+        <h2 id="speciesListHeader">Choose a Species</h2>
+        <h4 class="star-wars-text">Choose a Species</h4>
+      </div>
+      <div class="col-xs-12 species-list">
+        <span class="col-xs-12 species-record" ng-repeat="s in data.species">
+          <span class="col-xs-3 species-image"><img ng-click="openLargeImage(s.image)" height="85px" width="50px" src="{{s.image}}"/><i class="fas fa-expand-alt" ng-click="openLargeImage(s.image)"></i></span>
+          <span class="col-xs-6 species-name">{{s.name}}</span><br>
+          <span class="col-xs-6 star-wars-text species-name-sw">{{s.name}}</span>
+          <span class="col-xs-3 buttons">
+            <button class="info-button" ng-click="showInfo('species', s)">Info</button><br>
+            <button class="select-button" ng-click="makeSelection(s.sysID)">Select</button>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="large-image-container" id="largeImgContainer">
+    <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeLargerImage()"></i></span>
+    <img height="425px" width="250px" src="{{data.currentImage}}">
+  </div>
+  
+  <div class="info-container" id="speciesInfoContainer">
+    <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeInfo('species')"></i></span>
+    <div class="col-xs-12 species-info">
+      <span class="col-xs-12 col-md-4 species-name">{{data.currentSpecies.name}}<br><text class="star-wars-text">{{data.currentSpecies.name}}</text></span>
+      <span class="col-xs-12 col-md-8 species-details">
+        <span class="col-xs-4 col-md-1 characteristic top-characteristic">Brawn<br>{{data.currentSpecies.brawn}}</span>
+        <span class="col-xs-4 col-md-1 characteristic top-characteristic">Agility<br>{{data.currentSpecies.agility}}</span>
+        <span class="col-xs-4 col-md-1 characteristic top-characteristic">Intellect<br>{{data.currentSpecies.intellect}}</span>
+        <span class="col-xs-4 col-md-1 characteristic">Cunning<br>{{data.currentSpecies.cunning}}</span>
+        <span class="col-xs-4 col-md-1 characteristic">Willpower<br>{{data.currentSpecies.willpower}}</span>
+        <span class="col-xs-4 col-md-1 characteristic">Presence<br>{{data.currentSpecies.presence}}</span>
+      </span>
+      <span class="col-xs-12 starting-values">
+        <span class="col-xs-4 starting-xp">Starting XP<br>{{data.currentSpecies.startingXP}}</span>
+        <span class="col-xs-4 base-wound">Base Wound Threshold<br>{{data.currentSpecies.baseWound}} + Brawn</span>
+        <span class="col-xs-4 base-strain">Base Strain Threshold<br>{{data.currentSpecies.baseStrain}} + Willpower</span>
+      </span>
+      <span class="col-xs-12 species-description" ng-bind-html="data.currentSpecies.description"></span>
+      <span class="col-xs-12 select-species-button">
+        <button class="select-button-details-container" ng-click="makeSelection(data.currentSpecies.sysID)">Select</button>
+      </span>
+    </div>
+  </div>
+  <!-- end species selection -->
+  
+  <!-- choosing career -->
+  <div ng-if="data.step == 2" class="col-xs-12 careers-container">
+    <div class="col-xs-12 back-button" ng-click="goBack(data.step)">
+      <i class="fad fa-starfighter fa-2x" id="starfighterBackButton"></i> <text id="backButtonText">Back</text>
+    </div>
+    <div class="col-xs-12 header-container">
+      <h2 id="careersListHeader">Choose a Career</h2>
+      <h4 class="star-wars-text">Choose a Career</h4>
+    </div>
+    <div class="col-xs-12 careers-list-container">
+      <span class="col-xs-12 career-item" ng-repeat="career in data.careers">
+        <span class="col-xs-8 career-name">{{career.name}}</span>
+        <span class="col-xs-4 career-buttons">
+          <button class="career-info-button" ng-click="showInfo('career', career)">Info</button>
+          <button class="career-select-button" ng-click="makeSelection(career.sysID)">Select</button>
+        </span>
+      </span>
+    </div>
+  </div>
+  
+  <div class="info-container" id="careerInfoContainer">
+    <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeInfo('career')"></i></span>
+    <div class="col-xs-12">
+      <span class="col-xs-12 center-text career-name">{{data.currentCareer.name}}</span>
+      <span class="col-xs-12 center-text star-wars-text" id="careerSWText">{{data.currentCareer.name}}</span>
+      <span class="col-xs-12 description" ng-bind-html="data.currentCareer.description"></span>
+    </div>
+    <span class="col-xs-12 select-career-button">
+        <button class="select-button-details-container" ng-click="makeSelection(data.currentCareer.sysID)">Select</button>
+      </span>
+  </div>
+  <!-- end career selection -->
+  
+  <!-- choosing career specialization -->
+  <div ng-if="data.step == 3" class="col-xs-12 careers-specialization-container">
+    <div class="col-xs-12 back-button" ng-click="goBack(data.step)">
+      <i class="fad fa-starfighter fa-2x" id="starfighterBackButton"></i> <text id="backButtonText">Back</text>
+    </div>
+    <div class="col-xs-12 header-container">
+      <h2 id="specializationListHeader">Choose a Specialization</h2>
+      <h4 class="star-wars-text">Choose a Specialization</h4>
+    </div>
+    <div class="col-xs-12 specialization-list-container">
+      <span class="col-xs-12 specialization-item" ng-repeat="spec in data.specializations">
+        <span class="col-xs-8 spec-name">{{spec.name}}</span>
+        <span class="col-xs-4 spec-buttons">
+         <button class="career-info-button" ng-click="showInfo('specialization', spec)">Info</button>
+         <button class="career-select-button" ng-click="makeSelection(spec.sysID)">Select</button>
+        </span>
+      </span>
+    </div>
+  </div>
+  
+  <div class="info-container" id="specializationInfoContainer">
+    <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeInfo('specialization')"></i></span>
+    <div class="col-xs-12">
+      <span class="col-xs-12 center-text spec-name">{{data.currentSpecialization.name}}</span>
+      <span class="col-xs-12 center-text star-wars-text">{{data.currentSpecialization.name}}</span>
+      <span class="col-xs-12 description" ng-bind-html="data.currentSpecialization.desc"></span>
+    </div>
+    <span class="col-xs-12 select-spec-button">
+        <button class="select-button-details-container" ng-click="makeSelection(data.currentSpecialization.sysID)">Select</button>
+      </span>
+  </div>
+  <!-- end specialization selection -->
+  
+  <!-- Invest XP section -->
+  <div ng-if="data.step == 4 && data.freeSkillRanksSelected" class="col-xs-12 invest-xp-container">
+    <div class="col-xs-12 back-button" ng-click="goBack(data.step)">
+      <i class="fad fa-starfighter fa-2x" id="starfighterBackButton"></i> <text id="backButtonText">Back</text>
+    </div>
+    <div class="col-xs-12 header-container">
+      <h2 id="investXPHeader">Invest XP</h2>
+      <h4 class="star-wars-text">Invest XP</h4>
+      <span class="col-xs-12 icon-definition"><i class="far fa-medal"></i> = Career Skill</span>
+      <span class="col-xs-12 icon-definition"><i class="fab fa-jedi-order"></i> = Force Talent</span>
+    </div>
+    <div class="col-xs-12 investments-container">
+      <div class="pull-right xp-tracker">
+        <span id="xpValue">Available XP</span><br>
+        <span id="xpValueSW" class="star-wars-text">Available XP</span><br>
+        <span id="xpNumber">{{data.investXPSpecies.startingXPString}}</span>
+        <span class="col-xs-12 finalize-button"><button id="finalizeButton" ng-click="finalizeCharacter()">Finalize</button></span>
+      </div>
+      <div class="col-xs-12 characteristics-investment-container">
+        <span class="col-xs-12" id="investCharacteristicsHeader">Characteristics</span>
+        <span class="col-xs-12 star-wars-text" id="investCharacteristicsHeaderSW">Characteristics</span>
+        <span class="col-xs-4 col-md-2 invest-characteristics">
+          <span ng-if="data.investXPSpecies.startingXPInt >= data.investXPSpecies.costOfBrawnIncrease && data.investXPSpecies.investedBrawnInt < 5" class="col-xs-12 increase-characteristic"><button class="col-xs-12 col-md-4 col-md-offset-4 characteristic-plus-button" ng-click="investXP('characteristic', 'brawn')"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+          <span class="col-xs-12 col-md-4 col-md-offset-4 characteristic-value">Brawn<br>{{data.investXPSpecies.brawnString}}</span>
+          <span ng-if="data.investXPSpecies.investedBrawnInt > data.investXPSpecies.baseBrawnInt" class="col-xs-12 decrease-characteristic"><button class="characteristic-minus-button" ng-click="divestXP('characteristic', 'brawn')"><i class="fad fa-sword-laser-alt lightsabers-plus-minus"></i></button></span>
+        </span>
+        <span class="col-xs-4 col-md-2 invest-characteristics">
+          <span ng-if="data.investXPSpecies.startingXPInt >= data.investXPSpecies.costOfAgilityIncrease && data.investXPSpecies.investedAgilityInt < 5" class="col-xs-12 increase-characteristic"><button class="col-xs-12 col-md-4 col-md-offset-4 characteristic-plus-button" ng-click="investXP('characteristic', 'agility')"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+          <span class="col-xs-12 col-md-4 col-md-offset-4 characteristic-value">Agility<br>{{data.investXPSpecies.agilityString}}</span>
+          <span ng-if="data.investXPSpecies.investedAgilityInt > data.investXPSpecies.baseAgilityInt" class="col-xs-12 decrease-characteristic"><button class="characteristic-minus-button" ng-click="divestXP('characteristic', 'agility')"><i class="fad fa-sword-laser-alt lightsabers-plus-minus"></i></button></span>
+        </span>
+        <span class="col-xs-4 col-md-2 invest-characteristics">
+          <span ng-if="data.investXPSpecies.startingXPInt >= data.investXPSpecies.costOfIntellectIncrease && data.investXPSpecies.investedIntellectInt < 5" class="col-xs-12 increase-characteristic"><button class="col-xs-12 col-md-4 col-md-offset-4 characteristic-plus-button" ng-click="investXP('characteristic', 'intellect')"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+          <span class="col-xs-12 col-md-4 col-md-offset-4 characteristic-value">Intellect<br>{{data.investXPSpecies.intellectString}}</span>
+          <span ng-if="data.investXPSpecies.investedIntellectInt > data.investXPSpecies.baseIntellectInt" class="col-xs-12 decrease-characteristic"><button class="characteristic-minus-button" ng-click="divestXP('characteristic', 'intellect')"><i class="fad fa-sword-laser-alt lightsabers-plus-minus"></i></button></span>
+        </span>
+        <span class="col-xs-4 col-md-2 invest-characteristics">
+          <span ng-if="data.investXPSpecies.startingXPInt >= data.investXPSpecies.costOfCunningIncrease && data.investXPSpecies.investedCunningInt < 5" class="col-xs-12 increase-characteristic"><button class="col-xs-12 col-md-4 col-md-offset-4 characteristic-plus-button" ng-click="investXP('characteristic', 'cunning')"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+          <span class="col-xs-12 col-md-4 col-md-offset-4 characteristic-value">Cunning<br>{{data.investXPSpecies.cunningString}}</span>
+          <span ng-if="data.investXPSpecies.investedCunningInt > data.investXPSpecies.baseCunningInt" class="col-xs-12 decrease-characteristic"><button class="characteristic-minus-button" ng-click="divestXP('characteristic', 'cunning')"><i class="fad fa-sword-laser-alt lightsabers-plus-minus"></i></button></span>
+        </span>
+        <span class="col-xs-4 col-md-2 invest-characteristics">
+          <span ng-if="data.investXPSpecies.startingXPInt >= data.investXPSpecies.costOfWillpowerIncrease && data.investXPSpecies.investedWillpowerInt < 5" class="col-xs-12 increase-characteristic"><button class="col-xs-12 col-md-4 col-md-offset-4 characteristic-plus-button" ng-click="investXP('characteristic', 'willpower')"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+          <span class="col-xs-12 col-md-4 col-md-offset-4 characteristic-value">Willpower<br>{{data.investXPSpecies.willpowerString}}</span>
+          <span ng-if="data.investXPSpecies.investedWillpowerInt > data.investXPSpecies.baseWillpowerInt" class="col-xs-12 decrease-characteristic"><button class="characteristic-minus-button" ng-click="divestXP('characteristic', 'willpower')"><i class="fad fa-sword-laser-alt lightsabers-plus-minus"></i></button></span>
+        </span>
+        <span class="col-xs-4 col-md-2 invest-characteristics">
+          <span ng-if="data.investXPSpecies.startingXPInt >= data.investXPSpecies.costOfPresenceIncrease && data.investXPSpecies.investedPresenceInt < 5" class="col-xs-12 increase-characteristic"><button class="col-xs-12 col-md-4 col-md-offset-4 characteristic-plus-button" ng-click="investXP('characteristic', 'presence')"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+          <span class="col-xs-12 col-md-4 col-md-offset-4 characteristic-value">Presence<br>{{data.investXPSpecies.presenceString}}</span>
+          <span ng-if="data.investXPSpecies.investedPresenceInt > data.investXPSpecies.basePresenceInt" class="col-xs-12 decrease-characteristic"><button class="characteristic-minus-button" ng-click="divestXP('characteristic', 'presence')"><i class="fad fa-sword-laser-alt lightsabers-plus-minus"></i></button></span>
+        </span>
+      </div>
+      <div class="col-xs-12 investment-tabs-container">
+        <span ng-if="data.isJedi" class="col-xs-3 investment-tab-header" id="skillInvestHeader" ng-click="switchInvestmentTabs('skills')">
+          <span class="col-xs-12">Skills</span>
+        	<span class="col-xs-12 mobile-sw-text star-wars-text" id="skillsInvestHeaderSW">Skills</span>
+        </span>
+        <span ng-if="!data.isJedi" class="col-xs-4 investment-tab-header" id="skillInvestHeader" ng-click="switchInvestmentTabs('skills')">
+          <span class="col-xs-12">Skills</span>
+        	<span class="col-xs-12 mobile-sw-text star-wars-text" id="skillsInvestHeaderSW">Skills</span>
+        </span>
+        <span ng-if="data.isJedi" class="col-xs-3 investment-tab-header" id="talentInvestHeader" ng-click="switchInvestmentTabs('talents')">
+          <span class="col-xs-12">Talents</span>
+          <span class="col-xs-12 mobile-sw-text star-wars-text">Talents</span>
+        </span>
+        <span ng-if="!data.isJedi" class="col-xs-4 investment-tab-header" id="talentInvestHeader" ng-click="switchInvestmentTabs('talents')">
+          <span class="col-xs-12">Talents</span>
+          <span class="col-xs-12 mobile-sw-text star-wars-text">Talents</span>
+        </span>
+        <span ng-if="data.isJedi" class="col-xs-3 investment-tab-header" id="specInvestHeader" ng-click="switchInvestmentTabs('specializations')">
+          <span class="col-xs-12">Specializations</span>
+          <span class="col-xs-12 mobile-sw-text star-wars-text">Specializations</span>
+        </span>
+        <span ng-if="!data.isJedi" class="col-xs-4 investment-tab-header" id="specInvestHeader" ng-click="switchInvestmentTabs('specializations')">
+          <span class="col-xs-12">Specializations</span>
+          <span class="col-xs-12 mobile-sw-text star-wars-text">Specializations</span>
+        </span>
+        <span ng-if="data.isJedi" class="col-xs-3 investment-tab-header" id="forceInvestHeader" ng-click="switchInvestmentTabs('force')">
+          <span class="col-xs-12">Force Powers</span>
+          <span class="col-xs-12 mobile-sw-text star-wars-text">Force Powers</span>
+        </span>
+      </div>
+      <!-- buying skills section -->
+      <div ng-if="data.investingXPCategory == 'skills'" class="col-xs-12 skills-investment-container">
+        <span class="col-xs-6 col-md-8 skill-name-header">Skill</span>
+        <span class="col-xs-2 skill-rank-header">Rank</span>
+        <span class="col-xs-12 skill" ng-repeat="skill in data.skills">
+          <span class="col-xs-6 col-md-8 skill-name">{{skill.name}} <i ng-if="skill.isCareer" class="far fa-medal"></i></span>
+          <span class="col-xs-2 skill-rank">{{skill.rankString}}</span>
+          <span class="col-xs-4 col-md-2 invest-buttons-container">
+            <span ng-if="skill.costToNextRank <= data.investXPSpecies.startingXPInt && skill.rank < 2" class="col-xs-12 increase-skill-button"><button class="skill-increase-button" ng-click="investXP('skill', skill)"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+            <span ng-if="skill.rank > skill.baseRank && skill.rank > skill.freeRanks" class="col-xs-12 decrease-skill-button"><button class="skill-decrease-button" ng-click="divestXP('skill', skill)"><i class="fad fa-sword-laser-alt lightsabers-plus-minus"></i></button></span>
+          </span>
+        </span>
+      </div>
+      <!-- buying talents section -->
+      <div ng-if="data.investingXPCategory == 'talents'" class="col-xs-12 talent-investment-container">
+        <span class="col-xs-6 col-md-8 talent-name-header">Talent</span>
+        <span class="col-xs-2 talent-tier-header">Tier</span>
+        <span class="col-xs-12 talent" ng-if="talent.canPurchase" ng-repeat="talent in data.talents">
+          <span class="col-xs-6 col-md-8 talent-name">{{talent.name}} <i class="far fa-info-circle" ng-click="showInfo('talent', talent)"></i><br><text class="talent-specialization-name">{{talent.specName}}</text></span>
+          <span class="col-xs-2 talent-tier">{{talent.tierString}}</span>
+          <span class="col-xs-4 col-md-2 invest-buttons-container">
+            <span ng-if="!talent.isPurchased && talent.costToPurchase <= data.investXPSpecies.startingXPInt" class="col-xs-12 increase-skill-button"><button class="skill-increase-button" ng-click="investXP('talent', talent)">Purchase</button></span>
+            <span ng-if="talent.isPurchased" class="col-xs-12 decrease-skill-button"><button class="skill-decrease-button" ng-click="divestXP('talent', talent)">Refund</button></span>
+          </span>
+        </span>
+      </div>
+      
+     <div class="info-container" id="talentInfoContainer">
+    	<span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeInfo('talent')"></i></span>
+    	<div class="col-xs-12">
+        <span class="col-xs-12 center-text spec-name">{{data.currentTalent.name}} <i ng-if="data.currentTalent.forceTalent == 'true'" class="fab fa-jedi-order"></i></span>
+      	<span class="col-xs-12 center-text star-wars-text">{{data.currentTalent.name}}</span>
+        <span class="col-xs-12 center-text active-passive">{{data.currentTalent.activeOrPassive}}</span>
+      	<span class="col-xs-12 description" ng-bind-html="data.currentTalent.description"></span>
+    	</div>
+    	<span class="col-xs-12 select-spec-button">
+       <button ng-if="!data.currentTalent.isPurchased" class="select-button-details-container" ng-click="investXP('talent', data.currentTalent)">Purchase</button>
+      </span>
+  	</div>
+      <!-- buying specializations sections -->
+      <div ng-if="data.investingXPCategory == 'specializations'" class="col-xs-12 specialization-investment-container">
+        <span class="col-xs-8 spec-name-header">Specialization</span>
+        <span class="col-xs-12 specialization" ng-repeat="spec in data.availableCareerSpecializations">
+          <span class="col-xs-8 spec-name">{{spec.name}} <i class="far fa-info-circle" ng-click="showInfo('investSpec', spec)"></i></span>
+          <span class="col-xs-4 invest-buttons-container">
+            <span ng-if="!spec.isPurchased && spec.costToPurchase <= data.investXPSpecies.startingXPInt" class="col-xs-12 increase-skill-button"><button class="skill-increase-button" ng-click="investXP('investSpec', spec)">Purchase</button></span>
+            <span ng-if="spec.isPurchased" class="col-xs-12 decrease-skill-button"><button class="skill-decrease-button" ng-click="divestXP('investSpec', spec)">Refund</button></span>
+          </span>
+        </span>
+      </div>
+      
+      <div class="info-container" id="investSpecInfoContainer">
+        <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeInfo('investSpec')"></i></span>
+        <div class="col-xs-12">
+          <span class="col-xs-12 center-text spec-name">{{data.currentSpecialization.name}}</span>
+          <span class="col-xs-12 center-text star-wars-text">{{data.currentSpecialization.name}}</span>
+      		<span class="col-xs-12 description" ng-bind-html="data.currentSpecialization.description"></span>
+        </div>
+        <span class="col-xs-12 select-spec-button">
+          <button ng-if="!data.currentSpecialization.isPurchased" class="skill-increase-button" ng-click="investXP('investSpec', data.currentSpecialization)">Purchase</button>
+          <button ng-if="data.currentSpecialization.isPurchased" class="skill-decrease-button" ng-click="divestXP('investSpec', data.currentSpecialization)">Refund</button>
+        </span>
+      </div>
+      <!-- buying force powers section -->
+      <div ng-if="data.investingXPCategory == 'force'">
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- select career and specialization skills -->
+  <div ng-if="!data.freeSkillRanksSelected && data.step == 4" class="col-xs-12 career-specialization-skills-selection-container">
+    <div class="col-xs-12 back-button" ng-click="goBack(data.step)">
+      <i class="fad fa-starfighter fa-2x" id="starfighterBackButton"></i> <text id="backButtonText">Back</text>
+    </div>
+    <span class="col-xs-12 free-skill-header" id="freeSkillHeader">Select Career and Specialization Career Ranks</span>
+    <span class="col-xs-12 star-wars-text free-skill-header-sw" id="freeSkillHeaderSW">Select Career and Specialization Career Ranks</span>
+    <div ng-if="data.freeSpeciesRanks.length > 0" class="col-xs-12 specialization-skill-selection" id="speciesSkillsChoice">
+      <span class="col-xs-12 free-skills-label">Pick a Free Species Skill Rank</span>
+      <span class="col-xs-3 col-md-2 free-career-skill-rank" ng-click="useFreeSpeciesRank(speciesSkill)" ng-repeat="speciesSkill in data.freeSpeciesRanks" free-rank-used="{{speciesSkill.freeRankUsed}}">
+        <span class="col-xs-12 free-skill-name">{{speciesSkill.name}}</span>
+      </span>
+    </div>
+    <div class="col-xs-12 career-skills-selection">
+      <span class="col-xs-12 free-skills-label" id="careerSkillsLabel">Pick {{data.freeCareerSkillsRemaining}} Career Skills</span>
+      <span class="col-xs-3 col-md-2 free-career-skill-rank" ng-click="useFreeCareerRank(skill)" ng-repeat="skill in data.freeCareerSkillRanks" free-rank-used="{{skill.freeRankUsed}}">
+        <span class="col-xs-12 free-skill-name">{{skill.name}}</span>
+      </span>
+    </div>
+    <div class="col-xs-12 specialization-skill-selection">
+      <span class="col-xs-12 free-skills-label">Pick {{data.freeSpecSkillsRemaining}} Specialization Skills</span>
+      <span class="col-xs-3 col-md-2 free-career-skill-rank" ng-click="useFreeSpecRank(specSkill)" ng-repeat="specSkill in data.freeSpecSkillRanks" free-rank-used="{{specSkill.freeRankUsed}}">
+        <span class="col-xs-12 free-skill-name">{{specSkill.name}}</span>
+      </span>
+    </div>
+    <div ng-if="data.freeCareerSkillsRemaining == 0 && data.freeSpecSkillsRemaining == 0" class="col-xs-12 confirm-button-container" align="center">
+      <button id="confirmFreeSkillsButton" ng-click="confirmFreeSkills()">Confirm Skill Selection</button>
+    </div>
+  </div>
+  <!-- end invest XP section -->
+</div>]]></template>
+    </sp_widget>
+</record_update>

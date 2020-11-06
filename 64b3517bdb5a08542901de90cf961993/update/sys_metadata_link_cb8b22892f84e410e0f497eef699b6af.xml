@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ae7081982f3bd850e0f497eef699b61b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_career_specialization_talent_tree_m2m">
+    <x_176383_star_wars_career_specialization_talent_tree_m2m action="INSERT_OR_UPDATE">
+        <career_specialization display_value="Niman Disciple">0a1ce1962fe3d050e0f497eef699b635</career_specialization>
+        <pre_requisite_talents>4850cd582f3bd850e0f497eef699b6a8</pre_requisite_talents>
+        <rank>2</rank>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-07 16:25:32</sys_created_on>
+        <sys_id>ae7081982f3bd850e0f497eef699b61b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-07 16:25:32</sys_updated_on>
+        <talent display_value="Niman technique">1485ec70db624c542901de90cf961925</talent>
+        <xp_cost>10</xp_cost>
+    </x_176383_star_wars_career_specialization_talent_tree_m2m>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-22 18:24:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cb8b22892f84e410e0f497eef699b6af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_cb8b22892f84e410e0f497eef699b6af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-22 18:24:11</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="31b95b102fd06450e0f497eef699b665" sys_domain="global" table="x_176383_star_wars_gear" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-02 00:06:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35b95b102fd06450e0f497eef699b666</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_176383_star_wars_gear" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">31b95b102fd06450e0f497eef699b665</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">bed81bd82f906450e0f497eef699b61a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-02 00:06:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-02 00:06:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b5b95b102fd06450e0f497eef699b668</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_176383_star_wars_gear" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">31b95b102fd06450e0f497eef699b665</sys_ui_form>
+            <sys_ui_section caption="Weapon" display_value="Weapon" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">71b95b102fd06450e0f497eef699b667</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-02 00:06:09</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-02 00:07:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>edf95f102fd06450e0f497eef699b6eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_176383_star_wars_gear" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">31b95b102fd06450e0f497eef699b665</sys_ui_form>
+            <sys_ui_section caption="Armor" display_value="Armor" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">69f95f102fd06450e0f497eef699b6e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-02 00:07:13</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-02 00:08:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>312a53502fd06450e0f497eef699b6ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_176383_star_wars_gear" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">31b95b102fd06450e0f497eef699b665</sys_ui_form>
+            <sys_ui_section caption="Mod" display_value="Mod" name="x_176383_star_wars_gear" sys_domain="global" view="Default view">3d2a5b102fd06450e0f497eef699b6d3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-02 00:08:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_176383_star_wars_gear</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-02 00:06:09</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>31b95b102fd06450e0f497eef699b665</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_176383_star_wars_gear</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_ui_form_sections_31b95b102fd06450e0f497eef699b665</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-02 00:06:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

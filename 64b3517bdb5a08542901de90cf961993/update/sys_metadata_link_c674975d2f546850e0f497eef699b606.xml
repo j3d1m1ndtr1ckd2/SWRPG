@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>692e58242fd46450e0f497eef699b63c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_weapon_quality">
+    <x_176383_star_wars_weapon_quality action="INSERT_OR_UPDATE">
+        <description>Some weapons, like the laser cannons fitted to the Z-95 Headhunter, are designed to fire together at the same target. This increases the possibility of a hit as well as the damage dealt. When firing a linked weapon, on a successful attack, the weapon deals one hit. The wielder may spend 2 advantage to gain an additional hit, and may do so a number of times equal to the weapon's linked rating. Additional hits from linked weapons may only be applied against the original target. Each hit deals the weapon's base damage plus total success scored on the check.</description>
+        <name>Linked (Active)</name>
+        <number>WQ0001019</number>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 05:06:22</sys_created_on>
+        <sys_id>692e58242fd46450e0f497eef699b63c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 05:06:22</sys_updated_on>
+    </x_176383_star_wars_weapon_quality>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-05 02:17:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c674975d2f546850e0f497eef699b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Linked (Active)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c674975d2f546850e0f497eef699b606</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-05 02:17:09</sys_updated_on>
+        <tablename>x_176383_star_wars_weapon_quality</tablename>
+    </sys_metadata_link>
+</record_update>

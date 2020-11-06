@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>eb9fd0282fd46450e0f497eef699b68c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_weapon_quality">
+    <x_176383_star_wars_weapon_quality action="INSERT_OR_UPDATE">
+        <description>When activated, the attacker chooses one item openly wielded by the target (such as a weapon, shield,&#13;
+or item on a belt). That item is damaged one step: to Minor if undamaged, from Minor to Moderate, or&#13;
+from Moderate to Major. If a weapon already suffering Major damage is the target of a successful Sunder, it is destroyed.&#13;
+&#13;
+Sunder requires 1 advantage to activate. If activated multiple times in the same attack, each can be applied against the same weapon, potentially taking a weapon from undamaged to destroyed in a single attack.</description>
+        <name>Sunder (Active)</name>
+        <number>WQ0001025</number>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 05:12:13</sys_created_on>
+        <sys_id>eb9fd0282fd46450e0f497eef699b68c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 05:12:13</sys_updated_on>
+    </x_176383_star_wars_weapon_quality>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-05 02:18:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>66b4db5d2f546850e0f497eef699b625</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sunder (Active)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_66b4db5d2f546850e0f497eef699b625</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-05 02:18:17</sys_updated_on>
+        <tablename>x_176383_star_wars_weapon_quality</tablename>
+    </sys_metadata_link>
+</record_update>

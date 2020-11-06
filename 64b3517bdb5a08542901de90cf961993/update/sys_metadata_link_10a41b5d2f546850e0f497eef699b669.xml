@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a7cc50e42fd46450e0f497eef699b6b5</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_weapon_quality">
+    <x_176383_star_wars_weapon_quality action="INSERT_OR_UPDATE">
+        <description>Certain types of projectiles may benefit from course alterations after being fired—such as guided&#13;
+missiles. If a character misses while firing a Guided weapon and if Guided activates, he may make an attack check at the end of the round. The difficulty of the check is calculated by comparing the weapon's silhouette of 0 to the silhouette of the target (see page 235), and the check's Ability dice equal the weapon's Guided rating. If the test is successful, the weapon strikes the target and damage is dealt normally.&#13;
+&#13;
+Guided requires 3 advantage to activate, unless otherwise specified in the weapon's description. Remember, the Guided effect can activate on its subsequent attacks, representing the projectile continuing to track the target.&#13;
+&#13;
+"Spoofing" is a countermeasure designed to work against the particular projectile—such as flares designed to draw off an infrared missile. Spoofing directly increases the defense of the target against attacks with the Guided quality.</description>
+        <name>Guided (Active)</name>
+        <number>WQ0001013</number>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 05:00:53</sys_created_on>
+        <sys_id>a7cc50e42fd46450e0f497eef699b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 05:00:53</sys_updated_on>
+    </x_176383_star_wars_weapon_quality>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-05 02:17:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>10a41b5d2f546850e0f497eef699b669</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guided (Active)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_10a41b5d2f546850e0f497eef699b669</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-05 02:17:51</sys_updated_on>
+        <tablename>x_176383_star_wars_weapon_quality</tablename>
+    </sys_metadata_link>
+</record_update>

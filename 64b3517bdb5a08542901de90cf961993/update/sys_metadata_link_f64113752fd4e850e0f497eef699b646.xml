@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>720fa3a52f18a850e0f497eef699b61f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Maneuver) The character may perform the Rain of Death maneuver.  If he does so, when he makes an attack in the same turn he does not increase the difficulty of the attack due to the Auto-fire quality.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Rain of Death</name>
+        <number>TAL0001256</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-05 22:52:13</sys_created_on>
+        <sys_id>720fa3a52f18a850e0f497eef699b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-05 22:52:13</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 15:20:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f64113752fd4e850e0f497eef699b646</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rain of Death</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f64113752fd4e850e0f497eef699b646</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 15:20:15</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>31ed2f652f18a850e0f497eef699b6ac</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Incidental, out of turn) Immediately after being hit by a successful combat check but before damage is calculated, the character may spend one Destiny Point to increase his soak by a number equal to his ranks in Resilience.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Heroic Resilience</name>
+        <number>TAL0001251</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-05 22:47:18</sys_created_on>
+        <sys_id>31ed2f652f18a850e0f497eef699b6ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-05 22:47:18</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 15:19:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1e215f352fd4e850e0f497eef699b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Heroic Resilience</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_1e215f352fd4e850e0f497eef699b685</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 15:19:40</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 17:56:19</sys_created_on>
-            <sys_id>b35e8998dbae88542901de90cf9619b8</sys_id>
+            <sys_created_on>2020-10-20 16:35:37</sys_created_on>
+            <sys_id>998fb7dc2f482410e0f497eef699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_skills" sys_domain="global" view="Default view">133ec198dbae88542901de90cf961982</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 17:56:19</sys_updated_on>
+            <sys_updated_on>2020-10-20 16:35:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 17:56:19</sys_created_on>
-            <sys_id>3b5e8998dbae88542901de90cf9619b8</sys_id>
+            <sys_created_on>2020-10-20 16:35:37</sys_created_on>
+            <sys_id>118fb7dc2f482410e0f497eef699b637</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_skills" sys_domain="global" view="Default view">133ec198dbae88542901de90cf961982</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 17:56:19</sys_updated_on>
+            <sys_updated_on>2020-10-20 16:35:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 17:56:19</sys_created_on>
-            <sys_id>bf5e8998dbae88542901de90cf9619b8</sys_id>
+            <sys_created_on>2020-10-20 16:35:37</sys_created_on>
+            <sys_id>958fb7dc2f482410e0f497eef699b637</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_skills" sys_domain="global" view="Default view">133ec198dbae88542901de90cf961982</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 17:56:19</sys_updated_on>
+            <sys_updated_on>2020-10-20 16:35:37</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,41 @@
             <element>type</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 17:56:19</sys_created_on>
-            <sys_id>375e8998dbae88542901de90cf9619b9</sys_id>
+            <sys_created_on>2020-10-20 16:35:37</sys_created_on>
+            <sys_id>1d8fb7dc2f482410e0f497eef699b637</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_skills" sys_domain="global" view="Default view">133ec198dbae88542901de90cf961982</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 17:56:19</sys_updated_on>
+            <sys_updated_on>2020-10-20 16:35:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-20 16:35:37</sys_created_on>
+            <sys_id>918fb7dc2f482410e0f497eef699b638</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_skills" sys_domain="global" view="Default view">133ec198dbae88542901de90cf961982</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-20 16:35:37</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-20 16:35:37</sys_created_on>
+            <sys_id>198fb7dc2f482410e0f497eef699b638</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_skills" sys_domain="global" view="Default view">133ec198dbae88542901de90cf961982</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-20 16:35:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

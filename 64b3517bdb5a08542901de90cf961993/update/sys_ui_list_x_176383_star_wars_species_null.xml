@@ -3,137 +3,182 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>daf21d10dbee88542901de90cf961943</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>f5d05c122f7fd090e0f497eef699b682</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>5ef21d10dbee88542901de90cf961943</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>79d05c122f7fd090e0f497eef699b682</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>agility</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <element>starting_xp</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>def21d10dbee88542901de90cf961943</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>f9d05c122f7fd090e0f497eef699b682</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>brawn</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <element>base_wound_threshold</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>52f21d10dbee88542901de90cf961944</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>7dd05c122f7fd090e0f497eef699b682</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>cunning</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <element>base_strain_threshold</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>d2f21d10dbee88542901de90cf961944</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>fdd05c122f7fd090e0f497eef699b682</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>description</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <element>brawn</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>56f21d10dbee88542901de90cf961944</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>71d05c122f7fd090e0f497eef699b683</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>intellect</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <element>agility</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>d6f21d10dbee88542901de90cf961944</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>f1d05c122f7fd090e0f497eef699b683</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>presence</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <element>intellect</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>5af21d10dbee88542901de90cf961944</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>75d05c122f7fd090e0f497eef699b683</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>willpower</element>
-            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92f21d10dbee88542901de90cf961943</list_id>
+            <element>cunning</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
-            <sys_id>daf21d10dbee88542901de90cf961944</sys_id>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>f5d05c122f7fd090e0f497eef699b683</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>willpower</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>79d05c122f7fd090e0f497eef699b683</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>presence</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>f9d05c122f7fd090e0f497eef699b683</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>portrait</element>
+            <list_id display_value="x_176383_star_wars_species" element="NULL" name="x_176383_star_wars_species" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3dd05c122f7fd090e0f497eef699b681</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
+            <sys_id>7dd05c122f7fd090e0f497eef699b683</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -147,11 +192,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-01-20 18:16:25</sys_created_on>
+            <sys_created_on>2020-10-13 18:04:58</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>92f21d10dbee88542901de90cf961943</sys_id>
+            <sys_id>3dd05c122f7fd090e0f497eef699b681</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_176383_star_wars_species</sys_name>
             <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
@@ -160,7 +205,7 @@
             <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
             <sys_update_name>sys_ui_list_x_176383_star_wars_species_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-01-20 18:16:25</sys_updated_on>
+            <sys_updated_on>2020-10-13 18:04:58</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

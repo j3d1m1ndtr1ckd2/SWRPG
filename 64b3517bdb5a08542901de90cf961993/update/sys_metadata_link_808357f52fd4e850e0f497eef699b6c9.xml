@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>75ac6aec2f10a450e0f497eef699b6bf</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear_special">
+    <x_176383_star_wars_gear_special action="INSERT_OR_UPDATE">
+        <item display_value="Brass Knuckles">2d4ca6ec2f10a450e0f497eef699b64e</item>
+        <number>GS0001035</number>
+        <rank>3</rank>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:27:52</sys_created_on>
+        <sys_id>75ac6aec2f10a450e0f497eef699b6bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:27:52</sys_updated_on>
+        <weapon_quality display_value="Disorient (Active)">3fdb90242fd46450e0f497eef699b6f0</weapon_quality>
+    </x_176383_star_wars_gear_special>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 15:29:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>808357f52fd4e850e0f497eef699b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GS0001035</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_808357f52fd4e850e0f497eef699b6c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 15:29:53</sys_updated_on>
+        <tablename>x_176383_star_wars_gear_special</tablename>
+    </sys_metadata_link>
+</record_update>

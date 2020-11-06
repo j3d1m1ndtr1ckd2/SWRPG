@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>373ca7252f18a850e0f497eef699b6eb</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Hired Gun"&gt;73ae8bcf2fb31890e0f497eef699b6e1&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;A Demolitionists additional career skills are &lt;strong&gt;Computers. Cool, Mechanics, and Skulduggery. &lt;/strong&gt; If this is the character&amp;#39;s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. With this selection of skills, Demolitionists can be much more technically minded than most Hired Guns. They are also suited to much more than straightforward combat. Demolitionists can excel at setting traps, from improvised trip-wires tied to grenades to sophisticated proximity and timed explosives. Whereas another Hired Gun might go after an enemy in a straight-up fight, a Demolitionist may find a more inventive route, such as rigging a thermal detonator to explode when the target starts up his speeder. Some Demolitionists enjoy the thrill of combat as much as any other Hired Gun. However, they favor flame projectors, grenade launchers, and missile tubes—anything that creates a large blast.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The work of a Demolitionist is extremely dangerous, as a single misstep can spell doom for the character (and anyone unfortunate enough to be in the general vicinity). In order to succeed, a Demolitionist must be able to keep a clear head and focus on his work, even as blaster bolts fill the air around him. As such, most Demolitionists are adept at staying cool in the most nerve-wracking situations. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;In order to put their skills to the greatest use, Demolitionists must have an understanding of the principles of construction, as well as knowing how to construct their explosive devices. Both of these are where some skill with Mechanics becomes important. By knowing how a machine operates, or the load-bearing points of a structure, a Demolitionist can determine where to place explosives for the greatest effect. Similarly, Demolitionists know how to get the most from their tools, creating larger than expected explosions or causing devastating chain reactions. Demolitionists can use their creative talents for more than sheer destruction, and can usually be counted on to find an inventive route out of a dangerous situation. Of course, sometimes that plan is even more dangerous than the original threat.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;For many groups, having a Demolitionist around is both a blessing and a curse. Demoitionists are very effective both in combat and in any job benefitting from sabotage. However, it is far from unheard of for Demolitionists to cause unintended collateral damage when things go really wrong. Fortunately, experienced Demoitionists rarely make mistakes (even if, in their profession, many mistakes tend to be final). Most individuals operating on the fringe understand that theirs is a life of danger, and think that the benefits of partnering with a skilled Demolitionist outweigh the added risk. Still, some grow weary of keeping a constant eye on their ally lest he get carried away in his destructive interests.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Demolitionist&lt;/name&gt;
+        &lt;number&gt;CARSPE0001059&lt;/number&gt;
+        &lt;specialization_skills&gt;aadf851cdbae88542901de90cf961953,b8ef415cdbae88542901de90cf9619f1,5d10155cdbae88542901de90cf96190a,db40195cdbae88542901de90cf961990&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-05 22:43:05&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;373ca7252f18a850e0f497eef699b6eb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-05 22:43:05&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 15:37:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c85517792fd4e850e0f497eef699b6a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Demolitionist</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c85517792fd4e850e0f497eef699b6a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 15:37:48</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

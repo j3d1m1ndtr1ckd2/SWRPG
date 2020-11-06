@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0fa7f2e82f50a450e0f497eef699b663</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear_special">
+    <x_176383_star_wars_gear_special action="INSERT_OR_UPDATE">
+        <item display_value="Vibro-ax">2e47f2e82f50a450e0f497eef699b657</item>
+        <number>GS0001055</number>
+        <rank>2</rank>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:16:03</sys_created_on>
+        <sys_id>0fa7f2e82f50a450e0f497eef699b663</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:16:03</sys_updated_on>
+        <weapon_quality display_value="Pierce (Passive)">857e10282fd46450e0f497eef699b633</weapon_quality>
+    </x_176383_star_wars_gear_special>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 15:27:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2f21fb52fd4e850e0f497eef699b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GS0001055</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c2f21fb52fd4e850e0f497eef699b6ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 15:27:33</sys_updated_on>
+        <tablename>x_176383_star_wars_gear_special</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9796fe682f50a450e0f497eef699b6fa</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear_special">
+    <x_176383_star_wars_gear_special action="INSERT_OR_UPDATE">
+        <item display_value="Shoto">6046be282f50a450e0f497eef699b6bb</item>
+        <number>GS0001052</number>
+        <rank>1</rank>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:11:23</sys_created_on>
+        <sys_id>9796fe682f50a450e0f497eef699b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:11:23</sys_updated_on>
+        <weapon_quality display_value="Breach (Passive)">7f7858202fd46450e0f497eef699b66e</weapon_quality>
+    </x_176383_star_wars_gear_special>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 15:30:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>78a31bf52fd4e850e0f497eef699b674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GS0001052</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_78a31bf52fd4e850e0f497eef699b674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 15:30:28</sys_updated_on>
+        <tablename>x_176383_star_wars_gear_special</tablename>
+    </sys_metadata_link>
+</record_update>

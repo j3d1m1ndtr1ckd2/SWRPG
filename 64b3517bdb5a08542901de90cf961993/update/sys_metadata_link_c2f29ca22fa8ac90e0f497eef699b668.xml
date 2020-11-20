@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9aa574312f5ca850e0f497eef699b6cc</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>12</base_damage>
+        <critical_rating>3</critical_rating>
+        <defense/>
+        <description>This grenade uses gas similar to that found in blaster weapons, leading to an explosion with the damage and effect of a blaster rifle.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required/>
+        <name>Plasma Grenade</name>
+        <number>GEAR0001114</number>
+        <price>125</price>
+        <range>short</range>
+        <rarity>6</rarity>
+        <skill_used display_value="Ranged - Light (Ag)">d290dd5cdbae88542901de90cf9619a6</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 04:01:27</sys_created_on>
+        <sys_id>9aa574312f5ca850e0f497eef699b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 04:01:27</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:39:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2f29ca22fa8ac90e0f497eef699b668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Plasma Grenade</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c2f29ca22fa8ac90e0f497eef699b668</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:39:50</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

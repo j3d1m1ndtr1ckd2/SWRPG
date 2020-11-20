@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a077c0862fe42c90e0f497eef699b698</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>2</base_damage>
+        <critical_rating>3</critical_rating>
+        <defense/>
+        <description>The making and use of cortosis swords is, perhaps, as old as the making and use of lightsabers. Cortosis swords were created to counter the elegant and deadly lightsabers wielded by Jedi and other Force adherents, and hopefully to grant their non-Force-using wielders some hope of survival against a determined lightsaber user. Built in a variety of styles, and using varying amounts of cortosis ore in their construction, cortosis-bladed swords, in the right hands, pose a decided threat to even the most powerful Force user.&#13;
+&#13;
+Models Include: BarikTarn Collective Razorblade.</description>
+        <encumbrance>3</encumbrance>
+        <hard_points>2</hard_points>
+        <hp_required/>
+        <name>Cortosis Sword</name>
+        <number>GEAR0001172</number>
+        <price>1350</price>
+        <range>engaged</range>
+        <rarity>7</rarity>
+        <skill_used display_value="Melee (Br)">0c90dd5cdbae88542901de90cf9619a4</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 05:33:47</sys_created_on>
+        <sys_id>a077c0862fe42c90e0f497eef699b698</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 05:33:47</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:32:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>874150622fa8ac90e0f497eef699b6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cortosis Sword</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_874150622fa8ac90e0f497eef699b6de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:32:32</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

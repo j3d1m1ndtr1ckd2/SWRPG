@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4c1e2d1a2fe3d050e0f497eef699b651</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Consular"&gt;95705ab92fe35050e0f497eef699b6c9&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Many Consulars know the universal truth: knowledge is power, and understanding a situation can give one a decisive advantage. This holds just as true when resolving disputes or negotiations as it does on the battlefield. A Sage focuses on studying the world around him, recognizing that information offers tremendous advantages to himself and his allies. He then uses that power to help change the hearts and minds of others to achieve his goals.&lt;/p&gt;
+&lt;div&gt;Equal parts scholar and diplomat, Sages gain the additional career skills &lt;strong&gt;Astrogation, Charm, Cool, and Knowledge (Lore)&lt;/strong&gt;. If this is a PC’s first specialization, the PC gains one rank in each of two of these skills. Sages see knowledge and understanding as the basis for long-term peace and harmony. It is their belief that hatred often springs from ignorance. When a sentient comes to appreciate the backgrounds of another being’s beliefs and practices, it becomes far easier not only accept that being but to feel compassion for him.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Some researchers may become lost in their academic pursuits, obsessing over dry facts while blind to the plight of the weak and helpless. Not so a Sage, who maintains connections to those around him via the Living Force. The Force provides a means of grounding Sages’ studies so that they keep what they learn in perspective, always mindful of how they can use their knowledge to help others.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Sage&lt;/name&gt;
+        &lt;number&gt;CARSPE0001006&lt;/number&gt;
+        &lt;specialization_skills&gt;35af0d1cdbae88542901de90cf9619ce,3acf0d1cdbae88542901de90cf9619a2,b8ef415cdbae88542901de90cf9619f1,63b0595cdbae88542901de90cf9619e4&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-01 14:36:59&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;4c1e2d1a2fe3d050e0f497eef699b651&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:36:57&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>89bd04122f686c90e0f497eef699b64e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sage</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_89bd04122f686c90e0f497eef699b64e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:21</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

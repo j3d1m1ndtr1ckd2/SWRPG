@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c929722c2f50a450e0f497eef699b65b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>2</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Many galactic civilizations have long taken to improving the simple but effective blade with induced ultrasonic vibrations. The high frequency vibrations of the cutting edge greatly improve the sharpness of the weapon, allowing it to carve through most materials with ease.&#13;
+&#13;
+There are many variations of vibroblade, but the vibrosword is fairly common amongst those who fancy themselves duelists.&#13;
+&#13;
+Models Include: Merr-Sonn Damask-4 Duelist Sword.</description>
+        <encumbrance>3</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Vibrosword</name>
+        <number>GEAR0001034</number>
+        <price>750</price>
+        <range>engaged</range>
+        <rarity>5</rarity>
+        <skill_used display_value="Melee (Br)">0c90dd5cdbae88542901de90cf9619a4</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:23:19</sys_created_on>
+        <sys_id>c929722c2f50a450e0f497eef699b65b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:23:19</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>289498262fa8ac90e0f497eef699b6df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vibrosword</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_289498262fa8ac90e0f497eef699b6df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:50</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

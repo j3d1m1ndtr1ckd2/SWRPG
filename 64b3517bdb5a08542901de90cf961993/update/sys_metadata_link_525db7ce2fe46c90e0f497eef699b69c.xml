@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>519b8fcb2fb31890e0f497eef699b6ce</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Colonist"&gt;9c5b430f2fb31890e0f497eef699b654&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;If there is one thing a Politico knows how to do better than anyone else in the galaxy, it&amp;#39;s talking. He can talk to anyone about anything in any necessary way. What others accomplish with might and fear, a talented Politico may well achieve with a few well-placed words and a decent plan.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Politicos gain the Career skills of &lt;strong&gt;Charm, Coercion, Deception, and Knowledge (Core Worlds).&lt;/strong&gt;  If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. A Politico might join a discussion, speech, or debate in any number of ways. With his talents, he might act to inspire greatness in those around him, or he might know just what to say to cut an opponent to the core, diminishing his confidence and leaving him vulnerable.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Politicos in the Outer Rim are usually up to something; ambition is hardwired into their very being. They may not yet know what they wish to accomplish, but when they see an opportunity to achieve some kind of greater goal, they will turn all their will and personality towards achieving it. Politicos might sign on to temporarily work for another, but they will not long be happy in a subservient role. Leadership is the core of who they are.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;In a group, the Politico works best as the front-man, or the &amp;#34;face.&amp;#34; More than anyone, he is best suited for initial contacts with any being or group, and he&amp;#39;s the best to have at any negotiation, social gathering, or interrogation. There are even times when he can bring up morale in combat and crisis situations, though the palace throne room, corporate board room, or casino floor tend to be better battlefields for him.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Politico&lt;/name&gt;
+        &lt;number&gt;CARSPE0001027&lt;/number&gt;
+        &lt;specialization_skills&gt;3acf0d1cdbae88542901de90cf9619a2,f0df091cdbae88542901de90cf9619d6,31ffc9d8dbae88542901de90cf961924,80b0d55cdbae88542901de90cf9619c2&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:36:40&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;519b8fcb2fb31890e0f497eef699b6ce&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:05:09&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:26:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>525db7ce2fe46c90e0f497eef699b69c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Politico</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_525db7ce2fe46c90e0f497eef699b69c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:26:53</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

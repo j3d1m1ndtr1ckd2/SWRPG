@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>7f009f032ff31890e0f497eef699b69e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Smuggler"&gt;7faf0f032ff31890e0f497eef699b607&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Where the Scoundrel is a bit flashier, and the Pilot focuses on mastering his ship, the Thief really is a covert operative. His ideal circumstance is to get into places blocked to others, grab things he&amp;#39;s not supposed to have, and get out without anyone ever knowing he was there. If he can sell what he grabbed for a tidy sum, that makes for a perfect day. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Thieves gain the additional career skills &lt;strong&gt;Computers, Skulduggery, Stealth, and Vigilance. &lt;/strong&gt; If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. Combined with his talents, a Thief is particularly adept at hiding, spotting the hidden, getting past locks and security, and getting the jump on opponents in combat. He also knows his way around the underworld and where to get what&amp;#39;s needed. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Generally, Thieves tend to either operate with a group that shares in their larcenous goals, or they work alone. The galaxy is full of treasures, many of which are guarded by locks and goons. A Thief will gladly handle the locks, though he&amp;#39;ll probably appreciate having some back-up to handle the goons if things go badly. Then again, if he&amp;#39;s truly good at what he does, that shouldn&amp;#39;t happen. Some Thieves gain a strong enough reputation that they are offered contract opportunities by powerful people or groups, seeking to accomplish something against an opponent that is far beyond the realms of legal action. Of course, Thieves must always be on the lookout for a double-cross. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;As a part of a Player Character team, a Thief may not even identify himself by his specialization, preferring to display skills and abilities that are more generically appropriate to his career as a Smuggler. Frankly, most Smugglers have at least some skill in the areas that he is masterful with, so he might never have to reveal much more than that. Still, having a master Thief on a team may mean getting into—and out of—some seriously difficult places in the future.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Thief&lt;/name&gt;
+        &lt;number&gt;CARSPE0001037&lt;/number&gt;
+        &lt;specialization_skills&gt;aadf851cdbae88542901de90cf961953,db40195cdbae88542901de90cf961990,1d50595cdbae88542901de90cf9619df,2870195cdbae88542901de90cf961997&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:56:08&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;7f009f032ff31890e0f497eef699b69e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:45:29&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:27:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ea7d3bce2fe46c90e0f497eef699b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Thief</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ea7d3bce2fe46c90e0f497eef699b6d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:27:28</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

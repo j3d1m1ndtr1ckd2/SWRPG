@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>81b8fd392face890e0f497eef699b634</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Using an updated and streamlined galven pattern and heavy-duty static pulse adaptors, this custom barrel increases both the damage output and armor penetration of blaster rifles and heavy blaster rifles. The trade-off for all this extra stopping power is increased wear and tear on both the frame of the blaster and the barrel, leading to an increase in maintenance and down-time. This attachment can only be used with blaster rifles and heavy blaster rifles. Models Include: Dolmax 243X "Penetrator" Augmented Spin Barrel, Arakyd HH780 HotShot Barrel, BlasTech Model 21 3 Perforator Barrel. Base Modifiers: Increase weapon damage by one point. Adds 1 setback die to all Mechanics checks when performing maintenance on this weapon. Modification Options: 2 Damage +1 Mods, 1 Weapon Quality (Accurate + 1) Mod, 1 Weapon Quality (Pierce + 1) Mod.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>2</hp_required>
+        <name>Augmented Spin Barrel</name>
+        <number>GEAR0001139</number>
+        <price>1750</price>
+        <range/>
+        <rarity>4</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-18 19:11:41</sys_created_on>
+        <sys_id>81b8fd392face890e0f497eef699b634</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-18 19:12:40</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:34:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>00b158622fa8ac90e0f497eef699b687</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Augmented Spin Barrel</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_00b158622fa8ac90e0f497eef699b687</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:34:15</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

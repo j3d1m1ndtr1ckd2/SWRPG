@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8bc123432f371890e0f497eef699b6ce</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Engineer"&gt;552127c32f371890e0f497eef699b685&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;With a fraction of the resources and funding of the Empire, the Alliance is constantly forced to find creative solutions to problems.  These problems include matters of supply, housing, transport, effective weaponry and defenses, and a host of others.  The people they turn to for those creative solutions are those who are trained and driven to identify a need and seek out a technical solution to it --- in other words, Scientists.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The additional career skills for Scientists are &lt;strong&gt;Computers, Knowledge (Education), Knowledge (Lore), Medicine.&lt;/strong&gt;  If this is a first specialization, the PC gains a free rank in two of these skills.  Unsurprisingly, Scientists are among the most educated people in the galaxy, with a wide range of advanced knowledge in areas such as medicine and celestial mechanics.&lt;/p&gt;
+&lt;p&gt;Most Scientists pursue their work in labs, rarely venturing out into the greater galaxy.  Their lives are spent on theories and research, pondering the latest mysteries of the universe comfortably away from conflict and strife.  Some Scientists, however, seek the satisfaction of bringing their theories and their ideas into the galaxy in order to help others.  They design solutions, help create the technology to implement those solutions, and actively test and use those solutions alongside others who are also trying to help make life better.&lt;/p&gt;
+&lt;p&gt;Though Alliance officials prefer to keep Scientists in the rear echelons, as far away from danger and risk as possible, there are more than a few who insist on being the ones to test their new devices directly in the field.  Further, some Scientists sign on with the Rebellion for the express purpose of taking the fight to the Empire; they&amp;#39;re just as prepared to fire a blaster at a stormtrooper as they are to devise a way to improve the power flow for that blaster to do more damage.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Scientist&lt;/name&gt;
+        &lt;number&gt;CARSPE0001052&lt;/number&gt;
+        &lt;specialization_skills&gt;aadf851cdbae88542901de90cf961953,5ab0d55cdbae88542901de90cf9619c3,63b0595cdbae88542901de90cf9619e4,2420155cdbae88542901de90cf96190c&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 17:14:01&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;8bc123432f371890e0f497eef699b6ce&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 21:48:59&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:11:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>22e93fca2fe46c90e0f497eef699b6b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scientist</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_22e93fca2fe46c90e0f497eef699b6b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:11:54</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a5aeca3b2f0ca050e0f497eef699b677</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_career_specialization_talent_tree_m2m">
+    <x_176383_star_wars_career_specialization_talent_tree_m2m action="INSERT_OR_UPDATE">
+        <career_specialization display_value="Thief">7f009f032ff31890e0f497eef699b69e</career_specialization>
+        <pre_requisite_talents>790b0ab32f0ca050e0f497eef699b645</pre_requisite_talents>
+        <rank>5</rank>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-31 05:21:31</sys_created_on>
+        <sys_id>a5aeca3b2f0ca050e0f497eef699b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-31 05:21:31</sys_updated_on>
+        <talent display_value="Dedication">d0e053a0dbea0c542901de90cf96193c</talent>
+        <xp_cost>25</xp_cost>
+    </x_176383_star_wars_career_specialization_talent_tree_m2m>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 15:58:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9330ef1e2fa4ac90e0f497eef699b637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_9330ef1e2fa4ac90e0f497eef699b637</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 15:58:12</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

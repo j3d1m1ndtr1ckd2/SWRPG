@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b2aa83cb2fb31890e0f497eef699b6e4</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Bounty Hunter"&gt;6a1a8b8b2fb31890e0f497eef699b6e8&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Considering how often a single Bounty Hunter finds himself faced with terrible odds (more often than not, an acquisition has friends or employees who work hard to protect him), it&amp;#39;s not  surprising how many specialize in high-tech gear and weapons. The Gadgeteer excels at presenting himself as a one-person battle force, at least for a short time. Using both the latest tech and his own personally-modified gear, a Bounty Hunter with this specialization can be hard to stop.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Gadgeteers add the skills &lt;strong&gt;Brawl, Coercion, Mechanics, and Ranged (Light)&lt;/strong&gt; to their repertoire of class skills, making them ranged combat experts, effective technicians, and masters of surveillance. If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. Gadgeteer talents lean heavily towards gear use, taking down targets, and adapting to tough situations. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Gadgeteer-specialized Bounty Hunters are in many ways the ultimate hybrid of tech expert and combatant; for smaller groups, this may be a perfect choice. Gadgeteers—especially those that are operating as Independent Bounty Hunters—have little trouble signing on for nearly any job. After all, the credits they need for that next nifty piece of tech have to come from somewhere.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Gadgeteer&lt;/name&gt;
+        &lt;number&gt;CARSPE0001024&lt;/number&gt;
+        &lt;specialization_skills&gt;72705d5cdbae88542901de90cf9619f1,f0df091cdbae88542901de90cf9619d6,5d10155cdbae88542901de90cf96190a,d290dd5cdbae88542901de90cf9619a6&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:32:42&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;b2aa83cb2fb31890e0f497eef699b6e4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:58:26&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:39:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8fdd84122f686c90e0f497eef699b69a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gadgeteer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_8fdd84122f686c90e0f497eef699b69a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:39:02</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

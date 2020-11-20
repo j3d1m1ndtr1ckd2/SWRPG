@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c5a53e282f50a450e0f497eef699b6ba</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>6</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Largely considered a ceremonial weapon, long associated with temple guards and Imperial bodyguards, lightsaber pikes are nevertheless potent and dangerous weapons in the right hands. Similar in construction to a force pike or electrostaff, a lightsaber pike consists of a long, sturdy haft typically made of composites or strong alloys. The haft, while a respectable weapon in its own right, contains the internal workings of a standard lightsaber. When activated, a shoto- length blade springs from the end of the haft, creating a weapon between two and three meters long. Its size gives the lightsaber pike incredible reach and respectable defensive capabilities.&#13;
+&#13;
+This lightsaber is a basic lightsaber pike hilt containing an unmodded Ilum lightsaber crystal (see page 197). This crystal occupies two of the weapon's hard points.</description>
+        <encumbrance>3</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Lightsaber Pike</name>
+        <number>GEAR0001029</number>
+        <price>9600</price>
+        <range>engaged</range>
+        <rarity>10</rarity>
+        <skill_used display_value="Lightsaber (Br)">9e4ce9962fe3d050e0f497eef699b630</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:08:49</sys_created_on>
+        <sys_id>c5a53e282f50a450e0f497eef699b6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:08:49</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ac8458262fa8ac90e0f497eef699b6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lightsaber Pike</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ac8458262fa8ac90e0f497eef699b6cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:34</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

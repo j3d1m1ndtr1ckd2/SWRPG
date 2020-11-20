@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d4f6887c2f94a450e0f497eef699b6c1</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Avabush spice is a drug that induces relaxation and lethargy, and some use it as an illicit sleep aid. Unlike many varieties of spice, it has no hallucinogenic qualities and does not cause physical addiction in most species. However, it does have one interesting quirk that separates it from countless similar drugs: avabush spice makes users more truthful, and can be used to extract information when combined with targeted and insistent questioning. Though not particularly valuable, avabush can only be found on the planet of Baros and in certain specialized greenhouses that maintain samples. It is considerably less effective than the various truth serums commonly employed by the Empire, but is also harder to detect and less unpleasant for those consuming it.&#13;
+&#13;
+A character who has consumed avabush spice feels lethargic, and can only upgrade a single ability die to a proficiency die on any given check because of this mental torpor. Further, whenever this character intentionally tries to lie or conceal the truth, the GM upgrades any one difficulty die in the dice pool into a Challenge die. Avabush spice's effects last for one scene or combat encounter.&#13;
+&#13;
+Restrictions: Avabush spice is banned or controlled on most worlds with a strong Imperial presence.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Avabush Spice (dose)</name>
+        <number>GEAR0001099</number>
+        <price>25</price>
+        <range/>
+        <rarity>6</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 22:06:25</sys_created_on>
+        <sys_id>d4f6887c2f94a450e0f497eef699b6c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 22:06:25</sys_updated_on>
+        <type>black_market_items</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:40:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b203dca22fa8ac90e0f497eef699b6a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Avabush Spice (dose)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b203dca22fa8ac90e0f497eef699b6a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:40:10</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

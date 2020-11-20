@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9cf6bea82f50a450e0f497eef699b6c3</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>2</base_damage>
+        <critical_rating>5</critical_rating>
+        <defense/>
+        <description>Truncheons may be made of metal, wood, bone or other materials, but all fulfill the same basic function—bruising flesh, breaking bones, and cracking skulls. Police forces around the galaxy use truncheons&#13;
+to intimidate and control protestors or petty thieves. Enlightened areas prefer this to lethal force.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required/>
+        <name>Truncheon</name>
+        <number>GEAR0001031</number>
+        <price>15</price>
+        <range>engaged</range>
+        <rarity>1</rarity>
+        <skill_used display_value="Melee (Br)">0c90dd5cdbae88542901de90cf9619a4</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:13:42</sys_created_on>
+        <sys_id>9cf6bea82f50a450e0f497eef699b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:13:42</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fd64d4262fa8ac90e0f497eef699b6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Truncheon</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_fd64d4262fa8ac90e0f497eef699b6f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:07</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

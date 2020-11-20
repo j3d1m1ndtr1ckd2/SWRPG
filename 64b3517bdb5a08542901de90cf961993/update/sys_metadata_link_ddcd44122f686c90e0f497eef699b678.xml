@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>786aa8902ff7d850e0f497eef699b6d0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Sentinel"&gt;6549e4502ff7d850e0f497eef699b695&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Some Force users have an innate skill with tools and machines. These skilled artificers can use their skill with the Force to enhance their abilities, and even intuitively understand a machine’s form and function. After all, while tools and machines may not be alive, the Force envelopes everything in the galaxy. Artisans feel the Force that surrounds their tools and the items they work on, using this connection to build creations of wondrous beauty and precision. An Artisan does not create scores of the same item for sale or distribution. Instead, each of his creations is individual and iconic, a true work of art.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Artisans acquire &lt;strong&gt;Astrogation, Computers, Knowledge (Education), and Mechanics&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. In order to fully integrate their Force abilities with the devices they manipulate, Artisans must first have a solid understanding of how those tools work. This requires a fundamental educational grounding in the principles of technology.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Within urban environments, individuals who never learn to recognize their Force talents are prone to follow the Artisan’s path. This is because they are surrounded by technology, and if these individuals take an interest in how things work and how to repair them, their Force abilities may naturally develop in concert. When faced with a broken machine, they can often identify the problem in an intuitive way—some even claim that the machines “speak” to them. Some Artisans live up to the stereotype of the messy inventor, while others remain meticulously neat or even take pains to disguise their craftsmanship from casual observers.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Artisan&lt;/name&gt;
+        &lt;number&gt;CARSPE0001017&lt;/number&gt;
+        &lt;specialization_skills&gt;35af0d1cdbae88542901de90cf9619ce,aadf851cdbae88542901de90cf961953,5ab0d55cdbae88542901de90cf9619c3,5d10155cdbae88542901de90cf96190a&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-07 14:49:18&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;786aa8902ff7d850e0f497eef699b6d0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:50:26&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ddcd44122f686c90e0f497eef699b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Artisan</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ddcd44122f686c90e0f497eef699b678</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:39</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

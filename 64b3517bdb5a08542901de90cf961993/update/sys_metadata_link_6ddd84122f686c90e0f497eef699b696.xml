@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a37ac3cb2fb31890e0f497eef699b62b</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Bounty Hunter"&gt;6a1a8b8b2fb31890e0f497eef699b6e8&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Whereas most Bounty Hunters focus primarily on the capture of quarry, those who specialize as Assassins are generally tasked with the straightforward proposition of terminating their targets. The selection of additional skills for an Assassin very much points towards his focus: &lt;strong&gt;Melee, Ranged (Heavy), Skulduggery, and Stealth.&lt;/strong&gt; These four skills become additional Career skills. If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. Assassins tend to prefer getting in quietly, taking out targets (either up close or sniping from afar), and leaving just as silently as they entered. Their talents are very appropriate for this kind of work.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Despite their different methods, Assassins still adhere to many of the same ethics and practices of other Bounty Hunters. They take their work very seriously, avoid all needless bloodshed, and honor their contracts to the letter. Some treat their methods with reverence, even assigning a certain mystique to it. Others simply see themselves as cold killers, and are just fine with it.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Assassin&lt;/name&gt;
+        &lt;number&gt;CARSPE0001023&lt;/number&gt;
+        &lt;specialization_skills&gt;0c90dd5cdbae88542901de90cf9619a4,d8a0d55cdbae88542901de90cf9619c0,db40195cdbae88542901de90cf961990,1d50595cdbae88542901de90cf9619df&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:32:14&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a37ac3cb2fb31890e0f497eef699b62b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:56:43&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6ddd84122f686c90e0f497eef699b696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assassin</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_6ddd84122f686c90e0f497eef699b696</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:56</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

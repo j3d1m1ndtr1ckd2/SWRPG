@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d2d16fa42f14a450e0f497eef699b634</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>BioTech Industries is a leading supplier of cybernetic devices across the galaxy, and its Mod V and Mod VI cyberarms are made to fit hundreds of alien species. These cyberarms are designed for increased&#13;
+strength (in the case of the Cybernetic Arm Mod V) or manual dexterity (in the case of the Mod VI). Although intended to replace limbs lost in accidents, BioTech sees plenty of sales to those who don't mind&#13;
+replacing their arms with mechanical equivalents.&#13;
+&#13;
+The Mod V Cyberarm provides + 1 Brawn, while the Mod VI provides + 1 Agility. If a character replaces both arms with cybernetic enhancements, he must use the same model, as they are designed to work in tandem. However, the modifiers from both arms do not stack. &#13;
+&#13;
+Models Include: BioTech Industries Cyberarm Mod V and Mod VI.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Cybernetic Arm Mod V and VI</name>
+        <number>GEAR0001063</number>
+        <price>10000</price>
+        <range/>
+        <rarity>6</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:21:41</sys_created_on>
+        <sys_id>d2d16fa42f14a450e0f497eef699b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:21:41</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:43:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a7c35ce22fa8ac90e0f497eef699b621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cybernetic Arm Mod V and VI</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a7c35ce22fa8ac90e0f497eef699b621</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:43:29</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

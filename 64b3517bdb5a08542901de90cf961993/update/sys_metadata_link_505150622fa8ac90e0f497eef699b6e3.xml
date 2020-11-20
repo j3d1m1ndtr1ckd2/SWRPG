@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ba6d3ffd2fa42c90e0f497eef699b69f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Like thermal shielding, cold shielding is installed in armor to protect the wearer against dangerously low temperatures and frigid environments. Equipped with small, efficient heating elements and doubleinsulated against the cold, this attachment allows a  wearer to survive in places where the ambient temperature can be dozens of degrees below freezing. Perhaps the most famous type of cold shielding is that built into the custom laminate armor worn by the Imperial Army's snowtroopers. This attachment can be installed on any armor that covers the entire body and can be sealed. Models Include: Atlas Corp DL87 "Frostback" Armor Enhancement, Min-Dal Model 00 Heating System. Base Modifiers: Reduces the difficulty of Resilience checks made to resist the effects of extreme cold by one.&#13;
+Removes up to 2 setback dice added to checks due to extreme cold. Modification Options: None.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Heating System</name>
+        <number>GEAR0001163</number>
+        <price>1000</price>
+        <range/>
+        <rarity>3</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:50:03</sys_created_on>
+        <sys_id>ba6d3ffd2fa42c90e0f497eef699b69f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:50:03</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:32:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>505150622fa8ac90e0f497eef699b6e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Heating System</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_505150622fa8ac90e0f497eef699b6e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:32:37</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>53e5b7752fa42c90e0f497eef699b6b5</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>A complex and sophisticated piece of equipment, the multi-optic sight is a wonder of modern sensor technology. Marketed to the discriminating professional soldier, each consists of a bulky on-weapon  optic equipped with numerous sensors including low-light, thermal, ultrasound, millimeter wave emitters, video capture, and common optical enhancements. The optic is connected to a pair of goggles worn by the user by a reinforced fiber optic cable that transmits the vision enhancements directly to the user in real time. This allows the user to see around corners and over obstacles. This attachment can be fit to any ranged weapon. Models Include: Galactic Arms Model 44 Combat Optical Enhancer, SoroSuub XAD Omnisight, Merr- Sonn 480.zl "Beholder" Multi-Optic Sight. Base Modifiers: Removes up to 2 setback dice on any checks to use this weapon due to smoke, darkness, or other environmental conditions that obstruct vision. Modification Options: 2 Skill (Perception) Mods.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Multi-Optic Sight</name>
+        <number>GEAR0001148</number>
+        <price>2000</price>
+        <range/>
+        <rarity>3</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:16:52</sys_created_on>
+        <sys_id>53e5b7752fa42c90e0f497eef699b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:16:52</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:33:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c4a1d4622fa8ac90e0f497eef699b687</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Multi-Optic Sight</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c4a1d4622fa8ac90e0f497eef699b687</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:33:59</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

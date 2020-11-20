@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>fb6fb3642f94a450e0f497eef699b60a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>The galaxy is filled with security devices to keep valuables protected or secured. A good thief knows that the stronger the security, the more valuable the items inside, and the greater the desire to make them his own. Many locks across the galaxy have complex electronic systems that far surpass the simple mechanical locks of old. Electronic lock breakers like those made by the fancifully named OutlawTech (a group of slicers and criminal technicians) are automatic anti-security slicing systems that can hack through most standard electronic locks. There are also much more advanced models that  require no skill on the user's part and can defeat the most complicated locks. &#13;
+&#13;
+Models Include: OutlawTech Electronic Lock Breaker.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Electronic Lock Breaker</name>
+        <number>GEAR0001080</number>
+        <price>1000</price>
+        <range/>
+        <rarity>5</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:30:33</sys_created_on>
+        <sys_id>fb6fb3642f94a450e0f497eef699b60a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:30:33</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:42:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d77318e22fa8ac90e0f497eef699b69f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Electronic Lock Breaker</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_d77318e22fa8ac90e0f497eef699b69f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:42:06</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

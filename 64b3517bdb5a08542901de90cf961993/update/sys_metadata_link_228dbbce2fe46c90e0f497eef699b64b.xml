@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cd0357c32ff31890e0f497eef699b656</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Ace"&gt;29c05b432ff31890e0f497eef699b611&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Out among the stars, engines screaming through the cockpit while he performs a maneuver that would send lesser beings into seizures or unconsciousness, the Pilot is truly himself.  While the sheer joy of flying is often rewarding, most Pilots gain true satisfaction when they pit themselves and their machines against an aggressor force and duel it out in the blackness of space.&lt;/p&gt;
+&lt;p&gt;For Pilots, &lt;strong&gt;Astrogation, Gunnery, Piloting (Planetary), and Piloting (Space)&lt;/strong&gt; are additional career skills, two of which the PC can choose to gain a free rank in if this is his first specialization.  In addition to being skilled at flying and knowing where to go, Pilots must also be exceedingly tough and trained to endure the harshest conditions if they are going to have the slightest chance of surviving when the worst happens.&lt;/p&gt;
+&lt;p&gt;No one denies the special place Pilots have in a military organization, least of all the Pilots themselves.  Most have at least a certain amount of cockiness (sometimes bordering on arrogance), which is to be expected when a person wraps a few tons of machinery around himself and hurls into the void of space to regularly risk instant vaporization.  The average life expectancy of a typical Alliance starfighter Pilot engaged with imperial forces is extremely low; only by being the very best does a Pilot stand a chance of survival or success.&lt;/p&gt;
+&lt;p&gt;Not Surprisingly, true Pilots are considered a precious commodity in the Alliance.  Commanders are often seen as being too cautious in deploying them; each mission is almost guaranteed to cost at least a few lives and a few machines.  The Rebellion ultimately stands or falls on the capacity of its Pilots to face the overwhelming odds of the Empire&amp;#39;s best and somehow be better.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Pilot&lt;/name&gt;
+        &lt;number&gt;CARSPE0001043&lt;/number&gt;
+        &lt;specialization_skills&gt;35af0d1cdbae88542901de90cf9619ce,7180115cdbae88542901de90cf96191d,1730915cdbae88542901de90cf9619ed,3f70fd9cdb22c8542901de90cf96190b&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 16:20:18&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;cd0357c32ff31890e0f497eef699b656&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 16:33:17&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:27:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>228dbbce2fe46c90e0f497eef699b64b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pilot</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_228dbbce2fe46c90e0f497eef699b64b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:27:44</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

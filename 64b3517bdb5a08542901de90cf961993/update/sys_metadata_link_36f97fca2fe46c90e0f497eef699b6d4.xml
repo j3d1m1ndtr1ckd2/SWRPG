@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a391a7c32f371890e0f497eef699b641</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Engineer"&gt;552127c32f371890e0f497eef699b685&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Almost anathema to the usual technician&amp;#39;s mentality, the Saboteur specializes in disrupting and destroying technical and mechanical assets.  His job is to diminish the enemy&amp;#39;s capacity to wage war by denying the enemy use of its weapons and vehicles.  Of course, it takes a high degree of understanding about how something works in order to ensure it ceases working, or better still, to ensure it never works again.&lt;/p&gt;
+&lt;p&gt;For a Saboteur, &lt;strong&gt;Coordination, Mechanics, Skulduggery, and Stealth&lt;/strong&gt; are all additional career skills, and if this is the first specialization chosen, the PC gains a free rank in two of these.  Saboteurs are, by nature, covert operation specialists with a strong need to be able to sneak in and out of enemy facilities.  In addition, they understand that disrupting the computer networks that run such facilities is a key to success.&lt;/p&gt;
+&lt;p&gt;Blowing things up is a popular way to commit sabotage, and Saboteurs are often the best at handling demolitions tasks (often using a combination of Mechanics and Skulduggery).  However, there are many other ways to disrupt and destroy machinery, and the Saboteur knows them all.  Most often, he will seek a way to cause the most damage and the most chaos at just the right moment.  For the Saboteur (especially one with a sense of style), timing is everything.&lt;/p&gt;
+&lt;p&gt;The Alliance makes quiet yet effective use of its Saboteurs.  Though terrorism is not a part of the battle plan (and is expressly forbidden by Mon Mothma and the rest of the Alliance council), acts of military sabotage are known to be highly effective in evening the odds before a battle.  Most commanders in the Rebellion will simply indicate a target and a time frame, allowing the Saboteur to use his creativity and resourcefulness to achieve the objective.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Saboteur&lt;/name&gt;
+        &lt;number&gt;CARSPE0001051&lt;/number&gt;
+        &lt;specialization_skills&gt;73ef415cdbae88542901de90cf9619f3,5d10155cdbae88542901de90cf96190a,db40195cdbae88542901de90cf961990,1d50595cdbae88542901de90cf9619df&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 17:13:16&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a391a7c32f371890e0f497eef699b641&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 21:43:28&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:12:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>36f97fca2fe46c90e0f497eef699b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Saboteur</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_36f97fca2fe46c90e0f497eef699b6d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:12:11</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c3b9ff3d2fa42c90e0f497eef699b6c9</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Uncommon but highly effective, the Firestorm by Czerka is a small, under-barrel flame projector designed to give an infantryman extra punch at short range. Illegal on many worlds and classified as a terror&#13;
+weapon, these weapons are typically used by only the most desperate or callous individuals. This attachment can only be applied to rifle-sized weapons. Models Include: Czerka "Firestorm" Under-barrel Flame Projector, Merr-Sonn XR14 Sunsear Flame Projector, SoroSuub "Inferno" Auxiliary Flamer. Base Modifiers: Enables weapon to fire using the following profile at the user's choice: (Heavy Ranged; Dam 10; Crit 2; Range [Short]; Burn 5, Blast 2). Adds Cumbersome (+ 1) to weapon. Modification Options: None</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>2</hp_required>
+        <name>Under-Barrel Flame Projector</name>
+        <number>GEAR0001154</number>
+        <price>3000</price>
+        <range/>
+        <rarity>5</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:33:34</sys_created_on>
+        <sys_id>c3b9ff3d2fa42c90e0f497eef699b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:33:34</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:34:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c9d1d8622fa8ac90e0f497eef699b64e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Under-Barrel Flame Projector</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c9d1d8622fa8ac90e0f497eef699b64e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:34:52</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

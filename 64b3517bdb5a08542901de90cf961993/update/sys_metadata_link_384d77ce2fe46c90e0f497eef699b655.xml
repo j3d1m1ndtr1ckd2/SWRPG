@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0eff87032ff31890e0f497eef699b686</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Smuggler"&gt;7faf0f032ff31890e0f497eef699b607&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Part con artist, part gunslinger, and part cantina brawler, the Scoundrel is quick-witted, quick on his feet, and quick to get himself into a great deal of trouble at the drop of a hat. He doesn&amp;#39;t care one whit for rules or laws, except where he can use them to work an angle that either nets him a lot of credits or brings down an enemy. If he&amp;#39;s really lucky—and he tends to have an unshakable faith in his luck—he&amp;#39;ll manage both. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;His dynamic nature is spelled out in the Scoundrel&amp;#39;s additional career skills: &lt;strong&gt;Charm, Cool, Deception, and Ranged (Light)&lt;/strong&gt;. If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. Combined with his talents, these skills make him formidable in a fight, useful in dealing with the underworld, and an individual simply not to be trusted. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Scoundrels fulfill many roles in the Outer Rim.  Some are grifters, others are middle-men, and still others are simply thrill-seekers looking to see what they can get into next. Scoundrels tend to avoid taking charge of anything, but they are more than willing to ride the coattails of powerful people, often applying their unique skill set to help their employer in any number of ways. Scoundrels rarely put down roots for very long, and will always be looking for the next interesting thing to do (especially if it can make them some money). &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;In a Player Character group, the Scoundrel is a kind of all-purpose character. He&amp;#39;s got enough underworld savvy and social ability to act as a &amp;#34;face&amp;#34; for the group, and he&amp;#39;s no slouch in a fight. He may or may not be a pilot, but it&amp;#39;s almost certain he&amp;#39;s got many of the rogue-style abilities a group might need.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Scoundrel&lt;/name&gt;
+        &lt;number&gt;CARSPE0001036&lt;/number&gt;
+        &lt;specialization_skills&gt;3acf0d1cdbae88542901de90cf9619a2,b8ef415cdbae88542901de90cf9619f1,31ffc9d8dbae88542901de90cf961924,d290dd5cdbae88542901de90cf9619a6&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:55:49&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0eff87032ff31890e0f497eef699b686&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:39:10&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:26:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>384d77ce2fe46c90e0f497eef699b655</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scoundrel</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_384d77ce2fe46c90e0f497eef699b655</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:26:31</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

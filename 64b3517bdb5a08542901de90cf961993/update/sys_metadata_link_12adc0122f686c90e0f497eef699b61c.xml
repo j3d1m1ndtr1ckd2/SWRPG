@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3d6945f32fe75850e0f497eef699b698</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Seeker"&gt;c1a6afeb2f235850e0f497eef699b628&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;When working alone in a hostile environment, every physical conflict must be resolved quickly and decisively. Frequently, an uncivilized planet completely lacks any sort of medical facilities. In fact, at times, an isolated explorer could be the only sentient being on the world. In such a situation, a minor injury can be deadly. If a conflict is necessary, it is better to resolve it quickly, taking whatever risks are involved, than to fight more conservatively and prolong the risk of injury. The Ataru Striker embraces this approach, throwing himself into combat with every fiber of his being.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Ataru Strikers acquire &lt;strong&gt;Athletics, Coordination, Lightsaber, and Perception&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. This fighting style is highly dependent on the combatant’s ability to quickly assess a situation and use natural athleticism to exploit the environment. In this way, the combatant is able to gain every possible advantage over an opponent. The combination of these edges and the rapid attacks that characterize Ataru martial arts can force a combat to a very quick resolution.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Practitioners of the Ataru fighting style must be supremely confident in their abilities. They must also be exceptionally athletic and capable of committing all their energy into a very brief conflict. When engaged in a physical conflict, Ataru Strikers fight without remorse but also with little concern for their own safety. Every motion is designed to inflict a flurry of rapid and overpowering attacks against their opponents from myriad angles. Their vicious and unrelenting offense is their best (and sometimes only) defense—most opponents are so busy defending themselves that they have no time to attack in turn.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;However, this style of unrelenting attack can have its disadvantages. An Ataru Striker needs to see his opponent defeated quickly, before he exhausts himself. An individual who can outlast an Ataru Striker can prove to be his deadliest enemy.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Ataru Striker&lt;/name&gt;
+        &lt;number&gt;CARSPE0001013&lt;/number&gt;
+        &lt;specialization_skills&gt;95bf0d1cdbae88542901de90cf9619a6,73ef415cdbae88542901de90cf9619f3,9e4ce9962fe3d050e0f497eef699b630,5d30915cdbae88542901de90cf9619eb&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-06 03:52:18&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;3d6945f32fe75850e0f497eef699b698&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:48:34&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>12adc0122f686c90e0f497eef699b61c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ataru Striker</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_12adc0122f686c90e0f497eef699b61c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:10</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

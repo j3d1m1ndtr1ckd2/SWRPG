@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>33187a2d2f60e890e0f497eef699b6bc</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Few weapons in the galaxy are as indicative of their users as the Wookiee bowcaster. Bowcasters require an incredible level of raw physical strength to wield, especially when loading and cocking the weapon to fire. A time-consuming and labor-intensive process, reloading a bowcaster is made much simpler and easier by use of the automatic re-cocker. This attachment entails upgrading the basic weapon with a number of powerassist systems as well as a magazine feed system that allows the weapon to fire, re-cock, and reload all in one smooth, quick movement. These attachments are only for use on Wookiee bowcasters, and they cannot be purchased; they must be built either by the owner of the bowcaster with an Average (2 difficulty dice) Mechanics check or the weaponsmith who built the weapon for him.&#13;
+&#13;
+Base Modifiers: Removes reloading maneuver requirement from bowcaster.&#13;
+Modification Options: 1 Weapon Quality (Autofire) Mod.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Bowcaster Automatic Re-cocker</name>
+        <number>GEAR0001138</number>
+        <price>500</price>
+        <range/>
+        <rarity>3</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-18 05:13:07</sys_created_on>
+        <sys_id>33187a2d2f60e890e0f497eef699b6bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-18 19:24:44</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:33:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e98194622fa8ac90e0f497eef699b683</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bowcaster Automatic Re-cocker</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_e98194622fa8ac90e0f497eef699b683</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:33:31</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

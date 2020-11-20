@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>769bec102ff7d850e0f497eef699b65e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Sentinel"&gt;6549e4502ff7d850e0f497eef699b695&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;A lightsaber is a potent weapon. When wielded forcefully, it can even overpower an opponent who has a weapon capable of parrying it. Further, its ability to deflect blaster bolts can make it an effective ranged weapon as well. Those who consider themselves Shien Experts—masters of the Shien lightsaber form—embrace the seeming contradiction between those two uses. They know that true lightsaber masters must possess the cunning to use such weapons to their full potential. It takes clever precision to reflect a ranged attack back toward an adversary, but just as much shrewd brilliance to recognize the right time to overpower adversaries through raw force.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Shien Experts acquire &lt;strong&gt;Athletics, Lightsaber, Resilience, and Skulduggery&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. In order to effectively follow this path, a character needs to be flexible and to recognize the best approaches for different types of physical conflicts. Resilience and Athletics are critical tools for engaging in and enduring a prolonged battle, while Skulduggery enables the character to case out and prepare possible combat locations ahead of time to exploit the environment against an opponent.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Whenever possible, a Shien Expert prepares a battleground well in advance of a conflict. Often, these individuals take the time to study a range of different locations soon after they arrive in a city. Once combat begins, they can carefully exploit the environment and trigger any traps they may have prepared to unleash upon their opponents.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;During combat, Shien Experts continue to constantly analyze the situation. While they take advantage of the terrain throughout a battle, they are also selective in choosing the best way to use their training as well as their lightsaber. This can change with each passing instant, in reaction to the armament, position, and stance of their enemies. For these individuals, an extended conflict is a sure route to victory as they react to every move their opponents make with a clever counter or powerful strike.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Shien Expert&lt;/name&gt;
+        &lt;number&gt;CARSPE0001019&lt;/number&gt;
+        &lt;specialization_skills&gt;95bf0d1cdbae88542901de90cf9619a6,9e4ce9962fe3d050e0f497eef699b630,9140595cdbae88542901de90cf9619dd,db40195cdbae88542901de90cf961990&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-07 14:54:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;769bec102ff7d850e0f497eef699b65e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:53:04&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bfbd44122f686c90e0f497eef699b674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shien Expert</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_bfbd44122f686c90e0f497eef699b674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:33</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

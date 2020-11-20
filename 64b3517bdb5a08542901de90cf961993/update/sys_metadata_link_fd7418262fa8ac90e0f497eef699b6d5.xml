@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a7b3a2642f10a450e0f497eef699b6d5</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>2</base_damage>
+        <critical_rating>0</critical_rating>
+        <defense/>
+        <description>Sometimes a bounty hunter has to capture a foe alive rather than dead. Bolas and nets are both used to entangle a victim so that he can be approached and secured—usually for delivery to an authority or criminal organization. Both weapons are designed to be thrown or launched over short distances to ensnare an opponent. Although a stun weapon is easier to use, bolas and nets do have several advantages. Their low-tech construction means they are unlikely to show up on weapons scanners, and stun weapons have sometimes been known to deal lasting damage to a target.&#13;
+&#13;
+Bolas and nets rely on the Ensnare quality of the weapons to incapacitate the user, meaning they require more than simply a successful hit. Due to the great deal of skill required, only those who are very&#13;
+talented or extremely desperate tend to use bolas or nets. Most individuals rely on the stun setting of a blaster to bring their target down. &#13;
+&#13;
+The user may spend a triumph to ensure the victim is so entangled that he may not make any maneuvers, and his only action each turn is a Formidable (5 difficulty dice) Athletics check to free himself.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points>2</hard_points>
+        <hp_required/>
+        <name>Bola/Net</name>
+        <number>GEAR0001015</number>
+        <price>20</price>
+        <range>short</range>
+        <rarity>2</rarity>
+        <skill_used display_value="Ranged - Light (Ag)">d290dd5cdbae88542901de90cf9619a6</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 14:48:49</sys_created_on>
+        <sys_id>a7b3a2642f10a450e0f497eef699b6d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 14:51:54</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fd7418262fa8ac90e0f497eef699b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bola/Net</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_fd7418262fa8ac90e0f497eef699b6d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:23</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

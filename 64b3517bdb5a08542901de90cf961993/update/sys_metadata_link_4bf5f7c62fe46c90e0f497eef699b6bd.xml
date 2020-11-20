@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>eb7d33892f246890e0f497eef699b653</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power_enhancement"&gt;
+    &lt;x_176383_star_wars_force_power_enhancement action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;20&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;The power gains the ongoing effect: Commit 1 force die after successfully activating the basic power to find the direction of a person or object. Whenever the person or object moves, the Force user becomes aware of this movement and of the person or object’s new general location or the direction he must follow to reach it.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;force_power display_value="Seek"&gt;6676a1fc2f68e490e0f497eef699b632&lt;/force_power&gt;
+        &lt;number&gt;FENH0001106&lt;/number&gt;
+        &lt;pre_req_force_enhancements&gt;1e5db3892f246890e0f497eef699b699&lt;/pre_req_force_enhancements&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-16 20:54:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;eb7d33892f246890e0f497eef699b653&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-16 20:54:11&lt;/sys_updated_on&gt;
+        &lt;type&gt;duration&lt;/type&gt;
+    &lt;/x_176383_star_wars_force_power_enhancement&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 22:54:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4bf5f7c62fe46c90e0f497eef699b6bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_4bf5f7c62fe46c90e0f497eef699b6bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 22:54:43</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power_enhanceme</tablename>
+    </sys_metadata_link>
+</record_update>

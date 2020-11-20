@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c671be602f50a450e0f497eef699b618</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>6</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>The basic lightsaber is, in essence, the baseline to which all other lightsabers and their variants are compared. It consists of a basic hilt constructed from whatever material was available to the builder, typically metal or composites. Simple weapons, though still exceedingly elegant, all lightsabers are equipped with some form of kyber crystal. Kyber crystals are actually a broad family of different types of crystals. Though these can vary in shape and coloration, and even certain properties, kyber crystals share certain unique attributes. These attributes allow kyber crystals to be used within lightsabers, enabling them to focus the lightsabers' power into their signature energy blades. Prior to the rise of the Empire, nearly every lightsaber constructed by the Jedi Order during the Clone Wars contained a crystal gathered by a Padawan on the planet Ilum as part of the journey to become a Jedi Knight. These Ilum specimens are some of the best examples of kyber crystals.&#13;
+&#13;
+This lightsaber is a basic lightsaber hilt containing an unmodded Ilum lightsaber crystal (see page 197). This crystal occupies two of the weapon's hard points.&#13;
+&#13;
+Models Include: None; each of these weapons is individually constructed.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points>5</hard_points>
+        <hp_required/>
+        <name>Basic Lightsaber</name>
+        <number>GEAR0001027</number>
+        <price>9300</price>
+        <range>engaged</range>
+        <rarity>10</rarity>
+        <skill_used display_value="Lightsaber (Br)">9e4ce9962fe3d050e0f497eef699b630</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:00:34</sys_created_on>
+        <sys_id>c671be602f50a450e0f497eef699b618</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:06:58</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>db8498262fa8ac90e0f497eef699b6da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Basic Lightsaber</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_db8498262fa8ac90e0f497eef699b6da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:45</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

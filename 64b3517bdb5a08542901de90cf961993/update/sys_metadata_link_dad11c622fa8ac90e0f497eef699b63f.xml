@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ce83b3f52fa42c90e0f497eef699b698</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>An old assassin's trick, this is the simple act of removing the front sight of a blaster pistol by filing it off. A common modification to holdout blasters (along with removing their serial numbers), filing down the weapon's front sight allows it to be drawn more quickly from its holster, and reduces the possibility of it becoming snared on clothing. Unfortunately, while this modification makes for easy &#13;
+concealment and drawing, it also reduces the weapon's accuracy, as it effectively makes it impossible to aim with any amount of precision. This modification may only be applied to pistol-sized weapons. Applying it oneself requires an Average (2 difficulty dice) Mechanics check; the cost is paying others to perform the modification.  Other Models Include: None. Base Modifiers: Innate Talent (Quick Draw), Increases difficulty of combat checks to hit targets at ranges beyond short range by one. Modification Options: I Decreases the difficulty of checks to conceal the weapon by one Mod.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Filed Front Sight</name>
+        <number>GEAR0001144</number>
+        <price>25</price>
+        <range/>
+        <rarity>0</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:06:52</sys_created_on>
+        <sys_id>ce83b3f52fa42c90e0f497eef699b698</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:06:52</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:34:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dad11c622fa8ac90e0f497eef699b63f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filed Front Sight</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_dad11c622fa8ac90e0f497eef699b63f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:34:57</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

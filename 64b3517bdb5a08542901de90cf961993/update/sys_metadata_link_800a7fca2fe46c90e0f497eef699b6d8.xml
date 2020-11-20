@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e49263072f371890e0f497eef699b602</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Soldier"&gt;33f16fc32f371890e0f497eef699b60d&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;With a love of firearms and a pride in personal accuracy, the Sharpshooter is the most desirable asset a team can ask for when a firefight erupts.  He maintains his composure under a blanket of blaster bolts, takes careful aim, and eliminates threats with ruthless efficiency and lightning speed.  Sharpshooters are, simply, the masters of personal-scale ranged combat.&lt;/p&gt;
+&lt;p&gt;Not surprisingly, Sharpshooters gain &lt;strong&gt;Cool, Perception, Ranged (Heavy), and Ranged (Light)&lt;/strong&gt; as career skills, and two of these gain a free rank if this is the first specialization for the PC.  The focus on personal-scale ranged weapons is a natural fit for Sharpshooters, and their ability to take in their surroundings completely and assess targets carefully under high-stress situations is essential to their survival.&lt;/p&gt;
+&lt;p&gt;Most Sharpshooters are thoroughly comfortable with any ranged weapon, though many will focus attention and effort on mastering a single (often highly-personalized) weapon.  Some prefer a sniper role, taking up a hidden position and removing threats from the field as invisible dealers of death.  Other Sharpshooters prefer a more direct approach, blaster energy blazing in waves of destruction as they cover their teammates against hordes of Imperial Soldiers.&lt;/p&gt;
+&lt;p&gt;The focus on individual excellence within the Alliance elevates the Sharpshooter over his typical counterpart in the Empire.  He is encouraged to train to higher degrees of proficiency, and he is encouraged to master techniques of survival, depending on his team to stay alive.  The average stormtrooper is given a decent amount of training, but the ack of attention to personal excellence means he will never reach the pinnacle of accuracy and deadly effectiveness attained by a Sharpshooter in the Rebellion.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Sharpshooter&lt;/name&gt;
+        &lt;number&gt;CARSPE0001055&lt;/number&gt;
+        &lt;specialization_skills&gt;b8ef415cdbae88542901de90cf9619f1,5d30915cdbae88542901de90cf9619eb,d8a0d55cdbae88542901de90cf9619c0,d290dd5cdbae88542901de90cf9619a6&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 17:17:52&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e49263072f371890e0f497eef699b602&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 22:04:26&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:12:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>800a7fca2fe46c90e0f497eef699b6d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sharpshooter</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_800a7fca2fe46c90e0f497eef699b6d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:12:16</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

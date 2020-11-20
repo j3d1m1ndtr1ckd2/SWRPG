@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d80b0f0b2fb31890e0f497eef699b6fd</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Bounty Hunter"&gt;6a1a8b8b2fb31890e0f497eef699b6e8&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Beyond civilization, in the farthest reaches of the galaxy, there are places where few (if any) sentients have ever trodden the ground. Places like these are ideal hiding places for those fleeing the law or retribution for their actions. Places like these are where Bounty Hunters who specialize as Survivalists thrive.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Harkening back to the ancient practices of true wilderness hunters, the Survivalist gains &lt;strong&gt;Knowledge (Xenology), Perception, Resilience, and Survival&lt;/strong&gt; as additional Career skills. If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. With his talent array, he can keep himself and his companions alive, and he knows where and what to look for when searching for just about anything or anyone. He&amp;#39;s also gifted at hunting any kind of target.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Not everything that happens in the galaxy occurs in cities or out in space. In fact, most of the habitable places of the galaxy are rural or wilderness in nature. A specialization in Survivalist ensures a character has the necessary knowledge and training to make his way in such environments, and help the far more urban-minded folks he&amp;#39;s likely traveling with. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Despite their capacity to live off the land, Survivalists enjoy credits and the things that can be purchased with them just like anyone else. They will often look to hire themselves out to customers who need their expertise in seeking out (or hunting) something beyond the duracrete and tapcafs. &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Survivalist&lt;/name&gt;
+        &lt;number&gt;CARSPE0001025&lt;/number&gt;
+        &lt;specialization_skills&gt;a9d0d55cdbae88542901de90cf9619dd,5d30915cdbae88542901de90cf9619eb,9140595cdbae88542901de90cf9619dd,06601d1cdbae88542901de90cf9619ab&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:34:19&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;d80b0f0b2fb31890e0f497eef699b6fd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:00:11&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:27:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e19dbbce2fe46c90e0f497eef699b653</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Survivalist</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_e19dbbce2fe46c90e0f497eef699b653</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:27:57</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

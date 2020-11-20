@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>f9e217072ff31890e0f497eef699b60c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Ace"&gt;29c05b432ff31890e0f497eef699b611&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;For the Gunner, the output of a vehicle or ship weapon is the ultimate expression of projected power.  He sees mastery of such weapons as a way for a single person to show the Empire what it means to fight for freedom and justice, and to do so to great effectiveness.  He also sees his role as the defender of all who ride with him in whatever vehicle he&amp;#39;s crewing.&lt;/p&gt;
+&lt;p&gt;Gunners gain &lt;strong&gt;Discipline, Gunnery, Ranged (Heavy), and Resilience&lt;/strong&gt; as additional career skills, they get a free rank in two of these if this is their first specialization.  Gunners are often faced with terrifying odds or unknown threats requiring nerves of steel.  When their positions are overrun, hand-to-hand fighting is often the only choice they have.  Larger blasters and similar ranged weapons are also often of interest to the gunner.&lt;/p&gt;
+&lt;p&gt;Whether the Gunner is laying down a field of fire from the door of a transport ship in a hot landing zone or firing pinpoint volleys at a star cruiser&amp;#39;s shield generators, he is more than comfortable with the idea of possessing large amounts of firepower.  He knows the value of what he does, and the sheer thrill of unleashing so much devastation with each pull of the trigger is very satisfying.  The resultant explosion of an enemy target is a payoff worth far more than any moment of glory.&lt;/p&gt;
+&lt;p&gt;Proficient Gunners are a true asset in the Alliance and the best ones are usually assigned to the most important defensive posts, assault vehicles, and ships.  In most battles with the Empire, every single shot counts.  It&amp;#39;s the Gunner&amp;#39;s job to make sure it counts heavily and with great purpose.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Gunner&lt;/name&gt;
+        &lt;number&gt;CARSPE0001042&lt;/number&gt;
+        &lt;specialization_skills&gt;f7ffc9d8dbae88542901de90cf961925,7180115cdbae88542901de90cf96191d,d8a0d55cdbae88542901de90cf9619c0,9140595cdbae88542901de90cf9619dd&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 16:08:38&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;f9e217072ff31890e0f497eef699b60c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 16:08:22&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:28:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>28adfbce2fe46c90e0f497eef699b660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gunner</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_28adfbce2fe46c90e0f497eef699b660</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:28:08</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

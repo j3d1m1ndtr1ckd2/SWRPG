@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d4f661fc2f68e490e0f497eef699b622</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power"&gt;
+    &lt;x_176383_star_wars_force_power action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;By opening his mind, a Force user can commune with the world around him. He senses the endless movement of the Living Force, seeing beyond what his eyes allow. The actions of those around him are laid bare, as if the Force user had a bird’s eye view of his surroundings, allowing him to anticipate attacks and better strike blows of his own, or even spot ambushes and lurking foes. Alternatively, he can sense the thoughts of others. Even a Jedi cannot read someone’s mind completely, but a Force-sensitive being can detect his target’s feelings and emotions, and even sense surface thoughts.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Unlike many other Force powers, Sense has a basic power that can be used in two very different ways. Users can rely on Sense to augment their defensive (and eventually offensive) abilities, or they can invest in the ability to read the emotions and feelings of others. They can even read their surface thoughts, which can be particularly valuable in a wide variety of situations.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;BASIC POWER&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Sense’s basic power allows the Force user to sense the living Force interacting with the world around him. This allows him to perceive life and read emotions. The basic power has two ways to spend Force points:&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The user may spend 1 force point to sense all living things within short range of himself (including animals and sentient beings). The user may not activate this multiple times.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The user may spend 1 force point to sense the current emotional state of one living target with whom he is engaged. The user may not activate this multiple times.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;minimum_force_rating&gt;1&lt;/minimum_force_rating&gt;
+        &lt;name&gt;Sense&lt;/name&gt;
+        &lt;number&gt;FORCE0001011&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-15 15:18:38&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;d4f661fc2f68e490e0f497eef699b622&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-15 15:18:38&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_force_power&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 22:50:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b3e477862fe46c90e0f497eef699b62f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sense</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b3e477862fe46c90e0f497eef699b62f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 22:50:08</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power</tablename>
+    </sys_metadata_link>
+</record_update>

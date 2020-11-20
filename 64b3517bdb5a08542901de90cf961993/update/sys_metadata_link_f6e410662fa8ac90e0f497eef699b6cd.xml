@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ff3d1eec2fdc6450e0f497eef699b624</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>10</base_damage>
+        <critical_rating>3</critical_rating>
+        <defense/>
+        <description>Bowcasters are associated with the Wookiees of Kashyyyk. They are as distinctive to the Wookiees as gaffi sticks are to the Sand People. &#13;
+&#13;
+The various quarrels that can be fired from these weapons allow the wielder a great range of options. Standard ammunition consists of metallic bolts accelerated by polarizers astride the barrel tip. This increases the power and velocity of the round so that the heavy projectile reaches ranges equivalent to conventional blasters. &#13;
+&#13;
+The standard quarrel is a micro-explosive capable of blasting through armor, metal, or thick flesh—like that of the giant creatures native to Kashyyyk. Other types of quarrels include sonic detonators, flash quarrels that stun and blind, or smoke quarrels designed to create cover for advancing Wookiee warriors. &#13;
+&#13;
+Every bowcaster is hand-built for its user—hence the exorbitant cost. Most require significant strength to cock, but automatic re-cocking mechanisms are one of the most common modifications (Chewbacca's bowcaster has automatic re-cocking, as well as a low-light scope). &#13;
+&#13;
+The bowcaster presented here fires standard microexplosive quarrels, and does not have an automatic re-cocking mechanism. It requires the user to spend a maneuver cocking the weapon before each shot.&#13;
+&#13;
+Models Include: Unique designed weapon.</description>
+        <encumbrance>5</encumbrance>
+        <hard_points>2</hard_points>
+        <hp_required/>
+        <name>Bowcaster</name>
+        <number>GEAR0001010</number>
+        <price>1250</price>
+        <range>medium</range>
+        <rarity>7</rarity>
+        <skill_used display_value="Ranged - Heavy (Ag)">d8a0d55cdbae88542901de90cf9619c0</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 14:21:13</sys_created_on>
+        <sys_id>ff3d1eec2fdc6450e0f497eef699b624</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 14:22:57</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:48:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f6e410662fa8ac90e0f497eef699b6cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bowcaster</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f6e410662fa8ac90e0f497eef699b6cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:48:21</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

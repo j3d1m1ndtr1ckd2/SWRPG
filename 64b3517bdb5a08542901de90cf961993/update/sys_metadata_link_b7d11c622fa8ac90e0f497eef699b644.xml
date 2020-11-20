@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d0243ff52fa42c90e0f497eef699b6fb</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Little more than a vertical handgrip affixed below the barrel of a rifle-sized weapon, forearm grips are a popular modification among mercenaries, designed to give the user better control over the weapon. This Attachment can only be used on rifles (but not heavy rifles) and carbines. Other Models Include: Galactic Arms Model 9 Forearm Grip, Dolmax 1 4A Detachable Pistol Grip, Merr-Sonn AG44S Ergonomic Tactical Foregrip. Base Modifiers: Decreases the additional difficulty of making Ranged (Heavy) checks with this weapon while engaged to an additional t (rather than H) Modification Options: 1 Innate Talent (Point Blank Rank + 1) Mod, 1 Weapon Quality (Accurate + 1) Mod. </description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Forearm Grip</name>
+        <number>GEAR0001145</number>
+        <price>250</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:10:22</sys_created_on>
+        <sys_id>d0243ff52fa42c90e0f497eef699b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:10:22</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:35:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b7d11c622fa8ac90e0f497eef699b644</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Forearm Grip</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b7d11c622fa8ac90e0f497eef699b644</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:35:02</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

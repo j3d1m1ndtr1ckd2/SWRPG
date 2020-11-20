@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d98288f42f94a450e0f497eef699b671</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Emergency repair patches, like the SoroSuub Pocket Tech, are designed to be both portable and able to be used quickly in an emergency. An emergency repair patch consists of a semi-flexible durasteel disk rimmed with auto-activating thermal welds. Some also contain an electrically inert inner insulation layer to protect against shortouts. The patch can be quickly applied over a damaged portion of a droid's chassis, then almost instantly spot-welded into place, keeping the vulnerable interior safe from further damage and maintaining the chassis's structural integrity. Emergency repair patches are one-use items that mechanics can use to patch small holes in items or vehicles, or droids can use to heal wounds. The second use is more common. It takes a maneuver for a character to use an emergency repair patch on himself or another. An emergency repair patch automatically heals 3 wounds on a droid. A droid can use emergency repair patches five times in a day. The sixth emergency repair patch heals no wounds—the droid is so patched together that further patches would be useless. It takes a day for the droid's self repair diagnostics (or some actual repairs) to restore his body to enough functionality&#13;
+to be able to accept additional emergency patches. See page 220 for more information.&#13;
+&#13;
+Models Include: SoroSuub Pocket Tech.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Emergency Repair Patch</name>
+        <number>GEAR0001093</number>
+        <price>25</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:44:17</sys_created_on>
+        <sys_id>d98288f42f94a450e0f497eef699b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:44:17</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:41:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2073d4e22fa8ac90e0f497eef699b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Emergency Repair Patch</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2073d4e22fa8ac90e0f497eef699b678</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:41:55</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

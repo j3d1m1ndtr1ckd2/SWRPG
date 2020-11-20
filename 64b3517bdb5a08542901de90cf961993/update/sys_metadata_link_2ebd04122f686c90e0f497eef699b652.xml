@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6baa3e6a2f6b1450e0f497eef699b694</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Guardian"&gt;05f5a6d22fe7d050e0f497eef699b6c8&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Across the galaxy, there are always tyrants, and those unlucky enough to suffer under their rule. Some Guardians take direct action through military force to attempt to overthrow such despots. Other Guardians see wars ravaging planets and harming the weak and defenseless. They step in to defend those innocents, and enforce peace at the tip of a lightsaber. These Guardians are often known as Peacekeepers.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Peacekeepers acquire &lt;strong&gt;Discipline, Leadership, Perception, and Piloting (Planetary)&lt;/strong&gt; as additional career skills, and if this is the PC’s starting specialization, the PC gains one rank in each of two of these skills. This combination ensures that they can recognize threats and respond to them in an effective and timely manner. Skilled Peacekeepers must be able to effectively delegate assignments to allies while reserving themselves to confront the challenges for which they are most adept.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Many Peacekeepers only assume this specialization after they have been thrust into a position of authority—sometimes repeatedly. Because of their naturally protective personalities, these Guardians want to do everything in their power to protect their friends. Often, they decide the best choice is to become the best leader they can, out of a sense of responsibility rather than a desire for power.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Characters who pursue the Peacekeeper’s path seldom limit their activities to a single region. Often once one region has been pacified or a tyrant overthrown, a Peacekeeper sets his sight on the next challenge and leads his friends and fellow freedom fighters to overcome it. Under the shadow of the Empire, Peacekeepers are always needed.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Peacekeeper&lt;/name&gt;
+        &lt;number&gt;CARSPE0001007&lt;/number&gt;
+        &lt;specialization_skills&gt;f7ffc9d8dbae88542901de90cf961925,8300915cdbae88542901de90cf9619e0,5d30915cdbae88542901de90cf9619eb,1730915cdbae88542901de90cf9619ed&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-02 14:50:23&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6baa3e6a2f6b1450e0f497eef699b694&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:38:03&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ebd04122f686c90e0f497eef699b652</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Peacekeeper</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2ebd04122f686c90e0f497eef699b652</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:27</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

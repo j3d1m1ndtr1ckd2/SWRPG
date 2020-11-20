@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>dc43ad3c2f68e490e0f497eef699b6fe</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power"&gt;
+    &lt;x_176383_star_wars_force_power action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;15&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Force users skilled in telekinetic powers can seize others from afar, preventing them from moving or attacking. When used with a calm heart, this power can be an extremely useful defensive tool, letting the Force user stop an enemy in his tracks without hurting him. Of course, once a foe is in the Force user’s grip, it can be extremely tempting to simply crush him.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;BASIC POWER&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Bind’s basic power allows the Force user to restrain those nearby, preventing them from harming others and themselves. The basic power has one way to spend Force points:&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The user may spend a force point to immobilize a target within short range until the end of the user’s next turn.  If the user used any dark side to generate force points on this check, the target also suffers 1 wound [ignoring soak) per force point spent on the check. The user may not activate this multiple times.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;minimum_force_rating&gt;2&lt;/minimum_force_rating&gt;
+        &lt;name&gt;Bind&lt;/name&gt;
+        &lt;number&gt;FORCE0001002&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-15 15:03:20&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;dc43ad3c2f68e490e0f497eef699b6fe&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-16 05:01:52&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_force_power&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 22:50:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ef477862fe46c90e0f497eef699b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bind</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2ef477862fe46c90e0f497eef699b636</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 22:50:20</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power</tablename>
+    </sys_metadata_link>
+</record_update>

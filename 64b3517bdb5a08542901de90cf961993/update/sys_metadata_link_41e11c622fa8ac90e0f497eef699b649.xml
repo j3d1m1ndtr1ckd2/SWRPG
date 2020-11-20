@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d9887fbd2fa02c90e0f497eef699b6d4</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Shortened barrels are a handy modification used by spies, plain-clothes law enforcement officers, and anyone needing to conceal the fact that they are carrying a weapon. Little more than a replacement barrel shorter than the standard one, this attachment makes concealing a pistol easier, and can improve the speed of a quick draw. This attachment can only be applied to Ranged (Light) pistol weapons.&#13;
+Models Include: Arakyd SB4 "Stubber", SoroSuub SBSS Reduced Length Barrel. Base Modifiers: Reduces the difficulty of checks made to conceal this weapon by one. Reduces range by one range band to a minimum of short. If already short, add 1 setback die to attack checks. Modification Options: 1 Innate Talent (Quick Draw) Mod.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Shortened Barrel</name>
+        <number>GEAR0001151</number>
+        <price>250</price>
+        <range/>
+        <rarity>4</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:28:25</sys_created_on>
+        <sys_id>d9887fbd2fa02c90e0f497eef699b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:28:25</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:35:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>41e11c622fa8ac90e0f497eef699b649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shortened Barrel</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_41e11c622fa8ac90e0f497eef699b649</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:35:08</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

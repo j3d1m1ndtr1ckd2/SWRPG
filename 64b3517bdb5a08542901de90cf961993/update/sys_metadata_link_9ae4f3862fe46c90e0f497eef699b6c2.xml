@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b124253c2f68e490e0f497eef699b628</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power"&gt;
+    &lt;x_176383_star_wars_force_power action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Force users often have precognitive flashes, experiencing waking dreams or visions about people and situations through their abilities. These powers are rarely so clear and obvious as to provide unequivocal visions of the future, but they are certainly enough to give Force users pause for thought when they have a &amp;#34;bad feeling about something.”&lt;/div&gt;
+&lt;div&gt;The power of foresight has been used in countless different ways by countless different Force users throughout history. Some use it to gain vague images far into the future, while others use it to predict the movements of their foes or see an unexpected event soon to happen.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;BASIC POWER&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;The most basic form of Foresee allows the character to look into the Force to see vague hints of his near future. These hints may be blurry visual images, brief samples of sound, or simple emotions. The basic power has one way of spending Force points:&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The user may spend a force point to gain vague hints of events to come in the next day of his own, personal future. The basic power cannot see further than one day.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;minimum_force_rating&gt;1&lt;/minimum_force_rating&gt;
+        &lt;name&gt;Foresee&lt;/name&gt;
+        &lt;number&gt;FORCE0001004&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-15 15:05:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;b124253c2f68e490e0f497eef699b628&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-15 15:05:57&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_force_power&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 22:50:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9ae4f3862fe46c90e0f497eef699b6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Foresee</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_9ae4f3862fe46c90e0f497eef699b6c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 22:50:02</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power</tablename>
+    </sys_metadata_link>
+</record_update>

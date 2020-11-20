@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>41b47fbd2fa02c90e0f497eef699b6cf</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Merr-Sonn's KX765 Marksman Barrel was designed to meet the needs of the fringer for whom long-range accuracy is a necessity. Popular among bounty hunters and assassins, this barrel is nearly two meters long and made of lightweight materials. It features upgraded static pulse adaptors as well as a denser galven circuitry pattern that not only increases the weapon's range, but also its accuracy. The trade-off for this increased range and accuracy is a weapon that's slightly awkward to use and nearly impossible to conceal due to the length of the barrel. This modification may only be applied to blaster rifles. Models Include: Merr-Sonn KX756 Marksman Barrel, SoroSuub WQ80 "Long-shot" Barrel, Arakyd 3300 Hawkeye Sharpshooter's Barrel. Base Modifiers: Increases weapon's Range by one Range Band, the weapon gains the Cumbersome 2 Quality. Modification Options: 2 Weapon Quality (Accurate + 1) Mods, 1 Innate Talent (Sniper Shot) Mod.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>2</hp_required>
+        <name>Marksman Barrel</name>
+        <number>GEAR0001146</number>
+        <price>1200</price>
+        <range/>
+        <rarity>4</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:11:29</sys_created_on>
+        <sys_id>41b47fbd2fa02c90e0f497eef699b6cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:11:29</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:33:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b68194622fa8ac90e0f497eef699b688</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Marksman Barrel</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b68194622fa8ac90e0f497eef699b688</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:33:37</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>42dbe1962fe3d050e0f497eef699b688</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Consular"&gt;95705ab92fe35050e0f497eef699b6c9&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Consulars are often drawn to their career by a strong sense of compassion. In many, this is expressed by a desire to mitigate bodily harm and cure the sick. A healer trains to do so, recognizing that helping the individual can be just as important as helping the entirety of galactic civilization.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Healers gain access to the additional career skills of &lt;strong&gt;Discipline, Knowledge (Education), Knowledge (Xenology), and Medicine. &lt;/strong&gt; If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each without spending starting experience.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;For some physicians, healing is focused entirely on the problems of the body. They treat injuries with a detached, clinical approach. A Healer, however, is driven by compassion and affinity with the Force. Because of this, a Healer takes a holistic approach toward medicine. Many Healers learn techniques that use the Force to fuel the body’s natural recuperative abilities—sometimes transforming a potentially lethal injury into one that is survivable. They also seek to calm and heal the wounded spirit just as thoroughly as healing the wounded physical form.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Many Healers have very strong philosophical compunctions against physical violence. As they spend so much of their lives attempting to heal injuries, they can be extremely reluctant to inflict them. Consequently, those who study this specialization exclusively are less likely to gain abilities that are devoted to combat. Some Healers, however, can take the time to develop defensive techniques, believing that dangerous situations are often the ones in which they are most needed.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Healer&lt;/name&gt;
+        &lt;number&gt;CARSPE0001004&lt;/number&gt;
+        &lt;specialization_skills&gt;f7ffc9d8dbae88542901de90cf961925,5ab0d55cdbae88542901de90cf9619c3,a9d0d55cdbae88542901de90cf9619dd,2420155cdbae88542901de90cf96190c&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-01 14:27:27&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;42dbe1962fe3d050e0f497eef699b688&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:18:33&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6bad04122f686c90e0f497eef699b64a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_6bad04122f686c90e0f497eef699b64a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:16</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

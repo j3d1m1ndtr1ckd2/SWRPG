@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9570af242f14a450e0f497eef699b602</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Medpacs are common even on those ships that do not engage in activities of dubious legality, for even those with little medical training can use the contents to treat injuries and save lives. Most ships carry several, and they are a common component in most survival gear. Standard medpacs contain field dressings, bacta patches, basic drugs, antiseptics, medical tools and knives, blood coagulators, synthflesh applicators, and more, all designed for ease of use and fast patient stabilization. The CLiS (General Life-Sustaining) also has a limited diagnostic scanner to monitor a patient's vital signs, and a computer that can provide treatment options. The intention of this medpac is to allow for basic first aid in the held. &#13;
+&#13;
+Medpacs allow characters to attempt to heal others using Medicine checks without penalty, as detailed on page 219 (Edge of the Empire).&#13;
+&#13;
+Models Include: Athakam MedTech Survival Medpac, Chiewab GLiS Emergency Medpac.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Emergency Medpac</name>
+        <number>GEAR0001059</number>
+        <price>100</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:16:04</sys_created_on>
+        <sys_id>9570af242f14a450e0f497eef699b602</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:16:04</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:43:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>42b31ce22fa8ac90e0f497eef699b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Emergency Medpac</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_42b31ce22fa8ac90e0f497eef699b647</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:43:07</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

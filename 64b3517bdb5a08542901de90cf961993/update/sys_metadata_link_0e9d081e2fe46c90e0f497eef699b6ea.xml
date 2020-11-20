@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>19ca60d42fb7d850e0f497eef699b6e0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Sentinel"&gt;6549e4502ff7d850e0f497eef699b695&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;In the ancient days of the Jedi Order, Sentinels worked tirelessly to police the galaxy’s criminal underbelly. However, a small subset of these enforcers focused their attentions on a far greater and more dangerous threat. They trained tirelessly to find and eliminate those who had fallen to the dark side of the Force and willingly embraced corruption. These Sentinels were called Shadows, and they hunted the Sith.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;For many years, the Sith were thought destroyed, and the Jedi Shadows gave up their calling or pursued other dark side Force users. They never realized that the Sith had not been eliminated, and were hiding right under their noses.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Now, with the Jedi Order destroyed and a Dark Lord of the Sith ruling the Galactic Empire, those who would follow the path of the Shadow find their roles reversed. No longer the secret investigators of an established order who searched the shadows of civilization, they are now the ones who must stay hidden. However, within these dark corners, Shadows still work tirelessly to bring justice to untouchable criminals and dark side Force users alike.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Shadows acquire &lt;strong&gt;Knowledge (Underworld), Skulduggery, Stealth, and Streetwise&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. These characters recognize that stealth and deception are integral to finding the targets they hunt. Criminal organizations are often mired in secrecy, and uncovering these secrets requires underhanded methods. While their techniques are frequently of questionable moral character, Shadows firmly believe their ultimate accomplishments more than justify the tools that they must use.&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Of course, an initiate who has turned to the dark side can prove a powerful opponent for a Shadow. Working against such an adversary can require all of an adept’s mundane and Force talents. A Shadow’s willingness to examine and utilize every tool and asset can play a major factor in overcoming such capable foes.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Shadow&lt;/name&gt;
+        &lt;number&gt;CARSPE0001018&lt;/number&gt;
+        &lt;specialization_skills&gt;62c0d55cdbae88542901de90cf9619dc,db40195cdbae88542901de90cf961990,1d50595cdbae88542901de90cf9619df,e350595cdbae88542901de90cf9619e1&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-07 14:50:59&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;19ca60d42fb7d850e0f497eef699b6e0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:52:10&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:37:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0e9d081e2fe46c90e0f497eef699b6ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shadow</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_0e9d081e2fe46c90e0f497eef699b6ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:37:52</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

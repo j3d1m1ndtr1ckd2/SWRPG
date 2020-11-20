@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e5b455bf2fe75850e0f497eef699b66e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Seeker"&gt;c1a6afeb2f235850e0f497eef699b628&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Few are as capable of exploring a planet and discovering its secrets as a Pathfinder. The combination of Pathfinders’ Force talents and their training enables them to quickly and precisely complete a search, even under the most adverse conditions. A Pathfinder can survive in a hostile wilderness for weeks or months, living off the land with minimal supplies and possibly a faithful companion animal. In fact, some Pathfinders are said to be able to bond with their companions through the Force, communicating with them mentally, seeing through their senses, and even directing their actions.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Pathfinders acquire &lt;strong&gt;Medicine, Ranged (Light), Resilience, and Survival&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. These skills are focused on complementing the Seeker’s career skills, so that the character becomes even more capable of operating independently. The addition of Medicine is primarily for personal benefit but can also be useful in aiding the character’s companions.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Some Pathfinders follow this career because they discover they have a knack for independent survival. This is most commonly true for Force-sensitive individuals who matured on primitive and uncivilized planets. If his small community was surrounded by hostile wilderness, a character is certain to have spent his youth exploring that environment—likely making friends with many of the wild animals present there. Pathfinders’ natural abilities likely led them to a position of some responsibility within their tribe. Their roles might have included securing the safety of the surrounding wilderness and maintaining any trails leading to agricultural resources or other necessities needed by the community’s residents.&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Others who follow the Pathfinder career do so out of a preference for the company of animals over that of sentient beings. Through their Force abilities, some learn to establish effective communications with the relatively primitive minds. In these interactions, they find that they enjoy the sincerity and straightforward nature of wild creatures.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Pathfinder&lt;/name&gt;
+        &lt;number&gt;CARSPE0001015&lt;/number&gt;
+        &lt;specialization_skills&gt;2420155cdbae88542901de90cf96190c,d290dd5cdbae88542901de90cf9619a6,9140595cdbae88542901de90cf9619dd,06601d1cdbae88542901de90cf9619ab&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-06 04:37:26&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e5b455bf2fe75850e0f497eef699b66e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:49:53&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:39:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>caed08122f686c90e0f497eef699b60b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pathfinder</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_caed08122f686c90e0f497eef699b60b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:39:14</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a2a297592fa0a890e0f497eef699b62f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Warrior"&gt;149cac502ff7d850e0f497eef699b679&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;In the latter days of the Jedi Order, Padawans studied six forms of lightsaber combat, ensuring familiarity with all. Few Jedi, however, were trusted to study the seventh, the highly restricted Juyo form. The Juyo Berserker is a Warrior who fights with this dangerously aggressive and ferocious manner of lightsaber combat. A Juyo Berserker could have formal training in Form VII, but the specialization can also apply to a self-taught fighter who harnesses natural rage and ferocity to overcome foes with an all-out offensive.&lt;/p&gt;
+&lt;p&gt;Juyo Berserkers receive &lt;strong&gt;Coercion, Discipline, lightsaber, and Melee&lt;/strong&gt; as additional career skills If this is the character&amp;#39;s starting specialization, the player chooses two of these skills and gains one free rank in each, without spending starting experience. While Juyo is undoubtedly an aggressive form of combat by the standards of the Jedi, it nonetheless requires at least the modicum of control necessary to wield a lightsaber effectively and -reIatively- safeIy. Compared to the other lightsaber forms in use by the Jedi in the latter days of the Republic, however, Juyo is reckless, Walking this fine line is not dissimilar from the way in which Juyo practitioners balance dangerously close to the dark side of the Force.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Juyo Berserker&lt;/name&gt;
+        &lt;number&gt;CARSPE0001060&lt;/number&gt;
+        &lt;specialization_skills&gt;f0df091cdbae88542901de90cf9619d6,f7ffc9d8dbae88542901de90cf961925,9e4ce9962fe3d050e0f497eef699b630,0c90dd5cdbae88542901de90cf9619a4&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-17 12:26:12&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a2a297592fa0a890e0f497eef699b62f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-17 12:26:12&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:12:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>95f97fca2fe46c90e0f497eef699b6d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Juyo Berserker</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_95f97fca2fe46c90e0f497eef699b6d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:12:05</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

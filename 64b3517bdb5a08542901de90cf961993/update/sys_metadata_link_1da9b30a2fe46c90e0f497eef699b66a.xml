@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>030307a72faf1850e0f497eef699b6c8</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Mystic"&gt;d428faab2f6f1850e0f497eef699b6aa&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Some individuals are able to remain constantly aware of the Force’s presence, even as they go about their daily lives. They recognize its influence in the subtlest of ways. For them, minor ripples in the Force reveal deep meanings and forewarn of critical events far in the future. However, this quantity of information—particularly in environments filled with other sentients—can become overwhelming. Because of this, many who follow the path of the Seer choose to live lives of relative isolation, far from crowded towns and cities.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Seers acquire &lt;strong&gt;Discipline, Knowledge (Lore), Survival, and Vigilance&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. Successful Seers must be able to maintain focus on daily life even as they also observe the Force, They must learn to recognize a broad range of subtle signs. They must also be prepared to dwell in a potentially hostile environment, apart from civilization, so that they can be spared from information overload.&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Among Force-sensitive individuals, Seers are arguably the ones who feel the strongest sense of guidance from the Force. Dwelling within the Force at all times, they can recognize even minor ripples and follow them to their source to stop a small problem from turning into a major crisis. Similarly, they may recognize an event that occurs far away and advise those nearby to take action so they can be prepared well in advance of an upcoming crisis. Seers’ abilities often give them insights into the future, guiding them to places and people who most need their wisdom and advice. This sometimes enables Seers to be in just the right place at the right time to take action that proves to be pivotal.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;The challenge for many Seers is to know the best time to move into a civilized area. As their sensitivity can become muddled, they may miss a sign of great import. Consequently, some prefer to remain apart from society for as long as possible, depending on allies to carry their missives. Seldom, however, are others capable of communicating a warning as effectively as the Seer who initially sensed the danger.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Seer&lt;/name&gt;
+        &lt;number&gt;CARSPE0001012&lt;/number&gt;
+        &lt;specialization_skills&gt;f7ffc9d8dbae88542901de90cf961925,63b0595cdbae88542901de90cf9619e4,06601d1cdbae88542901de90cf9619ab,2870195cdbae88542901de90cf961997&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-05 18:00:44&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;030307a72faf1850e0f497eef699b6c8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-04 06:24:07&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:10:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1da9b30a2fe46c90e0f497eef699b66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Seer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_1da9b30a2fe46c90e0f497eef699b66a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:10:43</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

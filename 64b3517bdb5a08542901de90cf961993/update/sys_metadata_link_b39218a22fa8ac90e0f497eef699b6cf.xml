@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4d8734712f5ca850e0f497eef699b608</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>This pouch, attached to one's belt, is designed for quick and easy access - to be used in the midst of battle where each second is valuable.  Hold 2 items with encumbrance 0.  May be drawn as an incidental.&#13;
+&#13;
+Models include: Rim Excursions Inc. Military Belt Pouch</description>
+        <encumbrance>0</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required/>
+        <name>Military Belt Pouch</name>
+        <number>GEAR0001117</number>
+        <price>10</price>
+        <range/>
+        <rarity>0</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-06 04:09:46</sys_created_on>
+        <sys_id>4d8734712f5ca850e0f497eef699b608</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-06 04:09:46</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:38:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b39218a22fa8ac90e0f497eef699b6cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Military Belt Pouch</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b39218a22fa8ac90e0f497eef699b6cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:38:19</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

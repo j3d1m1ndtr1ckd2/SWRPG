@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cbdedba02f14a450e0f497eef699b67c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Most scanners are small, hand-held gear, designed to be simple and durable for field use by scouts and explorers. Depending on the model, they indicate the nearby presence of life forms, heat fonts, radiation sources, acoustic emissions, or any combination thereof. Some operate in all directions, displaying their results on screens or holodisplays, while others are directional and only give indications towards where they are pointing. The Cryoncorp EnhanceScan is a typical example of this. Small enough to be carried by a single scout, the scanner has life-form tracking, motion sensing, metal detection,  and the ability to intercept standard frequency comlink transmissions. The motion sensing operates up to half a kilometer, while the remaining systems can detect targets up to a kilometer and a half, and the comlink interceptor can catch signals from much further. &#13;
+&#13;
+Models Include: Cryoncorp EnhanceScan General Purpose Scanner, Crozo Industrial Mineral Scanner, CUE GenScan.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>General Purpose Scanner</name>
+        <number>GEAR0001053</number>
+        <price>100</price>
+        <range/>
+        <rarity>3</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:08:08</sys_created_on>
+        <sys_id>cbdedba02f14a450e0f497eef699b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:08:08</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:45:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b72414262fa8ac90e0f497eef699b64b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>General Purpose Scanner</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b72414262fa8ac90e0f497eef699b64b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:45:09</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

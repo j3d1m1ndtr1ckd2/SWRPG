@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a4aa7b7d2fa42c90e0f497eef699b6bb</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Designed for use with the heaviest man-portable weapons, tripods are a common sight among heavy weapon squads. Used in static weapon emplacements to support heavy squad support weapons such as the Imperial Army's E-Web heavy repeating blaster, tripods use a number of different technologies—from self-extending hydraulics to tiny, low-output repulsorlift generators—to stabilize heavy weapons for firing. This attachment is only for use on light repeating blasters and heavy repeating blasters, as well as any portable Gunnery weapons. Setting up a tripod takes two preparation maneuvers. Models Include: BlasTech 3R Heavy Weapon Tripod Mount. Base Modifiers: Decrease weapon's Cumbersome rating by 3 when set up. May not move the weapon (except to pivot) once tripod is set up. Modification Options: 2 Weapon Quality (Cumbersome -1) Mods.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>2</hp_required>
+        <name>Tripod Mount</name>
+        <number>GEAR0001156</number>
+        <price>250</price>
+        <range/>
+        <rarity>3</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:37:50</sys_created_on>
+        <sys_id>a4aa7b7d2fa42c90e0f497eef699b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:37:50</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:34:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>55c198622fa8ac90e0f497eef699b654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tripod Mount</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_55c198622fa8ac90e0f497eef699b654</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:34:36</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

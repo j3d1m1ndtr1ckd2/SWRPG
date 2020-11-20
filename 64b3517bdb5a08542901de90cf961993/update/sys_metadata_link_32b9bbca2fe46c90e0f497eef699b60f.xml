@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2263ab472f371890e0f497eef699b66f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Spy"&gt;b0e26fc32f371890e0f497eef699b616&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Before an army dares commit its forces to action, it must know where the enemy is, what that enemy is doing, and what the conditions of the area of operations are.  Additionally, military forces require constant updates on possible future sites for operations.  Rebellions like that being conducted by the Alliance are in continual need of contingency locations for new bases as the Empire relentlessly tracks down existing headquarters.  Scouts are the vital source of this information.&lt;/p&gt;
+&lt;p&gt;A Scout gains access to &lt;strong&gt;Athletics, Medicine, Piloting (Planetary), and Survival&lt;/strong&gt; as his additional career skills.  If this is the PC&amp;#39;s first specialization, two of these skills gain a free rank.  The ability to travel to and on planets is essential to Scout operations, and Scouts are trained to survive in the worst conditions while missing nothing with their information gathering efforts.&lt;/p&gt;
+&lt;p&gt;Most Scouts tend to be loners, or else are used to working with a very small group.  The ability to slip into and out of a system unnoticed is the key to their success and survival, and most Scouts are accustomed to going long stretches of time without direct contact with their command structure.  Not surprisingly, most Scouts develop fairly independent streaks and personality quirks, making them ill-suited to general military service.  At the same time, Scouts often develop a profound love of travel and an appreciation for the diverse beauty of the Galaxy.&lt;/p&gt;
+&lt;p&gt;The Alliance depends heavily on its Scouts for survival.  The Scouts&amp;#39; instincts and vigilance are far better than any technical alert system for warning when Imperial forces are closing in.  When one base is threatened with annihilation by the might of the Empire&amp;#39;s massive navy, packing up and heading to a new one can only happen because a Scout found the ideal location for a new base months ago.  As part of a diverse team working for the Rebellion, a Scout is often the one determining where to go for a mission and how best to get there.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Scout&lt;/name&gt;
+        &lt;number&gt;CARSPE0001057&lt;/number&gt;
+        &lt;specialization_skills&gt;95bf0d1cdbae88542901de90cf9619a6,2420155cdbae88542901de90cf96190c,1730915cdbae88542901de90cf9619ed,06601d1cdbae88542901de90cf9619ab&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 17:20:56&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2263ab472f371890e0f497eef699b66f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 22:16:32&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:11:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>32b9bbca2fe46c90e0f497eef699b60f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scout</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_32b9bbca2fe46c90e0f497eef699b60f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:11:05</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c5ab2a2c2f10a450e0f497eef699b65b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>20</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>These insidious devices are the size of frag grenades, but have a thermite-baradium casing surrounding a baradium core. On detonation, the resulting fusion reaction creates a particle wave that disintegrates everything in the blast. Most authorities ban thermal detonators because of baradium's instability. One detonator can level a building.&#13;
+&#13;
+When using a thermal detonator, any despair result on the check means the detonator explodes prematurely. The wielder takes full damage from the weapon unless he can perform an additional maneuver to try to get clear; in this case, he only suffers the Blast damage. &#13;
+&#13;
+Thermal detonators can be set to detonate on impact or set with a timer to detonate up to 3 rounds after being activated at the beginning of the attacker's action. Some also have a pressure switch that, once pressed, detonates immediately upon release. Thermal detonators are so potent that their Blast quality affects everyone within short range of the original target.&#13;
+&#13;
+Models Include: Merr-Sonn Class-A Thermal Detonator.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required/>
+        <name>Thermal Detonator</name>
+        <number>GEAR0001021</number>
+        <price>2000</price>
+        <range>short</range>
+        <rarity>8</rarity>
+        <skill_used display_value="Ranged - Light (Ag)">d290dd5cdbae88542901de90cf9619a6</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:25:10</sys_created_on>
+        <sys_id>c5ab2a2c2f10a450e0f497eef699b65b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:25:10</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bd8498262fa8ac90e0f497eef699b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Thermal Detonator</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_bd8498262fa8ac90e0f497eef699b6d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:40</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

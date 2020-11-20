@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cc4fbfa82f14a450e0f497eef699b61b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Despite what are undoubtedly stunning features (or because of them), there are many times when an individual needs to look less like himself. Disguise kits contain the means to make this happen, with makeup, false hairpieces, iris chromatics, and even falseprint skins and DNA cloaks in advanced kits. Other kits can contain practical camouflage gear for urban and held settings, for blending into  surroundings rather than with other people. There are numerous disguise kits made across the galaxy, especially since many must be made for a specific type of species. However, they all contain similar materials and share similar costs. &#13;
+&#13;
+Models Include: Numerous Variants.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Disguise Kit</name>
+        <number>GEAR0001079</number>
+        <price>100</price>
+        <range/>
+        <rarity>4</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:29:23</sys_created_on>
+        <sys_id>cc4fbfa82f14a450e0f497eef699b61b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:29:23</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:41:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>646394e22fa8ac90e0f497eef699b658</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Disguise Kit</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_646394e22fa8ac90e0f497eef699b658</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:41:39</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

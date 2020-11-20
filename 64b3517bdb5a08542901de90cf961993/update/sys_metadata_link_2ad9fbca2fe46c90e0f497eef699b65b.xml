@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5b43a7072f371890e0f497eef699b65a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Spy"&gt;b0e26fc32f371890e0f497eef699b616&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;When most people hear the word Spy, the operatives of this specialization are what come to mind.  Infiltrators endeavor to place themselves in the very den of the beast, usually sneaking or lying their way in undetected.  All too often, Infiltrators face the worst possible odds without the benefit of direct backup, and frequently without a way out if they are discovered by the wrong people at the wrong time.&lt;/p&gt;
+&lt;p&gt;Infiltrators gain &lt;strong&gt;Deception, Melee, Skulduggery, and Streetwise&lt;/strong&gt; as their additional career skills; taking this as the first specialization for a PC grants a free rank in two of these skills.  Masters of covert work, Infiltrators know how to con or lie their way past almost anyone, and they know all of the tricks necessary to break into and out of secure locations, as well as everything else needed for underhanded operations.  They tend to prefer silent and deadly attacks, often best accomplished with hand-to-hand weapons.&lt;/p&gt;
+&lt;p&gt;An Infiltrator rarely relies upon brute force or direct confrontation to accomplish his goals.  Instead, he uses stealth, guile, subterfuge, and disguise to integrate himself among his enemies.  He gains access to sensitive areas, talks to the right people, and employs every other available tactic to obtain valuable information, steal important secrets and assets, and leave behind a target who is reeling from his efforts.&lt;/p&gt;
+&lt;p&gt;Lately, Infiltrators are used by the Alliance as part of special strike teams sent throughout Imperial-controlled space, where they are used in combined operations intended to disrupt the Empire&amp;#39;s plans while gathering information at the same time.  For more direct combat missions, Infiltrators tend to operate in a support role.  When the mission calls for subterfuge and more covert operations, Infiltrators are often the ones in charge.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Infiltrator&lt;/name&gt;
+        &lt;number&gt;CARSPE0001056&lt;/number&gt;
+        &lt;specialization_skills&gt;31ffc9d8dbae88542901de90cf961924,0c90dd5cdbae88542901de90cf9619a4,db40195cdbae88542901de90cf961990,e350595cdbae88542901de90cf9619e1&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 17:20:17&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;5b43a7072f371890e0f497eef699b65a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 22:09:37&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:11:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ad9fbca2fe46c90e0f497eef699b65b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Infiltrator</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2ad9fbca2fe46c90e0f497eef699b65b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:11:37</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

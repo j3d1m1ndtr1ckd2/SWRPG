@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3b594bc12f606890e0f497eef699b6a4</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power_enhancement"&gt;
+    &lt;x_176383_star_wars_force_power_enhancement action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;20&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;strong&gt;Heal:&lt;/strong&gt; If the user used no dark side points to generate force points on the check, the target of Heal also heals an amount of strain equal to the wounds he recovered.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Harm:&lt;/strong&gt; If the user used any dark side points to generate force points the check, the user heals an amount of strain equal to the wounds he inflicted on one target.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;force_power display_value="Heal/Harm"&gt;f664a53c2f68e490e0f497eef699b626&lt;/force_power&gt;
+        &lt;number&gt;FENH0001061&lt;/number&gt;
+        &lt;pre_req_force_enhancements/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-16 17:07:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;3b594bc12f606890e0f497eef699b6a4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-16 17:07:11&lt;/sys_updated_on&gt;
+        &lt;type&gt;control&lt;/type&gt;
+    &lt;/x_176383_star_wars_force_power_enhancement&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:00:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f067734a2fe46c90e0f497eef699b627</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f067734a2fe46c90e0f497eef699b627</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:00:51</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power_enhanceme</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>57dbb7752fa42c90e0f497eef699b6d7</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Built into a helmet, this system provides an individual with a host of specialized optical and audio sensors. Each system is equipped with passive light amplification, thermal signature readers, ultrasound pickups, millimeter wave emitters, video capture, and common optical enhancements. This may be installed on any armor. Other Models Include: BioTech MULTI Enhanced Vision System, Atlas Corp Full-Spectrum Optical Enhancer, Neuro-Saav Anq-Y Enhanced Optics Suite Base Modifiers: Removes up to 2 setback dice added to all  Perception, Surveillance, Vigilance, and combat skill checks due to darkness, smoke, or other environmental effects that obscure vision. Modification Options: 1 Skill (Vigilance) Mod.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Enhanced Optics Suite</name>
+        <number>GEAR0001161</number>
+        <price>1750</price>
+        <range/>
+        <rarity>3</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:42:59</sys_created_on>
+        <sys_id>57dbb7752fa42c90e0f497eef699b6d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:42:59</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:32:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0b3150622fa8ac90e0f497eef699b609</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enhanced Optics Suite</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_0b3150622fa8ac90e0f497eef699b609</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:32:16</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

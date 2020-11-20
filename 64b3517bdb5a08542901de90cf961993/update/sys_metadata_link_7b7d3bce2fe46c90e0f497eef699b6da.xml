@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>92509b032ff31890e0f497eef699b614</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Technician"&gt;da201f032ff31890e0f497eef699b613&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Depending on who is asked, Mechanics are either the glue that holds everything together or the grease that makes it all go. Most Mechanics would tell you they do both, and then get back to work. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The additional career skills of a Mechanic indicate his practical versatility: &lt;strong&gt;Brawl, Mechanics (of course, and this gives him the opportunity to have two starting ranks in the skill), Piloting (Space), and Skulduggery&lt;/strong&gt;.  If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience.  Pragmatic and tough are two key traits that come out of a Mechanic&amp;#39;s talent tree, as are the many ways he is capable of fixing what&amp;#39;s broken and being prepared for any mechanical contingencies that arise.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;While it is relatively easy to find a Mechanic almost anywhere in the galaxy, it&amp;#39;s considerably more difficult to find a good one, and even harder to find one that can be trusted. Ship captains will literally travel across systems to get to a Mechanic they can trust to do a good job for them, which is why Mechanics tend to be in high demand.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A Mechanic that&amp;#39;s hooked up with the typical Player Character group has likely decided he doesn&amp;#39;t want to spend all of his time in a work pit or engineering hangar.  He probably wants to see a bit of the galaxy and get some flight time in. Fortunately, Mechanics tend to pick up a few things about how to take care of themselves in tough situations, and given a few minutes and some random devices, they may well cobble together a rather explosive means of dealing with real problems.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Mechanic&lt;/name&gt;
+        &lt;number&gt;CARSPE0001038&lt;/number&gt;
+        &lt;specialization_skills&gt;72705d5cdbae88542901de90cf9619f1,5d10155cdbae88542901de90cf96190a,3f70fd9cdb22c8542901de90cf96190b,db40195cdbae88542901de90cf961990&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:57:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;92509b032ff31890e0f497eef699b614&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:48:53&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:27:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7b7d3bce2fe46c90e0f497eef699b6da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mechanic</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_7b7d3bce2fe46c90e0f497eef699b6da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:27:33</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

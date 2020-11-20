@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ca21a2a02f10a450e0f497eef699b6be</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>10</base_damage>
+        <critical_rating>5</critical_rating>
+        <defense/>
+        <description>(Stun damage only applies to droids).&#13;
+&#13;
+These anti-droid weapons work by combining the power pack of a blaster rifle with a typical droid restraining bolt. Somewhat contrary to its name, the bolt doesn't disable a droid mechanically, but instead attaches to its housing and issues a broadcast command to halt that cannot be refused. The ionization blaster amplifies the command via the blaster's power pack to a range of about 12 meters in a wide, unfocused arc. &#13;
+&#13;
+Organic life forms feel no more than a brief sting, but droids are blasted with the halt command and simultaneously overloaded with energy that prevents any shielding that might resist it. Most droids are rendered inert for up to half an hour when hit by a successful ionization blast (reflected in the stun damage). &#13;
+&#13;
+Ionization blasters work only on droids and cyborgs, and only deal strain damage as per their Stun quality. They have no effect on organic beings beyond a brief and painful sting. &#13;
+&#13;
+Models Include: Jawa scavenged ion blaster, Merr-Sonn DEMP 2 Ion Carbine.</description>
+        <encumbrance>3</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Ion Blaster</name>
+        <number>GEAR0001011</number>
+        <price>250</price>
+        <range>short</range>
+        <rarity>3</rarity>
+        <skill_used display_value="Ranged - Light (Ag)">d290dd5cdbae88542901de90cf9619a6</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 14:38:21</sys_created_on>
+        <sys_id>ca21a2a02f10a450e0f497eef699b6be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 14:40:11</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:47:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d1d4dc262fa8ac90e0f497eef699b6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ion Blaster</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_d1d4dc262fa8ac90e0f497eef699b6f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:47:59</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

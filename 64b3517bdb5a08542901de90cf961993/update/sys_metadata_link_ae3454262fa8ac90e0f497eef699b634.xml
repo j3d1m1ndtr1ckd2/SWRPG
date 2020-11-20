@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cdd9fe6c2f50a450e0f497eef699b691</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense>0</defense>
+        <description>Anyone traveling outside the civilized planets of the galaxy should make a point of packing some form of hostile environment gear. Clothing for hot, desert environments often includes voluminous robes,&#13;
+goggles, headwraps, self-cooling packs, and water recyclers. Clothing for cold environments often consists of insulated parkas, quilted and layered pants, icegoggles, and head-gear.&#13;
+&#13;
+Characters with this gear may ignore setback dice imposed by the environment they find themselves in. The gear must be appropriate to the environment at hand. &#13;
+&#13;
+Models Include: Pretormin Environmental Froz350 and ScorSear 200 complete gear sets.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points>1</hard_points>
+        <hp_required/>
+        <name>Adverse Environment Gear</name>
+        <number>GEAR0001035</number>
+        <price>500</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak>1</soak>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:30:24</sys_created_on>
+        <sys_id>cdd9fe6c2f50a450e0f497eef699b691</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 16:32:27</sys_updated_on>
+        <type>armor</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:45:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ae3454262fa8ac90e0f497eef699b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Adverse Environment Gear</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ae3454262fa8ac90e0f497eef699b634</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:45:20</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

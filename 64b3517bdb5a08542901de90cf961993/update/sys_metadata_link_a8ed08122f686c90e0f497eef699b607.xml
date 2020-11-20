@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cdc355bf2fe75850e0f497eef699b61e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Seeker"&gt;c1a6afeb2f235850e0f497eef699b628&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Far from the civilized parts of the galaxy, there are many predators that can endanger sentient life. Some of these are animals that prey upon anything digestible. Others&lt;/div&gt;
+&lt;div&gt;are malicious and twisted individuals who enjoy a savage and bloodthirsty existence. Hunters are Force adepts who are uniquely capable of tracking, confronting, and slaying these creatures, particularly those who hide in the wilds, far from civilization.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Hunters acquire &lt;strong&gt;Coordination, Ranged (Heavy), Stealth, and Vigilance&lt;/strong&gt; as additional career skills. If this is the PC’s starting specialization, he chooses two of these skills and gains one free rank in each. These ranks do not cost experience. Hunters need to be able to sneak up on their targets, move through difficult terrain, and be constantly alert to their surroundings. Many hunters train with ranged weapons so that they can strike their targets from far away.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Most Hunters initially embark upon their careers focused on animal prey. Few, however, engage in this practice out of a desire to prove their mettle or a thirst for blood. Rather, their connection to the Force often lets them differentiate between predators that hunt out of necessity from those that are actively malicious. A Hunter does not normally interfere in the natural cycle of life, but he’s more than willing to restore balance by eliminating a predator that kills needlessly and destroys natural habitats. Sadly, these foul and twisted animalistic intelligences also have their parallels within sentient beings. All too often, a Hunter finds himself hunting intelligent quarry; this can prove to be the most dangerous game of all.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Hunter&lt;/name&gt;
+        &lt;number&gt;CARSPE0001014&lt;/number&gt;
+        &lt;specialization_skills&gt;73ef415cdbae88542901de90cf9619f3,d8a0d55cdbae88542901de90cf9619c0,1d50595cdbae88542901de90cf9619df,2870195cdbae88542901de90cf961997&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-06 04:33:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;cdc355bf2fe75850e0f497eef699b61e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:49:07&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:39:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a8ed08122f686c90e0f497eef699b607</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hunter</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a8ed08122f686c90e0f497eef699b607</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:39:08</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

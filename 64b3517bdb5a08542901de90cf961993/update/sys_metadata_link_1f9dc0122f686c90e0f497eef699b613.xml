@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2bc6789c2ff7d850e0f497eef699b696</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Warrior"&gt;149cac502ff7d850e0f497eef699b679&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Starfighter pilots enthusiastically engage in one of the most dangerous forms of battle imaginable. Their shields and armor—for starfighters that have either— offer virtually no resistance to the weapons of the capital ships they oppose. Instead, they must trust in the Force to protect them as they launch their daring assaults. Those who embrace the risks of space combat may pursue the Starfighter Ace specialization.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Starfighter Aces acquire &lt;strong&gt;Astrogation, Gunnery, Mechanics, and Piloting (Space)&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. These provide the essentials needed to successfully pilot a starfighter in combat. Force adepts who acquire these skills most often control single-passenger craft, in which they must assume responsibility for weapons at the same time that they handle navigation.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;While this style of combat is dependent on a vehicle, it remains physically exhausting. Even with a full range of technological enhancements, effective pilots must be capable of enduring rapid and extreme shifts in velocity and direction. They must also remain ready to strike a deadly blow against an opponent at just the right instant, even while struggling to endure extreme physiological conditions.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Starfighter Ace&lt;/name&gt;
+        &lt;number&gt;CARSPE0001022&lt;/number&gt;
+        &lt;specialization_skills&gt;35af0d1cdbae88542901de90cf9619ce,7180115cdbae88542901de90cf96191d,5d10155cdbae88542901de90cf96190a,3f70fd9cdb22c8542901de90cf96190b&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-07 15:43:34&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2bc6789c2ff7d850e0f497eef699b696&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:55:10&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:37:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1f9dc0122f686c90e0f497eef699b613</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Starfighter Ace</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_1f9dc0122f686c90e0f497eef699b613</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:37:58</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

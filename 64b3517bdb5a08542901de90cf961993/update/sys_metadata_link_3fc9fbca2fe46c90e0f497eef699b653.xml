@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>419fc3cf2fb31890e0f497eef699b6e1</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Hired Gun"&gt;73ae8bcf2fb31890e0f497eef699b6e1&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;If the Marauder is the melee master, and the Bodyguard is the all-around weapons and gear trooper, the Mercenary Soldier is the warfare expert. An adept of both ranged combat and military tactics, he is a leader of warriors in combat and a deadly combatant himself. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Mercenary Soldiers add the career skills of &lt;strong&gt;Discipline, Gunnery, Leadership and Ranged (Heavy).&lt;/strong&gt;  If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. A Mercenary Soldier can be a true mental rock in critical situations.  He is a deadly foe all on his own, and deadlier still if he has a force to lead in battle.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Mercenary Soldiers are the most likely to have come from prior service with a larger organization, and they almost certainly had at least a non-commissioned officer role with that force. They have a keen grasp of both tactics and strategy, though they will tend to focus more on the former as a matter of practicality and survival. Even in less formal situations, a Mercenary Soldier will tend to show a high degree of personal discipline and order.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;In a Player Character group, it will not be out of the question for a Mercenary Soldier to take charge, at least in situations where combat is likely. Though his leadership skills are not as  comprehensive as other specializations, they are uniquely focused for combat.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Mercenary Soldier&lt;/name&gt;
+        &lt;number&gt;CARSPE0001034&lt;/number&gt;
+        &lt;specialization_skills&gt;f7ffc9d8dbae88542901de90cf961925,7180115cdbae88542901de90cf96191d,8300915cdbae88542901de90cf9619e0,d8a0d55cdbae88542901de90cf9619c0&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:54:03&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;419fc3cf2fb31890e0f497eef699b6e1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-20 16:07:57&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:11:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3fc9fbca2fe46c90e0f497eef699b653</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mercenary Soldier</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_3fc9fbca2fe46c90e0f497eef699b653</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:11:26</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

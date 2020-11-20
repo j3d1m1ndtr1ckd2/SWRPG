@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>985b30392fa8e890e0f497eef699b602</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Rebel Alliance stands for the restitution of the values and structures that were set aside during the rise of Emperor Palpatine. As Force users have been among those persecuted under the Imperial regime, many of them sympathize with the goals of the Rebellion. As a result of this, one of the Rebel Alliance’s most underestimated assets is a cadre of amateur Force-sensitives who&lt;/div&gt;
+&lt;div&gt;could prove decisive in the struggle against the Empire. Or at least, they would be if they were properly identified and trained.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Within the ranks of Rebel organizations, Force-sensitives are safe from the Empire and have access to one of the few remaining societies in the galaxy that still openly acknowledges and encourages an understanding of the light side of the Force. While the Jedi Order has been shattered by the Empire, there are many within the Rebel Alliance who remember them and their teachings. While few Force-sensitives are ever fortunate enough to receive training from an actual Jedi, at least in the Alliance they can learn about the Order’s traditions and techniques from sympathetic sources.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;While they were regarded by the citizens of the galaxy as a benevolent order dedicated to the promotion of peace and harmony throughout the galaxy, the Jedi Knights also had a well-deserved reputation as fierce warriors, particularly when it came to close-quarters fighting with their signature weapon, the lightsaber. While few Force-sensitives hope to develop such prowess, or come to possess a lightsaber of their own, they do tend to develop some skill at martial arts. In fact, a little training in hand-to-hand combat is recommended, both as a method of self-protection and because the associated regimen is said to help put one in the right frame of mind to contemplate the Force. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The Force-Sensitive Emergent specialization does not have any career skills associated with it. When a character purchases this specialization, he automatically receives a Force rating of 1 (if he did not already have it). However, if the character already has a Force rating of 1 or higher, it does not improve when he purchases the Force-Sensitive Emergent specialization. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Just like other specializations, the Force-Sensitive Emergent specialization can be taken at character creation or at any subsequent point. This represents the fact that some Force-sensitives do not become aware of their potential until a relatively late stage of their lives.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Force Sensitive Emergent&lt;/name&gt;
+        &lt;number&gt;CARSPE0001061&lt;/number&gt;
+        &lt;specialization_skills/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-18 14:45:16&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;985b30392fa8e890e0f497eef699b602&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-18 14:45:16&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:12:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>08f97fca2fe46c90e0f497eef699b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Force Sensitive Emergent</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_08f97fca2fe46c90e0f497eef699b6cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:12:00</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

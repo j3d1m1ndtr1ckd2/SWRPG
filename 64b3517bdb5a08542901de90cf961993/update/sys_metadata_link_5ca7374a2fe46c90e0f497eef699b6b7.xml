@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e138c3cd2f206890e0f497eef699b625</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power_enhancement"&gt;
+    &lt;x_176383_star_wars_force_power_enhancement action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;15&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;strong&gt;Heal&lt;/strong&gt;: The user may spend 1 force point to heal 1 additional wound on the target per rank of Strength purchased. The user may activate this multiple times, increasing the number of wounds healed by this number each time.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Harm&lt;/strong&gt;: The user may spend 1 force point to inflict 1 additional wound per rank of Strength purchased. The user may activate this multiple times, increasing the number of wounds inflicted by this number each time.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;force_power display_value="Heal/Harm"&gt;f664a53c2f68e490e0f497eef699b626&lt;/force_power&gt;
+        &lt;number&gt;FENH0001059&lt;/number&gt;
+        &lt;pre_req_force_enhancements&gt;a8b6878d2f206890e0f497eef699b68f,37684b812f606890e0f497eef699b6da&lt;/pre_req_force_enhancements&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-16 17:00:49&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e138c3cd2f206890e0f497eef699b625&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-16 17:03:29&lt;/sys_updated_on&gt;
+        &lt;type&gt;strength&lt;/type&gt;
+    &lt;/x_176383_star_wars_force_power_enhancement&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:01:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5ca7374a2fe46c90e0f497eef699b6b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_5ca7374a2fe46c90e0f497eef699b6b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:01:55</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power_enhanceme</tablename>
+    </sys_metadata_link>
+</record_update>

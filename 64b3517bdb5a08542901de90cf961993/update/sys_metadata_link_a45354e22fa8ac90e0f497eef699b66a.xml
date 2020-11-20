@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>aef184f42f94a450e0f497eef699b62c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Though climbing gear is usually used in wilderness areas away from artificial turbolifts or simple stairs, it also can be useful in gaining entry to higher reaches through clandestine means. Most gear includes a spooled length of syntherope or liquid cable, with a hook or some other attachment to secure the line. The Pretormin Environmental Basic kit also includes four quick-adhesion pitons that can securely attach to almost any surface. &#13;
+&#13;
+Models Include: Pretormin Environmental Basic Climbing Gear.</description>
+        <encumbrance>1</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Climbing Gear</name>
+        <number>GEAR0001090</number>
+        <price>50</price>
+        <range/>
+        <rarity>2</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:41:03</sys_created_on>
+        <sys_id>aef184f42f94a450e0f497eef699b62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:41:03</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:41:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a45354e22fa8ac90e0f497eef699b66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Climbing Gear</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a45354e22fa8ac90e0f497eef699b66a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:41:22</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6f80db432ff31890e0f497eef699b6a0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Technician"&gt;da201f032ff31890e0f497eef699b613&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;For the Slicer, a computer or datapad is just a puzzle to solve with prizes for doing so. &amp;#34;Slicing&amp;#34; is the term used for the invasive efforts to steal or alter data in a system. With practically the entire galaxy wired to computerized systems, Slicers are extremely valuable people to know, and dangerous to cross. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Slicers naturally tend towards the underworld, yet they are also highly intelligent and knowledgeable. They add these skills to their career skills: &lt;strong&gt;Computers, Knowledge (Education), Knowledge (Underworld), and Stealth&lt;/strong&gt;. If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. Their talents mainly focus on making computerized and electronic systems dance to their tune.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Slicers are among the most valued professionals in the Outer Rim, especially to the criminal world. A Slicer&amp;#39;s worth, however, is only as good as his reputation; success and loyalty will earn him top credits, while blowing key operations or double-crossing an employer will tend to make his prospects far less attractive. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;A Player Character group without a Slicer will have something of a handicap, especially where acquiring data or handling computerized problems is concerned.  A Slicer might join a group for a chance to get away from a bad deal, or simply because he&amp;#39;s ready to see the next planet. Slicers tend to be a quirky bunch, so there might be any number of motivations at work.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Slicer&lt;/name&gt;
+        &lt;number&gt;CARSPE0001040&lt;/number&gt;
+        &lt;specialization_skills&gt;aadf851cdbae88542901de90cf961953,5ab0d55cdbae88542901de90cf9619c3,62c0d55cdbae88542901de90cf9619dc,1d50595cdbae88542901de90cf9619df&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:58:22&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6f80db432ff31890e0f497eef699b6a0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:53:41&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:27:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dd7df7ce2fe46c90e0f497eef699b6f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Slicer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_dd7df7ce2fe46c90e0f497eef699b6f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:27:22</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

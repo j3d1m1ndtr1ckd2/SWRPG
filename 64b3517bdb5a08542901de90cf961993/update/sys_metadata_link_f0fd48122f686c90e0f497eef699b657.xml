@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>f1e203a72faf1850e0f497eef699b6eb</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Mystic"&gt;d428faab2f6f1850e0f497eef699b6aa&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The presence and showmanship that can come naturally to all Mystics reflects itself in the way of a duelist.  For practitioners of Makashi, dominating a combat through one’s presence is just as important as dominating it through martial prowess, and the Makashi Duelist is the ultimate expression of that art.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Makashi Duelists acquire &lt;strong&gt;Charm, Cool, Coordination, and Lightsaber&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. This combination reflects the showmanship and presentation so intrinsic to the duelist’s art. A true Makashi Duelist must always fight with poise and grace, never showing the slightest strain and keeping complete control over his facial expressions and his body’s most minute movements.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Though some detractors may dismiss this fighting style as overly foppish and vain, a Makashi Duelist remains an exceptionally potent combatant. Those detractors forget that the Makashi form was developed to fight against other lightsaber-armed opponents. At its heart, Makashi focuses on one goal: to meet an enemy with a sword or lightsaber and slay him. A true Makashi Duelist never loses sight of this goal, and all his flourishes and feints are but means to an end. Movements that work to deflect and exhaust an opponent—particularly if the foe is not prepared for battle with a Force-sensitive—can soon leave an enemy frustrated with the entire experience. As the opponent becomes increasingly worn down, the Makashi Duelist soon finds an opportunity to exploit the foe’s exhaustion.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A Makashi Duelist’s force of personality, rather than natural athleticism, often drives his combat technique. Elements of personal flair become an effective means of disorienting and distracting an opponent during a battle. Sometimes a verbal misdirection can be every bit as effective as a physical one, leaving an opponent open to a single master stroke.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Makashi Duelist&lt;/name&gt;
+        &lt;number&gt;CARSPE0001011&lt;/number&gt;
+        &lt;specialization_skills&gt;3acf0d1cdbae88542901de90cf9619a2,b8ef415cdbae88542901de90cf9619f1,73ef415cdbae88542901de90cf9619f3,9e4ce9962fe3d050e0f497eef699b630&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-05 18:00:09&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;f1e203a72faf1850e0f497eef699b6eb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:46:26&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:39:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f0fd48122f686c90e0f497eef699b657</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Makashi Duelist</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f0fd48122f686c90e0f497eef699b657</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:39:26</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

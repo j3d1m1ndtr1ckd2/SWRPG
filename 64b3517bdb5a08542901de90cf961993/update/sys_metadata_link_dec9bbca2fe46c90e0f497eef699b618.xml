@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>379e9fcf2ff31890e0f497eef699b6d9</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Diplomat"&gt;564ed3c72ff31890e0f497eef699b613&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;An Ambassador seeks out those who can help a cause and works to ensure they do.  He brings the best arguments he can to sway planets, systems, corporations, and other groups to side with the forces he serves.  The Ambassador brings every possible asset to bear in order to convince them to see things his way.&lt;/p&gt;
+&lt;p&gt;Ambassadors gain &lt;strong&gt;Charm, Discipline, Knowledge (Core Worlds), and Negotiation&lt;/strong&gt; as added career skills, and may receive a free rank in two of them if this is the first selected specialization for the PC.  Masters of the bargaining process between governments and similar factions, Ambassadors know how to keep their wits about them and resist being manipulated themselves.&lt;/p&gt;
+&lt;p&gt;Compromise is a way of life for the Ambassador; he won&amp;#39;t even bother going into a negotiation if he has no room in which to maneuver.  The true mastery of his trade is in getting his most important goals agreed to and making the other side of the discussion feel like the agreement was its doing.  Ambassadors are just as effective in dealing with individuals in crisis situations as they are in managing discussions with a room full of skeptical politicians.&lt;/p&gt;
+&lt;p&gt;The Alliance lives and dies on the abilities of its best Ambassadors.  Every time they are able to convince yet another planet, faction, or corporation to side with the Rebellion, that much more hope spread throughout the ranks, and many more resources become available.  The upper echelons understand even the end of the war won&amp;#39;t mean an end to the conflict, and that stage will be fully in the hands of their Ambassadors.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Ambassador&lt;/name&gt;
+        &lt;number&gt;CARSPE0001047&lt;/number&gt;
+        &lt;specialization_skills&gt;3acf0d1cdbae88542901de90cf9619a2,f7ffc9d8dbae88542901de90cf961925,80b0d55cdbae88542901de90cf9619c2,d720d55cdbae88542901de90cf9619b9&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 16:59:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;379e9fcf2ff31890e0f497eef699b6d9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 21:23:03&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:11:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dec9bbca2fe46c90e0f497eef699b618</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ambassador</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_dec9bbca2fe46c90e0f497eef699b618</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:11:20</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ce78aae82f10a450e0f497eef699b6a1</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>20</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>Missile tubes are heavy, portable devices that launch rocket-powered projectiles. Most fire proton-charged warheads designed to destroy small transports, but other types of ammunition can occasionally be found.&#13;
+&#13;
+Missile tubes are elaborate affairs, equipped with micro-repulsorlifts that make them easier for infantry soldiers to carry, as well as advanced tracking screens to detect a target's speed, range, and energy signature. The latter is particularly important because missile tubes can be fired in one of three modes. The first is infrared, which homes in on a craft's heat signature. The second is gravity-activated mode, which means it tracks a target's repulsorlift. Both of these modes can be spoofed, either by dropping burning flares to distract heat sensors or small repulsorlift pods as chaff. See the Guided weapon quality to handle these two modes of attack. &#13;
+&#13;
+The third firing method is direct-fire. This requires more skill but sends the projectile in a straight line that cannot be spoofed by chaff or flares (and loses the Guided quality). Of course, if another target happens to get in the way, or if the attacker's aim is off, the missile will hit whatever is in its path without discrimination. Missile tubes require one preparation maneuver before firing. &#13;
+&#13;
+Models Include: Merr-Sonn PLX-2M Missile Tube.</description>
+        <encumbrance>7</encumbrance>
+        <hard_points>4</hard_points>
+        <hp_required/>
+        <name>Missile Tube</name>
+        <number>GEAR0001018</number>
+        <price>7500</price>
+        <range>extreme</range>
+        <rarity>8</rarity>
+        <skill_used display_value="Gunnery (Ag)">7180115cdbae88542901de90cf96191d</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:11:21</sys_created_on>
+        <sys_id>ce78aae82f10a450e0f497eef699b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:11:21</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f994d8262fa8ac90e0f497eef699b6d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Missile Tube</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f994d8262fa8ac90e0f497eef699b6d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:56</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

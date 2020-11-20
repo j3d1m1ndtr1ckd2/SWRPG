@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>083ff7b12fe42c90e0f497eef699b626</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>1</base_damage>
+        <critical_rating>4</critical_rating>
+        <defense/>
+        <description>Cortosis gauntlets are simply metal or composite gloves with thick forearm plates laced with cortosis ore. The cortosis in their construction allows them to block or even disrupt lightsaber blades.&#13;
+&#13;
+When a character armed with a lightsaber makes a combat check targeting an opponent armed with refined cortosis gauntlets, 3 threat or 1 despair may be spent to cause a lightsaber to short out and  deactivate after the combat check has been resolved. When a character armed with refined cortosis gauntlets makes a combat check targeting a character armed with a lightsaber, the attacking character may spend 3 advantage or 1 triumph to cause the lightsaber to short out and deactivate after the combat check has been resolved. The lightsaber may be reactivated as an incidental, but it may not be reactivated until after the last Initiative slot during the next round. &#13;
+&#13;
+Models Include: Various models.</description>
+        <encumbrance>3</encumbrance>
+        <hard_points>2</hard_points>
+        <hp_required/>
+        <name>Cortosis Gauntlents (Refined)</name>
+        <number>GEAR0001168</number>
+        <price>1000</price>
+        <range>engaged</range>
+        <rarity>7</rarity>
+        <skill_used display_value="Brawl (Br)">72705d5cdbae88542901de90cf9619f1</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:58:43</sys_created_on>
+        <sys_id>083ff7b12fe42c90e0f497eef699b626</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:58:43</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:31:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f0115c222fa8ac90e0f497eef699b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cortosis Gauntlents (Refined)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f0115c222fa8ac90e0f497eef699b6fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:31:34</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

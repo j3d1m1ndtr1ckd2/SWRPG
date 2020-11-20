@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>51fb753d2face890e0f497eef699b6c0</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Little more than a pair of folding or collapsible legs mounted beneath the barrel of a long arm, bipods are used to stabilize awkward or heavy weapons to improve their firing characteristics. Especially&#13;
+useful when firing from behind low cover or from a prone position, bipods are typically used on squad support weapons, or by sharpshooters and snipers to better steady their weapons. This attachment&#13;
+can only be applied to rifles, carbines, and light repeating blasters, and takes one preparation maneuver to set up. Models Include: Galactic Arms XA Classic Bipod, Czerka AA20 Marksman Bipod. Base Modifiers: Decrease weapon's Cumbersome rating by 2 when firing from a prone or crouched position (or can otherwise brace the bipod on something). Modification Options: None.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Bipod Mount</name>
+        <number>GEAR0001142</number>
+        <price>100</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-18 19:24:25</sys_created_on>
+        <sys_id>51fb753d2face890e0f497eef699b6c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-18 19:24:25</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:33:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3e91d4622fa8ac90e0f497eef699b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bipod Mount</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_3e91d4622fa8ac90e0f497eef699b682</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:33:53</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

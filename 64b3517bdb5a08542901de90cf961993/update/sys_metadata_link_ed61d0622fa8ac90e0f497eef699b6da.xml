@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>df4b73bd2fa42c90e0f497eef699b6c0</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Designed to allow a single sentient to field even the heaviest man-portable weapons with no support, weapon harnesses are rare among the Outer Rim territories. Worn over the shoulders and belted  around the midsection or torso, weapon harnesses consist of a series of load-bearing straps and harnesses connected to a gyro-stabilized, power-assisted boom arm attached to a heavy weapon. Powered by a tiny rechargeable power pack, the harness offers its user enhanced stability and strength when using heavy weapons. This attachment can only be used with Ranged (Heavy) and Gunnery weapons. Models Include: Arakyd WW480 "Goliath" Weapon Harness, Galactic Arms HR12 Power Harness, SoroSuub "Little Giant" Heavy Weapon Power Assist. Base Modifiers: Decrease Cumbersome rating by 2. Modification Options: 1 Innate Talent (Brace) Mod. </description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>2</hp_required>
+        <name>Weapon Harness</name>
+        <number>GEAR0001158</number>
+        <price>500</price>
+        <range/>
+        <rarity>2</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:40:05</sys_created_on>
+        <sys_id>df4b73bd2fa42c90e0f497eef699b6c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:40:05</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:32:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ed61d0622fa8ac90e0f497eef699b6da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weapon Harness</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ed61d0622fa8ac90e0f497eef699b6da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:32:59</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

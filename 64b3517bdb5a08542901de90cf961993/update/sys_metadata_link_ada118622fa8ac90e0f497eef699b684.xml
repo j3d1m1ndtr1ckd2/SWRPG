@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>550b37f52fa42c90e0f497eef699b6b8</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Slings are lengths of hide or synthetic fabric designed to allow easy handling of long arms like blaster rifles and slugthrower rifles. They come in a dizzying array of styles, from the simple adjustable single-strap sling for carrying a weapon off the shoulder to multi-strap slings made of specialized materials that allow for any number of custom sling configurations. These attachments can only be used with Ranged (Heavy) weapons. Models Include: Custom-tooled Bantha hide sling, Tactical three-point sling, Quick-release one-point drop sling. Base Modifiers: Decrease Cumbersome rating by 1. Modification Options: 1 Innate Talent (Quick Draw) Mod.</description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Weapon Sling</name>
+        <number>GEAR0001157</number>
+        <price>100</price>
+        <range/>
+        <rarity>0</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:39:08</sys_created_on>
+        <sys_id>550b37f52fa42c90e0f497eef699b6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:39:08</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:34:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ada118622fa8ac90e0f497eef699b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weapon Sling</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ada118622fa8ac90e0f497eef699b684</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:34:04</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

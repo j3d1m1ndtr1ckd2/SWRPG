@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e8b6887c2f94a450e0f497eef699b6b8</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>A utility belt is a common item for those on active missions where quick access to tools and gear is a necessity; even Imperial stormtroopers use them. Their contents will vary with their user and their planned actions; sabotage missions might have belts with explosives and security slicer chips, while a ship mechanic might have his stuffed with his favorite tools. Some belts also have weapon holsters or clips. &#13;
+&#13;
+Utility belts increase the character's encumbrance threshold by 1.&#13;
+&#13;
+Models Include: Numerous Variants.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Utility Belt</name>
+        <number>GEAR0001098</number>
+        <price>25</price>
+        <range/>
+        <rarity>0</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 22:02:01</sys_created_on>
+        <sys_id>e8b6887c2f94a450e0f497eef699b6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 22:02:01</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:40:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>651310e22fa8ac90e0f497eef699b6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Utility Belt</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_651310e22fa8ac90e0f497eef699b6f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:40:21</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

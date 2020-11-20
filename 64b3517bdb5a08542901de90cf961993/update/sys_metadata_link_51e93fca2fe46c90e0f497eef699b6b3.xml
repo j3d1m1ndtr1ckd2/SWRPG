@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>81932f072f371890e0f497eef699b609</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Spy"&gt;b0e26fc32f371890e0f497eef699b616&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;In a war, the vast majority of those who fight use weapons, explosives, and other tools of violence and destruction to confront the enemy.  There are warriors, however, who do battle with codes, data packets, lightning-quick programming skills, and intuitive rewiring of communication networks to unmake the enemy&amp;#39;s plans and reduce his technology to just so much useless metal, plastic, and wires.  These tech warriors are called Slicers.&lt;/p&gt;
+&lt;p&gt;Slicers gain &lt;strong&gt;Computers, Knowledge (Education), Knowledge (Underworld), and Stealth&lt;/strong&gt; as their added career skills.  For PCs choosing this as their first specialization, two of these skills gain a free rank.  Computers and electronic systems are the battlefield of the typical slicer, but he is also skilled at the arts of breaking and entering and other covert actions.  Most Slicers also know their way around the streets and the criminal world, even when they are working legitimately for a military, government, or corporate organization.&lt;/p&gt;
+&lt;p&gt;There is a feeling of community where Slicers are concerned, even among those who are directly opposed to one another.  They know they operate at a different level from everyone else, understanding technology in a way the vast majority of the galaxy&amp;#39;s population never will.&lt;/p&gt;
+&lt;p&gt;For the Slicer, the secrets of banking, security, communications, droids, automated systems, vehicles, ships, and everything else involving a computer are his to manipulate or take.  Any Slicer might be a minor god of a given system of networked machines but for the interference and opposition of other slicers.  Recognizing that only those of their kid can hope to challenge them gives most Slicers a sense of superiority, or at least a smug security in their value to those without such skills.&lt;/p&gt;
+&lt;p&gt;Those Slicers working for the Rebellion are often more altruistic than their compatriots elsewhere in the galaxy, though more than a few are with the Alliance simply because they need protection from the Empire and its allied corporations.  Most Slicers work directly with Alliance intelligence, but there are those adventurous types who prefer to be part of special teams sent into the heart of areas under Imperial influence.  There, they can do battle directly with their counterparts, proving their superiority while serving the cause.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Slicer&lt;/name&gt;
+        &lt;number&gt;CARSPE0001058&lt;/number&gt;
+        &lt;specialization_skills&gt;aadf851cdbae88542901de90cf961953,5ab0d55cdbae88542901de90cf9619c3,62c0d55cdbae88542901de90cf9619dc,1d50595cdbae88542901de90cf9619df&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 17:21:29&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;81932f072f371890e0f497eef699b609&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 22:30:42&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:11:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>51e93fca2fe46c90e0f497eef699b6b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Slicer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_51e93fca2fe46c90e0f497eef699b6b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:11:48</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

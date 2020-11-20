@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a0bc6aec2f10a450e0f497eef699b6c2</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating>5</critical_rating>
+        <defense/>
+        <description>Thin, metallic wires turn standard insulated gauntlets into shock gloves. Martial artists can use them to augment their brutal hand attacks, and more than a few nefarious rogues have been known to "seal a deal" with a handshake that leaves a rival convulsing on the floor. &#13;
+&#13;
+Models Include: Corellian Personal Defence X-21.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points>1</hard_points>
+        <hp_required/>
+        <name>Shock Gloves</name>
+        <number>GEAR0001023</number>
+        <price>300</price>
+        <range>engaged</range>
+        <rarity>2</rarity>
+        <skill_used display_value="Brawl (Br)">72705d5cdbae88542901de90cf9619f1</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 15:29:28</sys_created_on>
+        <sys_id>a0bc6aec2f10a450e0f497eef699b6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 15:29:28</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:46:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a07418262fa8ac90e0f497eef699b6d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shock Gloves</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a07418262fa8ac90e0f497eef699b6d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:46:18</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

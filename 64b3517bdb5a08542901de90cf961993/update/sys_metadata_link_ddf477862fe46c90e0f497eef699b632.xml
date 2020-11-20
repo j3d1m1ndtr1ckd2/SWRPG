@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>dae461bc2f68e490e0f497eef699b6a1</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power"&gt;
+    &lt;x_176383_star_wars_force_power action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The ability to influence the minds of others is not something to be taken lightly. Misuse of the ability, colloquially known as a &amp;#34;mind trick,” is a sure step on the path to the dark side. A powerful Force user can manipulate the minds of others to the point where he can convince them to believe things that are untrue, or calm an angry crowd. Conversely, he can rile the crowd into a murderous frenzy, or frighten a single soul into gibbering madness. This is where the danger of Influence lies.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;However, Influence is not inherently evil. Many Force users have used Influence to protect the helpless or to deal with a threat in a way that avoids violence. It is much better to convince a guard to return to his post than to have to kill him.  Influence’s most basic and arguably crudest ability allows the user to inflict strain on a living target, stressing his mind until he passes out. However, upgrades allow the Force user who specializes in Influence to perform much more subtle and impressive feats.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;BASIC POWER&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;The most basic form of Influence does not allow the Force user to guide or shape the thoughts of others. He can merely strain their mind, inflicting stress and exhaustion. The basic power has one effect that can be triggered multiple times on the same or different targets:&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;The user spends a force point to stress the mind of one living target he is engaged with, inflicting 1 strain. The user may activate this multiple times, increasing the strain inflicted by one each time.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;Special Rule (light side/dark side force point use)&lt;/strong&gt;: When guiding and shaping thoughts, only force points generated from dark side may be used to generate negative emotions such as rage, fear, and hatred. Only force points generated from light side may be used to generate positive emotions such as peace, tranquility, and friendliness. Other emotions such as confusion can be created from 3generated from either light side or dark side.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;minimum_force_rating&gt;1&lt;/minimum_force_rating&gt;
+        &lt;name&gt;Influence&lt;/name&gt;
+        &lt;number&gt;FORCE0001006&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-15 15:10:04&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;dae461bc2f68e490e0f497eef699b6a1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-16 18:44:28&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_force_power&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 22:50:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ddf477862fe46c90e0f497eef699b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Influence</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ddf477862fe46c90e0f497eef699b632</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 22:50:14</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power</tablename>
+    </sys_metadata_link>
+</record_update>

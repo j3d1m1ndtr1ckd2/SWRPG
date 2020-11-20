@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cc6d5fa02f14a450e0f497eef699b691</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>This is a general anesthetic produced on many worlds for medical procedures, designed to render the user unconscious. Unsurprisingly, many criminals have found it valuable. This poison may be&#13;
+introduced into a target's body via aerosol deployment, food ingestion, or injection (via an applicator or dart). A single dose has an Average (2 difficulty dice) difficulty, while two or more doses combined into a single application have a Hard (3 difficulty dice) difficulty. The poison inflicts 5 strain if the target fails the check. If the check generates one to two threat, the target must also give up his free maneuver during his next turn (he may still take two maneuvers, however); if it generates 3 threat or more, he's staggered during his next turn. Finally, the GM can spend 1 despair to make the target test against the poison again during the next round, as the poison remains in his system.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Synthetic Standard Anesthetic (1 dose)</name>
+        <number>GEAR0001049</number>
+        <price>35</price>
+        <range/>
+        <rarity>4</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 19:02:46</sys_created_on>
+        <sys_id>cc6d5fa02f14a450e0f497eef699b691</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 19:02:46</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:45:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c13414262fa8ac90e0f497eef699b650</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Synthetic Standard Anesthetic (1 dose)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c13414262fa8ac90e0f497eef699b650</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:45:15</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

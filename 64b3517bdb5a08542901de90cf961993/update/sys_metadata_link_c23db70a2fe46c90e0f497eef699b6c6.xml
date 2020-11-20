@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>01705b432ff31890e0f497eef699b6fa</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Technician"&gt;da201f032ff31890e0f497eef699b613&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Outlaw Techs are the specialists others call on when they want something out of the ordinary. A blaster that works beyond factory tolerances? No problem. A transponder that identifies a smuggler&amp;#39;s freighter as a religious pilgrimage craft? It&amp;#39;ll cost a few credits, but sure. A protocol droid altered to carry out an assassination? Just how big is that credit line, anyway?&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The Outlaw Tech adds the following to his available career skills: &lt;strong&gt;Knowledge (Education), Knowledge (Underworld), Mechanics, and Streetwise. &lt;/strong&gt; If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. This gives him the opportunity to have two starting ranks in Mechanics, if he also chooses that as one of his free starting career skill ranks. With his talents, the Outlaw Tech is adept at doing fantastic things with technology that he probably shouldn&amp;#39;t.  He&amp;#39;s also tough, clever, and adaptable. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Outlaw Techs find the Outer Rim very comfortable. They&amp;#39;re able to practice their unique style of work with far less chance of running afoul of Imperial agents or other repressive government restrictions.  They also find it far easier to make the contacts and get the kinds of customers that really appreciate their services. Of course, it&amp;#39;s a lot harder to get true state-of-the-art equipment, but making do with what&amp;#39;s on hand is a specialty of the Outlaw Tech.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Outlaw Techs in a Player Character group will be highly prized, especially for their ability to make all kinds of improvements on other characters&amp;#39; gear.  They are also adept at keeping ships and vehicles operational, and in some situations, they&amp;#39;re as handy at acquiring certain goods as some Explorers. Without a Smuggler in the group, an Outlaw Tech may be the best bet for dealing with the local black markets.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Outlaw Tech&lt;/name&gt;
+        &lt;number&gt;CARSPE0001039&lt;/number&gt;
+        &lt;specialization_skills&gt;5ab0d55cdbae88542901de90cf9619c3,62c0d55cdbae88542901de90cf9619dc,5d10155cdbae88542901de90cf96190a,e350595cdbae88542901de90cf9619e1&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:58:00&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;01705b432ff31890e0f497eef699b6fa&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:51:01&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:26:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c23db70a2fe46c90e0f497eef699b6c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Outlaw Tech</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c23db70a2fe46c90e0f497eef699b6c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:26:20</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

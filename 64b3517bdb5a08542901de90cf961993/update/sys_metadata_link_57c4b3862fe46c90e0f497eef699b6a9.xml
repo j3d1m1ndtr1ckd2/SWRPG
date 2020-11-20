@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1095a5fc2f68e490e0f497eef699b61f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power"&gt;
+    &lt;x_176383_star_wars_force_power action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Many Force users develop the ability to shift objects without physically handling them, moving matter with the power of the mind. Those with a modicum of training in the skill can cause small objects to slowly and painstakingly rise, fall, or travel in space. True masters of the Force are rumored to be able to hurl starships about or juggle heavy crates in the air. Other applications of the power allow for Force users to manipulate control panels or computer keyboards at a distance. There is thought to be no limit to what a Force user could move with the application of enough concentration.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;When moving items, the default speed is slow and deliberate, not fast enough to inflict injury or accurate enough to allow for fine manipulation.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;BASIC POWER&lt;/div&gt;
+&lt;div&gt;At its most basic, Move allows the Force user to move small objects that are near him. It has one basic effect:&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The user may spend a force point to move one object of silhouette 0 that is within short range up to his maximum range. The default maximum range is short range. The user may not activate this multiple times.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;minimum_force_rating&gt;1&lt;/minimum_force_rating&gt;
+        &lt;name&gt;Move&lt;/name&gt;
+        &lt;number&gt;FORCE0001008&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-15 15:12:28&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1095a5fc2f68e490e0f497eef699b61f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-15 15:12:28&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_force_power&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 22:49:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>57c4b3862fe46c90e0f497eef699b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Move</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_57c4b3862fe46c90e0f497eef699b6a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 22:49:33</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power</tablename>
+    </sys_metadata_link>
+</record_update>

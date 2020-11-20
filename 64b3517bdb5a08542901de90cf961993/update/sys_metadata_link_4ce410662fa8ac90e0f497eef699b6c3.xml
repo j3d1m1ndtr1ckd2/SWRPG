@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d4e364ac2fd46450e0f497eef699b64d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>9</base_damage>
+        <critical_rating>3</critical_rating>
+        <defense/>
+        <description>The rifle or carbine blaster is the typical firearm of soldiers and heavy security forces around the galaxy. Their longer barrels propel bolts much farther than blaster pistols, and their heavier cartridges typically trigger a more powerful blast of particles.&#13;
+&#13;
+Stormtroopers in service of the Empire carry EE-11 blaster rifles with folding stocks. At short range, the rifle can be fired one-handed—just as if it were a heavy pistol. The stock is extended when firing at more distant targets so that the trooper can better stabilize his aim.&#13;
+&#13;
+Models Include: E-ll Blaster Rifle (multiple manufacturers), BlasTech A280 Blaster Rifle.</description>
+        <encumbrance>4</encumbrance>
+        <hard_points>4</hard_points>
+        <hp_required/>
+        <name>Blaster Rifle</name>
+        <number>GEAR0001006</number>
+        <price>900</price>
+        <range>long</range>
+        <rarity>5</rarity>
+        <skill_used display_value="Ranged - Heavy (Ag)">d8a0d55cdbae88542901de90cf9619c0</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 05:30:11</sys_created_on>
+        <sys_id>d4e364ac2fd46450e0f497eef699b64d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 05:30:11</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:48:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4ce410662fa8ac90e0f497eef699b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Blaster Rifle</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_4ce410662fa8ac90e0f497eef699b6c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:48:10</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

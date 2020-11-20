@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9295f49c2ff7d850e0f497eef699b65d</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Warrior"&gt;149cac502ff7d850e0f497eef699b679&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The ancient lightsaber fighting style of Shii-Cho is said to be the first lightsaber form taught to the Jedi and their predecessors. It focuses on the essentials of saber fighting and borrows heavily from other sword fighting techniques. Appropriately, the modern practitioners of this form focus on perfecting the core tenants of sword fighting, recognizing the strength of simplicity. Shii-Cho Knights eschew fancy maneuvers, preferring to focus on the fundamentals of block, parry, and strike.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Shii-Cho Knights acquire &lt;strong&gt;Athletics, Coordination, Lightsaber, and Melee&lt;/strong&gt; as additional career skills. If this is the character’s starting specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. These skills provide them with a solid grounding in the core techniques of any physical conflict. They are familiar with the weapon they wield, but they are also very comfortable exploiting their natural athleticism and flexibility. Because of this, they can not only avoid an enemy’s attack, but also make certain that they are able to strike effectively when their target is at a disadvantage.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Followers of this path are seldom concerned with personal appearances or the style that they exhibit in a conflict. Instead, they are focused on precision and on achieving their ultimate goal of victory. For them, a solid grounding in the basics is something they can rely on in any situation. When lives are on the line, they devote their attention to executing their maneuvers in a traditional way, using them to counter an opponent while simultaneously restricting his options.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Shii-Cho Knight&lt;/name&gt;
+        &lt;number&gt;CARSPE0001021&lt;/number&gt;
+        &lt;specialization_skills&gt;95bf0d1cdbae88542901de90cf9619a6,73ef415cdbae88542901de90cf9619f3,9e4ce9962fe3d050e0f497eef699b630,0c90dd5cdbae88542901de90cf9619a4&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-07 15:38:10&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;9295f49c2ff7d850e0f497eef699b65d&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 14:54:36&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 00:38:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c8dd84122f686c90e0f497eef699b692</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Shii-Cho Knight</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c8dd84122f686c90e0f497eef699b692</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 00:38:50</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>47e3b7ff2fdce090e0f497eef699b62c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_career_specialization_talent_tree_m2m">
+    <x_176383_star_wars_career_specialization_talent_tree_m2m action="INSERT_OR_UPDATE">
+        <career_specialization display_value="Starfighter Ace">2bc6789c2ff7d850e0f497eef699b696</career_specialization>
+        <pre_requisite_talents>b7e273bf2fdce090e0f497eef699b650,d6f377332f102490e0f497eef699b6f9</pre_requisite_talents>
+        <rank>5</rank>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 22:59:34</sys_created_on>
+        <sys_id>47e3b7ff2fdce090e0f497eef699b62c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 23:00:38</sys_updated_on>
+        <talent display_value="Tricky Target">05e67ecedbf6c4102901de90cf961906</talent>
+        <xp_cost>25</xp_cost>
+    </x_176383_star_wars_career_specialization_talent_tree_m2m>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 15:22:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>94185fde2fe0ac90e0f497eef699b667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_94185fde2fe0ac90e0f497eef699b667</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 15:22:29</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

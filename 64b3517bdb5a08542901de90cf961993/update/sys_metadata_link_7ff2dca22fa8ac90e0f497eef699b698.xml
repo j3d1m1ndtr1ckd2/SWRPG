@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9f488c7c2f94a450e0f497eef699b624</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Derived from an industrial dye used in large-scale construction operations such as the creation of starships, booster blue is a performance enhancing drug popular amongst pilots and gunmen. The drug is most often distributed as a blue liquid stored in metal cans to prevent spillage on skin or surfaces that are easily damaged. Though nobody seems to know the drug's exact history, apparently some intrepid soul came to the realization that by consuming this chemical concoction meant for painting starships, humans and many other species can temporarily benefit from drastically boosted reaction times. Of course, this power is not without a pricebooster blue has a number of deleterious side-effects, and over-doses are common, especially amongst pilots who attempt to overlap applications of the drug  during extended combat operations.&#13;
+&#13;
+A character under the effects of booster blue may upgrade the ability of any Agility, Intellect, or Cunning-related check he undertakes once, reflecting his improved concentration and mental acuity.  However, this artificial focus takes a toll on the mind. A character under the effects of booster blue may not remove strain at the end of any scenes or encounters for the remainder of the session. Booster blue's beneficial effects last for one scene or combat encounter. &#13;
+&#13;
+Restrictions: Booster blue is illegal on most worlds.</description>
+        <encumbrance>0</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Booster Blue (dose)</name>
+        <number>GEAR0001101</number>
+        <price>10</price>
+        <range/>
+        <rarity>5</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 22:09:34</sys_created_on>
+        <sys_id>9f488c7c2f94a450e0f497eef699b624</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 22:15:15</sys_updated_on>
+        <type>black_market_items</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:39:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7ff2dca22fa8ac90e0f497eef699b698</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Booster Blue (dose)</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_7ff2dca22fa8ac90e0f497eef699b698</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:39:58</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

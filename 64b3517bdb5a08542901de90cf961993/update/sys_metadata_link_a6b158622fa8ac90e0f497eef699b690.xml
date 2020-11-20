@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9c0a3bf52fa42c90e0f497eef699b64a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>Popular with marksmen and snipers, this attachment consists of a long tube attached to the top of a weapon with a number of precisely ground lens elements protected by an impact-resistant housing. The resulting scope magnifies distant images for long-range shooting. This attachment can be used on any ranged weapon (with the exception of one-use weapons like grenades, or weapons like flame projectors that would not realistically benefit from a sight).  Models Include: Merr-Sonn 80Z Telescopic Optical Sight, Zikon Optics Model 40 Marksman Scope. Base Modifiers: Reduce the difficulty of ranged&#13;
+combat checks at long and extreme range by one. Modification Options: None. </description>
+        <encumbrance/>
+        <hard_points/>
+        <hp_required>1</hp_required>
+        <name>Telescopic Optical Sight</name>
+        <number>GEAR0001155</number>
+        <price>250</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 04:34:51</sys_created_on>
+        <sys_id>9c0a3bf52fa42c90e0f497eef699b64a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 04:34:51</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:34:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a6b158622fa8ac90e0f497eef699b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telescopic Optical Sight</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a6b158622fa8ac90e0f497eef699b690</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:34:25</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

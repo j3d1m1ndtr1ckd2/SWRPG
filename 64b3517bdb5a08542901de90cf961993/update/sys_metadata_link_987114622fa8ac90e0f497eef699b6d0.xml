@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>fee7040e2fe42c90e0f497eef699b601</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>4</base_damage>
+        <critical_rating>3</critical_rating>
+        <defense/>
+        <description>Electrostaffs first saw widespread use during the Clone Wars among Separatist forces, especially among the personal guard droids of General Grievous. Over two meters long, electrostaves are designed to keep a Jedi or other lightsaber wielder at arms' length. Constructed from lightweight, highly durable phrik alloy, a mixture of phrikite, tydirium, and other trace ores, electrostaves can resist a lightsaber blade. In addition to their defensive capabilities, electrostaves are also equipped with small electromagnetic pulse generators at each end that constantly crackle and spit showers of sparks when active. Like force pikes, electrostaves can be set to a number of different power outputs: a mild shock used to control crowds; a powerful Stun setting that can sideline even the toughest opponent; or the full-power setting that can easily tear a sentient in half.&#13;
+&#13;
+Electrostaves require two hands to use.&#13;
+&#13;
+Models Include: Baktoid Armor Workshop vz. 890 Thunderer, Arakyd Industries Stryker.</description>
+        <encumbrance>4</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Electrostaff</name>
+        <number>GEAR0001173</number>
+        <price>4500</price>
+        <range>engaged</range>
+        <rarity>6</rarity>
+        <skill_used display_value="Melee (Br)">0c90dd5cdbae88542901de90cf9619a4</skill_used>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 05:35:44</sys_created_on>
+        <sys_id>fee7040e2fe42c90e0f497eef699b601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 05:35:44</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:33:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>987114622fa8ac90e0f497eef699b6d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Electrostaff</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_987114622fa8ac90e0f497eef699b6d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:33:10</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

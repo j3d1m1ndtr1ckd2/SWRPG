@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d97188b82f14a450e0f497eef699b623</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>For those not used to extremes of heat or cold, thermal protection is a must. Thermal cloaks can be worn while on the move, or used as a blanket or makeshift tent. Depending on the technical access of the user, these could be simple but effective fabric blends or ultra-thin synthetic meshes than can collapse into a pocket. Most offer support for cold environments, with more clever models having reflective materials to also aid in areas of excessive heat. Thermal blankets and thermal cloaks remove up to 2 setback dice from any checks made to handle the effects of extreme heat or cold.&#13;
+&#13;
+Models Include: Numerous Variants.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points/>
+        <hp_required/>
+        <name>Thermal Cloak</name>
+        <number>GEAR0001088</number>
+        <price>200</price>
+        <range/>
+        <rarity>1</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 21:38:59</sys_created_on>
+        <sys_id>d97188b82f14a450e0f497eef699b623</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 21:38:59</sys_updated_on>
+        <type>gear</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 19:41:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5763d4e22fa8ac90e0f497eef699b673</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Thermal Cloak</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_5763d4e22fa8ac90e0f497eef699b673</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 19:41:50</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

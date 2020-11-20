@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>63ab430f2fb31890e0f497eef699b63b</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
+    &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Colonist"&gt;9c5b430f2fb31890e0f497eef699b654&lt;/career&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;At first, the idea of a Scholar wandering with a bunch of ne&amp;#39;er-do-wells in the Outer Rim might seem a bit odd, if not downright ridiculous. However, with all of the dangers and wonders of &amp;#34;a thousand thousand worlds,&amp;#34; having someone around who actually knows something more than how to reload a heavy blaster could be exceedingly useful under any number of circumstances. This is especially true when a group is faced with something truly unknown, or needs to find something that simple tracking alone cannot locate.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;Knowledge (Outer Rim), Knowledge (Underworld). Knowledge (Xenology), and Perception&lt;/strong&gt; are the Scholar&amp;#39;s bonus career skills from his specialization. If this is the character&amp;#39;s starting Specialization, he may choose two of these skills and gain one free rank in each, without spending starting experience. These skills emphasize both his role as a font of information and his keen awareness of his surroundings. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Even in the Outer Rim, there are those who have a keen respect for knowledge and learning. Even criminal overlords find having some &amp;#34;brains&amp;#34; around helps them when they want to expand their operations or exploit a new opportunity. Other Scholars, however, are far more interested in getting out into the galaxy, seeing for themselves the things they wish to study, and digging around in ancient places for the lost knowledge they want to uncover. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A Scholar in a group is very likely of the held researcher variety; seeking allies with physical capabilities who can defend him is a matter of simple expediency. It may be that he&amp;#39;s signed on with some kind of operation that actually has no direct impact on his research, but the group is likely to travel to places he wishes to go, which suits his desires well.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Scholar&lt;/name&gt;
+        &lt;number&gt;CARSPE0001028&lt;/number&gt;
+        &lt;specialization_skills&gt;38c0595cdbae88542901de90cf9619e5,62c0d55cdbae88542901de90cf9619dc,a9d0d55cdbae88542901de90cf9619dd,5d30915cdbae88542901de90cf9619eb&lt;/specialization_skills&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:37:03&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;63ab430f2fb31890e0f497eef699b63b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 15:06:58&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career_specialization&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 23:27:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>736df7ce2fe46c90e0f497eef699b6ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scholar</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_736df7ce2fe46c90e0f497eef699b6ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 23:27:16</sys_updated_on>
+        <tablename>x_176383_star_wars_career_specialization</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9c5b430f2fb31890e0f497eef699b654</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;3acf0d1cdbae88542901de90cf9619a2,31ffc9d8dbae88542901de90cf961924,80b0d55cdbae88542901de90cf9619c2,5ab0d55cdbae88542901de90cf9619c3,63b0595cdbae88542901de90cf9619e4,8300915cdbae88542901de90cf9619e0,d720d55cdbae88542901de90cf9619b9,e350595cdbae88542901de90cf9619e1&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Tor the Colonist, the eight defining career skills are &lt;strong&gt;Charm, Deception, Knowledge (Core Worlds), Knowledge (Education), Knowledge (Lore), Leadership, Negotiation, and Streetwise.&lt;/strong&gt; He automatically gains one rank in four of these skills (of his choosing) without spending experience, and he receives a discount when he spends experience to purchase ranks in any of these skills.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;A Colonist&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;In a way, Colonists are the most out-of-place people in the Outer Rim. They are most often from the Core Worlds, where they were well educated and part of the cultural and professional elite. A Colonist doesn&amp;#39;t tend to have the training to survive in areas of high conflict, and he isn&amp;#39;t particularly adept at physical exploits. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;What he does possess, however, s a keen grasp of the bigger picture, and he usually has both the knowledge to understand probems and the capacity to get them solved. He probably came to the&lt;/div&gt;
+&lt;div&gt;Outer Rim to create opportunities for himself, or to find a better life than what he left behind. If he cannot find that better life, he&amp;#39;ll apply all of his knowledge to the task of creating it, and he&amp;#39;ll use his considerable social skills to gather like-minded allies to his cause.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Of course, not all Colonists are necessarily altruistic in their pursuits. If knowledge is power, and power corrupts, then it follows that the Colonist is well-suited to take what he knows and exploit it for personal wealth. With charisma and street smarts, a Colonist might gather quite a team of specialists together to  both watch his back and see to it that his enemies are brought to heel as he solidifies his power base. Countless Outer Rim worlds have become the personal fiefs of Colonists with bold ideas and willing followers.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Of course, some Colonists fail in their pursuits, and run afoul of the law or their fellows. These Colonists are forced to flee their lives of luxury and survive wherever they can. Some of these individuals may fall in with less reputable, even criminal, individuals. Luckily, these unfortunate Colonists sometimes find their unique skill sets are in high demand.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The clever Colonists—the ones most likely to survive their first few months in the Outer Rim—figure out how to parlay their knowledge and talents into currency and contacts. Providing excellent advice, medical aid, or valuable knowledge can easily endear a Colonist to a warlord or gang leader, giving him the very thing he needs most: security. From a position of relative safety, a wise Colonist will begin gathering connections and data, building up a network that he can one day exploit for his aims, whatever they may be.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Colonists are the consummate leaders, negotiators, inspirational speakers, and strategists. A Colonist can take any small group of capable operators and turn them into a true force to be reckoned with. A capable Colonist in a group can mean the difference between just getting by and doing something truly spectacular in the galaxy.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Colonist&lt;/name&gt;
+        &lt;number&gt;CAR0001011&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:35:44&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;9c5b430f2fb31890e0f497eef699b654&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 03:10:10&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:12:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>977780be2f1cac50e0f497eef699b62d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Colonist</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_977780be2f1cac50e0f497eef699b62d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:12:28</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

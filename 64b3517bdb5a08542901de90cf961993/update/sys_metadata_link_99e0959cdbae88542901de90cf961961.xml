@@ -2,31 +2,44 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>b8ef415cdbae88542901de90cf9619f1</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Cool (Pr)</name>
-        <number>SKILL0001006</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:02:56</sys_created_on>
-        <sys_id>b8ef415cdbae88542901de90cf9619f1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:02:56</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Life on the fringe is filled with an endless variety of dangers. The ability to stay calm and think as one&amp;#39;s life hangs in the balance can be essential for survival among the constant stream of new threats. By remaining emotionally centered, the character is much more likely to be able to effectively prioritize issues and solve the most critical problems first. These characters are also better&lt;/div&gt;
+&lt;div&gt;able to remember and focus upon achieving their goals, allowing outside influences to have much less effect. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;In some combat situations, a character&amp;#39;s Initiative may be determined by his Cool skill. This is applicable under circumstances in which the acting character has calmly prepared to take action. See page 199 for the full details.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A character&amp;#39;s Cool may permit him to ignore many of the lies that come as part of a discussion. It is used to resist Charm and Negotiation. See Social Skill Interactions on page 113 for more information.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Often, when someone is trying to be overly kind, the truth becomes lost among the niceties. Characters can use Cool to resist these efforts, penetrating through to the truth.&lt;/li&gt;&lt;li&gt;If a character has set a trap for a target, carefully lining up a shot on an unsuspecting foe. he may check for Initiative using Cool, as he calmly selects the optimal time to begin the engagement.&lt;/li&gt;&lt;li&gt;If multiple characters are engaging a third in a social discussion in which the timing of the argument matters. Cool may be used to determine Initiative, as that character is better prepared.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;There is rarely an extra success on a Cool check, as it is generally used to oppose another&amp;#39;s actions, or to determine Initiative, which takes all success into account. &lt;/p&gt;
+&lt;div&gt;An advantage from a Cool check may be spent to give the character an additional insight into the situation at hand. He may notice an additional complication before it comes into play against him or identify an object that can be directly used against his opponent. Examples could be a rogue asteroid during a dogfight, a security officer near a sniper&amp;#39;s target, or a magistrate&amp;#39;s predilection towards a particular style of argument.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A character who generates a triumph result during a Cool check has not only stood unflinching as chaos erupts around him, but has actually come away better for it. For each triumph result on a Cool check, the character may recover 3 strain.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Sometimes a situation is so frantic that it can overwhelm even the most steadfast of souls. The GM may spend threat generated as a result of a Cool check to cause the character to miss a vital detail or event. For instance, if a character generates a threat during a duel, he may be so focused on his target that he fails to notice the target&amp;#39;s ally on the sidelines pulling a weapon of his own. If the situation goes badly enough, the character may lose all sense of where he is and what he is doing, effectively succumbing to minor shell-shock. The GM may spend any despair generated on a Cool check to Stun the character for one round as he is overwhelmed by the chaos around him.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Cool (Pr)&lt;/name&gt;
+        &lt;number&gt;SKILL0001006&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:02:56&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;b8ef415cdbae88542901de90cf9619f1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 07:05:18&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>99e0959cdbae88542901de90cf961961</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Cool (Pr)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +47,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_99e0959cdbae88542901de90cf961961</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:21</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:31</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

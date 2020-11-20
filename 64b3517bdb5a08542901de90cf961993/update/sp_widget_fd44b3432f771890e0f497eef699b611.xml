@@ -41,6 +41,14 @@
 			$scope.data.currentSpecialization = obj;
 			document.getElementById('investSpecInfoContainer').style.display = 'inline'
 			document.getElementById('investSpecInfoContainer').scrollIntoView();
+		} else if(element == 'investForce'){
+			$scope.data.currentForcePower = obj;
+			document.getElementById('investForceInfo').style.display = 'inline';
+			document.getElementById('investForceInfo').scrollIntoView();
+		} else if(element == 'investForceEnhancement'){
+			$scope.data.currentForceEnhancement = obj;
+			document.getElementById('investForceEnhancementInfo').style.display = 'inline';
+			document.getElementById('investForceEnhancementInfo').scrollIntoView();
 		}
 	}
 	
@@ -55,6 +63,10 @@
 			document.getElementById('talentInfoContainer').style.display = 'none';
 		} else if(element == 'investSpec'){
 			document.getElementById('investSpecInfoContainer').style.display = 'none';
+		} else if(element == 'investForce'){
+			document.getElementById('investForceInfo').style.display = 'none';
+		} else if(element == 'investForceEnhancement'){
+			document.getElementById('investForceEnhancementInfo').style.display = 'none';
 		}
 	}
 	
@@ -202,6 +214,32 @@
 				$scope.data.talents = response.data.talents;
 				$scope.data.skills = response.data.skills;
 			});
+		} else if(table == 'investForce'){
+			$scope.data.investXPSpecies.startingXPInt -= parseInt(element.costToPurchase);	
+			$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+			for(var i = 0; i < $scope.data.forcePowers.length; i++){
+				if($scope.data.forcePowers[i].sysID == element.sysID){
+					$scope.data.forcePowers[i].isPurchased = true;
+				}
+			}
+			
+			for(i = 0; i < $scope.data.forceEnhancements.length; i++){
+				if($scope.data.forceEnhancements[i].forcePowerID == element.sysID && $scope.data.forceEnhancements[i].preReqs == ''){
+					$scope.data.forceEnhancements[i].canPurchase = true;	 
+				}
+			}
+		} else if(table == 'investForceEnhancement'){
+			$scope.data.investXPSpecies.startingXPInt -= parseInt(element.costToPurchase);
+			$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+			for(var i = 0; i < $scope.data.forceEnhancements.length; i++){
+				if($scope.data.forceEnhancements[i].preReqs.indexOf(element.sysID) > -1 && !$scope.data.forceEnhancements[i].isPurchased){
+					$scope.data.forceEnhancements[i].canPurchase = true;
+				}
+				
+				if($scope.data.forceEnhancements[i].sysID == element.sysID){
+					$scope.data.forceEnhancements[i].isPurchased = true;
+				}
+			}
 		}
 	}
 	
@@ -364,6 +402,48 @@
 					}
 				}
 			}
+		} else if(table == 'investForce'){
+			$scope.data.investXPSpecies.startingXPInt += parseInt(element.costToPurchase);
+			$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+			for(var i = 0; i < $scope.data.forcePowers.length; i++){
+				if($scope.data.forcePowers[i].sysID == element.sysID){
+					$scope.data.forcePowers[i].isPurchased = false;
+				}
+			}
+			
+			for(i = 0; i < $scope.data.forceEnhancements.length; i++){
+				if($scope.data.forceEnhancements[i].forcePowerID == element.sysID){
+					 $scope.data.forceEnhancements[i].canPurchase = false;
+				}
+				
+				if($scope.data.forceEnhancements[i].isPurchased){
+					$scope.data.investXPSpecies.startingXPInt += parseInt($scope.data.forceEnhancements[i].costToPurchase);
+					$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+					$scope.data.forceEnhancements[i].isPurchased = false;
+				}
+			}
+		} else if(table == 'investForceEnhancement'){
+			$scope.data.investXPSpecies.startingXPInt += parseInt(element.costToPurchase);
+			$scope.data.investXPSpecies.startingXPString = $scope.data.investXPSpecies.startingXPInt + '';
+			for(var i = 0; i < $scope.data.forceEnhancements.length; i++){
+				if($scope.data.forceEnhancements[i].sysID == element.sysID){
+					$scope.data.forceEnhancements[i].isPurchased = false;
+				}
+			}
+		}
+	}
+	
+	$scope.showForce = function(section){
+		if(section == 'powers'){
+			document.getElementById('forcePowersContainer').style.display = 'inline';
+			document.getElementById('powerHeader').style.borderBottom = '2px groove white';
+			document.getElementById('forcePowerEnhancements').style.display = 'none';
+			document.getElementById('enhancementHeader').style.borderBottom = 'none';
+		} else{
+			document.getElementById('forcePowersContainer').style.display = 'none';
+			document.getElementById('powerHeader').style.borderBottom = 'none';
+			document.getElementById('forcePowerEnhancements').style.display = 'inline';
+			document.getElementById('enhancementHeader').style.borderBottom = '2px groove white';
 		}
 	}
 	
@@ -479,7 +559,7 @@
 	}
 	
 	$scope.finalizeCharacter = function(){
-		c.server.get({action: 'finalizeCharacter', skills: $scope.data.skills, talents: $scope.data.talents, characterDetails: $scope.data.investXPSpecies, specializations: $scope.data.specializations}).then(function(response){
+		c.server.get({action: 'finalizeCharacter', skills: $scope.data.skills, talents: $scope.data.talents, characterDetails: $scope.data.investXPSpecies, specializations: $scope.data.specializations, forcePowers: $scope.data.forcePowers, forceEnhancements: $scope.data.forceEnhancements}).then(function(response){
 			$location.search('id', 'star_wars_character_sheet');
 			$location.search('character_id', response.data.characterID);
 		});
@@ -810,7 +890,7 @@ input{
 	margin-top:20px;
 }
 
-.skill, .talent, .specialization{
+.skill, .talent, .specialization,.force-power{
 	background-color:black;
   border: 1px groove #e21414;
   font-size:18px;
@@ -821,11 +901,15 @@ input{
   box-shadow: 0px 0px 5px 3px lightgray;
 }
 
-.skill-name-header, .skill-rank-header, .talent-name-header,.talent-tier-header, .spec-name-header{
+.force-power-header,.skill-name-header, .skill-rank-header, .talent-name-header,.talent-tier-header, .spec-name-header{
   margin-top:10px;
 	text-align: left;
   font-size: 18px;
   margin-bottom:10px;
+}
+
+#powerHeader{
+	border-bottom:2px groove white;
 }
 
 .skill-name, .skill-rank, .talent-name, .talent-tier{
@@ -940,6 +1024,10 @@ input{
 
 .talent-specialization-name{
 	font-size:14px !important;
+}
+
+#forcePowerEnhancements{
+	display:none;
 }
 
 @media only screen and (min-width:762px) and (max-width:1600px){
@@ -1121,9 +1209,11 @@ if(data.step == 1){
 	data.freeSpeciesRanks = [];
 	var jediCareers = gs.getProperty('x_176383_star_wars.sw.jedi_careers');
 	data.isJedi = false;
+	var forceRating = '0';
 	if(jediCareers.indexOf(career) > -1){
 		data.freeCareerSkillsRemaining = 3;
 		data.isJedi = true;
+		forceRating = '1';
 	} else{
 		data.freeCareerSkillsRemaining = 4;
 	}
@@ -1133,6 +1223,7 @@ if(data.step == 1){
 	species.get(chosenSpecies);
 	
 	data.investXPSpecies = {
+		forceRating: forceRating,
 		brawnString: species.brawn + '',
 		baseBrawnInt: parseInt(species.brawn),
 		investedBrawnInt: parseInt(species.brawn),
@@ -1166,6 +1257,50 @@ if(data.step == 1){
 		baseWound: parseInt(species.base_wound_threshold),
 		baseStrain: parseInt(species.base_strain_threshold)
 	};
+	
+	if(data.isJedi){
+		 //retrieve force powers if character is jedi
+	data.forcePowers = [];
+	var force = new GlideRecord('x_176383_star_wars_force_power');
+		force.orderBy('name');
+		force.query();
+		while(force.next()){
+			var forceObj = {
+				name: force.name + '',
+				minRating: force.minimum_force_rating + '',
+				costToPurchase: force.cost_to_purchase + '',
+				description: force.description + '',
+				isPurchased: false,
+				canPurchase: false,
+				sysID: force.sys_id + ''
+			};
+			if(parseInt(forceObj.minRating) <= parseInt(forceRating)){
+				 forceObj.canPurchase = true;
+			}
+			data.forcePowers.push(forceObj);
+		}
+		
+		//retrieve force power enhancements
+		data.forceEnhancements = [];
+		var fe = new GlideRecord('x_176383_star_wars_force_power_enhancement');
+		fe.orderBy('force_power.name');
+		fe.orderBy('number');
+		fe.query();
+		while(fe.next()){
+			var feObj = {
+				type: fe.type.getDisplayValue(),
+				preReqs: fe.pre_req_force_enhancements + '',
+				forcePower: fe.force_power.getDisplayValue(),
+				forcePowerID: fe.force_power.sys_id + '',
+				costToPurchase: fe.cost_to_purchase + '',
+				description: fe.description + '',
+				canPurchase: false,
+				isPurchased: false,
+				sysID: fe.sys_id + ''
+			};
+			data.forceEnhancements.push(feObj);
+		}
+	}
 	
 	var careerGR = new GlideRecord('x_176383_star_wars_career');
 	careerGR.get(career);
@@ -1291,7 +1426,8 @@ if(data.step == 1){
 	//retrieve career specializations
 	data.availableCareerSpecializations = [];
 	var careerSpecs = new GlideRecord('x_176383_star_wars_career_specialization');
-	careerSpecs.addQuery('career', career).addCondition('sys_id', '!=', specialization);
+	careerSpecs.addQuery('career', career).addOrCondition('career', '');
+	careerSpecs.addQuery('sys_id', '!=', specialization);
 	careerSpecs.orderBy('name');
 	careerSpecs.query();
 	while(careerSpecs.next()){
@@ -1394,6 +1530,39 @@ if(data.step == 1){
 				talentGR.insert();
 			}
 		}
+		
+		if(input.forcePowers){
+			var forcePower = new GlideRecord('x_176383_star_wars_character_force_power');
+			var forcePETracker = [];
+			for(i = 0; i < input.forcePowers.length; i++){
+				if(input.forcePowers[i].isPurchased){
+					forcePower.initialize();
+					forcePower.character = data.characterID;
+					forcePower.force_power = input.forcePowers[i].sysID;
+					forcePower.insert();
+					var peTrackObj = {
+						forcePowerID: input.forcePowers[i].sysID,
+						characterPowerID: forcePower.sys_id + ''
+					};
+					forcePETracker.push(peTrackObj);
+				}
+			}
+		
+			var forceEnhancement = new GlideRecord('x_176383_star_wars_character_force_enhancements');
+			for(i = 0; i < input.forceEnhancements.length; i++){
+				if(input.forceEnhancements[i].isPurchased){
+					forceEnhancement.initialize();
+					forceEnhancement.character_force_enhcancement = input.forceEnhancements[i].sysID;
+					for(var j = 0; j < forcePETracker.length; j++){
+						if(input.forceEnhancements[i].forcePowerID == forcePETracker[j].forcePowerID){
+							forceEnhancement.character_force_power = forcePETracker[j].characterPowerID;
+						}
+					}
+					forceEnhancement.character = data.characterID;
+					forceEnhancement.insert();
+				}
+			}
+		}
 	}
 }
 })();]]></script>
@@ -1403,7 +1572,7 @@ if(data.step == 1){
         <sys_created_on>2020-10-16 18:34:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd44b3432f771890e0f497eef699b611</sys_id>
-        <sys_mod_count>695</sys_mod_count>
+        <sys_mod_count>730</sys_mod_count>
         <sys_name>Star Wars Character Creator</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -1411,7 +1580,7 @@ if(data.step == 1){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_fd44b3432f771890e0f497eef699b611</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-31 20:32:14</sys_updated_on>
+        <sys_updated_on>2020-11-18 16:42:25</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -1689,8 +1858,53 @@ if(data.step == 1){
         </span>
       </div>
       <!-- buying force powers section -->
-      <div ng-if="data.investingXPCategory == 'force'">
-        
+      <div ng-if="data.investingXPCategory == 'force'" class="col-xs-12 force-powers-container">
+        <span class="col-xs-6 force-power-header" ng-click="showForce('powers')" id="powerHeader">Power</span>
+        <span class="col-xs-6 force-power-header" ng-click="showForce('enhancements')" id="enhancementHeader">Enhancements</span>
+        <span class="col-xs-12" id="forcePowersContainer">
+        <span class="col-xs-12 force-power" ng-if="fp.canPurchase" ng-repeat="fp in data.forcePowers">
+          <span class="col-xs-8 spec-name">{{fp.name}} <i class="far fa-info-circle" ng-click="showInfo('investForce', fp)"></i></span>
+          <span class="col-xs-4 invest-buttons-container">
+            <span ng-if="!fp.isPurchased && fp.costToPurchase <= data.investXPSpecies.startingXPInt" class="col-xs-12 increase-skill-button"><button class="skill-increase-button" ng-click="investXP('investForce', fp)">Purchase</button></span>
+            <span ng-if="fp.isPurchased" class="col-xs-12 decrease-skill-button"><button class="skill-decrease-button" ng-click="divestXP('investForce', fp)">Refund</button></span>
+          </span>
+        </span>
+        </span>
+        <span class="col-xs-12" id="forcePowerEnhancements">
+        <span class="col-xs-12 force-enhancement force-power" ng-if="fe.canPurchase" ng-repeat="fe in data.forceEnhancements">
+          <span class="col-xs-8 enhancement-detail spec-name">{{fe.forcePower}} - {{fe.type}} <i class="far fa-info-circle" ng-click="showInfo('investForceEnhancement', fe)"></i></span>
+          <span class="col-xs-4 invest-buttons-container">
+            <span ng-if="!fe.isPurchased && fe.costToPurchase <= data.investXPSpecies.startingXPInt" class="col-xs-12 increase-skill-button"><button class="skill-increase-button" ng-click="investXP('investForceEnhancement', fe)">Purchase</button></span>
+            <span ng-if="fe.isPurchased" class="col-xs-12 decrease-skill-button"><button class="skill-decrease-button" ng-click="divestXP('investForceEnhancement', fe)">Refund</button></span>
+          </span>
+        </span>
+        </span>
+      </div>
+      <!-- force power info -->
+      <div class="info-container" id="investForceInfo">
+      	<span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeInfo('investForce')"></i></span>  
+        <div class="col-xs-12">
+          <span class="col-xs-12 center-text spec-name">{{data.currentForcePower.name}}</span>
+          <span class="col-xs-12 center-text star-wars-text">{{data.currentForcePower.name}}</span>
+          <span class="col-xs-12 description" ng-bind-html="data.currentForcePower.description"></span>
+        </div>
+        <span class="col-xs-12 select-spec-button">
+          <button ng-if="!data.currentForcePower.isPurchased" class="skill-increase-button" ng-click="investXP('investForce', data.currentForcePower)">Purchase</button>
+        	<button ng-if="data.currentForcePower.isPurchased" class="skill-decrease-button" ng-click="divestXP('investForce', data.currentForcePower)">Refund</button>
+        </span>
+      </div>
+      <!--force enhancement info -->
+      <div class="info-container" id="investForceEnhancementInfo">
+      	<span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="closeInfo('investForceEnhancement')"></i></span>  
+        <div class="col-xs-12">
+          <span class="col-xs-12 center-text spec-name">{{data.currentForceEnhancement.forcePower}} - {{data.currentForceEnhancement.type}}</span>
+          <span class="col-xs-12 center-text star-wars-text">{{data.currentForceEnhancement.forcePower}} - {{data.currentForceEnhancement.type}}</span>
+          <span class="col-xs-12 description" ng-bind-html="data.currentForceEnhancement.description"></span>
+        </div>
+        <span class="col-xs-12 select-spec-button">
+          <button ng-if="!data.currentForceEnhancement.isPurchased" class="skill-increase-button" ng-click="investXP('investForceEnhancement', data.currentForceEnhancement)">Purchase</button>
+        	<button ng-if="data.currentForceEnhancement.isPurchased" class="skill-decrease-button" ng-click="divestXP('investForceEnhancement', data.currentForceEnhancement)">Refund</button>
+        </span>
       </div>
     </div>
   </div>

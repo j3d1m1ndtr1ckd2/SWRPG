@@ -2,31 +2,47 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>aadf851cdbae88542901de90cf961953</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Computers (Int)</name>
-        <number>SKILL0001005</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:02:47</sys_created_on>
-        <sys_id>aadf851cdbae88542901de90cf961953</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:02:47</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The galaxy could scarcely function without the constant assistance of computers. Devices everywhere are linked together and coordinated by computers and droid brains. Those talented with&lt;/div&gt;
+&lt;div&gt;computers can sometimes exploit these resources, or they might know how best to avoid those systems under computer control. Many people are so unconsciously dependent upon computers that those who can cleverly manipulate them may commit crimes without their victims even being aware of the offenses. Even using the HoloNet for communications or entertainment requires the use of computers—particularly if there are forces interfering with the system. This skill also governs the repair of a damaged computer system, defensive actions against an intruding slicer, and routine maintenance necessary to keep the software on a computer or droid running effectively.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Attempts to open a locked door, control an elevator, or bypass a security system make use of the Computers skill.&lt;/li&gt;&lt;li&gt;Searching through a subject&amp;#39;s records, particularly if those notes are encrypted, makes use of Computers to overcome any security measures and interpret the material&amp;#39;s organizational structure and any external links.&lt;/li&gt;&lt;li&gt;Investigating what actions a slicer might have taken against a computer system requires the Computers skill to identify the files that have been accessed or altered.&lt;/li&gt;&lt;li&gt;Efforts to alter a droid&amp;#39;s programming or gain access to its memories require the acting character to make a Computers check.&lt;/li&gt;&lt;li&gt;Characters must make a Computers check to recover data from a system that has suffered physical damage.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty for a Computers check is calculated based upon any defenses present within the system and the inherent sophistication of the system against intrusion. Slicing into a tapcafe&amp;#39;s systems to alter a transaction might be trivially easy, while a military outpost could be hardened and prepared for a slicer&amp;#39;s assault. In general, the more vital the materials protected by the system, the more difficult the system should be to overcome.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Additional success may be spent to reduce the time required for the action undertaken. This is generally representative of the character&amp;#39;s extensive familiarity with systems of the type targeted.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage may be spent to uncover additional information about the system. The character might discover additional assets that could be targeted, the owner&amp;#39;s personal journal entries, or the presence of well-concealed defenses. Once the presence of such systems is discovered, a character may attempt to gain access to them with further Computers checks. A triumph may be spent to obfuscate any actions the character may have taken while slicing the system. Each triumph may be spent to add 1 challenge die to the check if another slicer should attempt to detect or identify the character&amp;#39;s actions with a Computers check. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The GM may spend threat generated on a character&amp;#39;s Computers check to represent the character doing a poor job of concealing his presence in the system. Security systems are alerted to the presence of the character within the system, while other slicers attempting to discover evidence of the character&amp;#39;s actions may add boost dice to their check for each threat generated by the character&amp;#39;s initial Computers check.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Despair may be spent by a GM to represent the character leaving behind trace information of his own system in the computer system he was attempting to slice. For each despair generated by the character&amp;#39;s Computer check, the GM may add boost dice to any future Computer checks in which an NPC uses the target system to slice the character&amp;#39;s own computer system.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Computers (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001005&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:02:47&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;aadf851cdbae88542901de90cf961953&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 07:00:38&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1de0959cdbae88542901de90cf96195f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Computers (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +50,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_1de0959cdbae88542901de90cf96195f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:17</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:28</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

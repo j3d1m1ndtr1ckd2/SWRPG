@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c1a6afeb2f235850e0f497eef699b628</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;a9d0d55cdbae88542901de90cf9619dd,1730915cdbae88542901de90cf9619ed,3f70fd9cdb22c8542901de90cf96190b,d8a0d55cdbae88542901de90cf9619c0,06601d1cdbae88542901de90cf9619ab,2870195cdbae88542901de90cf961997&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;The Seeker’s six career skills are &lt;strong&gt;Knowledge (Xenology), Piloting (Planetary) Piloting (Space), Ranged (Heavy), Survival, and Vigilance&lt;/strong&gt;. Characters with this career automatically gain a rank in three of these skills without spending experience and gain a discount on increasing them with future experience points. Seekers begin the game with a Force rating of 1.&lt;/p&gt;
+&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;A Seeker&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div&gt;It is not uncommon for some Force adepts to feel compelled to travel throughout the galaxy to aid those in need and to oppose those who use the dark side. While some might focus their attentions in cities and urban centers, the need can be just as great far from the heart of galactic civilization. A Force adept who is willing and able to travel and work in these environments can help ease crushing poverty or crippling plagues of hunger and disease. Fie can also discover new Force techniques, find sensitives in need of training, and at times halt dangerous threats that could otherwise fester in isolation. A Seeker must be capable of doing all of these things, while traveling far from any meaningful support network.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Seekers generally take a very pragmatic view toward the Force. Operating independently, they consider it to be one of the tools in their arsenal, but not the only one. For a Seeker, preparedness and adaptability are paramount. They cannot count on finding the right tools for the job in the isolated areas in which they travel. As such, they learn to be flexible and adapt quickly to find the best equipment from what is available. In some environments, this may mean discovering information about flora and fauna that is previously undocumented. In such situations, the Force can be the most reliable asset, and its flexibility can aid them in selecting and using whatever else is at hand.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;This flexibility is vital for a Seeker. Some of these characters travel at the direction of the Force, allowing fortune and chance to select their destinations and their traveling companions. Others work within the confines of larger groups. They may be troubleshooters, bounty hunters, envoys, or even traveling merchants. The variety of work means the Seeker must be prepared to quickly adapt to these changing situations and to make the most effective use possible of the tools that are at hand.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Seeker&lt;/name&gt;
+        &lt;number&gt;CAR0001006&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-05 20:36:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c1a6afeb2f235850e0f497eef699b628&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 02:43:38&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:12:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e87c0be2f1cac50e0f497eef699b652</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Seeker</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_8e87c0be2f1cac50e0f497eef699b652</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:12:39</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

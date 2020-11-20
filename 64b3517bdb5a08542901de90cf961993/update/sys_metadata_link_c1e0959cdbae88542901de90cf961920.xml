@@ -2,31 +2,44 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>3acf0d1cdbae88542901de90cf9619a2</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Charm (Pr)</name>
-        <number>SKILL0001003</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:02:31</sys_created_on>
-        <sys_id>3acf0d1cdbae88542901de90cf9619a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:02:31</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;For a character with a kind smile and a silver tongue, it may be possible to travel the galaxy depending upon the kindness of others. An individual with this knack is capable of giving just the right compliment to his target—often by deciphering the subject&amp;#39;s social and cultural background. Note that the use of the Charm skill requires the acting character to maintain a degree of sincerity in his statements. A character who is flagrantly flattering with no basis in reality may be better suited to using the Deception skill. See Social Skill Interactions on page 113 for more information. Politicians, salesmen, and con artists are all renowned for their Charm.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Persuading an individual to make a special exception to his usual practices through flattery, flirting, and grace typically relies upon Charm.&lt;/li&gt;&lt;li&gt;Appeals to a target&amp;#39;s better nature—even if it does not exist—generally require a character to use Charm. These sorts of requests may often require the target to go out of his way to aid the characters, without any hope of remuneration.&lt;/li&gt;&lt;li&gt;Seduction attempts for most species typically rely upon Charm, but for situations where the interest is entirely feigned it is often more appropriate to use Deception.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;Charm is often an opposed check, using the subject&amp;#39;s Presence and Cool, except in situations where the PC is trying to Charm large groups, in which case it&amp;#39;s often a set difficulty. Of course, situational modifiers may also apply based upon the character&amp;#39;s style of dress, species, and other characteristics. For instances in which the desired outcome is directly opposed to the target&amp;#39;s interests, an additional Difficulty die may be added.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;For situations in which the character is attempting to sway multiple subjects or a target who is already predisposed to react favorably toward the character, the character does not make an opposed check. Instead, the difficulty of the check is determined by the number of subjects and their disposition. Larger crowds or groups who are predisposed against the character&amp;#39;s desired outcome require a more difficult check, while Charming those already favorable towards the character may require few, if any, Difficulty dice. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Extra success on a Charm check may be used to extend the target&amp;#39;s support for additional scenes. Each Success spent in this way gains the character an extra scene in which the target is willing to support him. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage may be spent to affect unexpected subjects beyond the original target. These may be bystanders or others not directly involved in the scene, but who may aid the character in their own way. With a the player may choose to have a target NPC become a recurring character who remains predisposed to assist his character. This individual may not join the character&amp;#39;s crew, but might offer a better than usual price for fencing goods, or may let certain legal charges slide. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Threat and despair are, in a reverse fashion, harmful to a character&amp;#39;s standing with those he is trying to sway. Threat may be spent to reduce the number of people the character is able to influence or to turn those affected negatively against the character. The GM may use despair to turn a single NPC against the character and to make him a minor recurring adversary.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Charm (Pr)&lt;/name&gt;
+        &lt;number&gt;SKILL0001003&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:02:31&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;3acf0d1cdbae88542901de90cf9619a2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 06:48:04&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c1e0959cdbae88542901de90cf961920</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Charm (Pr)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +47,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_c1e0959cdbae88542901de90cf961920</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:29</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:33:56</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

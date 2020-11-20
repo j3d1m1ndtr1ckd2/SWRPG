@@ -19,7 +19,58 @@
 			}
 			document.getElementById(header).style.borderBottom = '3px groove white';
 	}
-		
+	
+	$scope.showSkillInfo = function(skill){
+		$scope.data.currentSkill = skill;
+		document.getElementById('skillInfoContainer').style.display = 'inline';
+	}
+	
+	$scope.closeSkillInfo = function(){
+		document.getElementById('skillInfoContainer').style.display = 'none';
+	}
+	
+	$scope.toggleForce = function(){
+		var filter = document.getElementById('forcePowerFilterSelect').value;
+		if(filter == 'powers'){
+			document.getElementById('forceEnhancementShop').style.display = 'none';
+			document.getElementById('forcePowerShop').style.display = 'inline';
+		} else{
+			document.getElementById('forceEnhancementShop').style.display = 'inline';
+			document.getElementById('forcePowerShop').style.display = 'none';
+		}
+	}
+	
+	$scope.purchaseNewSpec = function(newSpec){
+		c.server.get({action: 'buyNewSpec', spec: newSpec}).then(function(response){
+			c.server.refresh();
+		});
+	}
+	
+	$scope.purchaseForcePower = function(power){
+		c.server.get({action: 'buyForcePower', power: power}).then(function(response){
+			c.server.refresh();
+		});
+	}
+	
+	$scope.purchaseForceEnhancement = function(enhancement){
+		c.server.get({action: 'buyForceEnhancement', enh: enhancement}).then(function(response){
+			c.server.refresh();
+		});
+	}
+	
+	$scope.showForceInfo = function(power){
+		try{
+			$scope.data.currentForcePower = power;
+			document.getElementById('forcePowerInfoContainer').style.display = 'inline';
+		} catch(e){
+			alert(e.message);
+		}
+	}
+	
+	$scope.closeForceInfo = function(){
+		document.getElementById('forcePowerInfoContainer').style.display = 'none';
+	}
+	
 	$scope.toggleMobileNavMenu = function(){
 		var navMenu = document.getElementById('mobileNavMenu');
 		var navButtons = document.getElementsByClassName('nav-button');
@@ -59,7 +110,8 @@
 		$scope.toggleMobileNavMenu();
 	}
 	
-	$scope.editCharacter = function(section){
+	$scope.editCharacter = function(section, item){
+		if($scope.data.canEdit){
 			if(section == 'description'){
 				document.getElementById('notableFeatures').innerHTML = $scope.data.character.notableFeatures;
 				document.getElementById('background').innerHTML = $scope.data.character.background;
@@ -150,7 +202,66 @@
 					} else{
 						container.style.width = '40%';
 					}
+			} else if(section == 'gearQuantity'){
+					var container = document.getElementById('editGearQuantityContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '80%';
+					} else{
+						container.style.width = '40%';
+					}
+				$scope.data.currentGear = item;
+				document.getElementById('gearQuantityInput').value = $scope.data.currentGear.quantity;
+			} else if(section == 'vehicles'){
+					var container = document.getElementById('editVehiclesContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '90%';
+					} else{
+						container.style.width = '40%';
+					}
+			} else if(section == 'career'){
+					var container = document.getElementById('showCareerInfo');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '80%';
+					} else{
+						container.style.width = '40%';
+					}
+			} else if(section == 'specializations'){
+					var container = document.getElementById('showSpecializationsInfo');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '90%';
+					} else{
+						container.style.width = '40%';
+					}		
+			} else if(section == 'forceRating'){
+					var container = document.getElementById('editForceRatingContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '80%';
+					} else{
+						container.style.width = '40%';
+					}		
+			} else if(section == 'forcePowers'){
+					var container = document.getElementById('editForcePowersContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '90%';
+					} else{
+						container.style.width = '40%';
+					}
+			} else if(section == 'newSpecs'){
+					var container = document.getElementById('addNewSpecializationsContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '90%';
+					} else{
+						container.style.width = '40%';
+					}
 			}
+		}
 	}
 	
 	$scope.saveEdits = function(section){
@@ -221,6 +332,19 @@
 				$scope.data.character = response.data.character;
 				$scope.closeEditContainer('credits');
 			});
+		} else if(section == 'gearQuantity'){
+			var quantity = parseInt(document.getElementById('gearQuantityInput').value);
+			c.server.get({action: 'saveGearQuantity', gearID: $scope.data.currentGear.sysID, quantity: quantity}).then(function(response){
+				document.getElementById('gearQuantityInput').value = null;
+				c.server.refresh();
+				$scope.closeEditContainer('gearQuantity');
+			});
+		} else if(section == 'forceRating'){
+				var forceRating = parseInt(document.getElementById('forceRatingInput').value);
+				c.server.get({action: 'saveForceRating', forceRating: forceRating}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('forceRating');
+				});
 		}
 	}
 	
@@ -267,6 +391,7 @@
 	}
 	
 	$scope.filterGear = function(type){
+		var type = document.getElementById('gearFilterSelect').value;
 		if(type == 'all'){
 			 $scope.data.availableGear = $scope.data.availableGearAll;
 		} else{
@@ -277,6 +402,21 @@
 				}
 			}
 			$scope.data.availableGear = tempArray;
+		}
+	}
+	
+	$scope.filterVehicle = function(){
+		var type = document.getElementById('vehicleFilterSelect').value;
+		if(type == 'all'){
+			$scope.data.vehicles = $scope.data.vehiclesAll;
+		} else{
+			var tempArray = [];
+			for(var i = 0; i < $scope.data.vehiclesAll.length; i++){
+				if(type == $scope.data.vehiclesAll[i].typeID){
+					tempArray.push($scope.data.vehiclesAll[i]);
+				}
+			}
+			$scope.data.vehicles = tempArray;
 		}
 	}
 	
@@ -292,6 +432,11 @@
 		} else{
 			alert('You lack the necessary funds to purchase that item or quantity');
 		}
+	}
+	
+	$scope.showGearInfo = function(item){
+		$scope.data.currentGearItem = item;
+		document.getElementById('gearInfoContainer').style.display = 'inline';
 	}
 	
 	$scope.closeEditContainer = function(section){
@@ -320,6 +465,24 @@
 			container = document.getElementById('talentInfoBox');
 		} else if(section == 'skills'){
 			container = document.getElementById('editSkillsContainer');
+		} else if(section == 'gearQuantity'){
+			container = document.getElementById('editGearQuantityContainer');
+		} else if(section == 'vehicles'){
+			container = document.getElementById('editVehiclesContainer');
+		} else if(section == 'vehicleInfoBox'){
+			container = document.getElementById('vehicleInfoBox');
+		} else if(section == 'career'){
+			container = document.getElementById('showCareerInfo');
+		} else if(section == 'specializations'){
+			container = document.getElementById('showSpecializationsInfo');
+		} else if(section == 'forceRating'){
+			container = document.getElementById('editForceRatingContainer');
+		} else if(section == 'forcePowers'){
+			container = document.getElementById('editForcePowersContainer');
+		} else if(section == 'newSpecs'){
+			container = document.getElementById('addNewSpecializationsContainer');
+		} else if(section == 'gearInfo'){
+			container = document.getElementById('gearInfoContainer');
 		}
 		
 		container.style.width = null;
@@ -331,9 +494,20 @@
 		document.getElementById('talentInfoBox').style.display = 'inline';
 	}
 	
+	$scope.toggleVehicleInfo = function(vehicle){
+		$scope.data.currentVehicleInfo = vehicle;
+		document.getElementById('vehicleInfoBox').style.display = 'inline';
+	}
+	
 	$scope.purchaseTalent = function(item){
 		c.server.get({action: 'purchaseTalent', talent: item, talentID: item.sysID}).then(function(response){
 			$scope.data.character = response.data.character;
+			c.server.refresh();
+		});
+	}
+	
+	$scope.purchaseVehicle = function(vehicle){
+		c.server.get({action: 'purchaseVehicle', vehicle: vehicle, vehicleID: vehicle.sysID}).then(function(response){
 			c.server.refresh();
 		});
 	}
@@ -505,6 +679,17 @@
 .skill-name-header{
 	text-align:left;
   font-size:18px;
+}
+
+.skill-info-name,.skill-info-rank{
+	font-size:18px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.skill-info-description{
+  margin-top:20px;
+	padding-bottom:40px;
 }
 
 .skill-rank-header{
@@ -738,6 +923,15 @@
   right:10px;
 }
 
+#gearNameContainer{
+	font-size:18px;
+  font-weight:bold;
+}
+
+.gear-item-details{
+	font-size:16px;
+}
+
 #removeItemButtonContainer{
 	margin-top:20px;
   text-align:center;
@@ -753,10 +947,6 @@
   margin-bottom:20px;
 }
 
-.filter-buttons{
-	text-align:center;
-}
-
 .filter-button{
 	background:transparent;
   border:1px groove #1933f4;
@@ -769,6 +959,12 @@
 
 .badge{
 	background-color:#2b2a2a;
+}
+
+.marketplace-headers,.talents-headers{
+	font-size:18px;
+  font-weight:bold;
+  border-bottom:2px groove white;
 }
 
 .marketplace-items-container{
@@ -823,7 +1019,7 @@
 	text-align:center;
 }
 
-#talentInfoPurchaseContainer{
+#talentInfoPurchaseContainer, #vehicleInfoPurchaseContainer{
 	text-align:center;
   margin-top:20px;
   margin-bottom:20px;
@@ -857,14 +1053,188 @@
 	padding:10px 0px 10px 0px;
   border-bottom:1px dotted white;
 }
+
+#vehiclesContainer{
+	margin-top:20px;
+}
+
+#noVehiclesContainer{
+	text-align:center;
+  font-size:18px;
+}
+
+.vehicle-list{
+	font-size:16px;
+  padding:10px 0px 10px 0px;
+  border-bottom:1px dotted white;
+}
+
+.vehicle-link{
+	color:white;
+}
+
+.vehicle-headers{
+	border-bottom:2px groove white;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.vehicle-filter{
+	margin-bottom:20px;
+}
   
+#vehicleInfoBox{
+	display:none;
+  position:fixed;
+  top:40px;
+  left:0;
+  width:98%;
+  max-height:500px;
+  overflow-y:scroll;
+  background-color:black;
+  border:2px groove #1933f4;
+  box-shadow:0px 0px 8px 3px #1933f4;
+}
+
+.vehicle-detail-body{
+	text-align:center;
+}
+
+.edit-vehicles-body{
+	margin-bottom:40px;
+}
+
+#careerName, .specialization-name{
+	font-size:24px;
+  margin-bottom:20px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.specialization-description, #careerDescription{
+	margin-bottom:40px;
+}
+
+.no-message-or-powers{
+	margin-top:20px;
+  font-size:18px;
+}
+
+#forceRatingValue{
+	background-color:white;
+  border-radius:20px;
+  box-shadow:0px 0px 12px 6px #1933f4;
+}
+
+#forceRatingInt{
+	color:black;
+}
+
+#purchaseForcePowersButtonContainer{
+	margin-top:20px;
+}
+
+.force-powers-container{
+	margin-top:40px;
+  margin-bottom:40px;
+}
+
+.force-headers{
+	font-size:18px;
+  font-weight:bold;
+  border-bottom:2px groove white;
+}
+
+.force-power{
+	font-size:16px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-bottom:1px dotted white;
+}
+
+#forcePowerInfoName{
+	font-size:22px;
+  margin-bottom:20px;
+}
+
+.enhancements-container{
+	margin-top:20px;
+}
+
+.e-header{
+	font-size:18px;
+}
+
+.enhancements-headers{
+	font-size:16px;
+  border-bottom:2px groove white;
+}
+
+.enhancement{
+	margin-top:10px;
+  margin-bottom:10px;
+  border-bottom:1px dotted white;
+}
+
+#forcePowerInfoContainer,#gearInfoContainer,.info-container{
+  display:none;
+	position:fixed;
+  top:40px;
+  left:15px;
+  width:95%;
+  max-height:600px;
+  overflow-y:scroll;
+  border-radius:5px;
+  border:1px groove #1933f4;
+  box-shadow:0px 0px 6px 3px #1933f4;
+  background-color:black;
+  z-index:5;
+}
+
+#forceEnhancementShop{
+	display:none;
+}
+
+#buyNewSpecializations{
+	color:#e21414;
+  font-size:16px;
+  background-color:black;
+  margin-left:20px;
+}
+
+#purchaseSpecButton{
+	margin-bottom:20px;
+}
+
 @media only screen and (min-width:762px){
   .lg-hidden{
   	display:none;
   }
 }
 
+@media only screen and (min-width:762px) and (max-width:1400px){
+	#forcePowerInfoContainer{
+  	max-height:450px; 
+  }
+}
+
 @media only screen and (max-width:762px){
+  .force-powers-container,.force-headers,.force-power,.force-detail,.force-container{
+  	padding:0;
+  }
+  
+  .force-detail{
+  	font-size:14px;
+  }
+  
+  .vehicle-info{
+  	min-height:120px;
+  }
+  
+  .vehicle-headers,.vehicle-header,.vehicle-detail,.vehicles-container{
+  	padding:0;
+  }
+  
   .first-filter{
 	margin-right:0;
 }
@@ -1006,12 +1376,20 @@
   /* e.g., data.table = $sp.getValue('table'); */
 //retrieve caharacter details and pass to data object.
 var characterID = $sp.getParameter('character_id');
+	data.characterID = characterID;
+	data.playerID = gs.getUserID();
 var charGR = new GlideRecord('x_176383_star_wars_character');
 		charGR.get(characterID);
+	if(data.playerID == charGR.player.sys_id){
+		data.canEdit = true;
+	} else{
+		data.canEdit = false;
+	}
 		data.character = {
 			name: charGR.name + '' || 'Name your character',
 			species: charGR.species.getDisplayValue(),
 			career: charGR.career.getDisplayValue(),
+			careerID: charGR.career.sys_id + '',
 			specializationIDs: charGR.career_specializations.toString(),
 			specializationNames: '',
 			brawn: charGR.brawn + '',
@@ -1054,19 +1432,49 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			notableFeatures: charGR.notable_features + ''
 		};
 	
+	//retrieve career info to display when info button clicked.
+	data.careerInfo = {
+		name:charGR.career.getDisplayValue(),
+		description:charGR.career.description + ''
+	};
+	
 	//retrieve career specialization display values
+	data.specializationInfo = [];
+	data.availableSpecs = [];
 	var spec = new GlideRecord('x_176383_star_wars_career_specialization');
-	spec.addQuery('sys_id', 'IN', data.character.specializationIDs);
+	//spec.addQuery('sys_id', 'IN', data.character.specializationIDs);
+	spec.addQuery('career', data.character.careerID).addOrCondition('career', '');
 	spec.orderBy('name');
 	spec.query();
 	while(spec.next()){
-		if(data.character.specializationNames == ''){
-			data.character.specializationNames = spec.getDisplayValue();
+		if(data.character.specializationIDs.indexOf(spec.sys_id.toString()) > -1){
+			var specObj = {
+				name: spec.name + '',
+				description: spec.description + ''
+			};
+			data.specializationInfo.push(specObj);
+			if(data.character.specializationNames == ''){
+				data.character.specializationNames = spec.getDisplayValue();
+			} else{
+				data.character.specializationNames += ', ' + spec.getDisplayValue();
+			}
 		} else{
-			data.character.specializationNames += ', ' + spec.getDisplayValue();
+			var spObj = {
+				name: spec.getDisplayValue(),
+				sysID: spec.sys_id + '',
+				costToPurchase: (data.character.specializationIDs.split(',').length + 1) * 10,
+				careerSkills: spec.specialization_skills + '',
+				description: spec.description + ''
+			};
+			if(spObj.costToPurchase <= data.character.availableXPInt){
+				spObj.canPurchase = true;
+			} else{
+				spObj.canPurchase = false;
+			}
+			data.availableSpecs.push(spObj);
 		}
 	}
-		
+	
 	//set background image
 	//remove the db_image check once all images are loaded
 	var imgCheck = data.character.career.toLowerCase() + '.png';
@@ -1092,6 +1500,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			rankString: skills.rank + '',
 			costToNextRank: parseInt(skills.cost_to_next_rank),
 			isCareer: skills.career + '',
+			description: skills.skill.description + '',
 			sysID: skills.sys_id + ''
 		};
 		data.skills.push(rec);
@@ -1167,6 +1576,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 	//retrieve inventory list
 	data.availableGear = [];
 	var gear = new GlideRecord('x_176383_star_wars_gear');
+	gear.addQuery('type', '!=', 'vehicle_weapon').addCondition('type', '!=', 'vehicle_mod');
 	gear.orderBy('type');
 	gear.orderBy('name');
 	gear.query();
@@ -1214,6 +1624,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			skillUsed: cg.item.skill_used.getDisplayValue(),
 			range: cg.item.range.getDisplayValue(),
 			hardPoints: cg.item.hard_points + '',
+			hpRequired: cg.item.hp_required + '',
 			description: cg.item.description + '',
 			sysID: cg.sys_id + '',
 			iconID: cg.sys_id + 'Chevron'
@@ -1233,6 +1644,164 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 		cgObj.weaponQualities = qualityString;
 		data.characterGear.push(cgObj);
 	}
+	
+	//retrieve list of vehicles
+	data.vehicles = [];
+	data.vehiclesAll = [];
+	var vehicle = new GlideRecord('x_176383_star_wars_vehicle');
+	vehicle.orderBy('type');
+	vehicle.orderBy('ship_name');
+	vehicle.query();
+	while(vehicle.next()){
+		var vObj = {
+			shipName: vehicle.ship_name + '',
+			makeModel: vehicle.make_model + '',
+			type: vehicle.type.getDisplayValue(),
+			typeID: vehicle.type + '',
+			sysID: vehicle.sys_id + '',
+			price: vehicle.price + '',
+			silhouette: vehicle.silhouette + '',
+			hp: vehicle.hard_points + '',
+			handling: vehicle.handling + '',
+			speed: vehicle.speed + '',
+			armor: vehicle.armor + '',
+			defenseFore: vehicle.defense_fore + '',
+			defenseAft: vehicle.defense_aft + '',
+			defensePort: vehicle.defense_port + '',
+			defenseStarboard: vehicle.defense_starboard + '',
+			hullThreshold: vehicle.hull_trauma_threshold + '',
+			ssThreshold: vehicle.system_strain_threshold + '',
+			maximumAltitude: vehicle.maximum_altitude + '',
+			sensorRange: vehicle.sensor_range.getDisplayValue(),
+			description: vehicle.description + ''
+		};
+		if(vehicle.primary_hyperdrive_class == ''){
+			vObj.hyperdrive = 'None';
+		} else{
+			vObj.hyperdrive = 'Primary Class: ' + vehicle.primary_hyperdrive_class + ', Backup Class: ' + vehicle.backup_hyperdrive_class;
+		}
+		
+		if(vehicle.navicomputer == true){
+			vObj.navicomputer = 'Yes';
+		} else{
+			vObj.navicomputer = 'No';
+		}
+		data.vehicles.push(vObj);
+	}
+	data.vehiclesAll = data.vehicles;
+	//retrieve character vehicles
+	data.characterVehicles = [];
+	var cv = new GlideRecord('x_176383_star_wars_character_vehicle');
+	cv.addQuery('character', characterID);
+	cv.orderBy('name');
+	cv.query();
+	while(cv.next()){
+		var v = {
+			name: cv.name + '',
+			vehicleName: cv.vehicle.ship_name + '',
+			makeModel: cv.vehicle.make_model + '',
+			sysID: cv.sys_id + ''
+		};
+		data.characterVehicles.push(v);
+	}
+	
+	//retrieve force powers and enhancements
+	data.characterPowers = [];
+	var cForce = new GlideRecord('x_176383_star_wars_character_force_power');
+	cForce.addQuery('character', data.characterID);
+	cForce.orderBy('force_power.name');
+	cForce.query();
+	while(cForce.next()){
+		var cForceObj = {
+			name: cForce.force_power.getDisplayValue(),
+			description: cForce.force_power.description + '',
+			sysID: cForce.force_power.sys_id + ''
+		};
+		data.characterPowers.push(cForceObj);
+	}
+	
+	data.cForceEnhancements = [];
+	data.ownedEnhancements = [];
+	var cfe = new GlideRecord('x_176383_star_wars_character_force_enhancements');
+	cfe.addQuery('character', data.characterID);
+	cfe.orderBy('character_force_power.force_power.name');
+	cfe.orderBy('character_force_enhcancement.type');
+	cfe.query();
+	while(cfe.next()){
+		if(data.cForceEnhancements.length == 0){
+			var cfeObj = {
+				type: cfe.character_force_enhcancement.type.getDisplayValue(),
+				description: cfe.character_force_enhcancement.description + '',
+				ranks: 1,
+				forceID: cfe.character_force_power.force_power.sys_id + '',
+				enhancementID: cfe.character_force_enhcancement.sys_id + ''
+			};
+			data.cForceEnhancements.push(cfeObj); 
+		} else if(data.cForceEnhancements[data.cForceEnhancements.length - 1].type == cfe.character_force_enhcancement.type.getDisplayValue() &&  data.cForceEnhancements[data.cForceEnhancements.length - 1].description.toString() == cfe.character_force_enhcancement.description.toString()){
+			data.cForceEnhancements[data.cForceEnhancements.length - 1].ranks++;
+		} else{
+			var cfeObj = {
+				type: cfe.character_force_enhcancement.type.getDisplayValue(),
+				description: cfe.character_force_enhcancement.description + '',
+				ranks: 1,
+				forceID: cfe.character_force_power.force_power.sys_id + '',
+				enhancementID: cfe.character_force_enhcancement.sys_id + ''
+			};
+			data.cForceEnhancements.push(cfeObj);
+		}
+		data.ownedEnhancements.push(cfe.character_force_enhcancement.sys_id + '');
+	}
+	
+		data.forcePowers = [];
+	var force = new GlideRecord('x_176383_star_wars_force_power');
+		force.orderBy('name');
+		force.query();
+		while(force.next()){
+			if(JSON.stringify(data.characterPowers).indexOf(force.sys_id.toString()) == -1){
+				var forceObj = {
+					name: force.name + '',
+					minRating: force.minimum_force_rating + '',
+					costToPurchase: force.cost_to_purchase + '',
+					description: force.description + '',
+					isPurchased: false,
+					canPurchase: false,
+					sysID: force.sys_id + ''
+				};
+				if(parseInt(forceObj.costToPurchase) <= data.character.availableXPInt && parseInt(forceObj.minRating) <= data.character.forceRatingInt){
+					forceObj.canPurchase = true;
+				}
+				data.forcePowers.push(forceObj);
+			}
+		}
+		
+		//retrieve force power enhancements
+		data.forceEnhancements = [];
+		var fe = new GlideRecord('x_176383_star_wars_force_power_enhancement');
+		fe.orderBy('force_power.name');
+		fe.orderBy('number');
+		fe.query();
+		while(fe.next()){
+			if(JSON.stringify(data.ownedEnhancements).indexOf(fe.sys_id.toString()) == -1 && JSON.stringify(data.characterPowers).indexOf(fe.force_power.sys_id.toString()) > -1){
+				var feObj = {
+					type: fe.type.getDisplayValue(),
+					preReqs: fe.pre_req_force_enhancements + '',
+					forcePower: fe.force_power.getDisplayValue(),
+					forcePowerID: fe.force_power.sys_id + '',
+					costToPurchase: fe.cost_to_purchase + '',
+					description: fe.description + '',
+					canPurchase: false,
+					isPurchased: false,
+					sysID: fe.sys_id + ''
+				};
+				var preReqArray = feObj.preReqs.split(',');
+				for(var i = 0; i < preReqArray.length; i++){
+					if((preReqArray.length == 0 || JSON.stringify(data.ownedEnhancements).indexOf(preReqArray[i]) > -1) && parseInt(feObj.costToPurchase) <= data.character.availableXPInt){
+						feObj.canPurchase = true;
+					}
+				}
+				data.forceEnhancements.push(feObj);
+			}
+		}
 	
 	//process character updates
 	if(input){
@@ -1388,6 +1957,58 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 					data.skills[s].costToNextRank = newCost;
 				}
 			}
+		} else if(input.action == 'saveGearQuantity'){
+			var myGear = new GlideRecord('x_176383_star_wars_character_gear_m2m');
+			myGear.get(input.gearID);
+			myGear.quantity = input.quantity;
+			myGear.update();
+			data.currentGear = null;
+		} else if(input.action == 'purchaseVehicle'){
+			var myShip = new GlideRecord('x_176383_star_wars_character_vehicle');
+			myShip.initialize();
+			myShip.character = characterID;
+			myShip.vehicle = input.vehicleID;
+			myShip.insert();
+		} else if(input.action == 'saveForceRating'){
+			charGR.force_rating = input.forceRating;
+			charGR.update();
+		} else if(input.action == 'buyForcePower'){
+			cForce.initialize();
+			cForce.character = data.characterID;
+			cForce.force_power = input.power.sysID;
+			cForce.insert();
+			charGR.available_xp -= parseInt(input.power.costToPurchase);
+			charGR.update();
+		} else if(input.action == 'buyForceEnhancement'){
+			var characterPower = new GlideRecord('x_176383_star_wars_character_force_power');
+			characterPower.addQuery('character', data.characterID);
+			characterPower.addQuery('force_power', input.enh.forcePowerID);
+			characterPower.query();
+			if(characterPower.next()){
+				cfe.initialize();
+				cfe.character = data.characterID;
+				cfe.character_force_power = characterPower.sys_id + '';
+				cfe.character_force_enhcancement = input.enh.sysID;
+				cfe.insert();
+				charGR.available_xp -= parseInt(input.enh.costToPurchase);
+				charGR.update();
+			}
+		} else if(input.action == 'buyNewSpec'){
+			var specArray = data.character.specializationIDs.split(',');
+			specArray.push(input.spec.sysID);
+			if(input.spec.careerSkills == '' && data.character.forceRatingInt == 0){
+				 charGR.force_rating = 1;
+			}
+			charGR.career_specializations = specArray.join();
+			charGR.available_xp -= input.spec.costToPurchase;
+			charGR.update();
+			var skillGR = new GlideRecord('x_176383_star_wars_m2m_character_skills');
+			skillGR.addQuery('character', data.characterID).addCondition('skill', 'IN', input.spec.careerSkills);
+			skillGR.query();
+			while(skillGR.next()){
+				skillGR.career = true;
+				skillGR.update();
+			}
 		}
 	}
 })();]]></script>
@@ -1397,7 +2018,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>554</sys_mod_count>
+        <sys_mod_count>768</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -1405,7 +2026,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-06 04:41:36</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:30:56</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -1417,7 +2038,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     <!-- name, species, career, XP -->
   	<span class="col-xs-12 col-md-8 name" ng-click="editCharacter('name')">{{data.character.name}}</span>
     <span class="col-xs-12 col-md-8 star-wars-text" ng-click="editCharacter('name')">{{data.character.name}}</span>
-    <span class="col-xs-12 col-md-8 id-info"><text id="species">Species: {{data.character.species}}</text><br> Career:<text id="career">{{data.character.career}}</text><br> Specializations:<text id="specializations">{{data.character.specializationNames}}</text></span>
+    <span class="col-xs-12 col-md-8 id-info"><text id="species">Species: {{data.character.species}}</text><br> Career:<text id="career">{{data.character.career}}</text> <i class="far fa-info-circle" ng-click="editCharacter('career')"></i><br> Specializations:<text id="specializations">{{data.character.specializationNames}}</text> <i class="far fa-info-circle" ng-click="editCharacter('specializations')"></i><br><text id="buyNewSpecializations" ng-click="editCharacter('newSpecs')"><i class="fab fa-old-republic"></i> Buy New Specializations</text></span>
     <span class="col-xs-12 col-md-4 xp-info-container">
       <span class="col-xs-12 mobile-nav-container xp-info" id="xpInfo">
         <span class="col-xs-6 total-xp">
@@ -1499,7 +2120,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
       </span>
     </span>
     <!-- skills container -->
-    <span class="col-xs-12 col-md-3 skill-container mobile-nav-container" id="skillsContainer" ng-click="editCharacter('skills')">
+    <span class="col-xs-12 col-md-3 skill-container mobile-nav-container" id="skillsContainer">
       <span class="col-xs-12 skills-container-header">SKILLS</span>
       <span class="col-xs-12 skills-body">
       	<span class="col-xs-12 skill-column-headers">
@@ -1507,11 +2128,20 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
           <span class="col-xs-3 skill-rank-header">RANK</span>
         </span>
         <span class="col-xs-12 skill" ng-repeat="skill in data.skills">
-          <span class="col-xs-9 skill-name">{{skill.name}} <i ng-if="skill.isCareer == 'true'" class="far fa-medal"></i></span>
-          <span class="col-xs-3 skill-rank">{{skill.rankString}}</span>
+          <span class="col-xs-9 skill-name">{{skill.name}} <i ng-if="skill.isCareer == 'true'" class="far fa-medal"></i> <i class="far fa-info-circle" ng-click="showSkillInfo(skill)"></i></span>
+          <span class="col-xs-3 skill-rank"  ng-click="editCharacter('skills')">{{skill.rankString}}</span>
         </span>
       </span>
     </span>
+    
+    <div class="info-container col-xs-12" id="skillInfoContainer">
+      <span class="col-xs-12 close-button" ng-click="closeSkillInfo()"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 skill-info-body">
+        <span class="col-xs-12 skill-info-name text-center">{{data.currentSkill.name}} <i ng-if="data.currentSkill.isCareer == 'true'" class="far fa-medal"></i><br><text class="star-wars-text">{{data.currentSkill.name}}</text></span>
+        <span class="col-xs-12 skill-info-rank text-center">Current Rank: {{data.currentSkill.rankString}}</span>
+        <span class="col-xs-12 skill-info-description" ng-bind-html="data.currentSkill.description"></span>
+      </span>
+    </div>
     <!-- laptop/desktop section selection header -->
     <span class="xs-hidden col-md-9 section-header-container">
       <span class="col-md-12 sections">
@@ -1589,8 +2219,51 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- Force Powers Container -->
     <span class="col-xs-12 col-md-9 character-details-container mobile-nav-container force-container" id="forceContainer">
-      force
+      <span class="col-xs-12 edit-container" id="purchaseForcePowersButtonContainer" ng-click="editCharacter('forcePowers')"><i class="fab fa-jedi-order"></i> Meditate</span>
+      <span class="col-xs-12" id="forceRating">
+        <span class="col-xs-12 col-md-3 center-text" id="forceRatingValue" ng-click="editCharacter('forceRating')">
+          <span class="col-xs-12 dv-header">Force Rating</span>
+          <span class="col-xs-12 threshold-value text-center" id="forceRatingInt">{{data.character.forceRatingString}}</span>
+        </span>
+        <span ng-if="data.character.forceRatingInt == 0" class="col-xs-12 no-message-or-powers" id="noForceMessageContainer">
+          <span class="col-xs-12 text-center">You are not force sensitive.  Purchase a talent or specialization that grants force rating to become force sensitive.</span>
+          <span class="col-xs-12 text-center star-wars-text">You are not force sensitive.  Purchase a talent or specialization that grants force rating to become force sensitive.</span>
+        </span>
+        <span ng-if="data.characterPowers.length == 0 && data.character.forceRatingInt > 0" class="col-xs-12 no-message-or-powers">
+          <span class="col-xs-12 text-center">You currently have 0 force powers.  Meditate to strengthen your connection to the force.</span>
+          <span class="col-xs-12 text-center star-wars-text">You currently have 0 force powers.  Meditate to strengthen your connection to the force.</span>
+        </span>
+        <span ng-if="data.characterPowers.length > 0" class="col-xs-12 force-powers-container">
+          <span class="col-xs-12 force-headers">
+            <span class="col-xs-3 force-header">Name</span>
+            <span class="col-xs-9 force-header">Description</span>
+          </span>
+          <span class="col-xs-12 force-power" ng-repeat="power in data.characterPowers">
+            <span class="col-xs-3 force-detail">{{power.name}} <i class="far fa-info-circle" ng-click="showForceInfo(power)"></i></span>
+            <span class="col-xs-9 force-detail" ng-bind-html="power.description"></span>
+          </span>
+        </span>
+      </span>
     </span>
+    
+    <div class="col-xs-12 force-power-info-container" id="forcePowerInfoContainer">
+      <span class="col-xs-12 close-button" ng-click="closeForceInfo()"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 force-power-body">
+        <span class="col-xs-12 text-center" id="forcePowerInfoName">{{data.currentForcePower.name}}<br><text class="text-center star-wars-text">{{data.currentForcePower.name}}</text></span>
+        <span class="col-xs-12" id="currentForceDescription" ng-bind-html="data.currentForcePower.description"></span>
+        <span class="col-xs-12 enhancements-container">
+          <span class="col-xs-12 e-header text-center">Enhancements</span>
+          <span class="col-xs-12 enhancements-headers">
+            <span class="col-xs-4 enhancement-header">Type:</span>
+            <span class="col-xs-8 enhancement-header">Description:</span>
+          </span>
+          <span class="col-xs-12 enhancement" ng-if="e.forceID == data.currentForcePower.sysID" ng-repeat="e in data.cForceEnhancements">
+            <span class="col-xs-4 etype">{{e.type}} <span ng-if="e.ranks > 1" class="badge">{{e.ranks}}</span></span>
+            <span class="col-xs-8 edescription" ng-bind-html="e.description"></span>
+          </span>
+        </span>
+      </span>
+    </div>
     <!-- gear, credits container -->
     <span class="col-xs-12 col-md-9 character-details-container mobile-nav-container gear-container" id="gearContainer">
      <span class="col-xs-12 credits-container" ng-click="editCharacter('credits')">
@@ -1613,16 +2286,20 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
          <span class="col-xs-12 gear-item-container">
            <div class="col-xs-12 cg-item" ng-repeat="item in data.characterGear" id="parent{{item.sysID}}">
              <span class="col-xs-8 gear-detail item-name">{{item.name}}</span>
-             <span class="col-xs-2 gear-detail item-quantity">{{item.quantity}}</span>
+             <span class="col-xs-2 gear-detail item-quantity" ng-click="editCharacter('gearQuantity', item)">{{item.quantity}}</span>
              <span class="col-xs-2 gear-detail expand-icon" ng-click="toggleGearInfo(item.sysID)"><i class="fal fa-chevron-left gear-info-icon" id="{{item.iconID}}"></i></span>
              <span class="col-xs-12 full-gear-detail" id="{{item.sysID}}">
                <span class="col-xs-4 gear-detail">
                  <span class="col-xs-12 gear-detail-label">Encumbrance:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.encumbrance}}</span>
                </span>
-               <span class="col-xs-4 gear-detail">
+               <span ng-if="item.typeID != 'mod'" class="col-xs-4 gear-detail">
                  <span class="col-xs-12 gear-detail-label">HP:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.hardPoints}}</span>
+               </span>
+               <span ng-if="item.typeID == 'mod'" class="col-xs-4 gear-detail">
+                 <span class="col-xs-12 gear-detail-label">HP Required:</span>
+                 <span class="col-xs-12 gear-detail-value">{{item.hpRequired}}</span>
                </span>
                <span class="col-xs-4 gear-detail">
                  <span class="col-xs-12 gear-detail-label">Type:</span>
@@ -1644,7 +2321,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
                  <span class="col-xs-12 gear-detail-label">Range:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.range}}</span>
                </span>
-               <span ng-if="item.typeID == 'weapon'" class="col-xs-4 gear-detail">
+               <span ng-if="item.typeID == 'weapon' || item.typeID == 'mod'" class="col-xs-4 gear-detail">
                  <span class="col-xs-12 gear-detail-label">Special:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.weaponQualities}}</span>
                </span>
@@ -1669,9 +2346,85 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
        </span>
      </span>
     </span>
+    
+    <!-- gear info -->
+    <span class="col-xs-12" id="gearInfoContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearInfo')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 text-center" id="gearNameContainer">{{data.currentGearItem.name}}<br><text class="star-wars-text text-center">{{data.currentGearItem.name}}</text></span>
+      <span class="col-xs-12 gear-item-details">
+        <span class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Encumbrance:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.encumbrance}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID != 'mod'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">HP:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.hardPoints}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'mod'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">HP Required:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.hpRequired}}</span>
+        </span>
+        <span class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Type:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.type}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'weapon'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Damage:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.damage}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'weapon'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Crit:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.crit}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'weapon'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Skill Used:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.skillUsed}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'weapon'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Range:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.range}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'weapon' || data.currentGearItem.typeID == 'mod'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Special:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.weaponQualities}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'armor'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Defense:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.defense}}</span>
+        </span>
+        <span ng-if="data.currentGearItem.typeID == 'armor'" class="col-xs-4 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Soak:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.soak}}</span>
+        </span>
+        <span class="col-xs-12 gear-detail">
+          <span class="col-xs-12 gear-detail-label">Description:</span>
+          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.description}}</span>
+        </span>
+      </span>
+    </span>
     <!-- vehicles container -->
     <span class="col-xs-12 col-md-9 character-details-container mobile-nav-container vehicles-container" id="vehiclesContainer">
-      vehicles
+      <span class="col-xs-12 edit-container" ng-click="editCharacter('vehicles')">
+        <i class="fas fa-starship-freighter"></i> Shop Vehicles
+      </span>
+      <span ng-if="data.characterVehicles.length == 0" id="noVehiclesContainer">
+        <span class="col-xs-12 no-talents">You currently have no vehicles</span>
+        <span class="col-xs-12 star-wars-text">You currently have no vehicles</span>
+      </span>
+      <span ng-if="data.characterVehicles.length > 0" id="characterVehicleList">
+      	<span class="col-xs-12 vehicle-headers">
+          <span class="col-xs-6 col-md-4 vehicle-header">Name:</span>
+          <span class="col-xs-6 col-md-4 vehicle-header">Type:</span>
+          <span class="xs-hidden col-md-4 vehicle-header">Make/Model</span>
+        </span>
+        <span class="col-xs-12 vehicle-list" ng-repeat="v in data.characterVehicles">
+         <a class="vehicle-link" href="?id=star_wars_vehicle_sheet&vehicleID={{v.sysID}}" target="_blank">
+          <span class="col-xs-6 col-md-4 vehicle-detail">{{v.name}}</span>
+          <span class="col-xs-6 col-md-4 vehicle-detail">{{v.vehicleName}}</span>
+          <span class="xs-hidden col-md-4 vehicle-detail">{{v.makeModel}}</span>
+         </a>
+        </span>
+      </span>
     </span>
     <!-- character description -->
     <span class="col-xs-12 col-md-9 character-details-container mobile-nav-container character-description-container" id="characterDescriptionContainer">
@@ -1756,6 +2509,32 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         </span>
       </span>
     </span>
+    <!-- show career info -->
+    <span class="edit-character" id="showCareerInfo">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('career')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12">
+        <span class="col-xs-12" id="careerName">{{data.careerInfo.name}}<br><text class="star-wars-text">{{data.careerInfo.name}}</text></span>
+        <span class="col-xs-12" id="careerDescription" ng-bind-html="data.careerInfo.description"></span>
+      </span>
+    </span>
+    <!-- show specialization Info -->
+    <span class="edit-character" id="showSpecializationsInfo">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('specializations')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12" ng-repeat="spec in data.specializationInfo">
+        <span class="col-xs-12 specialization-name">{{spec.name}}<br><text class="star-wars-text">{{spec.name}}</text></span>
+        <span class="col-xs-12 specialization-description" ng-bind-html="spec.description"></span>
+      </span>
+    </span>
+    <!-- add new specializations -->
+    <span class="edit-character" id="addNewSpecializationsContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('newSpecs')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12" ng-repeat="sp in data.availableSpecs">
+        <span class="col-xs-12 specialization-name">{{sp.name}}<br><text class="star-wars-text">{{sp.name}}</text></span>
+        <span class="col-xs-12 specialization-name">XP Cost: {{sp.costToPurchase}}</span>
+        <span ng-if="sp.canPurchase" class="col-xs-12 text-center vehicle-detail talent-detail force-power-detail" id="purchaseSpecButton"><button class="purchase-gear-button" ng-click="purchaseNewSpec(sp)">Purchase</button></span>
+        <span class="col-xs-12 specialization-description" ng-bind-html="sp.description"></span>
+      </span>
+    </span>
     <!-- edit skills -->
     <span class="edit-character" id="editSkillsContainer">
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('skills')"><i class="fas fa-times"></i></span>
@@ -1787,6 +2566,114 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
           </span>
         </span>
     </span>
+    <!-- edit force rating -->
+    <span class="edit-character" id="editForceRatingContainer">
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('forceRating')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 edit-force-rating-body">
+        <label for="forceRatingInput">Force Rating:</label><br>
+        <input class="sw-input" type="text" id="forceRatingInput" name="forceRatingInput" value="{{data.character.forceRatingString}}" inputmode="numeric" pattern="[0-9]*">
+      </span>
+      <span class="col-xs-12 save-edits">
+          <span class="col-xs-12 save-button-container">
+            <button id="saveEditsButton" ng-click="saveEdits('forceRating')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+          </span>
+        </span>
+    </span>
+    <!-- meditate/buy force powers and enhancements-->
+    <span class="edit-character" id="editForcePowersContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('forcePowers')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 force-powers-body">
+        <label for="forcePowerFilterSelect">Power or Enhancement:</label>
+        <select class="sw-input" name="forcePowerFilterSelect" id="forcePowerFilterSelect" ng-change="toggleForce()" ng-model="Powers">
+          <option value="powers" ng-selected="true">Powers</option>
+          <option value="enhancements">Enhancements</option>
+        </select>
+        <!-- force powers -->
+        <span class="col-xs-12 force-power-shop" id="forcePowerShop">
+          <span class="col-xs-12 force-power-headers">
+            <span class="col-xs-6 force-power-header">Name</span>
+            <span class="col-xs-2 force-power-header">XP Cost</span>
+            <span class="col-xs-4 force-power-header"></span>
+          </span>
+          <span class="col-xs-12 force-power" ng-if="!p.isPurchased && p.canPurchase" ng-repeat="p in data.forcePowers">
+            <span class="col-xs-6 force-power-detail">{{p.name}} <i class="far fa-info-circle" ng-click="showForceInfo(p)"></i></span>
+            <span class="col-xs-2 force-power-detail">{{p.costToPurchase}}</span>
+            <span class="col-xs-2 vehicle-detail talent-detail force-power-detail"><button class="purchase-gear-button" ng-click="purchaseForcePower(p)">Purchase</button></span>
+          </span>
+        </span>
+        <!-- enhancements -->
+        <span class="col-xs-12 force-power-shop" id="forceEnhancementShop">
+          <span class="col-xs-12 force-power-headers">
+            <span class="col-xs-2 force-power-header">Type</span>
+            <span class="col-xs-6 force-power-header">Description</span>
+            <span class="col-xs-2 force-power-header">XP Cost</span>
+            <span class="col-xs-2 force-power-header"></span>
+          </span>
+          <span class="col-xs-12 force-power" ng-if="enh.canPurchase && !enh.isPurchased" ng-repeat="enh in data.forceEnhancements">
+            <span class="col-xs-2 force-power-detail">{{enh.forcePower}} - {{enh.type}}</span>
+            <span class="col-xs-6 force-power-detail" ng-bind-html="enh.description"></span>
+            <span class="col-xs-2 force-power-detail">{{enh.costToPurchase}}</span>
+            <span class="col-xs-2 vehicle-detail talent-detail force-power-detail"><button class="purchase-gear-button" ng-click="purchaseForceEnhancement(enh)">Purchase</button></span>
+          </span>
+        </span>
+      </span>
+    </span>
+    <!-- shop vehicles -->
+    <span class="edit-character" id="editVehiclesContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('vehicles')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 vehicle-filter">
+        <label for="vehicleFilterSelect">Type: </label>
+        <select class="sw-input" name="vehicleFilterSelect" id="vehicleFilterSelect" ng-change="filterVehicle()" ng-model="All">
+          <option value="all" ng-selected="true" selected>All</option>
+          <option value="airspeeder">Airspeeder</option>
+          <option value="landspeeder">Landspeeder</option>
+          <option value="wheeled_tracked">Wheeled or Tracked</option>
+          <option value="walker">Walker</option>
+          <option value="starfighter_patrol_boat">Starfighter or Patrol Boat</option>
+          <option value="freighter_transport">Freighter or Transport</option>
+          <option value="capital_ship">Capital Ship</option>
+        </select>
+      </span>
+      <span class="col-xs-12 edit-vehicles-body">
+        <span class="col-xs-12 vehicle-headers">
+          <span class="col-xs-4 vehicle-header">Name:</span>
+          <span class="col-xs-3 vehicle-header">Type:</span>
+          <span class="col-xs-3 vehicle-header">Price:</span>
+          <span class="col-xs-2 vehicle-header"></span>
+        </span>
+        <span class="col-xs-12 vehicles-list talent-item" ng-repeat="v in data.vehicles">
+          <span class="col-xs-4 vehicle-detail talent-detail">{{v.shipName}} <i class="far fa-info-circle" ng-click="toggleVehicleInfo(v)"></i></span>
+          <span class="col-xs-3 vehicle-detail talent-detail">{{v.type}}</span>
+          <span class="col-xs-3 vehicle-detail talent-detail">{{v.price}}</span>
+          <span class="col-xs-2 vehicle-detail talent-detail"><button class="purchase-gear-button" ng-click="purchaseVehicle(v)">Purchase</button></span>
+        </span>
+      </span>
+    </span>
+    <!-- detailed vehicle info -->
+    <span class="talent-info-box" id="vehicleInfoBox">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('vehicleInfoBox')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 vehicle-detail-body">
+        <span class="col-xs-12 talent-info">{{data.currentVehicleInfo.shipName}}<br><text class="star-wars-text">{{data.currentVehicleInfo.shipName}}</text></span>
+        <span class="col-xs-12 talent-info" style="margin-bottom:20px;">{{data.currentVehicleInfo.makeModel}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Hard Points:<br>{{data.currentVehicleInfo.hp}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Silhouette:<br>{{data.currentVehicleInfo.silhouette}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Speed:<br>{{data.currentVehicleInfo.speed}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Handling:<br>{{data.currentVehicleInfo.handling}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Armor:<br>{{data.currentVehicleInfo.armor}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Hull Trauma Threshold:<br>{{data.currentVehicleInfo.hullThreshold}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">System Strain Threshold:<br>{{data.currentVehicleInfo.ssThreshold}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Maximum Altitude:<br>{{data.currentVehicleInfo.maximumAltitude}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Sensor Range:<br>{{data.currentVehicleInfo.sensorRange}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Defense Fore:<br>{{data.currentVehicleInfo.defenseFore}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Defense Aft:<br>{{data.currentVehicleInfo.defenseAft}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Defense Port:<br>{{data.currentVehicleInfo.defensePort}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Defense Starboard:<br>{{data.currentVehicleInfo.defenseStarboard}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Navicomputer:<br>{{data.currentVehicleInfo.navicomputer}}</span>
+        <span class="col-xs-4 col-md-3 vehicle-info talent-info">Hyperdrive:<br>{{data.currentVehicleInfo.hyperdrive}}</span>
+        <span class="col-xs-12 talent-info" ng-bind-html="data.currentVehicleInfo.description" style="margin-top:20px;"></span>
+        <span class="col-xs-12 vehicle-detail talent-detail" id="vehicleInfoPurchaseContainer"><button class="purchase-gear-button" ng-click="purchaseVehicle(data.currentVehicleInfo)">Purchase</button></span>
+      </span>
+    </span>
     <!-- edit talents -->
     <span class="edit-character" id="editTalentsContainer">
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('talents')"><i class="fas fa-times"></i></span>
@@ -1815,7 +2702,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 talent-info" id="talentInfoActive">{{data.currentTalentInfo.activeOrPassive}}</span>
         <span class="col-xs-12 talent-info" id="talentInfoDescription">{{data.currentTalentInfo.description}}</span>
       </span>
-      <span class="col-xs-12 talent-detail" id="talentInfoPurchaseContainer"><button class="purchase-gear-button" ng-click="purchaseTalent(item)">Purchase</button></span>
+      <span class="col-xs-12 talent-detail" id="talentInfoPurchaseContainer"><button class="purchase-gear-button" ng-click="purchaseTalent(data.currentTalentInfo)">Purchase</button></span>
     </span>
     <!-- edit credits -->
     <span class="edit-character" id="editCreditsContainer">
@@ -1830,17 +2717,39 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
           </span>
         </span>
     </span>
+    <!-- edit gear quantity -->
+    <span class="edit-character" id="editGearQuantityContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearQuantity')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 edit-gear-quantity-body">
+        <span class="col-xs-12 marketplace-headers">
+          <span class="col-xs-8 marketplace-header">Item:</span>
+          <span class="col-xs-4 marketplace-header">Quantity:</span>
+        </span>
+        <span class="col-xs-12 details">
+          <span class="col-xs-8 item-detail">{{data.currentGear.name}}</span>
+          <input class="col-xs-4 item-detail sw-input" type="text" id="gearQuantityInput" name="gearQuantityInput" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.quantity}}"/>
+        </span>
+        <span class="col-xs-12 save-edits">
+          <span class="col-xs-12 save-button-container">
+            <button id="saveEditsButton" ng-click="saveEdits('gearQuantity')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+          </span>
+        </span>
+      </span>
+    </span>
     <!-- edit gear/marketplace -->
     <span class="edit-character" id="marketplaceContainer">
     	<span class="col-xs-12 close-button" ng-click="closeEditContainer('gear')"><i class="fas fa-times"></i></span>
       <span class="col-xs-12 marketplace-body">
         <span class="col-xs-12 filter-buttons">
-          <span class="col-xs-4 col-md-12"><button class="filter-button" ng-click="filterGear('all')">View All<br><text class="star-wars-text sw-filter">View All</text></button></span>
-          <span class="col-xs-4 col-md-3 first-filter"><button class="filter-button" ng-click="filterGear('weapon')">Weapons<br><text class="star-wars-text sw-filter">Weapons</text></button></span>
-          <span class="col-xs-4 col-md-3"><button class="filter-button" ng-click="filterGear('armor')">Armor<br><text class="star-wars-text sw-filter">Armor</text></button></span>
-          <span class="col-xs-4 col-md-3"><button class="filter-button" ng-click="filterGear('gear')">Gear<br><text class="star-wars-text sw-filter">Gear</text></button></span>
-          <span class="col-xs-4 col-md-3"><button class="filter-button" ng-click="filterGear('mods')">Mods<br><text class="star-wars-text sw-filter">Mods</text></button></span>
-          <span class="col-xs-12"><button class="filter-button" ng-click="filterGear('black_market_items')">Black Market Items<br><text class="star-wars-text sw-filter">Black Market Items</text></button></span>
+          <label for="gearFilterSelect">Type: </label>
+        	<select class="sw-input" name="gearFilterSelect" id="gearFilterSelect" ng-change="filterGear()" ng-model="All">
+            <option value="all">All</option>
+            <option value="weapon">Weapon</option>
+            <option value="armor">Armor</option>
+            <option value="gear">Gear</option>
+            <option value="black_market_items">Black Market Items</option>
+            <option value="mod">Mod</option>
+          </select>
         </span>
         <span class="col-xs-12 marketplace-items-container">
           <span class="col-xs-12 marketplace-headers">
@@ -1850,7 +2759,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
             <span class="col-xs-2 marketplace-header"></span>
           </span>
           <span class="col-xs-12 marketplace-item" ng-repeat="item in data.availableGear">
-            <span class="col-xs-6 item-detail">{{item.name}}</span>
+            <span class="col-xs-6 item-detail">{{item.name}} <i class="far fa-info-circle" ng-click="showGearInfo(item)"></i></span>
             <span class="col-xs-2 item-detail">{{item.price}}</span>
             <input class="col-xs-2 sw-input" type="text" id="{{item.name}}QuantityInput" name="{{item.name}}QuantityInput" inputmode="numeric" pattern="[0-9]*" value="1"/>
             <span class="col-xs-2 item-detail"><button class="purchase-gear-button" ng-click="purhcaseItem(item)">Purchase</button></span>

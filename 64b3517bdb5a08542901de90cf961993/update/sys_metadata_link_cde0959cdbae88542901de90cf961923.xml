@@ -2,31 +2,42 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>5d10155cdbae88542901de90cf96190a</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Mechanics (Int)</name>
-        <number>SKILL0001012</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:03:47</sys_created_on>
-        <sys_id>5d10155cdbae88542901de90cf96190a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:03:47</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Space travel is fraught with dangers. A failed life support system can leave a crew desperate to find any haven where they might safely land. A failed hyperspace engine might strand them hopelessly far from the nearest repair yard. Individuals who accept these dangers need to either have tremendous faith in the quality of their craft or the mechanical skills of its crew. Even in those cases where confidence is based upon a craft&amp;#39;s quality and maintenance regimen, the presence of a capable mechanic can still be crucial to the ship&amp;#39;s ultimate survival. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Planetary and atmospheric craft, droids, and even a trusty blaster can break down at the least convenient possible moment. These different devices use vastly different technologies, but there are core concepts that any technical expert can carry over from one device to another. The Mechanics skill represents the expertise required for any of these repairs. The skill plays a critical role for any technician, but is also relevant for pilots, survivalists, and anyone else who travels the fringe.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Any device that suffers physical damage may be repaired using the Mechanics skill with proper tools.&lt;/li&gt;&lt;li&gt;A character may use Mechanics prior to beginning a repair job, so that he can identify the parts and tools necessary for the job along with their approximate  cost. This information may be particularly useful to a character seeking to pay for repairs.&lt;/li&gt;&lt;li&gt;Sometimes, a character may have access to an extensive supply of discrete components or damaged devices. In this situation, attempts to construct a completely new device are dependent upon the Mechanics skill.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;At the Came Master&amp;#39;s discretion, it may be impossible to complete a repair without the necessary tools or components. Alternatively, the Game Master may choose to apply additional difficulty dice to represent temporary fixes.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Additional successes on a Mechanics check may be used to increase the efficiency of the action. Each additional success may be used to reduce the time required to make the check by 10-20%.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage generated during a Mechanics check can mean especially high-quality repairs, possibly even making the item even higher quality than it originally was. This may grant boost dice when using the item, or even make it count as having the Superior quality for a session. Triumph earned on a Mechanics check may give a device an additional function, which is only good for a single use.  Examples might include a temporary engine speed boost or a more powerful blaster shot. The nature and precise details of this temporary function are subject to the Game Master&amp;#39;s discretion. Mechanics checks may have specific rules when applied to repairing starships and vehicles, see page 243.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Threat during a Mechanics check may represent particularly shoddy repairs or temporary measures. The GM may spend threat to cause the target object or system to malfunction shortly after the Mechanics check is completed. Despair may be spent to cause further harm to the target object or system, or to cause other components of the target to begin to malfunction.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Mechanics (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001012&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:03:47&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;5d10155cdbae88542901de90cf96190a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 17:34:57&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cde0959cdbae88542901de90cf961923</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Mechanics (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +45,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_cde0959cdbae88542901de90cf961923</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:39</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:03</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

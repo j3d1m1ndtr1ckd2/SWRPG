@@ -2,31 +2,36 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>38c0595cdbae88542901de90cf9619e5</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Outer Rim (Int)</name>
-        <number>SKILL0001031</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:06:46</sys_created_on>
-        <sys_id>38c0595cdbae88542901de90cf9619e5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:06:46</sys_updated_on>
-        <type>knowledge</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The systems of the Outer Rim are filled with independent worlds, often inhabited by those who enjoy their isolation and relative freedom. Because of this, the varied worlds exhibit an incredibly diverse mix of different cultures and political systems. In many instances, they also exhibit a broad spectrum of different species that have developed a shared community founded on this diversity. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Because the range of cultures is so great, anything learned about the culture of one world is not necessarily relevant to aspects of other systems in the Outer Rim—even ones that are relatively close. However, there are common attitudes and archetypal settings that are consistent throughout this region of the galaxy. Further, those who travel regularly among these worlds do get to learn of one another, and there are countless dives frequented by those who ply the spacelanes.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;If a character needs to find a planet with a particular resource or service among the systems of the Outer Rim, he could make an Outer Rim check to identify the most appropriate and closest options.&lt;/li&gt;&lt;li&gt;When determining the best location to sell a cargo of goods, an Outer Rim check might reveal locations where the goods are legal, desirable, and socially acceptable.&lt;/li&gt;&lt;li&gt;At times when a character must interact with a person from an Outer Rim world, this knowledge skill could be used to determine the most appropriate social actions to take to establish a beneficial relationship.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty for an Outer Rim check is based upon the obscurity of the world and goods in question. This may also be modified based upon the specificity of the question posed.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Outer Rim (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001031&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:06:46&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;38c0595cdbae88542901de90cf9619e5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:52:03&lt;/sys_updated_on&gt;
+        &lt;type&gt;knowledge&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>45e0959cdbae88542901de90cf96191e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Outer Rim (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +39,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_45e0959cdbae88542901de90cf96191e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:26</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:43</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

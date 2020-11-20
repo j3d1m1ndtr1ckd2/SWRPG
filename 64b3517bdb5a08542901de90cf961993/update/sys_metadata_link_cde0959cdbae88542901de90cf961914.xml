@@ -2,31 +2,46 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>1d50595cdbae88542901de90cf9619df</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Stealth (Ag)</name>
-        <number>SKILL0001019</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:04:53</sys_created_on>
-        <sys_id>1d50595cdbae88542901de90cf9619df</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:04:53</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Often, a character may have business to conduct that is best completed with a certain degree of privacy. It might be that there are powerful individuals—either legal or criminal authorities—who are directly opposed to his choice of actions. Other times, a character might either be collecting or avoiding a bounty. Under such conditions, a successful endeavor may depend entirely upon how talented the character is at not being noticed. The Stealth skill reflects this ability under virtually all situations. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Any criminal that depends upon physical insertion must be a master of this trade. Similarly, anyone whose skills include espionage needs to be able to avoid notice. Stealth also encompasses wilderness camouflage skills, which may be crucial to any hunter. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Attempts to hide from all of an opponent&amp;#39;s senses are dependent upon Stealth, though difficulties may be modified by ambient conditions and any applicable gear.&lt;/li&gt;&lt;li&gt;Stealth can allow characters to shadow or follow individuals without being detected.&lt;/li&gt;&lt;li&gt;Characters may attempt to hide people or objects from the attentions of others, either through concealment or misdirection. Such actions are dependent upon their Stealth skill.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty of a Stealth check often depends on the abilities of those the character is attempting to avoid. Members of species that are more dependent upon smell, hearing, or other senses may be most susceptible to Stealth under different weather conditions or distracted by events that seem trivial to a species focused on visual cues. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Stealth checks are typically opposed by Perception, based upon whether the opponent is passively or actively searching for the hidden character. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Extra success on a Stealth check may be used to aid any allied characters that are infiltrating at the same time. Effectively, the successful character points out a factor that might otherwise have caused the ally to fail. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage may be spent to decrease the amount of time required to perform a given task while using the Stealth skill. This could represent the character finding superior cover, giving him the ability to move faster while remaining out of sight, or successfully distracting a key figure to give him access to his target. Under the right circumstances, a character may spend a triumph to identify a way to completely distract an opponent for the duration of the scene. This could allow the character to drop all pretense of Stealth in favor of completing a task far more swiftly.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The GM may spend threat generated during a Stealth check to hinder the character as he attempts to remain hidden. The character may need to overcome a particularly unpleasant obstacle or take extra time to remain out of sight. The GM may increase the time it takes for the character to perform his desired action while hidden by 25% per threat spent in this way. The GM may spend despair to cause the character to leave behind some evidence of his passing. While this has no bearing on the success or failure of his Stealth check, some object, clue, or information is left behind concerning the character&amp;#39;s identity and possibly even his motive. &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Stealth (Ag)&lt;/name&gt;
+        &lt;number&gt;SKILL0001019&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:04:53&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1d50595cdbae88542901de90cf9619df&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:32:25&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cde0959cdbae88542901de90cf961914</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Stealth (Ag)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +49,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_cde0959cdbae88542901de90cf961914</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:04</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:34</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

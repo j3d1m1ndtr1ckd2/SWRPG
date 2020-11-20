@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d428faab2f6f1850e0f497eef699b6aa</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;3acf0d1cdbae88542901de90cf9619a2,f0df091cdbae88542901de90cf9619d6,63b0595cdbae88542901de90cf9619e4,38c0595cdbae88542901de90cf9619e5,5d30915cdbae88542901de90cf9619eb,2870195cdbae88542901de90cf961997&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Mystic’s six career skills are &lt;strong&gt;Charm, Coercion, Knowledge (Lore), Knowledge (Outer Rim), Perception, and Vigilance. &lt;/strong&gt; A Mystic automatically gains a rank in three of these skills without spending experience and gains a discount on increasing them with future experience points A Mystic begins play with a Force rating of 1.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;A Mystic&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Characters who follow the Mystic career are typically born to accept this mantle. From the time they first open their eyes, a strong connection to the Force colors their perception of the world surrounding them. They constantly perceive the ebb and flow of its energies between all living things. To many Mystics, the Force is as important a guide and mentor as their family and trusted friends. It teaches them to trust their instincts more than any training or instruction, for those instincts come from the Force.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Because Mystics dwell so deeply in the Force, they often learn to master a broad range of Force powers. Training and practice can, of course, enhance their aptitude, but not all of them require a teacher. Rather, many Mystics simply intuit their powers through experience I and their connection to the Force. Many Mystics accept ^ this as the natural way of V things. They strongly be- lieve that the Force guides and provides for them as long as they remember to remain open and aware of its presence.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Many Mystics come from a culture where their connection to the Force has made them a person of importance. In some instances, they might have served as an advisor or even a magistrate. In other . cases, their role could have been more religious or shamanic. They are likely to expect a certain degree of deference because of I their previous experiences. This means many Mystics develop a powerful charisma and captivating presence. Some Mystics come by this naturally, able to convince others of what they have seen using soft words and persuasive arguments. Others work tirelessly to develop these personality traits, knowing that a compliment (or even a lie) in the right ear at the right time can quickly advance their goals.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Mystic&lt;/name&gt;
+        &lt;number&gt;CAR0001005&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-05 17:13:44&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;d428faab2f6f1850e0f497eef699b6aa&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 02:40:27&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:12:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5b87c0be2f1cac50e0f497eef699b656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Mystic</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_5b87c0be2f1cac50e0f497eef699b656</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:12:45</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

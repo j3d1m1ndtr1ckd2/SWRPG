@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_176383_star_wars_force_power_enhancement">x_176383_star_wars_force_power_enhancement</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>FENH</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-15 14:35:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b66ddd742f68e490e0f497eef699b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FENH</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_number_b66ddd742f68e490e0f497eef699b6d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-15 14:35:45</sys_updated_on>
+    </sys_number>
+</record_update>

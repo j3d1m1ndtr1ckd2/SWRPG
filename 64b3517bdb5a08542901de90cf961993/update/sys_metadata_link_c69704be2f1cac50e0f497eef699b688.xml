@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>eecbc30f2fb31890e0f497eef699b6c0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;35af0d1cdbae88542901de90cf9619ce,b8ef415cdbae88542901de90cf9619f1,63b0595cdbae88542901de90cf9619e4,38c0595cdbae88542901de90cf9619e5,a9d0d55cdbae88542901de90cf9619dd,5d30915cdbae88542901de90cf9619eb,3f70fd9cdb22c8542901de90cf96190b,06601d1cdbae88542901de90cf9619ab&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Explorer&amp;#39;s eight career skills are &lt;strong&gt;Astrogation, Cool, Knowledge (Lore), Knowledge (Outer Rim), Knowledge (Xenology), Perception, Piloting (Space), and Survival.&lt;/strong&gt; He automatically gains one rank in four of these skills (of his choosing) without spending experience, and he receives a discount when he spends experience to purchase ranks in any of these skills.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;An Explorer&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;The Empire is vast, but it is a mere fraction of the galaxy, and the Explorer seeks to uncover the countless mysteries and opportunities the universe contains. Explorers are both vitally important and insidiously dangerous to the New Order; on the one hand, they reveal information, trade routes, and resources that are deeply coveted by the Empire, and on the other hand, they expand the ranges into which rebels, criminals, and iconoclasts can spread out and avoid Imperial might.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The Empire employs countless scouts and mercantile agents, and there are many more such entities working for the millions of galactic corporations seeking advantage over one another as they expand. The Explorer is a free agent; he makes his own way, tracks his own discoveries, and arranges his own special deals and connections. He will often sell the information he has at a decent price, or arrange to guide those who wish to go where he has been.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Other Explorers scour the HoloNet and other data services, looking for groups, businesses, or organizations in need. This is why the most well-traveled Explorers are in the greatest demand: they have maps and information about places only a fraction of a percent of the galaxy&amp;#39;s population might knows even exist. An Explorer with data about a planet a company wishes to exploit, or with a safe route to a part of the galaxy a group wishes to use for covert operations, can demand top prices.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Any Explorer relatively new to the trade finds himself in the classic conundrum—he needs experience in order to attain the choicest contracts, yet he cannot gain that experience because he cannot get hired. As such, many Explorers will take on any opportunity to travel and work in the Outer Rim, gathering what knowledge and leads they can in order to build up their contacts,&lt;/div&gt;
+&lt;div&gt;resources, and their library of maps and routes. Most commonly, Explorers are able to parlay their astrogation and pilot skills into work opportunities.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Explorer&lt;/name&gt;
+        &lt;number&gt;CAR0001012&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:37:48&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;eecbc30f2fb31890e0f497eef699b6c0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 03:13:20&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:12:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c69704be2f1cac50e0f497eef699b688</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Explorer</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c69704be2f1cac50e0f497eef699b688</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:12:55</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

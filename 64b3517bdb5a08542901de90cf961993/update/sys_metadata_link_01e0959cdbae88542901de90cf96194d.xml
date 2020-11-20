@@ -2,31 +2,38 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>62c0d55cdbae88542901de90cf9619dc</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Underworld (Int)</name>
-        <number>SKILL0001032</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:06:52</sys_created_on>
-        <sys_id>62c0d55cdbae88542901de90cf9619dc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:06:52</sys_updated_on>
-        <type>knowledge</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;In some places, criminal elements control the government through less than legal machinations. In others, the crime families function as the only effective ruling force. In more traditionally governed areas, seedier elements are dependent upon secrecy and deception as the core elements of their practices. Before a character can even begin to establish contacts among a world&amp;#39;s criminal elements, he must first understand which of these organizational structures are in play.  &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Once a character deciphers how he might establish a contact, he must next find out with whom he needs to speak. Different groups or individuals might control different parts of the criminal trade. A contact for gambling is likely different than one who deals in illicit pharmaceuticals, while a third individual is likely the point of contact for military grade weapons. Depending upon a character&amp;#39;s needs and the criminal elements active on a world, finding the right contact could be trivial or extremely time-consuming. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;The Underworld skill may be used to know which nearby worlds are the best locations for a particular type of illegal business.&lt;/li&gt;&lt;li&gt;A familiarity with Underworld may be useful if the characters need to determine the most common methods that an opponent might use for a particular type of criminal activity.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;When the criminal nature of a location or individual is well known, recalling the relevant data should be easy. The difficulty of the task should be much more challenging if the individual has gone to lengths to conceal his illegal activities.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Underworld (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001032&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:06:52&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;62c0d55cdbae88542901de90cf9619dc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:52:54&lt;/sys_updated_on&gt;
+        &lt;type&gt;knowledge&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>01e0959cdbae88542901de90cf96194d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Underworld (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +41,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_01e0959cdbae88542901de90cf96194d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:44</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:50</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

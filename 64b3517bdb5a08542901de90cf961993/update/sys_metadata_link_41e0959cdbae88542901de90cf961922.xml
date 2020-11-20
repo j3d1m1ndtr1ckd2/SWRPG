@@ -2,31 +2,40 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>5ab0d55cdbae88542901de90cf9619c3</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Education (Int)</name>
-        <number>SKILL0001029</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:06:35</sys_created_on>
-        <sys_id>5ab0d55cdbae88542901de90cf9619c3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:06:35</sys_updated_on>
-        <type>knowledge</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Among most of the races and cultures of the galaxy, achieving literacy is a crucial first step towards adulthood. Even on the wildest cultural fringes of the Outer Rim, most individuals achieve at least this standard long before they reach physical maturity. Once literacy is attained, an individual&amp;#39;s education generally expands to cover additional areas of expertise.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Typically, this includes at least a basic grounding in the mathematics, the basic sciences, and enough understanding of engineering principles to perform basic repairs. Many also study the basics of philosophy, politics, and galactic history. From there, an understanding of the various dominant species and cultures across the galaxy provides a complement to a well-rounded education.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Characters must often rely upon these essentials in order to appropriately interact with the broader galaxy. To the uneducated, places beyond their home seldom make sense. Basic cultural variances may become overwhelming challenges.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Any time a character needs to interact with a government entity, an Education check may be made to identify the best way to proceed.&lt;/li&gt;&lt;li&gt;If a character needs to employ basic scientific knowledge in an analysis, his understanding of this field is represented by his Education skill.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;Education also represents a default Knowledge skill. Any time a question comes up that doesn&amp;#39;t obviously fall under one of the other Knowledge skills, Education may be used to represent the character&amp;#39;s understanding of a particular subject matter. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The difficulty for an Education check is typically best represented by the rarity of the data in question. Characters who have a reference document at hand may receive substantial bonuses, but even using such a work requires an understanding of core principles.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Education (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001029&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:06:35&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;5ab0d55cdbae88542901de90cf9619c3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:50:05&lt;/sys_updated_on&gt;
+        &lt;type&gt;knowledge&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>41e0959cdbae88542901de90cf961922</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Education (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +43,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_41e0959cdbae88542901de90cf961922</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:35</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:33:59</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>13ed6b2b2f9ca090e0f497eef699b616</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>(Maneuver) The character may make a Coordinated Assault maneuver.  If he does so, a number of allies engaged with him equal to his ranks in Leadership gain 1 advantage on combat checks they make until the beginning of the character's next turn.  The range of this maneuver increases by one band per rank of Coordinated Assault.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Coordinated Assault</name>
+        <number>TAL0001270</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 03:55:46</sys_created_on>
+        <sys_id>13ed6b2b2f9ca090e0f497eef699b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 03:55:46</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:08:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47009f8e2f246c90e0f497eef699b623</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Coordinated Assault</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_47009f8e2f246c90e0f497eef699b623</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:08:58</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

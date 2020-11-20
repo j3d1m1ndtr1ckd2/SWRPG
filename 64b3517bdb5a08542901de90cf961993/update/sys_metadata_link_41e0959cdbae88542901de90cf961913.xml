@@ -2,31 +2,40 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>1730915cdbae88542901de90cf9619ed</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Piloting - Planetary (Ag)</name>
-        <number>SKILL0001016</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:04:29</sys_created_on>
-        <sys_id>1730915cdbae88542901de90cf9619ed</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 20:25:16</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;When characters travel across the surface of one of the galaxy&amp;#39;s numerous worlds, they often stray far from their spacecraft. Smaller craft, particularly ones best suited to a given planet&amp;#39;s habitats, are commonly used for surface transportation. This can include repulsorlift vehicles, watercraft, and aircraft. No matter how the vehicle moves—rolling, gliding, walking, flying, or floating—the skill that governs its use is Piloting (Planetary). &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Under normal traffic and environmental conditions, a character should never need to actually check the Piloting (Planetary) skill. Its use is reserved for the most extreme of conditions. This might include a high-speed pursuit, travel in treacherous weather conditions, the use of a failing vehicle, or any combination of these complications. For some, this skill is a passion and a livelihood; for others it is simply a necessity of their lifestyle.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;If a character is confronted by a completely foreign type of atmospheric craft, they must make a Piloting (Planetary) check to decipher its basic controls. &lt;/li&gt;&lt;li&gt;Any time two characters are involved in a race upon a world&amp;#39;s surface, the results are determined by an opposed check using Piloting (Planetary).&lt;/li&gt;&lt;li&gt;If a character is either chasing another or being chased, losing the follower or maintaining the tail is done through an opposed Piloting (Planetary) check.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty of a Piloting (Planetary) check may be determined based upon the difficulty of any particular maneuver, the prevailing weather conditions, and any features or failures on the vehicle involved. Extra success on a Piloting (Planetary) check allow the acting character to gain insights into the situation. Alternatively, he might deduce a way that his vehicle could be modified so that it could be more effective in the future.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage generated during a Piloting (Planetary) check may be spent to reveal a vulnerability in an opponent&amp;#39;s piloting style or vehicle, giving the character a benefit in later rounds of combat. Triumph on a Piloting (Planetary) check may be used to let the character take an additional maneuver action while continuing to pilot a vehicle.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A GM may spend 2 threat during a Piloting (Planetary) check to give opponents a boost die on checks against the character and his vehicle to represent a momentary malfunction in one of the vehicle&amp;#39;s systems. Despair may be spent to deal actual damage to the vehicle, as the character strains systems throughout the vehicle during his check.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Piloting - Planetary (Ag)&lt;/name&gt;
+        &lt;number&gt;SKILL0001016&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:04:29&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1730915cdbae88542901de90cf9619ed&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 17:53:26&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>41e0959cdbae88542901de90cf961913</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Piloting - Planetary (Ag)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +43,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_41e0959cdbae88542901de90cf961913</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:41:59</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:31</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

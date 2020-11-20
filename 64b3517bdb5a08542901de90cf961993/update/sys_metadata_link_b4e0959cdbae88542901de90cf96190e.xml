@@ -2,31 +2,39 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>06601d1cdbae88542901de90cf9619ab</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Survival (Cun)</name>
-        <number>SKILL0001021</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:05:12</sys_created_on>
-        <sys_id>06601d1cdbae88542901de90cf9619ab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:05:12</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;It is not uncommon for characters to become isolated far from civilized worlds. Sometimes this is by choice, other times, they could be stranded on a world, hoping for some sort of rescue. Learning to recognize the dangers of the natural environment as well as exploiting its resources is dependent upon the Survival skill. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Characters who spent their formative years on wilderness planets often have this skill as part of their background. Others may learn it as part of military training. Some may be completely dependent upon it as their job focuses on traveling to untamed worlds so that they may exploit their natural resources. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;When a character needs to identify safe food, potable water, or shelter in a natural environment, each of these tasks requires a Survival check.&lt;/li&gt;&lt;li&gt;Characters who are skilled at Survival understand weather patterns; recognizing the signs of imminent dangerous conditions, and knowing how to prepare.&lt;/li&gt;&lt;li&gt;Tracking a subject through the wilderness—whether game or a bounty—is dependent upon Survival.&lt;/li&gt;&lt;li&gt;Survival governs a character&amp;#39;s ability to handle domesticated animals, so that they may be used as beasts of burden or as transport.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;The difficulty for a Survival check is dependent upon the severity of the environment. Key factors are the biocompatibility of a world&amp;#39;s native life with the PC, weather conditions, and the basic tools on hand. &lt;/p&gt;
+&lt;p&gt;Success that exceed the difficulty on a Survival check may be used to assist other characters in surviving. Alternatively, the character may choose to stockpile goods so that he may go a longer period of time between checks. &lt;/p&gt;
+&lt;p&gt;Advantage may be spent to gain an insight into the environment that makes future Survival checks easier. This might be a watering hole where prey is common, an abandoned cave that makes an excellent shelter, or a grove of biocompatible fruit trees. When tracking, an advantage may be spent to learn a detail about the target, its numbers, its species, or how recently tracks were made. Triumph generated during a Survival check to handle animals may be spent to permanently predispose the target animal towards the character in a positive way, effectively earning the character a loyal companion. While tracking, may be spent to learn a vital clue about the target, whether his destination, his disposition, or the presence of prisoners or cargo.&lt;/p&gt;
+&lt;div&gt;The GM may spend threat generated on a Survival check to represent the character spending vital resources during the course of his check, perhaps using food as bait to catch game, or losing fuel in an attempt to make a fire. Despair may be spent to inflict wounds, Critical Injuries, or high levels of strain on the character as he succumbs to the untamed environments of the galaxy.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Survival (Cun)&lt;/name&gt;
+        &lt;number&gt;SKILL0001021&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:05:12&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;06601d1cdbae88542901de90cf9619ab&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:36:27&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b4e0959cdbae88542901de90cf96190e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Survival (Cun)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +42,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_b4e0959cdbae88542901de90cf96190e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:41:53</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:28</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

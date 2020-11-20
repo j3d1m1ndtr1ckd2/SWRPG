@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6a1a8b8b2fb31890e0f497eef699b6e8</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;95bf0d1cdbae88542901de90cf9619a6,72705d5cdbae88542901de90cf9619f1,5d30915cdbae88542901de90cf9619eb,1730915cdbae88542901de90cf9619ed,3f70fd9cdb22c8542901de90cf96190b,d8a0d55cdbae88542901de90cf9619c0,e350595cdbae88542901de90cf9619e1,2870195cdbae88542901de90cf961997&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Bounty Hunter&amp;#39;s eight career skills are &lt;strong&gt;Athletics, Brawl, Perception, Piloting (Planetary), Piloting (Space), Ranged (Heavy), Streetwise, and Vigilance.&lt;/strong&gt; He automatically gains one rank in four of these skills (of his choosing) without spending experience, and he receives a discount when he spends experience to purchase ranks in any of these skills.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;A Bounty Hunter&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The name says it all: this is a hunter who seeks to collect bounties for his work. Bounty Hunters tend to be feared, reviled, looked down upon—and in great demand throughout the galaxy. They are expert trackers, brutal combatants, and effective investigators. They tend to prefer skulduggery, stealth, and traps over frontal assaults, but the most respected Bounty Hunters will do whatever it takes to catch their quarries and collect their fees.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Bounty Hunters generally fall within three categories: Imperial Bounty Hunters, Guild Bounty Hunters, or Independents. Imperial Bounty Hunters are essentially on permanent contract to the Imperial Security Bureau (or a similar arm of Imperial law), and they never take assignments from corporations, smaller governments, or individuals. They are highly-trusted members of the extended law-enforcement community of the Empire, usually ex-military personnel that prefer a less-regimented (if possibly dangerous) way to serve.&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Those Bounty Hunters who join a guild enjoy many excellent benefits: room and board wherever the guild has a presence, exceptional training and access to high-end equipment as needed for specific assignments, and a steady stream of jobs given to them by the guild brokers acting on their behalf. The downside to all of this is the fact that Guild Bounty Hunters have little-to-no say in what jobs they get, and failure to accept an assignment is grounds for immediate termination of a guild contract.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The greatest freedom comes with being an Independent Bounty Hunter; it also comes with the greatest challenges and dangers. Although Independents often take Imperial contracts, which are usually the most readily available and lucrative, they enjoy knowing they are not exactly a port of the Empire. Not being a part of a guild also serves an Independent Bounty Hunter&amp;#39;s sensibilities; he can pick and choose his contracts as he likes, and has only himself to credit for success or failure. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Player Characters are almost certainly going to be either Guild or Independent Hunters. However, regardless of what type of Bounty Hunter is played, the character will need to have a current and legitimate Imperial Peace-Keeping Certificate (IPKC). This is the specific license that all Bounty Hunters are required to have on file with the Empire in order to operate as professionals. Without such documentation and status, a Bounty Hunter is little more than a kidnapper and, possibly, a murderer. Any character with the Bounty Hunter career automatically gains an IPKC—&lt;/div&gt;
+&lt;div&gt;unless the player would prefer his character not start with one. Although this may seem like an odd choice, it could make for a particularly compelling story or character background.&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Bounty Hunter&lt;/name&gt;
+        &lt;number&gt;CAR0001010&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:30:44&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6a1a8b8b2fb31890e0f497eef699b6e8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 03:04:31&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:11:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4c6700be2f1cac50e0f497eef699b68c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Bounty Hunter</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_4c6700be2f1cac50e0f497eef699b68c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:11:58</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

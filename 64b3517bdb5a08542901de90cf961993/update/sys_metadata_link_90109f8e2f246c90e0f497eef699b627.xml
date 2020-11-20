@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>20276b232f9ca090e0f497eef699b68e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <description>When the character performs the Gain the Advantage action, a number of allied vehicles equal to his ranks in Leadership and within close range also gain the benefits of the action on the target.  These allied vehicles maintain the benefits until they leave close range with the character or the character loses the benefits of Gain the Advantage.</description>
+        <field_to_update/>
+        <force_talent>false</force_talent>
+        <how_much_to_add/>
+        <name>Form on Me</name>
+        <number>TAL0001268</number>
+        <passive_or_active>passive</passive_or_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-12 03:25:55</sys_created_on>
+        <sys_id>20276b232f9ca090e0f497eef699b68e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-12 03:25:55</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:09:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>90109f8e2f246c90e0f497eef699b627</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Form on Me</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_90109f8e2f246c90e0f497eef699b627</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:09:04</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -2,31 +2,42 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>db40195cdbae88542901de90cf961990</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Skulduggery (Cun)</name>
-        <number>SKILL0001018</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:04:45</sys_created_on>
-        <sys_id>db40195cdbae88542901de90cf961990</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:04:45</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Skulduggery encompasses a broad range of skills that are crucial to performing criminal actions. These include the physical abilities to perform a crime as well as the mental familiarity with different techniques. This includes picking pockets and locks, breaking into and out of secure facilities, sleight of hand, disguise, setting traps, and other mischievous actions. At the Game Master&amp;#39;s discretion, a particular Skulduggery check may use Agility instead of Cunning, to reflect a more physical approach. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;If a character attempts to pick a lock or pocket, he often uses Skulduggery. Some electronic locks could require Computers or Skulduggery, or both.&lt;/li&gt;&lt;li&gt;Once an imprisoned character slipped his bonds using Coordination, escaping from a cell depends upon Skulduggery for picking locks and avoiding security.&lt;/li&gt;&lt;li&gt;• Identifying the most vulnerable aspects of a security scheme can be nearly intuitive for a character that has become practiced in Skulduggery.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;Skulduggery is often opposed by a target&amp;#39;s Perception. In instances where another character is not directly involved, the quality of the object being overcome should determine the degree of difficulty.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;One or more success on a Skulduggery check should indicate additional insights that the acting character gained about the nature of his opposition. This might suggest that the thief could better plan his strategy against the current foe to avoid future complications. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A character may spend advantage earned on a Skulduggery check to identify an additional potential target, or gain additional items. Perhaps as the characters make good their escape, they discover their opponent&amp;#39;s cache of antique weapons. A triumph may be spent to earn the character a boon he had not expected. In such cases, the value of the item stolen might exceed his expectations, and might also provide vital information. When using Skulduggery to pick a lock, the character might devise a near permanent means of overcoming the lock, perhaps by crafting a makeshift key or by getting access to the actual key itself.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;By generating threat during a Skulduggery check, a character gives the GM the opportunity to catch him immediately after the act. Depending on the amount of Threat spent by the GM, the character will be in varying degrees of danger; the more Threat, the more immediate the discovery and ensuing danger. The GM may spend despair to cause the character to leave behind some evidence of his larceny. Perhaps a recognizable piece of adornment, such as the character&amp;#39;s heirloom ring, slips off into the target&amp;#39;s pocket as the character attempts to pick it.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Skulduggery (Cun)&lt;/name&gt;
+        &lt;number&gt;SKILL0001018&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:04:45&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;db40195cdbae88542901de90cf961990&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:28:35&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>59e0959cdbae88542901de90cf961975</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Skulduggery (Cun)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +45,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_59e0959cdbae88542901de90cf961975</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:33</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:05:05</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

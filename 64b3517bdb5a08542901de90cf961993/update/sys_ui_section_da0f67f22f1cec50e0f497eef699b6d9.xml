@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Astrogation" section_id="da0f67f22f1cec50e0f497eef699b6d9" sys_domain="global" table="x_176383_star_wars_vehicle" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hyperdrive</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:08</sys_created_on>
+            <sys_id>a20fa7f22f1cec50e0f497eef699b617</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Astrogation" display_value="Astrogation" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">da0f67f22f1cec50e0f497eef699b6d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>primary_hyperdrive_class</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:08</sys_created_on>
+            <sys_id>2a0fa7f22f1cec50e0f497eef699b617</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Astrogation" display_value="Astrogation" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">da0f67f22f1cec50e0f497eef699b6d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>backup_hyperdrive_class</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:08</sys_created_on>
+            <sys_id>ae0fa7f22f1cec50e0f497eef699b617</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Astrogation" display_value="Astrogation" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">da0f67f22f1cec50e0f497eef699b6d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:08</sys_created_on>
+            <sys_id>260fa7f22f1cec50e0f497eef699b618</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Astrogation" display_value="Astrogation" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">da0f67f22f1cec50e0f497eef699b6d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:08</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>maximum_altitude</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:08</sys_created_on>
+            <sys_id>aa0fa7f22f1cec50e0f497eef699b618</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Astrogation" display_value="Astrogation" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">da0f67f22f1cec50e0f497eef699b6d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sensor_range</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:08</sys_created_on>
+            <sys_id>220fa7f22f1cec50e0f497eef699b619</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Astrogation" display_value="Astrogation" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">da0f67f22f1cec50e0f497eef699b6d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>navicomputer</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:08</sys_created_on>
+            <sys_id>a60fa7f22f1cec50e0f497eef699b619</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Astrogation" display_value="Astrogation" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">da0f67f22f1cec50e0f497eef699b6d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Astrogation</caption>
+            <header>false</header>
+            <name>x_176383_star_wars_vehicle</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 20:04:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da0f67f22f1cec50e0f497eef699b6d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_176383_star_wars_vehicle</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_ui_section_da0f67f22f1cec50e0f497eef699b6d9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 20:04:07</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>29c05b432ff31890e0f497eef699b611</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;35af0d1cdbae88542901de90cf9619ce,b8ef415cdbae88542901de90cf9619f1,7180115cdbae88542901de90cf96191d,5d10155cdbae88542901de90cf96190a,5d30915cdbae88542901de90cf9619eb,1730915cdbae88542901de90cf9619ed,3f70fd9cdb22c8542901de90cf96190b,d290dd5cdbae88542901de90cf9619a6&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;An Ace&amp;#39;s eight career skills are &lt;strong&gt;Astrogation, Cool, Gunnery, Mechanics, Perception, Piloting (Planetary), Piloting (Space), and Ranged (Light).&lt;/strong&gt;  The Ace automatically gains a rank in four of these skills without spending experience and receives a discount on increasing them with future experience points.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;An Ace&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Piloting vehicles, from repulsorlift speeders to massive starships and everything in between, is a fairly common skill for anyone who lives outside of a completely isolated, low-tech society.  However, when it&amp;#39;s time to get somewhere fast or plunge into the thick of vehicular combat.  Aces are the ones people want at the controls.&lt;/p&gt;
+&lt;p&gt;Just getting from one place to another is not enough for the Ace; this flier wants to get there faster, and to do so with style.  He&amp;#39;d rather dive headlong into an asteroid field with half a dozen ships on his tail than safely move cargo down a well-traveled hyperspace lane.  Aces are not the kind of people most transport companies want to hire to move their goods.  They are, however, in very high demand when it comes to ship-to-ship combat of any kind, or when war machines need to be maneuvered into place during a planet-side battle.&lt;/p&gt;
+&lt;p&gt;The Ace isn&amp;#39;t just a master of piloting and driving, but often has a gift for using vehicular weapons to deadly effect.  He understands that shooting is about more than merely looking through a scope and pulling a trigger---leading the target, compensating for the complexities of moving bodies in space, and aiming for vulnerable systems make the Ace a force to be reckoned with in any dogfight or speeder chase.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Ace&lt;/name&gt;
+        &lt;number&gt;CAR0001016&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 16:04:32&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;29c05b432ff31890e0f497eef699b611&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 03:36:50&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:11:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>30474c7e2f1cac50e0f497eef699b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Ace</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_30474c7e2f1cac50e0f497eef699b6a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:11:29</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -2,31 +2,41 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>95bf0d1cdbae88542901de90cf9619a6</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Athletics (Br)</name>
-        <number>SKILL0001002</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:02:23</sys_created_on>
-        <sys_id>95bf0d1cdbae88542901de90cf9619a6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:02:23</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Player Characters lead dramatic lives, filled with constant physical confrontations. Often that confrontation comes from an enemy with a blaster, but sometimes it may be a mountain to be scaled, a river to be swum, or a chasm that must be leapt. The Athletics skill governs these actions. It serves as a measure of the character&amp;#39;s overall fitness and physical conditioning. Those who actively engage in a regimen of physical training such as survivalists or professional athletes are most likely to have a high rank of Athletics.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Any aspects of climbing—including rappelling or swinging on a line—fall under the purview of the Athletics skill. The difficulty of these tasks is calculated by the surface and weather conditions during the attempts.&lt;/li&gt;&lt;li&gt;Characters who attempt to swim in difficult conditions must check their Athletics. Water conditions—particularly waves, current, and tides—dictate the overall challenge of any efforts to swim.&lt;/li&gt;&lt;li&gt;A character&amp;#39;s vertical and horizontal jump are both determined through use of an Athletics check. Gravitational conditions and the distance required factor into the difficulty.&lt;/li&gt;&lt;li&gt;Any character can run, but sprinting or running for an extended time may fall under the purview of an Athletics check.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty of an Athletics check is set by the severity of the task and the conditions. Attempting to perform a routine task under normal conditions should never require a check. A more challenging task—jumping more than a person&amp;#39;s body length or staying afloat for hours should require difficulty equal to the equivalent difficulty of the task. Adverse conditions—extreme rain, rough winds, or aggressive pursuit—could impose one or more setback dice. A combination of these elements can make a check significantly more difficult. Extremely adverse conditions, hurricane force winds or a surface covered in oil—and superhuman feats may introduce one or more challenge dice.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Additional success on an Athletics check can either reduce the time required to make the check or increase the distance traveled with that check. 2 advantage on an Athletics check may be used to grant the character an additional maneuver during the course of his turn that can only be taken to move or perform some sort of physical activity. See page 200 for more information, and remember characters can only take a maximum of two maneuvers in their turn. Advantage can also generate bonus boost dice on other physical checks performed by allies that turn, or on physical checks the character performs later.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Triumph results on successful checks should allow the character to perform the check with truly impressive results—instead of heaving a boulder aside, he can hurl it bodily into the air, and instead of grabbing onto the edge of a hovering platform, the character could use his momentum to flip atop it. landing on his feet. As Athletics is usually used to perform physical actions,&lt;/div&gt;
+&lt;div&gt;threat and despair results should most often result in physical penalties. Small amounts of threat may cause the character to suffer strain, while larger amounts of threat may cause the character to fall prone, or even suffer a wound from sprains and bruises. Despair could even inflict a Critical Injury, chosen by the GM to be thematic or rolled randomly.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Athletics (Br)&lt;/name&gt;
+        &lt;number&gt;SKILL0001002&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:02:23&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;95bf0d1cdbae88542901de90cf9619a6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 06:42:25&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>11e0959cdbae88542901de90cf96195c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Athletics (Br)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +44,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_11e0959cdbae88542901de90cf96195c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:08</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:23</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

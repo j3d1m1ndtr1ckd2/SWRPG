@@ -2,31 +2,42 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>9140595cdbae88542901de90cf9619dd</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Resilience (Br)</name>
-        <number>SKILL0001017</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:04:36</sys_created_on>
-        <sys_id>9140595cdbae88542901de90cf9619dd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:04:36</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The galaxy doesn&amp;#39;t stop moving just because a character needs a break. To achieve their objectives, characters must often have the perseverance to overcome the most challenging obstacles. These can include sleep deprivation, hideous climates, and malnutrition. They might also ingest toxins, either inadvertently when scavenging for food or due to the malicious actions of a competitor. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Resilience represents a character&amp;#39;s physical fortitude against all threats of this sort. This skill reflects the body&amp;#39;s ability to be pushed beyond reasonable limits. When characters make a Resilience check, their actions are typically taking them into situations that most would consider bad ideas.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;When a character attempts to go without sleep for significantly longer than is healthy for his species, he must make a Resilience check to remain awake.&lt;/li&gt;&lt;li&gt;If a character ingests a toxin, he uses Resilience to resist its effects.&lt;/li&gt;&lt;li&gt;When a character endures prolonged exposure to a hostile environment—including heat, cold, or toxic pollution—the consequences may be mitigated with a successful Resilience check.&lt;/li&gt;&lt;li&gt;Dehydration and malnutrition can quickly leave a character badly fatigued, and Resistance protects against this.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty for a Resilience check is based upon the severity of the effects that the character attempts to overcome. Going 24 hours without sleep could add only a single difficulty die but traveling through the Tatooine desert with inadequate water at midday should be far more difficult.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Extra success on a Resilience check may be used to extend the effects of the Success, so that the character may go for a longer period of time prior to making an additional check.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;An advantage earned on a Resilience check may be used to identify a way for the character and his allies to reduce the difficulty of future checks against the same threat, while a triumph may be spent to recover three strain as the character resolves to work through the adversity. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The GM may spend threat generated during a Resilience check to overburden the character, inflicting penalties on subsequent checks. Despair may be spent to inflict a wound or a minor Critical Injury on the character as he succumbs to the harsh conditions.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Resilience (Br)&lt;/name&gt;
+        &lt;number&gt;SKILL0001017&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:04:36&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;9140595cdbae88542901de90cf9619dd&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:24:28&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>91e0959cdbae88542901de90cf96195a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Resilience (Br)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +45,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_91e0959cdbae88542901de90cf96195a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:05</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:53</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

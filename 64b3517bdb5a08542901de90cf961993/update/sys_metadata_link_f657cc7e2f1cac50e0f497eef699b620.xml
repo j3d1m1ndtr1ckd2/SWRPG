@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6549e4502ff7d850e0f497eef699b695</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;aadf851cdbae88542901de90cf961953,31ffc9d8dbae88542901de90cf961924,80b0d55cdbae88542901de90cf9619c2,5d30915cdbae88542901de90cf9619eb,db40195cdbae88542901de90cf961990,1d50595cdbae88542901de90cf9619df&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;The Sentinel’s six career skills are &lt;strong&gt;Computers, Deception, Knowledge (Core Worlds), Perception, Skulduggery, and Stealth. &lt;/strong&gt; These characters automatically gain a rank in three of these skills without spending experience and gain a discount on increasing them with future experience points Sentinels begin the game with a Force rating of 1.&lt;/p&gt;
+&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;A Sentinel&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;div&gt;Every city has its secrets, and every shining beacon of civilization has its seedy underworld. Within these shadowy depths, miscreants and malcontents prey on the helpless, committing heinous crimes and leaving misery and chaos in their wake.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Most law enforcement agencies try to combat criminals without violating the very laws the agencies exist to uphold. Thus, their agents must abide by strict regulations that restrain their behavior. Even institutions that exist to uphold evil laws, such as the Empire, have codes of conduct that apply to their enforcers. The Sentinel, however, plays by his own rules.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;During the time of the Old Republic, the Jedi Sentinels were Force adepts who blended combat expertise and training in the Force with a more pragmatic approach to their duties. Sentinels embraced practical technologies and utilized techniques borrowed from police forces, skip tracers, spies, and even lawbreakers. Sentinels relied on quick thinking and cunning to accomplish their tasks, and they quickly found their calling in the depths of urban environments. On the streets, Sentinels could fight criminals by using their own tactics against them.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Such an approach was not without risk. Even as Sentinels skirted the law to enforce justice, they skirted the dark side of their own morality as well. A Sentinel had to maintain constant vigilance over his own actions, analyzing each choice he made to ensure it was the right one. The best Sentinels avoided falling to the dark side by cultivating a fierce intellect and a brilliant cunning—to see all sides of a no-win situation and find the unexpected solution.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Although the Empire has long since wiped out the Jedi Order, and with it the Jedi Sentinels, some remain who follow these guiding principles. Many quickwitted Force-sensitives living in urban areas find themselves unconsciously adopting a Sentinel’s tactics as they unlock their own hidden potential.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Characters with a strong moral imperative may see these crusading skills as a means of investigating powerful individuals If they find powerful villains who are above the law, then employing less ethical approaches might be the only means to bring these rogues to justice. Under these circumstances, a Sentinel could readily justify deception and even minor crimes if they were undertaken to assure that a tyrant’s excesses could be curbed.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Sentinel&lt;/name&gt;
+        &lt;number&gt;CAR0001008&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-07 14:44:27&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6549e4502ff7d850e0f497eef699b695&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 02:46:54&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:11:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f657cc7e2f1cac50e0f497eef699b620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Sentinel</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f657cc7e2f1cac50e0f497eef699b620</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:11:53</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

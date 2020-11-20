@@ -11,11 +11,14 @@
 	}
 	
 	$scope.deleteCharacter = function(character){
-		c.server.get({action: 'deleteCharacter', sysID: character}).then(function(response){
-			c.server.refresh();
-		});
-	}
-};]]></client_script>
+		if(confirm('Are you sure you want to delete this character?')){
+			c.server.get({action: 'deleteCharacter', sysID: character}).then(function(response){
+				c.server.refresh();
+			});
+		}
+};
+	
+}]]></client_script>
         <controller_as>c</controller_as>
         <css>.my-characters-headers{
 	text-align:center;
@@ -66,6 +69,12 @@
   padding:5px 15px 5px 15px;
 }
 
+.friends-container-header{
+	text-align:center;
+  font-size:28px;
+  margin-bottom:40px;
+}
+
 .sw-delete-button{
 	font-size:10px;
 }</css>
@@ -90,8 +99,13 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 	charGR.orderBy('name');
 	charGR.query();
 	data.characters = [];
+	var campaigns = [];
 	while(charGR.next()){
+		if(charGR.campaign != ''){
+			campaigns.push(charGR.campaign + '');
+		}
 		var rec = {
+			campaign: charGR.campaign.getDisplayValue(),
 			species: charGR.species.getDisplayValue(),
 			name: charGR.name + '',
 			career: charGR.career.getDisplayValue(),
@@ -99,6 +113,24 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			sysID: charGR.sys_id + ''
 		};
 		data.characters.push(rec);
+	}
+	
+	var friendsGR = new GlideRecord('x_176383_star_wars_character');
+	friendsGR.addQuery('campaign', 'IN', campaigns.join()).addCondition('player', '!=', gs.getUserID());
+	friendsGR.orderBy('campaign');
+	friendsGR.orderBy('name');
+	friendsGR.query();
+	data.friends = [];
+	while(friendsGR.next()){
+		var rec = {
+			campaign: friendsGR.campaign.getDisplayValue(),
+			species: friendsGR.species.getDisplayValue(),
+			name: friendsGR.name + '',
+			career: friendsGR.career.getDisplayValue(),
+			image: friendsGR.species.getDisplayValue().toLowerCase() + '.png',
+			sysID: friendsGR.sys_id + ''
+		};
+		data.friends.push(rec);
 	}
 	
 	if(input){
@@ -114,15 +146,15 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-28 03:37:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d22a52b62f88ac10e0f497eef699b638</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Star Wars My Characters</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_d22a52b62f88ac10e0f497eef699b638</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 23:08:24</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2020-11-14 23:14:14</sys_updated_on>
         <template><![CDATA[<div class="col-xs-12 my-characters-container">
 	<div class="col-xs-12 my-characters-headers">
     <span class="col-xs-12 header">My Characters</span>
@@ -141,6 +173,20 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 delete-container">
           <button id="deleteCharacterButton" ng-click="deleteCharacter(character.sysID)">Execute Order 66<br><text class="star-wars-text sw-delete-button">Execute Order 66</text></button>  
       </span>
+      </span>
+    </span>
+  </div>
+  <div class="col-xs-12 my-characters-body">
+    <span class="col-xs-12 friends-container-header">Friends<br><text class="star-wars-text">Friends</text></span>
+    <span class="col-xs-12 col-md-4 character" ng-repeat="character in data.friends">
+      <span class="col-xs-12 character-container">
+       	<span class="col-xs-4 species-image"><img src="{{character.image}}" height="120px"></span>
+      	<span class="col-xs-8 character-details" ng-click="viewCharacterSheet(character.sysID)">
+          <span class="col-xs-12 name">{{character.name}}</span>
+          <span class="col-xs-12 star-wars-text">{{character.name}}</span>
+          <span class="col-xs-6 species">{{character.species}}</span>
+          <span class="col-xs-6 career">{{character.career}}</span>    
+      	</span>
       </span>
     </span>
   </div>

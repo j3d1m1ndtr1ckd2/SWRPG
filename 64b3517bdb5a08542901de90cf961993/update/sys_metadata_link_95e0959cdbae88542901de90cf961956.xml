@@ -2,31 +2,36 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>80b0d55cdbae88542901de90cf9619c2</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Core Worlds (Int)</name>
-        <number>SKILL0001028</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:06:26</sys_created_on>
-        <sys_id>80b0d55cdbae88542901de90cf9619c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:06:26</sys_updated_on>
-        <type>knowledge</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Those worlds closest to the Galactic Core are generally considered to represent the pinnacle of galactic culture and civilization—especially by those who dwell within these systems. Cultural traditions vary substantially from system to system and even between planets within a given system. A few notions are particularly common among the worlds of the Core, but even with those, there are distinct exceptions. Perfectly acceptable behavior on one planet may represent grossly disruptive manners on another, even within this culturally distinct region of the galaxy.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Many hyperlanes connect the Core Worlds with the other portions of the galaxy. Because of this, visitors from foreign worlds are far more common here than in many other places. The Core Worlds represent centers of trade and diplomacy that can connect planets in disparate portions of the galaxy.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;If a character needs to identify a person&amp;#39;s planet of origin without asking, he may make a Core Worlds check to recognize traits of his accent, dress, and mannerisms that are associated with a particular world. &lt;/li&gt;&lt;li&gt;When interacting with someone from a Core World, a character might make a Core Worlds check to know what behaviors are considered necessary and polite, as opposed to ones that could be offensive.&lt;/li&gt;&lt;li&gt;Characters who specialize in the transport and delivery of goods may make a Core Worlds check to identify which markets are the best places to sell or purchase a particular cargo.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;They may also recognize any worlds where such goods could be illegal. The difficulty of a Core Worlds check is generally proportionate to the rarity of the information involved. Common knowledge about Coruscant is far easier to recall than an obscure fact about a subsect on a minor moon.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Core Worlds (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001028&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:06:26&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;80b0d55cdbae88542901de90cf9619c2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:48:52&lt;/sys_updated_on&gt;
+        &lt;type&gt;knowledge&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>95e0959cdbae88542901de90cf961956</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Core Worlds (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +39,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_95e0959cdbae88542901de90cf961956</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:59</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:18</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

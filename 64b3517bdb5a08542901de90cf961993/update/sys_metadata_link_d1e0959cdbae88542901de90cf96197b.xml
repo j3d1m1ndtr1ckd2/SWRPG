@@ -2,31 +2,45 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>f0df091cdbae88542901de90cf9619d6</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Coercion (Will)</name>
-        <number>SKILL0001004</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:02:40</sys_created_on>
-        <sys_id>f0df091cdbae88542901de90cf9619d6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 20:26:07</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Some people believe that the only way to be respected is to be feared. Others may only grant respect to those whom they fear. When a character attempts to instill obedience in a target through the use of threats or acts of physical intimidation, they utilize Coercion. See Social Skill Interactions on page 113 for more information. Sith, military dictators, and organized crime leaders are all known for their ability to coerce their subjects. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Any time a character issues a threat, whether or not it is accompanied by hostile actions, he is using Coercion against the subject. An implied threat—such as gesturing or pointing towards a weapon—is sufficient to invoke Coercion.&lt;/li&gt;&lt;li&gt;If a target is questioned or persuaded under conditions of physical captivity, the acting character should make a Coercion check.&lt;/li&gt;&lt;li&gt;Acts of physical torture always invoke Coercion.  Of course, physical violence may also induce strain or wounds in a subject. Such actions are separate from the actual Coercion attempt.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;Coercion is an opposed check, resisted by the subject&amp;#39;s Willpower and Discipline. Situational modifiers, such as the degree to which a subject is helpless or if the acting character&amp;#39;s degree of threat is less significant than expected, may significantly affect the dice pool. Attempting to persuade a subject to betray his core beliefs should always add a Difficulty die to the pool. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;In situations in which the character is attempting to intimidate multiple subjects or a target who is already threatened by the character, the character need not make an opposed check. In such circumstances, the difficulty of the check is determined by the number of subjects and their disposition. Larger crowds or groups who are more likely to resist forced authority require a more difficult check, while Coercing those already cowed by the character may require few, if any, Difficulty dice. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Extra success on a Coercion check may be used to inflict strain upon the target at a rate of one strain per 2 success.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;By spending 2 advantage. the character may affect unexpected subjects beyond the original target. These may be bystanders or others not directly involved in the scene, but who may be cowed by the character as a result of witnessing the Coercion attempt. With triumph, the character may completely break the subject&amp;#39;s willpower. The target&amp;#39;s allegiance shifts to that of a subjugated&lt;/div&gt;
+&lt;div&gt;ally of the acting character rather than an opponent. The newfound follower may be exploited to gain additional information, assets, or even a spy within the ranks of a former foe. However, if the betrayal is discovered, this forced loyalty may not be permanent. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Intimidation and strong-arm tactics are only as successful as the strength and thought behind the attempt. The GM may spend threat and despair to undermine the outcome of a character&amp;#39;s Coercion attempt. Extra threat may be spent by the GM to represent a building resentment to the Coercing character. Regardless of the success or failure of the Coercion attempt, the subject may grow to despise the character as a result of being strong-armed. Despair, on the other hand, may be spent to represent the character slipping up and revealing something about his goals and motivations to the target. For instance, a character attempting to coerce a target to give up security codes for a Hutt shipping lane may let slip information concerning the cargo he is attempting
+&lt;div&gt;to smuggle through Hutt space.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Coercion (Will)&lt;/name&gt;
+        &lt;number&gt;SKILL0001004&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:02:40&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;f0df091cdbae88542901de90cf9619d6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 06:53:28&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d1e0959cdbae88542901de90cf96197b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Coercion (Will)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +48,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_d1e0959cdbae88542901de90cf96197b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:40</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:38</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

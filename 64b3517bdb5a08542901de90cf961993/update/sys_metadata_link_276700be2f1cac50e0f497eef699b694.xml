@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>73ae8bcf2fb31890e0f497eef699b6e1</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;95bf0d1cdbae88542901de90cf9619a6,72705d5cdbae88542901de90cf9619f1,f7ffc9d8dbae88542901de90cf961925,0c90dd5cdbae88542901de90cf9619a4,1730915cdbae88542901de90cf9619ed,d290dd5cdbae88542901de90cf9619a6,9140595cdbae88542901de90cf9619dd,2870195cdbae88542901de90cf961997&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Hired Gun&amp;#39;s eight career skills are &lt;strong&gt;Athletics, Brawl, Discipline, Melee, Piloting (Planetary), Ranged (Light), Resilience, and Vigilance.&lt;/strong&gt; He automatically gains one rank in four of these skills (of his choosing) without spending experience, and he receives a discount when he spends experience to purchase ranks in any of these skills.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;A Hired Gun&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;When it comes to fighting, the Hired Gun is at the forefront. He&amp;#39;s less of an independent operator than the Bounty Hunter, preferring to have a defined mission, an objective to achieve, and some credits to spend when the job is done. Hired Guns are muscle and applied force, meant to defend or attack as the situation requires. They deal damage or protect others for credits, and this makes them simple and sometimes refreshingly direct.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A Hired Gun one typically encounters in the Outer Rim likely came from one of three kinds of backgrounds; he may have been a soldier for the Empire (or, possibly, even for the Old Republic before its fall), he might have served with a planetary or organizational force of some kind, or he simply came up hard, learning how to shoot and fight because that was the only way he could survive. However he came by them, the Hired Gun has the kinds of skills and talents that make it fairly easy to find work in the Outer Rim and the fringes of society.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Many Hired Guns are true mercenaries, either working for themselves or contracted to a guild or company of some kind. Much like Bounty Hunters, the Hired Guns who are part of a guild tend to enjoy a great deal of support. They do not, however, have much in the way of freedom. More than a few Hired Guns have walked away from contracts that either violated their personal ethics or left them feeling completely exploited with terrible terms of service. Unfortunately, such mercenaries are left watching their backs for years after. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Independent Hired Guns enjoy the greatest freedom, yet they also spend a lot of time just trying to find a good job, and preferably one that doesn&amp;#39;t give them a life expectancy measured in days. Reputation can mean everything for such professionals, yet a simple test of skills and competency may often result in a better arrangement if the right employer is impressed.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Hired Gun&lt;/name&gt;
+        &lt;number&gt;CAR0001013&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 15:52:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;73ae8bcf2fb31890e0f497eef699b6e1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 03:16:28&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:12:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>276700be2f1cac50e0f497eef699b694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Hired Gun</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_276700be2f1cac50e0f497eef699b694</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:12:13</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Characteristics" section_id="e18d50b62f9cac50e0f497eef699b644" sys_domain="global" table="x_176383_star_wars_vehicle" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>silhouette</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:48:45</sys_created_on>
+            <sys_id>f98d50b62f9cac50e0f497eef699b6a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Characteristics" display_value="Characteristics" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">e18d50b62f9cac50e0f497eef699b644</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hard_points</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:48:45</sys_created_on>
+            <sys_id>718d50b62f9cac50e0f497eef699b6a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Characteristics" display_value="Characteristics" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">e18d50b62f9cac50e0f497eef699b644</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>armor</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:48:45</sys_created_on>
+            <sys_id>f58d50b62f9cac50e0f497eef699b6a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Characteristics" display_value="Characteristics" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">e18d50b62f9cac50e0f497eef699b644</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:48:45</sys_created_on>
+            <sys_id>7d8d50b62f9cac50e0f497eef699b6a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Characteristics" display_value="Characteristics" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">e18d50b62f9cac50e0f497eef699b644</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:48:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>speed</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:48:45</sys_created_on>
+            <sys_id>f18d50b62f9cac50e0f497eef699b6a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Characteristics" display_value="Characteristics" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">e18d50b62f9cac50e0f497eef699b644</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>handling</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:48:45</sys_created_on>
+            <sys_id>798d50b62f9cac50e0f497eef699b6a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Characteristics" display_value="Characteristics" name="x_176383_star_wars_vehicle" sys_domain="global" view="Default view">e18d50b62f9cac50e0f497eef699b644</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Characteristics</caption>
+            <header>false</header>
+            <name>x_176383_star_wars_vehicle</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:48:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e18d50b62f9cac50e0f497eef699b644</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_176383_star_wars_vehicle</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_ui_section_e18d50b62f9cac50e0f497eef699b644</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:48:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

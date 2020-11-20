@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>149cac502ff7d850e0f497eef699b679</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career"&gt;
+    &lt;x_176383_star_wars_career action="INSERT_OR_UPDATE"&gt;
+        &lt;career_skills&gt;95bf0d1cdbae88542901de90cf9619a6,72705d5cdbae88542901de90cf9619f1,b8ef415cdbae88542901de90cf9619f1,0c90dd5cdbae88542901de90cf9619a4,5d30915cdbae88542901de90cf9619eb,06601d1cdbae88542901de90cf9619ab&lt;/career_skills&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;The Warrior’s six career skills are &lt;strong&gt;Athletics, Brawl, Cool, Melee, Perception, and Survival. &lt;/strong&gt; Characters with this career automatically gain a rank in three of these skills without spending experience and gain a discount on increasing them with future experience points. Warriors begin the game with a Force rating of 1.&lt;/p&gt;
+&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;A Warrior&amp;#39;s Role:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Though the lightsaber is an iconic weapon for many Force users, some dedicate themselves wholly to becoming paragons of strife. These dangerous individuals are known as Warriors.&lt;/p&gt;
+&lt;div&gt;At their most basic, Warriors are focused combatants who use the Force to augment their prodigious martial prowess. Whether flying in the pilot’s seat of a starfighter, wielding a lightsaber on the field of battle, or blazing away with a blaster pistol, Warriors excel in combat of all types.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Legends indicate that the Jedi Order&amp;#39;s origins began with warriors who worked to integrate Force techniques into their physical training. Even in the absence of the Old Republic’s guardians, this association remains. The Force can give strength to those who need it, and Warriors excel at exploiting that strength. They become a physical manifestation of the Force, willing and ready to overcome those who would inflict harm.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The Warrior’s greatest strength, however, can also be his most dangerous weakness. Endless aggression can be a path toward the dark side. A wise individual must recognize that violence has its place but is not the only possible answer. A Warrior can inflict substantial and precise damage. However, even carefully applied attacks can still have far-reaching consequences. Because of this, it can be every bit as important for a Warrior to recognize when it is more appropriate not to attack. Some individuals who follow this career consider this sense of judgment to be the most important aspect of their training.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Warriors can come from a broad range of different cultures and environments. Physical conflict is every bit as common within the civilized and technologically advanced worlds of the Core as it is within the less structured societies of the Outer Rim. Combat styles and the tools employed within conflicts may change, but the motivations and final outcomes are often similar. Ultimately, Warriors must be willing to risk their own lives so that they can overcome threats to themselves and to those they hold most dear.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;The Warrior&lt;/name&gt;
+        &lt;number&gt;CAR0001009&lt;/number&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-07 14:58:38&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;149cac502ff7d850e0f497eef699b679&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-19 02:49:55&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_career&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-09 03:11:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>57374c7e2f1cac50e0f497eef699b6a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The Warrior</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_57374c7e2f1cac50e0f497eef699b6a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-09 03:11:23</sys_updated_on>
+        <tablename>x_176383_star_wars_career</tablename>
+    </sys_metadata_link>
+</record_update>

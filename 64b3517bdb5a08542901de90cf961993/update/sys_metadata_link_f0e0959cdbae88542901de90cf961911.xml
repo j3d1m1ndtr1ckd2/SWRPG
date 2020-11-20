@@ -2,31 +2,37 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>0c90dd5cdbae88542901de90cf9619a4</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Melee (Br)</name>
-        <number>SKILL0001025</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:05:53</sys_created_on>
-        <sys_id>0c90dd5cdbae88542901de90cf9619a4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:05:53</sys_updated_on>
-        <type>combat</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;All ranged weapons require some sort of ammunition and many are loud. They typically have fragile components or require regular maintenance, which may require its own set of tools. By contrast, most melee weapons are inexpensive, virtually silent, and require little maintenance and no power beyond the strength of their wielder&amp;#39;s limbs. Virtually any reasonably sturdy object can be used as a makeshift weapon, so a character who has become adept at the Melee skill can often make do with what&amp;#39;s available. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The majority of melee weapons depend upon the wielder&amp;#39;s strength to inflict damage, but a few have their own energy sources. These weapons—including stun batons, vibroblades, and force pikes—are much more technically sophisticated than a simple club. However, their core principles remain the same. When a character masters the art of striking with one melee weapon, the core concepts translate effectively to other melee weapons. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Any military training includes at least a basic course in melee combat preparation. In addition, characters who have spent time on primitive worlds may have learned to defend themselves with melee weapons. Aristocrats and nobles, in some systems, may also learn a number of melee techniques as part of their cultural traditions. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The difficulty of Melee checks is Average (2 difficulty dice, the difficulty of all melee attacks) unless the opponent is incapable of resisting (in which case it might be easier at the GM&amp;#39;s discretion). The difficulty may be modified by maneuvers the character makes and specific combat situational modifiers as described in Chapter VI: Conflict and Combat.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Melee (Br)&lt;/name&gt;
+        &lt;number&gt;SKILL0001025&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:05:53&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0c90dd5cdbae88542901de90cf9619a4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:44:10&lt;/sys_updated_on&gt;
+        &lt;type&gt;combat&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f0e0959cdbae88542901de90cf961911</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Melee (Br)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +40,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_f0e0959cdbae88542901de90cf961911</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:41:56</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:33:44</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

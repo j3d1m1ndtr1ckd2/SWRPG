@@ -2,31 +2,43 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>8300915cdbae88542901de90cf9619e0</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Leadership (Pr)</name>
-        <number>SKILL0001011</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:03:38</sys_created_on>
-        <sys_id>8300915cdbae88542901de90cf9619e0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:03:38</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Even the greatest of heroes may sometimes need the assistance of others to complete their goals. Certainly the most foul of villains consistently use legions of flunkies to assist them in their criminal rampages. The ability to lead such companions and devotees can play a crucial part in the success or failure of any endeavor. While some may follow out of fear or the promise of tremendous riches, ultimately most individuals choose to work with a person in whom they have faith and trust. The Leadership skill represents a character&amp;#39;s ability to instill that belief in the people with whom he chooses to interact. Politicians, military officers, and crime bosses all determine their degree of success based upon their abilities to lead others. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Leadership is a combination of being able to make smart decisions, being firm and decisive when doing so, and instilling a sense of loyalty and respect in one&amp;#39;s subordinates. See Social Skill Interactions on page 113 for more information. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;If a character&amp;#39;s allies have become subject to the effects of fear (see page 298), they may be rallied through a Leadership check.&lt;/li&gt;&lt;li&gt;When acting in a public venue, a character may use Leadership to sway a crowd to take action, most commonly of a political nature.&lt;/li&gt;&lt;li&gt;If a character&amp;#39;s underlings have fallen before the guile of an opponent, he may reassert their loyalty to his cause by making a successful Leadership check.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty of a Leadership check is based on the complexity of the orders a character is attempting to convey and the intelligence and professionalism of the subjects he is attempting to  command. Particularly complex orders, or stubborn or particularly dull subjects, require a larger number of Difficulty dice, while a simple order given to a loyal servant may require few, if any, Difficulty dice. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;When a character attempts to command a target to perform an action that could result in his harm or is in some other way against his nature or best interest, an opposed check is required. The character&amp;#39;s Leadership check is opposed by the Discipline or Willpower of the target, depending on the particulars of the order given. Extra success on a Leadership check may be used to extend&lt;/div&gt;
+&lt;div&gt;the target&amp;#39;s support for additional scenes or may increase the efficiency or effectiveness of the target during the ordered actions. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage may be used to affect bystanders in addition to the target. With triumph, the player may choose to have the target NPC become a recurring character who decides to faithfully follow the acting character. This individual may decide to join the character&amp;#39;s crew, offering his services as a permanent aide de camp. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The GM may spend threat generated during a Leadership check to decrease the efficiency of the ordered actions, causing them to take longer or be done poorly. Despair may be used to undermine the character&amp;#39;s authority, damaging the character&amp;#39;s ability to command the target or those who witnessed the attempt. Should a character accrue multiple despair on a single  leadership check, the target may become a recurring thorn in the character&amp;#39;s side, either by refusing future orders outright or turning others against the character.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Leadership (Pr)&lt;/name&gt;
+        &lt;number&gt;SKILL0001011&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:03:38&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;8300915cdbae88542901de90cf9619e0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 17:30:55&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>15e0959cdbae88542901de90cf961958</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Leadership (Pr)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +46,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_15e0959cdbae88542901de90cf961958</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:02</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:20</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

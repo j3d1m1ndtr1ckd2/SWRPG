@@ -2,31 +2,42 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>3f70fd9cdb22c8542901de90cf96190b</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Piloting - Space (Ag)</name>
-        <number>SKILL0001034</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 20:25:25</sys_created_on>
-        <sys_id>3f70fd9cdb22c8542901de90cf96190b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 20:25:25</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Those who travel between worlds find their ability to pilot a starship paramount. Some use these craft as weapons of war, working as mercenaries in any of the galaxy&amp;#39;s countless conflicts. Others use their vessels to transport desirable goods—either legally or illegally—so that they might be delivered to anxious consumers. Whether a crew is attempting to avoid enemy fire or simply  unwanted attention, their success or failure is most often dependent upon the person manning the helm. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Routine actions—like taking off or landing without additional complications—do not require a Piloting (Space) check. When those actions are complicated by a blinding sandstorm, a failed motivator, or enemy fire, then skill checks come into play.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Whenever two or more spaceships race, a competitive Piloting (Space) check determines the results.&lt;/li&gt;&lt;li&gt;Chases, whether they are through asteroid belts, within a crowded battlefield, or skirting the edge of a gravimetric instability, are resolved with an opposed Piloting (Space) check.&lt;/li&gt;&lt;li&gt;During a space conflict, pilots may often jockey for position to determine which shields face the enemy and which weapons may be brought to bear. When opponents attempt to negate these efforts, the winner is identified through an opposed Piloting (Space) check.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty of a Piloting (Space) check may be determined based upon the difficulty of any particular maneuver, any unusual navigational hazards, and any features or failures on the spacecraft involved. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Extra success on a Piloting (Space) check allow the acting character to gain insights into the situation. Alternatively, he might deduce a way that his vehicle could be modified so that it could be more effective in the future. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage generated during a Piloting (Space) check may be spent to reveal a vulnerability in an opponent&amp;#39;s piloting style or vehicle, giving the character a benefit in later rounds of combat. A triumph on a Piloting (Space) check may be used to let the character take an additional maneuver action while continuing to pilot a vehicle.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;A GM may spend two threat during a Piloting (Space) check to give opponents a boost die on checks against the character and his vehicle to represent a momentary malfunction in one of the vehicle&amp;#39;s systems. Despair may be spent to deal actual damage to the vehicle, as the character strains systems throughout the vehicle during his check.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Piloting - Space (Ag)&lt;/name&gt;
+        &lt;number&gt;SKILL0001034&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 20:25:25&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;3f70fd9cdb22c8542901de90cf96190b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 17:55:27&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 20:28:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>45217194db62c8542901de90cf9619f2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Piloting - Space (Ag)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +45,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_45217194db62c8542901de90cf9619f2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:32</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:45</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

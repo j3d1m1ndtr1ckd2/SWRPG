@@ -2,31 +2,40 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>35af0d1cdbae88542901de90cf9619ce</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Astrogation (Int)</name>
-        <number>SKILL0001001</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:02:07</sys_created_on>
-        <sys_id>35af0d1cdbae88542901de90cf9619ce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:02:07</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;There are many billions of stars within the galaxy, all of which are in motion relative to one another. Planets and other smaller masses constantly orbit many of these stars. There are also huge numbers of nebulae and other astronomical anomalies. Traveling between the worlds of the galaxy requires a rudimentary knowledge of the galaxy&amp;#39;s organization and composition. It also requires a navicomputer that is well-informed as to the current time and the relative motion of all of these objects. The Astrogation skill represents a character&amp;#39;s ability to use his knowledge of the galaxy to most effectively program the hyperspace coordinates for any jump.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Any time that a character wishes to program a navicomputer for a hyperspace jump, he must first use Astrogation to program the navicomputer.&lt;/li&gt;&lt;li&gt;Astrogation governs a character&amp;#39;s basic knowledge of galactic geography. It may be checked any time a character wonders what other systems are nearby.&lt;/li&gt;&lt;li&gt;In the event characters arrive in an unknown system, they may use a navicomputer and their Astrogation skill to identify their location.&lt;/li&gt;&lt;li&gt;Astrogation also covers familiarity with the galaxy&amp;#39;s hyperspace routes and the types of craft and commerce most common along those routes.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;The difficulty of a hyperspace jump is based upon the area being targeted and the distance being traveled. Travel to a nearby system along a well-established route is generally an Easy (1 difficulty die) check, and the difficulty increases based on the accuracy of navigational information and other factors. See page 246 for more information on hyperspace travel.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Additional success beyond those required to calculate a hyperspace jump may be used to better target the location. While a single net success reaches the target system without incident, extras might place the character&amp;#39;s vessel directly into orbit around the target planet. Alternatively, characters may use additional success to reduce the time spent calculating, when rushed.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Advantage rolled as part of an Astrogation check are most commonly used to reduce the travel time. On extended journeys, they might be used to identify convenient stopovers en route, where the vessel can resupply or conduct additional business to help defray the overall cost of the trip. A triumph could be spent to either complete Astrogation calculations in the minimum amount of time, or greatly reduce the travel time involved. It could also reveal some highly valuable but previously unknown information, such as a much better, alternative travel route. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Likewise, threat generated on an Astrogation check could decrease the accuracy or increase the travel time of a hyperspace jump, or simply cause a character to miss relevant details when analyzing hyperspace routes or galactic maps. despair can be spent in the same way but to greater magnitude, or it could trigger something truly awful happening, such as jumping out of hyperspace in the path of an asteroid.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Astrogation (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001001&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:02:07&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;35af0d1cdbae88542901de90cf9619ce&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 06:35:51&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c5e0959cdbae88542901de90cf96191c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Astrogation (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +43,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_c5e0959cdbae88542901de90cf96191c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:23</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:33:53</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

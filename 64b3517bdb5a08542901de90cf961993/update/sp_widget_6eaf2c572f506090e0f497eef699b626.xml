@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.editVehicle = function(section){
+		switch(section){
+			case 'name':
+			var container = document.getElementById('editVehicleName');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
+			default:
+				break;
+		}
+	}
+	
+	$scope.closeEditContainer = function(section){
+		var container = '';
+		switch(section){
+			case 'name':
+			container = document.getElementById('editVehicleName');
+			break;
+				
+			default:
+				break;
+		}
+		
+		container.style.width = null;
+		container.style.display = 'none';
+	}
+	
+	$scope.saveEdits = function(section){
+		switch(section){
+			case 'name':
+			var name = document.getElementById('vehicleNameInput').value;
+			c.server.get({action: 'saveName', name: name}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('name');
+			});
+		}
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.image-background{
+	position:fixed;
+  top:65px;
+  left:0;
+  height: 1000px; /* You must set a specified height */
+  background-position: center !important; /* Center the image */
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover !important;
+	opacity:.7;
+  z-index:-5;
+}
+
+.vehicle-characteristic-body{
+	margin-bottom:40px;
+}
+
+.characteristics-header,.weapons-header{
+	text-align:center;
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.main-vehicle-info{
+	margin-bottom:30px;
+}
+
+.transponder-code{
+	font-size:28px;
+  font-weight:bold;
+}
+
+.vehicle-main-info{
+	font-size:18px;
+}
+
+.edit-vehicle{
+	display:none;
+  width:0;
+  position:fixed;
+  top:0;
+  right:0;
+  height:98%;
+  overflow-y:scroll;
+  background-color:black;
+  border:1px groove #e21414;
+  transition:all 1s ease-in-out;
+}
+
+.vehicle-characteristic-label{
+  border-radius:20px 20px 0px 0px;
+	background-color: #2f3860;
+}
+
+.threshold,.current{
+	padding:0;
+  font-size:16px;
+}
+
+.threshold{
+	border-radius:0px 0px 0px 20px;
+  background-color:#e21414;
+}
+
+.current{
+	border-radius:0px 0px 20px 0px;
+  background-color:#1933f4;
+}
+
+.threshold-container{
+	border-radius:0px 0px 0px 20px;
+  background-color:black;
+	border-right:1px groove white;
+  padding:0;
+}
+
+.current-container{
+	border-radius: 0px 0px 20px 0px;
+  background-color:black;
+  padding:0;
+}
+
+.vehicle-characteristic{
+  border-radius:0px 0px 20px 20px;
+	background-color:black;
+  padding:10px 10px 10px 10px;
+}
+
+.characteristic-container{
+	text-align:center;
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.close-button{
+	color:#e21414;
+  margin-top:20px;
+  text-align:right;
+  font-size:24px;
+}
+
+.save-edits{
+	text-align:center;
+}
+
+label,.sw-input{
+	font-size:16px;
+}
+
+.save-edits-button{
+	background:transparent;
+  box-shadow: 0px 0px 4px 2px #1933f4;
+  border: 1px groove #1933f4;
+  border-radius:20px;
+  padding:3px 25px 3px 25px;
+  text-align:center;
+  font-size:14px;
+  margin-top:20px;
+}
+
+.sw-input{
+	border:1px groove #e21414;
+  background-color:black;
+  border-radius:20px;
+  margin-bottom:10px;
+}
+
+.fa-starship-freighter{
+	transform:rotate(270deg);
+  font-size:100px;
+  position:absolute;
+  top:130px;
+  left:43%;
+  color:white;
+  text-shadow:0px 0px 5px lightgray;
+}
+
+.defense-header{
+	text-align:center;
+  margin-bottom:20px;
+}
+
+.defense{
+	box-shadow:0px 0px 6px 2px lightgray;
+}
+
+#defenseHeaderText{
+	background-color:#2f3860;
+  font-size:18px;
+  padding:5px 15px 5px 15px;
+  border-radius:20px;
+}
+
+#defenseFore{
+	position:absolute;
+  top:50px;
+  left:41.5%;
+  background-color:black;
+  text-align:center;
+  border-radius:20px;
+  min-width:130px;
+}
+
+#defensePort{
+	position:absolute;
+  top:160px;
+  left:160px;
+  background-color:black;
+  text-align:center;
+  border-radius:20px;
+  min-width:130px;
+}
+
+#defenseStarboard{
+	position:absolute;
+  top:160px;
+  right:160px;
+  background-color:black;
+  text-align:center;
+  border-radius:20px;
+  min-width:130px;
+}
+
+#defenseAft{
+	position:absolute;
+  top:260px;
+  left:41.5%;
+  background-color:black;
+  text-align:center;
+  border-radius:20px;
+  min-width:130px;
+}
+
+.defense-value{
+	font-size:18px;
+  padding:5px 0px 5px 0px;
+}
+
+.defense-label{
+  border-radius:0px 0px 20px 20px;
+	background-color:#e21414;
+}
+
+.badge{
+	background-color:#2b2a2a;
+}
+
+.weapons-container{
+	margin-top:20px;
+}
+
+.weapons-body{
+	padding:0;
+  background-color:black;
+}
+
+.weapon-headers{
+	border-bottom:2px groove white;
+  padding:0;
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.wd-number{
+	padding-left:40px;
+}
+
+.weapons{
+	padding:0;
+  font-size:16px;
+  border-bottom:1px dotted white;
+  margin-bottom:10px;
+}
+
+@media only screen and (min-width:762px) and (max-width:1400px){
+  .fa-starship-freighter{
+   	left:38.8%; 
+  }
+  
+  #defenseFore{
+    left:37%;
+  }
+
+  #defensePort{
+    left:50px;
+  }
+
+  #defenseStarboard{
+    right:50px;
+  }
+
+  #defenseAft{
+    left:37%;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_vehicle_sheet</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Vehicle Sheet</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+var vehicleID = $sp.getParameter('vehicleID');
+var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
+		vehicleGR.get(vehicleID);
+	data.vehicle = {
+		pilot: vehicleGR.character.name + '',
+		nickName: vehicleGR.name + '' || 'Name your ship',
+		shipName: vehicleGR.vehicle.ship_name + '',
+		type: vehicleGR.vehicle.type.getDisplayValue(),
+		silhouette: vehicleGR.vehicle.silhouette + '',
+		hp: vehicleGR.vehicle.hard_points + '',
+		armor: vehicleGR.vehicle.armor + '',
+		speed: vehicleGR.vehicle.speed + '',
+		handling: vehicleGR.vehicle.handling + '',
+		htThreshold: vehicleGR.vehicle.hull_trauma_threshold + '',
+		ssThreshold: vehicleGR.vehicle.system_strain_threshold + '',
+		htCurrent: vehicleGR.vehicle.hull_trauma_current + '',
+		ssCurrent: vehicleGR.vehicle.system_strain_current + '',
+		defenseFore: vehicleGR.vehicle.defense_fore + '',
+		defenseAft: vehicleGR.vehicle.defense_aft + '',
+		defensePort: vehicleGR.vehicle.defense_port + '',
+		defenseStarboard: vehicleGR.vehicle.defense_starboard + '',
+		maximumAltitude: vehicleGR.vehicle.maximum_altitude + '',
+		sensorRange: vehicleGR.vehicle.sensor_range + '',
+		description: vehicleGR.vehicle.description + '',
+		notes: vehicleGR.vehicle.notes + '',
+		vehicleSysId: vehicleGR.vehicle.sys_id + ''
+	};
+	if(vehicleGR.vehicle.primary_hyperdrive_class != ''){
+		data.vehicle.hyperdrive = 'Primary Class: ' + vehicleGR.vehicle.primary_hyperdrive_class + '; Backup Class: ' + vehicleGR.vehicle.backup_hyperdrive_class;
+	} else{
+		data.vehicle.hyperdrive = 'None';
+	}
+	
+	if(vehicleGR.vehicle.navicomputer){
+		data.vehicle.navicomputer = 'Yes';
+	} else{
+		data.vehicle.navicomputer = 'No';
+	}
+	
+	var vehicleGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
+	vehicleGear.addQuery('vehicle', data.vehicle.vehicleSysId).addCondition();
+	vehicleGear.orderBy('gear.name');
+	vehicleGear.query();
+	data.vehicleGear = [];
+	while(vehicleGear.next()){
+		var obj = {
+			name: vehicleGear.gear.getDisplayValue(),
+			sysID: vehicleGear.gear.sys_id + '',
+			quantity: vehicleGear.quantity + '',
+			damage: vehicleGear.gear.base_damage + '',
+			crit: vehicleGear.gear.critical_rating + '',
+			range: vehicleGear.gear.range.getDisplayValue(),
+			specials: ''
+		};
+		
+		var gearSpecial = new GlideRecord('x_176383_star_wars_gear_special');
+		gearSpecial.addQuery('item', obj.sysID);
+		gearSpecial.orderBy('weapon_quality.name');
+		gearSpecial.query();
+		while(gearSpecial.next()){
+			if(obj.specials == ''){
+				obj.specials = gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rank;
+			} else{
+				obj.specials += '; ' + gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rank;
+			}
+		}
+		data.vehicleGear.push(obj);
+	}
+	
+	data.player = vehicleGR.character.player.sys_id + '';
+	
+	if(input){
+		switch(input.action){
+			case 'saveName':
+			vehicleGR.name = input.name;
+			vehicleGR.update();
+			break;
+				
+			default:
+				break;
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-10 19:24:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
+        <sys_mod_count>141</sys_mod_count>
+        <sys_name>Star Wars Vehicle Sheet</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-13 18:56:03</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js"></script>
+</head>
+
+<div class="col-xs-12 image-background" style="background: url(/sw_fleet_battle.jpg)"></div>
+
+<div class="col-xs-12" id="vehicleSheetContainer">
+  <div class="col-xs-12 main-vehicle-info">
+    <span class="col-xs-12 col-md-8 transponder-code" ng-click="editVehicle('name')">{{data.vehicle.nickName}}</span>
+    <span class="col-xs-12 col-md-8 star-wars-text">{{data.vehicle.nickName}}</span>
+    <span class="col-xs-12 col-md-8 vehicle-main-info">Ship: {{data.vehicle.shipName}}</span>
+    <span class="col-xs-12 col-md-8 vehicle-main-info">Type: {{data.vehicle.type}}</span>
+    <span class="col-xs-12 col-md-8 vehicle-main-info">Hard Points: {{data.vehicle.hp}}</span>
+  </div>
+  <div class="col-xs-12 vehicle-characteristic-body">
+    <span class="col-xs-12 characteristics-header">Characteristics<br><text class="star-wars-text">Characteristics</text></span>
+  	<span class="col-xs-12 col-md-7 primary-vehicle-characteristics">
+      <span class="col-xs-6 col-md-4 characteristic-container">
+        <span class="col-xs-12 vehicle-characteristic-label">Silhouette</span>
+        <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.silhouette}}</span>
+      </span>
+      <span class="col-xs-6 col-md-4 characteristic-container">
+        <span class="col-xs-12 vehicle-characteristic-label">Speed</span>
+        <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.speed}}</span>
+      </span>
+      <span class="col-xs-6 col-md-4 characteristic-container">
+        <span class="col-xs-12 vehicle-characteristic-label">Handling</span>
+        <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.handling}}</span>
+      </span>
+      <span class="col-xs-6 col-md-4 characteristic-container">
+        <span class="col-xs-12 vehicle-characteristic-label vehicle-combat-charactistic-label">Armor</span>
+        <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.armor}}</span>
+      </span>
+      <span class="col-xs-6 col-md-4 characteristic-container">
+        <span class="col-xs-12 vehicle-characteristic-label vehicle-combat-characteristic-label">Hull Trauma</span>
+        <span class="col-xs-6 threshold-container">
+        	<span class="col-xs-12 vehicle-characteristic">{{data.vehicle.htThreshold}}</span>
+        	<span class="col-xs-12 vehicle-characteristic-label threshold">Threshold</span>
+        </span>
+        <span class="col-xs-6 current-container">
+          <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.htCurrent}}</span>
+          <span class="col-xs-12 vehicle-characteristic-label current">Current</span>
+        </span>
+      </span>
+      <span class="col-xs-6 col-md-4 characteristic-container">
+      <span class="col-xs-12 vehicle-characteristic-label vehicle-combat-characteristic-label">System Strain</span>
+        <span class="col-xs-6 threshold-container">
+        	<span class="col-xs-12 vehicle-characteristic">{{data.vehicle.ssThreshold}}</span>
+        	<span class="col-xs-12 vehicle-characteristic-label threshold">Threshold</span>
+        </span>
+        <span class="col-xs-6 current-container">
+          <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.ssCurrent}}</span>
+          <span class="col-xs-12 vehicle-characteristic-label current">Current</span>
+        </span>
+      </span>
+    </span>
+    <span class="col-xs-12 col-md-5 defense-characteristics">
+      <span class="col-xs-12 defense-header"><text id="defenseHeaderText">Defense</text></span>
+      <span class="defense" id="defenseFore">
+        <text class="col-xs-12 defense-value">{{data.vehicle.defenseFore}}</text>
+        <text class="col-xs-12 defense-label">Fore</text>
+      </span>
+      <span class="defense" id="defensePort">
+      	<text class="col-xs-12 defense-value">{{data.vehicle.defensePort}}</text>
+        <text class="col-xs-12 defense-label">Port</text>
+      </span>
+       <span class="defense" id="defenseAft">
+      	<text class="col-xs-12 defense-value">{{data.vehicle.defenseAft}}</text>
+        <text class="col-xs-12 defense-label">Aft</text>
+      </span>
+       <span class="defense" id="defenseStarboard">
+      	<text class="col-xs-12 defense-value">{{data.vehicle.defenseStarboard}}</text>
+        <text class="col-xs-12 defense-label">Starboard</text>
+      </span>
+       <span id="shipIcon">
+      	<i class="fal fa-starship-freighter"></i>
+      </span>
+     </span>
+  </div>
+  <div class="col-xs-12 weapons-container">
+    <span class="col-xs-12 weapons-header">Weapons<br><text class="star-wars-text">Weapons</text></span>
+    <span class="col-xs-12 weapons-body">
+      <span class="col-xs-12 weapon-headers">
+        <span class="col-xs-3 weapon-header">Weapon</span>
+        <span class="col-xs-1 weapon-header">Damage</span>
+        <span class="col-xs-2 weapon-header">Range</span>
+        <span class="col-xs-1 weapon-header">Crit</span>
+        <span class="col-xs-5 weapon-header">Special</span>
+      </span>
+      <span class="col-xs-12 weapons" ng-repeat="w in data.vehicleGear">
+        <span class="col-xs-3 weapon-detail">{{w.name}} <span class="badge">{{w.quantity}}</span></span>
+        <span class="col-xs-1 weapon-detail wd-number">{{w.damage}}</span>
+        <span class="col-xs-2 weapon-detail">{{w.range}}</span>
+        <span class="col-xs-1 weapon-detail wd-number">{{w.crit}}</span>
+        <span class="col-xs-5 weapon-detail">{{w.specials}}</span>
+      </span>
+    </span>
+  </div>
+</div>
+
+<!-- edit vehicle info sections -->
+<!-- edit vehicle name -->
+<span class="edit-vehicle" id="editVehicleName">
+	<span class="col-xs-12 close-button" ng-click="closeEditContainer('name')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleNameInput">Name/Transponder Code:</label>
+    <input class="sw-input" type="text" id="vehicleNameInput" name="vehicleNameInput" value="{{data.vehicle.nickName}}"/>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('name')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>]]></template>
+    </sp_widget>
+</record_update>

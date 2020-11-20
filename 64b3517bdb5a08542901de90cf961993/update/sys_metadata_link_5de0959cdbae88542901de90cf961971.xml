@@ -2,31 +2,40 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>d720d55cdbae88542901de90cf9619b9</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Negotiation (Pr)</name>
-        <number>SKILL0001014</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:04:12</sys_created_on>
-        <sys_id>d720d55cdbae88542901de90cf9619b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:04:12</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Often, the easiest way to get someone&amp;#39;s cooperation is by giving them exactly what they want. The art of Negotiation deals with determining exactly how much of what a subject wants must be surrendered in order to get a particular good or service in return. A master negotiator might need to make only the most minimal of sacrifices in exchange for a vital service, while a novice could be forced to dramatically overpay particularly if he lets his desperation show. This skill is essential for anyone who regularly deals in traded goods, but is also vitally important to anyone whose&lt;/div&gt;
+&lt;div&gt;livelihood depends upon selling their services. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Characters need to effectively negotiate if they ever hope to pay down their Obligations. Negotiation is opposed by the subject&amp;#39;s Presence and Cool. See Social Skill Interactions on this page for more information. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Any time a character wishes to purchase goods or services, he must either pay the seller&amp;#39;s asking price or utilize the Negotiation skill.&lt;/li&gt;&lt;li&gt;If a character wishes to sell goods or services, the final price is determined by a Negotiation check.&lt;/li&gt;&lt;li&gt;When two individuals create an agreement or treaty, they may make an opposed or competitive Negotiation check. The winner gains the better end of the resulting agreement.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Negotiation is usually an opposed check, using the target&amp;#39;s Cool or Negotiation. Situational modifiers may also apply based upon any past relationship between the characters involved and the overall desirability of the goods and services in question. The cases where this skill may be used without an opposed check are exceedingly rare, but the opportunity may present itself. In such a case, the GM is encouraged to gauge the difficulty of the check by the factors mentioned above.&lt;/p&gt;
+&lt;p&gt;Extra success on a Negotiation check may be used to increase the acting character&amp;#39;s profit by 5% per success. They may alternatively be used to modify the scope of the agreement, so that the contract can extend for a longer period of time or more goods may be obtained for a given price.&lt;/p&gt;
+&lt;p&gt;Advantage generated during a Negotiation check may be spent to earn unrelated boons from the target, either concessions if the check is failed, or extra perks if it is passed. With a the player may choose to have the target NPC become a regular client or specialist vendor. The NPC might thereafter keep an eye out for specific goods the PC may be interested in, or offer referrals to other clients in regards to the quality of his service.&lt;/p&gt;
+&lt;p&gt;Threat during a Negotiation check may be spent to increase the cost of goods the character is attempting to purchase, to decrease the value of those he is trying to sell, or to shorten contracts he is trying to negotiate. A GM may spend despair to seriously sabotage the character&amp;#39;s goals during the interaction; perhaps the character receives counterfeit goods or payment, or agrees to terms that are entirely beyond the scope of the negotiation.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Negotiation (Pr)&lt;/name&gt;
+        &lt;number&gt;SKILL0001014&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:04:12&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;d720d55cdbae88542901de90cf9619b9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 17:46:14&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5de0959cdbae88542901de90cf961971</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Negotiation (Pr)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +43,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_5de0959cdbae88542901de90cf961971</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:43:26</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:34</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

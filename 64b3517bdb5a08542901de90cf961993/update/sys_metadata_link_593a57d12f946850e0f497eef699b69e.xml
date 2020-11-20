@@ -2,31 +2,34 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>276d17cf2ff31890e0f497eef699b668</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Warfare (Int)</name>
-        <number>SKILL0001036</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-10-16 16:54:33</sys_created_on>
-        <sys_id>276d17cf2ff31890e0f497eef699b668</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-16 16:54:33</sys_updated_on>
-        <type>knowledge</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;The Star Wars galaxy has been shaped for millennia by warfare.  From the ancient conflicts that established the Galactic Republic to the Clone Wars mere decades ago, warfare has played a large part in the history and lives of beings throughout the galaxy.  Now, as the Rebel Alliance engages in its desperate struggle against the Galactic Empire, characters with knowledge on the workings of war are more important than ever before.&lt;/p&gt;
+&lt;p&gt;This skill covers a character&amp;#39;s knowledge of conflict, both on the ground and in space.  Many things factor into this, from training and insight on the strategies and tactics of modern warfare, to an awareness of the personnel and technology of the factions involved in the conflict, to knowledge gained from studying the other great wars throughout galactic history.  Having a broad awareness of the workings and history of conflict allows a character to not only survive, but to thrive in the Rebel Alliance.&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;A character&amp;#39;s knowledge of the strategies and tactics of warfare both on the ground and in space is represented by the Warfare skill.&lt;/li&gt;&lt;li&gt;Any time a character wants to remember details about a significant event, organization, or individual who played a role in a galactic struggle, he should make a Warfare check.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;The difficulty of the Warfare check is based upon how hard it would be to acquire the information the character wishes to know.  Classified, highly localized, or ancient information is obviously more obscure, while standardized structures and patterns that the character has encountered before are much easier to remember.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Warfare (Int)&lt;/name&gt;
+        &lt;number&gt;SKILL0001036&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-16 16:54:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;276d17cf2ff31890e0f497eef699b668&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 18:58:22&lt;/sys_updated_on&gt;
+        &lt;type&gt;knowledge&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-05 02:42:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>593a57d12f946850e0f497eef699b69e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Warfare (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +37,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_593a57d12f946850e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:13</sys_updated_on>
+        <sys_updated_on>2020-11-19 20:04:37</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

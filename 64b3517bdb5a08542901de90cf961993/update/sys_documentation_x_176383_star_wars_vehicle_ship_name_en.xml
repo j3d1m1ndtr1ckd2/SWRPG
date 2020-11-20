@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ship_name" label="Ship Name" language="en" table="x_176383_star_wars_vehicle">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ship_name</element>
+            <help/>
+            <hint/>
+            <label>Ship Name</label>
+            <language>en</language>
+            <name>x_176383_star_wars_vehicle</name>
+            <plural>Ship Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-09 04:25:42</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>044894fe2f5cac50e0f497eef699b609</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Ship Name</sys_name>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_documentation_x_176383_star_wars_vehicle_ship_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-09 04:25:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

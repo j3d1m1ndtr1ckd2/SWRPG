@@ -2,31 +2,42 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>73ef415cdbae88542901de90cf9619f3</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_skills">
-    <x_176383_star_wars_skills action="INSERT_OR_UPDATE">
-        <career>false</career>
-        <cost_to_next_rank/>
-        <description/>
-        <name>Coordination (Ag)</name>
-        <number>SKILL0001007</number>
-        <rank/>
-        <sys_class_name>x_176383_star_wars_skills</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-01-20 18:03:08</sys_created_on>
-        <sys_id>73ef415cdbae88542901de90cf9619f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-20 18:03:08</sys_updated_on>
-        <type>general</type>
-    </x_176383_star_wars_skills>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
+    &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
+        &lt;career&gt;false&lt;/career&gt;
+        &lt;cost_to_next_rank/&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;When a character needs to go somewhere without being seen, it often requires him to balance upon unstable surfaces, crawl through narrow openings, or even to tumble down from a dangerous height. Overcoming these types of challenges requires a tremendous sense of balance and a heightened degree of flexibility. While both of those abilities depend heavily upon a person&amp;#39;s natural characteristics, they can be further developed through regimens of practice and exercise. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Any time a character needs to contort his body into an unusual position, Coordination is used to calculate the dice pool. Note that some species may be inherently more flexible than the norm. This benefit is discussed  in their species description where applicable.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Many performers, mercenaries, and thieves become known for their natural flexibility and grace. For some, their lives may frequently depend upon their expertise in the skill. For others, the skill serves as an important complement to their other techniques.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;A character may attempt to reducing damage suffered when falling, diminishing the impact by rolling into a tumble on a successful Coordination action. See Falling on page 215 for more information.&lt;/li&gt;&lt;li&gt;Walking across a narrow surface, whether a wide beam or a thin pipe, requires a tremendous sense of balance and a successful Coordination check.&lt;/li&gt;&lt;li&gt;Characters can use Coordination to escape from restraints, contorting their limbs at unusual angles so that bindings slip free. &lt;/li&gt;&lt;li&gt;Crawling through the twists and turns of a sewage pipe, ventilation duct, or garbage chute may require a successful Coordination check to avoid a sudden fall, or worse yet—becoming stuck in place.&lt;/li&gt;&lt;/ul&gt;
+&lt;div&gt;Any additional success received when using Coordination may be spent to increase the distance travelled during the action checked, or decrease the time it takes to perform the action. Each success spent in this way can increase the distance moved by 25% , up to a maximum of 4 successes.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;2 advantage on a Coordination check may be used to grant the character an additional maneuver during the course of his turn. (However, during an encounter a character can only use two maneuvers per turn). Triumph on a Coordination check may be spent to accomplish the task with truly impressive results, either with narrative flair, or granting additional benefits in the course of completing it. For example, instead of walking across a rope to get across a chasm, the character could cut the rope, swing across, and in doing so deny anyone the ability to follow him.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;To represent a character doing harm to his body in the process of a Coordination check, the GM could spend threat generated during that check to cause the character to lose his free maneuver for one round per Threat. Despair represents something truly harmful happening to the character during his check. A character could suffer a wound as a result of despair during a Coordination check, or could lose a vital piece of equipment.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Coordination (Ag)&lt;/name&gt;
+        &lt;number&gt;SKILL0001007&lt;/number&gt;
+        &lt;rank/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_skills&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-01-20 18:03:08&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;73ef415cdbae88542901de90cf9619f3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 07:08:37&lt;/sys_updated_on&gt;
+        &lt;type&gt;general&lt;/type&gt;
+    &lt;/x_176383_star_wars_skills&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>09e0959cdbae88542901de90cf961954</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Coordination (Ag)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +45,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_09e0959cdbae88542901de90cf961954</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:42:56</sys_updated_on>
+        <sys_updated_on>2020-11-19 19:34:15</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

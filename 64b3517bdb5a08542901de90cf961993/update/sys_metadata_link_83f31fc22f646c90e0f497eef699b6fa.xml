@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>acc96f8b2f1c2090e0f497eef699b66f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;4&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;With their elephantine appearance, unique upright flying position, and rotating internal cockpit that allowed for horizontal landings, Firesprays were considered revolutionary in both their looks and design. Initially, only six prototypes were built and delivered to a Republic prison on Oovo IV shortly before the Battle of Naboo. Of those six ships, one was stolen by a bounty hunter named Jango Fett, and the other five destroyed to deter pursuit. The loss of such expensive prototypes came as a heavy blow to KSE, and they mothballed the Firespray program. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Envisioned primarily as a pursuit and system patrol craft, the original six Firesprays were powered by a quartet of Kuat X-F-16 high-output power generators powering a pair of KDY F-31 ion engines that took up much of the ship&amp;#39;s internal space. The combination of generators and drives gave the ships more than enough speed to deal with errant freighters, transports, and shuttles. Designed for utility rather than comfort, the ships&amp;#39; interior spaces were incredibly cramped. A small cargo hold is located in the lower aft section of the ship, equipped with a guard&lt;/div&gt;
+&lt;div&gt;station and six small holding cells. Wedged in between the generators, ion drives, and other ship&amp;#39;s systems is the unique rotating cockpit that moves the pilot and his controls through 180 degrees during take off and landing. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Recently, KSE re-introduced the Firespray to market in response to increased demand for law enforcement and patrol vessels from Imperial controlled worlds. The new ships are built from the plans for the original six prototypes, albeit with the benefit of three decades of advancement in shipbuilding technology. Thanks to growing demand and an aggressive advertising campaign, the new ships are a hot commodity among law enforcement agencies, bounty hunters, and even some smugglers and pirates.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;0&lt;/handling&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;15&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Patrol Boat/Firespray&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001013&lt;/number&gt;
+        &lt;price&gt;80000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;3&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;4&lt;/rarity&gt;
+        &lt;sensor_range&gt;short&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Firespray System Patrol Craft&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-10 14:22:35&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;acc96f8b2f1c2090e0f497eef699b66f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-10 14:22:35&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;12&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:26:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>83f31fc22f646c90e0f497eef699b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001013</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_83f31fc22f646c90e0f497eef699b6fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:26:11</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -4,21 +4,17 @@
         <documentkey>7e0b18242fd46450e0f497eef699b621</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_weapon_quality">
     <x_176383_star_wars_weapon_quality action="INSERT_OR_UPDATE">
-        <description>Cortosis is an ore found primarily in the Outer Rim. It is extremely rare and valuable, and was used primarily during the Clone Wars against the Jedi knights. There are two varieties of Cortosis&#13;
-ore. The rarest versions can actually short out a lightsaber's blade, causing it to fail temporarily.&#13;
-The far more common Cortosis ore is still a miraculous substance, because when molded into armor,&#13;
-it forms an interlocking molecular bond that is extremely resistant to energy weapons. &#13;
+        <description>Cortosis is an ore found primarily in the Outer Rim. It is extremely rare and valuable, and was used primarily during the Clone Wars against the Jedi knights. There are two varieties of Cortosis ore. The rarest versions can actually short out a lightsaber's blade, causing it to fail temporarily. The far more common Cortosis ore is still a miraculous substance, because when molded into armor, it forms an interlocking molecular bond that is extremely resistant to energy weapons. &#13;
 &#13;
-Weapons with the Cortosis quality are immune to the Sunder quality. Armor with the Cortosis quality&#13;
-makes the wearer's soak immune to the Pierce and Breach qualities.</description>
+Weapons with the Cortosis quality are immune to the Sunder quality. Armor with the Cortosis quality makes the wearer's soak immune to the Pierce and Breach qualities.</description>
         <name>Cortosis (Passive)</name>
         <number>WQ0001007</number>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-02 04:52:48</sys_created_on>
         <sys_id>7e0b18242fd46450e0f497eef699b621</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 04:52:48</sys_updated_on>
+        <sys_updated_on>2020-11-19 05:37:26</sys_updated_on>
     </x_176383_star_wars_weapon_quality>
 </record_update>
 ]]></payload>
@@ -27,7 +23,7 @@ makes the wearer's soak immune to the Pierce and Breach qualities.</description>
         <sys_created_on>2020-11-05 02:17:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3584d75d2f546850e0f497eef699b62e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Cortosis (Passive)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -35,7 +31,7 @@ makes the wearer's soak immune to the Pierce and Breach qualities.</description>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_3584d75d2f546850e0f497eef699b62e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-05 02:17:25</sys_updated_on>
+        <sys_updated_on>2020-11-19 21:04:51</sys_updated_on>
         <tablename>x_176383_star_wars_weapon_quality</tablename>
     </sys_metadata_link>
 </record_update>

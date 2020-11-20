@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d606bf0b2f5c2090e0f497eef699b678</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_vehicle_gear">
+    <x_176383_star_wars_vehicle_gear action="INSERT_OR_UPDATE">
+        <gear display_value="Proton Torpedo Launcher">39e135cb2f142090e0f497eef699b6bd</gear>
+        <quantity>1</quantity>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-10 15:13:21</sys_created_on>
+        <sys_id>d606bf0b2f5c2090e0f497eef699b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 15:13:21</sys_updated_on>
+        <vehicle display_value="VEH0001019">fe35330b2f5c2090e0f497eef699b6fe</vehicle>
+    </x_176383_star_wars_vehicle_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 21:02:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>824c1b0e2f646c90e0f497eef699b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2020-11-10 07:13:21</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_824c1b0e2f646c90e0f497eef699b6f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 21:02:26</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle_gear</tablename>
+    </sys_metadata_link>
+</record_update>

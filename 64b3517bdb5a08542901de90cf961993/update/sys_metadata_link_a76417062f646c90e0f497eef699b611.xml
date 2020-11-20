@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2e38778b2f5c2090e0f497eef699b663</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;1&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;14&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;SoroSuub&amp;#39;s popular space yacht is the final word in luxury VIP transportation. Each vessel is custom-built from the keel up to the specific needs of each owner. Every decision from the hyperdrive model to which rare hardwoods and precious metals to use as accents in the VIP suite are dictated by the owner and SoroSuub&amp;#39;s expert ship system associates. This allows the ships to be outfitted for myriad uses from shuttling important government officials to mobile offices of powerful commercial concerns to extravagant party vessels. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;While each yacht is unique, with features and amenities as varied as the tastes of their myriad owners, there is some commonality among them. The ship&amp;#39;s hull is long and narrow, with the command deck forward, offering a commanding view of surrounding space through its wraparound viewports. The passengers are carried in luxurious quarters abaft the command deck that contain a grand dining cabin, a single VIP suite, a recreation center, an observation deck, and a number of small but well-appointed passenger cabins. Both the sublight and hyperdrive engines are housed in outboard nacelles located at the aft of the vessel.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;0&lt;/handling&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;30&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Yacht/Luxury 3000&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001023&lt;/number&gt;
+        &lt;price&gt;120000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;short&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Sorosuub Luxury 3000 Space Yacht&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;3&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-10 15:24:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2e38778b2f5c2090e0f497eef699b663&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-19 17:13:41&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;12&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:28:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a76417062f646c90e0f497eef699b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001023</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a76417062f646c90e0f497eef699b611</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:28:07</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2ccedde32f54a090e0f497eef699b6bc</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;5&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;1&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;1&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Solidly built and packed with state-of-the-art avionics and cargo-handling systems, the massive, slab-sided HT-2200 medium freighter is a relatively new ship design from Corellian Engineering Corporation (CEC). Shaped like a tuning fork or an oversized Y-wing, the ship houses its crew, weapons, and engineering sections in a central hull, with four spacetight cargo holds in the port and starboard booms which point forward along the ship’s line of flight. The trademark CEC conical cockpit is located amidships between the booms, giving the pilot and co-pilot a nearly 180-degree view of their surroundings. Each of the four holds is shielded and reinforced, and each contains a number of modular cargo systems that allows it to be configured for different types of cargo. In addition, each hold has its own environmental systems, allowing the crew to adjust the temperature, atmospheric makeup, and gravity of each hold separately.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Once released, initial reviews of the vessel were favorable, and orders steadily came in from large shipping concerns in the Mid Rim and Outer Rim. As pilots and crews became more familiar with the ships, however, they reported a number of serious shortcomings. The ships’ primary power generator was woefully underpowered. The cost-cutting measures extended to most of this ships’ systems and included the use of cut-rate power couplings throughout, making the vessels’ systems surprisingly susceptible to brownouts and short circuits. These issues, along with an unusually light weapons load-out of two turret-mounted laser cannons, made the new freighters easy pickings for pirates and commerce raiders. Despite all of their inherent flaws, HT-2200s remain in production, although not in the same numbers as their more popular siblings, thanks to their advanced cargo systems, sturdy hulls, and ease of modification.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-2&lt;/handling&gt;
+        &lt;hard_points&gt;5&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;35&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Freighter/HT-2200&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;One dorsal and one ventral turret-mounted medium laser cannon.&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001046&lt;/number&gt;
+        &lt;price&gt;140000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;3&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;sensor_range&gt;short&lt;/sensor_range&gt;
+        &lt;ship_name&gt;HT-2200 Medium Freighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;5&lt;/silhouette&gt;
+        &lt;speed&gt;2&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 17:30:39&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2ccedde32f54a090e0f497eef699b6bc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 17:30:58&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;14&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:28:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9a6417062f646c90e0f497eef699b60d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001046</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_9a6417062f646c90e0f497eef699b60d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:28:02</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

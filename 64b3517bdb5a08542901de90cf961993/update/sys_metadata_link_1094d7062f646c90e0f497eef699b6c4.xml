@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b9cf95272f54a090e0f497eef699b63c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;4&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;One of the more popular ships to come out of the vaunted Mon Calamari Shipyards, the Simiyiar-class light freighter is a study in both form and function. A lovely ship by any standard, this small, nimble freighter shows all the hallmarks of the smooth- edged, quasi-organic styling for which the Mon Calamari shipwrights are so famous. A Simiyiar-class vessel is flat, low-slung, and single-decked, with a bulbous forward section, a narrow midships section, and a flaring, wing-like aft section. The entire forward third of the ship is given over to its cargo hold, a capacious modular space accessed by port and starboard cargo lifts and a ventral loading ramp. The midships section contains crew and passenger berthing and common areas, as well as a ladderway to the small, two-person command deck. In addition to its drive, most of the ship’s power, weapons, and hyperspace systems are housed in the outboard wing sections or the flaring forward section, and a pair of escape pods are mounted directly aft, over the primary thrusters.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Relatively heavily armed for a vessel of its class, the Simiyiar is armed with a turret-mounted twin light laser cannon on the dorsal surface and a single light ion cannon in a fixed forward position. Speed and handling are a little above average, and the stout, ablative armor and well-tuned shields provide more than adequate protection. Although popular, Simiyiar-class light freighters suffer many of the downsides common to Mon Calamari ships. Each ship is unique, essentially hand-made, and there is little-to-no parts commonality from one to another. As such, they are among the most expensive light freighters on the market. They are very reliable, however, and achingly beautiful. These two traits alone are enough to explain the popularity of these fine little ships.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;0&lt;/handling&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;20&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Freighter/Simiyiar&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;Dorsal Turret mounted twin light laser cannons, forward mounted light ion cannon&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001047&lt;/number&gt;
+        &lt;price&gt;165000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;medium&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Simiyiar Light Freighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;3&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 17:36:07&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;b9cf95272f54a090e0f497eef699b63c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 17:36:40&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;16&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:28:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1094d7062f646c90e0f497eef699b6c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001047</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_1094d7062f646c90e0f497eef699b6c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:28:43</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

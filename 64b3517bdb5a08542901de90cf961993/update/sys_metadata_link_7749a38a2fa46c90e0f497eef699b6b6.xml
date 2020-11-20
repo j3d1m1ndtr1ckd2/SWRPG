@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5ec157192fa0a890e0f497eef699b6e1</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_species"&gt;
+    &lt;x_176383_star_wars_species action="INSERT_OR_UPDATE"&gt;
+        &lt;agility&gt;1&lt;/agility&gt;
+        &lt;base_strain_threshold&gt;8&lt;/base_strain_threshold&gt;
+        &lt;base_wound_threshold&gt;15&lt;/base_wound_threshold&gt;
+        &lt;brawn&gt;3&lt;/brawn&gt;
+        &lt;cunning&gt;2&lt;/cunning&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;&lt;strong&gt; Special Abilities:&lt;/strong&gt; Dowutins begin the game with one rank in Resilience. They still may not train Resilience above rank 2 during character creation. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;&lt;strong&gt;Large:&lt;/strong&gt; Dowutins have a silhouette of 1 or 2, chosen at character creation.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 10pt;"&gt;&lt;span style="font-size: 8pt;"&gt;&lt;strong&gt; Immovable:&lt;/strong&gt; Dowutins who suffer the Immobilized condition, are knocked prone, or are otherwise moved against their will may, as an out-of-turn incidental, suffer 3 strain to avoid the effect. Dowutins who are silhouette 2 suffer only 1strain to use this ability.&lt;/span&gt; &lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;intellect&gt;2&lt;/intellect&gt;
+        &lt;name&gt;Dowutin&lt;/name&gt;
+        &lt;number&gt;SPE0001071&lt;/number&gt;
+        &lt;portrait/&gt;
+        &lt;presence&gt;2&lt;/presence&gt;
+        &lt;skill_ranks/&gt;
+        &lt;skill_ranks_list&gt;9140595cdbae88542901de90cf9619dd&lt;/skill_ranks_list&gt;
+        &lt;skills_choice/&gt;
+        &lt;starting_xp&gt;85&lt;/starting_xp&gt;
+        &lt;strain_calculation/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-17 12:23:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;5ec157192fa0a890e0f497eef699b6e1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-17 12:23:48&lt;/sys_updated_on&gt;
+        &lt;talent_ranks/&gt;
+        &lt;willpower&gt;2&lt;/willpower&gt;
+        &lt;wound_calculation/&gt;
+    &lt;/x_176383_star_wars_species&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 21:59:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7749a38a2fa46c90e0f497eef699b6b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dowutin</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_7749a38a2fa46c90e0f497eef699b6b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 21:59:21</sys_updated_on>
+        <tablename>x_176383_star_wars_species</tablename>
+    </sys_metadata_link>
+</record_update>

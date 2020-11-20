@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a273d2ab2f18a090e0f497eef699b6e2</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;1&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;0&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Initially designed as a cargo tender and shipyard tug, the T-47 is a rugged, wedge-shaped airspeeder that is both reliable and easy to modify.  Built for low altitude work, this vehicle seats two crew members back to back in a cramped but well laid out cockpit, with the pilot facing forward and the systems operator facing aft. While ostensibly an industrial labor vehicle, the T-47 was designed with an eye toward end-user modification. Numerous redundant systems, universal power couplings, and modular data input areas allow the vehicle’s abilities and systems to be tailored to many tasks, including combat. The Rebel Alliance uses modified T-47s as fast ground attack airspeeders. Loaded with heavy blaster cannons and heavy armor, they make excellent fightercraft despite their low altitude, and they have shown a surprising ability to operate in extremes of heat and cold with little problem.&lt;br /&gt;&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;0&lt;/handling&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;4&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Airspeeder/T-47&lt;/make_model&gt;
+        &lt;maximum_altitude&gt;175m&lt;/maximum_altitude&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;div&gt;Aft turret-mounted electromagnetic harpoon (Fire Arc Rear; Damage -; Critical Hit -; Range [Close]; Tractor 3, Knockdown, Limited Ammo 1).&lt;/div&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001049&lt;/number&gt;
+        &lt;price&gt;18000&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;3&lt;/rarity&gt;
+        &lt;sensor_range&gt;close&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Alliance T-47 Airspeeder&lt;/ship_name&gt;
+        &lt;silhouette&gt;2&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 21:23:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a273d2ab2f18a090e0f497eef699b6e2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 21:23:57&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;6&lt;/system_strain_threshold&gt;
+        &lt;type&gt;airspeeder&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:26:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b9f3dbc22f646c90e0f497eef699b6a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001049</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b9f3dbc22f646c90e0f497eef699b6a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:26:06</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c66e5da32f54a090e0f497eef699b637</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;2&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;First designed decades before the Battle of Naboo, these tough little freighters were Corellian Engineering Corporation’s first attempt to break into the rapidly expanding “executive light freighter” market. Unlike the relatively staid and workmanlike YT-series, which was marketed toward smaller-profile traders and tramp freighter operators, the HWK-290 was targeted at wealthy, high-profile clients such as powerful interstellar shipping conglomerates and planetary governments. While they enjoyed modest success and were highly praised for their performance and ease of operation, the HWK-290s never reached the sales numbers of the more popular YT-series. The entire line was discontinued during the Clone Wars to free up production lines for military use.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;HWK-290s are light, fast, agile craft designed for speed and comfort rather than heavy lifting. They are handsome vessels with lean, angular hulls and narrow, deeply tinted viewports which make them look fast and aggressive, even when parked in a hangar. While they were never designed to carry much cargo, the HWK-290s still has respectable lift capacity for vessels of their size; they are well suited for courier work and the transportation of small, highly valuable cargoes. They have light armor and were originally designed with no weapon systems, relying instead on raw speed and maneuverability for protection. Of course, being CEC products, they are extremely versatile and modular; most Hawks still plying the spacelanes are so heavily modified as to be nearly unrecognizable to their original designers.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;1&lt;/handling&gt;
+        &lt;hard_points&gt;5&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;18&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Freighter/HWK-290&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001045&lt;/number&gt;
+        &lt;price&gt;70000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;7&lt;/rarity&gt;
+        &lt;sensor_range&gt;short&lt;/sensor_range&gt;
+        &lt;ship_name&gt;HWK-290 Light Freighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;3&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 17:29:00&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c66e5da32f54a090e0f497eef699b637&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 17:29:00&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;18&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:28:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2d94d7062f646c90e0f497eef699b6c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001045</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2d94d7062f646c90e0f497eef699b6c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:28:48</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

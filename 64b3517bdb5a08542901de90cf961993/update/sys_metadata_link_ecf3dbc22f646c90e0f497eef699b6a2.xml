@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>951c9d232f54a090e0f497eef699b67b</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;2&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Already considered an antique at the outset of the Clone Wars, Corellian Engineering Corporation&amp;#39;s G9 Rigger-class light freighter is a rare sight in the modern spacelanes.  A small, unremarkable craft, the G9 has a blocky, double-decked hull which resembles a speeder truck more than a starship.  A Single long, thin wing extends from the starboard side of the ship, and a short folding stabilizer is mounted to the vessel&amp;#39;s ventral side.  The forward third of the vessel contains the flight deck, engineering deck, and crew quarters on two spartan decks.  The rest of the ship is given over to a single large cargo hold accessed by a large aft-loading ramp.&lt;/p&gt;
+&lt;p&gt;Designed as a utilitarian, short-to-medium-range hauler, the Rigger-class has little in the way of amenities and only the most basic of defensive systems.  Armament consists of dorsal auto-blasters and two light blaster cannons.  Shields are a simple low-output No-valdex system, and the ship&amp;#39;s armor is basic carbon-durasteel.  Little thought was given to speed or handling, and while these skips aren&amp;#39;t dangerously slow or sluggish, they are not high-performance by any stretch of the imagination.  What they lack in frills and comfort, however, these little ships more than make up for in reliability, sturdiness and ease of repair.  In fact, so well-built are these ancient freighters that many are still operating, and operating quite well, with much of their original equipment.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-2&lt;/handling&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;25&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Light Freighter/Rigger-Class&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;Dorsal auto-blasters, ventral wing-mounted light blaster cannon, outrigger turret-mounted light blaster cannon.&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001044&lt;/number&gt;
+        &lt;price&gt;55000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;3&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;sensor_range&gt;medium&lt;/sensor_range&gt;
+        &lt;ship_name&gt;G9 Rigger Light Freighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;2&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 17:24:30&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;951c9d232f54a090e0f497eef699b67b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 17:24:30&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;15&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:26:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ecf3dbc22f646c90e0f497eef699b6a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001044</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ecf3dbc22f646c90e0f497eef699b6a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:26:01</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

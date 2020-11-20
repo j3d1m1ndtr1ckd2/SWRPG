@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>24d0e9672f54a090e0f497eef699b600</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Spurred by the success of the Z-10 Seeker-class scout ship, the ZH-25 Questor-class is Starfeld Industries’ first foray into the light freighter market. Essentially a Seeker writ large, the ZH-25 is a fast, reliable, easily modifiable freighter designed to compete against Corellian Engineering Corporation’s YT- and W-series freighters. With a hull that resembles a pair of magnoculars in planform, the ZH-25 consists of a central hull section of a vaguely hourglass shape with a CEC- style cockpit forward and a bank of powerful Noval-dex JV-74 engines in the stern. The port and starboard hull sections contain crew quarters, common areas, and escape pods for crew and passengers. The aft two-thirds of the ship is given over to a massive open cargo hold equipped with all the usual modern cargo-handling systems. In addition, two external cargo pods are slung beneath the hull and serve to extend both the ship’s cargo and storage capacity.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;From the factory, Starfeld fits out the Questor with a single medium laser cannon in a ventral-mounted turret, good carbon-durasteel armor, and a reliable Sirplex shield generator, which together provide the vessel with respectable defensive capabilities. The crew and passenger areas, while utilitarian, are comfortable and designed to alleviate the stresses of long distance travel in hyperspace. Like most light freighters from CEC, SoroSuub, and Chtroc, the ZH-25 was built with an eye toward end-user modification and the use of aftermarket parts. To that end, these ships feature modular power fittings and numerous redundant systems that allow owners to easily customize their ships to their own tastes and needs. While still a relative newcomer to the freighter market, the ZH-25 is quickly gaining popularity among private shipping concerns, single owner-operators, and smugglers thanks to its reliability and smart design.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-1&lt;/handling&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;30&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Freighter/Questor&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;ventral turret mounted medium laser cannon.&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001048&lt;/number&gt;
+        &lt;price&gt;115000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;medium&lt;/sensor_range&gt;
+        &lt;ship_name&gt;ZH-25 Questor Light Freighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;3&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 17:40:17&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;24d0e9672f54a090e0f497eef699b600&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 17:40:38&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;20&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:30:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>70f49f062f646c90e0f497eef699b6c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001048</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_70f49f062f646c90e0f497eef699b6c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:30:23</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

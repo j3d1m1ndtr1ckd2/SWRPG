@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>611b52632f58a090e0f497eef699b622</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;2&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Like the fast and deadly A-wing, the B-wing heavy attack fighter is a relatively new addition to the Alliance arsenal. Designed by Alliance commander Gial Ackbar and produced by the Verpine shipbuilding consortium Slayn &amp;amp; Korpil, the B-wing is the largest, most heavily armed fighter in the Alliance arsenal. Relatively rare due to their high cost and complex design, these ships are also the most visually striking of the Alliance’s fightercraft. They have a long, thin, blade-like fuselage that serves as a weapons platform with two small retractable S-foils that rotate around a heavily armored, ovoid pilot compartment. When deployed, they have a slim cruciform cross-section that, paired with their ability to rotate out of harm’s way, makes them quite hard to hit despite their size. In combat, they spin like dervishes, their rotating hulls bringing their powerful weapons to bear on targets in an instant while the pilot stays still and correctly oriented in his capsule. They have a strange kind of grace that not even Imperial pilots deny. In their first few deployments, they carried the day as much through surprise and novelty as through their inherent fighting qualities; the Imperial pilots were often too stunned, or too wracked with laughter at these gangly fighters, to effectively fight back.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;B-wings, like their older Y-wing cousins, are dedicated attack fighters. They are specifically designed to destroy capital ships and orbital installations using ion weaponry and heavy ordnance such as proton torpedoes and proton bombs. They are heavily armored and shielded, and equipped with a quartet of heavy S&amp;amp;K sublight engines usually mounted on heavy gunboats and light capital ships. This gives them an incredible straight-line speed, especially given their great mass and awkward shape,  and makes them extremely effective at their given mission.  B-wings are still very rare in Alliance squadrons. They cost a mint of credits to build, are considered finicky maintenance hogs due especially to their surprisingly delicate gyro-stabilization system, and the Alliance has few pilots who can fly them effectively. Thanks to this, they are still an uncommon sight in Rebel formations.  Even so, their reputation precedes them, and the Imperial Navy knows that they’re in for serious fighting when the Rebels bring B-wings to a fight.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-1&lt;/handling&gt;
+        &lt;hard_points&gt;1&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;15&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Starfighter/A/SF-01 B-wing&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001054&lt;/number&gt;
+        &lt;price&gt;150000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;close&lt;/sensor_range&gt;
+        &lt;ship_name&gt;A/SF-01 B-Wing Heavy Fast Attack Starfighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;3&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 21:56:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;611b52632f58a090e0f497eef699b622&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 21:57:46&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;6&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:25:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0ae3df822f646c90e0f497eef699b69b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001054</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_0ae3df822f646c90e0f497eef699b69b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:25:50</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>278919272fd0a090e0f497eef699b6b2</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Delta-12 Skysprite-class is a rare two-seat version of the Delta-7 Aethersprite light interceptor. Designed by KSE as both a trainer and long-range reconnaissance fighter, the Skysprite features the same hull and internal systems, with an elongated cockpit that seats two individuals in tandem. Thanks to their speed, stores, and limited amenities, Skysprites were often used by the Jedi Order as VIP couriers.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Delta-12s feature stronger shields, stronger armor, and a more powerful sensor suite. The Delta-12s were stripped of their weapons, which made their sale to civilian organizations easier. The internal systems remained intact, however, and with a small amount of work and an upgrade to the ship’s computer systems, the Skysprite can carry a respectable armament of light or even medium laser cannons.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;1&lt;/handling&gt;
+        &lt;hard_points&gt;3&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;10&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Starfighter/Delta-12&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;astromech droid slot&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001040&lt;/number&gt;
+        &lt;price&gt;85000&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;8&lt;/rarity&gt;
+        &lt;sensor_range&gt;short&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Delta-12 Skysprite&lt;/ship_name&gt;
+        &lt;silhouette&gt;3&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 17:08:15&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;278919272fd0a090e0f497eef699b6b2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 17:08:15&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;8&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:25:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dac31f822f646c90e0f497eef699b62a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001040</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_dac31f822f646c90e0f497eef699b62a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:25:18</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

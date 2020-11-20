@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a444330b2f5c2090e0f497eef699b60d</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Designed as part of a joint venture between Incom Corporation and Subpro Corporation during the early days of the Clone Wars, the tiny Z-95 was considered one of the most capable starfighters of its day. Small, lightly armored, and shielded, the Headhunter is a one-man, short-range fighter powered by an Incom 44-a5 multi-reactor. The aerodynamic fuselage combined with an incredible thrust-to-weight ratio makes the Z-95 quite fast and agile.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Initially classified as an interceptor and armed with wing-mounted triple blaster cannons, the Headhunter quickly proved itself a competent space superiority fighter. It has gone through numerous redesigns, and today, most sport twin laser cannons and concussion missile launchers. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Despite their age, the Z-95 remains a popular starfighter. Considered outdated compared to modern fighters such as Koensayr&amp;#39;s Y-wing and Incom&amp;#39;s brand new X-wing (a fighter that shares more than a passing resemblance to the Headhunter), sales of the little fighter are still brisk in the Outer Rim territories.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;1&lt;/handling&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;9&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Starfighter/Headhunter&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001018&lt;/number&gt;
+        &lt;price&gt;55000&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;4&lt;/rarity&gt;
+        &lt;sensor_range&gt;close&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Z-95-AF4 Headhunter&lt;/ship_name&gt;
+        &lt;silhouette&gt;3&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-10 15:07:59&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a444330b2f5c2090e0f497eef699b60d&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-10 15:07:59&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;8&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:30:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c1553462f646c90e0f497eef699b66e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001018</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_3c1553462f646c90e0f497eef699b66e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:30:56</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

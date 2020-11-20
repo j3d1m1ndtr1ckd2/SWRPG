@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4736a34b2f1c2090e0f497eef699b605</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;0&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Developed by the Republic during the Clone Wars, the AT-PT is a small, one person infantry walker designed to carry a single trooper into battle in even the most hostile environments. Known for their sturdy and relatively simple construction, these vehicles are composed of a well armored central command pod suspended between two dextrous, reverse-articulated legs. The central&lt;/div&gt;
+&lt;div&gt;pod houses a cramped, environmentally sealed cockpit with just enough room for the pilot, a sidearm, and an emergency kit. The AT-PT easily traverses a wide variety of terrains from thick forest to plains and cramped urban centers, fording shallow bodies of water and climbing inclines up to forty-five degrees. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;AT-PTs are armed with a versatile array of anti-personnel weaponry, including a powerful twin blaster cannon and a repeating concussion grenade launcher in the walker&amp;#39;s &amp;#34;chin,&amp;#34; allowing it to destroy troops and light vehicles. While their sensors are, at best, rudimentary, they are equipped with a powerful, encrypted comlink that allows a squad of these small walkers to work extremely efficiently together. &lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;0&lt;/handling&gt;
+        &lt;hard_points&gt;1&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;6&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Walker/AT-PT&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001010&lt;/number&gt;
+        &lt;price&gt;30000&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;7&lt;/rarity&gt;
+        &lt;sensor_range&gt;close&lt;/sensor_range&gt;
+        &lt;ship_name&gt;All Terrain Personal Transport&lt;/ship_name&gt;
+        &lt;silhouette&gt;2&lt;/silhouette&gt;
+        &lt;speed&gt;2&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-10 14:06:07&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;4736a34b2f1c2090e0f497eef699b605&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-14 09:35:44&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;5&lt;/system_strain_threshold&gt;
+        &lt;type&gt;walker&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:25:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>16d31f822f646c90e0f497eef699b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001010</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_16d31f822f646c90e0f497eef699b636</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:25:35</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

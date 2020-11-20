@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ffc3c41b2f9c2090e0f497eef699b6f0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;5&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;2&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;2&lt;/defense_fore&gt;
+        &lt;defense_port&gt;2&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;2&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Used primarily by the Imperial Navy&amp;#39;s Logistics Corps as a long-haul heavy cargo lifter, the Star Galleon is yet another sturdy and well founded ship from the shipwrights at Kuat Drive Yards. A massive, plodding, humpbacked vessel, this frigate-sized transport carries 100,000 tons of bulk cargo in its cavernous modular cargo holds. The ship itself is as utilitarian as a ship can be. The forward quarter of the vessel contains the bridge, crew quarters, and primary systems. The remainder of the ship is given over to cargo space. Abaft the command decks is a hulking, multi-decked cargo hold equipped with countless sliding bulkheads, retractable decks, sophisticated anti-boarding systems, and a state-of-the-art cargo handling system. The two hull sections are, in fact, detachable, in case the ship is ever in danger of losing its cargo. Both the command section and the cargo hold are hyperspace capable. The forward section has a traditional  hyperdrive and navicomputer, while the cargo section uses an automated emergency escape system that transitions it into hyperspace as soon as it is jettisoned, to keep it out of the hands of pirates.&lt;/p&gt;
+&lt;p&gt;Due to their size, durability, and heavy armament, Star Galleons are used by the Empire to transport high-value cargoes without needing escort vessels.&lt;br /&gt;&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-2&lt;/handling&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;85&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Transport/Star Galleon&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;5 port and 5 starboard mounted retractable medium turbolasers. forward concussion missile launcher.&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001029&lt;/number&gt;
+        &lt;price&gt;1500000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;7&lt;/rarity&gt;
+        &lt;sensor_range&gt;medium&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Star Galleon Armed Transport&lt;/ship_name&gt;
+        &lt;silhouette&gt;6&lt;/silhouette&gt;
+        &lt;speed&gt;1&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-10 16:15:38&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;ffc3c41b2f9c2090e0f497eef699b6f0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-10 16:23:47&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;18&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:29:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>52b45b062f646c90e0f497eef699b6c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001029</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_52b45b062f646c90e0f497eef699b6c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:29:24</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

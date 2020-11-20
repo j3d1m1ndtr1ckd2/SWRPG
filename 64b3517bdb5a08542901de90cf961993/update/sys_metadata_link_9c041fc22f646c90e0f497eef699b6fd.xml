@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b37109272fd0a090e0f497eef699b6a8</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;1&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;0&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Aratech’s Odyssey is a speeder bike built for adventure. Based on the reliable 74-Y speeder bike platform, this two-person speeder bike was designed for long-distance travel over rough terrain. Built with exploration in mind, the Odyssey features a reinforced frame, heavy-duty power systems, improved repulsorlift drives, and capacious storage for luggage and supplies. A compact and extremely powerful ground-following sensor suite mated to a navigation system makes handling the heavy vehicle easy for nearly any sentient. Not as common or popular as the 74-Y, the 85-XS enjoys slow-but-steady sales and can be found relatively easily on less-developed worlds where ruggedness and reliability take precedence over speed and handling.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;0&lt;/handling&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;3&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Speeder Bike/85-XS&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001034&lt;/number&gt;
+        &lt;price&gt;4500&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;sensor_range&gt;close&lt;/sensor_range&gt;
+        &lt;ship_name&gt;85-XS Odyssey Heavy Speeder Bike&lt;/ship_name&gt;
+        &lt;silhouette&gt;2&lt;/silhouette&gt;
+        &lt;speed&gt;2&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 15:23:07&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;b37109272fd0a090e0f497eef699b6a8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 15:23:07&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;4&lt;/system_strain_threshold&gt;
+        &lt;type&gt;landspeeder&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:26:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9c041fc22f646c90e0f497eef699b6fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001034</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_9c041fc22f646c90e0f497eef699b6fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:26:16</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

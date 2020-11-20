@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>22504cd32f9c2090e0f497eef699b662</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;12&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Perhaps the most common light freighter in service today, Corellian Engineering&amp;#39;s YT-1300 is the very epitome of the freighter concept. Quick, rugged, and endlessly modifiable, the YT-1300 consists of a central main hull compartment around which are arranged a number of modular compartments within a saucer-shaped outer hull. Two cargo mandibles extend from the bow, and the CEC trademark offset cockpit is mounted on the starboard side of the vessel, with weapon points located in the center of the ventral and dorsal surface. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;In their factory configuration, a rarity among such versatile and easily modifiable ships, the YT-1 300 is relatively well armored and is equipped with a small but powerful shield generator. It mounts only one weapon, a medium laser cannon on the dorsal gun mount, but the ship features a number of built-in weapon hard points. Of the hundreds of thousands of these popular ships currently in service, perhaps no two are exactly alike, and none resemble the ships that left CEC&amp;#39;s production facility. Due to the sheer number of vessels extant and the long decades for which they&amp;#39;ve been in service, the YT-1300 is a common sight among the freebooters, smugglers, and pirates of the Outer Rim. Indeed, many of these rugged men and women count these ships as either the first or the finest ship they&amp;#39;ve ever owned, and commonly both.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-1&lt;/handling&gt;
+        &lt;hard_points&gt;6&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;22&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Freighter/YT-1300&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;One Dorsal and One Ventral turret mounted medium laser cannon&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001027&lt;/number&gt;
+        &lt;price&gt;100000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;4&lt;/rarity&gt;
+        &lt;sensor_range&gt;short&lt;/sensor_range&gt;
+        &lt;ship_name&gt;YT-1300 Light Freighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;3&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-10 16:00:31&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;22504cd32f9c2090e0f497eef699b662&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-10 16:01:30&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;15&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:30:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e7e45f062f646c90e0f497eef699b6e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001027</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_e7e45f062f646c90e0f497eef699b6e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:30:18</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

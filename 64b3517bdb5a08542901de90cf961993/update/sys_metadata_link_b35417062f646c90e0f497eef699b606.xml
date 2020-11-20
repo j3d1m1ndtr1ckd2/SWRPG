@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1df109272fd0a090e0f497eef699b6aa</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;0&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;0&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Gallis-Tech&amp;#39;s 48 Roller is a one-person wheel bike, a contraption where the pilot rides within a single, large wheel. Galli Tech decided to power its wheel bike with a pair of jet engines. This gives the Roller an impressive speed but makes it even harder to control. Skilled operators can steer the Roller by simply leaning in the direction they want to turn. Unskilled drivers, on the other hand, quickly find themselves smeared across the landscape. The Roller is often found on frontier planets on the Outer Rim, where, unsurprisingly, it’s most popular among a civilization’s youth.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-2&lt;/handling&gt;
+        &lt;hard_points&gt;0&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;3&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Wheel Bike/48 Roller&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001035&lt;/number&gt;
+        &lt;price&gt;750&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;sensor_range/&gt;
+        &lt;ship_name&gt;Gallis-Tech 48 Roller&lt;/ship_name&gt;
+        &lt;silhouette&gt;2&lt;/silhouette&gt;
+        &lt;speed&gt;3&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 15:25:03&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1df109272fd0a090e0f497eef699b6aa&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 15:25:03&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;3&lt;/system_strain_threshold&gt;
+        &lt;type&gt;wheeled_tracked&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:27:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b35417062f646c90e0f497eef699b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001035</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b35417062f646c90e0f497eef699b606</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:27:52</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

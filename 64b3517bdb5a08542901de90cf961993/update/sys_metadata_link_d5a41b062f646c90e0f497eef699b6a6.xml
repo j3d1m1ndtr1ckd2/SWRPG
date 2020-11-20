@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e06a52632f58a090e0f497eef699b6a7</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;2&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Recently developed as a joint venture between Incom and the Rebel Alliance&amp;#39;s Underground Engineering cell, the A-wing light interceptor is the fastest and currently the rarest fighter in the Alliance arsenal. The brainchild of General Jan Dodonna and former KSE engineer Walex Blissex, the RZ- 1 is an evolution of two previous fighters: the R-22 Spearhead and the Clone Warsera&lt;/div&gt;
+&lt;div&gt;Delta-7 light interceptor. It is a lightweight, lightly armed fighter capable of incredible straight-line speed as well as superior maneuverability, and it is every bit the match for the fast-moving Imperial fighters like the TIE/in and TIE/d. In practice, the A-wing is deployed to engage Imperial fast movers with its laser cannons and to harry smaller capital ships with concussion missiles&lt;/div&gt;
+&lt;div&gt;while heavier fighters such as X-wings and B-wings deal with the larger Imperial fightercraft. It also makes for a very competent scout vessel and is equipped with data recording equipment and a powerful electronics countermeasures suite.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Dubbed &amp;#34;the missile with a man in it&amp;#34; by test pilots, the RZ-1 mounts twin Novaldex J-77 sublight engines, which produce enough thrust to move a ship many times the A-wing’s mass.  Coupled with a revolutionary hull pattern that combines inherently unstable design characteristics with a powerful flight control system, this tiny fighter can outpace and outmaneuver even&lt;/div&gt;
+&lt;div&gt;the quickest enemy fighters. All of this speed and maneuverability comes at a cost, however. The ship is incredibly unforgiving to fly and requires intense concentration and high levels of prowess on the part of its pilots. It is also the most fragile fighter in the arsenal, having been designed to rely on its speed and agility to protect it rather than armor plating or heavy-duty hull fittings.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;3&lt;/handling&gt;
+        &lt;hard_points&gt;1&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;6&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Starfighter/RZ-1 A-Wing&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001053&lt;/number&gt;
+        &lt;price&gt;150000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;1&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;medium&lt;/sensor_range&gt;
+        &lt;ship_name&gt;RZ-1 A-Wing Light Interceptor&lt;/ship_name&gt;
+        &lt;silhouette&gt;3&lt;/silhouette&gt;
+        &lt;speed&gt;6&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 21:52:03&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e06a52632f58a090e0f497eef699b6a7&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 21:52:22&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;6&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:29:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d5a41b062f646c90e0f497eef699b6a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001053</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_d5a41b062f646c90e0f497eef699b6a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:29:04</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

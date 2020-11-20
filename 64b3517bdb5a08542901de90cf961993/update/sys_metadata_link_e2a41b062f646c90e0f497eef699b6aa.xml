@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e71cabcf2f1c2090e0f497eef699b6dc</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;2&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Corellian Engineering&amp;#39;s JumpMaster-class long range scouts are small, one-person vessels designed for autonomous, long-range scouting and reconnaissance. Relatively fast and agile, JumpMasters have a flat, roughly crescent-shaped hull packed with the ship&amp;#39;s powerful and sensitive sensor systems. An off-set, cylindrical pod located to starboard of the ship&amp;#39;s centerline houses the cockpit, the pilot&amp;#39;s small and spartan quarters, and the ship&amp;#39;s power generators and drive system. Lightly armored and carrying only a light laser cannon as armament, JumpMasters rely on their speed and sensors to avoid trouble. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Thanks to their powerful sensor suite, JumpMasters serve in many planetary militaries as picket ships and early warning patrol craft within star systems. Their primary user, however, is the galaxy&amp;#39;s Civilian Astrogation Corps, the volunteer group of explorers, astrogators, and cartographers responsible for keeping hyperspace navigation charts up to date.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;1&lt;/handling&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;14&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Patrol Boat/JumpMaster&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes/&gt;
+        &lt;number&gt;VEH0001014&lt;/number&gt;
+        &lt;price&gt;55000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;3&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;sensor_range&gt;extreme&lt;/sensor_range&gt;
+        &lt;ship_name&gt;JM-5000 JumpMaster Long Range Scout&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-10 14:32:16&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e71cabcf2f1c2090e0f497eef699b6dc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-10 14:32:16&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;8&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:29:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e2a41b062f646c90e0f497eef699b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001014</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_e2a41b062f646c90e0f497eef699b6aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:29:09</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

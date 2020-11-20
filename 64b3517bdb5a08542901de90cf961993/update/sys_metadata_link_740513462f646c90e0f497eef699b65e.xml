@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3e9d52a32f58a090e0f497eef699b682</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;0&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;0&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;An uncommon sight within the Imperial Navy fighter community, the TIE/sa is a dedicated bomber and attack fighter equivalent to the Alliance’s Y-wing and B-wing fighters. Slow and relatively sturdy for a TIE series fighter, TIE bombers feature a twin-boom hull design that contains the pilot and all the ship&amp;#39;s control systems in the starboard pod and a multi-purpose launcher and ordnance magazine in the port pod. Coupled with their elongated form and their canted solar collectors, they are unmistakable in a formation, a trait that is both a blessing and a curse to their pilots. While their shape announces them as the heavy hitters and lets their enemies know that the gloves are, in fact, off, it also makes them incredibly conspicuous, standing out as primary targets for enemy interceptors and anti-fighter weapons.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Despite their slow speed, lack of agility, and reliance on faster fighters to escort them to their targets, TIE bombers are incredibly effective attack craft. Their ability to carry numerous types of ordnance makes them quite versatile, and although not designed as such, they can pose quite a threat to enemy fighters, especially as their slow speed allows them to out-maneuver faster ships. Their proton bombs are death to even the most well-armored light capital ship or space station; it’s a rare planetary fortification that can stand up to a concentrated bombing campaign by these fighters.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;0&lt;/handling&gt;
+        &lt;hard_points&gt;0&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;9&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Starfighter/TIE Bomber&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;div&gt;Ventral-mounted proton bomb release chute—can only be used against surface targets (Fire Arc Down; Damage 7; Critical 2; Range [Close] ; Blast 7, Breach 8, Limited Ammo 16).&lt;/div&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001056&lt;/number&gt;
+        &lt;price&gt;110000&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;sensor_range&gt;close&lt;/sensor_range&gt;
+        &lt;ship_name&gt;TIE/SA Tactical Bomber&lt;/ship_name&gt;
+        &lt;silhouette&gt;3&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 22:06:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;3e9d52a32f58a090e0f497eef699b682&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 22:08:00&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;8&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:30:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>740513462f646c90e0f497eef699b65e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001056</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_740513462f646c90e0f497eef699b65e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:30:40</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

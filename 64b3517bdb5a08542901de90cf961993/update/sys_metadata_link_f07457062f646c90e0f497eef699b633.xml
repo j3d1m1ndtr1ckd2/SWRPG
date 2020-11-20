@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>543ad5af2f14a090e0f497eef699b684</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;2&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;When released during the final years of. the Old Republic, Vangaard Industries’ Pathfinder-class scout ship was considered on the bleeding edge of star- ship technology. A long, narrow vessel with a sharply pointed bow, steeply raked, aft-mounted stabilizers, and a planform like an arrow, the Pathfinder was designed as a long-range scout and courier vessel. The Pathfinder-class’ reputation as a high-tech ship comes from both its advanced sensor suite and the fact that it was one of the first mass-produced vessels of its size to feature hyperspace capabilities. Essentially oversized starfighters, Pathfinder scout ships carry two sentients seated abreast in a small, cramped, but well-laid-out cockpit. Directly abaft the cockpit is a small area with a refresher, a bunk, and a small storage area for ship’s provisions and emergency supplies. Everything abaft the cockpit and rest area is packed with sophisticated long-range sensors, shield generators, and the powerful twin drive engines.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Lightly armed and armored, Pathfinders have defensive armament comprising a single turret-mounted light laser cannon atop the hull just abaft of the cockpit. The shield generators are unique to the ship class, and the armor is typical for a light scout vessel. At the time of their introduction, Pathfinders were considered among the fastest scout vessels on the market, among other accolades. Their speed, handling, and powerful sensor suite, while relatively commonplace today, help maintain these tiny ships’ popularity and drive their sales all these decades after their release.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;1&lt;/handling&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;16&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Scout Ship/Pathfinder&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;p&gt;Dorsal turret mounted light laser cannon.&lt;/p&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001042&lt;/number&gt;
+        &lt;price&gt;45000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;3&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;extreme&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Pathfinder Scout Ship&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-11 17:12:40&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;543ad5af2f14a090e0f497eef699b684&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-11-11 17:14:16&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;10&lt;/system_strain_threshold&gt;
+        &lt;type&gt;starfighter_patrol_boat&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 20:28:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f07457062f646c90e0f497eef699b633</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001042</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f07457062f646c90e0f497eef699b633</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 20:28:12</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

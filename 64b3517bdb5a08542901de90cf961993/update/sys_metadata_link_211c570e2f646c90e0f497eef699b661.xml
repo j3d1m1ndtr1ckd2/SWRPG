@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>af4d9a272f58a090e0f497eef699b651</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_vehicle_gear">
+    <x_176383_star_wars_vehicle_gear action="INSERT_OR_UPDATE">
+        <gear display_value="Laser Cannon (Medium)">dfb175cb2f142090e0f497eef699b6af</gear>
+        <quantity>4</quantity>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-11 22:02:41</sys_created_on>
+        <sys_id>af4d9a272f58a090e0f497eef699b651</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-11 22:02:41</sys_updated_on>
+        <vehicle display_value="VEH0001055">b05c56632f58a090e0f497eef699b620</vehicle>
+    </x_176383_star_wars_vehicle_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-19 21:01:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>211c570e2f646c90e0f497eef699b661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2020-11-11 14:02:41</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_211c570e2f646c90e0f497eef699b661</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-19 21:01:35</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -3,28 +3,42 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
-            <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2020-11-14 22:35:59</sys_created_on>
-            <sys_id>7bb146ac2fa8a490e0f497eef699b64a</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-23 19:36:24</sys_created_on>
+            <sys_id>78fe63db2fa8a0d0e0f497eef699b6c3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_campaign" sys_domain="global" view="Default view">73b1ca6c2fa8a490e0f497eef699b61c</sys_ui_section>
-            <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2020-11-14 22:35:59</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-23 19:36:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>1</position>
-            <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2020-11-14 22:35:59</sys_created_on>
-            <sys_id>ffb146ac2fa8a490e0f497eef699b64a</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-23 19:36:24</sys_created_on>
+            <sys_id>34fe63db2fa8a0d0e0f497eef699b6c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_campaign" sys_domain="global" view="Default view">73b1ca6c2fa8a490e0f497eef699b61c</sys_ui_section>
-            <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2020-11-14 22:35:59</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-23 19:36:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>game_master</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-11-23 19:36:24</sys_created_on>
+            <sys_id>b8fe63db2fa8a0d0e0f497eef699b6c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_campaign" sys_domain="global" view="Default view">73b1ca6c2fa8a490e0f497eef699b61c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-11-23 19:36:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -260,6 +260,14 @@
 					} else{
 						container.style.width = '40%';
 					}
+			} else if(section == 'species'){
+					var container = document.getElementById('showSpeciesInfo');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '90%';
+					} else{
+						container.style.width = '40%';
+					}
 			}
 		}
 	}
@@ -483,6 +491,8 @@
 			container = document.getElementById('addNewSpecializationsContainer');
 		} else if(section == 'gearInfo'){
 			container = document.getElementById('gearInfoContainer');
+		} else if(section == 'species'){
+			container = document.getElementById('showSpeciesInfo');
 		}
 		
 		container.style.width = null;
@@ -1104,7 +1114,7 @@
 	margin-bottom:40px;
 }
 
-#careerName, .specialization-name{
+#careerName, .specialization-name, #speciesName{
 	font-size:24px;
   margin-bottom:20px;
   text-align:center;
@@ -1388,6 +1398,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 		data.character = {
 			name: charGR.name + '' || 'Name your character',
 			species: charGR.species.getDisplayValue(),
+			speciesDescription: charGR.species.description + '',
 			career: charGR.career.getDisplayValue(),
 			careerID: charGR.career.sys_id + '',
 			specializationIDs: charGR.career_specializations.toString(),
@@ -1845,13 +1856,13 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			data.character.strainCurrentInt = parseInt(charGR.strain_current);
 			data.character.strainCurrentString = charGR.strain_current + '';
 		} else if(input.action == 'saveDefense'){
-			charGR.ranged_defense = input.ranged;
-			charGR.melee_defense = input.melee;
+			charGR.defense_ranged = input.ranged;
+			charGR.defense_melee = input.melee;
 			charGR.update();
-			data.character.rangedDefenseInt = parseInt(charGR.ranged_defense);
-			data.character.rangedDefenseString = charGR.ranged_defense + '';
-			data.character.meleeDefenseInt = parseInt(charGR.melee_defense);
-			data.character.meleeDefenseString = charGR.melee_defense + '';				
+			data.character.rangedDefenseInt = parseInt(charGR.defense_ranged);
+			data.character.rangedDefenseString = charGR.defense_ranged + '';
+			data.character.meleeDefenseInt = parseInt(charGR.defense_melee);
+			data.character.meleeDefenseString = charGR.defense_melee + '';				
 		} else if(input.action == 'saveCharacteristics'){
 			charGR.brawn = input.brawn;
 			charGR.agility = input.agility;
@@ -2018,7 +2029,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>768</sys_mod_count>
+        <sys_mod_count>772</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2026,7 +2037,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 19:30:56</sys_updated_on>
+        <sys_updated_on>2020-11-29 16:24:42</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2038,7 +2049,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     <!-- name, species, career, XP -->
   	<span class="col-xs-12 col-md-8 name" ng-click="editCharacter('name')">{{data.character.name}}</span>
     <span class="col-xs-12 col-md-8 star-wars-text" ng-click="editCharacter('name')">{{data.character.name}}</span>
-    <span class="col-xs-12 col-md-8 id-info"><text id="species">Species: {{data.character.species}}</text><br> Career:<text id="career">{{data.character.career}}</text> <i class="far fa-info-circle" ng-click="editCharacter('career')"></i><br> Specializations:<text id="specializations">{{data.character.specializationNames}}</text> <i class="far fa-info-circle" ng-click="editCharacter('specializations')"></i><br><text id="buyNewSpecializations" ng-click="editCharacter('newSpecs')"><i class="fab fa-old-republic"></i> Buy New Specializations</text></span>
+    <span class="col-xs-12 col-md-8 id-info"><text id="species">Species: {{data.character.species}}</text> <i class="far fa-info-circle" ng-click="editCharacter('species')"></i><br> Career:<text id="career">{{data.character.career}}</text> <i class="far fa-info-circle" ng-click="editCharacter('career')"></i><br> Specializations:<text id="specializations">{{data.character.specializationNames}}</text> <i class="far fa-info-circle" ng-click="editCharacter('specializations')"></i><br><text id="buyNewSpecializations" ng-click="editCharacter('newSpecs')"><i class="fab fa-old-republic"></i> Buy New Specializations</text></span>
     <span class="col-xs-12 col-md-4 xp-info-container">
       <span class="col-xs-12 mobile-nav-container xp-info" id="xpInfo">
         <span class="col-xs-6 total-xp">
@@ -2507,6 +2518,14 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
             <button id="saveEditsButton" ng-click="saveEdits('description')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
+      </span>
+    </span>
+    <!-- show species info -->
+    <span class="edit-character" id="showSpeciesInfo">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('species')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12">
+        <span class="col-xs-12" id="speciesName">{{data.character.species}}<br><text class="star-wars-text">{{data.character.species}}</text></span>
+        <span class="col-xs-12" id="speciesDescription" ng-bind-html="data.character.speciesDescription"></span>
       </span>
     </span>
     <!-- show career info -->

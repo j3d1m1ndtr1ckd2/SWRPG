@@ -27,7 +27,23 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-data.userID = gs.getUserID();
+	data.userID = gs.getUserID();
+	var myChars = new GlideRecord('x_176383_star_wars_character');
+	myChars.addQuery('player', data.userID).addCondition('campaign', '!=', '');
+	myChars.query();
+	var myCampaigns = [];
+	while(myChars.next()){
+		myCampaigns.push(myChars.campaign + '');
+	}
+	
+	var sessions = new GlideRecord('x_176383_star_wars_game_session');
+	//sessions.addQuery('campaign', 'IN', myCampaigns.join(',')).addCondition('active', true).addOrCondition('campaign.game_master', data.userID);
+	sessions.addQuery('campaign.game_master', data.userID).addOrCondition('campaign', 'IN', myCampaigns.join(','));
+	sessions.addActiveQuery();
+	sessions.query();
+	if(sessions.next()){
+		data.sessionLink = '?id=star_wars_game_session&sessionID=' + sessions.sys_id;
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -35,7 +51,7 @@ data.userID = gs.getUserID();
         <sys_created_on>2020-10-28 03:14:07</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ec41e322f88ac10e0f497eef699b6fb</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Star Wars Home</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -43,13 +59,19 @@ data.userID = gs.getUserID();
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_9ec41e322f88ac10e0f497eef699b6fb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-28 03:44:35</sys_updated_on>
+        <sys_updated_on>2020-11-23 20:02:45</sys_updated_on>
         <template><![CDATA[<div class="col-xs-12 home-container">
 	<!-- add header here -->
   <span class="col-xs-12 col-md-3 my-characters-button">
     <a href="?id=star_wars_my_characters">
       <span class="col-xs-12 link-label">My Characters</span>
       <span class="col-xs-12 sw-link-label star-wars-text">My Characters</span>
+    </a>
+  </span>
+  <span ng-if="data.sessionLink" class="col-xs-12 col-md-3 active-session-button">
+    <a href="{{data.sessionLink}}">
+      <span class="col-xs-12 link-label">Active Session</span>
+      <span class="col-xs-12 sw-link-label star-wars-text">Active Session</span>
     </a>
   </span>
 </div>]]></template>

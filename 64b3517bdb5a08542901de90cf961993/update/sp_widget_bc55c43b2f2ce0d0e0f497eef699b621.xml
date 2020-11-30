@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope,spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.addDie = function(die){
+		var tempDie = {
+			'name': die.name,
+			'icon': die.icon,
+			'max': die.max
+		};
+		$scope.data.dicePool.push(tempDie);
+	}
+	
+	$scope.removeDie = function(die){
+		for(var i = 0; i < $scope.data.dicePool.length; i++){
+			if($scope.data.dicePool[i].name == die.name){
+				$scope.data.dicePool.splice(i, 1);
+				break;
+			}
+		}
+	}
+	
+	$scope.clearPool = function(){
+		$scope.data.dicePool = [];
+		$scope.data.displayResults = [];
+	}
+	
+	$scope.roll = function(){
+		try{
+			var results = [];
+			var tempArray = [];
+			var resultString = '';
+			for(var i = 0; i < $scope.data.dicePool.length; i++){
+				var roll = Math.floor((Math.random() * parseInt($scope.data.dicePool[i].max)) + 1);
+				for(var j = 0; j < $scope.data.dice.length; j++){
+					if($scope.data.dice[j].name == $scope.data.dicePool[i].name){
+						resultString += ',' + $scope.data.dice[j][roll.toString()];
+					}
+				}
+			}
+			results = resultString.split(',');
+			var successes = 0;
+			var failures = 0;
+			var advantage = 0;
+			var threat = 0;
+			var triumph = 0;
+			var despair = 0;
+			var dark = 0;
+			var light = 0;
+			for(var k = 0; k < results.length; k++){
+				switch(results[k]){
+					case 'success':
+					successes++;
+					break;
+						
+					case 'advantage':
+					advantage++;
+					break;
+						
+					case 'triumph':
+					successes++;
+					triumph++;
+					break;
+						
+					case 'failure':
+					failures++;
+					break;
+						
+					case 'threat':
+					threat++;
+					break;
+						
+					case 'despair':
+					failures++;
+					despair++;
+					break;
+						
+					case 'dark':
+					dark++;
+					break;
+						
+					case 'light':
+					light++;
+					break;
+						
+					default:
+						break;
+				}
+			}
+			
+			$scope.data.displayResults = [];
+			if((successes - failures) > 0){
+				var drObj = {
+					'name': 'success',
+					'result': (successes - failures) + '',
+					'img': 'sw_rpg_success.png'
+				};
+				$scope.data.displayResults.push(drObj);
+			} else if((successes - failures) < 0){
+				drObj = {
+					'name': 'failure',
+					'result': (failures - successes) + '',
+					'img': 'sw_rpg_failure.png'
+				};
+				$scope.data.displayResults.push(drObj);
+			}
+			
+			if((advantage - threat) > 0){
+				var drObj = {
+					'name': 'advantage',
+					'result': (advantage - threat) + '',
+					'img': 'sw_rpg_advantage.png'
+				};
+				$scope.data.displayResults.push(drObj);
+			} else if((advantage - threat) < 0){
+				var drObj = {
+					'name': 'threat',
+					'result': (threat - advantage) + '',
+					'img': 'sw_rpg_threat.png'
+				};
+				$scope.data.displayResults.push(drObj);
+			}
+			
+			if(triumph > 0){
+				var drObj = {
+					'name': 'triumph',
+					'result': triumph + '',
+					'img': 'sw_rpg_triumph.png'
+				};
+				$scope.data.displayResults.push(drObj);
+			}
+			
+			if(despair > 0){
+				var drObj = {
+					'name': 'despair',
+					'result': despair + '',
+					'img': 'sw_rpg_despair.png'
+				};
+				$scope.data.displayResults.push(drObj);
+			}
+			
+			if(dark > 0){
+				var drObj = {
+					'name': 'dark',
+					'result': dark + ''
+				}
+				$scope.data.displayResults.push(drObj);
+			}
+			
+			if(light > 0){
+				var drObj = {
+					'name': 'light',
+					'result': light + ''
+				};
+				$scope.data.displayResults.push(drObj);
+			}
+		} catch(e){
+			alert(e.message);
+		}
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dice-roller-container{
+	margin-top:40px;
+  background-color:black;
+  border-radius:20px;
+  border:1px groove #e21414;
+  box-shadow: 0px 0px 8px 5px darkgray;
+  padding-bottom:50px;
+  padding-top:20px;
+}
+
+.sw-input,.dice-pool-button{
+	background:transparent;
+  border:1px groove #e21414;
+  border-radius:20px;
+  padding:5px 15px 5px 15px;
+  font-size:16px;
+}
+
+.dice-legend{
+	text-align:center;
+  margin-top:20px;
+  margin-bottom:40px;
+}
+
+.dice-pool-results-container{
+  margin-top:20px;
+	text-align:center;
+  font-size:28px;
+}
+
+.dice-pool-container{
+	font-size:28px;
+  font-weight:bold;
+  margin-top:40px;
+}
+
+.dice-header{
+	text-align:center;
+  font-size:32px;
+  font-weight:bold;
+}
+
+.dice{
+	font-size:22px;
+  text-align:center;
+}
+
+.dice-icon{
+	font-size:28px;
+}
+
+#force,.force{
+	color:white;
+}
+
+#challenge,.challenge{
+	color:red;
+}
+
+#proficiency,.proficiency{
+	color:yellow;
+}
+
+#difficulty,.difficulty{
+	color:purple;
+}
+
+#ability,.ability{
+	color:green;
+}
+
+#setback,.setback{
+	color:black;
+  text-shadow:0px 0px white;
+}
+
+#boost,.boost{
+	color:lightblue;
+}
+
+.dice-pool-buttons-container,.dice-pool-container{
+	text-align:center;
+}
+
+.dice-pool-buttons-container{
+	margin-top:20px;
+}
+
+@media only screen and (min-width:900px){
+	.split-7{
+		width:14%;
+	}
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_rpg_dice_roller</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars RPG Dice Roller</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	//assign a number to a result or set of results.
+	data.dicePool = [];
+	
+	data.dice = [];
+	var boostDie = {
+		'name': 'boost',
+		'1': 'blank',
+		'2': 'blank',
+		'3': 'success',
+		'4': 'success,advantage',
+		'5': 'advantage,advantage',
+		'6': 'advantage',
+		'icon': 'fas fa-dice-d6',
+		'max': 6
+	};
+	data.dice.push(boostDie);
+	
+	var abilityDie = {
+		'name': 'ability',
+		'1': 'blank',
+		'2': 'success',
+		'3': 'success',
+		'4': 'success,success',
+		'5': 'advantage',
+		'6': 'advantage',
+		'7': 'success,advantage',
+		'8': 'advantage,advantage',
+		'icon': 'fas fa-dice-d8',
+		'max': 8
+	};
+	data.dice.push(abilityDie);
+	
+	var proficiencyDie = {
+		'name': 'proficiency',
+		'1': 'blank',
+		'2': 'success',
+		'3': 'success',
+		'4': 'success,success',
+		'5': 'success,success',
+		'6': 'advantage',
+		'7': 'success,advantage',
+		'8': 'success,advantage',
+		'9': 'success,advantage',
+		'10': 'advantage,advantage',
+		'11': 'advantage,advantage',
+		'12': 'triumph',
+		'icon': 'fas fa-dice-d12',
+		'max': 12
+	};
+	data.dice.push(proficiencyDie);
+	
+	var setbackDie = {
+		'name': 'setback',
+		'1': 'blank',
+		'2': 'blank',
+		'3': 'failure',
+		'4': 'failure',
+		'5': 'threat',
+		'6': 'threat',
+		'icon': 'fas fa-dice-d6',
+		'max': 6
+	};
+	data.dice.push(setbackDie);
+	
+	var difficultyDie = {
+		'name': 'difficulty',
+		'1': 'blank',
+		'2': 'failure',
+		'3': 'failure,failure',
+		'4': 'threat',
+		'5': 'threat',
+		'6': 'threat',
+		'7': 'threat,threat',
+		'8': 'failure,threat',
+		'icon': 'fas fa-dice-d8',
+		'max': 8
+	};
+	data.dice.push(difficultyDie);
+	
+	var challengeDie = {
+		'name': 'challenge',
+		'1': 'blank',
+		'2': 'failure',
+		'3': 'failure',
+		'4': 'failure,failure',
+		'5': 'failure,failure',
+		'6': 'threat',
+		'7': 'threat',
+		'8': 'failure,threat',
+		'9': 'failure,threat',
+		'10': 'threat,threat',
+		'11': 'threat,threat',
+		'12': 'despair',
+		'icon': 'fas fa-dice-d12',
+		'max': 12
+	};
+	data.dice.push(challengeDie);
+	
+	var forceDie = {
+		'name': 'force',
+		'1': 'dark',
+		'2': 'dark',
+		'3': 'dark',
+		'4': 'dark',
+		'5': 'dark',
+		'6': 'dark',
+		'7': 'dark,dark',
+		'8': 'light',
+		'9': 'light',
+		'10': 'light,light',
+		'11': 'light,light',
+		'12': 'light,light',
+		'icon': 'fas fa-dice-d12',
+		'max': 12
+	};
+	data.dice.push(forceDie);
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-24 15:52:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bc55c43b2f2ce0d0e0f497eef699b621</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_name>Star Wars RPG Dice Roller</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_bc55c43b2f2ce0d0e0f497eef699b621</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-29 16:43:12</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 col-md-8 col-md-offset-2 dice-roller-container">
+  <div class="col-xs-12 dice-header">Holo Dice<br><text class="star-wars-text">Holo Dice</text></div>
+  <div class="col-xs-12 dice-legend">
+    <span class="col-xs-4 col-md-2">
+      <img src="sw_rpg_success.png" height="30px" width="30px"/> Success
+    </span>
+    <span class="col-xs-4 col-md-2">
+      <img src="sw_rpg_advantage.png" height="30px" width="30px"/> Advantage
+    </span>
+    <span class="col-xs-4 col-md-2">
+      <img src="sw_rpg_triumph.png" height="30px" width="30px"/> Triumph
+    </span>
+    <span class="col-xs-4 col-md-2">
+      <img src="sw_rpg_failure.png" height="30px" width="30px"/> Failure
+    </span>
+    <span class="col-xs-4 col-md-2">
+      <img src="sw_rpg_threat.png" height="30px" width="30px"/> Threat
+    </span>
+    <span class="col-xs-4 col-md-2">
+      <img src="sw_rpg_despair.png" height="30px" width="30px"/> Despair
+    </span>
+  </div>
+  <div class="col-xs-12 dice-roller-body">
+    <span class="col-xs-4 split-7 dice" ng-repeat="die in data.dice">
+      <span class="col-xs-12 dice-icon"><i id="{{die.name}}" class="{{die.icon}}"></i></span>
+      <span class="col-xs-12 dice-quantity">
+        <button class="sw-input" ng-click="addDie(die)">Add</button>
+      </span>
+    </span>
+  </div>
+  <div class="col-xs-12 dice-pool-container">
+    <div class="col-xs-12 dice-pool-header">Dice Pool<br><text class="star-wars-text">Dice Pool</text></div>
+    <div class="col-xs-12 dice-pool-body">
+      <span class="dice-icon" ng-repeat="d in data.dicePool">
+        <i class="{{d.icon}} {{d.name}}" ng-click="removeDie(d)"></i>
+      </span>
+    </div>
+  </div>
+  <div class="col-xs-12 dice-pool-buttons-container">
+    <button class="dice-pool-button" ng-click="clearPool()">Clear</button>
+    <button class="dice-pool-button" ng-click="roll()">Roll</button>
+  </div>
+  <div class="col-xs-12 dice-pool-results-container">
+    <span ng-repeat="result in data.displayResults">
+      {{result.result}} <img ng-if="result.name != 'dark' && result.name != 'light'" src="{{result.img}}" height="30px" width="30px"/> <i ng-if="result.name == 'dark'" class="fas fa-circle" style="text-shadow:0px 0px 5px white;color:black;"></i><i ng-if="result.name == 'light'" class="fas fa-circle" style="color:white;"></i>
+    </span>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

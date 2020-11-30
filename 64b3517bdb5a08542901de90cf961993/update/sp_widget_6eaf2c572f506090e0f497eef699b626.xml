@@ -17,6 +17,66 @@
 			}
 			break;
 				
+			case 'speed':
+			var container = document.getElementById('editVehicleSpeed');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
+			case 'handling':
+			var container = document.getElementById('editVehicleHandling');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
+			case 'armor':
+			var container = document.getElementById('editVehicleArmor');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
+			case 'hullTrauma':
+			var container = document.getElementById('editVehicleHullTrauma');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
+			case 'systemStrain':
+			var container = document.getElementById('editVehicleSystemStrain');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
+			case 'defense':
+			var container = document.getElementById('editVehicleDefense');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
 			default:
 				break;
 		}
@@ -27,6 +87,30 @@
 		switch(section){
 			case 'name':
 			container = document.getElementById('editVehicleName');
+			break;
+				
+			case 'speed':
+			container = document.getElementById('editVehicleSpeed');
+			break;
+				
+			case 'handling':
+			container = document.getElementById('editVehicleHandling');
+			break;
+				
+			case 'armor':
+			container = document.getElementById('editVehicleArmor');
+			break;
+				
+			case 'hullTrauma':
+			container = document.getElementById('editVehicleHullTrauma');
+			break;
+				
+			case 'systemStrain':
+			container = document.getElementById('editVehicleSystemStrain');
+			break;
+				
+			case 'defense':
+			container = document.getElementById('editVehicleDefense');
 			break;
 				
 			default:
@@ -45,6 +129,63 @@
 				c.server.refresh();
 				$scope.closeEditContainer('name');
 			});
+			break;
+				
+			case 'speed':
+			var speed = parseInt(document.getElementById('vehicleInputSpeed').value);
+			c.server.get({action: 'saveSpeed', speed: speed}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('speed');
+			});
+			break;
+				
+			case 'handling':
+			var handling = parseInt(document.getElementById('vehicleInputHandling').value);
+			c.server.get({action: 'saveHandling', handling: handling}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('handling');
+			});
+			break;
+				
+			case 'armor':
+			var armor = parseInt(document.getElementById('vehicleInputArmor').value);
+			c.server.get({action: 'saveArmor', armor: armor}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('armor');
+			});
+			break;
+				
+			case 'hullTrauma':
+			var threshold = parseInt(document.getElementById('vehicleInputHullTraumaThreshold').value);
+			var current = parseInt(document.getElementById('vehicleInputHullTraumaCurrent').value);
+			c.server.get({action: 'saveHullTrauma', threshold: threshold, current: current}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('hullTrauma');
+			});
+			break;
+				
+			case 'systemStrain':
+			var threshold = parseInt(document.getElementById('vehicleInputSystemStrainThreshold').value);
+			var current = parseInt(document.getElementById('vehicleInputSystemStrainCurrent').value);
+			c.server.get({action: 'saveSystemStrain', threshold: threshold, current: current}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('systemStrain');
+			});
+			break;
+				
+			case 'defense':
+			var fore = parseInt(document.getElementById('vehicleInputDefenseFore').value);
+			var starboard = parseInt(document.getElementById('vehicleInputDefenseStarboard').value);
+			var aft = parseInt(document.getElementById('vehicleInputDefenseAft').value);
+			var port = parseInt(document.getElementById('vehicleInputDefensePort').value);
+			c.server.get({action: 'saveDefense', fore: fore, starboard: starboard, aft: aft, port: port}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('defense');
+			});
+			break;
+				
+			default:
+				break;
 		}
 	}
 };]]></client_script>
@@ -174,6 +315,7 @@ label,.sw-input{
   background-color:black;
   border-radius:20px;
   margin-bottom:10px;
+  text-align:center;
 }
 
 .fa-starship-freighter{
@@ -324,7 +466,7 @@ label,.sw-input{
 var vehicleID = $sp.getParameter('vehicleID');
 var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		vehicleGR.get(vehicleID);
-	data.vehicle = {
+	/*data.vehicle = {
 		pilot: vehicleGR.character.name + '',
 		nickName: vehicleGR.name + '' || 'Name your ship',
 		shipName: vehicleGR.vehicle.ship_name + '',
@@ -347,7 +489,33 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		description: vehicleGR.vehicle.description + '',
 		notes: vehicleGR.vehicle.notes + '',
 		vehicleSysId: vehicleGR.vehicle.sys_id + ''
+	};*/
+	
+	data.vehicle = {
+		pilot: vehicleGR.character.name + '',
+		nickName: vehicleGR.name + '' || 'Name your ship',
+		shipName: vehicleGR.vehicle.ship_name + '',
+		type: vehicleGR.vehicle.type.getDisplayValue(),
+		silhouette: vehicleGR.vehicle.silhouette + '',
+		hp: vehicleGR.vehicle.hard_points + '',
+		armor: vehicleGR.armor + '',
+		speed: vehicleGR.speed + '',
+		handling: vehicleGR.handling + '',
+		htThreshold: vehicleGR.hull_trauma_threshold + '',
+		ssThreshold: vehicleGR.system_strain_threshold + '',
+		htCurrent: vehicleGR.hull_trauma_current + '',
+		ssCurrent: vehicleGR.system_strain_current + '',
+		defenseFore: vehicleGR.defense_fore + '',
+		defenseAft: vehicleGR.defense_aft + '',
+		defensePort: vehicleGR.defense_port + '',
+		defenseStarboard: vehicleGR.defense_starboard + '',
+		maximumAltitude: vehicleGR.vehicle.maximum_altitude + '',
+		sensorRange: vehicleGR.vehicle.sensor_range + '',
+		description: vehicleGR.vehicle.description + '',
+		notes: vehicleGR.vehicle.notes + '',
+		vehicleSysId: vehicleGR.vehicle.sys_id + ''
 	};
+	
 	if(vehicleGR.vehicle.primary_hyperdrive_class != ''){
 		data.vehicle.hyperdrive = 'Primary Class: ' + vehicleGR.vehicle.primary_hyperdrive_class + '; Backup Class: ' + vehicleGR.vehicle.backup_hyperdrive_class;
 	} else{
@@ -361,7 +529,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 	}
 	
 	var vehicleGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
-	vehicleGear.addQuery('vehicle', data.vehicle.vehicleSysId).addCondition();
+	vehicleGear.addQuery('vehicle', data.vehicle.vehicleSysId);
 	vehicleGear.orderBy('gear.name');
 	vehicleGear.query();
 	data.vehicleGear = [];
@@ -399,6 +567,41 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 			vehicleGR.update();
 			break;
 				
+			case 'saveSpeed':
+			vehicleGR.speed = input.speed;
+			vehicleGR.update();
+			break;
+				
+			case 'saveHandling':
+			vehicleGR.handling = input.handling;
+			vehicleGR.update();
+			break;
+				
+			case 'saveArmor':
+			vehicleGR.armor = input.armor;
+			vehicleGR.update();
+			break;
+				
+			case 'saveHullTrauma':
+			vehicleGR.hull_trauma_threshold = input.threshold;
+			vehicleGR.hull_trauma_current = input.current;
+			vehicleGR.update();
+			break;
+				
+			case 'saveSystemStrain':
+			vehicleGR.system_strain_threshold = input.threshold;
+			vehicleGR.system_strain_current = input.current;
+			vehicleGR.update();
+			break;
+				
+			case 'saveDefense':
+			vehicleGR.defense_fore = input.fore;
+			vehicleGR.defense_aft = input.aft;
+			vehicleGR.defense_starboard = input.starboard;
+			vehicleGR.defense_port = input.port;
+			vehicleGR.update();
+			break;
+				
 			default:
 				break;
 		}
@@ -410,7 +613,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>141</sys_mod_count>
+        <sys_mod_count>151</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -418,7 +621,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 18:56:03</sys_updated_on>
+        <sys_updated_on>2020-11-29 16:13:34</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -440,19 +643,19 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <span class="col-xs-12 vehicle-characteristic-label">Silhouette</span>
         <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.silhouette}}</span>
       </span>
-      <span class="col-xs-6 col-md-4 characteristic-container">
+      <span class="col-xs-6 col-md-4 characteristic-container" ng-click="editVehicle('speed')">
         <span class="col-xs-12 vehicle-characteristic-label">Speed</span>
         <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.speed}}</span>
       </span>
-      <span class="col-xs-6 col-md-4 characteristic-container">
+      <span class="col-xs-6 col-md-4 characteristic-container" ng-click="editVehicle('handling')">
         <span class="col-xs-12 vehicle-characteristic-label">Handling</span>
         <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.handling}}</span>
       </span>
-      <span class="col-xs-6 col-md-4 characteristic-container">
+      <span class="col-xs-6 col-md-4 characteristic-container" ng-click="editVehicle('armor')">
         <span class="col-xs-12 vehicle-characteristic-label vehicle-combat-charactistic-label">Armor</span>
         <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.armor}}</span>
       </span>
-      <span class="col-xs-6 col-md-4 characteristic-container">
+      <span class="col-xs-6 col-md-4 characteristic-container" ng-click="editVehicle('hullTrauma')">
         <span class="col-xs-12 vehicle-characteristic-label vehicle-combat-characteristic-label">Hull Trauma</span>
         <span class="col-xs-6 threshold-container">
         	<span class="col-xs-12 vehicle-characteristic">{{data.vehicle.htThreshold}}</span>
@@ -463,7 +666,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
           <span class="col-xs-12 vehicle-characteristic-label current">Current</span>
         </span>
       </span>
-      <span class="col-xs-6 col-md-4 characteristic-container">
+      <span class="col-xs-6 col-md-4 characteristic-container" ng-click="editVehicle('systemStrain')">
       <span class="col-xs-12 vehicle-characteristic-label vehicle-combat-characteristic-label">System Strain</span>
         <span class="col-xs-6 threshold-container">
         	<span class="col-xs-12 vehicle-characteristic">{{data.vehicle.ssThreshold}}</span>
@@ -475,7 +678,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         </span>
       </span>
     </span>
-    <span class="col-xs-12 col-md-5 defense-characteristics">
+    <span class="col-xs-12 col-md-5 defense-characteristics" ng-click="editVehicle('defense')">
       <span class="col-xs-12 defense-header"><text id="defenseHeaderText">Defense</text></span>
       <span class="defense" id="defenseFore">
         <text class="col-xs-12 defense-value">{{data.vehicle.defenseFore}}</text>
@@ -530,6 +733,94 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
   <span class="col-xs-12 save-edits">
   	<span class="col-xs-12 save-button-container">
     	<button class="save-edits-button" ng-click="saveEdits('name')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle speed -->
+<span class="edit-vehicle" id="editVehicleSpeed">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('speed')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleInputSpeed">Speed:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputSpeed" name="vehicleInputSpeed" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.speed}}"/>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('speed')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle handling -->
+<span class="edit-vehicle" id="editVehicleHandling">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('handling')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleInputHandling">Handling:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputHandling" name="vehicleInputHandling" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.handling}}"/>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('handling')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle armor -->
+<span class="edit-vehicle" id="editVehicleArmor">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('armor')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleInputArmor">Armor:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputArmor" name="vehicleInputArmor" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.armor}}"/>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('armor')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle hull trauma -->
+<span class="edit-vehicle" id="editVehicleHullTrauma">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('hullTrauma')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleInputHullTraumaThreshold">Hull Trauma Threshold:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputHullTraumaThreshold" name="vehicleInputHullTraumaThreshold" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.htThreshold}}"/><br>
+    <label for="vehicleInputHullTraumaCurrent">Hull Trauma Current:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputHullTraumaCurrent" name="vehicleInputHullTraumaCurrent" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.htCurrent}}">
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('hullTrauma')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle system strain -->
+<span class="edit-vehicle" id="editVehicleSystemStrain">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('systemStrain')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleInputSystemStrainThreshold">System Strain Threshold:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputSystemStrainThreshold" name="vehicleInputSystemStrainThreshold" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.ssThreshold}}"/><br>
+    <label for="vehicleInputSystemStrainCurrent">System Strain Current:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputSystemStrainCurrent" name="vehicleInputSystemStrainCurrent" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.ssCurrent}}">
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('systemStrain')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle defense -->
+<span class="edit-vehicle" id="editVehicleDefense">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('defense')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleInputDefenseFore">Defense Fore:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputDefenseFore" name="vehicleInputDefenseFore" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.defenseFore}}"/><br>
+    <label for="vehicleInputDefenseStarboard">Defense Starboard:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputDefenseStarboard" name="vehicleInputDefenseStarboard" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.defenseStarboard}}"/><br>
+    <label for="vehicleInputDefenseAft">Defense Aft:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputDefenseAft" name="vehicleInputDefenseAft" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.defenseAft}}"/><br>
+    <label for="vehicleInputDefensePort">Defense Port:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputDefensePort" name="vehicleInputDefensePort" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.defensePort}}"/><br>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('defense')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
     </span>
   </span>
 </span>]]></template>

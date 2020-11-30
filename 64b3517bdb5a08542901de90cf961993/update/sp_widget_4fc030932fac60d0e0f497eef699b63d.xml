@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.saveDestinyPoints = function(){
+		var light = parseInt(document.getElementById('lightSideInput').value);
+		var dark = parseInt(document.getElementById('darkSideInput').value);
+		c.server.get({action: 'startGame', light: light, dark: dark}).then(function(response){
+			c.server.refresh();
+		});
+	}
+	
+	$scope.useDestinyPoint = function(side){
+		c.server.get({action: 'useDestinyPoint', side: side}).then(function(response){
+			c.server.refresh();
+		});
+	}
+	
+	var q = "sys_id=" + $scope.data.sessionDetails.sysID;
+	spUtil.recordWatch($scope, "x_176383_star_wars_game_session", q, function(event, data) {
+   spUtil.update($scope);
+	});
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.sw-input{
+	border: 1px groove #e21414;
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align:center;
+  font-size:18px;
+}
+
+.game-session-body{
+	height:100%;
+}
+
+.widget-header{
+	font-size:42px;
+  margin-bottom:40px;
+  text-align:center;
+}
+
+.destiny-point-container{
+	font-size:32px;
+  text-align:center;
+  padding:80px 0px 80px 0px;
+  border-radius:200px;
+  min-height:320px;
+}
+
+.use-destiny-point-container{
+	margin-top:15px;
+}
+
+.lightside-button, .start-game-button{
+	background:transparent;
+  padding:5px 15px 5px 15px;
+  border-radius:20px;
+  border:1px groove #54f403;
+  box-shadow:0px 0px 6px 3px #54f403;
+}
+
+.darkside-button{
+	background:transparent;
+  padding:5px 15px 5px 15px;
+  border-radius:20px;
+  border:1px groove black;
+  box-shadow:0px 0px 6px 3px black;
+}
+
+.light-side{
+	background: #1933f4; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #1933f4 0%, #2989d8 41%, #6ea0c9 78%, #7db9e8 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #1933f4 0%,#2989d8 41%,#6ea0c9 78%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #1933f4 0%,#2989d8 41%,#6ea0c9 78%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.dark-side{
+	background: #e21414; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #e21414 0%, #e03333 41%, #e07474 78%, #e09d9d 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #e21414 0%,#e03333 41%,#e07474 78%,#e09d9d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #e21414 0%,#e03333 41%,#e07474 78%,#e09d9d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@media only screen and (min-width:762px) and (max-width: 1600px){
+  .destiny-point-container{
+  	padding:40px 0px 40px 0px;
+    min-width:250px;
+    min-height:250px;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_game_session</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Game Session</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.isGM = false;
+	var gameSession = $sp.getParameter('sessionID');
+	var sessionGR = new GlideRecord('x_176383_star_wars_game_session');
+	sessionGR.get(gameSession);
+	
+	if(sessionGR.campaign.game_master == gs.getUserID()){
+		data.isGM = true;
+	}
+	
+	data.sessionDetails = {
+		lightSide: sessionGR.light_side + '' || '0',
+		darkSide: sessionGR.dark_side + '' || '0',
+		sysID: gameSession
+	};
+	
+	if(data.sessionDetails.darkSide == '0' && data.sessionDetails.lightSide == '0'){
+		data.enterDestiny = true;
+	} else{
+		data.enterDestiny = false;
+	}
+	
+	if(input){
+		if(input.action == 'startGame'){
+			sessionGR.light_side = input.light;
+			sessionGR.dark_side = input.dark;
+			sessionGR.update();
+		} else if(input.action == 'useDestinyPoint'){
+			if(input.side == 'light'){
+				sessionGR.light_side--;
+				sessionGR.dark_side++;
+				sessionGR.update();
+			} else{
+				sessionGR.light_side++;
+				sessionGR.dark_side--;
+				sessionGR.update();
+			}
+		}	 
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-23 05:45:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4fc030932fac60d0e0f497eef699b63d</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>Star Wars Game Session</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_4fc030932fac60d0e0f497eef699b63d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-24 16:41:09</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 game-session-body">
+  <div class="col-xs-12 widget-header">Destiny Points<br><text class="star-wars-text">Destiny Points</text></div>
+	<div class="col-xs-12 col-md-2 col-md-offset-3 light-side destiny-point-container">
+    <span class="col-xs-12 destiny-points-header">Light Side:</span>
+    <span class="col-xs-12 destiny-points-value">{{data.sessionDetails.lightSide}}</span>
+    <span ng-if="data.enterDestiny" class="destiny-input">
+      <input class="sw-input" type="text" id="lightSideInput" name="lightSideInput" inputmode="numeric" pattern="[0-9]*">
+    </span>
+    <span ng-if="!data.enterDestiny && data.sessionDetails.lightSide != '0'" class="col-xs-12 use-destiny-point-container">
+      <button class="lightside-button" ng-click="useDestinyPoint('light')">Use</button>
+    </span>
+  </div>
+  <div class="col-xs-12 col-md-2 col-md-offset-2 dark-side destiny-point-container">
+    <span class="col-xs-12 destiny-points-header">Dark Side:</span>
+    <span class="col-xs-12 destiny-points-value">{{data.sessionDetails.darkSide}}</span>
+    <span ng-if="data.enterDestiny" class="destiny-input">
+      <input class="sw-input" type="text" id="darkSideInput" name="darkSideInput" inputmode="numeric" pattern="[0-9]*">
+    </span>
+    <span ng-if="!data.enterDestiny && data.sessionDetails.darkSide != '0' && data.isGM" class="col-xs-12 use-destiny-point-container">
+      <button class="darkside-button" ng-click="useDestinyPoint('dark')">Use</button>
+    </span>
+  </div>
+  <div ng-if="data.enterDestiny" class="col-xs-12 text-center start-game-button-container">
+    <button class="start-game-button" ng-click="saveDestinyPoints()">Start Game</button>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

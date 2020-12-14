@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.showSection = function(section){
+		switch(section){
+			case 'parent':
+			$scope.data.showSection = 'parent';
+			break;
+				
+			case 'Species':
+			$scope.data.showSection = 'species';
+			break;
+				
+			case 'Careers':
+			$scope.data.showSection = 'careers';
+			break;
+				
+			case 'Career Specializations':
+			$scope.data.showSection = 'careerSpecializations';
+			break;
+				
+			case 'Skills':
+			$scope.data.showSection = 'skills';
+			break;
+				
+			case 'Talents':
+			$scope.data.showSection = 'talents';
+			break;
+				
+			case 'Gear':
+			$scope.data.showSection = 'gear';
+			break;
+				
+			case 'Weapon Qualities':
+			$scope.data.showSection = 'weaponQualities';
+			break;
+				
+			case 'Vehicles':
+			$scope.data.showSection = 'vehicles';
+			break;
+				
+			case 'The Force':
+			$scope.data.showSection = 'force';
+			break;
+				
+			case 'The Galaxy':
+			$scope.data.showSection = 'galaxy';
+			break;
+				
+			default:
+				break;
+		}
+	}
+	
+	$scope.showDetails = function(section, rec){
+		$scope.data.currentRecord = rec;
+		
+		switch(section){
+			case 'species':
+			$scope.data.showDetails = 'species';
+			break;
+				
+			case 'careers':
+			$scope.data.showDetails = 'careers';
+			break;
+				
+			case 'specs':
+			$scope.data.showDetails = 'careerSpecs';
+			break;
+				
+			case 'skills':
+			$scope.data.showDetails = 'skills';
+			break;
+				
+			case 'talents':
+			$scope.data.showDetails = 'talents';
+			break;
+				
+			case 'gear':
+			$scope.data.showDetails = 'gear';
+			break;
+				
+			case 'wq':
+			$scope.data.showDetails = 'weaponQualities';
+			break;
+				
+			case 'vehicle':
+			$scope.data.showDetails = 'vehicle';
+			break;
+				
+			case 'force':
+			$scope.data.showDetails = 'force';
+			break;
+				
+			case 'galaxy':
+			$scope.data.showDetails = 'galaxy';
+			break;
+			
+			default:
+				break;
+		}
+	}
+	
+	$scope.hideDetails = function(){
+		$scope.data.showDetails = '';
+	}
+	
+	$scope.filter = function(section, filter){
+		var i = 0;
+		switch(section){
+			case 'species':
+			if(filter == 'All'){
+				$scope.data.displaySpecies = $scope.data.species;
+			} else{
+				$scope.data.displaySpecies = [];
+				for(i = 0; i < $scope.data.species.length; i++){
+					if($scope.data.species[i].name.indexOf(filter) == 0){
+						$scope.data.displaySpecies.push($scope.data.species[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'careerSpec':
+			$scope.data.displaySpecs = [];
+			var career = document.getElementById('careerSpecFilter').value;
+			if(career == 'all'){
+				$scope.data.displaySpecs = $scope.data.specializations;
+			} else{
+				for(i = 0; i < $scope.data.specializations.length; i++){
+					if($scope.data.specializations[i].career == career){
+						 $scope.data.displaySpecs.push($scope.data.specializations[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'skills':
+			$scope.data.displaySkills = [];
+			var type = document.getElementById('skillsFilter').value;
+			if(type == 'all'){
+				$scope.data.displaySkills = $scope.data.skills;
+			} else{
+				for(i = 0; i < $scope.data.skills.length; i++){
+					if($scope.data.skills[i].type == type){
+						$scope.data.displaySkills.push($scope.data.skills[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'talents':
+			if(filter == 'All'){
+				$scope.data.displayTalents = $scope.data.talents;
+			} else{
+				$scope.data.displayTalents = [];
+				for(i = 0; i < $scope.data.talents.length; i++){
+					if($scope.data.talents[i].name.indexOf(filter) == 0){
+						$scope.data.displayTalents.push($scope.data.talents[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'gear':
+			var type = document.getElementById('gearFilter').value;
+			if(type == 'all'){
+				$scope.data.displayGear = $scope.data.gear;
+			} else{
+				$scope.data.displayGear = [];
+				for(i = 0; i < $scope.data.gear.length; i++){
+					if($scope.data.gear[i].type == type){
+						$scope.data.displayGear.push($scope.data.gear[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'wq':
+			if(filter == 'All'){
+				$scope.data.displayWeaponQualities = $scope.data.weaponQualities;
+			} else{
+				$scope.data.displayWeaponQualities = [];
+				for(i = 0; i < $scope.data.weaponQualities.length; i++){
+					if($scope.data.weaponQualities[i].name.indexOf(filter) == 0){
+						$scope.data.displayWeaponQualities.push($scope.data.weaponQualities[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'vehicles':
+			var type = document.getElementById('vehicleFilter').value;
+			if(type == 'all'){
+				$scope.data.displayVehicles = $scope.data.vehicles;
+			} else{
+				$scope.data.displayVehicles = [];
+				for(i = 0; i < $scope.data.vehicles.length; i++){
+					if($scope.data.vehicles[i].type == type){
+						$scope.data.displayVehicles.push($scope.data.vehicles[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'galaxy':
+			var sector = document.getElementById('galaxyFilter').value;
+			if(sector == 'all'){
+				$scope.data.displayGalaxy = $scope.data.galaxy;
+			} else{
+				$scope.data.displayGalaxy = [];
+				for(i = 0; i < $scope.data.galaxy.length; i++){
+					if($scope.data.galaxy[i].sector == sector){
+						$scope.data.displayGalaxy.push($scope.data.galaxy[i]);
+					}
+				}
+			}
+			break;
+				
+			default:
+				break;
+		}
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.holocron-header{
+	text-align:center;
+  font-size:32px;
+  font-weight: bold;
+  margin-bottom:40px;
+}
+
+.section-header{
+	font-size:26px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.holocron-home{
+	margin-bottom:20px;
+}
+
+.filter-container{
+	margin-bottom:20px;
+}
+
+.choice-filter{
+	font-size:16px;
+}
+
+.description{
+	padding-bottom:20px;
+  font-size:16px;
+}
+
+.fa-space-station-moon-alt{
+	color:darkgray;
+}
+
+.info-header{
+	margin-top:20px;
+  margin-bottom:40px;
+  font-size:26px;
+  font-weight:bold;
+}
+
+.info-sub-header{
+	margin-bottom:20px;
+  font-size:22px;
+}
+
+.info-detail{
+	font-size:16px;
+  margin-bottom:10px;
+}
+
+.info-detail-container{
+	position:fixed;
+  background-color:black;
+  top:80px;
+  left:10px;
+  width:98%;
+  border-radius:5px;
+  border:1px groove #54f403;
+  box-shadow:0px 0px 4px 2px #54f403;
+  max-height:500px;
+  overflow-y:scroll;
+  z-index:2;
+}
+
+.close-button{
+	color:red;
+  margin-top:10px;
+}
+
+.menu-card{
+	border-radius:5px;
+  background-color:black;
+  border:1px groove #1933f4;
+  box-shadow:0px 0px 3px 1px darkgray;
+  padding:10px 5px 10px 5px;
+  margin-bottom:20px;
+}
+
+.menu-card:hover{
+	transform:scale(1.25);
+  box-shadow: 0px 0px 8px 3px #1933f4;
+  z-index:1;
+}
+
+.characteristics{
+	margin-top:20px;
+  margin-bottom:20px;
+}
+
+.characteristic{
+	border: 1px groove #e21414;
+  border-radius: 5px;
+  text-align:center;
+}
+
+.alphabet-filter{
+	text-align:center;
+  margin-bottom:20px;
+}
+
+.alphabet-split{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.sw-input{
+	border:1px groove #e21414;
+  background-color:black;
+  border-radius:20px;
+  margin-bottom:10px;
+}
+
+.enhancement-card{
+	border:1px groove darkgray;
+  box-shadow:0px 0px 6px 2px darkgray;
+  min-height:330px;
+}
+
+.e-detail{
+	margin-top:20px;
+}
+
+@media only screen and (max-width:762px){
+	.info-detail-container{
+  	width:95%; 
+  }  
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>holocron</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Holocron</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var groups = new GlideRecord('sys_user_grmember');
+	groups.addQuery('user', gs.getUserID());
+	groups.query();
+	var myGroups = [];
+	while(groups.next()){
+		myGroups.push(groups.group.sys_id + '');
+	}
+	
+data.showSection = 'parent';
+data.parentMenu = ['Species', 'Careers', 'Career Specializations', 'Skills', 'Talents', 'Gear', 'Weapon Qualities', 'Vehicles', 'The Force', 'The Galaxy'];
+data.alphabet = ['All','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+	
+data.species = [];
+data.displaySpecies = [];
+var speciesGR = new GlideRecord('x_176383_star_wars_species');
+speciesGR.orderBy('name');
+speciesGR.query();
+while(speciesGR.next()){
+	var sp = {
+		name: speciesGR.name + '',
+		startingXP: speciesGR.starting_xp + '',
+		baseWound: speciesGR.base_wound_threshold + '',
+		baseStrain: speciesGR.base_strain_threshold + '',
+		brawn: speciesGR.brawn + '',
+		agility: speciesGR.agility + '',
+		intellect: speciesGR.intellect + '',
+		willpower: speciesGR.willpower + '',
+		cunning: speciesGR.cunning + '',
+		presence: speciesGR.presence + '',
+		description: speciesGR.description + '',
+		sysID: speciesGR.sys_id + '',
+		image: speciesGR.name.toLowerCase() + '.png'
+	};
+	data.species.push(sp);
+}
+data.displaySpecies = data.species;
+	
+data.careers = [];
+var careerGR = new GlideRecord('x_176383_star_wars_career');
+careerGR.orderBy('name');
+careerGR.query();
+while(careerGR.next()){
+	var c = {
+		name: careerGR.name + '',
+		description: careerGR.description + '',
+		sysID: careerGR.sysID + ''
+	};
+	data.careers.push(c);
+}
+	
+data.specializations = [];
+data.displaySpecs = [];
+var specs = new GlideRecord('x_176383_star_wars_career_specialization');
+specs.orderBy('career');
+specs.orderBy('name');
+specs.query();
+while(specs.next()){
+	var s = {
+		name: specs.name + '',
+		description: specs.description + '',
+		career: specs.career.getDisplayValue(),
+		sysID: specs.sys_id + ''
+	};
+	data.specializations.push(s);
+}
+data.displaySpecs = data.specializations;
+	
+data.talents = [];
+data.displayTalents = [];
+var talent = new GlideRecord('x_176383_star_wars_talents');
+talent.orderBy('name');
+talent.query();
+while(talent.next()){
+	var t = {
+		name: talent.name + '',
+		description: talent.description + '',
+		passiveOrActive: talent.passive_or_active.getDisplayValue(),
+		force: talent.force_talent + '',
+		sysID: talent.sys_id + ''
+	};
+	data.talents.push(t);
+}
+data.displayTalents = data.talents;
+	
+data.skills = [];
+data.displaySkills = [];
+var skill = new GlideRecord('x_176383_star_wars_skills');
+skill.orderBy('name');
+skill.query();
+while(skill.next()){
+	var sk = {
+		name: skill.name + '',
+		type: skill.type.getDisplayValue(),
+		description: skill.description + '',
+		sysID: skill.sys_id + ''
+	};
+	data.skills.push(sk);
+}
+data.displaySkills = data.skills;
+	
+data.weaponQualities = [];
+data.displayWeaponQualities = [];
+var wqgr = new GlideRecord('x_176383_star_wars_weapon_quality');
+wqgr.orderBy('name');
+wqgr.query();
+while(wqgr.next()){
+	var wq = {
+		name: wqgr.name + '',
+		description: wqgr.description + '',
+		sysID: wqgr.sys_id + ''
+	};
+	data.weaponQualities.push(wq);
+}
+data.displayWeaponQualities = data.weaponQualities;
+	
+data.gear = [];
+data.displayGear = [];
+var gearGR = new GlideRecord('x_176383_star_wars_gear');
+gearGR.orderBy('type');
+gearGR.orderBy('name');
+gearGR.query();
+while(gearGR.next()){
+	var g = {
+		name: gearGR.name + '',
+		type: gearGR.type.getDisplayValue(),
+		encumbrance: gearGR.encumbrance + '',
+		hp: gearGR.hard_points + '',
+		price: gearGR.price + '',
+		rarity: gearGR.rarity + '',
+		description: gearGR.description + '',
+		damage: gearGR.base_damage + '',
+		crit: gearGR.critical_rating + '',
+		skillUsed: gearGR.skill_used.getDisplayValue(),
+		range: gearGR.range.getDisplayValue(),
+		defense: gearGR.defense + '',
+		soak: gearGR.soak + '',
+		hpRequired: gearGR.hp_required + '',
+		sysID: gearGR.sys_id + ''
+	};
+	var specials = new GlideRecord('x_176383_star_wars_gear_special');
+	specials.addQuery('item', g.sysID);
+	specials.orderBy('weapon_quality.name');
+	specials.query();
+	var specialsString = '';
+	while(specials.next()){
+		specialsString += specials.weapon_quality.getDisplayValue() + ' ' + specials.rank;
+		if(specials.hasNext()){
+			specialsString += ', ';
+		}
+	}
+	g.specials = specialsString;
+	data.gear.push(g);
+}
+data.displayGear = data.gear;
+	
+data.force = [];
+var forceGR = new GlideRecord('x_176383_star_wars_force_power');
+forceGR.orderBy('name');
+forceGR.query();
+while(forceGR.next()){
+	var f = {
+		name: forceGR.name + '',
+		minRating: forceGR.minimum_force_rating + '',
+		cost: forceGR.cost_to_purchase + '',
+		description: forceGR.description + '',
+		sysID: forceGR.sys_id + ''
+	};
+	data.force.push(f);
+}
+	
+data.forceEnhancements = [];
+var forceEnhancements = new GlideRecord('x_176383_star_wars_force_power_enhancement');
+forceEnhancements.orderBy('force_power');
+forceEnhancements.orderBy('cost_to_purchase');
+forceEnhancements.query();
+while(forceEnhancements.next()){
+	var fe = {
+		type: forceEnhancements.type.getDisplayValue(),
+		power: forceEnhancements.force_power.getDisplayValue(),
+		powerID: forceEnhancements.force_power.sys_id + '',
+		cost: forceEnhancements.cost_to_purchase + '',
+		description: forceEnhancements.description + ''
+	};
+	data.forceEnhancements.push(fe);
+}
+	
+data.vehicles = [];
+data.displayVehicles = [];
+var vehicle = new GlideRecord('x_176383_star_wars_vehicle');
+vehicle.orderBy('type');
+vehicle.orderBy('name');
+vehicle.query();
+while(vehicle.next()){
+	var v = {
+		name: vehicle.ship_name + '',
+		price: vehicle.price + '',
+		rarity: vehicle.rarity + '',
+		makeModel: vehicle.make_model + '',
+		type: vehicle.type.getDisplayValue(),
+		silhouette: vehicle.silhouette + '',
+		hp: vehicle.hard_points + '',
+		armor: vehicle.armor + '',
+		speed: vehicle.speed + '',
+		handling: vehicle.handling + '',
+		htThreshold: vehicle.hull_trauma_threshold + '',
+		ssThreshold: vehicle.system_strain_threshold + '',
+		defenseFore: vehicle.defense_fore + '',
+		defenseAft: vehicle.defense_aft + '',
+		defensePort: vehicle.defense_port + '',
+		defenseStarboard: vehicle.defense_starboard + '',
+		maxAltitude: vehicle.maximum_altitude + '',
+		sensorRange: vehicle.sensor_range.getDisplayValue(),
+		description: vehicle.description + '',
+		sysID: vehicle.sys_id + ''
+	};
+	
+	if(vehicle.primary_hyperdrive_class != ''){
+		v.hyperdrive = 'Primary Class: ' + vehicle.primary_hyperdrive_class + '; backup class: ' + vehicle.backup_hyperdrive_class;
+	} else{
+		v.hyperdrive = 'None';
+	}
+	
+	if(vehicle.navicomputer){
+		v.navicomputer = 'Yes';
+	} else{
+		v.navicomputer = 'No';
+	}
+	
+	var vGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
+	vGear.addQuery('vehicle', v.sysID);
+	vGear.orderBy('gear.name');
+	vGear.query();
+	var vGearString = '';
+	while(vGear.next()){
+		vGearString += vGear.gear.getDisplayValue() + ': ' + vGear.quantity;
+		if(vGear.hasNext()){
+			vGearString += ', ';
+		}
+	}
+	v.gear = vGearString;
+	data.vehicles.push(v);
+}
+data.displayVehicles = data.vehicles;
+	
+data.galaxy = [];
+data.displayGalaxy = [];
+var galaxyGR = new GlideRecord('x_176383_star_wars_the_galaxy');
+galaxyGR.orderBy('sector');
+galaxyGR.orderBy('name');
+galaxyGR.query();
+var addToList = false;
+while(galaxyGR.next()){
+	addToList = false;
+	if(galaxyGR.getValue('u_groups') != '' && galaxyGR.getValue('u_groups')){
+		for(var i = 0; i < myGroups.length; i++){
+			if(galaxyGR.getValue('u_groups').indexOf(myGroups[i]) > -1){
+				addToList = true;
+			}
+		}
+	} else{
+		addToList = true;
+	}
+	if(addToList){
+		var galaxy = {
+			name: galaxyGR.name + '',
+			sector: galaxyGR.sector.getDisplayValue(),
+			description: galaxyGR.description + ''
+		};
+		data.galaxy.push(galaxy);
+	}
+}
+data.displayGalaxy = data.galaxy;
+	
+data.sectors = [];
+var sectorGR = new GlideRecord('sys_choice');
+sectorGR.addQuery('element', 'sector').addCondition('name', 'x_176383_star_wars_the_galaxy');
+sectorGR.query();
+while(sectorGR.next()){
+	data.sectors.push(sectorGR.label + '');
+}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-02 04:12:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
+        <sys_mod_count>143</sys_mod_count>
+        <sys_name>Holocron</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 21:18:27</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 holocron-container">
+	<div class="col-xs-12 holocron-header">
+    Holocron<br>
+    <text class="star-wars-text">Holocron</text>
+  </div>
+  <!-- parent menu section -->
+  <div ng-if="data.showSection == 'parent'" class="col-xs-12 card-menu" id="parentMenu">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.parentMenu">
+      <span class="col-xs-12 menu-card" ng-click="showSection(item)">
+      	<span class="col-xs-12 text-center">{{item}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- species menu section -->
+  <div ng-if="data.showSection == 'species'" class="col-xs-12 card-menu" id="speciesMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Species<br><text class="star-wars-text">Species</text></div>
+    <div class="col-xs-12 alphabet-filter">
+      <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('species', letter)">{{letter}} |</span>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySpecies">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('species', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- careers menu section -->
+  <div ng-if="data.showSection == 'careers'" class="col-xs-12 card-menu" id="careersMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Careers<br><text class="star-wars-text">Careers</text></div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.careers">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('careers', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- career specialization menu section -->
+  <div ng-if="data.showSection == 'careerSpecializations'" class="col-xs-12 card-menu" id="careerSpecsMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Career Specializations<br><text class="star-wars-text">Career Specializations</text></div>
+    <div class="col-xs-12 filter-container">
+    	<select class="sw-input choice-filter" name="careerSpecFilter" id="careerSpecFilter" ng-change="filter('careerSpec')" ng-model="all">
+        <option value="all">All</option>
+        <option ng-repeat="c in data.careers" value="{{c.name}}">{{c.name}}</option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySpecs">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('specs', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- skills menu section -->
+  <div ng-if="data.showSection == 'skills'" class="col-xs-12 card-menu" id="skillsMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Skills<br><text class="star-wars-text">Skills</text></div>
+    <div class="col-xs-12 filter-container">
+    	<select class="sw-input choice-filter" name="skillsFilter" id="skillsFilter" ng-change="filter('skills')" ng-model="all">
+        <option value="all">All</option>
+        <option value="Combat">Combat</option>
+        <option value="General">General</option>
+        <option value="Knowledge">Knowledge</option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySkills">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('skills', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- talents menu section -->
+  <div ng-if="data.showSection == 'talents'" class="col-xs-12 card-menu" id="talentsMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Talents<br><text class="star-wars-text">Talents</text></div>
+    <div class="col-xs-12 alphabet-filter">
+      <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('talents', letter)">{{letter}} |</span>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayTalents">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('talents', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- Gear menu section -->
+  <div ng-if="data.showSection == 'gear'" class="col-xs-12 card-menu" id="gearMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Gear<br><text class="star-wars-text">Gear</text></div>
+    <div class="col-xs-12 filter-container">
+    	<select class="sw-input choice-filter" name="gearFilter" id="gearFilter" ng-change="filter('gear')" ng-model="all">
+        <option value="all">All</option>
+        <option value="Weapon">Weapon</option>
+        <option value="Armor">Armor</option>
+        <option value="Gear">Gear</option>
+        <option value="Black Market Items">Black Market Items</option>
+        <option value="Mod">Mod</option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGear">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('gear', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- weapon qualities menu section -->
+  <div ng-if="data.showSection == 'weaponQualities'" class="col-xs-12 card-menu" id="weaponQualitiesMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Weapon Qualities<br><text class="star-wars-text">Weapon Qualities</text></div>
+    <div class="col-xs-12 alphabet-filter">
+      <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('wq', letter)">{{letter}} |</span>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayWeaponQualities">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('wq', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- vehicles menu section -->
+  <div ng-if="data.showSection == 'vehicles'" class="col-xs-12 card-menu" id="vehiclesMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">Vehicles<br><text class="star-wars-text">Vehicles</text></div>
+    <div class="col-xs-12 filter-container">
+    	<select class="sw-input choice-filter" name="vehicleFilter" id="vehicleFilter" ng-change="filter('vehicles')" ng-model="all">
+        <option value="all">All</option>
+        <option value="Airspeeder">Airspeeder</option>
+        <option value="Landspeeder">Landspeeder</option>
+        <option value="Wheeled or Tracked">Wheeled or Tracked</option>
+        <option value="Walker">Walker</option>
+        <option value="Starfighter or Patrol Boat">Starfighter or Patrol Boat</option>
+        <option value="Freighter or Transport">Freighter or Transport</option>
+        <option value="Capital Ship">Capital Ship</option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayVehicles">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('vehicle', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+  <!-- force menu section -->
+  <div ng-if="data.showSection == 'force'" class="col-xs-12 card-menu" id="forceMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">The Force<br><text class="star-wars-text">The Force</text></div>
+    <div class="col-xs-12 force-container">
+      <div class="col-xs-12 col-md-3" ng-repeat="item in data.force">
+        <span class="col-xs-12 menu-card" ng-click="showDetails('force', item)">
+          <span class="col-xs-12 text-center">{{item.name}}</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- galaxy menu section -->
+ <div ng-if="data.showSection == 'galaxy'" class="col-xs-12 card-menu" id="galaxyMenu">
+    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-12 section-header text-center">The Galaxy<br><text class="star-wars-text">The Galaxy</text></div>
+    <div class="col-xs-12 filter-container">
+    	<select class="sw-input choice-filter" name="galaxyFilter" id="galaxyFilter" ng-change="filter('galaxy')" ng-model="all">
+        <option value="all">All</option>
+        <option ng-repeat="sector in data.sectors" value="{{sector}}">{{sector}}</option>
+      </select>
+    </div>
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGalaxy">
+      <span class="col-xs-12 menu-card" ng-click="showDetails('galaxy', item)">
+        <span class="col-xs-12 text-center">{{item.name}}</span>
+      </span>
+    </div>
+  </div>
+
+<!-- info sections -->
+<!-- species -->
+<div ng-if="data.showDetails == 'species'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 col-md-3 img-container">
+    <img src="{{data.currentRecord.image}}" height="300px" width="180px"/>
+  </span>
+  <span class="col-xs-12 col-md-9 species-stats">
+    <span class="col-xs-4 starting-value text-center">Starting XP:<br>{{data.currentRecord.startingXP}}</span>
+    <span class="col-xs-4 starting-value text-center">Base Wound Threshold:<br>{{data.currentRecord.baseWound}}</span>
+    <span class="col-xs-4 starting-value text-center">Base Strain Threshold:<br>{{data.currentRecord.baseStrain}}</span>
+    <span class="col-xs-12 characteristics">
+      <span class="col-xs-4 col-md-2 characteristic">
+        <span class="col-xs-12 cLabel">Brawn:</span>
+        <span class="col-xs-12 cValue">{{data.currentRecord.brawn}}</span>
+      </span>
+      <span class="col-xs-4 col-md-2 characteristic">
+        <span class="col-xs-12 cLabel">Agility:</span>
+        <span class="col-xs-12 cValue">{{data.currentRecord.agility}}</span>
+      </span>
+      <span class="col-xs-4 col-md-2 characteristic">
+        <span class="col-xs-12 cLabel">Intellect:</span>
+        <span class="col-xs-12 cValue">{{data.currentRecord.intellect}}</span>
+      </span>
+      <span class="col-xs-4 col-md-2 characteristic">
+        <span class="col-xs-12 cLabel">Willpower:</span>
+        <span class="col-xs-12 cValue">{{data.currentRecord.willpower}}</span>
+      </span>
+      <span class="col-xs-4 col-md-2 characteristic">
+        <span class="col-xs-12 cLabel">Cunning:</span>
+        <span class="col-xs-12 cValue">{{data.currentRecord.cunning}}</span>
+      </span>
+      <span class="col-xs-4 col-md-2 characteristic">
+        <span class="col-xs-12 cLabel">Presence:</span>
+        <span class="col-xs-12 cValue">{{data.currentRecord.presence}}</span>
+      </span>
+    </span>
+    <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+  </span>
+</div>
+<!-- careers -->
+<div ng-if="data.showDetails == 'careers'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>
+<!-- career specializations -->
+<div ng-if="data.showDetails == 'careerSpecs'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 info-detail info-sub-header text-center">Career: {{data.currentRecord.career}}</span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>
+<!-- skills -->
+<div ng-if="data.showDetails == 'skills'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 info-detail info-sub-header text-center">Type: {{data.currentRecord.type}}</span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>
+<!-- Talents -->
+<div ng-if="data.showDetails == 'talents'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}} <i ng-if="data.currentRecord.force == 'true'" class="fab fa-jedi-order"></i><br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 info-detail info-sub-header text-center">{{data.currentRecord.passiveOrActive}}</span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>
+<!-- gear -->
+<div ng-if="data.showDetails == 'gear'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}} <i ng-if="data.currentRecord.force == 'true'" class="fab fa-jedi-order"></i><br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 info-sub-header text-center">Type: {{data.currentRecord.type}}</span>
+  <span class="col-xs-12 info-detail-body">
+    <span class="col-xs-4 info-detail">Price:<br><img src="credits.png" height="15px" width="15px"/> {{data.currentRecord.price}}</span>
+    <span class="col-xs-4 info-detail">Rarity:<br>{{data.currentRecord.rarity}}</span>
+    <span class="col-xs-4 info-detail">Hard Points:<br>{{data.currentRecord.hp}}</span>
+    <span class="col-xs-4 info-detail">Encumbrance:<br>{{data.currentRecord.encumbrance}}</span>
+    <span ng-if="data.currentRecord.type == 'Weapon'" class="col-xs-4 info-detail">Damage:<br>{{data.currentRecord.damage}}</span>
+    <span ng-if="data.currentRecord.type == 'Weapon'" class="col-xs-4 info-detail">Crit:<br>{{data.currentRecord.crit}}</span>
+    <span ng-if="data.currentRecord.type == 'Weapon'" class="col-xs-4 info-detail">Skill Used:<br>{{data.currentRecord.skillUsed}}</span>
+    <span ng-if="data.currentRecord.type == 'Weapon'" class="col-xs-4 info-detail">Range:<br>{{data.currentRecord.range}}</span>
+    <span ng-if="data.currentRecord.type == 'Armor'" class="col-xs-4 info-detail">Defense:<br>{{data.currentRecord.defense}}</span>
+    <span ng-if="data.currentRecord.type == 'Armor'" class="col-xs-4 info-detail">Soak:<br>{{data.currentRecord.soak}}</span>
+    <span ng-if="data.currentRecord.type == 'Mod'" class="col-xs-4 info-detail">HP Required:<br>{{data.currentRecord.hpRequired}}</span>
+    <span ng-if="data.currentRecord.specials != ''" class="col-xs-4 info-detail">Specials:<br>{{data.currentRecord.specials}}</span>
+  </span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>
+<!-- weapon qualities -->
+<div ng-if="data.showDetails == 'weaponQualities'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>
+<!-- vehicles -->
+<div ng-if="data.showDetails == 'vehicle'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 info-detail info-sub-header text-center">Type: {{data.currentRecord.type}}</span>
+  <span class="col-xs-12 info-detail-body">
+    <span class="col-xs-4 col-md-3 info-detail">Price:<br><img src="credits.png" height="15px" width="15px"/> {{data.currentRecord.price}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Rarity:<br>{{data.currentRecord.rarity}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Make/Model:<br>{{data.currentRecord.makeModel}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Silhouette:<br>{{data.currentRecord.silhouette}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Hard Points:<br>{{data.currentRecord.hp}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Armor:<br>{{data.currentRecord.armor}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Speed:<br>{{data.currentRecord.speed}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Handling:<br>{{data.currentRecord.handling}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Hull Trauma Threshold:<br>{{data.currentRecord.htThreshold}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">System Strain Threshold:<br>{{data.currentRecord.ssThreshold}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Defense Fore:<br>{{data.currentRecord.defenseFore}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Defense Aft:<br>{{data.currentRecord.defenseAft}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Defense Port:<br>{{data.currentRecord.defensePort}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Defense Starboard:<br>{{data.currentRecord.defenseStarboard}}</span>
+    <span ng-if="data.currentRecord.maxAltitude != ''" class="col-xs-4 col-md-3 info-detail">Max Altitude:<br>{{data.currentRecord.maxAltitude}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Sensor Range:<br>{{data.currentRecord.sensorRange}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Hyperdrive:<br>{{data.currentRecord.hyperdrive}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Navicomputer:<br>{{data.currentRecord.navicomputer}}</span>
+    <span class="col-xs-4 col-md-3 info-detail">Weapons Systems:<br>{{data.currentRecord.gear}}</span>
+  </span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>
+<!-- The Force -->
+<div ng-if="data.showDetails == 'force'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+  <span class="col-xs-12 info-sub-header text-center">Enhancements<br><text class="star-wars-text">Enhancements</text></span>
+  <span class="col-xs-12 enhancements-body">
+    <span ng-if="data.currentRecord.sysID == e.powerID" class="col-xs-12 col-md-4 info-detail enhancement-card" ng-repeat="e in data.forceEnhancements">
+      <span class="col-xs-6 info-detail e-detail">{{e.type}}</span>
+      <span class="col-xs-6 info-detail e-detail">XP Cost: {{e.cost}}</span>
+      <span class="col-xs-12 description" ng-bind-html="e.description"></span>
+    </span>
+  </span>
+</div>
+<!-- the galaxy -->
+<div ng-if="data.showDetails == 'galaxy'" class="col-xs-12 info-detail-container">
+  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-12 info-sub-header text-center">{{data.currentRecord.sector}}<br><text class="star-wars-text">{{data.currentRecord.sector}}</text></span>
+  <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="sector" table="x_176383_star_wars_the_galaxy" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>sector</element>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:47:21</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>93bf32cb2ff0a014e0f497eef699b603</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sector</sys_name>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_choice_x_176383_star_wars_the_galaxy_sector</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:47:21</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Great Hyperlanes</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>67af32cb2ff0a014e0f497eef699b601</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:47:28</sys_updated_on>
+            <value>the_great_hyperlanes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Deep Core</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:47:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7bf720f2ff0a014e0f497eef699b67d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:47:40</sys_updated_on>
+            <value>the_deep_core</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Core Worlds</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>200</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83cffecb2ff0a014e0f497eef699b670</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:47:52</sys_updated_on>
+            <value>the_core_worlds</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Colonies</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>300</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:47:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1dfbac72ff0a014e0f497eef699b602</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:48:02</sys_updated_on>
+            <value>the_colonies</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Inner Rim</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>400</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:48:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84eff20f2ff0a014e0f497eef699b6f7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:48:12</sys_updated_on>
+            <value>the_inner_rim</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Expansion Region</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>500</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:48:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32ef320f2ff0a014e0f497eef699b6e9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:48:23</sys_updated_on>
+            <value>the_expansion_region</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Mid Rim</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>600</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 07:50:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ddff360f2ff0a014e0f497eef699b678</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 07:50:49</sys_updated_on>
+            <value>the_mid_rim</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>The Outer Rim</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>700</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 08:01:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4580c30f2ff0a014e0f497eef699b6fa</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 08:01:25</sys_updated_on>
+            <value>the_outer_rim</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wild Space and the Unknown Regions</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>800</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 08:01:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58f2430f2ff0a014e0f497eef699b673</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-10 18:19:20</sys_updated_on>
+            <value>wild_space_unknown_regions</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hutt Space</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>850</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-10 18:19:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2c60cff82f896814e0f497eef699b6a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-10 18:19:31</sys_updated_on>
+            <value>hutt_space</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sector</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sith Space</label>
+            <language>en</language>
+            <name>x_176383_star_wars_the_galaxy</name>
+            <sequence>900</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-05 08:06:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c24c30f2ff0a014e0f497eef699b6fc</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-05 08:06:47</sys_updated_on>
+            <value>sith_space</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -446,6 +446,62 @@ label,.sw-input{
   #defenseAft{
     left:37%;
   }
+}
+
+@media only screen and (max-width:762px){
+  #vehicleSheetContainer{
+  	padding:0;
+  }
+  
+  .characteristic-container{
+  	padding-right:2px;
+    padding-left:2px;
+  }
+  
+  .vehicle-characteristic-body,.primary-vehicle-characteristics{
+  	padding:0;
+  }
+  
+  .fa-starship-freighter{
+   	left:36%; 
+  }
+  
+  #defenseFore{
+    left:32.5%;
+  }
+
+  #defensePort{
+    left:0;
+  }
+
+  #defenseStarboard{
+    right:0;
+  }
+
+  #defenseAft{
+    left:32.5%;
+  }
+  
+  .weapons-container{
+  	padding-top:75%;
+    padding-right:2px;
+    padding-left:2px;
+  }
+  
+  .weapons-body,.weapon-headers,.weapon-header{
+  	padding:0;
+    font-size:13px;
+  }
+  
+  .weapon-detail{
+  	font-size:11px;
+    padding:0;
+  }
+  
+  .wd-number{
+  	padding:0;
+    text-align:center;
+  }
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -613,7 +669,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>151</sys_mod_count>
+        <sys_mod_count>181</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -621,7 +677,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-29 16:13:34</sys_updated_on>
+        <sys_updated_on>2020-12-08 04:16:08</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -705,15 +761,15 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
     <span class="col-xs-12 weapons-header">Weapons<br><text class="star-wars-text">Weapons</text></span>
     <span class="col-xs-12 weapons-body">
       <span class="col-xs-12 weapon-headers">
-        <span class="col-xs-3 weapon-header">Weapon</span>
-        <span class="col-xs-1 weapon-header">Damage</span>
+        <span class="col-xs-2 weapon-header">Weapon</span>
+        <span class="col-xs-2 weapon-header">Damage</span>
         <span class="col-xs-2 weapon-header">Range</span>
         <span class="col-xs-1 weapon-header">Crit</span>
         <span class="col-xs-5 weapon-header">Special</span>
       </span>
       <span class="col-xs-12 weapons" ng-repeat="w in data.vehicleGear">
-        <span class="col-xs-3 weapon-detail">{{w.name}} <span class="badge">{{w.quantity}}</span></span>
-        <span class="col-xs-1 weapon-detail wd-number">{{w.damage}}</span>
+        <span class="col-xs-2 weapon-detail">{{w.name}} <span class="badge">{{w.quantity}}</span></span>
+        <span class="col-xs-2 weapon-detail wd-number">{{w.damage}}</span>
         <span class="col-xs-2 weapon-detail">{{w.range}}</span>
         <span class="col-xs-1 weapon-detail wd-number">{{w.crit}}</span>
         <span class="col-xs-5 weapon-detail">{{w.specials}}</span>

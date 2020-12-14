@@ -10,6 +10,17 @@
   background-repeat:no-repeat;
   background-size:cover !important;
   min-height:100px;
+}
+
+.link-label,.sw-link-label{
+	color:white;
+}
+
+.holocron-image{
+	position:absolute;
+ 	top:15px;
+ 	left:10%;
+  z-index:-1;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -51,7 +62,7 @@
         <sys_created_on>2020-10-28 03:14:07</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ec41e322f88ac10e0f497eef699b6fb</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Star Wars Home</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -59,7 +70,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_9ec41e322f88ac10e0f497eef699b6fb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-23 20:02:45</sys_updated_on>
+        <sys_updated_on>2020-12-03 16:51:14</sys_updated_on>
         <template><![CDATA[<div class="col-xs-12 home-container">
 	<!-- add header here -->
   <span class="col-xs-12 col-md-3 my-characters-button">
@@ -72,6 +83,13 @@
     <a href="{{data.sessionLink}}">
       <span class="col-xs-12 link-label">Active Session</span>
       <span class="col-xs-12 sw-link-label star-wars-text">Active Session</span>
+    </a>
+  </span>
+  <span class="col-xs-12 col-md-3 holocron-button">
+    <a href="?id=holocron">
+      <img class="holocron-image" src="holocron.png" height="80px" width="80px"/>
+      <span class="col-xs-12 link-label">Holocron</span>
+      <span class="col-xs-12 sw-link-label star-wars-text">Holocron</span>
     </a>
   </span>
 </div>]]></template>

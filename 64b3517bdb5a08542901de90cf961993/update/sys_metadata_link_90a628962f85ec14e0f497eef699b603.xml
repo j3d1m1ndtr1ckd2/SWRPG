@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>170564d42f8da414e0f497eef699b602</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;img src="https://th.bing.com/th/id/OIP.3-q2FG10g1vqBxY9hys8GQHaHk?w&amp;#61;170&amp;amp;h&amp;#61;180&amp;amp;c&amp;#61;7&amp;amp;o&amp;#61;5&amp;amp;dpr&amp;#61;1.5&amp;amp;pid&amp;#61;1.7" alt="Image result for brentaal" width="150" height="150" /&gt; Brentaal benefits tremendously from its strategic location at the intersection of the Perlemian Trade Route and the Hydian Way. Brentaal IV is a wealthy world powered by an active trading center, extensive starports, broad manufacturing facilities, and galactic shipping. The Brentaal Houses firmly control the system thanks to their dominant position in galactic trade.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Brentaal&lt;/name&gt;
+        &lt;number&gt;GALAXY0001014&lt;/number&gt;
+        &lt;sector&gt;the_core_worlds&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-08 17:45:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;170564d42f8da414e0f497eef699b602&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-08 17:45:33&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 22:58:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>90a628962f85ec14e0f497eef699b603</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Brentaal</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_90a628962f85ec14e0f497eef699b603</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 22:58:39</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

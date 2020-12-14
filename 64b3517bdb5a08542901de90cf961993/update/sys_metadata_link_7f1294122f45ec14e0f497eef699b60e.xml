@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4e4fba7c2f896814e0f497eef699b60a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;img src="https://static.wikia.nocookie.net/starwars/images/5/52/Kamino-DB.png/revision/latest/scale-to-width-down/350?cb&amp;#61;20150920190527" width="150" height="150" /&gt; The homeworld of the Kaminoans, this was the source of the Republic&amp;#39;s Clone armies during the Clone Wars. The water-covered world is still under strict Imperial control. Kamino is an extra-galactic system. It is located in an area of Wild Space beyond the Outer Rim, in a dwarf satellite galaxy near the Rishi Maze.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Kamino&lt;/name&gt;
+        &lt;number&gt;GALAXY0001100&lt;/number&gt;
+        &lt;sector&gt;wild_space_unknown_regions&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-10 18:16:31&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;4e4fba7c2f896814e0f497eef699b60a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-10 18:18:05&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 21:29:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7f1294122f45ec14e0f497eef699b60e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Kamino</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_7f1294122f45ec14e0f497eef699b60e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 21:29:04</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

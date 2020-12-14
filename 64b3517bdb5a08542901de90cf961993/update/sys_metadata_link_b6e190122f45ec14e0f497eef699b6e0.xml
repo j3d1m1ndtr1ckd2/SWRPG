@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>179932702f896814e0f497eef699b6fa</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;img src="https://i.pinimg.com/736x/5c/28/6d/5c286dc49f5e73df3f857cf886000f91--star-trek-empire.jpg" alt="See the source image" width="150" height="150" /&gt; This desert world was originally colonized by Corellian settlers. It is a shadowport with no organized government, though it has millions of inhabitants. Smugglers and other outlaws thrive on Socorro. It is known for its substantial ship customization services.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Socorro&lt;/name&gt;
+        &lt;number&gt;GALAXY0001089&lt;/number&gt;
+        &lt;sector&gt;the_outer_rim&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-10 17:52:05&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;179932702f896814e0f497eef699b6fa&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-10 17:52:05&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 21:28:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b6e190122f45ec14e0f497eef699b6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Socorro</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b6e190122f45ec14e0f497eef699b6e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 21:28:10</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

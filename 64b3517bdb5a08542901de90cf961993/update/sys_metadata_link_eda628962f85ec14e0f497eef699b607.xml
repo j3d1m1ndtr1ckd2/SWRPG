@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1e0020d82f4da414e0f497eef699b6e7</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Rimma Trade Route serves a number of influential or otherwise important systems and sectors throughout the southern areas of the galaxy. The Rimma was originally created by Tapani Sector merchants, blazing their way from the Colonies towards Abregado-rae in the Core Worlds and out to the distant Kathol Sector at the edge of the galaxy. The Herglic trade empire and the Tapani helped fuel expansion into the southern regions. The Rimma intersects with the Corellian Trade Spine at Yag&amp;#39;Dhul, and the Hydian Way at strategically important Eriadu. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;Notable Locations:&lt;/strong&gt; Abregado-rae, Thyferra, Yag&amp;#39;Dhul, Sullust, Eriadu, Sluis Van, Dagobah, and Kal&amp;#39;Shebbol (Kathol Sector capital world).&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Rimma Trade Route&lt;/name&gt;
+        &lt;number&gt;GALAXY0001004&lt;/number&gt;
+        &lt;sector&gt;the_great_hyperlanes&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-08 17:22:42&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1e0020d82f4da414e0f497eef699b6e7&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-08 17:22:42&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 22:58:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>eda628962f85ec14e0f497eef699b607</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rimma Trade Route</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_eda628962f85ec14e0f497eef699b607</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 22:58:45</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

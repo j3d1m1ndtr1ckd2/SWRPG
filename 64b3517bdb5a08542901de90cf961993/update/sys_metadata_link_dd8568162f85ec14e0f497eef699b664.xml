@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1b8ad9102f81e414e0f497eef699b625</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;img src="https://static.wikia.nocookie.net/starwars/images/4/49/Ithor_TEA.jpg/revision/latest/scale-to-width-down/500?cb&amp;#61;20200828180137" width="150" height="150" /&gt; Ithor is the homeworld of the Ithorian species. They live in herd cities, floating above the surface of their world, which they consider sacred. Ithor is a center for botanical and biological based trade, which is extended through the use of their spacefaring herdships.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Ithor&lt;/name&gt;
+        &lt;number&gt;GALAXY0001060&lt;/number&gt;
+        &lt;sector&gt;the_mid_rim&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-08 21:38:31&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1b8ad9102f81e414e0f497eef699b625&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-08 21:38:31&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 22:53:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dd8568162f85ec14e0f497eef699b664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ithor</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_dd8568162f85ec14e0f497eef699b664</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 22:53:49</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d93d6c502fcda414e0f497eef699b644</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;img src="https://static.wikia.nocookie.net/starwars/images/4/4d/Eaw_Kuat.jpg/revision/latest/scale-to-width-down/500?cb&amp;#61;20070221015046" width="180" height="150" /&gt; Kuat is home to the legendary Kuat Drive Yards, responsible for manufacturing starships throughout the history of the Republic, the Clone Wars, and the Galactic Empire. Completely ringed by an orbital stardock for starship manufacturing, Kuat produces thousands of ships a year, including the iconic Imperial Star Destroyer. Hundreds of millions of workers inhabit the orbital ring. Given the system&amp;#39;s great strategic importance, the Empire maintains a massive presence in-system and around the region. Access to the system is highly controlled.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Kuat&lt;/name&gt;
+        &lt;number&gt;GALAXY0001019&lt;/number&gt;
+        &lt;sector&gt;the_core_worlds&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-08 18:20:37&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;d93d6c502fcda414e0f497eef699b644&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-08 18:20:37&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 23:00:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e21720d62f85ec14e0f497eef699b67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Kuat</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_e21720d62f85ec14e0f497eef699b67f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 23:00:43</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

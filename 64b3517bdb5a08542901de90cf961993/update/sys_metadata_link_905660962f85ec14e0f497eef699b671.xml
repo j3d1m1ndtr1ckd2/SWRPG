@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c9a855982f01e414e0f497eef699b6ff</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;img src="https://static.wikia.nocookie.net/starwars/images/f/f5/Planet13-SWR.png/revision/latest/scale-to-width-down/250?cb&amp;#61;20090730022920" width="180" height="150" /&gt; Bimmisaari is the homeworld of the Bimms, which are two different but peaceful and cooperative species that share the same name. One species evolved on Bimmisaari while the other is a near-Human strain. Bimms are merchants, scholars, and artists.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Bimmisaari&lt;/name&gt;
+        &lt;number&gt;GALAXY0001053&lt;/number&gt;
+        &lt;sector&gt;the_mid_rim&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-08 21:30:15&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c9a855982f01e414e0f497eef699b6ff&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-08 21:30:15&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 22:57:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>905660962f85ec14e0f497eef699b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bimmisaari</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_905660962f85ec14e0f497eef699b671</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 22:57:17</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

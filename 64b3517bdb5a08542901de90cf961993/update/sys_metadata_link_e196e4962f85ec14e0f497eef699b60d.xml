@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0b50ec142f8da414e0f497eef699b6c6</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;strong&gt;&lt;img src="https://th.bing.com/th/id/OIP.jtYePULkoRVgEyOWz7vvEgHaHa?w&amp;#61;207&amp;amp;h&amp;#61;207&amp;amp;c&amp;#61;7&amp;amp;o&amp;#61;5&amp;amp;dpr&amp;#61;1.5&amp;amp;pid&amp;#61;1.7" alt="Image result for byss" width="150" height="150" /&gt; &lt;/strong&gt;Byss is the Emperor&amp;#39;s ultra-secret personal retreat and foremost fortress world, located at the end the Byss Run. Access is highly regulated, and even knowing of the world&amp;#39;s existence is a death sentence. Most believe it is a myth or propaganda.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Byss&lt;/name&gt;
+        &lt;number&gt;GALAXY0001006&lt;/number&gt;
+        &lt;sector&gt;the_deep_core&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-08 17:26:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0b50ec142f8da414e0f497eef699b6c6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-08 17:35:35&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 22:58:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e196e4962f85ec14e0f497eef699b60d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Byss</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_e196e4962f85ec14e0f497eef699b60d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 22:58:28</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

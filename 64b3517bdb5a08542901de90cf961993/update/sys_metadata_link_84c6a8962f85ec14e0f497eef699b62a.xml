@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5c7f90142f8da414e0f497eef699b6a0</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;At around 25,000 years old, the Perlemian Trade Route is one of the oldest and most well-traveled hyperlanes in the galaxy. It extended the early Republic deep into the northeastern quadrant of the galaxy, from Coruscant out to Ossus and the Tion Cluster. It intersected with early connections to Hutt Space. It runs from Coruscant through the Tion Hegemony in the Outer Rim out to Wild Space. The Perlemian is one border of the Slice (see page 355), and its existence combined with regional political pressures led to a rapid colonization of the eastern side of the galaxy. It crosses the Hydian Way at Brentaal, and the Corellian Run at Coruscant (currently known as Imperial Center).&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Notable Locations&lt;/strong&gt;: Coruscant (Imperial Center), Brentaal, Taanab, Roche, The Wheel, Ossus, Rhen Var, Felucia, Raxus, and the Tion Cluster.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Perlemian Trade Route&lt;/name&gt;
+        &lt;number&gt;GALAXY0001001&lt;/number&gt;
+        &lt;sector&gt;the_great_hyperlanes&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-08 17:20:37&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;5c7f90142f8da414e0f497eef699b6a0&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-08 17:20:37&lt;/sys_updated_on&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-14 22:59:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>84c6a8962f85ec14e0f497eef699b62a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Perlemian Trade Route</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_84c6a8962f85ec14e0f497eef699b62a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-14 22:59:11</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

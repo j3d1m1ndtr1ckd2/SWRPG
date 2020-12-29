@@ -26,6 +26,10 @@
   margin-bottom:40px;
 }
 
+a{
+	color:white !important;
+}
+
 .character-container{
 	border:1px groove #e21414;
   border-radius:5px;
@@ -146,15 +150,15 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-28 03:37:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d22a52b62f88ac10e0f497eef699b638</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Star Wars My Characters</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_d22a52b62f88ac10e0f497eef699b638</sys_update_name>
-        <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2020-11-14 23:14:14</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-28 16:28:17</sys_updated_on>
         <template><![CDATA[<div class="col-xs-12 my-characters-container">
 	<div class="col-xs-12 my-characters-headers">
     <span class="col-xs-12 header">My Characters</span>
@@ -181,11 +185,14 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     <span class="col-xs-12 col-md-4 character" ng-repeat="character in data.friends">
       <span class="col-xs-12 character-container">
        	<span class="col-xs-4 species-image"><img src="{{character.image}}" height="120px"></span>
-      	<span class="col-xs-8 character-details" ng-click="viewCharacterSheet(character.sysID)">
-          <span class="col-xs-12 name">{{character.name}}</span>
-          <span class="col-xs-12 star-wars-text">{{character.name}}</span>
-          <span class="col-xs-6 species">{{character.species}}</span>
-          <span class="col-xs-6 career">{{character.career}}</span>    
+      	<!--span class="col-xs-8 character-details" ng-click="viewCharacterSheet(character.sysID)"-->
+        <span class="col-xs-8 character-details">
+          <a href="?id=star_wars_character_sheet&character_id={{character.sysID}}">
+            <span class="col-xs-12 name">{{character.name}}</span>
+            <span class="col-xs-12 star-wars-text">{{character.name}}</span>
+            <span class="col-xs-6 species">{{character.species}}</span>
+            <span class="col-xs-6 career">{{character.career}}</span>
+          </a>
       	</span>
       </span>
     </span>

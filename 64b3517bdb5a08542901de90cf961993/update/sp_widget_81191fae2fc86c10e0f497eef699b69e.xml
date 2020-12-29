@@ -212,6 +212,17 @@
 					}
 				$scope.data.currentGear = item;
 				document.getElementById('gearQuantityInput').value = $scope.data.currentGear.quantity;
+			} else if(section == 'gearEdit'){
+					var container = document.getElementById('editGearDetailsContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+							container.style.width = '80%';
+						} else{
+							container.style.width = '40%';
+						}
+					$scope.data.currentGear = item;
+					document.getElementById('gearRange').value = item.rangeID;
+					document.getElementById('gearSoak').value = item.soak;
 			} else if(section == 'vehicles'){
 					var container = document.getElementById('editVehiclesContainer');
 					container.style.display = 'inline';
@@ -353,6 +364,17 @@
 					c.server.refresh();
 					$scope.closeEditContainer('forceRating');
 				});
+		} else if(section == 'gearEdits'){
+			var crit = document.getElementById('gearCritRating').value;
+			var defense = document.getElementById('gearDefense').value;
+			var damage = document.getElementById('gearDamage').value;
+			var range = document.getElementById('gearRange').value;
+			var soak = document.getElementById('gearSoak').value;
+			var hardPoints = document.getElementById('gearHardPoints').value;
+			c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('gearEdit');
+			});
 		}
 	}
 	
@@ -493,6 +515,8 @@
 			container = document.getElementById('gearInfoContainer');
 		} else if(section == 'species'){
 			container = document.getElementById('showSpeciesInfo');
+		} else if(section == 'gearEdit'){
+			container = document.getElementById('editGearDetailsContainer');				
 		}
 		
 		container.style.width = null;
@@ -779,6 +803,13 @@
   border:none;
 }
 
+
+
+.gear-type-text{
+	font-size:18px;
+  color:#e21414;
+}
+
 .talents-headers{
 	border-bottom:2px groove white;
   margin-top:20px;
@@ -942,9 +973,24 @@
 	font-size:16px;
 }
 
+.cg-name{
+	font-size:24px;
+  font-weight:bold;
+}
+
 #removeItemButtonContainer{
 	margin-top:20px;
   text-align:center;
+}
+
+#editItemButton{
+	border:1px groove #54f403;
+  border-radius:20px;
+  box-shadow: 0px 0px 6px 2px #54f403;
+  background:transparent;
+  padding: 5px 15px 5px 15px;
+  margin-bottom:20px;
+  margin-right:20px;
 }
 
 #removeItemButton{
@@ -1625,16 +1671,17 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 		var cgObj = {
 			name: cg.item.getDisplayValue(),
 			quantity: cg.quantity + '',
-			damage: cg.item.base_damage + '',
-			crit: cg.item.critical_rating + '',
-			defense: cg.item.defense + '',
-			soak: cg.item.soak + '',
+			damage: cg.damage + '',
+			crit: cg.critical_rating + '',
+			defense: cg.defense + '',
+			soak: cg.soak + '',
 			encumbrance: cg.item.encumbrance + '',
 			type: cg.item.type.getDisplayValue(),
 			typeID: cg.item.type + '',
 			skillUsed: cg.item.skill_used.getDisplayValue(),
-			range: cg.item.range.getDisplayValue(),
-			hardPoints: cg.item.hard_points + '',
+			range: cg.range.getDisplayValue(),
+			rangeID: cg.range + '',
+			hardPoints: cg.hard_points + '',
 			hpRequired: cg.item.hp_required + '',
 			description: cg.item.description + '',
 			sysID: cg.sys_id + '',
@@ -1654,6 +1701,20 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 		}
 		cgObj.weaponQualities = qualityString;
 		data.characterGear.push(cgObj);
+	}
+	
+	//gear types
+	data.gearTypes = [];
+	var choiceGR = new GlideRecord('sys_choice');
+	choiceGR.addQuery('name', 'x_176383_star_wars_gear').addCondition('element', 'type').addCondition('value', 'DOES NOT CONTAIN', 'vehicle');
+	choiceGR.orderBy('label');
+	choiceGR.query();
+	while(choiceGR.next()){
+		var choiceObj = {
+			name: choiceGR.label + '',
+			value: choiceGR.value + ''
+		};
+		data.gearTypes.push(choiceObj);
 	}
 	
 	//retrieve list of vehicles
@@ -1974,6 +2035,17 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			myGear.quantity = input.quantity;
 			myGear.update();
 			data.currentGear = null;
+		} else if(input.action == 'saveGearEdit'){
+			var gedit = new GlideRecord('x_176383_star_wars_character_gear_m2m');
+			gedit.get(input.gearID);
+			gedit.critical_rating = input.crit;
+			gedit.defense = input.defense;
+			gedit.damage = input.damage;
+			gedit.soak = input.soak;
+			gedit.range = input.range;
+			gedit.hard_points = input.hp;
+			gedit.update();
+			data.currentGear = null;
 		} else if(input.action == 'purchaseVehicle'){
 			var myShip = new GlideRecord('x_176383_star_wars_character_vehicle');
 			myShip.initialize();
@@ -2029,7 +2101,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>777</sys_mod_count>
+        <sys_mod_count>823</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2037,7 +2109,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-13 06:09:16</sys_updated_on>
+        <sys_updated_on>2020-12-28 19:34:53</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2295,7 +2367,8 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
            <span class="col-xs-2 gear-header" ng-click="toggleGearInfo('all')"><i class="fal fa-chevron-left gear-info-icon" id="allChevron"></i></span>
          </span>
          <span class="col-xs-12 gear-item-container">
-           <div class="col-xs-12 cg-item" ng-repeat="item in data.characterGear" id="parent{{item.sysID}}">
+           <div class="col-xs-12 cg-types" ng-repeat="gearType in data.gearTypes"><text class="gear-type-text">{{gearType.name}}</text>
+           <div class="col-xs-12 cg-item" ng-if="item.typeID == gearType.value" ng-repeat="item in data.characterGear" id="parent{{item.sysID}}">
              <span class="col-xs-8 gear-detail item-name">{{item.name}}</span>
              <span class="col-xs-2 gear-detail item-quantity" ng-click="editCharacter('gearQuantity', item)">{{item.quantity}}</span>
              <span class="col-xs-2 gear-detail expand-icon" ng-click="toggleGearInfo(item.sysID)"><i class="fal fa-chevron-left gear-info-icon" id="{{item.iconID}}"></i></span>
@@ -2349,9 +2422,11 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
                  <span class="col-xs-12 gear-detail-value">{{item.description}}</span>
                </span>
                <span class="col-xs-12" id="removeItemButtonContainer">
+                 <button id="editItemButton" ng-click="editCharacter('gearEdit', item)">Edit<br><text class="star-wars-text">Edit</text></button>
                  <button id="removeItemButton" ng-click="removeItem(item.sysID)">Remove<br><text class="star-wars-text">Remove</text></button>
                </span>
              </span>
+            </div>
            </div>
          </span>
        </span>
@@ -2783,6 +2858,49 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
             <input class="col-xs-2 sw-input" type="text" id="{{item.name}}QuantityInput" name="{{item.name}}QuantityInput" inputmode="numeric" pattern="[0-9]*" value="1"/>
             <span class="col-xs-2 item-detail"><button class="purchase-gear-button" ng-click="purhcaseItem(item)">Purchase</button></span>
           </span>
+        </span>
+      </span>
+    </span>
+    <!-- edit character gear -->
+    <span class="edit-character" id="editGearDetailsContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearEdit')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 cg-name text-center">{{data.currentGear.name}}<br><text class="star-wars-text">{{data.currentGear.name}}</text></span>
+      <span class="col-xs-12 cg-edit-body">
+        <span class="col-xs-12 col-md-4 gear-edit-input">
+          <label for="gearCritRating">Critical Rating</label><br>
+          <input class="sw-input" type="text" id="gearCritRating" name="gearCritRating" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.crit}}"/>
+        </span>
+        <span class="col-xs-12 col-md-4 gear-edit-input">
+          <label for="gearDamage">Damage</label><br>
+          <input class="sw-input" type="text" id="gearDamage" name="gearDamage" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.damage}}"/>
+        </span>
+        <span class="col-xs-12 col-md-4 gear-edit-input">
+          <label for="gearDefense">Defense</label><br>
+          <input class="sw-input" type="text" id="gearDefense" name="gearDefense" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.defense}}"/>
+        </span>
+        <span class="col-xs-12 col-md-4 gear-edit-input">
+          <label for="gearHardPoints">Hard Points</label><br>
+          <input class="sw-input" type="text" id="gearHardPoints" name="gearHardPoints" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.hardPoints}}"/>
+        </span>
+        <span class="col-xs-12 col-md-4 gear-edit-input">
+          <label for="gearRange">Range</label><br>
+          <select class="sw-input" id="gearRange" name="gearRange">
+            <option value="null">-- None --</option>
+            <option value="engaged">Engaged</option>
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+            <option value="extreme">Extreme</option>
+          </select>
+        </span>
+        <span class="col-xs-12 col-md-4 gear-edit-input">
+          <label for="gearSoak">Soak</label><br>
+          <input class="sw-input" type="text" id="gearSoak" name="gearSoak" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.soak}}"/>
+        </span>
+      </span>
+      <span class="col-xs-12 save-edits">
+        <span class="col-xs-12 save-button-container">
+          <button id="saveEditsButton" ng-click="saveEdits('gearEdits')">Save<br><text class="star-wars-text">Save</text></button>
         </span>
       </span>
     </span>

@@ -33,6 +33,14 @@
 			var results = [];
 			var tempArray = [];
 			var resultString = '';
+			var rolledString = 'Dice Rolled: ';
+			var boostRolled = 0;
+			var abilityRolled = 0;
+			var proficiencyRolled = 0;
+			var setbackRolled = 0;
+			var difficultyRolled = 0;
+			var challengeRolled = 0;
+			var forceRolled = 0;
 			for(var i = 0; i < $scope.data.dicePool.length; i++){
 				var roll = Math.floor((Math.random() * parseInt($scope.data.dicePool[i].max)) + 1);
 				for(var j = 0; j < $scope.data.dice.length; j++){
@@ -40,7 +48,67 @@
 						resultString += ',' + $scope.data.dice[j][roll.toString()];
 					}
 				}
+				
+			//build roll string to pass to journal
+				switch($scope.data.dicePool[i].name){
+					case 'boost':
+					boostRolled++;
+					break;
+						
+					case 'ability':
+					abilityRolled++;
+					break;
+						
+					case 'proficiency':
+					proficiencyRolled++;
+					break;
+						
+					case 'setback':
+					setbackRolled++;
+					break;
+					
+					case 'difficulty':
+					difficultyRolled++;
+					break;
+						
+					case 'challenge':
+					challengeRolled++;
+					break;
+						
+					case 'force':
+					forceRolled++;
+					break;
+				}
 			}
+			
+			if(boostRolled > 0){
+					rolledString += boostRolled + ' Boost, ';
+				}
+				
+				if(abilityRolled > 0){
+					rolledString += abilityRolled + ' Ability, ';
+				}
+				
+				if(proficiencyRolled > 0){
+					rolledString += proficiencyRolled + ' Proficiency, ';
+				}
+				
+				if(setbackRolled > 0){
+					rolledString += setbackRolled + ' Setback, ';
+				}
+				
+				if(difficultyRolled > 0){
+					rolledString += difficultyRolled + ' Difficulty, ';
+				}
+				
+				if(challengeRolled > 0){
+					rolledString += challengeRolled + ' Challenge, ';
+				}
+				
+				if(forceRolled > 0){
+					rolledString += forceRolled + ' Force';
+				}
+			
 			results = resultString.split(',');
 			var successes = 0;
 			var failures = 0;
@@ -157,6 +225,8 @@
 				};
 				$scope.data.displayResults.push(drObj);
 			}
+			
+		c.server.get({action: 'updateJournal', result: $scope.data.displayResults, rolled: rolledString});
 		} catch(e){
 			alert(e.message);
 		}
@@ -389,6 +459,18 @@
 	};
 	data.dice.push(forceDie);
 	
+	if(input){
+		if(input.action == 'updateJournal'){
+			var resultString = '';
+			for(var i = 0; i < input.result.length; i++){
+				resultString += input.result[i].result + ' ' + input.result[i].name + '\n';
+			}
+			var session = new GlideRecord('x_176383_star_wars_game_session');
+			session.get($sp.getParameter('sys_id'));
+			session.dice_roll_history = input.rolled + '\n\n' + resultString;
+			session.update();
+		}
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -396,7 +478,7 @@
         <sys_created_on>2020-11-24 15:52:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bc55c43b2f2ce0d0e0f497eef699b621</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>85</sys_mod_count>
         <sys_name>Star Wars RPG Dice Roller</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -404,7 +486,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_bc55c43b2f2ce0d0e0f497eef699b621</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-29 16:43:12</sys_updated_on>
+        <sys_updated_on>2020-12-28 22:00:14</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

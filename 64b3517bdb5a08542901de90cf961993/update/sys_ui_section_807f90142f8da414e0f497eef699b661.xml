@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-14 20:31:36</sys_created_on>
-            <sys_id>5ef400922f05ec14e0f497eef699b684</sys_id>
+            <sys_created_on>2020-12-15 21:13:32</sys_created_on>
+            <sys_id>56285d2e2f892054e0f497eef699b69e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_the_galaxy" sys_domain="global" view="Default view">807f90142f8da414e0f497eef699b661</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-14 20:31:36</sys_updated_on>
+            <sys_updated_on>2020-12-15 21:13:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>sector</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-14 20:31:36</sys_created_on>
-            <sys_id>1af400922f05ec14e0f497eef699b685</sys_id>
+            <sys_created_on>2020-12-15 21:13:32</sys_created_on>
+            <sys_id>12285d2e2f892054e0f497eef699b69f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_the_galaxy" sys_domain="global" view="Default view">807f90142f8da414e0f497eef699b661</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-14 20:31:36</sys_updated_on>
+            <sys_updated_on>2020-12-15 21:13:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-14 20:31:36</sys_created_on>
-            <sys_id>9ef400922f05ec14e0f497eef699b685</sys_id>
+            <sys_created_on>2020-12-15 21:13:32</sys_created_on>
+            <sys_id>96285d2e2f892054e0f497eef699b69f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_the_galaxy" sys_domain="global" view="Default view">807f90142f8da414e0f497eef699b661</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-14 20:31:36</sys_updated_on>
+            <sys_updated_on>2020-12-15 21:13:32</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,27 +46,27 @@
             <element>name</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-14 20:31:36</sys_created_on>
-            <sys_id>16f400922f05ec14e0f497eef699b686</sys_id>
+            <sys_created_on>2020-12-15 21:13:33</sys_created_on>
+            <sys_id>1e285d2e2f892054e0f497eef699b69f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_the_galaxy" sys_domain="global" view="Default view">807f90142f8da414e0f497eef699b661</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-14 20:31:36</sys_updated_on>
+            <sys_updated_on>2020-12-15 21:13:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_groups</element>
+            <element>u_campaigns</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-14 20:31:36</sys_created_on>
-            <sys_id>9af400922f05ec14e0f497eef699b686</sys_id>
+            <sys_created_on>2020-12-15 21:13:33</sys_created_on>
+            <sys_id>92285d2e2f892054e0f497eef699b6a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_the_galaxy" sys_domain="global" view="Default view">807f90142f8da414e0f497eef699b661</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-14 20:31:36</sys_updated_on>
+            <sys_updated_on>2020-12-15 21:13:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.end_split</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-14 20:31:36</sys_created_on>
-            <sys_id>12f400922f05ec14e0f497eef699b687</sys_id>
+            <sys_created_on>2020-12-15 21:13:33</sys_created_on>
+            <sys_id>1a285d2e2f892054e0f497eef699b6a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_the_galaxy" sys_domain="global" view="Default view">807f90142f8da414e0f497eef699b661</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-14 20:31:36</sys_updated_on>
+            <sys_updated_on>2020-12-15 21:13:33</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>description</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-14 20:31:36</sys_created_on>
-            <sys_id>96f400922f05ec14e0f497eef699b687</sys_id>
+            <sys_created_on>2020-12-15 21:13:33</sys_created_on>
+            <sys_id>9e285d2e2f892054e0f497eef699b6a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_the_galaxy" sys_domain="global" view="Default view">807f90142f8da414e0f497eef699b661</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-14 20:31:36</sys_updated_on>
+            <sys_updated_on>2020-12-15 21:13:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

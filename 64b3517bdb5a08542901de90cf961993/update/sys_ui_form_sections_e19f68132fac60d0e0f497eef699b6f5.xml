@@ -28,6 +28,20 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2020-11-23 05:40:19</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-12-28 15:32:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7cd6c72e2fd5e810e0f497eef699b681</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_176383_star_wars_game_session" name="x_176383_star_wars_game_session" sys_domain="global" view="Default view">e19f68132fac60d0e0f497eef699b6f5</sys_ui_form>
+            <sys_ui_section caption="Dice Rolls" display_value="Dice Rolls" name="x_176383_star_wars_game_session" sys_domain="global" view="Default view">74d6c72e2fd5e810e0f497eef699b67d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-12-28 15:32:44</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_176383_star_wars_game_session</name>
             <roles/>

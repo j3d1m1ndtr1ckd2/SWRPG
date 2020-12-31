@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>73f657ae2f19e810e0f497eef699b6b4</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;img src="https://vignette1.wikia.nocookie.net/starwars/images/a/ae/Deralia.png/revision/latest/scale-to-width-down/500?cb&amp;#61;20150131212655" alt="See the source image" width="150" height="150" /&gt; Derelia, is a remote world located on the outer edges of The Outer Rim, someplace just outside The Unknown Regions. The world has a very warm and humid climate, with world-wide tropical oceans covering most of the planet, and what land there is largely jungle.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Deralia&lt;/name&gt;
+        &lt;number&gt;GALAXY0001132&lt;/number&gt;
+        &lt;sector&gt;the_outer_rim&lt;/sector&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-28 16:50:25&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;73f657ae2f19e810e0f497eef699b6b4&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-28 16:50:42&lt;/sys_updated_on&gt;
+        &lt;u_campaigns/&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-31 20:20:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5a55ebe32f9dec10e0f497eef699b674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deralia</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_5a55ebe32f9dec10e0f497eef699b674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-31 20:20:01</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

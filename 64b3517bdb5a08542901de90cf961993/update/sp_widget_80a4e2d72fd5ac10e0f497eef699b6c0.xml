@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.viewCampaign = function(campaign){
+		c.server.get({action: 'showCampaignDetail', campaign: campaign}).then(function(response){
+			$scope.data = response.data;
+		});
+	}
+	
+	$scope.goBack = function(){
+		$scope.data.currentCampaign = '';
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.campaigns-container{
+	padding-bottom:600px;
+}
+	
+.header{
+	font-size:26px;
+}
+
+.campaigns-header{
+	margin-bottom:40px;
+}
+
+.back-button{
+  padding:0;
+	text-align:left;
+  z-index:4;
+  margin-top:40px;
+}
+
+#starfighterBackButton{
+	transform: rotate(270deg);
+  color:#e17012;
+}
+
+.campaign{
+	margin-bottom:20px;
+}
+
+.campaign-body{
+  text-align:center;
+	background-color:black;
+  border:1px groove #1933f4;
+  border-radius:20px;
+  box-shadow:0px 0px 6px 3px #1933f4;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.name{
+	font-size:20px;
+  font-weight:bold;
+}
+
+.gm{
+	font-size:18px;
+}
+
+.view-campaign-button{
+  margin-top:15px;
+	background:transparent;
+  padding:5px 15px 5px 15px;
+  border:1px groove #54f403;
+  border-radius:20px;
+  box-shadow:0px 0px 6px 3px #54f403;
+}
+
+.detail-header{
+	margin-top:20px;
+  margin-bottom:20px;
+  font-size:18px;
+}
+
+a{
+	color:white !important;
+}
+
+a:hover{
+	color:lightgray !important;
+}
+
+.character{
+	background-color:black;
+  margin-bottom:15px;
+  border:1px groove #1933f4;
+  border-radius:20px;
+  box-shadow:0px 0px 6px 3px #1933f4;
+}
+
+.character-details{
+  padding-top:20px;
+	font-size:16px;
+  text-align:center;
+}
+
+.vehicle{
+	background-color:black;
+  margin-bottom:15px;
+  border:1px groove #1933f4;
+  border-radius:20px;
+  box-shadow:0px 0px 6px 3px #1933f4;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:center;
+  font-size:16px;
+}
+
+@media only screen and (max-width:762px){
+  .character-details,.character{
+  	padding-left:0;
+    padding-right:0;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_campaigns</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Campaigns</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var userID = gs.getUserID();
+var characters = new GlideRecord('x_176383_star_wars_character');
+	characters.addQuery('player', userID).addCondition('campaign', '!=', '');
+	characters.query();
+	var campaignsString = '';
+	while(characters.next()){
+		campaignsString += characters.campaign + ',';
+	}
+	
+	data.campaigns = [];
+	var campaigns = new GlideRecord('x_176383_star_wars_campaign');
+	campaigns.addQuery('game_master', userID).addOrCondition('sys_id', 'IN', campaignsString);
+	campaigns.orderBy('name');
+	campaigns.query();
+	while(campaigns.next()){
+		var campaign = {
+			gm: campaigns.game_master.getDisplayValue(),
+			sysID: campaigns.sys_id + '',
+			name: campaigns.name + ''
+		};
+		data.campaigns.push(campaign);
+	}
+	
+	data.currentCampaign = '';
+	
+	if(input){
+		if(input.action == 'showCampaignDetail'){
+			data.currentCampaign = input.campaign;
+			//retrieve all characters within the selected campaign
+			data.campaignCharacters = [];
+			var characterIDString = '';
+			characters = new GlideRecord('x_176383_star_wars_character');
+			characters.addQuery('campaign', input.campaign.sysID);
+			characters.orderBy('name');
+			characters.query();
+			while(characters.next()){
+				characterIDString += characters.sys_id + ',';
+				var cObj = {
+					name: characters.name + '',
+					player: characters.player.getDisplayValue(),
+					sysID: characters.sys_id + '',
+					species: characters.species.getDisplayValue(),
+					speciesImg: characters.species.getDisplayValue().toLowerCase(),
+					career: characters.career.getDisplayValue()
+				};
+				data.campaignCharacters.push(cObj);
+			}
+			
+			//retrieve all vehicles assigned to a character within this campaign.
+			data.campaignVehicles = [];
+			var vehicles = new GlideRecord('x_176383_star_wars_character_vehicle');
+			vehicles.addQuery('character', 'IN', characterIDString);
+			vehicles.orderBy('name');
+			vehicles.query();
+			while(vehicles.next()){
+				var vObj = {
+					name: vehicles.name + '',
+					shipName: vehicles.vehicle.ship_name + '',
+					type: vehicles.vehicle.type.getDisplayValue(),
+					sysID: vehicles.sys_id + ''
+				};
+				data.campaignVehicles.push(vObj);
+			}
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-30 20:58:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Star Wars Campaigns</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-31 05:55:45</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 campaigns-container">
+	<div class="col-xs-12 campaigns-header">
+    <span class="col-xs-12 header text-center">Campaigns</span>
+    <span class="col-xs-12 header star-wars-text text-center">Campaigns</span>
+  </div>
+  <!-- campaigns list -->
+  <div ng-if="data.currentCampaign == ''" class="col-xs-12 campaigns-body">
+    <span class="col-xs-12 col-md-4 campaign" ng-repeat="c in data.campaigns">
+      <span class="col-xs-12 campaign-body">
+        <span class="col-xs-12 name">{{c.name}}</span>
+        <span class="col-xs-12 gm">Game Master: {{c.gm}}</span>
+        <span class="col-xs-12 view-details-button-container">
+          <button class="view-campaign-button" ng-click="viewCampaign(c)">View Details</button>
+        </span>
+      </span>
+    </span>
+  </div>
+  <!-- campaign detail -->
+  <div ng-if="data.currentCampaign != ''" class="col-xs-12 campaign-detail-body">
+    <div class="col-xs-12 back-button" ng-click="goBack()">
+      <i class="fad fa-starfighter fa-2x" id="starfighterBackButton"></i> <text id="backButtonText">Back</text>
+    </div>
+    <span class="col-xs-12 header text-center">{{data.currentCampaign.name}}<br><text class="star-wars-text">{{data.currentCampaign.name}}</text></span>
+    <span class="col-xs-12 col-md-6 campaign-characters">
+      <span class="col-xs-12 detail-header text-center">Characters<br><text class="star-wars-text">Characters</text></span>
+      <span class="col-xs-12 character" ng-repeat="character in data.campaignCharacters">
+        <span class="col-xs-3 species-img"><img src="{{character.speciesImg}}.png" height="150" width="75"/></span>
+        <span class="col-xs-9 character-details">
+          <a href="?id=star_wars_character_sheet&character_id={{character.sysID}}">
+            <span class="col-xs-12 character-detail">Name: {{character.name}}</span>
+            <span class="col-xs-12 character-detail">Player: {{character.player}}</span>
+            <span class="col-xs-12 character-detail">Species: {{character.species}}</span>
+            <span class="col-xs-12 character-detail">Career: {{character.career}}</span>
+          </a>
+        </span>
+      </span>
+    </span>
+    <span class="col-xs-12 col-md-6 campaign-vehicles">
+      <span class="col-xs-12 detail-header text-center">Vehicles<br><text class="star-wars-text">Vehicles</text></span>
+      <span class="col-xs-12 vehicle" ng-repeat="vehicle in data.campaignVehicles">
+        <a href="?id=star_wars_vehicle_sheet&vehicleID={{vehicle.sysID}}">
+        	<span class="col-xs-12 character-detail">Ship Name: {{vehicle.name}}</span>
+          <span class="col-xs-12 character-detail">Model: {{vehicle.shipName}}</span>
+          <span class="col-xs-12 character-detail">Type: {{vehicle.type}}</span>
+        </a>
+      </span>
+    </span>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

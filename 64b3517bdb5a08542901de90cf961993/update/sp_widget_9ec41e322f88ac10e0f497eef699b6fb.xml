@@ -4,12 +4,12 @@
         <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
         <controller_as>c</controller_as>
         <css>.my-characters-button{
-	background:url("sw_characters.png");
+	/*background:url("sw_characters.png");
   background-position: center !important; /* Center the image */
-  background-attachment: fixed;
+  /*background-attachment: fixed;
   background-repeat:no-repeat;
   background-size:cover !important;
-  min-height:100px;
+  min-height:100px;*/
 }
 
 .link-label,.sw-link-label{
@@ -62,7 +62,7 @@
         <sys_created_on>2020-10-28 03:14:07</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ec41e322f88ac10e0f497eef699b6fb</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Star Wars Home</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -70,13 +70,19 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_9ec41e322f88ac10e0f497eef699b6fb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-28 16:17:58</sys_updated_on>
+        <sys_updated_on>2020-12-31 05:27:48</sys_updated_on>
         <template><![CDATA[<div class="col-xs-12 home-container">
 	<!-- add header here -->
   <span class="col-xs-12 col-md-3 my-characters-button">
     <a href="?id=star_wars_my_characters">
       <span class="col-xs-12 link-label">My Characters</span>
       <span class="col-xs-12 sw-link-label star-wars-text">My Characters</span>
+    </a>
+  </span>
+  <span class="col-xs-12 col-md-3 my-campaigns-button">
+    <a href="?id=star_wars_campaigns">
+      <span class="col-xs-12 link-label">My Campaigns</span>
+      <span class="col-xs-12 sw-link-label star-wars-text">My Campaigns</span>
     </a>
   </span>
   <span ng-if="data.sessionLink" class="col-xs-12 col-md-3 active-session-button">

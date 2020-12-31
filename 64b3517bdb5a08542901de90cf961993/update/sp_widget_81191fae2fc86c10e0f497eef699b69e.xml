@@ -112,9 +112,11 @@
 	
 	$scope.editCharacter = function(section, item){
 		if($scope.data.canEdit){
-			if(section == 'description'){
+			switch(section){
+				case 'description':
 				document.getElementById('notableFeatures').innerHTML = $scope.data.character.notableFeatures;
 				document.getElementById('background').innerHTML = $scope.data.character.background;
+				document.getElementById('notes').value = $scope.data.character.notes;
 				var container = document.getElementById('editCharacterDescription');
 				container.style.display = 'inline';
 				if(parseInt(screen.width) < 762){
@@ -122,7 +124,9 @@
 				} else{
 					container.style.width = '40%';
 				}
-			} else if(section == 'soak'){
+				break;
+					
+				case 'soak':
 				var container = document.getElementById('editSoakContainer');
 				container.style.display = 'inline';
 				if(parseInt(screen.width) < 762){
@@ -130,7 +134,9 @@
 				} else{
 					container.style.width = '40%';
 				}
-			} else if(section == 'wounds'){
+				break;
+					
+				case 'wounds':
 				var container = document.getElementById('editWoundsContainer');
 				container.style.display = 'inline';
 				if(parseInt(screen.width) < 762){
@@ -138,15 +144,19 @@
 				} else{
 					container.style.width = '40%';
 				}
-			} else if(section == 'strain'){
+				break;
+					
+				case 'strain':
 				var container = document.getElementById('editStrainContainer');
 				container.style.display = 'inline';
 				if(parseInt(screen.width) < 762){
 					container.style.width = '80%';
 				} else{
 					container.style.width = '40%';
-				}			
-			} else if(section == 'defense'){
+				}
+				break;
+					
+				case 'defense':
 				var container = document.getElementById('editDefenseContainer');
 				container.style.display = 'inline';
 				if(parseInt(screen.width) < 762){
@@ -154,56 +164,70 @@
 				} else{
 					container.style.width = '40%';
 				}
-			} else if(section == 'characteristics'){
-					var container = document.getElementById('editCharacteristicsContainer');
-					container.style.display = 'inline';
-					if(parseInt(screen.width) < 762){
-						container.style.width = '80%';
-					} else{
-						container.style.width = '40%';
-					}			
-			} else if(section == 'name'){
-					var container = document.getElementById('editNameContainer');
-					container.style.display = 'inline';
-					if(parseInt(screen.width) < 762){
-						container.style.width = '80%';
-					} else{
-						container.style.width = '40%';
-					}	
-			} else if(section == 'gear'){
-					var container = document.getElementById('marketplaceContainer');
+				break;
+					
+				case 'characteristics':
+				var container = document.getElementById('editCharacteristicsContainer');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+					
+				case 'name':
+				var container = document.getElementById('editNameContainer');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+					
+				case 'gear':
+				var container = document.getElementById('marketplaceContainer');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '100%';
 					} else{
 						container.style.width = '40%';
-					}	
-			} else if(section == 'credits'){
-					var container = document.getElementById('editCreditsContainer');
-					container.style.display = 'inline';
-					if(parseInt(screen.width) < 762){
-						container.style.width = '80%';
-					} else{
-						container.style.width = '40%';
-					}		
-			} else if(section == 'talents'){
-					var container = document.getElementById('editTalentsContainer');
-					container.style.display = 'inline';
-					if(parseInt(screen.width) < 762){
-						container.style.width = '80%';
-					} else{
-						container.style.width = '40%';
-					}		
-			} else if(section == 'skills'){
-					var container = document.getElementById('editSkillsContainer');
+					}
+				break;
+					
+				case 'credits':
+				var container = document.getElementById('editCreditsContainer');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '80%';
 					} else{
 						container.style.width = '40%';
 					}
-			} else if(section == 'gearQuantity'){
-					var container = document.getElementById('editGearQuantityContainer');
+				break;
+					
+				case 'talents':
+				var container = document.getElementById('editTalentsContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '80%';
+					} else{
+						container.style.width = '40%';
+					}
+				break;
+					
+				case 'skills':
+				var container = document.getElementById('editSkillsContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '80%';
+					} else{
+						container.style.width = '40%';
+					}
+				break;
+					
+				case 'gearQuantity':
+				var container = document.getElementById('editGearQuantityContainer');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '80%';
@@ -212,8 +236,10 @@
 					}
 				$scope.data.currentGear = item;
 				document.getElementById('gearQuantityInput').value = $scope.data.currentGear.quantity;
-			} else if(section == 'gearEdit'){
-					var container = document.getElementById('editGearDetailsContainer');
+				break;
+					
+				case 'gearEdit':
+				var container = document.getElementById('editGearDetailsContainer');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 							container.style.width = '80%';
@@ -223,68 +249,98 @@
 					$scope.data.currentGear = item;
 					document.getElementById('gearRange').value = item.rangeID;
 					document.getElementById('gearSoak').value = item.soak;
-			} else if(section == 'vehicles'){
-					var container = document.getElementById('editVehiclesContainer');
+				break;
+					
+				case 'vehicles':
+				var container = document.getElementById('editVehiclesContainer');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '90%';
 					} else{
 						container.style.width = '40%';
 					}
-			} else if(section == 'career'){
-					var container = document.getElementById('showCareerInfo');
+				break;
+					
+				case 'career':
+				var container = document.getElementById('showCareerInfo');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '80%';
 					} else{
 						container.style.width = '40%';
 					}
-			} else if(section == 'specializations'){
-					var container = document.getElementById('showSpecializationsInfo');
+				break;
+					
+				case 'specializations':
+				var container = document.getElementById('showSpecializationsInfo');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '90%';
 					} else{
 						container.style.width = '40%';
-					}		
-			} else if(section == 'forceRating'){
-					var container = document.getElementById('editForceRatingContainer');
+					}
+				break;
+					
+				case 'forceRating':
+				var container = document.getElementById('editForceRatingContainer');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '80%';
 					} else{
 						container.style.width = '40%';
-					}		
-			} else if(section == 'forcePowers'){
-					var container = document.getElementById('editForcePowersContainer');
+					}
+				break;
+					
+				case 'forcePowers':
+				var container = document.getElementById('editForcePowersContainer');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '90%';
 					} else{
 						container.style.width = '40%';
 					}
-			} else if(section == 'newSpecs'){
-					var container = document.getElementById('addNewSpecializationsContainer');
+				break;
+					
+				case 'newSpecs':
+				var container = document.getElementById('addNewSpecializationsContainer');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '90%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+					
+				case 'species':
+				var container = document.getElementById('showSpeciesInfo');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '90%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+					
+				case 'otherGear':
+				var container = document.getElementById('editOtherGearDetailsContainer');
+				document.getElementById('otherGearInput').value = $scope.data.character.otherGear;
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
-						container.style.width = '90%';
+						container.style.width = '80%';
 					} else{
 						container.style.width = '40%';
 					}
-			} else if(section == 'species'){
-					var container = document.getElementById('showSpeciesInfo');
-					container.style.display = 'inline';
-					if(parseInt(screen.width) < 762){
-						container.style.width = '90%';
-					} else{
-						container.style.width = '40%';
-					}
+				break;
+					
+				default:
+					break;
 			}
 		}
 	}
 	
 	$scope.saveEdits = function(section){
-		if(section == 'description'){
+		switch(section){
+			case 'description':
 			var gender = document.getElementById('gender').value;
 			var age = parseInt(document.getElementById('age').value);
 			var eyes = document.getElementById('eyes').value;
@@ -293,38 +349,49 @@
 			var hair = document.getElementById('hair').value;
 			var notableFeatures = document.getElementById('notableFeatures').value;
 			var background = document.getElementById('background').value;
-			 c.server.get({action: 'saveCharacterDescription', gender: gender, age: age, eyes: eyes, height: height, weight: weight, hair: hair, notableFeatures: notableFeatures, background: background}).then(function(response){
+			var notes = document.getElementById('notes').value;
+			 c.server.get({action: 'saveCharacterDescription', gender: gender, age: age, eyes: eyes, height: height, weight: weight, hair: hair, notableFeatures: notableFeatures, background: background, notes: notes}).then(function(response){
 				 $scope.data.character = response.data.character;
 				 $scope.closeEditContainer('description');
 			 });
-		} else if(section == 'soak'){
+			break;
+				
+			case 'soak':
 			var soak = parseInt(document.getElementById('soakInput').value);
 			c.server.get({action: 'saveSoak', soak: soak}).then(function(response){
 				$scope.data.character = response.data.character;
 				$scope.closeEditContainer('soak');
 			});
-		} else if(section == 'wounds'){
+			break;
+				
+			case 'wounds':
 			var woundsThreshold = parseInt(document.getElementById('woundThresholdInput').value);
 			var woundsCurrent = parseInt(document.getElementById('woundCurrentInput').value);
 			c.server.get({action: 'saveWounds', threshold: woundsThreshold, current: woundsCurrent}).then(function(response){
 				$scope.data.character = response.data.character;
 				$scope.closeEditContainer('wounds');
 			});
-		} else if(section == 'strain'){
+			break;
+				
+			case 'strain':
 			var strainThreshold = parseInt(document.getElementById('strainThresholdInput').value);
 			var strainCurrent = parseInt(document.getElementById('strainCurrentInput').value);
 			c.server.get({action: 'saveStrain', threshold: strainThreshold, current: strainCurrent}).then(function(response){
 				$scope.data.character = response.data.character;
 				$scope.closeEditContainer('strain');
-			});		
-		} else if(section == 'defense'){
+			});
+			break;
+				
+			case 'defense':
 			var ranged = parseInt(document.getElementById('rangedDefenseInput').value);
 			var melee = parseInt(document.getElementById('meleeDefenseInput').value);
 			c.server.get({action: 'saveDefense', ranged: ranged, melee: melee}).then(function(response){
 				$scope.data.character = response.data.character;
 				$scope.closeEditContainer('defense');
-			});		
-		} else if(section == 'characteristics'){
+			});
+			break;
+				
+			case 'characteristics':
 			var brawn = parseInt(document.getElementById('brawn').value);
 			var agility = parseInt(document.getElementById('agility').value);
 			var intellect = parseInt(document.getElementById('intellect').value);
@@ -339,32 +406,42 @@
 			} else{
 				alert('Characteristics can be raised above 6.');
 			}
-		} else if(section == 'name'){
+			break;
+				
+			case 'name':
 			var name = document.getElementById('nameInput').value;
 			c.server.get({action: 'saveName', name: name}).then(function(response){
 				$scope.data.character = response.data.character;
 				$scope.closeEditContainer('name');
 			});
-		} else if(section == 'credits'){
+			break;
+				
+			case 'credits':
 			var creds = parseInt(document.getElementById('creditsInput').value);
 			c.server.get({action: 'saveCredits', credits: creds}).then(function(response){
 				$scope.data.character = response.data.character;
 				$scope.closeEditContainer('credits');
 			});
-		} else if(section == 'gearQuantity'){
+			break;
+				
+			case 'gearQuantity':
 			var quantity = parseInt(document.getElementById('gearQuantityInput').value);
 			c.server.get({action: 'saveGearQuantity', gearID: $scope.data.currentGear.sysID, quantity: quantity}).then(function(response){
 				document.getElementById('gearQuantityInput').value = null;
 				c.server.refresh();
 				$scope.closeEditContainer('gearQuantity');
 			});
-		} else if(section == 'forceRating'){
-				var forceRating = parseInt(document.getElementById('forceRatingInput').value);
+			break;
+				
+			case 'forceRating':
+			var forceRating = parseInt(document.getElementById('forceRatingInput').value);
 				c.server.get({action: 'saveForceRating', forceRating: forceRating}).then(function(response){
 					c.server.refresh();
 					$scope.closeEditContainer('forceRating');
 				});
-		} else if(section == 'gearEdits'){
+			break;
+				
+			case 'gearEdits':
 			var crit = document.getElementById('gearCritRating').value;
 			var defense = document.getElementById('gearDefense').value;
 			var damage = document.getElementById('gearDamage').value;
@@ -375,6 +452,18 @@
 				c.server.refresh();
 				$scope.closeEditContainer('gearEdit');
 			});
+			break;
+				
+			case 'otherGear':
+			var og = document.getElementById('otherGearInput').value;
+			c.server.get({action: 'saveOtherGear', gear: og}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('otherGear');
+			});
+			break;
+				
+			default:
+				break;
 		}
 	}
 	
@@ -471,54 +560,108 @@
 	
 	$scope.closeEditContainer = function(section){
 		var container = '';
-		if(section == 'description'){
-			container = document.getElementById('editCharacterDescription');
-		} else if(section == 'soak'){
-			container = document.getElementById('editSoakContainer');
-		} else if(section == 'wounds'){
-			container = document.getElementById('editWoundsContainer');				
-		} else if(section == 'strain'){
-			container = document.getElementById('editStrainContainer');
-		} else if(section == 'defense'){
-			container = document.getElementById('editDefenseContainer');
-		} else if(section == 'characteristics'){
-			container = document.getElementById('editCharacteristicsContainer');
-		} else if(section == 'name'){
-			container = document.getElementById('editNameContainer');
-		} else if(section == 'credits'){
-			container = document.getElementById('editCreditsContainer');
-		} else if(section == 'gear'){
-			container = document.getElementById('marketplaceContainer');
-		} else if(section == 'talents'){
-			container = document.getElementById('editTalentsContainer');
-		} else if(section == 'talentInfoBox'){
-			container = document.getElementById('talentInfoBox');
-		} else if(section == 'skills'){
-			container = document.getElementById('editSkillsContainer');
-		} else if(section == 'gearQuantity'){
-			container = document.getElementById('editGearQuantityContainer');
-		} else if(section == 'vehicles'){
-			container = document.getElementById('editVehiclesContainer');
-		} else if(section == 'vehicleInfoBox'){
-			container = document.getElementById('vehicleInfoBox');
-		} else if(section == 'career'){
-			container = document.getElementById('showCareerInfo');
-		} else if(section == 'specializations'){
-			container = document.getElementById('showSpecializationsInfo');
-		} else if(section == 'forceRating'){
-			container = document.getElementById('editForceRatingContainer');
-		} else if(section == 'forcePowers'){
-			container = document.getElementById('editForcePowersContainer');
-		} else if(section == 'newSpecs'){
-			container = document.getElementById('addNewSpecializationsContainer');
-		} else if(section == 'gearInfo'){
-			container = document.getElementById('gearInfoContainer');
-		} else if(section == 'species'){
-			container = document.getElementById('showSpeciesInfo');
-		} else if(section == 'gearEdit'){
-			container = document.getElementById('editGearDetailsContainer');				
-		}
 		
+		switch(section){
+			case 'description':
+			container = document.getElementById('editCharacterDescription');	
+			break;
+				
+			case 'soak':
+			container = document.getElementById('editSoakContainer');	
+			break;
+				
+			case 'wounds':
+			container = document.getElementById('editWoundsContainer');
+			break;
+				
+			case 'strain':
+			container = document.getElementById('editStrainContainer');		
+			break;
+				
+			case 'defense':
+			container = document.getElementById('editDefenseContainer');
+			break;
+				
+			case 'characteristics':
+			container = document.getElementById('editCharacteristicsContainer');	
+			break;
+				
+			case 'name':
+			container = document.getElementById('editNameContainer');	
+			break;
+				
+			case 'credits':
+			container = document.getElementById('editCreditsContainer');
+			break;
+				
+			case 'gear':
+			container = document.getElementById('marketplaceContainer');
+			break;
+				
+			case 'talents':
+			container = document.getElementById('editTalentsContainer');
+			break;
+				
+			case 'talentInfoBox':
+			container = document.getElementById('talentInfoBox');		
+			break;
+				
+			case 'skills':
+			container = document.getElementById('editSkillsContainer');		
+			break;
+				
+			case 'gearQuantity':
+			container = document.getElementById('editGearQuantityContainer');	
+			break;
+				
+			case 'vehicles':
+			container = document.getElementById('editVehiclesContainer');	
+			break;
+				
+			case 'vehicelInfoBox':
+			container = document.getElementById('vehicleInfoBox');		
+			break;
+				
+			case 'career':
+			container = document.getElementById('showCareerInfo');		
+			break;
+				
+			case 'specializations':
+			container = document.getElementById('showSpecializationsInfo');		
+			break;
+				
+			case 'forceRating':
+			container = document.getElementById('editForceRatingContainer');		
+			break;
+				
+			case 'forcePowers':
+			container = document.getElementById('editForcePowersContainer');
+			break;
+				
+			case 'newSpecs':
+			container = document.getElementById('addNewSpecializationsContainer');	
+			break;
+				
+			case 'gearInfo':
+			container = document.getElementById('gearInfoContainer');
+			break;
+				
+			case 'species':
+			container = document.getElementById('showSpeciesInfo');
+			break;
+				
+			case 'gearEdit':
+			container = document.getElementById('editGearDetailsContainer');	
+			break;
+				
+			case 'otherGear':
+			container = document.getElementById('editOtherGearDetailsContainer');
+			break;
+				
+			default:
+				break;
+		}				
+				
 		container.style.width = null;
 		container.style.display = 'none';
 	}
@@ -537,6 +680,7 @@
 		c.server.get({action: 'purchaseTalent', talent: item, talentID: item.sysID}).then(function(response){
 			$scope.data.character = response.data.character;
 			c.server.refresh();
+			$scope.closeEditContainer('talentInfoBox');
 		});
 	}
 	
@@ -798,12 +942,14 @@
   text-align:center;
 }
 
-#manageGearButton{
+#manageGearButton, #editOtherGearButton{
 	background:transparent;
   border:none;
 }
 
-
+#editOtherGearButtonContainer{
+	margin-top:20px;
+}
 
 .gear-type-text{
 	font-size:18px;
@@ -891,7 +1037,7 @@
   font-size:24px;
 }
 
-#notableFeatures, #background{
+#notableFeatures, #background, #notes, #otherGearInput{
 	width:100%;
   height:100px;
 }
@@ -1486,7 +1632,9 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			forceRatingInt: parseInt(charGR.force_rating),
 			forceRatingString: charGR.force_rating + '',
 			background: charGR.description_html + '',
-			notableFeatures: charGR.notable_features + ''
+			notableFeatures: charGR.notable_features + '',
+			notes: charGR.notes + '',
+			otherGear: charGR.other_gear + ''
 		};
 	
 	//retrieve career info to display when info button clicked.
@@ -1877,7 +2025,8 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 	
 	//process character updates
 	if(input){
-		if(input.action == 'saveCharacterDescription'){
+		switch(input.action){
+			case 'saveCharacterDescription':
 			charGR.gender = input.gender;
 			charGR.age = input.age;
 			charGR.eyes = input.eyes;
@@ -1886,6 +2035,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			charGR.hair = input.hair;
 			charGR.notable_features = input.notableFeatures;
 			charGR.description_html = input.background;
+			charGR.notes = input.notes;
 			charGR.update();
 			data.character.gender = charGR.gender + '';
 			data.character.age = charGR.age + '';
@@ -1895,12 +2045,17 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			data.character.hair = charGR.hair + '';
 			data.character.notableFeatures = charGR.notable_features + '';
 			data.character.background = charGR.description_html + '';
-		} else if(input.action == 'saveSoak'){
+			data.character.notes = charGR.notes + '';
+			break;
+				
+			case 'saveSoak':
 			charGR.soak_value = input.soak;
 			charGR.update();
 			data.character.soakInt = parseInt(charGR.soak_value);
 			data.character.soakString = charGR.soak_value + '';
-		} else if(input.action == 'saveWounds'){
+			break;
+				
+			case 'saveWounds':
 			charGR.wounds_threshold = input.threshold;
 			charGR.wounds_current = input.current;
 			charGR.update();
@@ -1908,7 +2063,9 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			data.character.woundThresholdString = charGR.wounds_threshold + '';
 			data.character.woundCurrentInt = parseInt(charGR.wounds_current);
 			data.character.woundCurrentString = charGR.wounds_current + '';
-		} else if(input.action == 'saveStrain'){
+			break;
+				
+			case 'saveStrain':
 			charGR.strain_threshold = input.threshold;
 			charGR.strain_current = input.current;
 			charGR.update();
@@ -1916,15 +2073,19 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			data.character.strainThresholdString = charGR.strain_threshold + '';
 			data.character.strainCurrentInt = parseInt(charGR.strain_current);
 			data.character.strainCurrentString = charGR.strain_current + '';
-		} else if(input.action == 'saveDefense'){
+			break;
+				
+			case 'saveDefense':
 			charGR.defense_ranged = input.ranged;
 			charGR.defense_melee = input.melee;
 			charGR.update();
 			data.character.rangedDefenseInt = parseInt(charGR.defense_ranged);
 			data.character.rangedDefenseString = charGR.defense_ranged + '';
 			data.character.meleeDefenseInt = parseInt(charGR.defense_melee);
-			data.character.meleeDefenseString = charGR.defense_melee + '';				
-		} else if(input.action == 'saveCharacteristics'){
+			data.character.meleeDefenseString = charGR.defense_melee + '';	
+			break;
+				
+			case 'saveCharacteristics':
 			charGR.brawn = input.brawn;
 			charGR.agility = input.agility;
 			charGR.intellect = input.intellect;
@@ -1938,16 +2099,22 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			data.character.cunning = charGR.cunning + '';
 			data.character.willpower = charGR.willpower + '';
 			data.character.presence = charGR.presence + '';
-		} else if(input.action == 'saveName'){
+			break;
+				
+			case 'saveName':
 			charGR.name = input.name;
 			charGR.update();
 			data.character.name = charGR.name + '';
-		} else if(input.action == 'saveCredits'){
+			break;
+				
+			case 'saveCredits':
 			charGR.credits = input.credits;
 			charGR.update();
 			data.character.creditsInt = parseInt(charGR.credits);
 			data.character.creditsString = data.character.creditsInt + '';
-		} else if(input.action == 'deleteGear'){
+			break;
+				
+			case 'deleteGear':
 			cg.get(input.sysID);
 			cg.deleteRecord();
 			for(var i = 0; i < data.characterGear.length; i++){
@@ -1955,7 +2122,9 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 					 data.characterGear.splice(i, 1);
 				}
 			}
-		} else if(input.action == 'purchaseItem'){
+			break;
+				
+			case 'purchaseItem':
 			charGR.get(characterID);
 			charGR.credits = data.character.creditsInt - parseInt(input.item.price);
 			charGR.update();
@@ -1997,7 +2166,10 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 				};
 				data.characterGear.push(cgObj);
 			}
-		} else if(input.action == 'purchaseTalent'){
+			gs.addInfoMessage(input.item.name + ' purchased');
+			break;
+				
+			case 'purchaseTalent':
 			talent.initialize();
 			talent.talent = input.talentID;
 			talent.character = characterID;
@@ -2005,7 +2177,9 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			charGR.get(characterID);
 			charGR.available_xp = data.character.availableXPInt - parseInt(input.talent.costToPurchase);
 			charGR.update();
-		} else if(input.action == 'saveSkill'){
+			break;
+				
+			case 'saveSkill':
 			var skill = new GlideRecord('x_176383_star_wars_m2m_character_skills');
 			skill.get(input.skill.sysID + '');
 			skill.rank = parseInt(input.skill.rankInt) + 1;
@@ -2029,13 +2203,17 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 					data.skills[s].costToNextRank = newCost;
 				}
 			}
-		} else if(input.action == 'saveGearQuantity'){
+			break;
+				
+			case 'saveGearQuantity':
 			var myGear = new GlideRecord('x_176383_star_wars_character_gear_m2m');
 			myGear.get(input.gearID);
 			myGear.quantity = input.quantity;
 			myGear.update();
 			data.currentGear = null;
-		} else if(input.action == 'saveGearEdit'){
+			break;
+				
+			case 'saveGearEdit':
 			var gedit = new GlideRecord('x_176383_star_wars_character_gear_m2m');
 			gedit.get(input.gearID);
 			gedit.critical_rating = input.crit;
@@ -2046,23 +2224,31 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			gedit.hard_points = input.hp;
 			gedit.update();
 			data.currentGear = null;
-		} else if(input.action == 'purchaseVehicle'){
+			break;
+				
+			case 'purchaseVehicle':
 			var myShip = new GlideRecord('x_176383_star_wars_character_vehicle');
 			myShip.initialize();
 			myShip.character = characterID;
 			myShip.vehicle = input.vehicleID;
 			myShip.insert();
-		} else if(input.action == 'saveForceRating'){
+			break;
+				
+			case 'saveForceRating':
 			charGR.force_rating = input.forceRating;
 			charGR.update();
-		} else if(input.action == 'buyForcePower'){
+			break;
+				
+			case 'buyForcePower':
 			cForce.initialize();
 			cForce.character = data.characterID;
 			cForce.force_power = input.power.sysID;
 			cForce.insert();
 			charGR.available_xp -= parseInt(input.power.costToPurchase);
 			charGR.update();
-		} else if(input.action == 'buyForceEnhancement'){
+			break;
+				
+			case 'buyForceEnhancement':
 			var characterPower = new GlideRecord('x_176383_star_wars_character_force_power');
 			characterPower.addQuery('character', data.characterID);
 			characterPower.addQuery('force_power', input.enh.forcePowerID);
@@ -2076,7 +2262,9 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 				charGR.available_xp -= parseInt(input.enh.costToPurchase);
 				charGR.update();
 			}
-		} else if(input.action == 'buyNewSpec'){
+			break;
+				
+			case 'buyNewSpec':
 			var specArray = data.character.specializationIDs.split(',');
 			specArray.push(input.spec.sysID);
 			if(input.spec.careerSkills == '' && data.character.forceRatingInt == 0){
@@ -2092,6 +2280,16 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 				skillGR.career = true;
 				skillGR.update();
 			}
+			break;
+				
+			case 'saveOtherGear':
+			charGR.other_gear = input.gear;
+			charGR.update();
+			data.character.otherGear = charGR.other_gear + '';
+			break;
+				
+			default:
+				break;
 		}
 	}
 })();]]></script>
@@ -2101,7 +2299,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>823</sys_mod_count>
+        <sys_mod_count>859</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2109,7 +2307,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-28 19:34:53</sys_updated_on>
+        <sys_updated_on>2020-12-31 16:42:58</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2428,6 +2626,15 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
              </span>
             </div>
            </div>
+           <span class="col-xs-12 other-gear-container">
+           	<span class="col-xs-12 align-right edit-container" id="editOtherGearButtonContainer">
+       				<button id="editOtherGearButton" ng-click="editCharacter('otherGear')"><i class="fas fa-cogs"></i> Edit Other Gear</button>
+     		 		</span>
+            <span class="col-xs-12 description-field">
+        			<span class="col-xs-12 desc-label">Other Gear:</span>
+        			<span class="col-xs-12 desc-value" ng-bind-html="data.character.otherGear"></span>
+      			</span>
+           </span>
          </span>
        </span>
      </span>
@@ -2549,6 +2756,10 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 desc-label">Background:</span>
         <span class="col-xs-12 desc-value" ng-bind-html="data.character.background"></span>
       </span>
+      <span class="col-xs-12 description-field">
+        <span class="col-xs-12 desc-label">Notes:</span>
+        <span class="col-xs-12 desc-value" ng-bind-html="data.character.notes"></span>
+      </span>
     </span>
     
     <!-- edit character containers -->
@@ -2582,11 +2793,15 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         </span>
         <span class="col-xs-12 description-field">
           <label for="notableFeatures">Notable Features:</label><br>
-          <textarea class="sw-input" type="text" id="notableFeatures" name="notableFeatures" placeholder="{{data.character.notableFeatures}}"></textarea>
+          <textarea class="sw-input" type="text" id="notableFeatures" name="notableFeatures" value="{{data.character.notableFeatures}}"></textarea>
         </span>
         <span class="col-xs-12 description-field">
           <label for="background">Background:</label><br>
-          <textarea class="sw-input" type="text" id="background" name="background" placeholder="{{data.character.background}}"></textarea>
+          <textarea class="sw-input" type="text" id="background" name="background" value="{{data.character.background}}"></textarea>
+        </span>
+        <span class="col-xs-12 description-field">
+          <label for="notes">Notes:</label><br>
+          <textarea class="sw-input" type="text" id="notes" name="notes" value="{{data.character.notes}}"></textarea>
         </span>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
@@ -2902,6 +3117,19 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 save-button-container">
           <button id="saveEditsButton" ng-click="saveEdits('gearEdits')">Save<br><text class="star-wars-text">Save</text></button>
         </span>
+      </span>
+    </span>
+    <!-- edit other gear -->
+    <span class="edit-character" id="editOtherGearDetailsContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('otherGear')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 description-field">
+        <label for="otherGearInput">Other Gear:</label><br>
+        <textarea class="sw-input" type="text" id="otherGearInput" name="otherGearInput"></textarea>
+      </span>
+      <span class="col-xs-12 save-edits">
+      	<span class="col-xs-12 save-button-container">
+        	<button id="saveEditsButton" ng-click="saveEdits('otherGear')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+      	</span>
       </span>
     </span>
     <!-- edit soak -->

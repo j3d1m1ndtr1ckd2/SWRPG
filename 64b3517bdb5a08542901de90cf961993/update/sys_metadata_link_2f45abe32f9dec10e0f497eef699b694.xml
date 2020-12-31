@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3de1dfb12f0d6c14e0f497eef699b6bb</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;img src="https://static.wikia.nocookie.net/starwars/images/9/99/Drall_SOF.png/revision/latest?cb&amp;#61;20170222022605" alt="Category:Arboreal planets | Wookieepedia | Fandom" width="150" height="150" /&gt;  Serene world just beyond the outer rim. Beautiful forests, large lakes and oceans, and long, midsized mountain ranges.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Lammia&lt;/name&gt;
+        &lt;number&gt;GALAXY0001130&lt;/number&gt;
+        &lt;sector&gt;wild_space_unknown_regions&lt;/sector&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-12-13 22:23:43&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;3de1dfb12f0d6c14e0f497eef699b6bb&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-12-15 21:13:52&lt;/sys_updated_on&gt;
+        &lt;u_campaigns&gt;3bb146ac2fa8a490e0f497eef699b653&lt;/u_campaigns&gt;
+        &lt;u_groups name="Star Wars Campaign 1 [rename late]"&gt;03992b552fc82810e0f497eef699b6f1&lt;/u_groups&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-31 20:19:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2f45abe32f9dec10e0f497eef699b694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lammia</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2f45abe32f9dec10e0f497eef699b694</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-12-31 20:19:50</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

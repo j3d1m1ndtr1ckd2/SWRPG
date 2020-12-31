@@ -77,6 +77,17 @@
 			}
 			break;
 				
+			case 'cargo':
+			document.getElementById('cargo').value = $scope.data.vehicle.cargo;
+			var container = document.getElementById('editCargo');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}	
+			break;
+				
 			default:
 				break;
 		}
@@ -111,6 +122,10 @@
 				
 			case 'defense':
 			container = document.getElementById('editVehicleDefense');
+			break;
+				
+			case 'cargo':
+			container = document.getElementById('editCargo');
 			break;
 				
 			default:
@@ -181,6 +196,14 @@
 			c.server.get({action: 'saveDefense', fore: fore, starboard: starboard, aft: aft, port: port}).then(function(response){
 				c.server.refresh();
 				$scope.closeEditContainer('defense');
+			});
+			break;
+				
+			case 'cargo':
+			var cargo = document.getElementById('cargo').value;
+			c.server.get({action: 'saveCargo', cargo: cargo}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('cargo');
 			});
 			break;
 				
@@ -426,6 +449,35 @@ label,.sw-input{
   margin-bottom:10px;
 }
 
+.cargo-hold-container{
+	padding-bottom:50px;
+}
+
+.cargo-hold-body{
+	background:black;
+  font-size:16px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.cargo-hold-header{
+	font-size:28px;
+  margin-bottom:20px;
+}
+
+.edit-cargo-button{
+	font-size: 16px;
+  text-align: right;
+  color: #e21414;
+  margin-bottom: 20px;
+}
+
+#cargo{
+	width:100%;
+  height:200px;
+  text-align:left;
+}
+
 @media only screen and (min-width:762px) and (max-width:1400px){
   .fa-starship-freighter{
    	left:38.8%; 
@@ -522,30 +574,6 @@ label,.sw-input{
 var vehicleID = $sp.getParameter('vehicleID');
 var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		vehicleGR.get(vehicleID);
-	/*data.vehicle = {
-		pilot: vehicleGR.character.name + '',
-		nickName: vehicleGR.name + '' || 'Name your ship',
-		shipName: vehicleGR.vehicle.ship_name + '',
-		type: vehicleGR.vehicle.type.getDisplayValue(),
-		silhouette: vehicleGR.vehicle.silhouette + '',
-		hp: vehicleGR.vehicle.hard_points + '',
-		armor: vehicleGR.vehicle.armor + '',
-		speed: vehicleGR.vehicle.speed + '',
-		handling: vehicleGR.vehicle.handling + '',
-		htThreshold: vehicleGR.vehicle.hull_trauma_threshold + '',
-		ssThreshold: vehicleGR.vehicle.system_strain_threshold + '',
-		htCurrent: vehicleGR.vehicle.hull_trauma_current + '',
-		ssCurrent: vehicleGR.vehicle.system_strain_current + '',
-		defenseFore: vehicleGR.vehicle.defense_fore + '',
-		defenseAft: vehicleGR.vehicle.defense_aft + '',
-		defensePort: vehicleGR.vehicle.defense_port + '',
-		defenseStarboard: vehicleGR.vehicle.defense_starboard + '',
-		maximumAltitude: vehicleGR.vehicle.maximum_altitude + '',
-		sensorRange: vehicleGR.vehicle.sensor_range + '',
-		description: vehicleGR.vehicle.description + '',
-		notes: vehicleGR.vehicle.notes + '',
-		vehicleSysId: vehicleGR.vehicle.sys_id + ''
-	};*/
 	
 	data.vehicle = {
 		pilot: vehicleGR.character.name + '',
@@ -569,7 +597,8 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		sensorRange: vehicleGR.vehicle.sensor_range + '',
 		description: vehicleGR.vehicle.description + '',
 		notes: vehicleGR.vehicle.notes + '',
-		vehicleSysId: vehicleGR.vehicle.sys_id + ''
+		vehicleSysId: vehicleGR.vehicle.sys_id + '',
+		cargo: vehicleGR.cargo_hold + ''
 	};
 	
 	if(vehicleGR.vehicle.primary_hyperdrive_class != ''){
@@ -658,6 +687,11 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 			vehicleGR.update();
 			break;
 				
+			case 'saveCargo':
+			vehicleGR.cargo_hold = input.cargo;
+			vehicleGR.update();
+			break;
+				
 			default:
 				break;
 		}
@@ -669,7 +703,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>181</sys_mod_count>
+        <sys_mod_count>202</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -677,7 +711,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-08 04:16:08</sys_updated_on>
+        <sys_updated_on>2020-12-31 18:34:29</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -774,6 +808,13 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <span class="col-xs-1 weapon-detail wd-number">{{w.crit}}</span>
         <span class="col-xs-5 weapon-detail">{{w.specials}}</span>
       </span>
+    </span>
+  </div>
+  <div class="col-xs-12 cargo-hold-container">
+    <span class="col-xs-12 cargo-hold-header text-center">Cargo Hold<br><text class="star-wars-text">Cargo Hold</text></span>
+    <span class="col-xs-12 cargo-hold-body">
+      <span class="col-xs-12 edit-cargo-button" ng-click="editVehicle('cargo')"><i class="fas fa-space-station-moon-alt"></i> Edit Cargo</span>
+      <span class="col-xs-12 cargo-hold" ng-bind-html="data.vehicle.cargo"></span>
     </span>
   </div>
 </div>
@@ -877,6 +918,19 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
   <span class="col-xs-12 save-edits">
   	<span class="col-xs-12 save-button-container">
     	<button class="save-edits-button" ng-click="saveEdits('defense')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit cargo hold -->
+<span class="edit-vehicle" id="editCargo">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('cargo')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 description-field">
+   <label for="cargo">Cargo Hold:</label><br>
+   <textarea class="sw-input" type="text" id="cargo" name="cargo"></textarea>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('cargo')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
     </span>
   </span>
 </span>]]></template>

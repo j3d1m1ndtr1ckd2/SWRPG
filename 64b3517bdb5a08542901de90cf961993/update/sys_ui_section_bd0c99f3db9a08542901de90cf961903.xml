@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>d991ae7c2f096814e0f497eef699b6dc</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>185f926b2f59ec10e0f497eef699b6cf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>5191ae7c2f096814e0f497eef699b6dd</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>9c5f926b2f59ec10e0f497eef699b6cf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>species</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>d591ae7c2f096814e0f497eef699b6dd</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>145f926b2f59ec10e0f497eef699b6d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>career</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>5d91ae7c2f096814e0f497eef699b6dd</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>985f926b2f59ec10e0f497eef699b6d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>career_specializations</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>d191ae7c2f096814e0f497eef699b6de</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>105f926b2f59ec10e0f497eef699b6d1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>5991ae7c2f096814e0f497eef699b6de</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>945f926b2f59ec10e0f497eef699b6d1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>credits</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>dd91ae7c2f096814e0f497eef699b6de</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>1c5f926b2f59ec10e0f497eef699b6d1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>player</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>5591ae7c2f096814e0f497eef699b6df</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>905f926b2f59ec10e0f497eef699b6d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>total_xp</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>d991ae7c2f096814e0f497eef699b6df</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>185f926b2f59ec10e0f497eef699b6d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>available_xp</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>5191ae7c2f096814e0f497eef699b6e0</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>9c5f926b2f59ec10e0f497eef699b6d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>defense_ranged</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>d591ae7c2f096814e0f497eef699b6e0</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>145f926b2f59ec10e0f497eef699b6d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>defense_melee</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>5d91ae7c2f096814e0f497eef699b6e0</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>985f926b2f59ec10e0f497eef699b6d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>force_rating</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>d191ae7c2f096814e0f497eef699b6e1</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>105f926b2f59ec10e0f497eef699b6d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -186,13 +186,13 @@
             <element>campaign</element>
             <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-10 16:04:57</sys_created_on>
-            <sys_id>5991ae7c2f096814e0f497eef699b6e1</sys_id>
+            <sys_created_on>2020-12-31 15:14:03</sys_created_on>
+            <sys_id>945f926b2f59ec10e0f497eef699b6d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-10 16:04:57</sys_updated_on>
+            <sys_updated_on>2020-12-31 15:14:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

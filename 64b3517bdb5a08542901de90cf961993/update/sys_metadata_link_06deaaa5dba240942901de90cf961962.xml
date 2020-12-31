@@ -4,9 +4,9 @@
         <documentkey>c55d29a8dbe20c542901de90cf9619d5</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
     <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
-        <description>Through the Force, the character creates a bond with a single animal with which he is currently interacting.  This cannot be done during structured encounters.  This animal must have a silhouette equal to or smaller than half the character's Force rating when the bond is created, rounded down (this means a character with Force rating 1 could only bond with a silhouette 0 animal). The bond persists as long as the character chooses it to, although at the CM's discretion, the bond may also be broken due to abusive treatment or other extenuating circumstances.&#13;
+        <description>Through the Force, the character creates a bond with a single animal with which he is currently interacting.  This cannot be done during structured encounters.  This animal must have a silhouette equal to or smaller than half the character's Force rating when the bond is created, rounded down (this means a character with Force rating 1 could only bond with a silhouette 0 animal). The bond persists as long as the character chooses it to, although at the GM's discretion, the bond may also be broken due to abusive treatment or other extenuating circumstances.&#13;
 &#13;
-As long as the bond persists, the animal remains near the character, and the controlling player dictates the animal's overall behavior (although, since the animal is only bonded with the character, not dominated, it may still perform certain inconvenient actions such as scratching furniture, consuming rations, and marking territory). Once per round in structured encounters, the character may spend one maneuver to direct his animal in performing one action and one maneuver. The animal must be within hearing and visual range of the character (generally medium range) to do this. Otherwise, the animal does not contribute to the encounter. The specifics of its behavior are up to the player and CM.</description>
+As long as the bond persists, the animal remains near the character, and the controlling player dictates the animal's overall behavior (although, since the animal is only bonded with the character, not dominated, it may still perform certain inconvenient actions such as scratching furniture, consuming rations, and marking territory). Once per round in structured encounters, the character may spend one maneuver to direct his animal in performing one action and one maneuver. The animal must be within hearing and visual range of the character (generally medium range) to do this. Otherwise, the animal does not contribute to the encounter. The specifics of its behavior are up to the player and GM.</description>
         <field_to_update/>
         <force_talent>true</force_talent>
         <how_much_to_add/>
@@ -16,9 +16,9 @@ As long as the bond persists, the animal remains near the character, and the con
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-21 14:50:03</sys_created_on>
         <sys_id>c55d29a8dbe20c542901de90cf9619d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-21 14:50:03</sys_updated_on>
+        <sys_updated_on>2020-12-31 15:00:43</sys_updated_on>
         <table_to_update/>
     </x_176383_star_wars_talents>
 </record_update>
@@ -28,7 +28,7 @@ As long as the bond persists, the animal remains near the character, and the con
         <sys_created_on>2020-01-24 22:10:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>06deaaa5dba240942901de90cf961962</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Animal bond</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -36,7 +36,7 @@ As long as the bond persists, the animal remains near the character, and the con
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_06deaaa5dba240942901de90cf961962</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-15 21:48:04</sys_updated_on>
+        <sys_updated_on>2020-12-31 20:28:22</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

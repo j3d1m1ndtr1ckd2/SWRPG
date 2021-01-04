@@ -21,52 +21,86 @@
 	}
 	
 	$scope.showInfo = function(element, obj){
-		if(element == 'species'){
+		switch(element){
+			case 'species':
 			$scope.data.currentSpecies = obj;
 			document.getElementById('speciesInfoContainer').style.display = 'inline';
 			document.getElementById('speciesInfoContainer').scrollIntoView();
-		} else if(element == 'career'){
+			break;
+				
+			case 'career':
 			$scope.data.currentCareer = obj;
 			document.getElementById('careerInfoContainer').style.display = 'inline';
 			document.getElementById('careerInfoContainer').scrollIntoView();
-		} else if(element == 'specialization'){
+			break;
+				
+			case 'specialization':
 			$scope.data.currentSpecialization = obj;
 			document.getElementById('specializationInfoContainer').style.display = 'inline';
 			document.getElementById('specializationInfoContainer').scrollIntoView();
-		} else if(element == 'talent'){
+			break;
+				
+			case 'talent':
 			$scope.data.currentTalent = obj;
 			document.getElementById('talentInfoContainer').style.display = 'inline';
 			document.getElementById('talentInfoContainer').scrollIntoView();
-		} else if(element == 'investSpec'){
+			break;
+				
+			case 'investSpec':
 			$scope.data.currentSpecialization = obj;
 			document.getElementById('investSpecInfoContainer').style.display = 'inline'
 			document.getElementById('investSpecInfoContainer').scrollIntoView();
-		} else if(element == 'investForce'){
+			break;
+				
+			case 'investForce':
 			$scope.data.currentForcePower = obj;
 			document.getElementById('investForceInfo').style.display = 'inline';
 			document.getElementById('investForceInfo').scrollIntoView();
-		} else if(element == 'investForceEnhancement'){
+			break;
+				
+			case 'investForceEnhancement':
 			$scope.data.currentForceEnhancement = obj;
 			document.getElementById('investForceEnhancementInfo').style.display = 'inline';
 			document.getElementById('investForceEnhancementInfo').scrollIntoView();
+			break;
+				
+			default:
+				break;
 		}
 	}
 	
 	$scope.closeInfo = function(element){
-		if(element == 'species'){
+		switch(element){
+			case 'species':
 			document.getElementById('speciesInfoContainer').style.display = 'none';
-		} else if(element == 'career'){
-			document.getElementById('careerInfoContainer').style.display = 'none';			
-		} else if(element == 'specialization'){
+			break;
+				
+			case 'career':
+			document.getElementById('careerInfoContainer').style.display = 'none';
+			break;
+				
+			case 'specialization':
 			document.getElementById('specializationInfoContainer').style.display = 'none';
-		} else if(element == 'talent'){
+			break;
+				
+			case 'talent':
 			document.getElementById('talentInfoContainer').style.display = 'none';
-		} else if(element == 'investSpec'){
+			break;
+				
+			case 'investSpec':
 			document.getElementById('investSpecInfoContainer').style.display = 'none';
-		} else if(element == 'investForce'){
+			break;
+				
+			case 'investForce':
 			document.getElementById('investForceInfo').style.display = 'none';
-		} else if(element == 'investForceEnhancement'){
+			break;
+				
+			case 'investForceEnhancement':
 			document.getElementById('investForceEnhancementInfo').style.display = 'none';
+			break;
+				
+			default:
+				break;
 		}
 	}
 	
@@ -1572,7 +1606,7 @@ if(data.step == 1){
         <sys_created_on>2020-10-16 18:34:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd44b3432f771890e0f497eef699b611</sys_id>
-        <sys_mod_count>730</sys_mod_count>
+        <sys_mod_count>732</sys_mod_count>
         <sys_name>Star Wars Character Creator</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -1580,7 +1614,7 @@ if(data.step == 1){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_fd44b3432f771890e0f497eef699b611</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 16:42:25</sys_updated_on>
+        <sys_updated_on>2021-01-04 22:34:24</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

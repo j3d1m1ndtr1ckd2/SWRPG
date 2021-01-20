@@ -111,7 +111,7 @@
 	}
 	
 	$scope.editCharacter = function(section, item){
-		if($scope.data.canEdit){
+		if($scope.data.canEdit || section == 'career' || section == 'specializations' || section == 'species'){
 			switch(section){
 				case 'description':
 				document.getElementById('notableFeatures').innerHTML = $scope.data.character.notableFeatures;
@@ -1586,7 +1586,7 @@ var characterID = $sp.getParameter('character_id');
 	data.playerID = gs.getUserID();
 var charGR = new GlideRecord('x_176383_star_wars_character');
 		charGR.get(characterID);
-	if(data.playerID == charGR.player.sys_id){
+	if(data.playerID == charGR.player.sys_id || gs.hasRole('admin')){
 		data.canEdit = true;
 	} else{
 		data.canEdit = false;
@@ -2303,7 +2303,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>864</sys_mod_count>
+        <sys_mod_count>867</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2311,7 +2311,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-04 22:25:38</sys_updated_on>
+        <sys_updated_on>2021-01-11 21:47:31</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2624,8 +2624,8 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
                  <span class="col-xs-12 gear-detail-value">{{item.description}}</span>
                </span>
                <span class="col-xs-12" id="removeItemButtonContainer">
-                 <button id="editItemButton" ng-click="editCharacter('gearEdit', item)">Edit<br><text class="star-wars-text">Edit</text></button>
-                 <button id="removeItemButton" ng-click="removeItem(item.sysID)">Remove<br><text class="star-wars-text">Remove</text></button>
+                 <button ng-if="data.canEdit" id="editItemButton" ng-click="editCharacter('gearEdit', item)">Edit<br><text class="star-wars-text">Edit</text></button>
+                 <button ng-if="data.canEdit" id="removeItemButton" ng-click="removeItem(item.sysID)">Remove<br><text class="star-wars-text">Remove</text></button>
                </span>
              </span>
             </div>

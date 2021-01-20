@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>91751e1f2f25a410e0f497eef699b6d3</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;2&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;16&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;1&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;1&lt;/defense_fore&gt;
+        &lt;defense_port&gt;0&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;0&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;An older, reliable light freighter, the YT-210 was a variant of another freighter in the YT series, the 1200. Since the release of the famous YT-1300, sales of the YT-121 have slipped; doubly so because the ship competes with its close cousin, the YT-1 200.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;After the successful release of the YT-1200 (A reliable stock light freighter), Corellian Engineering Corporation designed a derivative design in an attempt to appeal directly to Corellians. Simply put, the YT-1210 is much like the YT-1200, only faster. A third main engine in the rear propels the ship to higher speeds, giving a freighter that can match some starfighters on a straight run.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Sadly, the freighter did not prove any more maneuverable, and the added engine reduced cargo space and armor-carrying capacity. The cost of manufacturing the YT-1210 also proved higher than anticipated. While the model still sells reasonably well, sales tend to be limited to Corellia and the surrounding sector.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-1&lt;/handling&gt;
+        &lt;hard_points&gt;3&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;20&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Freighter/YT-1210&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;div&gt;Dorsal turret-mounted medium laser cannon (Fire Arc All; Damage 6; Critical 3; Range (Close)).&lt;/div&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001058&lt;/number&gt;
+        &lt;price&gt;120000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;sensor_range&gt;short&lt;/sensor_range&gt;
+        &lt;ship_name&gt;YT-1210 Light Freighter&lt;/ship_name&gt;
+        &lt;silhouette&gt;4&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_vehicle&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-01-12 06:19:13&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;91751e1f2f25a410e0f497eef699b6d3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-01-12 06:19:13&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;12&lt;/system_strain_threshold&gt;
+        &lt;type&gt;freighter_transport&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-20 21:05:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2b8fe2822f792810e0f497eef699b61b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001058</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2b8fe2822f792810e0f497eef699b61b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-20 21:05:30</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

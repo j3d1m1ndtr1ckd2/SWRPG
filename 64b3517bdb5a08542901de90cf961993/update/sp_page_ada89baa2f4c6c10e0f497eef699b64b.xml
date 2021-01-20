@@ -3,7 +3,7 @@
         <category>custom</category>
         <css/>
         <draft>false</draft>
-        <dynamic_title_structure/>
+        <dynamic_title_structure>char name</dynamic_title_structure>
         <id>star_wars_character_sheet</id>
         <internal>false</internal>
         <omit_watcher>false</omit_watcher>
@@ -16,7 +16,7 @@
         <sys_created_on>2020-10-27 13:32:07</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ada89baa2f4c6c10e0f497eef699b64b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>star_wars_character_sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -24,7 +24,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_page_ada89baa2f4c6c10e0f497eef699b64b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-27 13:32:07</sys_updated_on>
+        <sys_updated_on>2021-01-18 20:54:16</sys_updated_on>
         <title>Star Wars Character Sheet</title>
         <use_seo_script>false</use_seo_script>
     </sp_page>

@@ -19,6 +19,7 @@ Modification Options: 1 Add 1 setback die to checks made to detect this weapon's
         <rarity>4</rarity>
         <skill_used/>
         <soak/>
+        <sys_class_name/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-19 05:46:41</sys_created_on>
         <sys_id>070acc0e2fe42c90e0f497eef699b655</sys_id>
@@ -34,7 +35,7 @@ Modification Options: 1 Add 1 setback die to checks made to detect this weapon's
         <sys_created_on>2020-11-20 19:31:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1b0190222fa8ac90e0f497eef699b689</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Blaster Energy Dampener</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -42,7 +43,7 @@ Modification Options: 1 Add 1 setback die to checks made to detect this weapon's
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_1b0190222fa8ac90e0f497eef699b689</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-20 19:31:28</sys_updated_on>
+        <sys_updated_on>2021-01-20 21:06:13</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

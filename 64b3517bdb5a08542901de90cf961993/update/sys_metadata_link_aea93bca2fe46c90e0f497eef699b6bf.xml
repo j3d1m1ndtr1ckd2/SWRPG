@@ -5,15 +5,15 @@
         <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_career_specialization"&gt;
     &lt;x_176383_star_wars_career_specialization action="INSERT_OR_UPDATE"&gt;
         &lt;career/&gt;
-        &lt;description&gt;&lt;![CDATA[&lt;div&gt;he Jedi are gone, the vast majority hunted down and destroyed by the Emperor and his minions. If any survive, they do so in hiding at the farthest edges of the galaxy. The Galactic Empire regards the ability to use the Force as a crime punishable by the harshest measures. In a few short decades, most of the galaxy has forgotten the Jedi, and dismissed the Force as an ancient religion. For many, this is by far the safest option. &lt;/div&gt;
-&lt;div&gt; &lt;/div&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The Jedi are gone, the vast majority hunted down and destroyed by the Emperor and his minions. If any survive, they do so in hiding at the farthest edges of the galaxy. The Galactic Empire regards the ability to use the Force as a crime punishable by the harshest measures. In a few short decades, most of the galaxy has forgotten the Jedi, and dismissed the Force as an ancient religion. For many, this is by far the safest option. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div&gt;However, although the Empire has purged the Jedi, not all who use the Force have been hunted down and killed. The galaxy is simply too large to track down every Force-sensitive being, and the Emperor&amp;#39;s infamous Order 66 and the hunts that followed primarily concerned themselves with pursuing true Jedi and their descendants and allies. In the hidden corners of the galaxy, those who can touch the Force remain hidden, hunted, and outcast...but alive. &lt;/div&gt;
-&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div&gt;The Force Sensitive Exile specialization does not have any career skills associated with it. However, when a character purchases this specialization, he automatically receives a Force rating of 1, if he did not already have it. If he already has a Force rating of 1 or higher, it does not increase. &lt;/div&gt;
-&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div&gt;Although technically someone is Force sensitive from birth, it can take a great deal of time for him to&lt;/div&gt;
 &lt;div&gt;realize he has this power. For this reason, the Force Sensitive Exile specialization can be taken during character creation or at any later point, just as any other specialization.&lt;/div&gt;
-&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div&gt;The Force Sensitive Exile is not just any Force-sensitive being; he is one who survived the purges. He may have been a young Padawan or even a minor Jedi who managed to flee the Empire and&lt;/div&gt;
 &lt;div&gt;hide. He may also have been a child, hidden by friends or family. Whatever the case, he&amp;#39;s spent the last decades in a hostile galaxy. His formal training is likely to be limited or even non-existent, and he uses his powers carefully or not at all. Even his mastery of the Force is shaped by his experiences—his powers focus more around concealment and control than flashy displays of ability.&lt;/div&gt;]]&gt;&lt;/description&gt;
         &lt;name&gt;Force Sensitive Exile&lt;/name&gt;
@@ -22,9 +22,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2020-11-18 14:47:12&lt;/sys_created_on&gt;
         &lt;sys_id&gt;0d6c30392fa8e890e0f497eef699b692&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
         &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2020-11-18 14:47:12&lt;/sys_updated_on&gt;
+        &lt;sys_updated_on&gt;2020-12-02 04:23:44&lt;/sys_updated_on&gt;
     &lt;/x_176383_star_wars_career_specialization&gt;
 &lt;/record_update&gt;
 </payload>
@@ -33,7 +33,7 @@
         <sys_created_on>2020-11-19 23:10:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aea93bca2fe46c90e0f497eef699b6bf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Force Sensitive Exile</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -41,7 +41,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_aea93bca2fe46c90e0f497eef699b6bf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 23:10:48</sys_updated_on>
+        <sys_updated_on>2021-01-20 21:10:23</sys_updated_on>
         <tablename>x_176383_star_wars_career_specialization</tablename>
     </sys_metadata_link>
 </record_update>

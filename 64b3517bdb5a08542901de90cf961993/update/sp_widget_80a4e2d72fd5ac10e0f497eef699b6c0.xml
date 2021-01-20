@@ -14,6 +14,14 @@
 	$scope.goBack = function(){
 		$scope.data.currentCampaign = '';
 	}
+	
+	$scope.viewNotes = function(date){
+		$scope.data.currentNotesDate = date;
+	}
+	
+	$scope.closeNotesContainer = function(){
+		$scope.data.currentNotesDate = '';
+	}
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.campaigns-container{
@@ -112,10 +120,46 @@ a:hover{
   font-size:16px;
 }
 
+.note-selector{
+	text-align:center;
+  padding:10px;
+}
+
+.date{
+	font-size:18px;
+}
+
+.session-note-detail-container{
+	position:fixed;
+  top:100px;
+  max-height:450px;
+  overflow-y:scroll;
+  left:60px;
+  width:95%;
+  background-color:black;
+  border: 1px groove #54f403;
+  box-shadow: 0px 0px 4px 2px #54f403;
+  z-index:5;
+  padding-bottom:20px;
+}
+
+.close-button-container{
+	margin-top:20px;
+}
+
+.fa-times{
+  margin-right:20px;
+	color:#e21414;
+}
+
 @media only screen and (max-width:762px){
   .character-details,.character{
   	padding-left:0;
     padding-right:0;
+  }
+  
+  .session-note-detail-container{
+    left:10px;
   }
 }</css>
         <data_table>sp_instance</data_table>
@@ -197,6 +241,32 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 				};
 				data.campaignVehicles.push(vObj);
 			}
+			
+			//retrieve campaign session notes
+			data.notes = [];
+			data.noteDates = [];
+			var notes = new GlideRecord('x_176383_star_wars_session_note');
+			notes.addQuery('campaign', input.campaign.sysID);
+			notes.orderByDesc('session_date');
+			notes.orderBy('character.name');
+			notes.query();
+			while(notes.next()){
+				var notesObj = {
+					sysID: notes.sys_id + '',
+					character: notes.character.getDisplayValue(),
+					notes: notes.notes + '',
+					date: notes.session_date + ''
+				};
+				if(notes.character.player == userID){
+					notesObj.canEdit = true;
+				} else{
+					notesObj.canEdit = false;
+				}
+				data.notes.push(notesObj);
+				if(notes.session_date.getDisplayValue() != data.noteDates[data.noteDates.length - 1]){
+					data.noteDates.push(notes.session_date + '');
+				}
+			}
 		}
 	}
 })();]]></script>
@@ -206,7 +276,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -214,7 +284,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-31 05:55:45</sys_updated_on>
+        <sys_updated_on>2021-01-19 19:24:47</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -264,6 +334,26 @@ var characters = new GlideRecord('x_176383_star_wars_character');
           <span class="col-xs-12 character-detail">Model: {{vehicle.shipName}}</span>
           <span class="col-xs-12 character-detail">Type: {{vehicle.type}}</span>
         </a>
+      </span>
+    </span>
+    <!-- session notes -->
+    <span class="col-xs-12 campaign-notes">
+      <span class="col-xs-12 detail-header text-center">Session Notes<br><text class="star-wars-text">Session Notes</text></span>
+      <span class="col-xs-12 col-md-2" ng-repeat="date in data.noteDates">
+        <span class="col-xs-12 character note-selector">
+        	<span class="col-xs-12 character-detail date">{{date}}</span>
+        	<span class="col-xs-12 view-details-button-container">
+          	<button class="text-center view-campaign-button notes-button" ng-click="viewNotes(date)">View Notes</button>
+        	</span>
+      	</span>
+      </span>
+    </span>
+    <!-- session notes details -->
+    <span ng-if="data.currentNotesDate" class="session-note-detail-container">
+      <span class="pull-right close-button-container"><i class="fas fa-times fa-2x" ng-click="closeNotesContainer()"></i></span>
+      <span ng-if="note.date == data.currentNotesDate" class="col-xs-12 session-note" ng-repeat="note in data.notes">
+        <span class="col-xs-12 note-detail date">{{note.character}}: <a href="?id=form&table=x_176383_star_wars_session_note&sys_id={{note.sysID}}" target="_blank"><i ng-if="note.canEdit" class="fas fa-pen-fancy"> Edit</i></a></span>
+        <span class="col-xs-12 note-detail" ng-bind-html="note.notes"></span>
       </span>
     </span>
   </div>

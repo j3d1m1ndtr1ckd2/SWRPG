@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>52012b122fa5a010e0f497eef699b676</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>7</base_damage>
+        <critical_rating>2</critical_rating>
+        <defense/>
+        <description>A great lightsaber is an oversized lightsaber built for those individuals with large powerful frames. Their heavier hilts come with a more powerful emitter allowing for a stronger blade.</description>
+        <encumbrance>2</encumbrance>
+        <hard_points>3</hard_points>
+        <hp_required/>
+        <name>Great Lightsaber</name>
+        <number>GEAR0001181</number>
+        <price>12000</price>
+        <range>engaged</range>
+        <rarity>10</rarity>
+        <skill_used display_value="Lightsaber (Br)">9e4ce9962fe3d050e0f497eef699b630</skill_used>
+        <soak/>
+        <sys_class_name>x_176383_star_wars_gear</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-01-09 09:06:33</sys_created_on>
+        <sys_id>52012b122fa5a010e0f497eef699b676</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-01-09 09:06:33</sys_updated_on>
+        <type>weapon</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-20 21:06:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>36df6e822f792810e0f497eef699b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Great Lightsaber</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_36df6e822f792810e0f497eef699b632</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-20 21:06:49</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -19,6 +19,7 @@ Base Modifiers: The weapon gains the Stun 2 quality. Modification Options: 5 Ite
         <rarity>4</rarity>
         <skill_used/>
         <soak/>
+        <sys_class_name/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-19 05:50:00</sys_created_on>
         <sys_id>7e4b844e2fe42c90e0f497eef699b686</sys_id>
@@ -34,7 +35,7 @@ Base Modifiers: The weapon gains the Stun 2 quality. Modification Options: 5 Ite
         <sys_created_on>2020-11-20 19:32:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2d4150622fa8ac90e0f497eef699b6d9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Stun Pulse</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -42,7 +43,7 @@ Base Modifiers: The weapon gains the Stun 2 quality. Modification Options: 5 Ite
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_2d4150622fa8ac90e0f497eef699b6d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-20 19:32:27</sys_updated_on>
+        <sys_updated_on>2021-01-20 21:06:56</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

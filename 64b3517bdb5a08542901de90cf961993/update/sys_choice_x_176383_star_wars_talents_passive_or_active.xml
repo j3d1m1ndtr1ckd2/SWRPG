@@ -27,6 +27,7 @@
             <language>en</language>
             <name>x_176383_star_wars_talents</name>
             <sequence>0</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-01-20 22:07:13</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -46,6 +47,7 @@
             <language>en</language>
             <name>x_176383_star_wars_talents</name>
             <sequence>100</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-01-20 22:07:23</sys_created_on>
             <sys_domain>global</sys_domain>

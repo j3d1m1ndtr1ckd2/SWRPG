@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1b5970642fcaa010e0f497eef699b67e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;6&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;12&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;2&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;2&lt;/defense_fore&gt;
+        &lt;defense_port&gt;2&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;2&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Kuat Drive Yards&amp;#39; Nebulon-B frigates were designated escort frigates by. the Imperial Navy, and typically assigned such as convoy escort, scouting, and picket duties. Long and&amp;#39; deceptively&lt;/div&gt;
+&lt;div&gt;fragile-looking, these vessels consist of a multi deck forward section mated to a bulky a engineering section by a single thin spar, and carry a surprising amount of weaponry for then size, including a dozen turbolasers. numerous light laser cannons, and even a trio of tractor beams. Along with the energy weapons, those frigates in Imperial service carry two squadrons of twelve TIE fighters. Along with their heavy armor and sturdy shields, this makes Nebulon-B frigates formidable opponents.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-1&lt;/handling&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;71&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Frigate/Nebulon-B&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;div&gt;&lt;strong&gt;Hull Type/Class:&lt;/strong&gt; Frigate/Nebulon-B.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Manufacturer:&lt;/strong&gt; Kuat Drive Yards.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Hyperdrive:&lt;/strong&gt; Primary: Class 2, Backup: Class 12.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Navicomputer:&lt;/strong&gt; Yes.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Sensor Range:&lt;/strong&gt; Long.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Ship&amp;#39;s Complement:&lt;/strong&gt; 920 officers, pilots, and enlisted crew &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Starfighter Complement: &lt;/strong&gt;Twenty-four starfighters.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Encumbrance Capacity: &lt;/strong&gt;4,000 depending on configuration.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Passenger Capacity:&lt;/strong&gt; 75 troops.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Consumables:&lt;/strong&gt; Two years.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Cost/Rarity:&lt;/strong&gt; 8,500,000 credits (R)/7.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Customization Hard Points:&lt;/strong&gt; 2&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Weapons:&lt;/strong&gt; Six Port and Six Starboard Turret Mounted Retractable Medium Turbolasers (Fire Arc Forward, Aft, and Port or Forward, Aft and Starboard; Damage 10; Critical 3; Range [Long]; Breach 3, Slow-Firing 1), Three Port, Three Starboard, Three Forward, and Three Aft Turret Mounted Retractable Light Laser Cannons (Fire Arc Port or Starboard or Forward or Aft; Damage&lt;/div&gt;
+&lt;div&gt;5; Critical 3; Range [Close]), Three Forward Mounted Heavy Tractor Beam Emitters (Fire Arc Forward; Damage -; Critical -; Range [Medium]; Tractor 6).&lt;/div&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001063&lt;/number&gt;
+        &lt;price&gt;8500000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;7&lt;/rarity&gt;
+        &lt;sensor_range&gt;long&lt;/sensor_range&gt;
+        &lt;ship_name&gt;EF76 Nebulon-B Escort Frigate&lt;/ship_name&gt;
+        &lt;silhouette&gt;6&lt;/silhouette&gt;
+        &lt;speed&gt;3&lt;/speed&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_vehicle&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-01-28 06:59:07&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1b5970642fcaa010e0f497eef699b67e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-01-28 06:59:07&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;40&lt;/system_strain_threshold&gt;
+        &lt;type&gt;capital_ship&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 07:03:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>498bb8e42fcaa010e0f497eef699b6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001063</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_498bb8e42fcaa010e0f497eef699b6e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 07:03:20</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

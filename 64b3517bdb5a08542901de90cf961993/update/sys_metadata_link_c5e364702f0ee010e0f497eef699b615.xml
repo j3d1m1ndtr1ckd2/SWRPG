@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>bee4c07c2f4ae010e0f497eef699b6db</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;3&lt;/armor&gt;
+        &lt;backup_hyperdrive_class/&gt;
+        &lt;defense_aft&gt;2&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;2&lt;/defense_fore&gt;
+        &lt;defense_port&gt;2&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;2&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;The predecessor to Republic Sienar Systems’ IPV-I- class corvette, the IR-3F-class light frigate is an old and outdated patrol craft first introduced during the later decades of the Old Republic. Long and sleek, the IR-3F is a short-range patrol craft designed for intrasystem picket and customs duty. Fitted from the shipyard with a high-output power system and powerful sublight engines usually fitted to larger, cruiser-sized vessels, these ships had a reputation for blistering speed and relatively good maneuverability for vessels of their size. This, along with limited atmospheric capabilities, gives the IR-3F-class a well-deserved reputation as a dangerous and hard-to-elude ship, especially when handled by a competent crew.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;While its speed and maneuverability are certainly respectable, this ship also carries a flexible and powerful array of weapons. Armed with a combination of medium laser cannons and light turbolaser batteries, the IR-3F-class punches well above its weight, allowing it to engage and defeat opponents considered impossible for a ship of its size.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;It is lightly armored, a compromise made to wring more speed out of the vessel, but its Novaldex shield systems are quite robust and make up for any deficiencies in its armor. If this ship has a major flaw it is that, being designed as short-range craft, it has no hyperdrive or navicomputer. In addition, its power and computer systems are designed in a way that makes retrofitting these systems quite difficult. Despite their advanced age, lack of hyperspace capabilities, and scarcity of parts, many of these ships are still serving throughout the galaxy.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-1&lt;/handling&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;40&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;false&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Frigate/IR-3F&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;false&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;div&gt;&lt;strong&gt;Hull Type/Class:&lt;/strong&gt; Frigate/IR-3F.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Manufacturer:&lt;/strong&gt; Republic Sienar Systems.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Hyperdrive:&lt;/strong&gt; None&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Navicomputer:&lt;/strong&gt; None.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Sensor Range:&lt;/strong&gt; Extreme.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Ship’s Complement:&lt;/strong&gt; 20 officers and enlisted crew.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Starfighter Complement:&lt;/strong&gt; None&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Encumbrance Capacity:&lt;/strong&gt; 1,800&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Passenger Capacity:&lt;/strong&gt; 10 troops.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Consumables:&lt;/strong&gt; One month.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Price/Rarity:&lt;/strong&gt; 1,000,000 credits/6.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Customization Hard Points:&lt;/strong&gt; 2&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Weapons:&lt;/strong&gt; One ventral turret-mounted twin light turbolaser battery (Fire Arc Forward; Damage 9; Critical 5; Range [Medium]; Breach 2, Linked 1, Slow-Firing 1). One dorsal turret-mounted twin light turbolaser battery (Fire Arc All; Damage 9; Critical 3; Range [Medium]; Breach 2, Linked 1, Slow-Firing). One port and one starboard turret-mounted twin medium laser cannon (Fire Arc Port and Starboard; Damage 6; Critical 3; Range [Close]; Linked 1).&lt;/div&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001065&lt;/number&gt;
+        &lt;price&gt;1000000&lt;/price&gt;
+        &lt;primary_hyperdrive_class/&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;extreme&lt;/sensor_range&gt;
+        &lt;ship_name&gt;IR-3F-Class Light Frigate&lt;/ship_name&gt;
+        &lt;silhouette&gt;5&lt;/silhouette&gt;
+        &lt;speed&gt;4&lt;/speed&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_vehicle&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-01-28 21:46:36&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;bee4c07c2f4ae010e0f497eef699b6db&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-01-28 21:52:32&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;35&lt;/system_strain_threshold&gt;
+        &lt;type&gt;capital_ship&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 23:58:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c5e364702f0ee010e0f497eef699b615</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001065</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c5e364702f0ee010e0f497eef699b615</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 23:58:35</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

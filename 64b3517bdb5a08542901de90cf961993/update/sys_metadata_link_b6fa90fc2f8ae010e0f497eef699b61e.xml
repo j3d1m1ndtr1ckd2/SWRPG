@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>60d950b42fcae010e0f497eef699b6c6</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
+    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
+        <base_damage>0</base_damage>
+        <critical_rating/>
+        <defense/>
+        <description>This attachment is often underslung onto a rifle or pistol to allow one to reach vantage points without specialized climbing gear.  it generates a repulsor field, making it easier (albeit slower) to reach the grappled point.  &#13;
+&#13;
+This can be applied to any ranged weapon.&#13;
+&#13;
+Base Modifier: Make an Easy (1 difficulty die) Ranged (Light) or Coordination check to fire the grappling hook onto an object up to medium range.  As an action, can reel in the cord to pull themselves to the surface (1 range band per round).&#13;
+&#13;
+Mod options:  1x "Add 1 boost die to checks to fire the ascension gun.", 1x "Increase ascension speed by 1 range band per round".</description>
+        <encumbrance>0</encumbrance>
+        <hard_points>0</hard_points>
+        <hp_required>1</hp_required>
+        <name>Ascension Gun</name>
+        <number>GEAR0001183</number>
+        <price>500</price>
+        <range/>
+        <rarity>4</rarity>
+        <skill_used/>
+        <soak/>
+        <sys_class_name>x_176383_star_wars_gear</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 23:18:59</sys_created_on>
+        <sys_id>60d950b42fcae010e0f497eef699b6c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 23:18:59</sys_updated_on>
+        <type>mod</type>
+    </x_176383_star_wars_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 23:19:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b6fa90fc2f8ae010e0f497eef699b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ascension Gun</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b6fa90fc2f8ae010e0f497eef699b61e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 23:19:40</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

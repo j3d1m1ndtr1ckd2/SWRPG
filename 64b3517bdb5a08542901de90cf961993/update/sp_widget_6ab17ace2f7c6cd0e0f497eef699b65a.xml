@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope) {
+        <client_script><![CDATA[api.controller=function($scope, spUtil) {
   /* widget controller */
   var c = this;
 	
@@ -371,6 +371,7 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
+	try{
 	var chars = new GlideRecord('x_176383_star_wars_character');
 	//chars.addQuery('player', gs.getUserID()).addCondition('u_campaign', '!=', '');
 	chars.addEncodedQuery('player=javascript:gs.getUserID()^campaignISNOTEMPTY');
@@ -499,7 +500,7 @@ while(gearGR.next()){
 		type: gearGR.type.getDisplayValue(),
 		encumbrance: gearGR.encumbrance + '',
 		hp: gearGR.hard_points + '',
-		price: gearGR.price + '',
+		price: gearGR.price.getDisplayValue(),
 		rarity: gearGR.rarity + '',
 		description: gearGR.description + '',
 		damage: gearGR.base_damage + '',
@@ -567,7 +568,7 @@ vehicle.query();
 while(vehicle.next()){
 	var v = {
 		name: vehicle.ship_name + '',
-		price: vehicle.price + '',
+		price: vehicle.price.getDisplayValue(),
 		rarity: vehicle.rarity + '',
 		makeModel: vehicle.make_model + '',
 		type: vehicle.type.getDisplayValue(),
@@ -585,6 +586,7 @@ while(vehicle.next()){
 		maxAltitude: vehicle.maximum_altitude + '',
 		sensorRange: vehicle.sensor_range.getDisplayValue(),
 		description: vehicle.description + '',
+		notes: vehicle.notes + '',
 		sysID: vehicle.sys_id + ''
 	};
 	
@@ -652,6 +654,9 @@ sectorGR.query();
 while(sectorGR.next()){
 	data.sectors.push(sectorGR.label + '');
 }
+} catch(e){
+	gs.addErrorMessage(e.message);
+}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -659,7 +664,7 @@ while(sectorGR.next()){
         <sys_created_on>2020-12-02 04:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
-        <sys_mod_count>149</sys_mod_count>
+        <sys_mod_count>161</sys_mod_count>
         <sys_name>Holocron</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -667,7 +672,7 @@ while(sectorGR.next()){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-15 21:23:11</sys_updated_on>
+        <sys_updated_on>2021-01-30 02:34:09</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -962,11 +967,14 @@ while(sectorGR.next()){
     <span class="col-xs-4 col-md-3 info-detail">Weapons Systems:<br>{{data.currentRecord.gear}}</span>
   </span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+  <span class="col-xs-12 notes">Additional Notes:<p class="additional-notes" ng-bind-html="data.currentRecord.notes"></p></span>
 </div>
 <!-- The Force -->
 <div ng-if="data.showDetails == 'force'" class="col-xs-12 info-detail-container">
   <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
+  <span class="col-xs-6 info-sub-header text-center">Minimum Force Rating Required: {{data.currentRecord.minRating}}</span>
+  <span class="col-xs-6 info-sub-header text-center">XP Cost: {{data.currentRecord.cost}}</span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
   <span class="col-xs-12 info-sub-header text-center">Enhancements<br><text class="star-wars-text">Enhancements</text></span>
   <span class="col-xs-12 enhancements-body">

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a307ccfc2f4ae010e0f497eef699b6ba</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_vehicle"&gt;
+    &lt;x_176383_star_wars_vehicle action="INSERT_OR_UPDATE"&gt;
+        &lt;armor&gt;9&lt;/armor&gt;
+        &lt;backup_hyperdrive_class&gt;15&lt;/backup_hyperdrive_class&gt;
+        &lt;defense_aft&gt;2&lt;/defense_aft&gt;
+        &lt;defense_fore&gt;2&lt;/defense_fore&gt;
+        &lt;defense_port&gt;2&lt;/defense_port&gt;
+        &lt;defense_starboard&gt;2&lt;/defense_starboard&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;Built during the height of the Clone Wars, the Victory- class was designed as an all-purpose heavy line-of- battle ship meant to support planetary landings and take part in fleet actions. While considered fine ships at the time, they were rushed to production after many delays and political wrangling within the Navy and Kuat Drive Yards, and the resulting ships required more maintenance and dry dock time than was considered acceptable even in the heavily bureaucratic Republic. They suffered from a rash of problems (from burned-out hyperdrive couplings to a disturbing tendency to electrocute crew in their bunks), and the entire class quickly gained a reputation as unlucky ships and spacegoing coffins.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Though Victory-class Star Destroyers have impressive hyperdrives allowing for quick response throughout the galaxy, their slow sublight speed limits the ability to fight in a modern space battle. The development of new heavy cruisers and the Imperial- and Imperial II-class Star Destroyers quickly rendered the old Victories obsolete despite their upgrades. Unloved by nearly everyone, many Victories were relegated to planetary garrison and light patrol duty in the farthest reaches of the Empire. Command of or assignment to one of the old Victories was seen as death to a/Nlavy officer’s career. Other Victory Star Destroyers were sold to private concerns such as the Corporate Sector Authority for theif private paramilitary forces.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;However, as much as Victory-class Star Destroyers are mocked and maligned, the ships are still incredibly powerful and mount a devastating array of dangerous weaponry. In the Outer Rim, the sudden arrival of a Victory can send pirates and smugglers fleeing for their lives before the iron fist of the Empire.&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;handling&gt;-3&lt;/handling&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hull_trauma_current&gt;0&lt;/hull_trauma_current&gt;
+        &lt;hull_trauma_threshold&gt;120&lt;/hull_trauma_threshold&gt;
+        &lt;hyperdrive&gt;true&lt;/hyperdrive&gt;
+        &lt;make_model&gt;Star Destroyer/Victory&lt;/make_model&gt;
+        &lt;maximum_altitude/&gt;
+        &lt;navicomputer&gt;true&lt;/navicomputer&gt;
+        &lt;notes&gt;&lt;![CDATA[&lt;div&gt;&lt;strong&gt;Hull Type/Class:&lt;/strong&gt; Star Destroyer/Victory.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Manufacturer:&lt;/strong&gt; Kuat Drive Yards.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Hyperdrive:&lt;/strong&gt; Primary: Class 1, Backup: Class 15.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Navicomputer:&lt;/strong&gt; Yes.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Sensor Range:&lt;/strong&gt; Long.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Ship’s Complement:&lt;/strong&gt; 6,107 officers, pilots, and enlisted crew.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Starfighter Complement:&lt;/strong&gt; Twenty-four starfighters.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Vehicle Complement:&lt;/strong&gt; Numerous shuttles, landing craft, utility vehicles, and AT-series walkers.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Encumbrance Capacity:&lt;/strong&gt; 6,500.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Passenger Capacity:&lt;/strong&gt; 1,600 troops.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Consumables:&lt;/strong&gt; One year.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Price/Rarity:&lt;/strong&gt; 50,000,000 credits (R)/6.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Customization Hard Points:&lt;/strong&gt; 4.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Weapons:&lt;/strong&gt; Five port anckfive starboard light quad turbolaser batteries (Fire Arc Port and Forward or Starboard and Forward; Damage 9; Critical 5; Range [Medium]; Breach 2, Linked 3, Slow-Firing 1). Ten forward-mounted twin medium turbdlasers (Fire Arc Forward; Damage 10; Critical 3; Rapge [Long]; Breach 3, Slow-Firing 1). , Ten dorsal twin medium turbolasers (Fire Arc Forward; Damage 10; Critical 3; Range [Long]; Breach 3, Slow-Firing 1). Twenty assault concussion missile launchers (Fire Arc Forward; Damage 7; Critical 3; Range [Short]; Blast 4, Breach 5, Guided 2, Inaccurate 1, Slow- Firing 1). Ten hull-mounted heavy tractor beams (Fire Arc All; Damage -; Critical -; Range [Short]; Tractor 6). &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;ADDITIONAL RULES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Massive 1: When making an attack targeting this starship, the critical rating of any weapons used counts as 1 higher.&lt;/div&gt;]]&gt;&lt;/notes&gt;
+        &lt;number&gt;VEH0001066&lt;/number&gt;
+        &lt;price&gt;50000000&lt;/price&gt;
+        &lt;primary_hyperdrive_class&gt;1&lt;/primary_hyperdrive_class&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;sensor_range&gt;long&lt;/sensor_range&gt;
+        &lt;ship_name&gt;Victory-Class Star Destroyer&lt;/ship_name&gt;
+        &lt;silhouette&gt;8&lt;/silhouette&gt;
+        &lt;speed&gt;1&lt;/speed&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_vehicle&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-01-28 22:00:57&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a307ccfc2f4ae010e0f497eef699b6ba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-01-28 22:00:57&lt;/sys_updated_on&gt;
+        &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
+        &lt;system_strain_threshold&gt;50&lt;/system_strain_threshold&gt;
+        &lt;type&gt;capital_ship&lt;/type&gt;
+    &lt;/x_176383_star_wars_vehicle&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-28 23:58:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>16d3e0702f0ee010e0f497eef699b689</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VEH0001066</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_16d3e0702f0ee010e0f497eef699b689</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-28 23:58:25</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

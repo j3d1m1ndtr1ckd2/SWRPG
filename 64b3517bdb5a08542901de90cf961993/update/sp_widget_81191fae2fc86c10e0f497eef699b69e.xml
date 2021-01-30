@@ -249,6 +249,7 @@
 					$scope.data.currentGear = item;
 					document.getElementById('gearRange').value = item.rangeID;
 					document.getElementById('gearSoak').value = item.soak;
+					document.getElementById('gearLocation').value = item.locValue;
 				break;
 					
 				case 'vehicles':
@@ -448,7 +449,8 @@
 			var range = document.getElementById('gearRange').value;
 			var soak = document.getElementById('gearSoak').value;
 			var hardPoints = document.getElementById('gearHardPoints').value;
-			c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints}).then(function(response){
+			var location = document.getElementById('gearLocation').value;
+			c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints, location: location}).then(function(response){
 				c.server.refresh();
 				$scope.closeEditContainer('gearEdit');
 			});
@@ -696,6 +698,11 @@
 			$scope.data.skills = response.data.skills;
 		});
 	}
+	
+	var q = "sys_id=" + $scope.data.characterID;
+	spUtil.recordWatch($scope, "x_176383_star_wars_character", q, function(event, data) {
+   spUtil.update($scope);
+	});
 	
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -1652,7 +1659,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 	data.availableSpecs = [];
 	var spec = new GlideRecord('x_176383_star_wars_career_specialization');
 	//spec.addQuery('sys_id', 'IN', data.character.specializationIDs);
-	spec.addQuery('career', data.character.careerID).addOrCondition('career', '');
+	//spec.addQuery('career', data.character.careerID).addOrCondition('career', '');
 	spec.orderBy('name');
 	spec.query();
 	while(spec.next()){
@@ -1671,10 +1678,15 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			var spObj = {
 				name: spec.getDisplayValue(),
 				sysID: spec.sys_id + '',
+				careerID: spec.career.sys_id + '',
+				careerName: spec.career.getDisplayValue(),
 				costToPurchase: (data.character.specializationIDs.split(',').length + 1) * 10,
 				careerSkills: spec.specialization_skills + '',
 				description: spec.description + ''
 			};
+			if(spec.career.sys_id.toString() != data.character.careerID){
+				 spObj.costToPurchase += 10;
+			}
 			if(spObj.costToPurchase <= data.character.availableXPInt){
 				spObj.canPurchase = true;
 			} else{
@@ -1823,6 +1835,8 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 		var cgObj = {
 			name: cg.item.getDisplayValue(),
 			quantity: cg.quantity + '',
+			location: cg.location.getDisplayValue(),
+			locValue: cg.location + '',
 			damage: cg.damage + '',
 			crit: cg.critical_rating + '',
 			defense: cg.defense + '',
@@ -2226,6 +2240,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			gedit.soak = input.soak;
 			gedit.range = input.range;
 			gedit.hard_points = input.hp;
+			gedit.location = input.location;
 			gedit.update();
 			data.currentGear = null;
 			break;
@@ -2303,7 +2318,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>867</sys_mod_count>
+        <sys_mod_count>879</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2311,7 +2326,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-11 21:47:31</sys_updated_on>
+        <sys_updated_on>2021-01-30 02:17:31</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2619,6 +2634,10 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
                  <span class="col-xs-12 gear-detail-label">Soak:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.soak}}</span>
                </span>
+               <span class="col-xs-4 gear-detail">
+                 <span class="col-xs-12 gear-detail-label">Location:</span>
+                 <span class="col-xs-12 gear-detail-value">{{item.location}}</span>
+               </span>
                <span class="col-xs-12 gear-detail">
                  <span class="col-xs-12 gear-detail-label">Description:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.description}}</span>
@@ -2842,7 +2861,8 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     <span class="edit-character" id="addNewSpecializationsContainer">
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('newSpecs')"><i class="fas fa-times"></i></span>
       <span class="col-xs-12" ng-repeat="sp in data.availableSpecs">
-        <span class="col-xs-12 specialization-name">{{sp.name}}<br><text class="star-wars-text">{{sp.name}}</text></span>
+        <span class="col-xs-12 specialization-name">{{sp.name}} <i ng-if="data.character.careerID == sp.careerID" class="far fa-medal"></i><br><text class="star-wars-text">{{sp.name}}</text></span>
+        <span class="col-xs-12 specialization-name">Career: {{sp.careerName}}</span>
         <span class="col-xs-12 specialization-name">XP Cost: {{sp.costToPurchase}}</span>
         <span ng-if="sp.canPurchase" class="col-xs-12 text-center vehicle-detail talent-detail force-power-detail" id="purchaseSpecButton"><button class="purchase-gear-button" ng-click="purchaseNewSpec(sp)">Purchase</button></span>
         <span class="col-xs-12 specialization-description" ng-bind-html="sp.description"></span>
@@ -2853,14 +2873,16 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('skills')"><i class="fas fa-times"></i></span>
       <span class="col-xs-12 edit-skills-body">
         <span class="col-xs-12 skills-header">
-          <span class="col-xs-6 skill-header">Name:</span>
-          <span class="col-xs-3 skill-header">Rank:</span>
+          <span class="col-xs-5 skill-header">Name:</span>
+          <span class="col-xs-2 skill-header">Rank:</span>
+          <span class="col-xs-2 skill-header">XP Cost:</span>
           <span class="col-xs-3 skill-header"></span>
         </span>
         <span class="col-xs-12 edit-skills-list">
           <span class="col-xs-12 edit-skills" ng-repeat="skill in data.skills">
-          	<span class="col-xs-6 skill-detail">{{skill.name}} <i ng-if="skill.isCareer == 'true'" class="far fa-medal"></i></span>
-            <span class="col-xs-3 skill-detail">{{skill.rankString}}</span>
+          	<span class="col-xs-5 skill-detail">{{skill.name}} <i ng-if="skill.isCareer == 'true'" class="far fa-medal"></i></span>
+            <span class="col-xs-2 skill-detail">{{skill.rankString}}</span>
+            <span class="col-xs-2 skill-detail">{{skill.costToNextRank}} XP</span>
             <span class="col-xs-3 skill-detail skill-increase-button" ng-if="skill.costToNextRank <= data.character.availableXPInt && skill.rankInt < 5"><button id="increaseSkillButton" ng-click="increaseSkill(skill)"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
         	</span>
       	</span>
@@ -3115,6 +3137,13 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 col-md-4 gear-edit-input">
           <label for="gearSoak">Soak</label><br>
           <input class="sw-input" type="text" id="gearSoak" name="gearSoak" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.soak}}"/>
+        </span>
+        <span class="col-xs-12 col-md-4 gear-edit-input">
+          <label for="gearLocation">Location</label><br>
+          <select class="sw-input" id="gearLocation" name="gearLocation">
+            <option value="on_person">On Person</option>
+            <option value="on_ship">On Ship</option>
+          </select>
         </span>
       </span>
       <span class="col-xs-12 save-edits">

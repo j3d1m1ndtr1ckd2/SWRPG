@@ -22,6 +22,7 @@ $btn-default-bg:#fff;
 $text-muted:#e6e8ea;
 </css_variables>
         <default>false</default>
+        <enable_ais>false</enable_ais>
         <hide_portal_name>false</hide_portal_name>
         <homepage display_value="star_wars_home">a39b2bc72f371890e0f497eef699b6fc</homepage>
         <icon/>
@@ -34,6 +35,8 @@ $text-muted:#e6e8ea;
         <sc_catalog/>
         <sc_catalog_page/>
         <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
         <sp_chat_queue/>
         <sp_rectangle_menu display_value="Star Wars RPG">dd5d27032f771890e0f497eef699b67a</sp_rectangle_menu>
         <sqanda_knowledge_base/>

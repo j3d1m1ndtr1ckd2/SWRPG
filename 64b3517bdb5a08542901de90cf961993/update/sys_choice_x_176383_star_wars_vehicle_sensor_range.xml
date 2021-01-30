@@ -27,6 +27,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>0</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 14:21:56</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -46,6 +47,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>100</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 14:21:19</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -65,6 +67,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>200</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 14:22:08</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -84,6 +87,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>300</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 14:22:32</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -103,6 +107,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>400</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 14:23:15</sys_created_on>
             <sys_domain>global</sys_domain>

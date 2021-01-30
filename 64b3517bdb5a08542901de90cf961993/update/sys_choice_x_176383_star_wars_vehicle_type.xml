@@ -27,6 +27,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>0</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 23:00:55</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -46,6 +47,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>100</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 23:01:03</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -65,6 +67,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>200</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 23:01:25</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -84,6 +87,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>300</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 23:01:39</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -103,6 +107,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>400</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 23:01:43</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -122,6 +127,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>500</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 23:02:29</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -141,6 +147,7 @@
             <language>en</language>
             <name>x_176383_star_wars_vehicle</name>
             <sequence>600</sequence>
+            <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2020-11-09 23:03:00</sys_created_on>
             <sys_domain>global</sys_domain>

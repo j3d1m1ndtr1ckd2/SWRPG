@@ -5,6 +5,136 @@
   /* widget controller */
   var c = this;
 	
+	$scope.search = function(type){
+		var query = document.getElementById('searchBox').value.toLowerCase();
+		var i;
+		switch(type){
+			case 'species':
+			if(query == ''){
+				$scope.data.displaySpecies = $scope.data.species;
+			} else{
+					$scope.data.displaySpecies = [];
+					for(i = 0; i < $scope.data.species.length; i++){
+						if($scope.data.species[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.species[i].description.toLowerCase().indexOf(query) > -1){
+							$scope.data.displaySpecies.push($scope.data.species[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'career':
+			if(query == ''){
+				$scope.data.displayCareers = $scope.data.careers;
+			} else{
+				$scope.data.displayCareers = [];
+				for(i = 0; i < $scope.data.careers.length; i++){
+					if($scope.data.careers[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.careers[i].description.toLowerCase().indexOf(query) > -1){
+						 $scope.data.displayCareers.push($scope.data.careers[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'specialization':
+			if(query == ''){
+				$scope.data.displaySpecs = $scope.data.specializations;
+			} else{
+				$scope.data.displaySpecs = [];
+				for(i = 0; i < $scope.data.specializations.length; i++){
+					if($scope.data.specializations[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.specializations[i].description.toLowerCase().indexOf(query) > -1){
+						 $scope.data.displaySpecs.push($scope.data.specializations[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'skills':
+			if(query == ''){
+				$scope.data.displaySkills = $scope.data.skills;
+			} else{
+				$scope.data.displaySkills = [];
+				for(i = 0; i < $scope.data.skills.length; i++){
+					if($scope.data.skills[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.skills[i].description.toLowerCase().indexOf(query) > -1){
+						$scope.data.displaySkills.push($scope.data.skills[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'talents':
+			if(query == ''){
+				$scope.data.displayTalents = $scope.data.talents;
+			} else{
+				$scope.data.displayTalents = [];
+				for(i = 0; i < $scope.data.talents.length; i++){
+					if($scope.data.talents[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.talents[i].description.toLowerCase().indexOf(query) > -1){
+						$scope.data.displayTalents.push($scope.data.talents[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'gear':
+			if(query == ''){
+				$scope.data.displayGear = $scope.data.gear;
+			} else{
+				$scope.data.displayGear = [];
+				for(i = 0; i < $scope.data.gear.length; i++){
+					if($scope.data.gear[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.gear[i].description.toLowerCase().indexOf(query) > -1){
+						$scope.data.displayGear.push($scope.data.gear[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'wq':
+			if(query == ''){
+				$scope.data.displayWeaponQualities = $scope.data.weaponQualities;
+			} else{
+				$scope.data.displayWeaponQualities = [];
+				for(i = 0; i < $scope.data.weaponQualities.length; i++){
+					if($scope.data.weaponQualities[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.weaponQualities[i].description.toLowerCase().indexOf(query) > -1){
+						$scope.data.displayWeaponQualities.push($scope.data.weaponQualities[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'vehicles':
+			if(query == ''){
+				$scope.data.displayVehicles = $scope.data.vehicles;
+			} else{
+				$scope.data.displayVehicles = [];
+				for(i = 0; i < $scope.data.vehicles.length; i++){
+					if($scope.data.vehicles[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.vehicles[i].description.toLowerCase().indexOf(query) > -1){
+						$scope.data.displayVehicles.push($scope.data.vehicles[i]);
+					}
+				}
+			}
+			break;
+				
+			case 'galaxy':
+			if(query == ''){
+				$scope.data.displayGalaxy = $scope.data.galaxy;
+			} else{
+				$scope.data.displayGalaxy = [];
+				for(i = 0; i < $scope.data.galaxy.length; i++){
+					if($scope.data.galaxy[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.galaxy[i].description.toLowerCase().indexOf(query) > -1){
+						$scope.data.displayGalaxy.push($scope.data.galaxy[i]);
+					}
+				}
+			}
+			break;
+				
+			default:
+				break;
+		}
+		
+		if(query == '' && $scope.data.filter.section){
+			$scope.filter($scope.data.filter.section, $scope.data.filter.filter);
+		}
+	}
+	
 	$scope.showSection = function(section){
 		switch(section){
 			case 'parent':
@@ -110,6 +240,10 @@
 	}
 	
 	$scope.filter = function(section, filter){
+		$scope.data.filter = {
+			section: section,
+			filter: filter
+		};
 		var i = 0;
 		switch(section){
 			case 'species':
@@ -232,6 +366,14 @@
   font-size:32px;
   font-weight: bold;
   margin-bottom:40px;
+}
+
+.holocron-search{
+	text-align:right;
+}
+
+#searchBox{
+	margin-top:25px;
 }
 
 .section-header{
@@ -410,6 +552,7 @@ while(speciesGR.next()){
 }
 data.displaySpecies = data.species;
 	
+data.displayCareers = [];
 data.careers = [];
 var careerGR = new GlideRecord('x_176383_star_wars_career');
 careerGR.orderBy('name');
@@ -422,6 +565,7 @@ while(careerGR.next()){
 	};
 	data.careers.push(c);
 }
+data.displayCareers = data.careers;
 	
 data.specializations = [];
 data.displaySpecs = [];
@@ -664,7 +808,7 @@ while(sectorGR.next()){
         <sys_created_on>2020-12-02 04:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
-        <sys_mod_count>161</sys_mod_count>
+        <sys_mod_count>175</sys_mod_count>
         <sys_name>Holocron</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -672,7 +816,7 @@ while(sectorGR.next()){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-30 02:34:09</sys_updated_on>
+        <sys_updated_on>2021-02-17 23:16:46</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -692,7 +836,8 @@ while(sectorGR.next()){
   </div>
   <!-- species menu section -->
   <div ng-if="data.showSection == 'species'" class="col-xs-12 card-menu" id="speciesMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('species')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Species<br><text class="star-wars-text">Species</text></div>
     <div class="col-xs-12 alphabet-filter">
       <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('species', letter)">{{letter}} |</span>
@@ -705,9 +850,10 @@ while(sectorGR.next()){
   </div>
   <!-- careers menu section -->
   <div ng-if="data.showSection == 'careers'" class="col-xs-12 card-menu" id="careersMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('career')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Careers<br><text class="star-wars-text">Careers</text></div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.careers">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayCareers">
       <span class="col-xs-12 menu-card" ng-click="showDetails('careers', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -715,7 +861,8 @@ while(sectorGR.next()){
   </div>
   <!-- career specialization menu section -->
   <div ng-if="data.showSection == 'careerSpecializations'" class="col-xs-12 card-menu" id="careerSpecsMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('specialization')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Career Specializations<br><text class="star-wars-text">Career Specializations</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="careerSpecFilter" id="careerSpecFilter" ng-change="filter('careerSpec')" ng-model="all">
@@ -731,7 +878,8 @@ while(sectorGR.next()){
   </div>
   <!-- skills menu section -->
   <div ng-if="data.showSection == 'skills'" class="col-xs-12 card-menu" id="skillsMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('skills')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Skills<br><text class="star-wars-text">Skills</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="skillsFilter" id="skillsFilter" ng-change="filter('skills')" ng-model="all">
@@ -749,7 +897,8 @@ while(sectorGR.next()){
   </div>
   <!-- talents menu section -->
   <div ng-if="data.showSection == 'talents'" class="col-xs-12 card-menu" id="talentsMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('talents')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Talents<br><text class="star-wars-text">Talents</text></div>
     <div class="col-xs-12 alphabet-filter">
       <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('talents', letter)">{{letter}} |</span>
@@ -762,7 +911,8 @@ while(sectorGR.next()){
   </div>
   <!-- Gear menu section -->
   <div ng-if="data.showSection == 'gear'" class="col-xs-12 card-menu" id="gearMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('gear')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Gear<br><text class="star-wars-text">Gear</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="gearFilter" id="gearFilter" ng-change="filter('gear')" ng-model="all">
@@ -782,7 +932,8 @@ while(sectorGR.next()){
   </div>
   <!-- weapon qualities menu section -->
   <div ng-if="data.showSection == 'weaponQualities'" class="col-xs-12 card-menu" id="weaponQualitiesMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('wq')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Weapon Qualities<br><text class="star-wars-text">Weapon Qualities</text></div>
     <div class="col-xs-12 alphabet-filter">
       <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('wq', letter)">{{letter}} |</span>
@@ -795,7 +946,8 @@ while(sectorGR.next()){
   </div>
   <!-- vehicles menu section -->
   <div ng-if="data.showSection == 'vehicles'" class="col-xs-12 card-menu" id="vehiclesMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('vehicles')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Vehicles<br><text class="star-wars-text">Vehicles</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="vehicleFilter" id="vehicleFilter" ng-change="filter('vehicles')" ng-model="all">
@@ -817,7 +969,7 @@ while(sectorGR.next()){
   </div>
   <!-- force menu section -->
   <div ng-if="data.showSection == 'force'" class="col-xs-12 card-menu" id="forceMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
     <div class="col-xs-12 section-header text-center">The Force<br><text class="star-wars-text">The Force</text></div>
     <div class="col-xs-12 force-container">
       <div class="col-xs-12 col-md-3" ng-repeat="item in data.force">
@@ -830,7 +982,8 @@ while(sectorGR.next()){
 </div>
 <!-- galaxy menu section -->
  <div ng-if="data.showSection == 'galaxy'" class="col-xs-12 card-menu" id="galaxyMenu">
-    <div class="col-xs-12 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+   	<div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('galaxy')" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">The Galaxy<br><text class="star-wars-text">The Galaxy</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="galaxyFilter" id="galaxyFilter" ng-change="filter('galaxy')" ng-model="all">

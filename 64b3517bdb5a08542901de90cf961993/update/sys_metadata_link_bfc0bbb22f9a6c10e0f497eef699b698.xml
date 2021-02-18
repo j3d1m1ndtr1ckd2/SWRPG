@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>243657762f1a6c10e0f497eef699b64b</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_species"&gt;
+    &lt;x_176383_star_wars_species action="INSERT_OR_UPDATE"&gt;
+        &lt;agility&gt;3&lt;/agility&gt;
+        &lt;base_strain_threshold&gt;10&lt;/base_strain_threshold&gt;
+        &lt;base_wound_threshold&gt;12&lt;/base_wound_threshold&gt;
+        &lt;brawn&gt;3&lt;/brawn&gt;
+        &lt;cunning&gt;1&lt;/cunning&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Special Abilities: &lt;/strong&gt;Brawl &amp;#43;1 or Lore (knowledge) &amp;#43; 1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prehensile Feet: &lt;/strong&gt;May move up a vertical surface as though it were horizontal.&lt;br /&gt;&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;intellect&gt;2&lt;/intellect&gt;
+        &lt;name&gt;Lasat&lt;/name&gt;
+        &lt;number&gt;SPE0001072&lt;/number&gt;
+        &lt;portrait/&gt;
+        &lt;presence&gt;1&lt;/presence&gt;
+        &lt;skill_ranks/&gt;
+        &lt;skill_ranks_list/&gt;
+        &lt;skills_choice&gt;72705d5cdbae88542901de90cf9619f1,63b0595cdbae88542901de90cf9619e4&lt;/skills_choice&gt;
+        &lt;starting_xp&gt;90&lt;/starting_xp&gt;
+        &lt;strain_calculation/&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-02-17 04:37:16&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;243657762f1a6c10e0f497eef699b64b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-17 04:37:16&lt;/sys_updated_on&gt;
+        &lt;talent_ranks/&gt;
+        &lt;willpower&gt;2&lt;/willpower&gt;
+        &lt;wound_calculation/&gt;
+    &lt;/x_176383_star_wars_species&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-02-17 06:17:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bfc0bbb22f9a6c10e0f497eef699b698</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lasat</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_bfc0bbb22f9a6c10e0f497eef699b698</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-02-17 06:17:27</sys_updated_on>
+        <tablename>x_176383_star_wars_species</tablename>
+    </sys_metadata_link>
+</record_update>

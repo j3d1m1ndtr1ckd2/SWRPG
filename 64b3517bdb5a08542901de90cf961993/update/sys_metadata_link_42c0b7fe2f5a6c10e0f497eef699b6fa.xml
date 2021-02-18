@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1ed7af3a2f5a6c10e0f497eef699b6bc</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_species"&gt;
+    &lt;x_176383_star_wars_species action="INSERT_OR_UPDATE"&gt;
+        &lt;agility&gt;2&lt;/agility&gt;
+        &lt;base_strain_threshold&gt;11&lt;/base_strain_threshold&gt;
+        &lt;base_wound_threshold&gt;9&lt;/base_wound_threshold&gt;
+        &lt;brawn&gt;1&lt;/brawn&gt;
+        &lt;cunning&gt;3&lt;/cunning&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Special Abilities: &lt;/strong&gt;Stealth &amp;#43;1 or Survival &amp;#43;1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Acute Senses: &lt;/strong&gt;Add 1 boost die to Perception and Vigilance checks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Low-Tech Users: &lt;/strong&gt;Upgrade difficulty of checks to use technology not available on their home world.  May become familiar with equipment after time, removing the difficulty for the specific equipment.  Remove disadvantage with 10xp.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;intellect&gt;2&lt;/intellect&gt;
+        &lt;name&gt;Ewok&lt;/name&gt;
+        &lt;number&gt;SPE0001077&lt;/number&gt;
+        &lt;portrait/&gt;
+        &lt;presence&gt;2&lt;/presence&gt;
+        &lt;skill_ranks/&gt;
+        &lt;skill_ranks_list/&gt;
+        &lt;skills_choice&gt;1d50595cdbae88542901de90cf9619df,06601d1cdbae88542901de90cf9619ab&lt;/skills_choice&gt;
+        &lt;starting_xp&gt;120&lt;/starting_xp&gt;
+        &lt;strain_calculation/&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-02-17 05:47:36&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1ed7af3a2f5a6c10e0f497eef699b6bc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-17 05:47:36&lt;/sys_updated_on&gt;
+        &lt;talent_ranks/&gt;
+        &lt;willpower&gt;1&lt;/willpower&gt;
+        &lt;wound_calculation/&gt;
+    &lt;/x_176383_star_wars_species&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-02-17 06:17:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>42c0b7fe2f5a6c10e0f497eef699b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ewok</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_42c0b7fe2f5a6c10e0f497eef699b6fa</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-02-17 06:17:20</sys_updated_on>
+        <tablename>x_176383_star_wars_species</tablename>
+    </sys_metadata_link>
+</record_update>

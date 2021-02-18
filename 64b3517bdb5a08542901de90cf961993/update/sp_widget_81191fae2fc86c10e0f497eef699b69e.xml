@@ -511,7 +511,7 @@
 		});
 	}
 	
-	$scope.filterGear = function(type){
+	$scope.filterGear = function(){
 		var type = document.getElementById('gearFilterSelect').value;
 		if(type == 'all'){
 			 $scope.data.availableGear = $scope.data.availableGearAll;
@@ -699,10 +699,18 @@
 		});
 	}
 	
-	var q = "sys_id=" + $scope.data.characterID;
+	/*var q = "sys_id=" + $scope.data.characterID;
 	spUtil.recordWatch($scope, "x_176383_star_wars_character", q, function(event, data) {
    spUtil.update($scope);
-	});
+	});*/
+	
+	$scope.removeVehicle = function(vehicle){
+		if(confirm('Are you sure you want to remove this ship?')){
+			c.server.get({action: 'removeVehicle', vehicle: vehicle}).then(function(response){
+				c.server.refresh();
+			});
+		}
+	}
 	
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -717,6 +725,17 @@
   background-size:cover !important;
 	opacity:.7;
   z-index:-5;
+}
+
+.remove-vehicle-mobile{
+	margin-top:30px;
+  text-align:center;
+}
+
+.mobile-remove-vehicle-button{
+	background-color:transparent;
+  border:1px groove #e21414;
+  border-radius:20px;
 }
 
 .name{
@@ -1419,6 +1438,14 @@
 	margin-bottom:20px;
 }
 
+.fa-circle{
+	color:#e21414;
+}
+
+.delete-vehicle{
+	transform:rotate(45deg);
+}
+
 @media only screen and (min-width:762px){
   .lg-hidden{
   	display:none;
@@ -1782,7 +1809,6 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 		}
 		data.availableTalents.push(t);
 	}
-	//var spliceIndex = [];
 	for(var i = 0; i < data.availableTalents.length; i++){
 		for(var j = 0; j < purchasedTalentIDs.length; j++){
 			if(data.availableTalents[i].preReqs.join().indexOf(purchasedTalentIDs[j]) >= 0 && data.character.availableXPInt >= data.availableTalents[i].costToPurchase){
@@ -2297,6 +2323,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			skillGR.query();
 			while(skillGR.next()){
 				skillGR.career = true;
+				skillGR.cost_to_next_rank = (skillGR.rank + 1) * 5;
 				skillGR.update();
 			}
 			break;
@@ -2305,6 +2332,12 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			charGR.other_gear = input.gear;
 			charGR.update();
 			data.character.otherGear = charGR.other_gear + '';
+			break;
+				
+			case 'removeVehicle':
+			var characterVehicle = new GlideRecord('x_176383_star_wars_character_vehicle');
+			characterVehicle.get(input.vehicle.sysID);
+			characterVehicle.deleteRecord();
 			break;
 				
 			default:
@@ -2318,7 +2351,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>879</sys_mod_count>
+        <sys_mod_count>914</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2326,7 +2359,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-30 02:17:31</sys_updated_on>
+        <sys_updated_on>2021-02-17 14:34:48</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2737,8 +2770,17 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
          <a class="vehicle-link" href="?id=star_wars_vehicle_sheet&vehicleID={{v.sysID}}" target="_blank">
           <span class="col-xs-6 col-md-4 vehicle-detail">{{v.name}}</span>
           <span class="col-xs-6 col-md-4 vehicle-detail">{{v.vehicleName}}</span>
-          <span class="xs-hidden col-md-4 vehicle-detail">{{v.makeModel}}</span>
+          <span class="xs-hidden col-md-3 vehicle-detail">{{v.makeModel}}</span>
          </a>
+          <span ng-if="data.canEdit" class="xs-hidden col-md-1 vehicle-detail">
+          	<span ng-click="removeVehicle(v)" class="fa-stack">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-sword-laser-alt fa-stack-1x delete-vehicle"></i>
+            </span>
+          </span>
+          <span ng-if="data.canEdit" class="lg-hidden col-xs-12 vehicle-detail remove-vehicle-mobile">
+            <button class="mobile-remove-vehicle-button" ng-click="removeVehicle(v)">Remove Vehicle</button>
+          </span>
         </span>
       </span>
     </span>

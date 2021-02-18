@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c0c5a7322f5a6c10e0f497eef699b635</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_species"&gt;
+    &lt;x_176383_star_wars_species action="INSERT_OR_UPDATE"&gt;
+        &lt;agility&gt;2&lt;/agility&gt;
+        &lt;base_strain_threshold&gt;11&lt;/base_strain_threshold&gt;
+        &lt;base_wound_threshold&gt;11&lt;/base_wound_threshold&gt;
+        &lt;brawn&gt;2&lt;/brawn&gt;
+        &lt;cunning&gt;3&lt;/cunning&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Special Abilities: &lt;/strong&gt;Perception &amp;#43;1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Additional Limbs: &lt;/strong&gt;Harch have 6 arms, allowing them to make two free maneuvers per turn as opposed to 1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Venomous Fangs: &lt;/strong&gt; Brawl attack checks gain Stun 3 item quality.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;intellect&gt;2&lt;/intellect&gt;
+        &lt;name&gt;Harch&lt;/name&gt;
+        &lt;number&gt;SPE0001076&lt;/number&gt;
+        &lt;portrait/&gt;
+        &lt;presence&gt;1&lt;/presence&gt;
+        &lt;skill_ranks/&gt;
+        &lt;skill_ranks_list&gt;5d30915cdbae88542901de90cf9619eb&lt;/skill_ranks_list&gt;
+        &lt;skills_choice/&gt;
+        &lt;starting_xp&gt;75&lt;/starting_xp&gt;
+        &lt;strain_calculation/&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-02-17 05:32:51&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c0c5a7322f5a6c10e0f497eef699b635&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-17 05:32:51&lt;/sys_updated_on&gt;
+        &lt;talent_ranks/&gt;
+        &lt;willpower&gt;2&lt;/willpower&gt;
+        &lt;wound_calculation/&gt;
+    &lt;/x_176383_star_wars_species&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-02-17 06:17:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>92e0fbb22f9a6c10e0f497eef699b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Harch</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_92e0fbb22f9a6c10e0f497eef699b6cc</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-02-17 06:17:53</sys_updated_on>
+        <tablename>x_176383_star_wars_species</tablename>
+    </sys_metadata_link>
+</record_update>

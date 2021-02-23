@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope) {
+        <client_script><![CDATA[api.controller=function($scope, $rootScope, $location) {
   /* widget controller */
   var c = this;
 	
@@ -22,16 +22,65 @@
 	$scope.closeNotesContainer = function(){
 		$scope.data.currentNotesDate = '';
 	}
+	
+	$scope.newCampaign = function(){
+		c.server.get({action: 'newCampaign'}).then(function(response){
+			$scope.data = response.data;
+		});
+	}
+	
+	$scope.closeNewCampaign = function(){
+		$scope.data.createCampaign = false;
+		c.server.refresh();
+	}
+	
+	$rootScope.$on('sp.form.submitted', function(evt, data){
+		$scope.closeNewCampaign();
+		c.server.refresh();
+	});
+	
+	$scope.newSession = function(){
+		c.server.get({action: 'newSession', campaignID: $scope.data.currentCampaign.sysID}).then(function(response){
+			$location.search('id', 'star_wars_game_session');
+			$location.search('table', 'x_176383_star_wars_game_session');
+			$location.search('sys_id', response.data.activeSessionID);
+			$location.search('campaign', $scope.data.currentCampaign.sysID);
+		});
+	}
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.campaigns-container{
 	padding-bottom:600px;
+}
+
+.panel-heading,.panel-footer{
+	background-color:black;
+  color:white;
+}
+	
+.fa-swords-laser{
+	color:#e21414;
+  font-size:22px;
+  padding: 10px 5px 0px 0px;
 }
 	
 .header{
 	font-size:26px;
 }
 
+.create-new-campaign{
+	margin-bottom:40px;
+}
+
+.create-campaign-container{
+	position:fixed;
+  top:50px;
+  left:10px;
+  width:98%;
+  animation: slideInLeft .5s;
+  z-index:5;
+}
+	
 .campaigns-header{
 	margin-bottom:40px;
 }
@@ -152,6 +201,32 @@ a:hover{
 	color:#e21414;
 }
 
+.session-record-buttons{
+	margin-bottom:40px;
+}
+
+.session-button{
+	font-size:18px;
+  color:white;
+  border:1px groove #54f403;
+  border-radius:20px;
+  background-color:black;
+  padding:8px;
+  box-shadow: 0px 0px 4px 2px #54f403;
+}
+
+#campaignIdButton{
+  font-size:16px;
+  font-weight:bold;
+  padding:15px;
+	text-align:center;
+}
+
+@keyframes slideInLeft{
+  from{left:1000px;opacity:0;}
+  to{left:10px;opacity:1;}
+}
+
 @media only screen and (max-width:762px){
   .character-details,.character{
   	padding-left:0;
@@ -179,6 +254,7 @@ a:hover{
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	var userID = gs.getUserID();
+	data.userID = userID;
 var characters = new GlideRecord('x_176383_star_wars_character');
 	characters.addQuery('player', userID).addCondition('campaign', '!=', '');
 	characters.query();
@@ -195,6 +271,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 	while(campaigns.next()){
 		var campaign = {
 			gm: campaigns.game_master.getDisplayValue(),
+			gmID: campaigns.game_master.sys_id + '',
 			sysID: campaigns.sys_id + '',
 			name: campaigns.name + ''
 		};
@@ -267,6 +344,36 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 					data.noteDates.push(notes.session_date + '');
 				}
 			}
+			data.hasActiveSession = false;
+			var sessionGR = new GlideRecord('x_176383_star_wars_game_session');
+			sessionGR.addQuery('campaign', input.campaign.sysID).addCondition('active', true);
+			sessionGR.query();
+			if(sessionGR.next()){
+				data.hasActiveSession = true;
+				data.activeSessionID = sessionGR.sys_id + '';
+			}
+		} else if(input.action == 'newCampaign'){
+			var widgetFormVariables = {
+				table: 'x_176383_star_wars_campaign',
+				view: 'portal',
+				omitHeaderOptions: true,
+				sys_id: -1
+			};
+			data.formWidget = $sp.getWidget('widget-form', widgetFormVariables);
+			data.createCampaign = true;
+		} else if(input.action == 'newSession'){
+			var sessionGR = new GlideRecord('x_176383_star_wars_game_session');
+			sessionGR.addQuery('campaign', input.campaignID).addCondition('active', true);
+			sessionGR.query();
+			if(sessionGR.next()){
+				sessionGR.active = false;
+				sessionGR.update();
+			}
+			sessionGR.initialize();
+			sessionGR.campaign = input.campaignID;
+			sessionGR.insert();
+			data.activeSessionID = sessionGR.sys_id + '';
+			data.newSessionURL = '?id=star_wars_game_session&table=x_176383_star_wars_game_session&sys_id=' + sessionGR.sys_id + '&campaign=' + data.currentCampaign.sysID;
 		}
 	}
 })();]]></script>
@@ -276,15 +383,15 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>91</sys_mod_count>
+        <sys_mod_count>144</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-03 17:30:11</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-02-23 18:48:09</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -293,6 +400,15 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 	<div class="col-xs-12 campaigns-header">
     <span class="col-xs-12 header text-center">Campaigns</span>
     <span class="col-xs-12 header star-wars-text text-center">Campaigns</span>
+  </div>
+  <!-- create campaign button -->
+  <div ng-if="data.currentCampaign == ''" class="col-xs-12 campaign-buttons-section text-center">
+    <div class="col-xs-12 col-md-4 col-md-offset-4 create-new-campaign campaign-body" ng-click="newCampaign()">New Campaign</div>
+  </div>
+  <!-- create campaign form container -->
+  <div ng-if="data.createCampaign" class="col-xs-12 create-campaign-container">
+    <span class="col-xs-12 close-button"><i class="far fa-swords-laser pull-right" ng-click="closeNewCampaign()"></i></span>
+    <sp-widget widget="data.formWidget"/>
   </div>
   <!-- campaigns list -->
   <div ng-if="data.currentCampaign == ''" class="col-xs-12 campaigns-body">
@@ -312,6 +428,10 @@ var characters = new GlideRecord('x_176383_star_wars_character');
       <i class="fad fa-starfighter fa-2x" id="starfighterBackButton"></i> <text id="backButtonText">Back</text>
     </div>
     <span class="col-xs-12 header text-center">{{data.currentCampaign.name}}<br><text class="star-wars-text">{{data.currentCampaign.name}}</text></span>
+    <!-- campaign ID for GM's -->
+    <div ng-if="data.currentCampaign.gmID == data.userID" id="campaignIdButton">
+      <span class="col-xs-12 campaign-id-title">Campaign ID: {{data.currentCampaign.sysID}}</span>
+    </div>
     <span class="col-xs-12 col-md-6 campaign-characters">
       <span class="col-xs-12 detail-header text-center">Characters<br><text class="star-wars-text">Characters</text></span>
       <span class="col-xs-12 character" ng-repeat="character in data.campaignCharacters">
@@ -339,6 +459,18 @@ var characters = new GlideRecord('x_176383_star_wars_character');
     <!-- session notes -->
     <span class="col-xs-12 campaign-notes">
       <span class="col-xs-12 detail-header text-center">Session Notes<br><text class="star-wars-text">Session Notes</text></span>
+      <span ng-if="data.currentCampaign.gmID == data.userID" class="col-xs-12 session-record-buttons text-center">
+        <span ng-if="data.hasActiveSession" class="col-xs-12 col-md-6">
+          <button class="session-button">
+            <a href="?id=star_wars_game_session&table=x_176383_star_wars_game_session&sys_id={{data.activeSessionID}}&campaign={{data.currentCampaign.sysID}}">Active Session</a>
+          </button>
+        </span>
+        <span class="col-xs-12 col-md-6" ng-click="newSession()">
+          <button class="session-button" id="newSessionButton">
+            <a href="{{data.newSessionURL}}">New Session</a>
+          </button>
+        </span>
+      </span>
       <span class="col-xs-12 col-md-2" ng-repeat="date in data.noteDates">
         <span class="col-xs-12 character note-selector">
         	<span class="col-xs-12 character-detail date">{{date}}</span>

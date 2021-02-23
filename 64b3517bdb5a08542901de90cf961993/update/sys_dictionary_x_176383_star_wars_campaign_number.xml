@@ -38,7 +38,7 @@
         <name>x_176383_star_wars_campaign</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -55,7 +55,7 @@
         <sys_created_on>2020-11-14 22:32:40</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d3f0c26c2fa8a490e0f497eef699b6e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Number</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_dictionary_x_176383_star_wars_campaign_number</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2020-11-14 22:32:40</sys_updated_on>
+        <sys_updated_on>2021-02-23 04:39:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

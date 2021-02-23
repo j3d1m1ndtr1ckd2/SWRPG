@@ -28,7 +28,7 @@ $text-muted:#e6e8ea;
         <icon/>
         <kb_knowledge_base/>
         <kb_knowledge_page/>
-        <login_page/>
+        <login_page display_value="star_wars_login">3c1da0c92f6e6410e0f497eef699b606</login_page>
         <logo>43c9270f2f371890e0f497eef699b6b1</logo>
         <notfound_page/>
         <quick_start_config/>
@@ -45,15 +45,15 @@ $text-muted:#e6e8ea;
         <sys_created_on>2020-10-16 17:44:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4607e74b2f371890e0f497eef699b6c4</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Star Wars RPG</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_portal_4607e74b2f371890e0f497eef699b6c4</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-16 18:53:59</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-02-23 15:49:00</sys_updated_on>
         <theme display_value="Star Wars">e6fd27032f771890e0f497eef699b686</theme>
         <title>Star Wars RPG</title>
         <ts_index_group/>

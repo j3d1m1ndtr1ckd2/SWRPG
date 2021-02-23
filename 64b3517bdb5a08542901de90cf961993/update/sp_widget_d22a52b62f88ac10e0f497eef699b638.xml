@@ -18,6 +18,29 @@
 		}
 };
 	
+	$scope.openJoinCampaign = function(character){
+		$scope.data.currentCharacter = character;
+		document.getElementById('joinCampaignForm').style.display = 'inline';
+	}
+	
+	$scope.joinCampaign = function(){
+		var campaignID = document.getElementById('campaignID').value;
+		c.server.get({action: 'joinCampaign', character: $scope.data.currentCharacter, campaign: campaignID}).then(function(response){
+			if(response.data.invalidCampaign){
+				document.getElementById('campaignID').value = '';
+				$scope.data.currentCharacter = response.data.currentCharacter;
+			} else{
+				c.server.refresh();
+				document.getElementById('campaignID').value = '';
+				$scope.closeJoinCampaign();
+			}
+		});
+	}
+	
+	$scope.closeJoinCampaign = function(){
+		$scope.data.currentCharacter = '';
+		document.getElementById('joinCampaignForm').style.display = 'none';
+	}
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.my-characters-headers{
@@ -26,8 +49,35 @@
   margin-bottom:40px;
 }
 
+#joinCampaignForm{
+	display:none;
+  position:fixed;
+  top:40%;
+  width:80%;
+  left:10%;
+  padding:20px;
+  background:black;
+  border:1px groove #e21414;
+  box-shadow:0px 0px 6px 2px #e21414;
+  border-radius:20px;
+  z-index:10;
+}
+
 a{
 	color:white !important;
+}
+
+.sw-input{
+	border:1px groove #e21414;
+  background-color:black;
+  border-radius:20px;
+  margin-bottom:10px;
+}
+
+.fa-swords-laser{
+	color:#e21414;
+  font-size:22px;
+  padding: 10px 5px 0px 0px;
 }
 
 .character-container{
@@ -57,11 +107,27 @@ a{
 	word-break:break-all;
 }
 
+.campaign-section{
+	text-align:center;
+}
+
 .delete-container{
   text-align:center;
 	margin-top:20px;
   z-index:5;
   margin-bottom:20px;
+}
+
+#joinCampaignButton{
+	background:transparent;
+  border: 1px groove #e21414;
+  box-shadow: 0px 0px 8px 2px lightgray;
+  border-radius:20px;
+  padding:5px;
+}
+
+.join-campaign-button-container{
+	margin-top:10px;
 }
 
 #deleteCharacterButton{
@@ -98,16 +164,13 @@ a{
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
+	data.currentCharacter = '';
 var charGR = new GlideRecord('x_176383_star_wars_character');
 	charGR.addQuery('player', gs.getUserID());
 	charGR.orderBy('name');
 	charGR.query();
 	data.characters = [];
-	var campaigns = [];
 	while(charGR.next()){
-		if(charGR.campaign != ''){
-			campaigns.push(charGR.campaign + '');
-		}
 		var rec = {
 			campaign: charGR.campaign.getDisplayValue(),
 			species: charGR.species.getDisplayValue(),
@@ -119,28 +182,25 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 		data.characters.push(rec);
 	}
 	
-	var friendsGR = new GlideRecord('x_176383_star_wars_character');
-	friendsGR.addQuery('campaign', 'IN', campaigns.join()).addCondition('player', '!=', gs.getUserID());
-	friendsGR.orderBy('campaign');
-	friendsGR.orderBy('name');
-	friendsGR.query();
-	data.friends = [];
-	while(friendsGR.next()){
-		var rec = {
-			campaign: friendsGR.campaign.getDisplayValue(),
-			species: friendsGR.species.getDisplayValue(),
-			name: friendsGR.name + '',
-			career: friendsGR.career.getDisplayValue(),
-			image: friendsGR.species.getDisplayValue().toLowerCase() + '.png',
-			sysID: friendsGR.sys_id + ''
-		};
-		data.friends.push(rec);
-	}
-	
 	if(input){
 		if(input.action == 'deleteCharacter'){
 			charGR.get(input.sysID);
 			charGR.deleteRecord();
+		} else if(input.action == 'joinCampaign'){
+			//validate campaign exists
+			var campaigns = new GlideRecord('x_176383_star_wars_campaign');
+			campaigns.get(input.campaign);
+			if(campaigns.isValidRecord()){
+				var character = new GlideRecord('x_176383_star_wars_character');
+				character.get(input.character.sysID);
+				character.campaign = input.campaign;
+				character.update();
+				data.invalidCampaign = false;
+			} else{
+				gs.addErrorMessage('Invalid Campaign ID.  Please validate the campaign ID and try again.');
+				data.invalidCampaign = true;
+				data.currentCharacter = input.character;
+			}
 		}
 	}
 })();]]></script>
@@ -150,16 +210,20 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-28 03:37:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d22a52b62f88ac10e0f497eef699b638</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>Star Wars My Characters</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_d22a52b62f88ac10e0f497eef699b638</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-11 21:49:18</sys_updated_on>
-        <template><![CDATA[<div class="col-xs-12 my-characters-container">
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-02-23 21:09:03</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 my-characters-container">
 	<div class="col-xs-12 my-characters-headers">
     <span class="col-xs-12 header">My Characters</span>
     <span class="col-xs-12 star-wars-text">My Characters</span>
@@ -174,29 +238,25 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
           <span class="col-xs-6 species">{{character.species}}</span>
           <span class="col-xs-6 career">{{character.career}}</span>    
       	</span>
+        <span class="col-xs-12 campaign-section">
+          <span ng-if="character.campaign">Campaign: {{character.campaign}}</span>
+          <span ng-if="!character.campaign" ng-click="openJoinCampaign(character)">Join Campaign</span>
+        </span>
         <span class="col-xs-12 delete-container">
           <button id="deleteCharacterButton" ng-click="deleteCharacter(character.sysID)">Execute Order 66<br><text class="star-wars-text sw-delete-button">Execute Order 66</text></button>  
       </span>
       </span>
     </span>
+    <!-- display input for user to copy/paste campaign sys_id.  validate it's for a valid campaign.  if not, pop error message.  if yes, update character record -->
+        <div class="join-campaign-form text-center" id="joinCampaignForm">
+          <span class="col-xs-12 text-right"><i class="far fa-swords-laser pull-right" ng-click="closeJoinCampaign()"></i></span>
+          <label for="campaignID">Enter the ID for the campaign to add {{data.currentCharacter.name}} to.  Your GM can provide this for you.</label><br/>
+          <input class="sw-input" type="text" id="campaignID" name="campaignID"/>
+          <span class="col-xs-12 join-campaign-button-container text-center">
+            <button id="joinCampaignButton" ng-click="joinCampaign()">Join Campaign</button>
+          </span>
+        </div>
   </div>
-  <!--div class="col-xs-12 my-characters-body">
-    <span class="col-xs-12 friends-container-header">Friends<br><text class="star-wars-text">Friends</text></span>
-    <span class="col-xs-12 col-md-4 character" ng-repeat="character in data.friends">
-      <span class="col-xs-12 character-container">
-       	<span class="col-xs-4 species-image"><img src="{{character.image}}" height="120px"></span>
-      	<!--span class="col-xs-8 character-details" ng-click="viewCharacterSheet(character.sysID)"-->
-        <!--span class="col-xs-8 character-details">
-          <a href="?id=star_wars_character_sheet&character_id={{character.sysID}}">
-            <span class="col-xs-12 name">{{character.name}}</span>
-            <span class="col-xs-12 star-wars-text">{{character.name}}</span>
-            <span class="col-xs-6 species">{{character.species}}</span>
-            <span class="col-xs-6 career">{{character.career}}</span>
-          </a>
-      	</span>
-      </span>
-    </span>
-  </div-->
 </div>]]></template>
     </sp_widget>
 </record_update>

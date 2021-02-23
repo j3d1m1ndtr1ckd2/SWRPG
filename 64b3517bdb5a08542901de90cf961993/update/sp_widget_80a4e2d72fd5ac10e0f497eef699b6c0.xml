@@ -47,6 +47,14 @@
 			$location.search('campaign', $scope.data.currentCampaign.sysID);
 		});
 	}
+	
+	$scope.addXP = function(character){
+		var elementID = 'addXP' + character.sysID;
+		var xp = parseInt(document.getElementById(elementID).value);
+		c.server.get({action: 'addXP', character: character, xp: xp, currentCampaign: $scope.data.currentCampaign}).then(function(response){
+			$scope.viewCampaign($scope.data.currentCampaign);
+		});
+	}
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.campaigns-container{
@@ -56,6 +64,26 @@
 .panel-heading,.panel-footer{
 	background-color:black;
   color:white;
+}
+
+.sw-input{
+	border:1px groove #e21414;
+  background-color:black;
+  border-radius:20px;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+#addXPButton{
+	background:transparent;
+  padding:5px 15px 5px 15px;
+  border:1px groove #54f403;
+  border-radius:20px;
+  box-shadow:0px 0px 6px 3px #54f403;
+}
+
+.add-xp-section{
+	padding-bottom:15px;
 }
 	
 .fa-swords-laser{
@@ -374,6 +402,12 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 			sessionGR.insert();
 			data.activeSessionID = sessionGR.sys_id + '';
 			data.newSessionURL = '?id=star_wars_game_session&table=x_176383_star_wars_game_session&sys_id=' + sessionGR.sys_id + '&campaign=' + data.currentCampaign.sysID;
+		} else if(input.action == 'addXP'){
+			var character = new GlideRecord('x_176383_star_wars_character');
+			character.get(input.character.sysID);
+			character.available_xp += input.xp;
+			character.update();
+			gs.addInfoMessage(input.xp + ' XP added to ' + character.getDisplayValue());
 		}
 	}
 })();]]></script>
@@ -383,7 +417,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>144</sys_mod_count>
+        <sys_mod_count>156</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -391,7 +425,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-02-23 18:48:09</sys_updated_on>
+        <sys_updated_on>2021-02-23 21:51:37</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -443,6 +477,11 @@ var characters = new GlideRecord('x_176383_star_wars_character');
             <span class="col-xs-12 character-detail">Species: {{character.species}}</span>
             <span class="col-xs-12 character-detail">Career: {{character.career}}</span>
           </a>
+        </span>
+        <span ng-if="data.currentCampaign.gmID == data.userID" class="col-xs-12 add-xp-section text-center">
+          <label for="addXP{{character.sysID}}">XP to Add:</label><br/>
+          <input class="sw-input" type="text" name="addXP{{character.sysID}}" id="addXP{{character.sysID}}" inputmode="numeric" pattern="[0-9]*" value="0"/><br/>
+          <button id="addXPButton" ng-click="addXP(character)">Add XP</button>
         </span>
       </span>
     </span>

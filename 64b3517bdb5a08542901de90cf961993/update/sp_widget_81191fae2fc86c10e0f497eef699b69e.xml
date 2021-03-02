@@ -333,6 +333,16 @@
 					}
 				break;
 					
+				case 'crit':
+				var container = document.getElementById('editCritContainer');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '80%';
+					} else{
+						container.style.width = '40%';
+					}
+				break;
+					
 				default:
 					break;
 			}
@@ -463,6 +473,13 @@
 				$scope.closeEditContainer('otherGear');
 			});
 			break;
+				
+			case 'crit':
+			var crits = document.getElementById('crits').value;
+			c.server.get({action: 'saveCrit', crits: crits}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('crit');
+			});
 				
 			default:
 				break;
@@ -658,6 +675,10 @@
 				
 			case 'otherGear':
 			container = document.getElementById('editOtherGearDetailsContainer');
+			break;
+				
+			case 'crit':
+			container = document.getElementById('editCritContainer');
 			break;
 				
 			default:
@@ -1841,7 +1862,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			damage: gear.base_damage + '',
 			range: gear.range.getDisplayValue(),
 			hardPoints: gear.hard_points + '',
-			description: gear.description + '',
+			description: gear.description_html + '',
 			crit: gear.critical_rating + '',
 			hpRequired: gear.hp_required + '',
 			sysID: gear.sys_id + ''
@@ -1875,7 +1896,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			rangeID: cg.range + '',
 			hardPoints: cg.hard_points + '',
 			hpRequired: cg.item.hp_required + '',
-			description: cg.item.description + '',
+			description: cg.item.description_html + '',
 			sysID: cg.sys_id + '',
 			iconID: cg.sys_id + 'Chevron'
 		};
@@ -2340,6 +2361,13 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			characterVehicle.deleteRecord();
 			break;
 				
+			case 'saveCrit':
+			charGR.critical_injuries = parseInt(input.crits);
+			charGR.update();
+			data.character.criticalInjuriesInt = charGR.critical_injuries;
+			data.character.criticalInjuriesString = data.character.criticalInjuriesInt + '';
+			break;
+				
 			default:
 				break;
 		}
@@ -2351,15 +2379,15 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>914</sys_mod_count>
+        <sys_mod_count>920</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-17 14:34:48</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-03-02 06:50:44</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2373,14 +2401,18 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     <span class="col-xs-12 col-md-8 star-wars-text" ng-click="editCharacter('name')">{{data.character.name}}</span>
     <span class="col-xs-12 col-md-8 id-info"><text id="species">Species: {{data.character.species}}</text> <i class="far fa-info-circle" ng-click="editCharacter('species')"></i><br> Career:<text id="career">{{data.character.career}}</text> <i class="far fa-info-circle" ng-click="editCharacter('career')"></i><br> Specializations:<text id="specializations">{{data.character.specializationNames}}</text> <i class="far fa-info-circle" ng-click="editCharacter('specializations')"></i><br><text id="buyNewSpecializations" ng-click="editCharacter('newSpecs')"><i class="fab fa-old-republic"></i> Buy New Specializations</text></span>
     <span class="col-xs-12 col-md-4 xp-info-container">
-      <span class="col-xs-12 mobile-nav-container xp-info" id="xpInfo">
-        <span class="col-xs-6 total-xp">
+      <span class="col-xs-12 mobile-nav-container xp-info text-center" id="xpInfo">
+        <span class="col-xs-6 col-md-4 total-xp">
           <span class="col-xs-12 xp-value">{{data.character.totalXPString}}</span>
           <span class="col-xs-12 xp-label">TOTAL XP</span>
         </span>
-        <span class="col-xs-6 available-xp">
+        <span class="col-xs-6 col-md-4 available-xp">
           <span class="col-xs-12 xp-value">{{data.character.availableXPString}}</span>
           <span class="col-xs-12 xp-label">AVAILABLE XP</span>
+        </span>
+        <span class="col-xs-12 col-md-4 available-xp critical-injuries" ng-click="editCharacter('crit')">
+          <span class="col-xs-12 xp-value">{{data.character.criticalInjuriesString}}</span>
+          <span class="col-xs-12 xp-label">Critical Injuries</span>
         </span>
       </span>
     </span>
@@ -2673,7 +2705,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
                </span>
                <span class="col-xs-12 gear-detail">
                  <span class="col-xs-12 gear-detail-label">Description:</span>
-                 <span class="col-xs-12 gear-detail-value">{{item.description}}</span>
+                 <span class="col-xs-12 gear-detail-value" ng-bind-html="item.description"></span>
                </span>
                <span class="col-xs-12" id="removeItemButtonContainer">
                  <button ng-if="data.canEdit" id="editItemButton" ng-click="editCharacter('gearEdit', item)">Edit<br><text class="star-wars-text">Edit</text></button>
@@ -2747,7 +2779,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         </span>
         <span class="col-xs-12 gear-detail">
           <span class="col-xs-12 gear-detail-label">Description:</span>
-          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.description}}</span>
+          <span class="col-xs-12 gear-detail-value" ng-bind-html="data.currentGearItem.description"></span>
         </span>
       </span>
     </span>
@@ -2908,6 +2940,19 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 specialization-name">XP Cost: {{sp.costToPurchase}}</span>
         <span ng-if="sp.canPurchase" class="col-xs-12 text-center vehicle-detail talent-detail force-power-detail" id="purchaseSpecButton"><button class="purchase-gear-button" ng-click="purchaseNewSpec(sp)">Purchase</button></span>
         <span class="col-xs-12 specialization-description" ng-bind-html="sp.description"></span>
+      </span>
+    </span>
+    <!-- edit critical injuries -->
+    <span class="edit-character" id="editCritContainer">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12">
+        <label for="crits">Critical Injuries:</label><br/>
+        <input class="sw-input" type="text" id="crits" name="crits" value="{{data.character.criticalInjuriesString}}"/>
+      </span>
+      <span class="col-xs-12 save-edits">
+       <span class="col-xs-12 save-button-container">
+        <button id="saveEditsButton" ng-click="saveEdits('crit')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+       </span>
       </span>
     </span>
     <!-- edit skills -->

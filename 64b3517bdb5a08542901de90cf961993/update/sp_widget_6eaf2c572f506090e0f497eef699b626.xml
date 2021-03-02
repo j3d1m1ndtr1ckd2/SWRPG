@@ -27,6 +27,16 @@
 			}
 			break;
 				
+			case 'crit':
+			var container = document.getElementById('editVehicleCrits');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
 			case 'handling':
 			var container = document.getElementById('editVehicleHandling');
 			container.style.display = 'inline';
@@ -128,6 +138,10 @@
 			container = document.getElementById('editCargo');
 			break;
 				
+			case 'crit':
+			container = document.getElementById('editVehicleCrits');
+			break;
+				
 			default:
 				break;
 		}
@@ -151,6 +165,14 @@
 			c.server.get({action: 'saveSpeed', speed: speed}).then(function(response){
 				c.server.refresh();
 				$scope.closeEditContainer('speed');
+			});
+			break;
+				
+			case 'crit':
+			var crit = parseInt(document.getElementById('vehicleInputCrit').value);
+			c.server.get({action: 'saveCrit', crits: crit}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('crit');
 			});
 			break;
 				
@@ -598,7 +620,8 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		description: vehicleGR.vehicle.description + '',
 		notes: vehicleGR.vehicle.notes + '',
 		vehicleSysId: vehicleGR.vehicle.sys_id + '',
-		cargo: vehicleGR.cargo_hold + ''
+		cargo: vehicleGR.cargo_hold + '',
+		crits: vehicleGR.critical_injuries + ''
 	};
 	
 	if(vehicleGR.vehicle.primary_hyperdrive_class != ''){
@@ -654,6 +677,11 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 			vehicleGR.update();
 			break;
 				
+			case 'saveCrit':
+			vehicleGR.critical_injuries = input.crits;
+			vehicleGR.update();
+			break;
+				
 			case 'saveSpeed':
 			vehicleGR.speed = input.speed;
 			vehicleGR.update();
@@ -705,15 +733,15 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>207</sys_mod_count>
+        <sys_mod_count>210</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-06 05:23:47</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-03-02 15:55:48</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -768,6 +796,10 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
           <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.ssCurrent}}</span>
           <span class="col-xs-12 vehicle-characteristic-label current">Current</span>
         </span>
+      </span>
+      <span class="col-xs-12 col-md-4 characteristic-container" ng-click="editVehicle('crit')">
+        <span class="col-xs-12 vehicle-characteristic-label vehicle-combat-charactistic-label">Critical Hits</span>
+        <span class="col-xs-12 vehicle-characteristic">{{data.vehicle.crits}}</span>
       </span>
     </span>
     <span class="col-xs-12 col-md-5 defense-characteristics" ng-click="editVehicle('defense')">
@@ -871,6 +903,19 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
   <span class="col-xs-12 save-edits">
   	<span class="col-xs-12 save-button-container">
     	<button class="save-edits-button" ng-click="saveEdits('armor')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle critical hits -->
+<span class="edit-vehicle" id="editVehicleCrits">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleInputCrit">Critical Hits:</label><br>
+    <input class="sw-input" type="text" id="vehicleInputCrit" name="vehicleInputCrit" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.crits}}"/>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('crit')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
     </span>
   </span>
 </span>

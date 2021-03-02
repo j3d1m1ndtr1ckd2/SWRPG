@@ -4,7 +4,6 @@
         <client_script><![CDATA[api.controller=function($scope,spUtil) {
   /* widget controller */
   var c = this;
-	
 	$scope.addDie = function(die){
 		var tempDie = {
 			'name': die.name,
@@ -41,11 +40,22 @@
 			var difficultyRolled = 0;
 			var challengeRolled = 0;
 			var forceRolled = 0;
+			var critRolled = 0;
 			for(var i = 0; i < $scope.data.dicePool.length; i++){
 				var roll = Math.floor((Math.random() * parseInt($scope.data.dicePool[i].max)) + 1);
 				for(var j = 0; j < $scope.data.dice.length; j++){
-					if($scope.data.dice[j].name == $scope.data.dicePool[i].name){
-						resultString += ',' + $scope.data.dice[j][roll.toString()];
+					if($scope.data.dice[j].name == $scope.data.dicePool[i].name && $scope.data.dicePool[i].name != 'crit'){
+						if(resultString == ''){
+							resultString = $scope.data.dice[j][roll.toString()];
+						} else{
+							resultString += ',' + $scope.data.dice[j][roll.toString()];
+						}
+					} else if($scope.data.dice[j].name == $scope.data.dicePool[i].name && $scope.data.dicePool[i].name == 'crit'){
+						if(resultString == ''){
+							resultString = roll.toString();	 
+						} else{
+							resultString += ',' + roll.toString();
+						}
 					}
 				}
 				
@@ -78,6 +88,10 @@
 					case 'force':
 					forceRolled++;
 					break;
+						
+					case 'crit':
+					critRolled++;
+					break;
 				}
 			}
 			
@@ -104,6 +118,10 @@
 				if(challengeRolled > 0){
 					rolledString += challengeRolled + ' Challenge, ';
 				}
+			
+				if(critRolled > 0){
+					rolledString += critRolled + ' D100, ';
+				}
 				
 				if(forceRolled > 0){
 					rolledString += forceRolled + ' Force';
@@ -118,7 +136,8 @@
 			var despair = 0;
 			var dark = 0;
 			var light = 0;
-			for(var k = 0; k < results.length; k++){
+			var crit = '';
+			for(var k = 0; k < results.length; k++){				
 				switch(results[k]){
 					case 'success':
 					successes++;
@@ -154,12 +173,29 @@
 					light++;
 					break;
 						
+					case 'blank':
+					break;
+						
 					default:
-						break;
+					if(crit == ''){
+						crit = results[k];
+					} else{
+						crit += ', ' + results[k];
+					}
+					break;
 				}
 			}
 			
 			$scope.data.displayResults = [];
+			if(crit != ''){
+				var critObj = {
+					'name': 'crit',
+					'result': crit,
+					'img': 'critv2.png'
+				};
+				$scope.data.displayResults.push(critObj);
+			}
+				 
 			if((successes - failures) > 0){
 				var drObj = {
 					'name': 'success',
@@ -321,10 +357,20 @@
 	margin-top:20px;
 }
 
+@media only screen and (max-width:762px){
+  .dice-icon{
+  	padding:0;
+  }
+}
+
 @media only screen and (min-width:900px){
 	.split-7{
 		width:14%;
 	}
+  
+  .split-8{
+  	width:12.5%;
+  }
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -459,6 +505,13 @@
 	};
 	data.dice.push(forceDie);
 	
+	var critDie = {
+		'name': 'crit',
+		'icon': 'fas fa-dice-d10',
+		'max': 100
+	};
+	data.dice.push(critDie);
+	
 	if(input){
 		if(input.action == 'updateJournal'){
 			var resultString = '';
@@ -478,15 +531,15 @@
         <sys_created_on>2020-11-24 15:52:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bc55c43b2f2ce0d0e0f497eef699b621</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>125</sys_mod_count>
         <sys_name>Star Wars RPG Dice Roller</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_bc55c43b2f2ce0d0e0f497eef699b621</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-28 22:00:14</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-03-02 15:19:55</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -494,28 +547,31 @@
 <div class="col-xs-12 col-md-8 col-md-offset-2 dice-roller-container">
   <div class="col-xs-12 dice-header">Holo Dice<br><text class="star-wars-text">Holo Dice</text></div>
   <div class="col-xs-12 dice-legend">
-    <span class="col-xs-4 col-md-2">
+    <span class="col-xs-3 split-7">
       <img src="sw_rpg_success.png" height="30px" width="30px"/> Success
     </span>
-    <span class="col-xs-4 col-md-2">
+    <span class="col-xs-3 split-7">
       <img src="sw_rpg_advantage.png" height="30px" width="30px"/> Advantage
     </span>
-    <span class="col-xs-4 col-md-2">
+    <span class="col-xs-3 split-7">
       <img src="sw_rpg_triumph.png" height="30px" width="30px"/> Triumph
     </span>
-    <span class="col-xs-4 col-md-2">
+    <span class="col-xs-3 split-7">
       <img src="sw_rpg_failure.png" height="30px" width="30px"/> Failure
     </span>
-    <span class="col-xs-4 col-md-2">
+    <span class="col-xs-3 split-7">
       <img src="sw_rpg_threat.png" height="30px" width="30px"/> Threat
     </span>
-    <span class="col-xs-4 col-md-2">
+    <span class="col-xs-3 split-7">
       <img src="sw_rpg_despair.png" height="30px" width="30px"/> Despair
+    </span>
+    <span class="col-xs-3 split-7">
+      <img src="critv2.png" height="30px" width="30px"/> Critical
     </span>
   </div>
   <div class="col-xs-12 dice-roller-body">
-    <span class="col-xs-4 split-7 dice" ng-repeat="die in data.dice">
-      <span class="col-xs-12 dice-icon"><i id="{{die.name}}" class="{{die.icon}}"></i></span>
+    <span class="col-xs-4 split-8 dice" ng-repeat="die in data.dice">
+      <span class="col-xs-12 dice-icon"><i id="{{die.name}}" class="{{die.icon}}"></i><i ng-if="die.name == 'crit'" class="{{die.icon}}"></i></span>
       <span class="col-xs-12 dice-quantity">
         <button class="sw-input" ng-click="addDie(die)">Add</button>
       </span>

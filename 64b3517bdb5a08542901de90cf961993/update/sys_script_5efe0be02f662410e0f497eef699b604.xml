@@ -41,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5efe0be02f662410e0f497eef699b604</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>add guest characters to test campaign</sys_name>
         <sys_overrides/>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
@@ -49,9 +49,9 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_script_5efe0be02f662410e0f497eef699b604</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-02-22 14:20:48</sys_updated_on>
-        <template>campaign=3e4f8fe02f662410e0f497eef699b632^EQ</template>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-02-25 15:16:38</sys_updated_on>
+        <template>campaign=de88baa92fea2810e0f497eef699b64a^EQ</template>
         <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=5efe0be02f662410e0f497eef699b604"/>

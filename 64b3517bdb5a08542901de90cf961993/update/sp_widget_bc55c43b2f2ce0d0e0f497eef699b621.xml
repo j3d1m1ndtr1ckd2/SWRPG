@@ -374,7 +374,7 @@
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
-        <description/>
+        <description>SWRPG Dice Roller</description>
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
@@ -531,7 +531,7 @@
         <sys_created_on>2020-11-24 15:52:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bc55c43b2f2ce0d0e0f497eef699b621</sys_id>
-        <sys_mod_count>125</sys_mod_count>
+        <sys_mod_count>126</sys_mod_count>
         <sys_name>Star Wars RPG Dice Roller</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -539,7 +539,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_bc55c43b2f2ce0d0e0f497eef699b621</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-03-02 15:19:55</sys_updated_on>
+        <sys_updated_on>2021-03-04 04:26:51</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

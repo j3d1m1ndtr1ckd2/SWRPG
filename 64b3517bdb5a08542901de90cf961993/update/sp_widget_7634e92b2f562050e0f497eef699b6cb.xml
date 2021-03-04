@@ -233,7 +233,7 @@
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
-        <description/>
+        <description>Initiative tracker for SWRPG</description>
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
@@ -380,7 +380,7 @@ if(input){
         <sys_created_on>2021-02-19 03:58:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7634e92b2f562050e0f497eef699b6cb</sys_id>
-        <sys_mod_count>113</sys_mod_count>
+        <sys_mod_count>114</sys_mod_count>
         <sys_name>Combat Tracker</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -388,7 +388,7 @@ if(input){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_7634e92b2f562050e0f497eef699b6cb</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-03-01 16:03:45</sys_updated_on>
+        <sys_updated_on>2021-03-04 04:27:49</sys_updated_on>
         <template><![CDATA[<div class="collapsed-combat-tracker-button" id="openCombatTrackerButton" ng-click="openCombatTracker()">
   <span class="text-center primary-text col-xs-12">Combat Tracker</span>
   <span class="col-xs-12 text-center star-wars-text secondary-text">Combat Tracker</span>

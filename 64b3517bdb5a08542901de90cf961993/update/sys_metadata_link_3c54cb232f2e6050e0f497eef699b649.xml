@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c744a4e62fff1490e0f497eef699b679</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_species"&gt;
+    &lt;x_176383_star_wars_species action="INSERT_OR_UPDATE"&gt;
+        &lt;agility&gt;2&lt;/agility&gt;
+        &lt;base_strain_threshold&gt;9&lt;/base_strain_threshold&gt;
+        &lt;base_wound_threshold&gt;9&lt;/base_wound_threshold&gt;
+        &lt;brawn&gt;2&lt;/brawn&gt;
+        &lt;cunning&gt;3&lt;/cunning&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Special Abilities: &lt;/strong&gt;Clawdites begin the game with one rank in Resilience.  They still may not train Resilience above rank 2 during character creation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Changeling: &lt;/strong&gt;As an action, a Clawdite may suffer 3 strain and make an Average (2 difficulty dice) Resilience check.  If the Clawdite succeeds, she changes her appearance to match that of a silhouette 1 character whom she has observed before.  An observing character must make opposed Perception vs. Deception check to detect that something is amiss with the impersonated character&amp;#39;s likeness, mannerisms, or behavior.  As always, the GM can add boost or setback dice for situational effects that might affect the check, such as a boost dice if the Clawdite&amp;#39;s garb does not match expectations or a setback die if the Clawdite has studied the impersonated individual&amp;#39;s mannerisms closely.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;intellect&gt;2&lt;/intellect&gt;
+        &lt;name&gt;Clawdite&lt;/name&gt;
+        &lt;number&gt;SPE0001017&lt;/number&gt;
+        &lt;portrait&gt;a5a760a62fff1490e0f497eef699b699&lt;/portrait&gt;
+        &lt;presence&gt;2&lt;/presence&gt;
+        &lt;skill_ranks/&gt;
+        &lt;skill_ranks_list&gt;9140595cdbae88542901de90cf9619dd&lt;/skill_ranks_list&gt;
+        &lt;skills_choice/&gt;
+        &lt;starting_xp&gt;95&lt;/starting_xp&gt;
+        &lt;strain_calculation/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-10-14 14:22:58&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c744a4e62fff1490e0f497eef699b679&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2020-10-14 14:23:13&lt;/sys_updated_on&gt;
+        &lt;talent_ranks/&gt;
+        &lt;willpower&gt;1&lt;/willpower&gt;
+        &lt;wound_calculation/&gt;
+    &lt;/x_176383_star_wars_species&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-03-03 21:14:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c54cb232f2e6050e0f497eef699b649</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Clawdite</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_3c54cb232f2e6050e0f497eef699b649</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-03-03 21:15:17</sys_updated_on>
+        <tablename>x_176383_star_wars_species</tablename>
+    </sys_metadata_link>
+</record_update>

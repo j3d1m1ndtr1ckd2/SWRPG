@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page_title_variable">
+    <sp_page_title_variable action="INSERT_OR_UPDATE">
+        <column_name>sys_id</column_name>
+        <id_parameter>campaign</id_parameter>
+        <source_field>name</source_field>
+        <source_table>x_176383_star_wars_campaign</source_table>
+        <sp_page display_value="star_wars_campaigns">13a5629f2f19ac10e0f497eef699b604</sp_page>
+        <sys_class_name>sp_page_title_variable</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-04-07 17:27:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>62bf163e2f932010e0f497eef699b6c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>campaign nam</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_page_title_variable_62bf163e2f932010e0f497eef699b6c0</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-07 17:27:25</sys_updated_on>
+        <variable>campaign nam</variable>
+    </sp_page_title_variable>
+</record_update>

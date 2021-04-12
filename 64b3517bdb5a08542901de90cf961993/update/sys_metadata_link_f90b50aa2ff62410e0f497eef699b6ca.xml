@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0c1a106a2ff62410e0f497eef699b633</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;img src="https://static.wikia.nocookie.net/starwars/images/c/c3/Csilla_TEA.jpg/revision/latest/scale-to-width-down/500?cb&amp;#61;20200818181555" width="150" height="150" /&gt; Csilla was a terrestrial planet in the Csilla system of the Unknown Regions of the galaxy, occupying the second orbit from the star Csilla and located at the junction of the Path of the Houses and the Vaagari Corridor.  With standard gravity, a frigid climate, and a diameter of 11,080 kilometers, Csilla was orbited by three moons and had terrain featuring glaciers and caves.  Due to the mineral content of the hydrosphere, glaciers on Csilla were a striking blue in color.  A day on Csilla lasted 25 standard hours and a year lasted 462 local days. Chiss starships relied on a series of navigational anchor points that spread out from Csilla.&lt;/p&gt;
+&lt;p&gt;Csilla was the capital of the Chiss Ascendancy and imported resources including foodstuffs, luxury goods, and technology from other Chiss colonies.  A network of underground tube transports connected its largest city, Csaplar, to every other area on the planet, including other cities buried in the ice. Cities on Csilla were kept livable by heat from the interior of the planet.  Csilla was also the center of Chiss politics; their Cabinet and Parliament could be found at the House Palace in Csaplar. The Csapla family was responsible for the distribution of resources to the populace of Csilla.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Csilla&lt;/name&gt;
+        &lt;number&gt;GALAXY0001134&lt;/number&gt;
+        &lt;sector&gt;wild_space_unknown_regions&lt;/sector&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-03-12 16:34:50&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0c1a106a2ff62410e0f497eef699b633&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-03-12 16:34:50&lt;/sys_updated_on&gt;
+        &lt;u_campaigns/&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-03-12 16:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f90b50aa2ff62410e0f497eef699b6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Csilla</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f90b50aa2ff62410e0f497eef699b6ca</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-03-12 16:36:19</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

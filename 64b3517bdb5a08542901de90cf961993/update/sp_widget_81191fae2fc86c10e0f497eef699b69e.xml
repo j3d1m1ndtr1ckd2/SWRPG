@@ -563,7 +563,7 @@
 		var quantity = document.getElementById(qID).value;
 		var tempPrice = parseInt(quantity) * parseInt(item.price);
 		if(tempPrice <= $scope.data.character.creditsInt){
-			c.server.get({action: 'purchaseItem', item: item, quantity: quantity}).then(function(response){
+			c.server.get({action: 'purchaseItem', item: item, quantity: quantity, price: tempPrice}).then(function(response){
 				$scope.data.characterGear = response.data.characterGear;
 				$scope.data.character = response.data.character;
 			});
@@ -1900,8 +1900,8 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			sysID: cg.sys_id + '',
 			iconID: cg.sys_id + 'Chevron'
 		};
-		var wq = new GlideRecord('x_176383_star_wars_gear_special');
-		wq.addQuery('item', cg.item.sys_id);
+		var wq = new GlideRecord('x_176383_star_wars_character_gear_special');
+		wq.addQuery('character_gear', cg.sys_id);
 		wq.orderBy('weapon_quality.name');
 		wq.query();
 		var qualityString = '';
@@ -2191,7 +2191,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 				
 			case 'purchaseItem':
 			charGR.get(characterID);
-			charGR.credits = data.character.creditsInt - parseInt(input.item.price);
+			charGR.credits = data.character.creditsInt - parseInt(input.price);
 			charGR.update();
 			data.character.creditsInt = parseInt(charGR.credits);
 			data.character.creditsString = data.character.creditsInt + '';
@@ -2379,7 +2379,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>922</sys_mod_count>
+        <sys_mod_count>935</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2387,7 +2387,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-03-04 05:19:47</sys_updated_on>
+        <sys_updated_on>2021-04-06 21:46:28</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2687,7 +2687,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
                  <span class="col-xs-12 gear-detail-label">Range:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.range}}</span>
                </span>
-               <span ng-if="item.typeID == 'weapon' || item.typeID == 'mod'" class="col-xs-4 gear-detail">
+               <span ng-if="item.typeID == 'weapon' || item.typeID == 'mod' || item.typeID == 'armor'" class="col-xs-4 gear-detail">
                  <span class="col-xs-12 gear-detail-label">Special:</span>
                  <span class="col-xs-12 gear-detail-value">{{item.weaponQualities}}</span>
                </span>
@@ -2765,7 +2765,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
           <span class="col-xs-12 gear-detail-label">Range:</span>
           <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.range}}</span>
         </span>
-        <span ng-if="data.currentGearItem.typeID == 'weapon' || data.currentGearItem.typeID == 'mod'" class="col-xs-4 gear-detail">
+        <span ng-if="data.currentGearItem.typeID == 'weapon' || data.currentGearItem.typeID == 'mod' || data.currentGearItem.typeID == 'armor'" class="col-xs-4 gear-detail">
           <span class="col-xs-12 gear-detail-label">Special:</span>
           <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.weaponQualities}}</span>
         </span>
@@ -2863,7 +2863,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     <span class="edit-character" id="editCharacterDescription">
       <!-- edit description -->
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('description')"><i class="fas fa-times"></i></span>
-      <span class="col-xs-12 edit-description-body">
+      <span class="col-xs-12 edit-description-body"  ng-blur="closeEditContainer('description')">
         <span class="col-xs-12 col-md-4 description-field">
           <label for="gender">Gender:</label><br>
           <input class="sw-input" type="text" id="gender" name="gender" value="{{data.character.gender}}"/>
@@ -3171,6 +3171,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
             <option value="gear">Gear</option>
             <option value="black_market_items">Black Market Items</option>
             <option value="mod">Mod</option>
+            <option value="lightsaber_attachment">Lightsaber Attachment</option>
           </select>
         </span>
         <span class="col-xs-12 marketplace-items-container">

@@ -8,11 +8,15 @@
 	$scope.viewCampaign = function(campaign){
 		c.server.get({action: 'showCampaignDetail', campaign: campaign}).then(function(response){
 			$scope.data = response.data;
+			$location.search('campaign', campaign.sysID);
+			$location.search('spa', 1);
 		});
 	}
 	
 	$scope.goBack = function(){
 		$scope.data.currentCampaign = '';
+		$location.search('campaign', null);
+		$location.search('spa', null);
 	}
 	
 	$scope.viewNotes = function(date){
@@ -55,6 +59,7 @@
 			$scope.viewCampaign($scope.data.currentCampaign);
 		});
 	}
+	
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.campaigns-container{
@@ -295,6 +300,8 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 		campaignsString += characters.campaign + ',';
 	}
 	
+	data.currentCampaignID = $sp.getParameter('campaign') || '';
+	data.currentCampaign = '';
 	data.campaigns = [];
 	var campaigns = new GlideRecord('x_176383_star_wars_campaign');
 	campaigns.addQuery('game_master', userID).addOrCondition('sys_id', 'IN', campaignsString);
@@ -307,10 +314,85 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 			sysID: campaigns.sys_id + '',
 			name: campaigns.name + ''
 		};
+		if(data.currentCampaignID == campaigns.sys_id.toString()){
+			data.currentCampaign = campaign;
+		}
 		data.campaigns.push(campaign);
 	}
 	
-	data.currentCampaign = '';
+	//if we are refreshing the page after selecting a campaign, auto-populate that same campaign vs. returning to home campaign view
+	if(data.currentCampaign != ''){
+			//retrieve all characters within the selected campaign
+			data.campaignCharacters = [];
+			var characterIDString = '';
+			characters = new GlideRecord('x_176383_star_wars_character');
+			characters.addQuery('campaign', data.currentCampaignID);
+			characters.orderBy('name');
+			characters.query();
+			while(characters.next()){
+				characterIDString += characters.sys_id + ',';
+				var cObj = {
+					name: characters.name + '',
+					player: characters.player.getDisplayValue(),
+					sysID: characters.sys_id + '',
+					species: characters.species.getDisplayValue(),
+					speciesImg: characters.species.getDisplayValue().toLowerCase(),
+					career: characters.career.getDisplayValue()
+				};
+				data.campaignCharacters.push(cObj);
+			}
+			
+			//retrieve all vehicles assigned to a character within this campaign.
+			data.campaignVehicles = [];
+			var vehicles = new GlideRecord('x_176383_star_wars_character_vehicle');
+			vehicles.addQuery('character', 'IN', characterIDString);
+			vehicles.orderBy('name');
+			vehicles.query();
+			while(vehicles.next()){
+				var vObj = {
+					name: vehicles.name + '',
+					shipName: vehicles.vehicle.ship_name + '',
+					type: vehicles.vehicle.type.getDisplayValue(),
+					sysID: vehicles.sys_id + ''
+				};
+				data.campaignVehicles.push(vObj);
+			}
+			
+			//retrieve campaign session notes
+			data.notes = [];
+			data.noteDates = [];
+			var notes = new GlideRecord('x_176383_star_wars_session_note');
+			notes.addQuery('campaign', data.currentCampaignID);
+			notes.orderByDesc('session_date');
+			notes.orderBy('character.name');
+			notes.query();
+			while(notes.next()){
+				var notesObj = {
+					sysID: notes.sys_id + '',
+					character: notes.character.getDisplayValue(),
+					notes: notes.notes + '',
+					date: notes.session_date + ''
+				};
+				if(notes.character.player == userID){
+					notesObj.canEdit = true;
+				} else{
+					notesObj.canEdit = false;
+				}
+				data.notes.push(notesObj);
+				if(notes.session_date.getDisplayValue() != data.noteDates[data.noteDates.length - 1]){
+					data.noteDates.push(notes.session_date + '');
+				}
+			}
+			data.hasActiveSession = false;
+			var sessionGR = new GlideRecord('x_176383_star_wars_game_session');
+			sessionGR.addQuery('campaign', data.currentCampaignID).addCondition('active', true);
+			sessionGR.query();
+			if(sessionGR.next()){
+				data.hasActiveSession = true;
+				data.activeSessionID = sessionGR.sys_id + '';
+			}
+	}
+	
 	
 	if(input){
 		if(input.action == 'showCampaignDetail'){
@@ -421,7 +503,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>159</sys_mod_count>
+        <sys_mod_count>172</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -429,7 +511,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-02-28 22:37:42</sys_updated_on>
+        <sys_updated_on>2021-03-15 17:28:24</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

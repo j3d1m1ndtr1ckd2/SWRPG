@@ -2,48 +2,51 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>315f13a02f14a450e0f497eef699b66c</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>0</base_damage>
-        <critical_rating/>
-        <defense/>
-        <description>"Hand scanner" is a catchall designation for a wide variety of handheld scanning devices designed to run specific-purpose scans. Some of the most common versions of these are medisensors, such as the RFX/K Medisensor made by BioTech Industries. The device can be used independently or plugged into a medpac or datapad, and displays a variety of useful bio-signs about the subject. Other scanners can check for atmospheric contaminants, poisons, vermin, or in the case of mechanics, micro-fractures or stress points.&#13;
-&#13;
-Models Include: RFX/K Medisensor.</description>
-        <encumbrance>0</encumbrance>
-        <hard_points/>
-        <hp_required/>
-        <name>Hand Scanner</name>
-        <number>GEAR0001055</number>
-        <price>100</price>
-        <range/>
-        <rarity>2</rarity>
-        <skill_used/>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-02 19:10:05</sys_created_on>
-        <sys_id>315f13a02f14a450e0f497eef699b66c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 19:10:05</sys_updated_on>
-        <type>gear</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;"Hand scanner" is a catchall designation for a wide variety of handheld scanning devices designed to run specific-purpose scans. Some of the most common versions of these are medisensors, such as the RFX/K Medisensor made by BioTech Industries. The device can be used independently or plugged into a medpac or datapad, and displays a variety of useful bio-signs about the subject. Other scanners can check for atmospheric contaminants, poisons, vermin, or in the case of mechanics, micro-fractures or stress points.&amp;#13;
+&amp;#13;
+Models Include: RFX/K Medisensor.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;&amp;#34;Hand scanner&amp;#34; is a catchall designation for a wide variety of handheld scanning devices designed to run specific-purpose scans. Some of the most common versions of these are medisensors, such as the RFX/K Medisensor made by BioTech Industries. The device can be used independently or plugged into a medpac or datapad, and displays a variety of useful bio-signs about the subject. Other scanners can check for atmospheric contaminants, poisons, vermin, or in the case of mechanics, micro-fractures or stress points.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; RFX/K Medisensor.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;0&lt;/encumbrance&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Hand Scanner&lt;/name&gt;
+        &lt;number&gt;GEAR0001055&lt;/number&gt;
+        &lt;price&gt;100&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;2&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-02 19:10:05&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;315f13a02f14a450e0f497eef699b66c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-25 18:44:17&lt;/sys_updated_on&gt;
+        &lt;type&gt;gear&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 23:47:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4732fe592fd06850e0f497eef699b61a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Hand Scanner</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_4732fe592fd06850e0f497eef699b61a</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 23:47:34</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:20:17</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

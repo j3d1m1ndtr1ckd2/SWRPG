@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8f94ca512fd7e010e0f497eef699b69c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description/&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;div&gt;Highly sought after by jewelers, artisans, and wealthy collectors for their luster, color, and refractive properties, krayt dragon pearls are perhaps the rarest of the crystals used in the construction of lightsabers. The terrible krayt dragons of Tatooine tend to live for an incredibly long time, and over the course of their lives will ingest stones to aid with digestion. While the caustic digestive juices of the krayt dragon can even break down stone over time, every once in a while these stones contain some form of kyber crystal. Incredibly resilient, they remain in the creatures’ guts for the entirety of the dragons’ lives, slowly being polished and smoothed into small, dense spheres of crystal. The resulting “krayt dragon pearls” are vanishingly rare, hard to acquire, and demand exorbitant prices. Since they are a type of kyber crystal, they can be worked into powerful lightsaber crystals—ones which produce an exceptionally savage and destructive blade that makes an unsettling howling noise when swung about. A krayt dragon pearl is a lightsaber crystal.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; None.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Base Modifiers:&lt;/strong&gt; Installing this crystal changes the lightsaber’s damage to 9 and its critical rating to 1, and the lightsaber replaces its item qualities with the Breach 1, Sunder, and Vicious 1 item qualities.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Modification Options:&lt;/strong&gt; 3 Item Quality (Vicious &amp;#43; 1) Mods, 1 Damage &amp;#43; 1 Mod.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Hard Points Required:&lt;/strong&gt; 2.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Cost:&lt;/strong&gt; (R) 15,000 credits.&lt;/div&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance/&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required&gt;2&lt;/hp_required&gt;
+        &lt;name&gt;Krayt Dragon Pearl&lt;/name&gt;
+        &lt;number&gt;GEAR0001193&lt;/number&gt;
+        &lt;price&gt;15000&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;10&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_gear&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-04-02 23:37:30&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;8f94ca512fd7e010e0f497eef699b69c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-04-02 23:37:30&lt;/sys_updated_on&gt;
+        &lt;type&gt;lightsaber_attachment&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-04-22 03:20:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ac1ea0a72f6f2010e0f497eef699b642</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Krayt Dragon Pearl</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ac1ea0a72f6f2010e0f497eef699b642</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:20:32</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

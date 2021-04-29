@@ -2,51 +2,58 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>ea73e3242f14a450e0f497eef699b671</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>0</base_damage>
-        <critical_rating/>
-        <defense/>
-        <description>It took six designs before the weaponsmiths at BlasTech achieved success, but the Mod VII, also known as a "blaster arm," finally combined a realistic limb with a deadly ranged weapon. The company uses outsourced cybernetic limbs as the basis for their designs, modifying them with their own proprietary weapon designs to form the final product. Favored by bounty hunters and assassins, the artificial&#13;
-forearm can split open for a short-ranged blaster to spring out and deliver a hail of shots before most foes are aware they are in danger. &#13;
-&#13;
-The standard cybernetic weapon arm appears to be a regular cybernetic arm but features a retractable light blaster pistol that can be deployed as an incidental. It is attached to the arm and cannot be removed, dropped, or disarmed. &#13;
-&#13;
-Models Include: BlasTech Industries Arms Cybernetic Weapon Enhancement Mod VII, Athakam MedTech Synthlimb Blaster.</description>
-        <encumbrance>0</encumbrance>
-        <hard_points/>
-        <hp_required/>
-        <name>Cybernetic Weapon</name>
-        <number>GEAR0001068</number>
-        <price>4000</price>
-        <range/>
-        <rarity>7</rarity>
-        <skill_used/>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-02 19:28:11</sys_created_on>
-        <sys_id>ea73e3242f14a450e0f497eef699b671</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 19:28:11</sys_updated_on>
-        <type>gear</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;It took six designs before the weaponsmiths at BlasTech achieved success, but the Mod VII, also known as a "blaster arm," finally combined a realistic limb with a deadly ranged weapon. The company uses outsourced cybernetic limbs as the basis for their designs, modifying them with their own proprietary weapon designs to form the final product. Favored by bounty hunters and assassins, the artificial&amp;#13;
+forearm can split open for a short-ranged blaster to spring out and deliver a hail of shots before most foes are aware they are in danger. &amp;#13;
+&amp;#13;
+The standard cybernetic weapon arm appears to be a regular cybernetic arm but features a retractable light blaster pistol that can be deployed as an incidental. It is attached to the arm and cannot be removed, dropped, or disarmed. &amp;#13;
+&amp;#13;
+Models Include: BlasTech Industries Arms Cybernetic Weapon Enhancement Mod VII, Athakam MedTech Synthlimb Blaster.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[It took six designs before the weaponsmiths at BlasTech achieved success, but the Mod VII, also known as a &amp;#34;blaster arm,&amp;#34; finally combined a realistic limb with a deadly ranged weapon. The company uses outsourced cybernetic limbs as the basis for their designs, modifying them with their own proprietary weapon designs to form the final product. Favored by bounty hunters and assassins, the artificial
+forearm can split open for a short-ranged blaster to spring out and deliver a hail of shots before most foes are aware they are in danger. 
+
+The standard cybernetic weapon arm appears to be a regular cybernetic arm but features a retractable light blaster pistol that can be deployed as an incidental. It is attached to the arm and cannot be removed, dropped, or disarmed. 
+
+Models Include: BlasTech Industries Arms Cybernetic Weapon Enhancement Mod VII, Athakam MedTech Synthlimb Blaster.]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;0&lt;/encumbrance&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Cybernetic Weapon&lt;/name&gt;
+        &lt;number&gt;GEAR0001068&lt;/number&gt;
+        &lt;price&gt;4000&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;7&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-02 19:28:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;ea73e3242f14a450e0f497eef699b671&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-23 23:46:20&lt;/sys_updated_on&gt;
+        &lt;type&gt;gear&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-20 19:43:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>85e3dce22fa8ac90e0f497eef699b626</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Cybernetic Weapon</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_85e3dce22fa8ac90e0f497eef699b626</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-20 19:43:52</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:21:02</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

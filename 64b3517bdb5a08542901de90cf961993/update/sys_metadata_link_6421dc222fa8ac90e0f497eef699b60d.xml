@@ -2,46 +2,51 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>28bbb77d2fa42c90e0f497eef699b64d</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>0</base_damage>
-        <critical_rating/>
-        <defense/>
-        <description>Although uncommon and even considered archaic in this day and age, some armorers specially equip protective gear with an underlying weave of rare cortosis. This does tend to make the armor more resistant to being penetrated (especially by energy weapons), but the cost is seldom worth the result. Models Include: Numerous variants. Base Modifiers: The armor gains the Cortosis quality. Modification Options: None.</description>
-        <encumbrance/>
-        <hard_points/>
-        <hp_required>2</hp_required>
-        <name>Cortosis Weave</name>
-        <number>GEAR0001160</number>
-        <price>10000</price>
-        <range/>
-        <rarity>8</rarity>
-        <skill_used/>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-19 04:41:52</sys_created_on>
-        <sys_id>28bbb77d2fa42c90e0f497eef699b64d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 04:41:52</sys_updated_on>
-        <type>mod</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;Although uncommon and even considered archaic in this day and age, some armorers specially equip protective gear with an underlying weave of rare cortosis. This does tend to make the armor more resistant to being penetrated (especially by energy weapons), but the cost is seldom worth the result. Models Include: Numerous variants. Base Modifiers: The armor gains the Cortosis quality. Modification Options: None.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Base Modifiers:&lt;/strong&gt; The armor gains the Cortosis quality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modification Options:&lt;/strong&gt; None.&lt;/p&gt;
+&lt;p&gt;Although uncommon and even considered archaic in this day and age, some armorers specially equip protective gear with an underlying weave of rare cortosis. This does tend to make the armor more resistant to being penetrated (especially by energy weapons), but the cost is seldom worth the result.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; Numerous variants. &lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance/&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required&gt;2&lt;/hp_required&gt;
+        &lt;name&gt;Cortosis Weave&lt;/name&gt;
+        &lt;number&gt;GEAR0001160&lt;/number&gt;
+        &lt;price&gt;10000&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;8&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-19 04:41:52&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;28bbb77d2fa42c90e0f497eef699b64d&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-24 23:24:06&lt;/sys_updated_on&gt;
+        &lt;type&gt;mod&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-20 19:31:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6421dc222fa8ac90e0f497eef699b60d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Cortosis Weave</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_6421dc222fa8ac90e0f497eef699b60d</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-20 19:31:49</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:20:05</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

@@ -2,50 +2,54 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>024e13a02f14a450e0f497eef699b663</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>0</base_damage>
-        <critical_rating/>
-        <defense/>
-        <description>Electrobinoculars come in many shapes and sizes, depending on their role and the species to use them. Neuro-Saav's Model TD2.3s, for example, are electrically powered and allow for high levels of magnification in zoom and panoramic views. They also offer vision in very high or very low levels of light, thermal imaging, and (in more expensive versions) recording and playback modes. Informational overlays also provide distances, elevations, and velocities of sighted targets. &#13;
-&#13;
-Electrobinoculars allow the user to see normally in low light or extremely bright conditions, and can magnify targets up to ten kilometers away. When using electrobinoculars, characters may also remove up to 1 setback die imposed due to long range or poor light. &#13;
-&#13;
-Models Include: Neuro-Saav Model TD2.3 Electrobinoculars, Fabritech "Longsight," TaggeCo. Model 3 Imperial Army.</description>
-        <encumbrance>1</encumbrance>
-        <hard_points/>
-        <hp_required/>
-        <name>Electrobinoculars</name>
-        <number>GEAR0001051</number>
-        <price>250</price>
-        <range/>
-        <rarity>1</rarity>
-        <skill_used/>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-02 19:06:05</sys_created_on>
-        <sys_id>024e13a02f14a450e0f497eef699b663</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 19:06:05</sys_updated_on>
-        <type>gear</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;Electrobinoculars come in many shapes and sizes, depending on their role and the species to use them. Neuro-Saav's Model TD2.3s, for example, are electrically powered and allow for high levels of magnification in zoom and panoramic views. They also offer vision in very high or very low levels of light, thermal imaging, and (in more expensive versions) recording and playback modes. Informational overlays also provide distances, elevations, and velocities of sighted targets. &amp;#13;
+&amp;#13;
+Electrobinoculars allow the user to see normally in low light or extremely bright conditions, and can magnify targets up to ten kilometers away. When using electrobinoculars, characters may also remove up to 1 setback die imposed due to long range or poor light. &amp;#13;
+&amp;#13;
+Models Include: Neuro-Saav Model TD2.3 Electrobinoculars, Fabritech "Longsight," TaggeCo. Model 3 Imperial Army.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Effect:&lt;/strong&gt; Electrobinoculars allow the user to see normally in low light or extremely bright conditions, and can magnify targets up to ten kilometers away. When using electrobinoculars, characters may also remove up to 1 setback die imposed due to long range or poor light. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Electrobinoculars come in many shapes and sizes, depending on their role and the species to use them. Neuro-Saav&amp;#39;s Model TD2.3s, for example, are electrically powered and allow for high levels of magnification in zoom and panoramic views. They also offer vision in very high or very low levels of light, thermal imaging, and (in more expensive versions) recording and playback modes. Informational overlays also provide distances, elevations, and velocities of sighted targets. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; Neuro-Saav Model TD2.3 Electrobinoculars, Fabritech &amp;#34;Longsight,&amp;#34; TaggeCo. Model 3 Imperial Army.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;1&lt;/encumbrance&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Electrobinoculars&lt;/name&gt;
+        &lt;number&gt;GEAR0001051&lt;/number&gt;
+        &lt;price&gt;250&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;1&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-02 19:06:05&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;024e13a02f14a450e0f497eef699b663&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-24 00:24:42&lt;/sys_updated_on&gt;
+        &lt;type&gt;gear&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 23:45:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>57d13a592fd06850e0f497eef699b698</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Electrobinoculars</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_57d13a592fd06850e0f497eef699b698</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 23:45:58</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:19:33</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

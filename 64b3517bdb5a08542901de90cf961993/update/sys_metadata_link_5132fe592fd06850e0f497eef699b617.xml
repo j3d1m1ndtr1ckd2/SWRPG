@@ -2,52 +2,56 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>2e47f2e82f50a450e0f497eef699b657</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>3</base_damage>
-        <critical_rating>2</critical_rating>
-        <defense/>
-        <description>Gamorreans, particularly those employed by the notorious Hutts, often carry meter-long axes fitted with vibration technology. Most are very heavy and suited only for beings of considerable strength, and usually with a low center of gravity (particularly tall or elegant beings have trouble swinging the heavy axes without throwing themselves off-balance).&#13;
-&#13;
-The damage a vibro-ax causes is tremendous and messy. The impact area suffers massive and deep trauma from the blade and the vibration. Because of this, wounds caused by vibro-axes are particularly nasty—hence the high damage and Critical Hit chance.&#13;
-&#13;
-A vibro-ax requires two hands to wield.&#13;
-&#13;
-Models Include: SoroSuub BD-1 Cutter Vibro-Ax.</description>
-        <encumbrance>4</encumbrance>
-        <hard_points>3</hard_points>
-        <hp_required/>
-        <name>Vibro-ax</name>
-        <number>GEAR0001032</number>
-        <price>750</price>
-        <range>engaged</range>
-        <rarity>5</rarity>
-        <skill_used display_value="Melee (Br)">0c90dd5cdbae88542901de90cf9619a4</skill_used>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-02 16:15:35</sys_created_on>
-        <sys_id>2e47f2e82f50a450e0f497eef699b657</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 16:15:35</sys_updated_on>
-        <type>weapon</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;3&lt;/base_damage&gt;
+        &lt;critical_rating&gt;2&lt;/critical_rating&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;Gamorreans, particularly those employed by the notorious Hutts, often carry meter-long axes fitted with vibration technology. Most are very heavy and suited only for beings of considerable strength, and usually with a low center of gravity (particularly tall or elegant beings have trouble swinging the heavy axes without throwing themselves off-balance).&amp;#13;
+&amp;#13;
+The damage a vibro-ax causes is tremendous and messy. The impact area suffers massive and deep trauma from the blade and the vibration. Because of this, wounds caused by vibro-axes are particularly nasty—hence the high damage and Critical Hit chance.&amp;#13;
+&amp;#13;
+A vibro-ax requires two hands to wield.&amp;#13;
+&amp;#13;
+Models Include: SoroSuub BD-1 Cutter Vibro-Ax.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;Gamorreans, particularly those employed by the notorious Hutts, often carry meter-long axes fitted with vibration technology. Most are very heavy and suited only for beings of considerable strength, and usually with a low center of gravity (particularly tall or elegant beings have trouble swinging the heavy axes without throwing themselves off-balance).&lt;/p&gt;
+&lt;p&gt;The damage a vibro-ax causes is tremendous and messy. The impact area suffers massive and deep trauma from the blade and the vibration. Because of this, wounds caused by vibro-axes are particularly nasty—hence the high damage and Critical Hit chance. &lt;strong&gt;A vibro-ax requires two hands to wield&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; SoroSuub BD-1 Cutter Vibro-Ax.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;4&lt;/encumbrance&gt;
+        &lt;hard_points&gt;3&lt;/hard_points&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Vibro-ax&lt;/name&gt;
+        &lt;number&gt;GEAR0001032&lt;/number&gt;
+        &lt;price&gt;750&lt;/price&gt;
+        &lt;range&gt;engaged&lt;/range&gt;
+        &lt;rarity&gt;5&lt;/rarity&gt;
+        &lt;skill_used display_value="Melee (Br)"&gt;0c90dd5cdbae88542901de90cf9619a4&lt;/skill_used&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-02 16:15:35&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2e47f2e82f50a450e0f497eef699b657&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-24 23:27:27&lt;/sys_updated_on&gt;
+        &lt;type&gt;weapon&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 23:47:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5132fe592fd06850e0f497eef699b617</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Vibro-ax</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_5132fe592fd06850e0f497eef699b617</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 23:47:28</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:20:13</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

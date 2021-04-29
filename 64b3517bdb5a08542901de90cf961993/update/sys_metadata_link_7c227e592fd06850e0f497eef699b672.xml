@@ -2,50 +2,53 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>2c15a8e82fd46450e0f497eef699b617</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>11</base_damage>
-        <critical_rating>3</critical_rating>
-        <defense/>
-        <description>Light repeaters are support weapons for military and mercenary units. They feature a high rate of&#13;
-fire and are designed to suppress and injure unarmored personnel. The hail of "light" produced by&#13;
-these rapid-firing weapons is often enough to force enemies to ground.&#13;
-&#13;
-Models Include: BlasTech T-21 Light Repeating Blaster.</description>
-        <encumbrance>7</encumbrance>
-        <hard_points>4</hard_points>
-        <hp_required/>
-        <name>Light Repeating Blaster</name>
-        <number>GEAR0001008</number>
-        <price>2250</price>
-        <range>long</range>
-        <rarity>7</rarity>
-        <skill_used display_value="Ranged - Heavy (Ag)">d8a0d55cdbae88542901de90cf9619c0</skill_used>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-02 05:35:23</sys_created_on>
-        <sys_id>2c15a8e82fd46450e0f497eef699b617</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 05:35:23</sys_updated_on>
-        <type>weapon</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;11&lt;/base_damage&gt;
+        &lt;critical_rating&gt;3&lt;/critical_rating&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;Light repeaters are support weapons for military and mercenary units. They feature a high rate of&amp;#13;
+fire and are designed to suppress and injure unarmored personnel. The hail of "light" produced by&amp;#13;
+these rapid-firing weapons is often enough to force enemies to ground.&amp;#13;
+&amp;#13;
+Models Include: BlasTech T-21 Light Repeating Blaster.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;Light repeaters are support weapons for military and mercenary units. They feature a high rate of fire and are designed to suppress and injure unarmored personnel. The hail of &amp;#34;light&amp;#34; produced by these rapid-firing weapons is often enough to force enemies to ground.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; BlasTech T-21 Light Repeating Blaster.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;7&lt;/encumbrance&gt;
+        &lt;hard_points&gt;4&lt;/hard_points&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Light Repeating Blaster&lt;/name&gt;
+        &lt;number&gt;GEAR0001008&lt;/number&gt;
+        &lt;price&gt;2250&lt;/price&gt;
+        &lt;range&gt;long&lt;/range&gt;
+        &lt;rarity&gt;7&lt;/rarity&gt;
+        &lt;skill_used display_value="Ranged - Heavy (Ag)"&gt;d8a0d55cdbae88542901de90cf9619c0&lt;/skill_used&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-02 05:35:23&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;2c15a8e82fd46450e0f497eef699b617&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-24 23:24:23&lt;/sys_updated_on&gt;
+        &lt;type&gt;weapon&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 23:47:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7c227e592fd06850e0f497eef699b672</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Light Repeating Blaster</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_7c227e592fd06850e0f497eef699b672</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 23:47:10</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:20:07</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

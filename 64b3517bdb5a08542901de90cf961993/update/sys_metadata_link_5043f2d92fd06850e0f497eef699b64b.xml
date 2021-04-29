@@ -2,50 +2,55 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>33f980b82f94a450e0f497eef699b670</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>0</base_damage>
-        <critical_rating/>
-        <defense/>
-        <description>Death sticks are an unpleasant creation derived from the balo mushroom of the planet of Balosar and distributed in a liquid form in distinctive small red and yellow rods. Though the drug is only mildly hallucinogenic, death sticks are well-named; the active ingredient, Ixetal Cilona, is highly addictive and deleterious to one's health. Each dose tears away an ever-greater portion of one's life while simultaneously tightening the grip of addiction. Death sticks are illegal for obvious reasons, and more than a few smugglers who happily deal in spice or illicit arms avoid running shipments of  this particular drug on what they term "moral grounds." Use of death sticks also weakens a person's connection to the Force temporarily, though few users or even dealers are aware of this fact. &#13;
-&#13;
-Death sticks have a nasty result in the long run, but unless one's campaign runs over the course of decades or a character has had a death stick addiction for some years already, characters are unlikely to experience the truly miserable death these drugs bring about. A life-long addiction to death sticks typically halves the lifespan of most species, though various species are more or less susceptible to the effects of Ixetal Cilona. The short-term effects of a single dose last for one scene or combat encounter and adds 1 setback die to any task the character attempts, and may reduce the character's connection to the Force in certain ways at the GM's discretion. &#13;
-&#13;
-Restrictions: Death sticks are controlled substances on most worlds, and at the very least those under the age of majority cannot purchase them. Death sticks are completely illegal  on many other worlds, especially those with high health standards.</description>
-        <encumbrance>0</encumbrance>
-        <hard_points/>
-        <hp_required/>
-        <name>Death Sticks (1 dose)</name>
-        <number>GEAR0001103</number>
-        <price>5</price>
-        <range/>
-        <rarity>1</rarity>
-        <skill_used/>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-02 22:21:54</sys_created_on>
-        <sys_id>33f980b82f94a450e0f497eef699b670</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 22:21:54</sys_updated_on>
-        <type>black_market_items</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;Death sticks are an unpleasant creation derived from the balo mushroom of the planet of Balosar and distributed in a liquid form in distinctive small red and yellow rods. Though the drug is only mildly hallucinogenic, death sticks are well-named; the active ingredient, Ixetal Cilona, is highly addictive and deleterious to one's health. Each dose tears away an ever-greater portion of one's life while simultaneously tightening the grip of addiction. Death sticks are illegal for obvious reasons, and more than a few smugglers who happily deal in spice or illicit arms avoid running shipments of  this particular drug on what they term "moral grounds." Use of death sticks also weakens a person's connection to the Force temporarily, though few users or even dealers are aware of this fact. &amp;#13;
+&amp;#13;
+Death sticks have a nasty result in the long run, but unless one's campaign runs over the course of decades or a character has had a death stick addiction for some years already, characters are unlikely to experience the truly miserable death these drugs bring about. A life-long addiction to death sticks typically halves the lifespan of most species, though various species are more or less susceptible to the effects of Ixetal Cilona. The short-term effects of a single dose last for one scene or combat encounter and adds 1 setback die to any task the character attempts, and may reduce the character's connection to the Force in certain ways at the GM's discretion. &amp;#13;
+&amp;#13;
+Restrictions: Death sticks are controlled substances on most worlds, and at the very least those under the age of majority cannot purchase them. Death sticks are completely illegal  on many other worlds, especially those with high health standards.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Effect: &lt;/strong&gt;The short-term effects of a single dose last for one scene or combat encounter and adds 1 setback die to any task the character attempts, and may reduce the character&amp;#39;s connection to the Force in certain ways at the GM&amp;#39;s discretion.&lt;/p&gt;
+&lt;p&gt;Death sticks are an unpleasant creation derived from the balo mushroom of the planet of Balosar and distributed in a liquid form in distinctive small red and yellow rods. Though the drug is only mildly hallucinogenic, death sticks are well-named; the active ingredient, Ixetal Cilona, is highly addictive and deleterious to one&amp;#39;s health. Each dose tears away an ever-greater portion of one&amp;#39;s life while simultaneously tightening the grip of addiction. Death sticks are illegal for obvious reasons, and more than a few smugglers who happily deal in spice or illicit arms avoid running shipments of this particular drug on what they term &amp;#34;moral grounds.&amp;#34; Use of death sticks also weakens a person&amp;#39;s connection to the Force temporarily, though few users or even dealers are aware of this fact.&lt;/p&gt;
+&lt;p&gt;Death sticks have a nasty result in the long run, but unless one&amp;#39;s campaign runs over the course of decades or a character has had a death stick addiction for some years already, characters are unlikely to experience the truly miserable death these drugs bring about. A life-long addiction to death sticks typically halves the lifespan of most species, though various species are more or less susceptible to the effects of Ixetal Cilona. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Restrictions:&lt;/strong&gt; Death sticks are controlled substances on most worlds, and at the very least those under the age of majority cannot purchase them. Death sticks are completely illegal on many other worlds, especially those with high health standards.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;0&lt;/encumbrance&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Death Sticks (1 dose)&lt;/name&gt;
+        &lt;number&gt;GEAR0001103&lt;/number&gt;
+        &lt;price&gt;5&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;1&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-02 22:21:54&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;33f980b82f94a450e0f497eef699b670&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-25 20:49:18&lt;/sys_updated_on&gt;
+        &lt;type&gt;black_market_items&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-04 23:52:02</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5043f2d92fd06850e0f497eef699b64b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Death Sticks (1 dose)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_5043f2d92fd06850e0f497eef699b64b</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-04 23:52:02</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:20:21</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

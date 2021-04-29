@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>513302dd2fd7e010e0f497eef699b6b9</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description/&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;div&gt;The idea behind the extended hilt modification is to increase &amp;#39; the lightsaber’s striking and cutting power by using the leverage of the longer handle and a two- handed grip to help focus the wielder’s strength into the force of the blow. The extended hilt modification is also popular among Force users of unusual height or build as a way to capitalize on their size advantage in combat.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; None.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Base Modifiers:&lt;/strong&gt; Increase weapon’s damage by 1&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Modification Options:&lt;/strong&gt; 1 Item Quality (Vicious &amp;#43; 1) Mod.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Hard Points Required:&lt;/strong&gt; 1.&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Cost:&lt;/strong&gt; 3,800 credits.&lt;/div&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance/&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required&gt;1&lt;/hp_required&gt;
+        &lt;name&gt;Extended Hilt&lt;/name&gt;
+        &lt;number&gt;GEAR0001191&lt;/number&gt;
+        &lt;price&gt;3800&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;10&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_gear&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-04-02 23:31:08&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;513302dd2fd7e010e0f497eef699b6b9&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-04-02 23:31:08&lt;/sys_updated_on&gt;
+        &lt;type&gt;lightsaber_attachment&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-04-22 03:20:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a70ea0a72f6f2010e0f497eef699b63e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Extended Hilt</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a70ea0a72f6f2010e0f497eef699b63e</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:20:28</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

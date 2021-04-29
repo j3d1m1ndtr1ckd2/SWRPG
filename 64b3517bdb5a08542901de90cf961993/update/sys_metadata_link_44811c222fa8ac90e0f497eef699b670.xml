@@ -2,48 +2,53 @@
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
         <documentkey>047cbd792face890e0f497eef699b63a</documentkey>
-        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_gear">
-    <x_176383_star_wars_gear action="INSERT_OR_UPDATE">
-        <base_damage>0</base_damage>
-        <critical_rating/>
-        <defense/>
-        <description>Built from scavenged blaster parts and the occasional piece from a repulsorlift generator, the bowcaster accelerator enhancement is the second-most common modification to Wookiee bowcasters after&#13;
-the automatic re-cocker. Essentially an upgrade of the weapon's bolt accelerators, this attachment allows the bowcaster to fire its highly destructive quarrels with more force than typical in a stock weapon.&#13;
-These attachments are only for use on Wookiee bowcasters, and they cannot be purchased; they must be built either by the owner of the bowcaster with an Average (2 difficulty dice) Mechanics check or the weaponsmith who built the weapon for him.  Models Include: None.  Base Modifiers: Increase weapon damage by one point. Modification Options: 2 Damage + 1 Mods, 2 Weapon Quality (Pierce + 1) Mods.</description>
-        <encumbrance/>
-        <hard_points/>
-        <hp_required>1</hp_required>
-        <name>Bowcaster Accelerator Enhancement</name>
-        <number>GEAR0001143</number>
-        <price>250</price>
-        <range/>
-        <rarity>4</rarity>
-        <skill_used/>
-        <soak/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-18 19:27:34</sys_created_on>
-        <sys_id>047cbd792face890e0f497eef699b63a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-18 19:27:34</sys_updated_on>
-        <type>mod</type>
-    </x_176383_star_wars_gear>
-</record_update>
-]]></payload>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description&gt;Built from scavenged blaster parts and the occasional piece from a repulsorlift generator, the bowcaster accelerator enhancement is the second-most common modification to Wookiee bowcasters after&amp;#13;
+the automatic re-cocker. Essentially an upgrade of the weapon's bolt accelerators, this attachment allows the bowcaster to fire its highly destructive quarrels with more force than typical in a stock weapon.&amp;#13;
+These attachments are only for use on Wookiee bowcasters, and they cannot be purchased; they must be built either by the owner of the bowcaster with an Average (2 difficulty dice) Mechanics check or the weaponsmith who built the weapon for him.  Models Include: None.  Base Modifiers: Increase weapon damage by one point. Modification Options: 2 Damage + 1 Mods, 2 Weapon Quality (Pierce + 1) Mods.&lt;/description&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Base Modifiers:&lt;/strong&gt; Increase weapon damage by one point.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modification Options:&lt;/strong&gt; 2 Damage &amp;#43; 1 Mods, 2 Weapon Quality (Pierce &amp;#43; 1) Mods. &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Built from scavenged blaster parts and the occasional piece from a repulsorlift generator, the bowcaster accelerator enhancement is the second-most common modification to Wookiee bowcasters after the automatic re-cocker. Essentially an upgrade of the weapon&amp;#39;s bolt accelerators, this attachment allows the bowcaster to fire its highly destructive quarrels with more force than typical in a stock weapon. These attachments are only for use on Wookiee bowcasters, and they cannot be purchased; they must be built either by the owner of the bowcaster with an Average (2 difficulty dice) Mechanics check or the weaponsmith who built the weapon for him.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Models Include:&lt;/strong&gt; None.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance/&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required&gt;1&lt;/hp_required&gt;
+        &lt;name&gt;Bowcaster Accelerator Enhancement&lt;/name&gt;
+        &lt;number&gt;GEAR0001143&lt;/number&gt;
+        &lt;price&gt;250&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;4&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name/&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2020-11-18 19:27:34&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;047cbd792face890e0f497eef699b63a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-02-23 23:53:27&lt;/sys_updated_on&gt;
+        &lt;type&gt;mod&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-20 19:33:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>44811c222fa8ac90e0f497eef699b670</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Bowcaster Accelerator Enhancement</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_44811c222fa8ac90e0f497eef699b670</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-20 19:33:26</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-04-22 03:19:37</sys_updated_on>
         <tablename>x_176383_star_wars_gear</tablename>
     </sys_metadata_link>
 </record_update>

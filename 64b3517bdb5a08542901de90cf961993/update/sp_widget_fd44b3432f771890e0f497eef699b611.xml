@@ -1413,7 +1413,19 @@ if(data.step == 1){
 	}
 	
 	if(data.investXPSpecies.skillChoice.length > 0){
-		data.freeSpeciesSkillsRemaining = 1;
+		if(chosenSpecies == gs.getProperty('x_176383_star_wars.star_wars.human_species_id')){
+			data.freeSpeciesSkillsRemaining = 2;
+			for(var j = 0; j < careerSkills.length; j++){
+				for(var i = 0; i < data.investXPSpecies.skillChoice.length; i++){
+					if(data.investXPSpecies.skillChoice[i] == careerSkills[j]){
+						data.investXPSpecies.skillChoice.splice(i, 1);
+						i--;
+					}
+				}
+			}
+		} else{
+			data.freeSpeciesSkillsRemaining = 1;
+		}
 		for(i = 0; i < data.investXPSpecies.skillChoice.length; i++){
 			for(var s = 0; s < data.skills.length; s++){
 				if(data.investXPSpecies.skillChoice[i] == data.skills[s].sysID){
@@ -1606,15 +1618,15 @@ if(data.step == 1){
         <sys_created_on>2020-10-16 18:34:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd44b3432f771890e0f497eef699b611</sys_id>
-        <sys_mod_count>732</sys_mod_count>
+        <sys_mod_count>734</sys_mod_count>
         <sys_name>Star Wars Character Creator</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_fd44b3432f771890e0f497eef699b611</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-04 22:34:24</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-06-24 16:26:48</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -1951,7 +1963,7 @@ if(data.step == 1){
     <span class="col-xs-12 free-skill-header" id="freeSkillHeader">Select Career and Specialization Career Ranks</span>
     <span class="col-xs-12 star-wars-text free-skill-header-sw" id="freeSkillHeaderSW">Select Career and Specialization Career Ranks</span>
     <div ng-if="data.freeSpeciesRanks.length > 0" class="col-xs-12 specialization-skill-selection" id="speciesSkillsChoice">
-      <span class="col-xs-12 free-skills-label">Pick a Free Species Skill Rank</span>
+      <span class="col-xs-12 free-skills-label">Pick {{data.freeSpeciesSkillsRemaining}} Free Species Skill Rank(s)</span>
       <span class="col-xs-3 col-md-2 free-career-skill-rank" ng-click="useFreeSpeciesRank(speciesSkill)" ng-repeat="speciesSkill in data.freeSpeciesRanks" free-rank-used="{{speciesSkill.freeRankUsed}}">
         <span class="col-xs-12 free-skill-name">{{speciesSkill.name}}</span>
       </span>

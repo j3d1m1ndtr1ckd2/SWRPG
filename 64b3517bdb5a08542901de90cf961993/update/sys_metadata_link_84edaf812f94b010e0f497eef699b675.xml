@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8a5cab012f94b010e0f497eef699b62e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_category">
+    <kb_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <full_category>Playing the Game</full_category>
+        <label>Playing the Game</label>
+        <parent_id>4a4a278d2f54b010e0f497eef699b694</parent_id>
+        <parent_table>kb_knowledge_base</parent_table>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-05-22 05:34:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a5cab012f94b010e0f497eef699b62e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-05-22 05:34:25</sys_updated_on>
+        <value>playing_the_game</value>
+    </kb_category>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-05-22 05:40:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>84edaf812f94b010e0f497eef699b675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Playing the Game</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_84edaf812f94b010e0f497eef699b675</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-05-22 05:40:50</sys_updated_on>
+        <tablename>kb_category</tablename>
+    </sys_metadata_link>
+</record_update>

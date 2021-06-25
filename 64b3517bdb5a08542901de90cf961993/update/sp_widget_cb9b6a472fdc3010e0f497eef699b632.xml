@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.getArticles = function(category){
+		var sysID = '';
+		if(category == 'find'){
+			sysID = document.getElementById('catSelectBox').value;
+		} else{
+			sysID = category.sys_id;
+		}
+		c.server.get({action: 'getArticles', category: sysID}).then(function(response){
+			$scope.data = response.data;
+		});	
+	}
+	
+	$scope.openArticle = function(article){
+		$scope.data.currentArticle = article;
+		document.getElementById('articleBody').style.display = 'inline';
+	}
+	
+	$scope.closeArticle = function(){
+		$scope.data.currentArticle = '';
+		document.getElementById('articleBody').style.display = 'none';
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.header-container{
+	text-align:center;
+  margin-bottom:20px;
+}
+
+.cat-header{
+	font-size:18px;
+}
+
+.sw-input{
+	border: 1px groove #e21414;
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sw-label{
+	font-size:12px;
+  padding:0;
+}
+
+.swrpg-kb-container{
+	background-color:black;
+  margin-bottom:50px;
+}
+
+.category-container{
+	border:1px groove lightgray;
+  border-radius:15px;
+}
+
+.category{
+	font-size:16px;
+  border-bottom:1px dotted silver;
+  padding:10px;
+}
+
+.article-card{
+	border:1px groove lightgray;
+  border-radius:15px;
+  box-shadow:0px 0px 6px 3px silver;
+  min-height:80px;
+  text-align:center;
+  margin-top:20px;
+  padding-top:15px;
+}
+
+.article-card:hover{
+	transform:scale(1.05);
+}
+
+.close-button-container{
+	text-align:right;
+  font-size:14px;
+  color:#e21414;
+  position:fixed;
+  top:155px;
+  right:10%;
+  z-index:1000;
+}
+
+.fa-times{
+	background-color:black;
+  padding:5px;
+}
+
+.article-header{
+	font-weight:bold;
+  font-size:28px;
+}
+	
+#articleBody{
+  padding:10px;
+	display:none;
+  animation-name:slide-in-left;
+  animation-duration:.8s;
+  position:fixed;
+  top:15%;
+  left:5%;
+  width:90%;
+  max-height:600px;
+  overflow-y:scroll;
+  z-index:15;
+  background-color:black;
+  border:1px groove lightgray;
+  border-radius:6px;
+  box-shadow:0px 0px 6px 3px silver;
+}
+
+@keyframes slide-in-left{
+  from{left:1000px}
+  to{left:5%}
+}
+
+@media only screen and (max-width:762px){
+  .close-button-container{
+  	top:130px;
+    font-size:11px;
+    right:5%;
+  }
+}
+
+@media only screen and (min-width:900px){
+  .hidden-lg{
+  	display:none;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>swrpg_knowledge</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>SWRPG Knowledge</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+var swrpgKb = gs.getProperty('x_176383_star_wars.swrpg.knowledge_base_id');
+var categories = new GlideRecord('kb_category');
+categories.addQuery('parent_id', swrpgKb);
+categories.orderBy('x_176383_star_wars_order');
+categories.query();
+data.categories = [];
+while(categories.next()){
+	var cat = {
+		sys_id: categories.sys_id + '',
+		label: categories.label + '',
+		value: categories.value + '',
+		order: categories.order
+	};
+	data.categories.push(cat);
+}
+	
+data.selectCategoryText = 'Select a category to view articles';
+
+if(input && input.action == 'getArticles'){
+	var kb = new GlideRecord('kb_knowledge');
+	kb.addQuery('kb_knowledge_base', swrpgKb).addCondition('workflow_state', 'published').addCondition('kb_category', input.category);
+	kb.orderBy('number');
+	kb.query();
+	data.articles = [];
+	while(kb.next()){
+		var article = {
+			category: kb.kb_category.sys_id + '',
+			short_description: kb.short_description + '',
+			body: kb.text + ''
+		};
+		data.articles.push(article);
+	}
+}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-05-28 05:59:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cb9b6a472fdc3010e0f497eef699b632</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>SWRPG Knowledge</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_cb9b6a472fdc3010e0f497eef699b632</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-06-23 16:16:06</sys_updated_on>
+        <template><![CDATA[<div class="col-xs-12 swrpg-kb-container">
+  <span class="col-xs-12 header-container">
+  	<h1 id="header">Core Rulebook</h1>
+    <h4 class="star-wars-text">Core Rulebook</h4>
+  </span>
+  <div class="col-xs-12 hidden-lg category-select-container">
+    <label class="col-xs-12 cat-header">Select a Category<br><text class="star-wars-text">Select a Category</text></label>
+    <select class="sw-input" id="catSelectBox" ng-model="playing_the_game" ng-change="getArticles('find')">
+      <option ng-repeat="cat in data.categories" value="{{cat.sys_id}}">{{cat.label}}</option>
+    </select>
+  </div>
+	<div class="hidden-xs col-md-3 category-container">
+    <span class="col-xs-12 cat-header">Select a Category<br><text class="star-wars-text">Select a Category</text></span>
+    <span class="col-xs-12 categories" ng-repeat="cat in data.categories">
+      <span class="col-xs-12 category" ng-click="getArticles(cat)">
+        {{cat.label}}
+        <span class="col-xs-12 star-wars-text sw-label">{{cat.label}}</span>
+      </span>
+    </span>
+  </div>
+  <div class="col-xs-12 col-md-9 article-container">
+    <span ng-if="data.articles.length == 0 || !data.articles" class="col-xs-12 no-articles-text">
+      <text class="col-xs-12">Select a category to view articles</text>
+    </span>
+    <span class="col-xs-12 col-md-4 article" ng-repeat="article in data.articles">
+      <span class="article-card col-xs-12" ng-click="openArticle(article)">
+        {{article.short_description}}
+        <span class="col-xs-12 star-wars-text sw-label">{{article.short_description}}</span>
+      </span>
+    </span>
+  </div>
+</div>
+
+<div id="articleBody" class="article-body-container">
+	<span class="col-xs-12 close-button-container">
+    <i class="fa fa-times fa-2x" ng-click="closeArticle()"> Close</i>
+  </span>
+  <h3 class="article-header">{{data.currentArticle.short_description}}</h3>
+  <span class="col-xs-12 article-body" ng-bind-html="data.currentArticle.body"></span>
+</div>]]></template>
+    </sp_widget>
+</record_update>

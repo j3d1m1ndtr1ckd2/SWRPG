@@ -3,13 +3,57 @@
         <category>custom</category>
         <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
         <controller_as>c</controller_as>
-        <css>.my-characters-button{
-	/*background:url("sw_characters.png");
+        <css>.create-characters-button{
+	background:url("sw_create_character.jpg");
   background-position: center !important; /* Center the image */
-  /*background-attachment: fixed;
   background-repeat:no-repeat;
   background-size:cover !important;
-  min-height:100px;*/
+  padding:10px;
+}
+
+.my-characters-button{
+	background:url("my_characters_bg.png");
+  background-position: center !important; /* Center the image */
+  background-repeat:no-repeat;
+  background-size:cover !important;
+  padding:10px;
+}
+
+.my-campaigns-button{
+	background:url("my_campaigns_bg.png");
+  background-position: center top !important;
+  background-repeat:no-repeat;
+  background-size:cover !important;
+  padding:10px;
+}
+
+.holocron-button{
+	background:url("holocron_bg.png");
+  background-position:center !important;
+  background-repeat:no-repeat;
+  background-size:cover !important;
+  padding:10px;
+}
+
+.core-rulebook-button{
+	background:url("jedi_texts.jpg");
+  background-position:center !important;
+  background-repeat:no-repeat;
+  background-size:cover !important;
+  padding:10px;
+}
+
+.core-rulebook-container{
+	margin-top:20px;
+}
+	
+.home-buttons-container{
+	margin-top:40px;
+}
+
+.home-header{
+	text-align:center;
+  padding:10px;
 }
 
 .link-label,.sw-link-label{
@@ -21,6 +65,40 @@
  	top:15px;
  	left:10%;
   z-index:-1;
+}
+
+.homepage-button{
+	text-align:center;
+  margin-bottom:20px;
+}
+
+.hp-internal-button{
+	border:1px groove lightgray;
+  border-radius:15px;
+  min-height:200px !important;
+  z-index:1;
+}
+
+.hp-internal-button:hover{
+	box-shadow:0px 0px 6px 6px silver;
+  z-index:100000000;
+}
+
+.link-label{
+  font-size:30px;
+  font-weight:bold;
+  text-shadow:0px 0px 6px black;
+	padding-top:10%;
+}
+
+.homepage-button:hover{
+	transform:scale(1.05);
+}
+
+@media only screen and (max-width:762px){
+  .homepage-button{
+  	margin-bottom:20px;
+  }
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -32,7 +110,7 @@
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
         <name>Star Wars Home</name>
-        <option_schema/>
+        <option_schema>[{"name":"header_text","section":"other","default_value":"Welcome to a Galaxy Far, Far Away","label":"Header Text","type":"string"}]</option_schema>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
@@ -62,7 +140,7 @@
         <sys_created_on>2020-10-28 03:14:07</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ec41e322f88ac10e0f497eef699b6fb</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>83</sys_mod_count>
         <sys_name>Star Wars Home</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -70,28 +148,55 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_9ec41e322f88ac10e0f497eef699b6fb</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-02-23 21:10:07</sys_updated_on>
+        <sys_updated_on>2021-06-24 14:39:13</sys_updated_on>
         <template><![CDATA[<div class="col-xs-12 home-container">
-	<!-- add header here -->
-  <span class="col-xs-12 col-md-3 my-characters-button">
-    <a href="?id=star_wars_my_characters">
-      <span class="col-xs-12 link-label">My Characters</span>
-      <span class="col-xs-12 sw-link-label star-wars-text">My Characters</span>
-    </a>
-  </span>
-  <span class="col-xs-12 col-md-3 my-campaigns-button">
-    <a href="?id=star_wars_campaigns">
-      <span class="col-xs-12 link-label">My Campaigns</span>
-      <span class="col-xs-12 sw-link-label star-wars-text">My Campaigns</span>
-    </a>
-  </span>
-  <span class="col-xs-12 col-md-3 holocron-button">
-    <a href="?id=holocron">
-      <img class="holocron-image" src="holocron.png" height="80px" width="80px"/>
-      <span class="col-xs-12 link-label">Holocron</span>
-      <span class="col-xs-12 sw-link-label star-wars-text">Holocron</span>
-    </a>
-  </span>
+	<div class="col-xs-12 home-header">
+    <h1 id="sw_home_header">{{options.header_text}}</h1>
+    <h4 class="star-wars-text">{{options.header_text}}</h4>
+  </div>
+  <div class="col-xs-12 home-buttons-container">
+    <span class="col-xs-12 col-md-4 homepage-button">
+      <a href="?id=star_wars_character_creation">
+      	<span class="col-xs-12 hp-internal-button create-characters-button">
+          <span class="col-xs-12 link-label">Create a Character</span>
+          <span class="col-xs-12 sw-link-label star-wars-text">Create a Character</span>
+      	</span>
+      </a>
+    </span>
+    <span class="col-xs-12 col-md-4 homepage-button">
+      <a href="?id=star_wars_my_characters">
+      	<span class="col-xs-12 hp-internal-button my-characters-button">
+          <span class="col-xs-12 link-label">My Characters</span>
+          <span class="col-xs-12 sw-link-label star-wars-text">My Characters</span>
+      	</span>
+      </a>
+    </span>
+    <span class="col-xs-12 col-md-4 homepage-button">
+      <a href="?id=star_wars_campaigns">
+      	<span class="col-xs-12 hp-internal-button my-campaigns-button">
+          <span class="col-xs-12 link-label">My Campaigns</span>
+          <span class="col-xs-12 sw-link-label star-wars-text">My Campaigns</span>
+      	</span>
+      </a>
+    </span>
+    <span class="col-xs-12 col-md-4 homepage-button">
+      <a href="?id=holocron">
+      	<span class="col-xs-12 hp-internal-button holocron-button">
+          <!--img class="holocron-image" src="holocron.png" height="80px" width="80px"/-->
+          <span class="col-xs-12 link-label">Holocron</span>
+          <span class="col-xs-12 sw-link-label star-wars-text">Holocron</span>
+      	</span>
+      </a>
+    </span>
+    <span class="col-xs-12 col-md-4 homepage-button">
+      <a href="?id=star_wars_knowledge">
+        <span class="col-xs-12 hp-internal-button core-rulebook-button">
+          <span class="col-xs-12 link-label">Core Rulebook</span>
+          <span class="col-xs-12 sw-link-label star-wars-text">Core Rulebook</span>
+        </span>
+      </a>
+    </span>
+  </div>
 </div>]]></template>
     </sp_widget>
 </record_update>

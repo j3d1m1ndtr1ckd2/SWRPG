@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>93d7dd762fdc3010e0f497eef699b60d</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Playing the Game"&gt;8a5cab012f94b010e0f497eef699b62e&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;POSITIVE RESULTS There are three positive symbols found on the task resolution dice. These results are&lt;/meta_description&gt;
+        &lt;number&gt;KB0010021&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-05-27&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Dice Symbols &amp;amp; Results&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-05-27 05:24:21&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;93d7dd762fdc3010e0f497eef699b60d&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-05-27 05:29:03&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;2&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;&lt;span style="font-size: 14pt;"&gt;&lt;strong&gt;POSITIVE RESULTS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;There are three positive symbols found on the task resolution dice. These results are Success, Advantage, and Triumph. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;SUCCESS &lt;img title="" src="sw_rpg_success.pngx" alt="" width="33" height="33" align="baseline" border="" hspace="" vspace="" /&gt; &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Success symbols are critical for determining whether a skill check succeeds or fails. Success is undermined by Failure. Mechanically, one Success symbol &lt;img title="" src="sw_rpg_success.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; is canceled by one Failure symbol &lt;img title="" src="sw_rpg_failure.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt;. Based on the core mechanic, if there is at least one Success remaining in the pool after all cancellations, the skill check succeeds. In SWRPG, Success symbols can also influence the magnitude of the outcome. For example, in combat, each Success is added to the damage inflicted to the target. Generating four net Successes would inflict four additional damage. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Success symbols appear on boost, ability, and proficiency dice. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;ADVANTAGE &lt;img title="" src="sw_rpg_advantage.pngx" alt="" width="33" height="33" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The Advantage symbol indicates an opportunity for a positive consequence or side effect, regardless of the task&amp;#39;s success or failure. Some examples of these positive side effects could include slicing a computer in far less time than anticipated, finding an opening during a firefight to duck back into cover, or recovering from strain during a stressful situation. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;It is possible for a task to fail while generating a number of Advantages, allowing something good to come out of the failure. Likewise, Advantages can occur alongside success, allowing for some significantly positive outcomes. It is important to remember that Advantage symbols do not directly impact success or failure, only the magnitude or potential side effects. Advantage is canceled by Threat. Each Threat symbol &lt;img title="" src="sw_rpg_threat.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; cancels one Advantage symbol &lt;strong&gt;&lt;img title="" src="sw_rpg_advantage.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/strong&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Characters may use Advantage results in a wide variety of ways—this is known as &amp;#34;taking the Advantage.&amp;#34; If a skill check generates one or more net Advantage symbols &lt;strong&gt;&lt;img title="" src="sw_rpg_advantage.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/strong&gt;, the player can spend that Advantage to apply one or more special side effects. This could include triggering a critical hit, activating a weapon&amp;#39;s special quality, recovering strain, or even performing additional maneuvers.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Advantage symbols appear on boost, ability, and proficiency dice. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;TRIUMPH&lt;/strong&gt; &lt;img title="" src="sw_rpg_triumph.pngx" alt="" width="34" height="34" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The Triumph symbol is a powerful result, indicating a significant boon or beneficial outcome. Each Triumph symbol provides two effects: First, each Triumph symbol &lt;img title="" src="sw_rpg_triumph.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; also counts as one Success, in every means previously defined as a Success. This means the Success portion of a Triumph symbol &lt;img title="" src="sw_rpg_triumph.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; could potentially be canceled by Failure symbols generated during the same skill check. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Secondly, each Triumph symbol can be used to trigger incredibly potent effects. Two common uses are to use a &lt;img title="" src="sw_rpg_triumph.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; to automatically trigger a critical injury with a successful attack, or to activate a weapon&amp;#39;s special quality—effects that usually require multiple Advantage symbols &lt;strong&gt;&lt;img title="" src="sw_rpg_advantage.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/strong&gt; to activate. Triumphs may activate other potent effects as well, including effects above and beyond those triggered by Advantage. These effects may be set by the GM, or they may defined by the environment, a piece of equipment, or a special character ability. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Players gain both effects with each Triumph symbol; they do not have to choose between the Success or the special effect trigger. As a Success, that aspect of the Triumph symbol can be canceled by a Failure symbol &lt;img title="" src="sw_rpg_failure.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt;  as usual; however, the second aspect of the &lt;img title="" src="sw_rpg_triumph.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; result cannot be canceled.  Multiple Triumphs are cumulative.  Each Triumph adds one Success, and each can be used to generate its own special effect. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The Triumph symbol only appears on proficiency dice.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 14pt;"&gt;&lt;strong&gt;NEGATIVE RESULTS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;there are three negative symbols found on the task resolution dice. These results are Failure, Threat, and Despair. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;FAILURE &lt;/span&gt;&lt;/strong&gt;&lt;span style="font-size: 12pt;"&gt;&lt;img title="" src="sw_rpg_failure.pngx" alt="" width="33" height="33" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Failure symbols &lt;img title="" src="sw_rpg_failure.pngx" alt="" width="23" height="23" align="baseline" border="" hspace="" vspace="" /&gt; are critical for determining whether a skill check succeeds or fails. Failure undermines Success. Mechanically, one Failure symbol &lt;img title="" src="sw_rpg_failure.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; cancels one Success symbol &lt;img title="" src="sw_rpg_success.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt;.  Based on the core mechanic, if there is at least one Success symbol &lt;img title="" src="sw_rpg_success.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; remaining in the pool after all cancellations, the skill check succeeds. Fortunately for characters, multiple net Failure symbols &lt;img title="" src="sw_rpg_failure.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; do not influence the magnitude of the failure. Failure symbols appear on setback, difficulty, and challenge dice. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;THREAT&lt;/strong&gt; &lt;img title="" src="sw_rpg_threat.pngx" alt="" width="33" height="33" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The Threat symbol &lt;img title="" src="sw_rpg_threat.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; is fuel for negative consequences or side effects, regardless of the task&amp;#39;s success or failure. Some examples of these negative side effects could include taking far longer than expected to slice a computer terminal, leaving an opening during a firefight which allows an enemy to duck into cover, or suffering additional strain during a stressful situation. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;It is possible for a task to succeed while generating a number of Threats, tainting or diminishing the impact of the success. Likewise, Threats can occur alongside Failure, creating the possibility for some significantly dire outcomes. It is important to remember that Threat symbols &lt;img title="" src="sw_rpg_threat.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; do not directly impact success or failure, only the magnitude or potential side effects. Threat cancels Advantage. Each Threat symbol &lt;img title="" src="sw_rpg_threat.pngx" alt="" width="21" height="21" align="baseline" border="" hspace="" vspace="" /&gt; cancels one Advantage symbol &lt;strong&gt;&lt;img title="" src="sw_rpg_advantage.pngx" alt="" width="20" height="20" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/strong&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt; The GM generally resolves Threat effects. There are a wide variety of possible effects that Threat may trigger, if a skill check generates one or more net Threat symbols, the GM generally applies one or more special side effects. This could include being knocked prone, losing the advantage of cover, taking more time than anticipated, suffering strain during a normally routine action, or potentially allowing an enemy to perform a maneuver. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Threat symbols appear on setback, difficulty, and challenge dice. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;DESPAIR&lt;/strong&gt; &lt;img style="align: baseline;" title="" src="sw_rpg_despair.pngx" alt="" width="33" height="33" align="baseline" border="" hspace="" vspace="" /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;T&lt;/span&gt;&lt;span style="font-size: 12pt;"&gt;he Despair symbol &lt;img title="" src="sw_rpg_despair.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; is a powerful result, indicating a significant bane or detrimental outcome. Each Despair symbol imposes two effects: &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;First, each Despair symbol &lt;img title="" src="sw_rpg_despair.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; also counts as one Failure &lt;img title="" src="sw_rpg_failure.pngx" alt="" width="23" height="23" align="baseline" border="" hspace="" vspace="" /&gt;, in every means previously defined as a Failure. This means the Failure portion of a Despair symbol could potentially be canceled by Success symbols &lt;img title="" src="sw_rpg_success.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; generated during the same skill check. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Secondly, each Despair can be used to trigger potent negative effects. A Despair symbol &lt;img title="" src="sw_rpg_despair.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; may be used to indicate a weapon has jammed, or run out of ammunition or energy cells. Despair may activate other potent effects as well, including effects above and beyond those triggered by Threats. These effects may be set by the GM, or defined by the environment, an adversary, or a special character ability. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Players suffer both effects with each Despair symbol; they do not get to choose between the Failure or the special effect trigger. As a Failure, that aspect of the Despair symbol can be canceled by a Success symbol &lt;img title="" src="sw_rpg_success.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; as usual, however the second aspect of the Despair symbol &lt;img title="" src="sw_rpg_despair.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; result cannot be canceled. Multiple Despair symbols &lt;img title="" src="sw_rpg_despair.pngx" alt="" width="22" height="22" align="baseline" border="" hspace="" vspace="" /&gt; are cumulative—each Despair imposes one Failure, and each can be used to generate its own special effect. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The Despair symbol only appears on the challenge die. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;FORCE RESOURCES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The final category of dice symbols represents resources generated by the Force dice. There are two types of resources: light side Force points and dark side Force points. Force-sensitive characters can use these resources to help fuel special abilities, such as telekinesis or precognitive combat awareness. Powerful Force users like Jedi use Force dice frequently, and struggle with the balance of the light and dark sides of the Force. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;While Player Characters have the potential to be Force-sensitive and gain control of the Force, there are other uses for the Force dice besides using Force powers. One of the most common applications of the Force dice in SWRPG is their use to determine the group&amp;#39;s starting pool of Destiny Points at the beginning of each session. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Unlike the positive and negative dice used for task resolution, Force dice generate resources which are spent to fuel a power&amp;#39;s effects, such as magnitude, range, or duration. The Force die and the mechanics that govern it are very different from the core skill check mechanics of SWRPG, and are discussed in greater detail in The Force category articles.&lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=93d7dd762fdc3010e0f497eef699b60d"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-06-25 02:37:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>13d90ac82fc57810e0f497eef699b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010021</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_13d90ac82fc57810e0f497eef699b6ad</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-06-25 02:37:03</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

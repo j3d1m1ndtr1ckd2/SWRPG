@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>464da6f12ffc3010e0f497eef699b6f5</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Playing the Game"&gt;8a5cab012f94b010e0f497eef699b62e&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Now that the three primary building blocks of a skill check’s dice pool have been discussed, all that&lt;/meta_description&gt;
+        &lt;number&gt;KB0010023&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-06-23&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Building a Basic Dice Pool&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-06-18 05:47:52&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;464da6f12ffc3010e0f497eef699b6f5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-06-23 05:34:24&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Now that the three primary building blocks of a skill check’s dice pool have been discussed, all that remains is to show how the dice pool is actually assembled.&lt;/p&gt;
+&lt;p&gt;When a character wants to attempt some sort of action that might have a chance of failure, the player makes a skill check. The skill check uses the character’s appropriate skill: Athletics for breaking down doors, Knowledge for recalling facts, or Charm for convincing a guard to let the character enter, for example. Each skill also has a linked characteristic: Brawn for Athletics, Intellect for Knowledge, and Presence for Charm, for instance. To make a skill check, the character assembles a dice pool.&lt;/p&gt;
+&lt;p&gt;There are two sides to every basic dice pool: the side to which the player contributes in the form of Ability dice and Proficiency dice and the side to which the GM contributes in the form of Difficulty dice Challenge dice, Boost dice and Setback dice.  Additional factors may modify the number and type of dice for a check. When building a dice pool, every aspect of the player’s and GM ’s contributing dice should be explained and defined before the roll is made. The GM sets the difficulty level of the task once, prior to the roll. After creating the base dice pool, either side may have the opportunity to upgrade dice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;APPLYING SKILLS AND CHARACTERISTICS&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A character’s skill training and the associated characteristic are equally important in building a dice pool. When a task is attempted, the GM determines which skill is most appropriate. The skill used determines which characteristic is used. For example, if the character is attempting to bypass a security terminal by slicing its alarm system, the skill check would use the Computers skill, which is linked to the Intellect characteristic. The ratings for these two attributes determine the number of Ability and Proficiency dice that are added to the dice pool. A player can start building the dice pool once the proper skill and characteristic are determined. To add dice to the pool, the player compares the PC’s ranks of skill training to the linked characteristic’s rating. The higher of the two values determines how many Ability dice are added to the skill check’s dice pool. Then the player upgrades a number of those Ability dice equal to the lower of the two values. If a character is unskilled (possesses no ranks) in the necessary skill, then zero is automatically the lower value, and the character will rely solely on the appropriate characteristic. (This also applies if the character has a zero in the corresponding characteristic; however, in practice, it’s almost impossible for a character to have a zero in a characteristic.).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;APPLYING TASK DIFFICULTY&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After determining which skill and related characteristic the character uses to attempt the task, the GM then chooses the level of difficulty for the task by consulting the &amp;#34;Basic Dice Pool&amp;#34; article. The difficulty level of the task determines the number of Difficulty dice that the player must add to the pool. For example, an Average skill check means the player adds two Difficulty dice to the dice pool.&lt;/p&gt;
+&lt;p&gt;In some cases, the GM may upgrade one or more of these Difficulty dice by removing them from the dice pool and replacing them with an equal number of Challenge dice. Difficulty dice are usually upgraded into Challenge dice when a character faces skilled opposition or particularly challenging circumstances, or when the GM invests Destiny Points to make a check more challenging.&lt;/p&gt;
+&lt;p&gt;After setting the difficulty level for the task, the GM adds the corresponding number of Difficulty dice to the task’s dice pool. If no other factors are deemed to influence the outcome of the attempt, the basic dice pool is now complete and can be rolled to determine success or failure, as well as any potential side effects.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;MODIFYING A DICE POOL&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If there are no other influences or contributing factors that may impact the outcome of a check, the dice pool may consist solely of dice representing the acting character’s skill and characteristic, along with the dice representing the difficulty level set by the GM. However, the Star Wars universe is a vast place where any number of environmental effects can impact the actions taken by the characters. Howling gale-force winds caused by atmosphere escaping through a breach in a starship hull can negatively impact any action, while a motionless space pirate silhouetted by a bright light is a much easier target to hit. If an action is important enough to assemble and roll a dice pool, there’s a good chance other factors are involved.&lt;/p&gt;
+&lt;p&gt;These other factors affect or modify the dice pool in a number of ways. The most common ways are by adding dice, upgrading/downgrading dice, and removing dice. These modifications may be triggered by the players or the GM, or they may simply make sense given the environment and situation. Examples of factors that warrant modification of the dice pool include obstructing terrain, poor lighting, tactical advantages, time constraints, superior equipment, special talents, unlocked career abilities, investment of Destiny points, and Critical Injuries.  The following sections describe these modifications in more detail.&lt;/p&gt;
+&lt;p&gt;It’s also important to note that when modifying a dice pool, players perform the modifications in a specific order. First, players assemble the basic pool, and then they add additional dice. Next, they upgrade dice. Then they downgrade dice. Finally, they remove dice.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;ADDING DICE&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;One way to modify the basic dice pool is to add dice to reflect environmental conditions or various advantages and disadvantages. This is done primarily through the use of Boost and Setback dice. As a general rule, one Boost die is added to the dice pool for each bonus that would help the character succeed, and one Setback die is added for each disadvantage impeding success.&lt;/p&gt;
+&lt;p&gt;A single Boost die is often enough to represent the benefits provided by useful gear, ample time, superior position, or the element of surprise. If more than one of these advantages is applicable, the GM may allow multiple Boost dice to be added to the dice pool.&lt;/p&gt;
+&lt;p&gt;Likewise, a single Setback die is usually enough to reflect the impact of detrimental or obstructing effects like poor lighting, inferior supplies, harsh environments, or outside distractions. If more than one of these disadvantages is applicable, the GM may add multiple Setback dice to the dice pool. It’s important to note that while these dice are essentially mirror opposites in their use, &lt;strong&gt;Boost dice and Setback dice do not cancel each other out&lt;/strong&gt;. If the situation warrants the addition of two Boost dice and one Setback die, all three dice are added to the dice pool.&lt;/p&gt;
+&lt;p&gt;The use of Boost dice and Setback dice is a common device all players can use to help reinforce important elements of the story. Players should describe their characters’ actions in detail, pointing out both advantages and disadvantages that may influence a particular action.&lt;/p&gt;
+&lt;p&gt;Some equipment may add Boost dice to a pool to reflect superior craftsmanship, while talents may allow a player to add Boost dice to a pool to reflect special training or aptitudes that apply to the situation. Maneuvers like aiming may also allow a player to add Boost dice to a pool. Conversely, some effects may specifically impose Setback dice. such as the defined effects of a Critical Injury or a penalty for using inferior tools for a delicate task.&lt;/p&gt;
+&lt;p&gt;While the players may suggest the addition of Boost or Setback dice, the GM is the final arbiter, deciding which and how many dice are added to the pool. The GM does have access to helpful guidelines when making those decisions and should use common sense depending on the way the scene and action have been described.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;UPGRADING AND DOWNGRADING DICE&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Game effects can improve dice, making a weaker die stronger. Likewise, circumstances can turn a potent die into a weaker one. Improving a die is called upgrading, while weakening a die is called downgrading. Beyond the upgrading based on a character’s ranks in a skill or characteristic, upgrading and downgrading dice most often occur when one of the participants invests a Destiny Point in a skill check. Certain talents and special abilities also allow a character to upgrade or downgrade dice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPGRADING DICE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Upgrading dice is a mechanic specific to Ability dice and Difficulty dice. These are the only two types of dice that can be upgraded. When an Ability die is upgraded, it is converted into a Proficiency die. When a Difficulty die is upgraded, it is converted into a Challenge die.&lt;/p&gt;
+&lt;p&gt;When a special talent or effect calls for one or more dice to be upgraded, the player first determines how many dice are to be upgraded. Once he determines this, he removes that number of Ability dice or Difficulty dice from the pool and replaces them with an equal number of either Proficiency dice or Challenge dice. When an effect requires a character to upgrade dice, the rules always state whether Ability dice or Difficulty dice are being upgraded.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPGRADING MORE DICE THAN AVAILABLE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There may be situations in which a player needs to upgrade Ability dice into Proficiency dice, but there are no more Ability dice remaining in the pool. In this case, the player performs the following steps. First, he determines how many dice upgrades remain. Then, using one upgrade, he adds one additional Ability die to the pool. If any upgrade opportunities remain, he then upgrades the newly added Ability die into a Proficiency die. This process is repeated until all potential upgrades have been applied.&lt;/p&gt;
+&lt;p&gt;Likewise, if a player needs to upgrade Difficulty dice into Challenge dice but there are no more Difficulty dice remaining, the same process is followed. First, one additional Difficulty die is added, then if there are any more upgrades remaining, the Difficulty die is upgraded into a Challenge die, and so on.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DOWNGRADING DICE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Downgrading dice is also a specific mechanic, and applies only to Proficiency dice and Challenge dice. When a Proficiency die is downgraded, it becomes an Ability die.  When a Challenge die is downgraded, it becomes a Difficulty die. &lt;/p&gt;
+&lt;p&gt;When a special talent or effect calls for one or more dice to be downgraded, the player first determines how many dice are to be downgraded. Once he determines this, he removes that number of Proficiency dice or Challenge dice from the pool and replaces them with an equal number of either Ability dice or Difficulty dice. When an effect requires a character to downgrade dice, the rules always state whether Proficiency dice or Challenge dice are being downgraded.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DOWNGRADING MORE DICE THAN AVAILABLE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There may be situations where a player needs to downgrade Proficiency dice into Ability dice or Challenge dice into Difficulty dice.  If all the potential dice are already in their downgraded form, any further downgrades are ignored.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPGRADES &amp;amp; DOWNGRADES IN THE SAME POOL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes abilities will call for both dice upgrades and downgrades. When this occurs, all upgrades are applied first. Then, any downgrades are applied. This is important, since upgrading dice could potentially add more dice to the overall pool.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;REMOVING DICE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Just like some effects add Boost dice or Setback dice to a pool, some effects remove dice from the pool before they are ever rolled. Most often this comes from character talents that allow the removal of Setback dice from a pool, reflecting a level of expertise in overcoming minor distractions or disadvantages that would rattle a less experienced character. In a similar fashion, a skilled enemy may have a talent that removes Boost dice from skill checks made against that enemy.&lt;/p&gt;
+&lt;p&gt;The individual talent or effect describes what circumstances warrant the removal of dice, as well as the number and type of dice to be removed. If an ability would remove more dice of a type than there are in the dice pool, the maximum number of dice available are removed, and any additional removals are ignored. Removing dice is done after all other dice have been added and all upgrades or downgrades have been applied.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=464da6f12ffc3010e0f497eef699b6f5"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-06-25 02:36:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ad90ac82fc57810e0f497eef699b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010023</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2ad90ac82fc57810e0f497eef699b606</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-06-25 02:36:59</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

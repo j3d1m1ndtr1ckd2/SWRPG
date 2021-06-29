@@ -5,6 +5,16 @@
   /* widget controller */
   var c = this;
 	
+	$scope.showStatusEffectDetail = function(effect){
+		$scope.data.currentEffect = effect;
+		document.getElementById('statusEffectInfoBox').style.display = 'inline';
+	}
+	
+	$scope.hideStatusEffectDetail = function(){
+		$scope.data.currentEffect = '';
+		document.getElementById('statusEffectInfoBox').style.display = 'none';
+	}
+	
 	$scope.showSection = function(section, header){
 			//set sections display based on function parameter
 			var containers = document.getElementsByClassName('character-details-container');
@@ -738,8 +748,7 @@
 			$scope.data.character = response.data.character;
 			$scope.data.statusEffects = response.data.statusEffects;
 		});
-	}
-	
+	}	
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.image-background{
@@ -1261,6 +1270,20 @@
 	padding-bottom:20px;
 }
 
+#statusEffectInfoBox{
+	display:none;
+  position:fixed;
+  top:40%;
+  left:20%;
+  width:60%;
+  max-height:600px;
+  overflow-y:scroll;
+  background-color:black;
+  border:2px groove #1933f4;
+  box-shadow:0px 0px 8px 3px #1933f4;
+  padding-bottom:20px;
+}
+
 #talentInfoBox{
 	display:none;
   position:fixed;
@@ -1567,6 +1590,12 @@ input:checked + .slider:before {
 @media only screen and (max-width:762px){
   .force-powers-container,.force-headers,.force-power,.force-detail,.force-container{
   	padding:0;
+  }
+  
+  #statusEffectInfoBox{
+  	top:15%;
+    width:80%;
+    left:10%;
   }
   
   .force-detail{
@@ -2513,7 +2542,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>979</sys_mod_count>
+        <sys_mod_count>990</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2521,7 +2550,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-06-29 21:28:16</sys_updated_on>
+        <sys_updated_on>2021-06-29 22:20:46</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2551,7 +2580,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <!-- status effects -->
         <span class="col-xs-12 status-effects-container">
           <span class="col-xs-4 status-effect-switch" ng-repeat="effect in data.statusEffects">
-            <label class="status-effect-label" for="effect.name">{{effect.name}}</label><br/>
+            <label class="status-effect-label" for="effect.name">{{effect.name}} <i class="far fa-info-circle" ng-click="showStatusEffectDetail(effect)"></i></label><br/>
             <label id="effect.name" class="switch">
               <input type="checkbox" ng-checked="{{effect.checked}}" ng-click="updateStatus(effect)">
               <span class="slider round"></span>
@@ -3270,6 +3299,12 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
       </span>
       <span class="col-xs-12 talent-detail" id="talentInfoPurchaseContainer"><button class="purchase-gear-button" ng-click="purchaseTalent(data.currentTalentInfo)">Purchase</button></span>
     </span>
+    <!-- status effect info -->
+    <span class="status-effect-info-box" id="statusEffectInfoBox">
+      <span class="col-xs-12 close-button" ng-click="hideStatusEffectDetail()"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 talent-detail-body">
+        <span class="col-xs-12 talent-info">{{data.currentEffect.description}}</span>
+      </span>
     <!-- edit credits -->
     <span class="edit-character" id="editCreditsContainer">
     	<span class="col-xs-12 close-button" ng-click="closeEditContainer('credits')"><i class="fas fa-times slideout-close-icon"></i></span>

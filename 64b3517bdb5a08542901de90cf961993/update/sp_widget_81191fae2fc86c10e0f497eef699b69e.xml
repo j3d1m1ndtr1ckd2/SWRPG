@@ -733,6 +733,13 @@
 		}
 	}
 	
+	$scope.updateStatus = function(effect){
+		c.server.get({action: 'updateStatusEffects', effect: effect}).then(function(response){
+			$scope.data.character = response.data.character;
+			$scope.data.statusEffects = response.data.statusEffects;
+		});
+	}
+	
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.image-background{
@@ -746,6 +753,14 @@
   background-size:cover !important;
 	opacity:.7;
   z-index:-5;
+}
+
+.slideout-close-icon{
+	background-color:black;
+  position:fixed;
+  top:2%;
+  right:40px;
+  z-index:10000;
 }
 
 .remove-vehicle-mobile{
@@ -1467,6 +1482,76 @@
 	transform:rotate(45deg);
 }
 
+.status-effects-container{
+	margin-top:15px;
+  margin-bottom:15px;
+}
+
+.status-effect-label{
+	font-size:16px;
+}
+
+//W3 schools slider css
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1933f4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1933f4;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+//end W3 css
+
 @media only screen and (min-width:762px){
   .lg-hidden{
   	display:none;
@@ -1693,8 +1778,28 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			background: charGR.description_html + '',
 			notableFeatures: charGR.notable_features + '',
 			notes: charGR.notes + '',
-			otherGear: charGR.other_gear + ''
+			otherGear: charGR.other_gear + '',
+			statusEffects: charGR.status_effects.toString().split(',')
 		};
+	
+	//retrieve status effect details and set checked if character has any
+	data.statusEffects = [];
+	var statusEffects = new GlideRecord('x_176383_star_wars_status_effects');
+	statusEffects.query();
+	while(statusEffects.next()){
+		var se = {
+			name: statusEffects.getDisplayValue(),
+			sys_id: statusEffects.getUniqueValue(),
+			description: statusEffects.description + '',
+			checked: false
+		};
+		for(var i = 0; i < data.character.statusEffects.length; i++){
+			if(se.sys_id == data.character.statusEffects[i]){
+				se.checked = true; 
+			}
+		}
+		data.statusEffects.push(se);
+	}
 	
 	//retrieve career info to display when info button clicked.
 	data.careerInfo = {
@@ -2368,6 +2473,35 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			data.character.criticalInjuriesString = data.character.criticalInjuriesInt + '';
 			break;
 				
+			case 'updateStatusEffects':
+			var statusEffectsString = '';
+			if(input.effect.checked){
+				for(var i = 0; i < data.character.statusEffects.length; i++){
+					if(input.effect.sys_id == data.character.statusEffects[i]){
+						data.character.statusEffects.splice(i, 1);
+						break;
+					}
+				}
+				statusEffectsString = data.character.statusEffects.join();
+				for(i = 0; i < data.statusEffects.length; i++){
+					if(data.statusEffects[i].sys_id == input.effect.sys_id){
+						data.statusEffects[i].checked = false;
+						break;
+					}
+				}
+			} else{
+				statusEffectsString = data.character.statusEffects.join() + ',' + input.effect.sys_id;
+				for(i = 0; i < data.statusEffects.length; i++){
+					if(data.statusEffects[i].sys_id == input.effect.sys_id){
+						data.statusEffects[i].checked = true;
+						break;
+					}
+				}
+			}
+			charGR.status_effects = statusEffectsString;
+			charGR.update();
+			break;
+				
 			default:
 				break;
 		}
@@ -2379,7 +2513,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>945</sys_mod_count>
+        <sys_mod_count>979</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2387,7 +2521,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-04-16 04:25:25</sys_updated_on>
+        <sys_updated_on>2021-06-29 21:28:16</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2413,6 +2547,16 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 col-md-4 available-xp critical-injuries" ng-click="editCharacter('crit')">
           <span class="col-xs-12 xp-value">{{data.character.criticalInjuriesString}}</span>
           <span class="col-xs-12 xp-label">Critical Injuries</span>
+        </span>
+        <!-- status effects -->
+        <span class="col-xs-12 status-effects-container">
+          <span class="col-xs-4 status-effect-switch" ng-repeat="effect in data.statusEffects">
+            <label class="status-effect-label" for="effect.name">{{effect.name}}</label><br/>
+            <label id="effect.name" class="switch">
+              <input type="checkbox" ng-checked="{{effect.checked}}" ng-click="updateStatus(effect)">
+              <span class="slider round"></span>
+            </label>
+          </span>
         </span>
       </span>
     </span>
@@ -2909,7 +3053,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- show species info -->
     <span class="edit-character" id="showSpeciesInfo">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('species')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('species')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12">
         <span class="col-xs-12" id="speciesName">{{data.character.species}}<br><text class="star-wars-text">{{data.character.species}}</text></span>
         <span class="col-xs-12" id="speciesDescription" ng-bind-html="data.character.speciesDescription"></span>
@@ -2917,7 +3061,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- show career info -->
     <span class="edit-character" id="showCareerInfo">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('career')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('career')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12">
         <span class="col-xs-12" id="careerName">{{data.careerInfo.name}}<br><text class="star-wars-text">{{data.careerInfo.name}}</text></span>
         <span class="col-xs-12" id="careerDescription" ng-bind-html="data.careerInfo.description"></span>
@@ -2925,7 +3069,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- show specialization Info -->
     <span class="edit-character" id="showSpecializationsInfo">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('specializations')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('specializations')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12" ng-repeat="spec in data.specializationInfo">
         <span class="col-xs-12 specialization-name">{{spec.name}}<br><text class="star-wars-text">{{spec.name}}</text></span>
         <span class="col-xs-12 specialization-description" ng-bind-html="spec.description"></span>
@@ -2933,7 +3077,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- add new specializations -->
     <span class="edit-character" id="addNewSpecializationsContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('newSpecs')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('newSpecs')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12" ng-repeat="sp in data.availableSpecs">
         <span class="col-xs-12 specialization-name">{{sp.name}} <i ng-if="data.character.careerID == sp.careerID" class="far fa-medal"></i><br><text class="star-wars-text">{{sp.name}}</text></span>
         <span class="col-xs-12 specialization-name">Career: {{sp.careerName}}</span>
@@ -2944,7 +3088,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit critical injuries -->
     <span class="edit-character" id="editCritContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12">
         <label for="crits">Critical Injuries:</label><br/>
         <input class="sw-input" type="text" id="crits" name="crits" inputmode="numeric" pattern="[0-9]*" value="{{data.character.criticalInjuriesString}}"/>
@@ -2957,7 +3101,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit skills -->
     <span class="edit-character" id="editSkillsContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('skills')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('skills')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 edit-skills-body">
         <span class="col-xs-12 skills-header">
           <span class="col-xs-5 skill-header">Name:</span>
@@ -2977,7 +3121,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit name -->
     <span class="edit-character" id="editNameContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('name')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('name')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 edit-name-body">
         <label for="nameInput">Name:</label><br>
         <input class="sw-input" type="text" id="nameInput" name="nameInput" value="{{data.character.name}}"/>
@@ -2990,7 +3134,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit force rating -->
     <span class="edit-character" id="editForceRatingContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('forceRating')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('forceRating')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 edit-force-rating-body">
         <label for="forceRatingInput">Force Rating:</label><br>
         <input class="sw-input" type="text" id="forceRatingInput" name="forceRatingInput" value="{{data.character.forceRatingString}}" inputmode="numeric" pattern="[0-9]*">
@@ -3003,7 +3147,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- meditate/buy force powers and enhancements-->
     <span class="edit-character" id="editForcePowersContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('forcePowers')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('forcePowers')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 force-powers-body">
         <label for="forcePowerFilterSelect">Power or Enhancement:</label>
         <select class="sw-input" name="forcePowerFilterSelect" id="forcePowerFilterSelect" ng-change="toggleForce()" ng-model="Powers">
@@ -3042,7 +3186,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- shop vehicles -->
     <span class="edit-character" id="editVehiclesContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('vehicles')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('vehicles')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 vehicle-filter">
         <label for="vehicleFilterSelect">Type: </label>
         <select class="sw-input" name="vehicleFilterSelect" id="vehicleFilterSelect" ng-change="filterVehicle()" ng-model="All">
@@ -3098,7 +3242,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit talents -->
     <span class="edit-character" id="editTalentsContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('talents')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('talents')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 purchase-talents-body">
         <span class="col-xs-12 talents-headers">
           <span class="col-xs-6 talent-header">Name:</span>
@@ -3128,7 +3272,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit credits -->
     <span class="edit-character" id="editCreditsContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('credits')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('credits')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 edit-name-body">
         <label for="creditsInput">Credits:</label><br>
         <input class="sw-input" type="text" id="creditsInput" name="creditsInput" inputmode="numeric" pattern="[0-9]*" value="{{data.character.creditsString}}"/>
@@ -3141,7 +3285,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit gear quantity -->
     <span class="edit-character" id="editGearQuantityContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearQuantity')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearQuantity')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 edit-gear-quantity-body">
         <span class="col-xs-12 marketplace-headers">
           <span class="col-xs-8 marketplace-header">Item:</span>
@@ -3160,7 +3304,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit gear/marketplace -->
     <span class="edit-character" id="marketplaceContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('gear')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('gear')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 marketplace-body">
         <span class="col-xs-12 filter-buttons">
           <label for="gearFilterSelect">Type: </label>
@@ -3192,7 +3336,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit character gear -->
     <span class="edit-character" id="editGearDetailsContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearEdit')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearEdit')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 cg-name text-center">{{data.currentGear.name}}<br><text class="star-wars-text">{{data.currentGear.name}}</text></span>
       <span class="col-xs-12 cg-edit-body">
         <span class="col-xs-12 col-md-4 gear-edit-input">
@@ -3242,7 +3386,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit other gear -->
     <span class="edit-character" id="editOtherGearDetailsContainer">
-      <span class="col-xs-12 close-button" ng-click="closeEditContainer('otherGear')"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('otherGear')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 description-field">
         <label for="otherGearInput">Other Gear:</label><br>
         <textarea class="sw-input" type="text" id="otherGearInput" name="otherGearInput"></textarea>
@@ -3255,7 +3399,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit soak -->
     <span class="edit-character" id="editSoakContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('soak')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('soak')"><i class="fas fa-times slideout-close-icon"></i></span>
     	<span class="col-xs-12 edit-soak-body">
         <label for="soakInput">Soak:</label><br>
         <input class="sw-input" type="text" id="soakInput" name="soakInput" inputmode="numeric" patter="[0-9]*" value="{{data.character.soakString}}"/>
@@ -3268,7 +3412,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit wounds -->
     <span class="edit-character" id="editWoundsContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('wounds')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('wounds')"><i class="fas fa-times slideout-close-icon"></i></span>
     	<span class="col-xs-12 edit-wounds-body">
         <span class="col-xs-12 col-md-4">
         	<label for="woundThresholdInput">Wounds Threshold:</label><br>
@@ -3287,7 +3431,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit strain -->
     <span class="edit-character" id="editStrainContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('strain')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('strain')"><i class="fas fa-times slideout-close-icon"></i></span>
     	<span class="col-xs-12 edit-wounds-body">
         <span class="col-xs-12 col-md-4">
         	<label for="strainThresholdInput">Strain Threshold:</label><br>
@@ -3306,7 +3450,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit defense -->
     <span class="edit-character" id="editDefenseContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('defense')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('defense')"><i class="fas fa-times slideout-close-icon"></i></span>
     	<span class="col-xs-12 edit-wounds-body">
         <span class="col-xs-12 col-md-4">
         	<label for="rangedDefenseInput">Ranged Defense:</label><br>
@@ -3325,7 +3469,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
     </span>
     <!-- edit characteristics -->
     <span class="edit-character" id="editCharacteristicsContainer">
-    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('characteristics')"><i class="fas fa-times"></i></span>
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('characteristics')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12 edit-characteristics-body">
         <span class="col-xs-12 col-md-4">
           <label for="brawn">Brawn:</label><br>

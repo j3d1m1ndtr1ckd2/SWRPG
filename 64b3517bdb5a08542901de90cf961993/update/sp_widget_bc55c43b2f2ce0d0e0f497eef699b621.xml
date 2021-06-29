@@ -33,6 +33,7 @@
 			var tempArray = [];
 			var resultString = '';
 			var rolledString = 'Dice Rolled: ';
+			var individualDiceResultString = '';
 			var boostRolled = 0;
 			var abilityRolled = 0;
 			var proficiencyRolled = 0;
@@ -46,8 +47,10 @@
 				for(var j = 0; j < $scope.data.dice.length; j++){
 					if($scope.data.dice[j].name == $scope.data.dicePool[i].name && $scope.data.dicePool[i].name != 'crit'){
 						if(resultString == ''){
+							individualDiceResultString = $scope.data.dice[j].name + ' die: ' + $scope.data.dice[j][roll.toString()];
 							resultString = $scope.data.dice[j][roll.toString()];
 						} else{
+							individualDiceResultString += '\n' + $scope.data.dice[j].name + ' die: ' + $scope.data.dice[j][roll.toString()];
 							resultString += ',' + $scope.data.dice[j][roll.toString()];
 						}
 					} else if($scope.data.dice[j].name == $scope.data.dicePool[i].name && $scope.data.dicePool[i].name == 'crit'){
@@ -262,7 +265,8 @@
 				$scope.data.displayResults.push(drObj);
 			}
 			
-		c.server.get({action: 'updateJournal', result: $scope.data.displayResults, rolled: rolledString});
+		individualDiceResultString += '\nSuccesses: ' + successes + ', Failures: ' + failures + ', Advantage: ' + advantage + ', Threat: ' + threat + ', Triumph: ' + triumph + ', Despair: ' + despair;
+		c.server.get({action: 'updateJournal', result: $scope.data.displayResults, rolled: rolledString, fullResult: individualDiceResultString});
 		} catch(e){
 			alert(e.message);
 		}
@@ -520,7 +524,7 @@
 			}
 			var session = new GlideRecord('x_176383_star_wars_game_session');
 			session.get($sp.getParameter('sys_id'));
-			session.dice_roll_history = input.rolled + '\n\n' + resultString;
+			session.dice_roll_history = input.rolled + '\n\nIndividual Dice Results:\n' + input.fullResult + '\n\nNet Result:\n' + resultString;
 			session.update();
 		}
 	}
@@ -531,7 +535,7 @@
         <sys_created_on>2020-11-24 15:52:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bc55c43b2f2ce0d0e0f497eef699b621</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>136</sys_mod_count>
         <sys_name>Star Wars RPG Dice Roller</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -539,7 +543,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_bc55c43b2f2ce0d0e0f497eef699b621</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-03-04 04:26:51</sys_updated_on>
+        <sys_updated_on>2021-06-29 13:54:22</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

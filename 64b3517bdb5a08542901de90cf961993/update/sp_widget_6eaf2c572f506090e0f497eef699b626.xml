@@ -17,6 +17,16 @@
 			}
 			break;
 				
+			case 'hp':
+			var container = document.getElementById('editVehicleHP');
+			container.style.display = 'inline';
+			if(parseInt(screen.width) < 762){
+				container.style.width = '80%';
+			} else{
+				container.style.width = '40%';
+			}
+			break;
+				
 			case 'speed':
 			var container = document.getElementById('editVehicleSpeed');
 			container.style.display = 'inline';
@@ -110,6 +120,10 @@
 			container = document.getElementById('editVehicleName');
 			break;
 				
+			case 'hp':
+			container = document.getElementById('editVehicleHP');
+			break;
+				
 			case 'speed':
 			container = document.getElementById('editVehicleSpeed');
 			break;
@@ -157,6 +171,14 @@
 			c.server.get({action: 'saveName', name: name}).then(function(response){
 				c.server.refresh();
 				$scope.closeEditContainer('name');
+			});
+			break;
+				
+			case 'hp':
+			var hp = parseInt(document.getElementById('vehicleHPInput').value);
+			c.server.get({action: 'saveHP', hp: hp}).then(function(response){
+				c.server.refresh();
+				$scope.closeEditContainer('hp');
 			});
 			break;
 				
@@ -562,6 +584,10 @@ label,.sw-input{
     padding-left:2px;
   }
   
+  .mods-container{
+  	padding-top:0 !important;
+  }
+  
   .weapons-body,.weapon-headers,.weapon-header{
   	padding:0;
     font-size:13px;
@@ -603,7 +629,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		shipName: vehicleGR.vehicle.ship_name + '',
 		type: vehicleGR.vehicle.type.getDisplayValue(),
 		silhouette: vehicleGR.vehicle.silhouette + '',
-		hp: vehicleGR.vehicle.hard_points + '',
+		hp: vehicleGR.hard_points + '',
 		armor: vehicleGR.armor + '',
 		speed: vehicleGR.speed + '',
 		handling: vehicleGR.handling + '',
@@ -620,6 +646,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		description: vehicleGR.vehicle.description + '',
 		notes: vehicleGR.vehicle.notes + '',
 		vehicleSysId: vehicleGR.vehicle.sys_id + '',
+		characterVehicleSysId: vehicleGR.sys_id + '',
 		cargo: vehicleGR.cargo_hold + '',
 		crits: vehicleGR.critical_injuries + ''
 	};
@@ -636,11 +663,12 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		data.vehicle.navicomputer = 'No';
 	}
 	
-	var vehicleGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
-	vehicleGear.addQuery('vehicle', data.vehicle.vehicleSysId);
+	var vehicleGear = new GlideRecord('x_176383_star_wars_character_vehicle_gear');
+	vehicleGear.addQuery('character_vehicle', data.vehicle.characterVehicleSysId);
 	vehicleGear.orderBy('gear.name');
 	vehicleGear.query();
 	data.vehicleGear = [];
+	data.vehicleMods = [];
 	while(vehicleGear.next()){
 		var obj = {
 			name: vehicleGear.gear.getDisplayValue(),
@@ -649,23 +677,26 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 			damage: vehicleGear.gear.base_damage + '',
 			crit: vehicleGear.gear.critical_rating + '',
 			range: vehicleGear.gear.range.getDisplayValue(),
-			//mountLocation: vehicleGear.mount_location.getDisplayValue(),
-			//fireArc: vehicleGear.fire_arc.getDisplayValue(),
+			type: vehicleGear.gear.type + '',
 			specials: 'Mounted: ' + vehicleGear.mount_location.getDisplayValue() + '; Fire Arc: ' + vehicleGear.fire_arc.getDisplayValue()
 		};
-		
-		var gearSpecial = new GlideRecord('x_176383_star_wars_vehicle_gear_quality');
-		gearSpecial.addQuery('vehicle_gear', obj.sysID);
-		gearSpecial.orderBy('weapon_quality.name');
-		gearSpecial.query();
-		while(gearSpecial.next()){
-			if(obj.specials == ''){
-				obj.specials = gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
-			} else{
-				obj.specials += '; ' + gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
+		if(obj.type == 'vehicle_weapon'){
+			var gearSpecial = new GlideRecord('x_176383_star_wars_character_vehicle_gear_quality');
+			gearSpecial.addQuery('vehicle_gear', obj.sysID);
+			gearSpecial.orderBy('weapon_quality.name');
+			gearSpecial.query();
+			while(gearSpecial.next()){
+				if(obj.specials == ''){
+					obj.specials = gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
+				} else{
+					obj.specials += '; ' + gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
+				}
 			}
+			data.vehicleGear.push(obj);
+		} else{
+			obj.description = vehicleGear.gear.description_html + '';
+			data.vehicleMods.push(obj);
 		}
-		data.vehicleGear.push(obj);
 	}
 	
 	data.player = vehicleGR.character.player.sys_id + '';
@@ -674,6 +705,11 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		switch(input.action){
 			case 'saveName':
 			vehicleGR.name = input.name;
+			vehicleGR.update();
+			break;
+				
+			case 'saveHP':
+			vehicleGR.hard_points = input.hp;
 			vehicleGR.update();
 			break;
 				
@@ -733,7 +769,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>211</sys_mod_count>
+        <sys_mod_count>220</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -741,7 +777,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-03-04 04:26:34</sys_updated_on>
+        <sys_updated_on>2021-07-06 18:34:33</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -754,7 +790,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
     <span class="col-xs-12 col-md-8 star-wars-text">{{data.vehicle.nickName}}</span>
     <span class="col-xs-12 col-md-8 vehicle-main-info">Ship: {{data.vehicle.shipName}}</span>
     <span class="col-xs-12 col-md-8 vehicle-main-info">Type: {{data.vehicle.type}}</span>
-    <span class="col-xs-12 col-md-8 vehicle-main-info">Hard Points: {{data.vehicle.hp}}</span>
+    <span class="col-xs-12 col-md-8 vehicle-main-info" ng-click="editVehicle('hp')">Hard Points: {{data.vehicle.hp}}</span>
   </div>
   <div class="col-xs-12 vehicle-characteristic-body">
     <span class="col-xs-12 characteristics-header">Characteristics<br><text class="star-wars-text">Characteristics</text></span>
@@ -825,6 +861,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
       </span>
      </span>
   </div>
+  <!-- vehicle weapons-->
   <div class="col-xs-12 weapons-container">
     <span class="col-xs-12 weapons-header">Weapons<br><text class="star-wars-text">Weapons</text></span>
     <span class="col-xs-12 weapons-body">
@@ -844,6 +881,21 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
       </span>
     </span>
   </div>
+  <!-- vehicle mods -->
+  <div class="col-xs-12 weapons-container mods-container">
+    <span class="col-xs-12 weapons-header">Vehicle Mods<br/><text class="star-wars-text">Vehicle Mods</text></span>
+    <span class="col-xs-12 weapons-body">
+      <span class="col-xs-12 weapon-headers">
+        <span class="col-xs-2 weapon-header">Mod</span>
+        <span class="col-xs-10 weapon-header">Description</span>
+      </span>
+      <span class="col-xs-12 weapons" ng-repeat="m in data.vehicleMods">
+        <span class="col-xs-2 weapon-detail">{{m.name}}</span>
+        <span class="col-xs-10 weapon-detail" ng-bind-html="m.description"></span>
+      </span>
+    </span>
+  </div>
+  <!-- cargo hold -->
   <div class="col-xs-12 cargo-hold-container">
     <span class="col-xs-12 cargo-hold-header text-center">Cargo Hold<br><text class="star-wars-text">Cargo Hold</text></span>
     <span class="col-xs-12 cargo-hold-body">
@@ -858,12 +910,25 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 <span class="edit-vehicle" id="editVehicleName">
 	<span class="col-xs-12 close-button" ng-click="closeEditContainer('name')"><i class="fas fa-times"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
-    <label for="vehicleNameInput">Name/Transponder Code:</label>
+    <label for="vehicleNameInput">Name/Transponder Code:</label><br/>
     <input class="sw-input" type="text" id="vehicleNameInput" name="vehicleNameInput" value="{{data.vehicle.nickName}}"/>
   </span>
   <span class="col-xs-12 save-edits">
   	<span class="col-xs-12 save-button-container">
     	<button class="save-edits-button" ng-click="saveEdits('name')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+    </span>
+  </span>
+</span>
+<!-- edit vehicle hard points -->
+<span class="edit-vehicle" id="editVehicleHP">
+	<span class="col-xs-12 close-button" ng-click="closeEditContainer('hp')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 edit-vehicle-info-container">
+    <label for="vehicleHPInput">Hard Points:</label><br/>
+    <input class="sw-input" type="text" id="vehicleHPInput" name="vehicleHPInput" value="{{data.vehicle.hp}}"/>
+  </span>
+  <span class="col-xs-12 save-edits">
+  	<span class="col-xs-12 save-button-container">
+    	<button class="save-edits-button" ng-click="saveEdits('hp')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
     </span>
   </span>
 </span>

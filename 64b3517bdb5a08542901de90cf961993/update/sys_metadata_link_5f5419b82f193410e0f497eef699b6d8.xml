@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>228f05742f193410e0f497eef699b662</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_species"&gt;
+    &lt;x_176383_star_wars_species action="INSERT_OR_UPDATE"&gt;
+        &lt;agility&gt;2&lt;/agility&gt;
+        &lt;base_strain_threshold&gt;11&lt;/base_strain_threshold&gt;
+        &lt;base_wound_threshold&gt;11&lt;/base_wound_threshold&gt;
+        &lt;brawn&gt;2&lt;/brawn&gt;
+        &lt;cunning&gt;1&lt;/cunning&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;div&gt;&lt;strong&gt;Special Abilities:&lt;/strong&gt; Vurks begin the game with one rank in Negotiation. They still may not train Negotiation above rank 2 during character creation.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Amphibious:&lt;/strong&gt; Vurks can breathe underwater without penalty and never suffer movement penalties when traveling through water.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Cold Blooded:&lt;/strong&gt; Vurks add 1 setback die to all checks they make while in cold environments (in addition to any other penalties).&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;This reptilian race has extended their nomadic tradition to the galaxy. Galactic society underestimates them due to&lt;/div&gt;
+&lt;div&gt;their lack of interest in heavy industrialization and technology.  They have. however, a complex system of personal governance and political involvement that baffles Core World politicians and philosophers.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Physiology:&lt;/strong&gt; Reptiles with dark, bulbous eyes and tall head crests, Vurks can breathe underwater as well as they can&lt;/div&gt;
+&lt;div&gt;breathe open air. The warm waters and atmosphere of their homeworld provide much-needed external energy for their metabolism. Although they can function away from such optimal conditions, Vurks do find cooler climates (and most spaceships) a bit uncomfortable. Most Vurks journeying offworld utilize a wide variety of tricks to maintain their body temperature, from wearing heavy clothing, using careful meditation, imbibing hot beverages continually  throughout the day, or retiring to a nice, hour-long warm bath.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Society:&lt;/strong&gt; Vurks are semi-nomadic, but in a different way than other species. It is not unusual for a Vurk community or a whole village to decide to move on, not only based on the changing of a season, but also for a philosophical need Instead of the village relocating together, each Vurk (and perhaps close friends or acquaintances, but not necessarily family) may choose to travel together. For all intents and purposes, that village no longer exists. Vurks instead integrate with other communities or form new ones based on needs and desires. It is not unusual to find a mature Vurk who has already been in half a dozen successful communities.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The galaxy considers them a primitive people, but Vurks have a sophisticated community and social status system&lt;/div&gt;
+&lt;div&gt;based on reputation.  Vurks judge each other by their individual accomplishments, deeds, and actions, and readily discuss those perceptions with other Vurks. They don&amp;#39;t consider this gossip or idle chatter, but part of the process of being in a community. Of course, two Vurks may perceive a third Vurk in two different ways, but none of them see this as a negative. After all. no individuals see things in the exact same way. Vurks don&amp;#39;t expect outsiders to  participate, but those traveling offworld naturally extend this practice to friends and loved ones.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;This discussion of reputation and perception leads to continual interpersonal conflicts where two or more Vurks may disagree on social or economic matters. These conflicts then lead to compromises or experiments where Vurks try&lt;/div&gt;
+&lt;div&gt;one solution before attempting another. In the end , these discussions lead to a set of casual rules governing behavior for each community, prompting even more discussion. Those who don&amp;#39;t participate in the dialogue either choose to go with the majority or simply leave to found a new community.  While this social structure may seem anarchic, Vurks don&amp;#39;t object to laws or social structures per se; they simply believe that these concepts are things to be discussed and negotiated on a case-by-case basis.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Each time a Vurk integrates or forms into a new community, a new discussion over mores and consent develops. Those who disagree, leave. Those who agree. stay. This social and cultural practice has developed and changed for as long as Vurks have had recorded history. To outsiders, this makes Vurks appear mercurial or constantly changing in ethics and morals. In reality, Vurks constantly question concepts of ethics and morals in order to understand where they stand.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;There are outliers, of course. There are those who intentionally break these social or cultural mores. those who withhold information and lie in order to gain some form of advantage, and those who commit violence to resolve their issues.  These individuals gain a reputation that gets passed on to each community they encounter. Eventually, these outliers get exiled, effectively turning them into a community of one.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Homeworld:&lt;/strong&gt; Sembla (or Utavurk) is located in the Outer Rim. in the Mahrusha sector. at the far end of the Perlemian Trade Route. With four moons, tidal stresses keep the Vurk homeworld tectonically active, with shallow seas and volcanic islands.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Because Sembla doesn&amp;#39;t sit near any major or minor trade routes, ships hardly travel there. The planet has been historically isolated from all of the Galactic Republic&amp;#39;s wars. Some Imperial scientists, however, have established a research base to study Sembla as a source of geothermal energy and to experiment with the planet&amp;#39;s unique magnetic magma.  As a result, the Imperials have also undertaken strip-mining operations to build and power the base, pressing Vurks into a cheap source of labor and destroying nearby islands in the process.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The Empire doesn&amp;#39;t respect the working conditions the Vurks must endure, and various pockets of resistance have&lt;/div&gt;
+&lt;div&gt;appeared throughout the homeworld. Vurks on the other side of the planet don&amp;#39;t see the results of Imperial power&lt;/div&gt;
+&lt;div&gt;and have not decided yet to take up arms. In this case, the habit the Vurks have of discussing and witnessing firsthand an individual&amp;#39;s bad actions may not be fast enough to unite the planet against the Empire.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Language:&lt;/strong&gt; On their homeworld, Vurks speak primarily Semblan. There are of course several hundred dialects and unrelated languages, but ages ago, through an intense period of planet-wide discussion, the majority of Vurks  decided on Semblan as their language. (As a consequence, they also changed the name of their homeworld from Utavurk to Sembla to reflect this decision.) Plenty of Vurks disagreed and thus formed communities that speak other languages. Those who journey offworld, however, learn Basic.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Perception of the Force:&lt;/strong&gt; Describing the Force as water or a river fits well with Vurks, who not only live on an aquatic world, but have wandered their planet much like the rain, rivers, and oceans. While Vurks don&amp;#39;t have a specific connection to, or affinity for, the Force, certain concepts are easier for them to grasp due to their cultural background. Failure isn&amp;#39;t a setback, but simply a new experience. Pick up and move on.  This gives them an  openness to try something different or try again in a new way. a perfect attitude for a Mystic.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Of the Vurks who initially tried to join the Jedi Order, most failed due to the rigid discipline. Instead of becoming&lt;/div&gt;
+&lt;div&gt;bitter or discouraged, these petitioners merely saw this setback as part of their continual migration. Perhaps this&lt;/div&gt;
+&lt;div&gt;was not the community they should be joining at this time.  Oddly, a few of those who failed the initial tests later came back as better candidates.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;intellect&gt;2&lt;/intellect&gt;
+        &lt;name&gt;Vurk&lt;/name&gt;
+        &lt;number&gt;SPE0001082&lt;/number&gt;
+        &lt;portrait/&gt;
+        &lt;presence&gt;3&lt;/presence&gt;
+        &lt;skill_ranks/&gt;
+        &lt;skill_ranks_list&gt;d720d55cdbae88542901de90cf9619b9&lt;/skill_ranks_list&gt;
+        &lt;skills_choice/&gt;
+        &lt;starting_xp&gt;100&lt;/starting_xp&gt;
+        &lt;strain_calculation/&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-09 16:34:09&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;228f05742f193410e0f497eef699b662&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-09 16:53:38&lt;/sys_updated_on&gt;
+        &lt;talent_ranks/&gt;
+        &lt;willpower&gt;2&lt;/willpower&gt;
+        &lt;wound_calculation/&gt;
+    &lt;/x_176383_star_wars_species&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-09 16:54:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5f5419b82f193410e0f497eef699b6d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vurk</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_5f5419b82f193410e0f497eef699b6d8</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-09 16:54:26</sys_updated_on>
+        <tablename>x_176383_star_wars_species</tablename>
+    </sys_metadata_link>
+</record_update>

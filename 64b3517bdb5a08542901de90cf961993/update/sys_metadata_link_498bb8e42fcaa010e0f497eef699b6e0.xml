@@ -32,8 +32,7 @@
 &lt;div&gt;&lt;strong&gt;Consumables:&lt;/strong&gt; Two years.&lt;/div&gt;
 &lt;div&gt;&lt;strong&gt;Cost/Rarity:&lt;/strong&gt; 8,500,000 credits (R)/7.&lt;/div&gt;
 &lt;div&gt;&lt;strong&gt;Customization Hard Points:&lt;/strong&gt; 2&lt;/div&gt;
-&lt;div&gt;&lt;strong&gt;Weapons:&lt;/strong&gt; Six Port and Six Starboard Turret Mounted Retractable Medium Turbolasers (Fire Arc Forward, Aft, and Port or Forward, Aft and Starboard; Damage 10; Critical 3; Range [Long]; Breach 3, Slow-Firing 1), Three Port, Three Starboard, Three Forward, and Three Aft Turret Mounted Retractable Light Laser Cannons (Fire Arc Port or Starboard or Forward or Aft; Damage&lt;/div&gt;
-&lt;div&gt;5; Critical 3; Range [Close]), Three Forward Mounted Heavy Tractor Beam Emitters (Fire Arc Forward; Damage -; Critical -; Range [Medium]; Tractor 6).&lt;/div&gt;]]&gt;&lt;/notes&gt;
+&lt;div&gt;&lt;strong&gt;Weapons:&lt;/strong&gt; Six Port and Six Starboard Turret Mounted Retractable Medium Turbolasers (Fire Arc Forward, Aft, and Port or Forward, Aft and Starboard; Damage 10; Critical 3; Range [Long]; Breach 3, Slow-Firing 1), Three Port, Three Starboard, Three Forward, and Three Aft Turret Mounted Retractable Light Laser Cannons (Fire Arc Port or Starboard or Forward or Aft; Damage 5; Critical 3; Range [Close]), Three Forward Mounted Heavy Tractor Beam Emitters (Fire Arc Forward; Damage -; Critical -; Range [Medium]; Tractor 6).&lt;/div&gt;]]&gt;&lt;/notes&gt;
         &lt;number&gt;VEH0001063&lt;/number&gt;
         &lt;price&gt;8500000&lt;/price&gt;
         &lt;primary_hyperdrive_class&gt;2&lt;/primary_hyperdrive_class&gt;
@@ -46,9 +45,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2021-01-28 06:59:07&lt;/sys_created_on&gt;
         &lt;sys_id&gt;1b5970642fcaa010e0f497eef699b67e&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
         &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2021-01-28 06:59:07&lt;/sys_updated_on&gt;
+        &lt;sys_updated_on&gt;2021-01-30 02:36:33&lt;/sys_updated_on&gt;
         &lt;system_strain_current&gt;0&lt;/system_strain_current&gt;
         &lt;system_strain_threshold&gt;40&lt;/system_strain_threshold&gt;
         &lt;type&gt;capital_ship&lt;/type&gt;
@@ -60,15 +59,15 @@
         <sys_created_on>2021-01-28 07:03:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>498bb8e42fcaa010e0f497eef699b6e0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>VEH0001063</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>EF76 Nebulon-B Escort Frigate</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_498bb8e42fcaa010e0f497eef699b6e0</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-01-28 07:03:20</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-09 16:57:52</sys_updated_on>
         <tablename>x_176383_star_wars_vehicle</tablename>
     </sys_metadata_link>
 </record_update>

@@ -8,7 +8,7 @@
         <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
-        <advanced>false</advanced>
+        <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_176383_star_wars_character_vehicle</collection>
@@ -30,7 +30,32 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-
+var vehicleGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
+	vehicleGear.addQuery('vehicle', current.vehicle);
+	vehicleGear.addEncodedQuery('sys_class_name!=x_176383_star_wars_character_vehicle_gear^ORsys_class_name=NULL');
+	vehicleGear.query();
+var characterVehicleGear = new GlideRecord('x_176383_star_wars_character_vehicle_gear');
+	while(vehicleGear.next()){
+		characterVehicleGear.initialize();
+		characterVehicleGear.character_vehicle = current.sys_id.toString();
+		characterVehicleGear.fire_arc = vehicleGear.fire_arc;
+		characterVehicleGear.mount_location = vehicleGear.mount_location;
+		characterVehicleGear.quantity = vehicleGear.quantity;
+		characterVehicleGear.gear = vehicleGear.gear;
+		characterVehicleGear.vehicle = vehicleGear.vehicle;
+		characterVehicleGear.insert();
+		var vehicleGearQuality = new GlideRecord('x_176383_star_wars_vehicle_gear_quality');
+		vehicleGearQuality.addQuery('vehicle_gear', vehicleGear.sys_id);
+		vehicleGearQuality.query();
+		while(vehicleGearQuality.next()){
+			var characterVehicleGearQuality = new GlideRecord('x_176383_star_wars_character_vehicle_gear_quality');
+			characterVehicleGearQuality.initialize();
+			characterVehicleGearQuality.vehicle_gear = characterVehicleGear.sys_id.toString();
+			characterVehicleGearQuality.weapon_quality = vehicleGearQuality.weapon_quality;
+			characterVehicleGearQuality.rating = vehicleGearQuality.rating;
+			characterVehicleGearQuality.insert();
+		}
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -39,7 +64,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>49f531512f38a8d0e0f497eef699b6b4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Copy Vehicle Stats to Character Vehicle</sys_name>
         <sys_overrides/>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
@@ -47,8 +72,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_script_49f531512f38a8d0e0f497eef699b6b4</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-29 16:05:05</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-09 06:13:28</sys_updated_on>
         <template>armorSAMEASvehicle.armor^defense_aftSAMEASvehicle.defense_aft^defense_foreSAMEASvehicle.defense_fore^defense_portSAMEASvehicle.defense_port^defense_starboardSAMEASvehicle.defense_starboard^handlingSAMEASvehicle.handling^hull_trauma_thresholdSAMEASvehicle.hull_trauma_threshold^speedSAMEASvehicle.speed^system_strain_thresholdSAMEASvehicle.system_strain_threshold^EQ</template>
         <when>before</when>
     </sys_script>

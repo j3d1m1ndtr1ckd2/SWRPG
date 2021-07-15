@@ -570,7 +570,7 @@ data.displayCareers = data.careers;
 data.specializations = [];
 data.displaySpecs = [];
 var specs = new GlideRecord('x_176383_star_wars_career_specialization');
-specs.orderBy('career');
+specs.orderBy('career.name');
 specs.orderBy('name');
 specs.query();
 while(specs.next()){
@@ -635,7 +635,7 @@ data.displayWeaponQualities = data.weaponQualities;
 data.gear = [];
 data.displayGear = [];
 var gearGR = new GlideRecord('x_176383_star_wars_gear');
-gearGR.orderBy('type');
+//gearGR.orderBy('type');
 gearGR.orderBy('name');
 gearGR.query();
 while(gearGR.next()){
@@ -706,8 +706,8 @@ while(forceEnhancements.next()){
 data.vehicles = [];
 data.displayVehicles = [];
 var vehicle = new GlideRecord('x_176383_star_wars_vehicle');
-vehicle.orderBy('type');
-vehicle.orderBy('name');
+//vehicle.orderBy('type');
+vehicle.orderBy('ship_name');
 vehicle.query();
 while(vehicle.next()){
 	var v = {
@@ -747,6 +747,8 @@ while(vehicle.next()){
 	}
 	
 	var vGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
+	//vGear.addQuery('vehicle', v.sysID).addCondition('gear.type', 'vehicle_weapon').addCondition('sys_class_name', '!=', 'x_176383_star_wars_character_vehicle_gear');
+	vGear.addEncodedQuery('sys_class_name!=x_176383_star_wars_character_vehicle_gear^ORsys_class_name=NULL^gear.type=vehicle_weapon');
 	vGear.addQuery('vehicle', v.sysID);
 	vGear.orderBy('gear.name');
 	vGear.query();
@@ -765,7 +767,7 @@ data.displayVehicles = data.vehicles;
 data.galaxy = [];
 data.displayGalaxy = [];
 var galaxyGR = new GlideRecord('x_176383_star_wars_the_galaxy');
-galaxyGR.orderBy('sector');
+//galaxyGR.orderBy('sector');
 galaxyGR.orderBy('name');
 galaxyGR.query();
 var addToList = false;
@@ -808,7 +810,7 @@ while(sectorGR.next()){
         <sys_created_on>2020-12-02 04:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
-        <sys_mod_count>179</sys_mod_count>
+        <sys_mod_count>192</sys_mod_count>
         <sys_name>Holocron</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -816,7 +818,7 @@ while(sectorGR.next()){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-04-05 15:25:05</sys_updated_on>
+        <sys_updated_on>2021-07-09 20:16:52</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -922,6 +924,7 @@ while(sectorGR.next()){
         <option value="Gear">Gear</option>
         <option value="Black Market Items">Black Market Items</option>
         <option value="Mod">Mod</option>
+        <option value="Vehicle Mod">Vehicle Mod</option>
         <option value="Lightsaber Attachment">Lightsaber Attachments</option>
       </select>
     </div>
@@ -955,6 +958,7 @@ while(sectorGR.next()){
         <option value="all">All</option>
         <option value="Airspeeder">Airspeeder</option>
         <option value="Landspeeder">Landspeeder</option>
+        <option value="Water Vehicle">Water Vehicle</option>
         <option value="Wheeled or Tracked">Wheeled or Tracked</option>
         <option value="Walker">Walker</option>
         <option value="Starfighter or Patrol Boat">Starfighter or Patrol Boat</option>

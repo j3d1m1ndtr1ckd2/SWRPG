@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="character_vehicle" label="Character Vehicle" language="en" table="x_176383_star_wars_character_vehicle_gear">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>character_vehicle</element>
+            <help/>
+            <hint/>
+            <label>Character Vehicle</label>
+            <language>en</language>
+            <name>x_176383_star_wars_character_vehicle_gear</name>
+            <plural>Character Vehicles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2021-07-04 05:12:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bfc309832f4df010e0f497eef699b667</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Character Vehicle</sys_name>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_documentation_x_176383_star_wars_character_vehicle_gear_character_vehicle_en</sys_update_name>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2021-07-04 05:12:45</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

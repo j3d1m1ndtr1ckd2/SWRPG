@@ -3,84 +3,84 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>character</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-29 15:55:24</sys_created_on>
-            <sys_id>cee5fd112f38a8d0e0f497eef699b671</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2021-07-06 18:24:51</sys_created_on>
+            <sys_id>a24cc6bb2f053010e0f497eef699b6f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_vehicle" sys_domain="global" view="Default view">bfd13bb62f1cec50e0f497eef699b658</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-29 15:55:24</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2021-07-06 18:24:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-29 15:55:24</sys_created_on>
-            <sys_id>46e5fd112f38a8d0e0f497eef699b672</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2021-07-06 18:24:51</sys_created_on>
+            <sys_id>2a4cc6bb2f053010e0f497eef699b6f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_vehicle" sys_domain="global" view="Default view">bfd13bb62f1cec50e0f497eef699b658</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-29 15:55:24</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2021-07-06 18:24:51</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>vehicle</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-29 15:55:24</sys_created_on>
-            <sys_id>cae5fd112f38a8d0e0f497eef699b672</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2021-07-06 18:24:51</sys_created_on>
+            <sys_id>ea4c0abb2f053010e0f497eef699b67e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_vehicle" sys_domain="global" view="Default view">bfd13bb62f1cec50e0f497eef699b658</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-29 15:55:24</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2021-07-06 18:24:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-29 15:55:24</sys_created_on>
-            <sys_id>42e5fd112f38a8d0e0f497eef699b673</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2021-07-06 18:24:51</sys_created_on>
+            <sys_id>624c0abb2f053010e0f497eef699b67f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_vehicle" sys_domain="global" view="Default view">bfd13bb62f1cec50e0f497eef699b658</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-29 15:55:24</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2021-07-06 18:24:51</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-11-29 15:55:24</sys_created_on>
-            <sys_id>c6e5fd112f38a8d0e0f497eef699b673</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2021-07-06 18:24:51</sys_created_on>
+            <sys_id>e64c0abb2f053010e0f497eef699b67f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_vehicle" sys_domain="global" view="Default view">bfd13bb62f1cec50e0f497eef699b658</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-11-29 15:55:24</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2021-07-06 18:24:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cargo_hold</element>
             <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-12-31 17:31:29</sys_created_on>
-            <sys_id>7dceb2eb2fd9ec10e0f497eef699b69c</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2021-07-06 18:24:51</sys_created_on>
+            <sys_id>6e4c0abb2f053010e0f497eef699b67f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_vehicle" sys_domain="global" view="Default view">bfd13bb62f1cec50e0f497eef699b658</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-12-31 17:31:29</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2021-07-06 18:24:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>critical_injuries</element>
             <position>6</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-03-02 15:47:53</sys_created_on>
-            <sys_id>620074db2feeec10e0f497eef699b6cb</sys_id>
+            <sys_created_on>2021-07-06 18:24:51</sys_created_on>
+            <sys_id>e24c0abb2f053010e0f497eef699b680</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_vehicle" sys_domain="global" view="Default view">bfd13bb62f1cec50e0f497eef699b658</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-03-02 15:47:53</sys_updated_on>
+            <sys_updated_on>2021-07-06 18:24:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

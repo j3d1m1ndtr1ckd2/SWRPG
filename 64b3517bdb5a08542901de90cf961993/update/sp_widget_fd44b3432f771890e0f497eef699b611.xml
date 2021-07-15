@@ -10,6 +10,20 @@
 		$location.search('spa', 1);
 	}
 	
+	$scope.searchSpecies = function(){
+		var search = document.getElementById('searchBox').value.toLowerCase();
+		if(search == ''){
+			$scope.data.displaySpecies = $scope.data.species;
+		} else{
+			$scope.data.displaySpecies = [];
+			for(var i = 0; i < $scope.data.species.length; i++){
+				if($scope.data.species[i].name.toLowerCase().indexOf(search) > -1){
+					$scope.data.displaySpecies.push($scope.data.species[i]);
+				}
+			}
+		}
+	}
+	
 	$scope.openLargeImage = function(img){
 		$scope.data.currentImage = img;
 		spUtil.update($scope);
@@ -604,6 +618,11 @@
 	margin-bottom:50px;
 }
 
+#searchBox{
+	margin-top:40px;
+  margin-left:70%;
+}
+
 .header-container{
 	text-align:center;
   margin-bottom:50px;
@@ -1075,6 +1094,10 @@ input{
 }
 
 @media only screen and (max-width:762px){  
+  #searchBox{
+   margin-left: 0; 
+  }
+  
   .investment-tab-header{
   	word-break: break-word;
   }
@@ -1158,6 +1181,7 @@ input{
   .characteristic{
   	margin-right:0;
   }
+}
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -1180,6 +1204,7 @@ data.characterName = $sp.getParameter('character_name') || '';
 	
 if(data.step == 1){
 	data.species = [];
+	data.displaySpecies = [];
 	var species = new GlideRecord('x_176383_star_wars_species');
 	species.orderBy('name');
 	species.query();
@@ -1201,6 +1226,7 @@ if(data.step == 1){
 		};
 		data.species.push(rec);
 	}
+	data.displaySpecies = data.species;
 } else if(data.step == 2){
 	data.careers = [];
 	var career = new GlideRecord('x_176383_star_wars_career');
@@ -1618,7 +1644,7 @@ if(data.step == 1){
         <sys_created_on>2020-10-16 18:34:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd44b3432f771890e0f497eef699b611</sys_id>
-        <sys_mod_count>734</sys_mod_count>
+        <sys_mod_count>751</sys_mod_count>
         <sys_name>Star Wars Character Creator</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -1626,7 +1652,7 @@ if(data.step == 1){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_fd44b3432f771890e0f497eef699b611</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-06-24 16:26:48</sys_updated_on>
+        <sys_updated_on>2021-07-15 17:25:16</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -1640,8 +1666,13 @@ if(data.step == 1){
   <!-- choosing species -->
   <div ng-if="data.step == 1" class="col-xs-12 species-selection-container">
     <div class="col-xs-12 character-name-container">
-    	<label id="characterNameLabel" for="characterName">Character Name:</label><br>
-    	<input type="text" ng-blur="stashName()" id="characterName" name="characterName" value="{{data.characterName}}"><br><br>
+      <span class="col-xs-12 col-md-6">
+    		<label id="characterNameLabel" for="characterName">Character Name:</label><br>
+    		<input type="text" ng-blur="stashName()" id="characterName" name="characterName" value="{{data.characterName}}"><br><br>
+      </span>
+      <span class="col-xs-12 col-md-6">
+        <input id="searchBox" class="sw-input" type="text" ng-keyup="searchSpecies()" placeholder="Search"/>
+      </span>
     </div>
     <div class="col-xs-12 species-list-container">
       <div class="col-xs-12 header-container">
@@ -1649,7 +1680,7 @@ if(data.step == 1){
         <h4 class="star-wars-text">Choose a Species</h4>
       </div>
       <div class="col-xs-12 species-list">
-        <span class="col-xs-12 species-record" ng-repeat="s in data.species">
+        <span class="col-xs-12 species-record" ng-repeat="s in data.displaySpecies">
           <span class="col-xs-3 species-image"><img ng-click="openLargeImage(s.image)" height="85px" width="50px" src="{{s.image}}"/><i class="fas fa-expand-alt" ng-click="openLargeImage(s.image)"></i></span>
           <span class="col-xs-6 species-name">{{s.name}}</span><br>
           <span class="col-xs-6 star-wars-text species-name-sw">{{s.name}}</span>

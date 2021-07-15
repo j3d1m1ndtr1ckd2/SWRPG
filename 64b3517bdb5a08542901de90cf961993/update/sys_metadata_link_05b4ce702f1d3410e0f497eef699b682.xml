@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c8a78a722fcdb010e0f497eef699b680</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;0&lt;/base_damage&gt;
+        &lt;critical_rating/&gt;
+        &lt;defense/&gt;
+        &lt;description/&gt;
+        &lt;description_html&gt;&lt;![CDATA[Upon installation of the turret link module, a mechanic must select which two turrets are linked. 
+
+When operating one of the linked turrets, the gunner may spend a maneuver to activate turret link module, allowing him to control both turrets simultaneously.
+
+On a hit, player may spend 3 adv or 1 triumph to make a second attack roll for the paired weapons. 
+
+If another player enters the unoccupied gunner seat, one pc must spend another maneuver to deactivate the link module or the second player is locked out of gun controls.]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance/&gt;
+        &lt;hard_points/&gt;
+        &lt;hp_required&gt;1&lt;/hp_required&gt;
+        &lt;name&gt;Turret Link Module&lt;/name&gt;
+        &lt;number&gt;GEAR0001200&lt;/number&gt;
+        &lt;price&gt;10000&lt;/price&gt;
+        &lt;range/&gt;
+        &lt;rarity&gt;10&lt;/rarity&gt;
+        &lt;skill_used/&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_gear&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-03 15:35:28&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c8a78a722fcdb010e0f497eef699b680&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-03 15:35:28&lt;/sys_updated_on&gt;
+        &lt;type&gt;vehicle_mod&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-09 20:25:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>05b4ce702f1d3410e0f497eef699b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Turret Link Module</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_05b4ce702f1d3410e0f497eef699b682</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-09 20:25:38</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

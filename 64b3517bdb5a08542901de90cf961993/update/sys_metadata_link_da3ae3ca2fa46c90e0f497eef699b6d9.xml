@@ -7,6 +7,7 @@
         <item display_value="Cortosis Sword">a077c0862fe42c90e0f497eef699b698</item>
         <number>GS0001109</number>
         <rank/>
+        <sys_class_name/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-19 05:34:01</sys_created_on>
         <sys_id>7cc7c8ca2fe42c90e0f497eef699b6fa</sys_id>
@@ -22,15 +23,15 @@
         <sys_created_on>2020-11-19 22:03:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>da3ae3ca2fa46c90e0f497eef699b6d9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>GS0001109</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_da3ae3ca2fa46c90e0f497eef699b6d9</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 22:03:20</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-09 20:21:35</sys_updated_on>
         <tablename>x_176383_star_wars_gear_special</tablename>
     </sys_metadata_link>
 </record_update>

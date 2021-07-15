@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ea3b37ae2f113010e0f497eef699b6ba</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_species"&gt;
+    &lt;x_176383_star_wars_species action="INSERT_OR_UPDATE"&gt;
+        &lt;agility&gt;3&lt;/agility&gt;
+        &lt;base_strain_threshold&gt;10&lt;/base_strain_threshold&gt;
+        &lt;base_wound_threshold&gt;9&lt;/base_wound_threshold&gt;
+        &lt;brawn&gt;2&lt;/brawn&gt;
+        &lt;cunning&gt;2&lt;/cunning&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Claws:&lt;/strong&gt; Deal &amp;#43;1 Brawl damage as wounds and have a crit rating of 3.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Regeneration:&lt;/strong&gt; When recovering 1 or more wounds through natural rest or a bacta tank, recover 1 additional wound.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;div&gt;Disciplined yet ferocious felines with sharp claws and fast healing, Cathar have a history as warriors, although they were once devastated by Mandalorians. They are religious and value honor.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Physiology:&lt;/strong&gt; The Cathar are predatory felines who have great instincts as warriors. Though not incredibly large, they are fast and possess excellent reflexes. Further making them formidable in combat are their retractable claws and great healing abilities. They have pointed ears, a mane around their head, sharp teeth, and a black nose. Though their brown skin is similar in color&lt;/div&gt;
+&lt;div&gt;to fur, they do not have fur over the rest of their body. There are two other subspecies, the Juhani and the Myr Rho, both of which are more similar to humans in terms of looks.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Society:&lt;/strong&gt; Though Cathar are a passionate people known for their temper and emotions, they also strongly value honor and loyalty. They are as dedicated and as determined as anyone. They are organized into clans which are lead by “Elders.” These clans inhabit cities that are built into giant trees and have carvings that store their history. They greatly value monogamy, mating for life and never loving another, even for those whose spouses die. Their religion includes a ritual known as a “Blood Hunt.” In this dangerous rite of passage, a single Cathar goes into battle against a horde of kiltik. The kiltik are giant insectoids who are very dangerous. Blood Hunts are believed to teach courage and purge inner darkness, but they are also an important way to gain honor. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Homeworld:&lt;/strong&gt; The Cathar homeworld, Cathar, is a planet of mostly savannahs that is covered by giant trees. It is a dangerous world because of the giant kiltiks. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Language:&lt;/strong&gt; The Cathar mostly speak accented Basic in addition to knowing their native language, Catharese.&lt;/div&gt;]]&gt;&lt;/description&gt;
+        &lt;intellect&gt;1&lt;/intellect&gt;
+        &lt;name&gt;Cathar&lt;/name&gt;
+        &lt;number&gt;SPE0001084&lt;/number&gt;
+        &lt;portrait/&gt;
+        &lt;presence&gt;1&lt;/presence&gt;
+        &lt;skill_ranks/&gt;
+        &lt;skill_ranks_list/&gt;
+        &lt;skills_choice&gt;72705d5cdbae88542901de90cf9619f1,f7ffc9d8dbae88542901de90cf961925&lt;/skills_choice&gt;
+        &lt;starting_xp&gt;85&lt;/starting_xp&gt;
+        &lt;strain_calculation/&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-15 15:36:04&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;ea3b37ae2f113010e0f497eef699b6ba&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-15 15:36:04&lt;/sys_updated_on&gt;
+        &lt;talent_ranks/&gt;
+        &lt;willpower&gt;3&lt;/willpower&gt;
+        &lt;wound_calculation/&gt;
+    &lt;/x_176383_star_wars_species&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-15 15:39:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>19ac3fee2f113010e0f497eef699b6f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cathar</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_19ac3fee2f113010e0f497eef699b6f2</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-15 15:39:01</sys_updated_on>
+        <tablename>x_176383_star_wars_species</tablename>
+    </sys_metadata_link>
+</record_update>

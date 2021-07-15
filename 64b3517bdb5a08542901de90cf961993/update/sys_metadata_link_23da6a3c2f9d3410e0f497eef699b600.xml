@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>fe8632192fdbe010e0f497eef699b6ee</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_the_galaxy"&gt;
+    &lt;x_176383_star_wars_the_galaxy action="INSERT_OR_UPDATE"&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;img src="https://static.wikia.nocookie.net/starwars/images/1/1b/Pasaana-TROSGG.png/revision/latest/scale-to-width-down/500?cb&amp;#61;20200321022322" width="150" height="150" /&gt; The main economic activity on Pasaana was dust farming. Even though the Aki-Aki mostly reject all post-starflight technologies, this is a rare exception. The desert winds carry dangerous seeds spores blown from across the world. Specialized electro-sifters can pluck these from the gusts and drag them into the collection hoppers. These also contain moisture vaporators, allowing a grid of these to form an underground dust farm. The phedrugrass and termania-spore make up a large part of the Aki-Aki diet. The arid conditions though, do mean lots of land has to be used to yield crops. Many farmers make use of skimmers to cross their farms.&lt;/p&gt;
+&lt;p&gt;The Festival of the Ancestors is a legendary event, only held every 42 years that draws many people from afar. The Forbidden Valley is packed with 500,000 Aki-Aki and 5,000 off-worlders during this time. The lack of amenities, such as hotels, spaceports and restaurants, means that only the really desperate or really determined come here. Local chiefs hire mercenaries for security during this time. They scan the crowds, looking for other hired guns, or fugitives. The chiefs do not want to become involved in galactic affairs, but they do want to keep the celebration peaceful.&lt;/p&gt;
+&lt;p&gt;Under the surface of Pasaana&amp;#39;s deserts are a number of caves that connect to freshwater aquifers. However, a number of predators could be found in the caves; the threat they posed kept the Aki-Aki from overexploiting the water supply.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Pasaana&lt;/name&gt;
+        &lt;number&gt;GALAXY0001135&lt;/number&gt;
+        &lt;sector&gt;the_expansion_region&lt;/sector&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-04-03 03:16:07&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;fe8632192fdbe010e0f497eef699b6ee&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-04-03 03:16:07&lt;/sys_updated_on&gt;
+        &lt;u_campaigns/&gt;
+        &lt;u_groups/&gt;
+    &lt;/x_176383_star_wars_the_galaxy&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-09 23:12:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>23da6a3c2f9d3410e0f497eef699b600</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pasaana</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_23da6a3c2f9d3410e0f497eef699b600</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-09 23:12:23</sys_updated_on>
+        <tablename>x_176383_star_wars_the_galaxy</tablename>
+    </sys_metadata_link>
+</record_update>

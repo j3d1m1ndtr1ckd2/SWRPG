@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9fdbbf902f81f810e0f497eef699b624</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Playing the Game"&gt;8a5cab012f94b010e0f497eef699b62e&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;In addition to the fundamental concepts discussed previously in this chapter, there are several other&lt;/meta_description&gt;
+        &lt;number&gt;KB0010026&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-06-26&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Other Key Elements&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-06-26 05:54:03&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;9fdbbf902f81f810e0f497eef699b624&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-06-26 05:54:07&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;div&gt;In addition to the fundamental concepts discussed previously in this chapter, there are several other concepts that inform gameplay, advance the story, and help PCs overcome adversity. This section describes a number of these key elements, including character talents, Destiny Points, Obligation, experience and development, and derived attributes such as wound and strain thresholds.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;TALENTS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Where skills represent what a character knows, practiced disciplines, or applied experience to a topic, talents are a much broader class of special ability. Talents represent various tricks, techniques, and knacks characters pick up over their career, or reflect their sheer determination to get things done. Each talent is a distinct special ability that provides the character with an edge in certain situations. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;While characteristics and skills are fairly universal— every character has six characteristics, and everyone has access to all the skills—talents are far more specific.  Each career is defined by a series of unique talents bundled together in a format called talent trees.  These talent trees represent the specializations within each career, and help distinguish characters advancing along separate career paths. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Talents are divided into several categories and are either active or passive. Active talents typically require the player to state that his character is using them. Some active talents have a cost or requirement associated with them, such as investing a Destiny Point, suffering strain, or using it as part of an attack action. Other talents are passive, meaning they are always &amp;#34;on&amp;#34; and don&amp;#39;t need to be activated by the player. Passive talents either constantly provide their benefit, or are automatically triggered under certain circumstances.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Some talents belong to a series of related talents. These may either represent improved versions of lower level talents, or identical talents taken multiple times for a cumulative effect. In the former case, an improved version of a talent completely replaces the lower level version. In the latter case, the talent is measured with a series of ranks. The more times that talent is taken, the more ranks it has, and the greater the magnitude of its effects.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The majority of talents are specific to a character&amp;#39;s given profession. Talent trees represent the natural flow of learning and experience that a character gains throughout adventures. Talent trees are divided up into five tiers—the higher tiers representing remarkable abilities. Some talents may appear across multiple specializations, but at different tiers or costs.  There are also some special talent trees, such as Force Sensitivity, which are not tied to a specific profession or career, but function in much the same way.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;DESTINY POINTS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Player characters are cut from a different cloth than most NPCs that populate the galaxy. Not only do they have access to skills and special talents to help them succeed, PCs are intimately connected to destiny.  Destiny is that special spark that elevates heroes above commoners, imbuing an individual with enough significance in the galaxy&amp;#39;s events to be a Player Character.  Over the course of the PCs&amp;#39; adventures, destiny may intervene on their behalf for good or ill. Destiny may manifest in a positive way and provide a temporary advantage or boost to a PC&amp;#39;s abilities. Or destiny may prove an ill omen and impose additional hardships and complications.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The concept of destiny and the Player Characters&amp;#39; ability to tap into and influence this resource is represented by Destiny Points. Destiny is interwoven with the Force, which pervades the galaxy with both light energy and dark energy. Destiny is one way the Force guides and surrounds the characters.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Destiny Points are a resource that can be invested by either the players or the GM for a variety of different effects. For example, Destiny Points may be used to upgrade Ability dice or Difficulty dice, or trigger certain talents or special abilities. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;THE POOL OF DESTINY&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Like the Force, destiny has both a light side and a dark side. Light side Destiny Points favor the characters and can be used to aid them in their actions. Dark side Destiny Points impede the characters, and are used by the GM to imperil and complicate their actions.  However, the light side and dark side are two sides of the same coin, struggling for balance, enduring the other side&amp;#39;s strengths, and exploiting the other side&amp;#39;s weaknesses. As the pool of light side Destiny ebbs, the dark side&amp;#39;s Destiny pool grows. As dark side Destiny Points are consumed, light side Destiny Points are replenished.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;PREPARING THE DESTINY POOL&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;To determine the current Destiny pool, at the beginning of each game session, each player with a PC rolls one Force Die (the GM does not roll a force die).  The results of the Force dice are tallied to become the starting Destiny pool for that session. For example, if a player rolls one light side symbol, he adds one light side Destiny Point to the session&amp;#39;s Destiny pool.  If a player rolls two dark side symbols, he adds two dark side Destiny Points to the Destiny pool.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Once set, the size of the Destiny pool does not change for that session. Before the next session, players will roll and generate a new Destiny pool which may have a different number and composition of Destiny Points. While the Destiny pool size is fixed for a session, the number of light side and dark side Destiny Points available can change frequently as players and GM call on destiny to influence their actions. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;TRACKING DESTINY POINTS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Destiny Points can be easily tracked using the Destiny Point tokens found in one of the official game packs, or with gaming tokens, glass beads, using this apps campaign&amp;#39;s active sessions or using some other convenient method. Two-sided tokens or chips work especially well. Ideally, one side is colored or designated to represent light side Destiny Points, and the other side designated to represent dark side Destiny Points.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Another easy method involves using the group character sheet. This sheet has a light side and dark side circle on it for Destiny Points. Using a number of beads or tokens, players place the appropriate number of Destiny Points in the appropriate circle. As Destiny Points are used, the tokens are moved from one circle to the other. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;HOW DESTINY POINTS ARE USED&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;All players and the GM can tap into destiny by using the Destiny Points in the pool. There are several distinct ways players and GMs spend destiny. However, the Player Characters may only spend light side Destiny Points, and the GM may only spend dark side Destiny Points.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;When a player spends a light side Destiny Point, it is converted into a dark side Destiny Point after the current action is resolved. When the GM spends a dark side Destiny Point, it is then converted into a light side Destiny Point in the same fashion. Conversion takes place at the end of the action during which the Destiny Point was used, preventing players or GMs from immediately spending a just-converted Destiny Point. Destiny is a powerful resource, but it is limited. A player can only spend one light side Destiny Point during a single action, and so should think carefully about how they want to use their destiny before doing so. The GM likewise is limited to spending one dark side point per action.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The following section explains some of the ways in which Destiny Points can be used. Unless noted otherwise, either the players or the GM may use these options.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;A HELPING HAND&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;All characters have the opportunity to call on destiny to enhance any skill check they are about to attempt. A player may spend one Destiny Point to upgrade his starting dice pool by one step. This refers to upgrading an Ability die into the superior Proficiency die. The GM may spend a dark side Destiny Point in this way to upgrade one of his NPCs dice pools.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;RAISING THE STAKES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Destiny can also be used to help keep characters out of harm&amp;#39;s way. Characters can call on destiny to make an opponent&amp;#39;s skill check more challenging. A single player may spend one light side Destiny Point to upgrade the difficulty in any NPCs skill check by one step. This refers to upgrading a Difficulty die into the more potent Challenge die. The gM may spend a dark side Destiny Point in this way to upgrade one of the PC&amp;#39;s dice pools.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;SPECIAL ABILITIES AND TALENTS&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Many powerful talents allow characters to spend Destiny Points for various effects. For example, a savvy Politico can spend a Destiny Point to immediately recover from strain equal to his Presence rating. Many other uses exist as well—see the individual talent descriptions for details.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;LUCK AND DEUS EX MACHINA&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Destiny can also be used by the players to introduce &amp;#34;facts&amp;#34; and additional context directly into the narrative.  The GM already does this by managing and directing the story, but this use of Destiny Points provides the players with a means to make contributions as well. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Imagine the characters land on a planet they expected to have a breathable atmosphere, only to find a leak at the gas mining facility has rendered the air toxic.  One of the players suggests spending a Destiny Point, saying &amp;#34;Good thing you remembered to pack those rebreathers last time we were in dry dock, Pash.&amp;#34; While none of the players may have specifically mentioned&lt;/div&gt;
+&lt;div&gt;or listed rebreathers before, it&amp;#39;s a sensible and creative addition to the game. If the GM agrees, the Destiny Point is spent and the player&amp;#39;s contribution is now a true statement—there are rebreathers handy. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Similarly, a player may spend a Destiny Point in this manner to suggest finding a spare stimpack while quickly scavenging through a medical facility, or introducing a terrain feature the character can duck behind for cover.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Using Destiny Points narratively is a great way to keep all of the players involved and keep the story moving forward. However, the GM has final say over what is or is not acceptable. Players should not abuse this use of Destiny Points; the more outrageous or unlikely the suggestion, the more likely the GM will curtail the players&amp;#39; use of Destiny Points. Ultimately, this use of Destiny Points allows the players to feel empowered as active participants in both the game and the story by rewarding creativity and roleplaying.  If the Destiny Point use would fulfill this goal, the GM&lt;/div&gt;
+&lt;div&gt;should consider allowing it.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;DESTINY POINT ECONOMY IN GAMEPLAY&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;All players and the GM are encouraged to use destiny regularly, creating an ebb and flow of destiny over the course of a session. While the players could theoretically &amp;#34;lock&amp;#34; all the Destiny Points and simply not spend any light side Destiny Points to prevent the GM from using dark side Destiny Points against them, this works both against the spirit of the mechanics and the setting.   Players that horde their Destiny Points may find the GM using other methods of putting pressure on the group, forcing them to reconsider their plan. It&amp;#39;s perfectly acceptable for the GM to remind the players about using Destiny Points in play, such as suggesting the use of Destiny Points if they are feeling overmatched by a tough enemy.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The Player Characters are wrapped up in the fate of the galaxy, and through their adventures destiny will work both for and against them. When used wisely, Destiny Points provide tension and excitement by making routine checks more significant, adding an element of drama to the mundane, or helping provide a boost when the players are overwhelmed. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;THE LIMITS OF LUCK&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Destiny is a powerful resource and should not be abused. Destiny must also be used wisely—each player can only invest one Destiny Point into any single check. If a player chooses to invest a Destiny Point to upgrade an Ability die into a Proficiency die, for example, he cannot also invest a Destiny Point to trigger one of his character&amp;#39;s talents. The GM may also choose to invest one Destiny Point per skill check. This does introduce the possibility that both the player and the GM invest destiny into the same skill check, resulting in no net difference to the overall Destiny pool balance. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The active player (the player or GM forming the dice pool) always has the first chance to use a Destiny Point. Once he has decided whether or not he will use a Destiny Point, the other party involved in the check (the targeted player, or the GM in the case of an NPC) has the opportunity to respond and spend a Destiny Point as well. For example, if the GM declares he will be spending a Destiny Point to upgrade an enemy&amp;#39;s Ability die into a Proficiency die for an attack against a PC, that PC&amp;#39;s player has the opportunity to then use a Destiny Point, either to upgrade one of the Difficulty dice in the attack pool into a Challenge die, or perhaps to trigger one of the PC&amp;#39;s talents.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=9fdbbf902f81f810e0f497eef699b624"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-15 18:21:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>29c1ec3e2fd13010e0f497eef699b66d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010026</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_29c1ec3e2fd13010e0f497eef699b66d</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-15 18:21:15</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

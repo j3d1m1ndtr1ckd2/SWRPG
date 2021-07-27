@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>79d3d2b72fd17410e0f497eef699b6d1</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;The Force fills the galaxy, from the most cosmopolitan Core World to the farthest outpost in the Outer&lt;/meta_description&gt;
+        &lt;number&gt;KB0010034&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-07-19&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Step 1: Determine Background - Force and Destiny&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-19 05:36:12&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;79d3d2b72fd17410e0f497eef699b6d1&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-19 05:36:26&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;The Force fills the galaxy, from the most cosmopolitan Core World to the farthest outpost in the Outer Rim. Those who can hear the call of the Cosmic Force may come from anywhere; they hail from wildly diverse walks of life. When It comes to choosing a character’s background, a player’s options are limitless.&lt;/p&gt;
+&lt;p&gt;A significant portion of a Force initiate’s attitudes can be based on the philosophy and background of his youth. Characters who enjoyed a comprehensive education while interacting with people of other cultures and worlds are likely to be more open-minded than those raised in a single culture. Individuals from primitive worlds, where each day’s food depended on a successful hunt, likely see the world differently than those raised in a high-tech environment.&lt;/p&gt;
+&lt;p&gt;If the Force was considered a key part of the character’s culture, there may have been a great deal of reverence and respect toward teachings associated with it. Other cultures may have treated the Force as nothing more than an old myth. Every character must come from somewhere, and the story of that origin is likely to have repercussions that affect career choice as well as Morality and Motivation.&lt;/p&gt;
+&lt;p&gt;A character’s game statistics need not all directly reflect his background. Instead, the background is meant to provide depth to the character, offering in sights on personality and mindset that are not evident in skills, talents, and Force abilities. Knowing a character’s origin can often provide a useful framework for determining what goals the PC might have as well as the paths he might pursue to achieve those goals.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CULTURAL BACKGROUND&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Characters’ cultural backgrounds frame many of the decisions they make. Backgrounds can determine the types of skills characters possess at the beginning of play as well as the types of solutions they bring to challenges. If they are accustomed to living in the natural world, they may not be as quick to look for technological solutions. Similarly, if every resource was precious during their youth, their attitude toward wealth and conservation is certainly different than that of characters who came from privilege.&lt;/p&gt;
+&lt;p&gt;If a character came from the homeworld of his species, some of these answers may be determined at the same time the species is chosen. However, most worlds have some variation in culture types and levels, particularly between different population centers. Alternatively, a character might have come from a colony world or could even have grown up on a world completely different from his homeworld, surrounded by an alien culture.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;COMFORTABLE WITH TECH&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many of the worlds and cultures across the galaxy have a high level of technological sophistication. Droids and the HoloNet are tools that many sentients use on a daily basis. Starships and repulsorlift craft are a common sight on many worlds, and characters are likely comfortable using these fantastic devices. Most adult individuals from these sorts of worlds enjoyed an education that included a solid grounding in engineering and the hard sciences. This level of technological familiarity is considered the norm for the civilized galaxy.&lt;/p&gt;
+&lt;p&gt;Most of the planets from the Core Worlds to the Outer Rim fall into this category. Even frontier and colonial worlds tend to have denizens familiar with standard galactic technologies, even if said technologies are rare or unavailable. These planets are typically a part of wider galactic society. Citizens of these worlds who wish to avoid technology must make a deliberate effort to do so.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PRIMITIVE BACKWATER&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Within the Outer Rim and the Unknown Regions, there remain worlds and civilizations isolated from the greater galaxy. Even among those that are aware of other worlds and cultures, many have only limited access to technologies. Some cultures—regardless of their location within the galaxy—choose to avoid technology or interaction with other worlds. Many of these hold a particular reverence for the natural world. Others simply feel that an overdependence on any but the most rudimentary of tools can be a corrupting influence.&lt;/p&gt;
+&lt;p&gt;A character from a primitive world often lacks a full understanding of the scope of technology. Some may routinely expect a device to be able to do virtually anything. Others may have little appreciation for a tool’s abilities, preferring to perform tasks manually. Often, the attitude the character feels for devices is proportionate to his loyalty toward his homeworld. If he holds it in reverence, he may be reluctant to learn about tools and techniques from other places.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE PRIVILEGED FEW&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Even on affluent worlds, there are individuals who enjoy lives of greater privilege than most. On worlds where basic necessities are precious, there exist some members of society who never want for those essentials. For children, a life of privilege is most often a quirk of birth. Generally, their family somehow earned the rank and lifestyle, and they benefit immensely from being born into it.&lt;/p&gt;
+&lt;p&gt;Characters with this background have had opportunities that most have not enjoyed. This typically includes a thorough education and can also encompass other life opportunities, such as travel and cultural interactions. This background colors the character’s attitude toward wealth and material possessions. Some who choose to abandon these comforts look down upon others who continue to enjoy them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE POOR AND HUNGRY&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On some worlds, resources are so scarce that everyone must constantly scramble to obtain the basic necessities of life. From early childhood, individuals are expected to contribute in a meaningful way to increase their family’s odds of survival. On worlds where resources are more readily available, there still exist subcultures where families live in desperation, constantly in search of their next meal.&lt;/p&gt;
+&lt;p&gt;Individuals who live in constant want may be able to accept this situation as the norm, readily learning to make do with the assets that are available and living this way for the rest of their lives. Alternatively, some become obsessed with material possessions, spending all of their time focused on obtaining more. Characters with either outlook often work carefully to plan and manage their resources. When someone isn’t sure where the next meal may be coming from, it helps encourage them to be cautious in their actions. Of course, some characters with this background may be exceptionally cavalier in their endeavors, secure in the knowledge that they have nothing to lose.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;EXPERIENCING THE FORCE&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The environment and circumstance of a character’s youth can play a major factor in how that character interacts with the world and can inform the player’s selection of skills. A society’s attitude toward the Force frames the lives of those who are sensitive to its presence. Depending on their culture, characters’ sensitivity to the Force could be a major blessing to display or a horrible secret to conceal. These early attitudes often play a major factor in determining the types of Force talents a character might have studied, as well as the amount of effort put into developing them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AN ANCIENT RELIGION&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;More than twenty years ago, then-Supreme Chancellor Palpatine wiped out the Jedi. Before he did so, the Jedi were figures of whom many people had heard, but with whom few had ever interacted. To most, they were a tiny and aloof band of warriors and peacekeepers, not people one interacted with on a daily basis.&lt;/p&gt;
+&lt;p&gt;After the purge, those few who had formerly had the most opportunity to interact with the Jedi, the people engaged in the work of galactic governance, worked directly for the man responsible for wiping out those same Jedi. Some dismissed the Jedi as a dangerous cult that had almost overthrown the galactic government. Some figured the best way to survive in the growing Galactic Empire was to forget the Jedi had ever existed. Some refused either of these paths, only to vanish quietly as they drew the attention of the Imperial Security Bureau. Many beings in the rest of the galaxy had never even seen a Jedi or experienced the Force. For them, it was all too easy to believe the Force was a hoax, and the Jedi were gone.&lt;/p&gt;
+&lt;p&gt;Now, the Galactic Empire works tirelessly to stamp out the last rumors and legends of the Jedi’s existence. Many who live under the Empire’s dominion believe the Force is little more than an outdated legend. Citizens who have the potential to use the Force almost never come to recognize their inborn talents. Instead, they simply attribute any signs of their ability to luck, spiritual favor, or some other natural ability. Most vigorously deny any connection to the Force, insisting that their skills and abilities are not enhanced by its influence. Learning to embrace the Force as well as to use his abilities deliberately could be a central part of a character’s initial development.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE DUTY TO TRADITION&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Even at the height of the Empire’s power, the Force still plays a major cultural role on some worlds. In less sophisticated cultures, Force-sensitives may occupy leadership roles as shamans or spiritual advisors. Individuals could be inducted into an order during their early childhood, so that they could engage in a rigorous course of study. Such trainees are seldom given any other option but to embrace their education. The ability to manipulate the Force provides them with a moral obligation to use it for the betterment of their culture and the greater galaxy beyond it. The character may be selfless in making decisions to help others and may face the consequences which come from intuitive self-sacrifice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PRAGMATIC POWER&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Characters who recognize their Force potential do not always readily acknowledge its spiritual associations. Some see their powers and talents as tools they can use to advance their lives or accomplish their goals. This may help them to be more successful in their career of choice, enabling them to transform the world in a way that fits with their personal philosophies.&lt;/p&gt;
+&lt;p&gt;Many deny the fundamental goodness or evil of the Force, insisting that consequences for success and failure are far more important than any spiritual elements. Such characters are no more or less likely to make choices or perform actions that could be classified as “good” than those that could be classified as “evil.”  However, in their minds, their preference for a certain moral choice is independent of the powers they wield. This can prove problematic if, for example, a character believes his righteous anger is a reasonable motivator for his actions. Such a character may constantly flirt with the dark side of the Force and never realize it.&lt;/p&gt;
+&lt;p&gt;Learning or denying Force philosophies and histories invariably plays into the stories of characters from this background. Eventually, the character likely learns of the truth of the Force. Whether he embraces this knowledge or denies it and continues on his chosen path can prove to be a very interesting opportunity for character development.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ONE WITH THE FORCE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some adepts are so deeply grounded in the Force that it influences their every action. These characters constantly perceive the world through its lens, and it decides their every thought. Often, their education has included a thorough grounding in Force philosophies, so that they choose to act with deliberate devotion to the light (or dark) side of the Force.&lt;/p&gt;
+&lt;p&gt;Such knowledge is deliberately suppressed in the Empire and thus incredibly hard to come by. However, it is not impossible. A character with this background may have been raised by one of the last Jedi to escape the purges, who, before dying, passed on a measure of knowledge of the Force to the character. Alternatively, the character may have known someone who would have reason to be familiar with the Jedi and their knowledge. A former Republic soldier or sympathetic Senator, an old friend of the Jedi, or even an ally who worked with the Jedi but was not Force-sensitive may have escaped the Emperor’s purges and passed on what he has learned. It may be that the character is one of those individuals, and as he has aged, he has realized that he too can tap into the power of the Force.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;HEEDING THE CALL&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Whatever the character’s background or understanding of the mysterious powers he can wield, eventually something occurred to inspire him to leave his former life behind and seek a life of adventure in the wider galaxy. The options for this turning point are limitless; below are a few possibilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FLEEING THE EMPIRE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Empire hunts down Force users diligently and enthusiastically. The character may have betrayed his affinity to the Force in some way, perhaps by anticipating someone’s thoughts or saving someone’s life by stopping a crashing speeder with his mind. Whatever the cause, the character is now hunted by Imperial agents and must flee his former life or be destroyed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DESIRE FOR UNDERSTANDING&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Having realized he has some untapped power at his disposal, the character now wishes to know what this power is. Simple research on his home planet or via the HoloNet has yielded nothing, so he must set out into the wider galaxy to see what he can learn about his odd abilities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WITH GREAT POWER...&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some individuals cannot stand idly by while watching the evils the Empire inflicts on the galaxy. The character knows he’s been given a gift that few others have. To squander it while innocents suffer would be the height of irresponsibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ULTIMATE ABILITIES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some characters see their strange abilities as a sign that they are destined for greatness. They can do things that others around them cannot. Clearly, this means they are a cut above the general population. To leave their life behind is merely the first step in a journey that may see them rise to become the ultimate power in the universe. Whether or not they use that power for good—or for evil—remains to be seen.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=79d3d2b72fd17410e0f497eef699b6d1"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-21 18:54:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fbf26f602fe1f010e0f497eef699b62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010034</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_fbf26f602fe1f010e0f497eef699b62c</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-21 18:54:50</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

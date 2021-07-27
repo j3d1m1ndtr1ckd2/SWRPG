@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e54d523f2fd17410e0f497eef699b690</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Members of the Rebellion come from all across the galaxy, and from every imaginable background. This&lt;/meta_description&gt;
+        &lt;number&gt;KB0010036&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-07-19&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Step 1: Determine Background - Age of Rebellion&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-19 06:16:38&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;e54d523f2fd17410e0f497eef699b690&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-19 06:17:28&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Members of the Rebellion come from all across the galaxy, and from every imaginable background. This diversity makes the forces of the Alliance complex and chaotic, but it also provides extraordinary strength. Each player has a limitless pool of options from which to draw his character&amp;#39;s personal story.&lt;/p&gt;
+&lt;p&gt;Understanding where a PC comes from makes every other choice in character creation considerably easier.  Additionally, this understanding provides a powerful source of inspiration for how the PC is to be played, how he reacts to various situations, and what he ultimately chooses to do when all hope seems to be lost.&lt;/p&gt;
+&lt;p&gt;When constructing a background, players often find it easiest to start with the nature of the PC&amp;#39;s family.  Were they wealthy, noble, and highly connected? Perhaps they owned a rather large and successful shipping company? Maybe they were among the elite of Coruscant itself?\&lt;/p&gt;
+&lt;p&gt;Perhaps, instead, the family owned a much smaller company, with only one or two ships running to places far outside normal traffic. They could be hardscrabble farmers on a distant colony, or paupers indentured to a criminal cartel or corrupt local government. A PC&amp;#39;s family may be among the destitute in the eternal shadows of a Core World city, barely scraping by and relying on handouts just to survive.&lt;/p&gt;
+&lt;p&gt;It is entirely possible for a PC to come from an otherwise unremarkable family firmly entrenched in the middle class, in which the vast majority of the civilized galaxy lives. His parents may have been mildly content wage earners, vaguely concerned over the greater issues of the galaxy so far as they affected their taxes and the price of food, but otherwise focused on matters of their day-to-day lives.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;Relationship with the Empire&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Regardless of the economic and political status of his family, a Player Character’s relationship with the Empire is likely of dramatic importance to his story prior to the campaign. Defining this relationship can be crucial to finding a PC’s place in the Rebellion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;COMFORTABLE BENEFICIARIES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Senator Palpatine’s rise to power was no accident. He engineered matters expertly to capitalize on the desire of civilized people for law and order, peace, and security. The events of the Separatist movement and the subsequent Clone Wars, coupled with the apparent (and well-publicized) degradation of the Jedi and their inability to do anything about the ensuing chaos, provided a powerful platform upon which to sell the Republic on the need for firm measures to restore order.  &lt;/p&gt;
+&lt;p&gt;This could not have happened if many billions of beings weren’t willing participants in the transition. The restoration of order by the central government meant a return to relative normalcy: business resuming, unimpeded shipping, threats of violence and destruction removed. For the majority of those living in the Core Worlds and related systems, this is a preferable state of affairs, no matter who is in charge or how they go about implementing their authority. If it is no longer politically or socially wise to complain about the government too loudly, so be it—dinner still gets on the table, the holovid still shows great and entertaining programs, and the average person is generally left alone to lead his life in relative peace.&lt;/p&gt;
+&lt;p&gt;Many who join the Rebellion come from such circumstances. They join not because their lives are filled with misery or tragedy, but because they grasp the insidious nature of the powers that have taken control. They have a deeper understanding of how much is being lost, surreptitiously stripped away day by day while no one seems to notice or care. Such PCs may be idealists seeking to awaken their fellow citizens before it’s too late and everything is lost to the corruption of Palpatine’s absolute power. They may be malcontents who have been rejected by their families and local society for daring to speak out against the injustices others are suffering in the name of their own peace and security.&lt;/p&gt;
+&lt;p&gt;Such PCs might never have intended to become caught up in any resistance against the New Order. Rather, a series of incidents could have led them accidentally (yet inexorably) toward a point of conflict with Imperial forces, driving them straight into the arms of the only people who can help them: the Rebellion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VISIONARY OPPORTUNISTS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Conflict brings change, and change brings opportunity. Many in the galaxy are unsatisfied with the status quo—especially as it exists under Palpatine’s rule. The Alliance’s war against the Empire provides an extraordinary chance to topple the current order and bring about more desirable changes. Whether those changes are oriented toward reestablishing the Republic as it was or installing a new structure altogether depends on the individual’s frame of mind.&lt;/p&gt;
+&lt;p&gt;Many who seek such change are genuinely altruistic in their goals. They recognize the evil of the Empire and the suffering it brings. They’re motivated to end this evil, and the Rebellion’s organization and resources offer the best possibility of accomplishing their goal.  Whether they join the Rebellion simply because they were made aware of Imperial atrocities and destructive policies, or because they and their loved ones have been directly victimized by the Empire, is for the players to decide.&lt;/p&gt;
+&lt;p&gt;Others have less idealistic, perhaps even selfish, goals. Current policies might cut into their ability to make a profit in their chosen vocation or damage the business they choose to run. Perhaps a character has run afoul of Imperial authorities one too many times, and he sees an alliance with the Rebellion as his best chance of escaping the less-than-tender mercies of the Empire’s justice. Some PCs may simply see a chance to grab some credits and valuable assets while helping to strike against the Empire’s forces. &lt;/p&gt;
+&lt;p&gt;A technician or engineer could have had his designs rejected by Imperial agents, and the Alliance is providing him a chance to vindicate his work. A politician or political operative might have been ousted when the current regime took power; the Rebellion provides an opportunity to reclaim a sense of purpose and authority. A pilot deemed unfit for service and rejected by the Imperial Academy would consider flying for the Alliance a chance to prove his worth at the controls of a starfighter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JUSTIFIED AVENGERS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Alliance to Restore the Republic may exist for the sake of undoing the terrible mistake of allowing Palpatine’s rise to power, but the Rebellion is sustained on the backs of those who seek to overthrow the Empire because of the evil it has wrought across the galaxy. Millions—perhaps billions by now—have already died or suffered horribly under its harsh rule, and a huge portion of the rank-and-file among the Alliance’s forces come from families, planets, and even entire systems that have been victimized.&lt;/p&gt;
+&lt;p&gt;The Empire’s &amp;#34;pro-human’’ philosophy is perhaps one of the greatest propaganda tools the Alliance enjoys. Species that have known respect and admiration for their contributions to galactic civilization for millennia now find themselves marginalized. Their people second-class citizens of the Empire at best, and slaves all too often, more and more of the governments representing these species are throwing in their lot with the Alliance. These beings bring with them their skills, talents, resources, and passionate desire to live peacefully with their fellow sentients throughout the galaxy to the battle against Emperor Palpatine’s &amp;#34;humans first” policies.&lt;/p&gt;
+&lt;p&gt;The war machine of the Empire is voracious in its hunger, and those who seek to feed it have little or no compulsion against using wide-scale slave labor to obtain the resources and build the countless machines it needs. Entire planets and civilizations have suffered the fate of Kashyyyk and its indigenous Wookiees, enslaved en masse by the Empire and put to work. Individuals who have managed to avoid capture, or who are rescued by others, often sign on with the Alliance for the chance to strike back and, perhaps one day, free their people. Not surprisingly, the Alliance goes out of its way to free such beings whenever possible.&lt;/p&gt;
+&lt;p&gt;Death and destruction are also frequent tools employed by Imperial forces for the sake of enforcing order and the Emperor’s will. Any signs of opposition are usually answered with arrests, followed by banishment to distant prisons and labor camps, or outright executions. On grander scales, the Emperor employs overwhelming assault forces or orbital bombardment.  Emperor Palpatine is satisfied to rule by fear, ensuring that dozens of planets within a sector bow to his will with the utter destruction of one. While this strategy keeps many systems in line, those that survive his reprisals almost invariably sign on with the Rebellion for a chance to strike back on behalf of the many who have been lost.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;JOINING THE REBELLION&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The reasons for joining the Rebellion are as varied as the individuals who make up its ranks. As a player determines the history of his PC, he must also consider how his character came to become a part of the Alliance. Did the character look for the Rebels, get recruited by them, or stumble across them by sheer accident?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE NEW RECRUIT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Under the guidance of such wise administrators as Mon Mothma, the Alliance began recruiting efforts very early in its inception. Those skilled in the ways of intelligence, oration, and sheer talent scouting were employed from the start to build growing networks dedicated to finding those who had cause to oppose the Empire as well as the capability and the will to take action against it. As the conflict grows, so, too, does this network dedicated to finding bodies to fill the ranks and serve the needs of the Alliance. &lt;/p&gt;
+&lt;p&gt;A Player Character may well be a part of the Rebellion because he was discovered by someone in this network—someone who saw his potential and recognized his willingness to fight against the current regime imposed by Emperor Palpatine. It might not even have been someone normally tasked with recruitment who found the PC; chance encounters by those connected to the Alliance with those who might be able to help occur all the time, and risks are frequently taken if it means an opportunity to gain the services of a capable and savvy ally. &lt;/p&gt;
+&lt;p&gt;The cellular nature of most Alliance operations minimizes the risk of betrayal fairly well. Such recruits are tested considerably before they are ever given access to sensitive material or plans, and their awareness of the extent of the network they are connected to is kept to a minimum until they have truly earned the trust of their superiors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE SEARCHING INSURGENT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once they make the decision to oppose the terror and atrocities of the Empire, many individuals go looking for a way to contact and join up with the Rebellion. As badly as the Alliance needs people, though, it’s not necessarily easy to find Alliance members to talk to about signing on. The vastly superior forces and assets of the Empire make it very dangerous for anyone to openly support the Alliance, as many planets and people discovered in the immediate aftermath of the Declaration of Rebellion. Imperial Intelligence and related agencies—not to mention countless bounty hunters—are constantly searching for any and all beings connected to the Rebellion, so secrecy is paramount to survival.&lt;/p&gt;
+&lt;p&gt;As such, finding a way to join the Alliance’s efforts against the Empire can be a quest all its own. It could even be the basis for the start of an ACE OF REBELLION campaign. Hopefuls need to do a lot of research, investigation, and sneaking around to discover clues about the Rebellion and to avoid the attention of Imperial agents. At the same time, they must prove themselves capable and trustworthy to anyone with whom they might make contact. Such an endeavor is a very tense, very delicate game of cat and mouse at first; the searchers might even fall under Alliance observation for a time, not knowing they are being observed and judged while they continue to try to find a way in.&lt;/p&gt;
+&lt;p&gt;Many who want to join the Rebellion do so in rather dramatic fashion, taking it upon themselves to simply start striking against Imperial forces and assets. Such acts can be foolhardy and stupid, but they can also be brave and daring. If the would-be Rebels manage to succeed without getting themselves killed in the process, they may well draw the attention of Alliance operatives who are willing to talk to them about joining. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE ACCIDENTAL REBEL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The vast majority of the sentient beings of the galaxy have no desire to join the Alliance or serve in the Rebellion. They may not be ardent supporters of the Empire, but this doesn’t mean they are willing to drop everything in their lives to go blasting away at hordes of stormtroopers or weaving a dilapidated starship through swarms of TIE fighters. They would rather go about their business and live their lives, hopefully out of the way of any battles or other trouble. &lt;/p&gt;
+&lt;p&gt;Unfortunately for some hapless individuals, the galaxy has other plans. Cases of mistaken identity can result in innocents becoming wanted for crimes they never even considered. Receiving goods marked for Alliance use may find one or more PCs fleeing for their lives from Imperial agents or hired mercenaries. A friend’s— or even casual acquaintance&amp;#39;s—involvement with the Rebellion can saddle a character with unintended guilt by association. Of course, there are times when people simply find themselves in the wrong place at the wrong time and have no choice but to become heroes.&lt;/p&gt;
+&lt;p&gt;Alternately, unexpected situations may cause an epiphany for someone who was previously not interested in getting involved. While it may be easy to ignore tales of injustice and atrocity when they happen far away from an individual’s daily life, many individuals have altogether different reactions when they come face-to-face with the horror of the Empire’s policies. Apathy is difficult to maintain when someone watches another sentient executed for speaking out, a family enslaved because of their species, or an entire population wiped out for political expediency.&lt;/p&gt;
+&lt;p&gt;In such situations, a person’s apathy can quickly turn to anger. That anger, in turn, often turns to action, usually with violent and irrevocable consequences. Once steps are taken toward open and direct opposition, such a character has joined the Rebellion in spirit, even if not yet in fact.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=e54d523f2fd17410e0f497eef699b690"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-21 18:55:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2b03e3a02fe1f010e0f497eef699b666</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010036</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2b03e3a02fe1f010e0f497eef699b666</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-21 18:55:05</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

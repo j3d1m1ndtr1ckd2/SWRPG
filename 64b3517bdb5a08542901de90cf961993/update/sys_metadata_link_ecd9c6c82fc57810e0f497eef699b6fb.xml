@@ -40,7 +40,7 @@
         &lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;
         &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
         &lt;sys_updated_on&gt;2021-05-24 05:56:21&lt;/sys_updated_on&gt;
-        &lt;sys_view_count&gt;1&lt;/sys_view_count&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
         &lt;text&gt;&lt;![CDATA[&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;This article takes a closer look at the special dice and their symbols. By understanding these dice and symbols, players will have a better understanding of the core mechanic. This section also discusses how to assemble a dice pool, and when to introduce extra dice based on the circumstances. Remember, these dice may be purchased separately, or players may use the Star Wars Dice app or the active sessions page to roll them electronically.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-size: 12pt;"&gt;When a character makes a skill check, the dice allow the players to quickly determine success and failure, as well as magnitude and narrative implications. To accomplish this, the game uses seven types of dice. Each die has a specific function and purpose. The dice differ significantly. Each die face will either be blank or will feature one or more symbols that represent various positive or negative effects.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-size: 12pt;"&gt;A typical dice pool generally ranges from five to eight dice. This pool size covers the majority of situations. Difficult, complex, or epic situations may include more dice, while mundane situations may involve fewer dice. Dice pools are generally not assembled or rolled for tasks so trivial that success is guaranteed. The impact of generating and rolling a dice pool is best used with important tasks that can influence the story.&lt;/span&gt;&lt;/p&gt;
@@ -393,7 +393,7 @@
         <sys_created_on>2021-06-25 02:36:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ecd9c6c82fc57810e0f497eef699b6fb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>KB0010017</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -401,7 +401,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_ecd9c6c82fc57810e0f497eef699b6fb</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-06-25 02:36:51</sys_updated_on>
+        <sys_updated_on>2021-07-15 18:20:58</sys_updated_on>
         <tablename>kb_knowledge</tablename>
     </sys_metadata_link>
 </record_update>

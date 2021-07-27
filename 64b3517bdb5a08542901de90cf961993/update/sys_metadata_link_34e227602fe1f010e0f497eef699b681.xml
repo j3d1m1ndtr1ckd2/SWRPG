@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0969d63f2fd17410e0f497eef699b6a5</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;As the player begins sketching out his character's background, he should consider the general status&lt;/meta_description&gt;
+        &lt;number&gt;KB0010035&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-07-19&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Step 1: Character Backgrounds - Edge of the Empire&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-19 05:53:34&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;0969d63f2fd17410e0f497eef699b6a5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-19 05:53:38&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;As the player begins sketching out his character&amp;#39;s background, he should consider the general status level of the character&amp;#39;s previous life. Did he come from squalor and poverty? Did he live a comfortable life? Was he destined for a greater position later on? Even something as simple as &amp;#34;my character was a formerly rich heir to a noble family&amp;#34; provides a wealth of ideas upon which to build his backstory and help determine both his starting Obligation and Motivation.&lt;/p&gt;
+&lt;p&gt;Backgrounds are not mechanical aspects of character development; instead, they are thematic facets of a character that help define him as more than a set of numbers. Players do not need to give their characters backgrounds, but they help make characters far more interesting. Shown here are four broad descriptions of social backgrounds to help provide the players with ideas about where their characters came from and what they left behind when they began their lives of adventure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE DOWN AND OUT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The player may decide that the character comes from humble or hardscrabble beginnings. Perhaps he was a moisture farmer on some barren world, an indentured servant working for the Hutts, or abandoned from a young age to survive in the depths of Coruscant&amp;#39;s underworld. This character starts out knowing that life is nasty, brutish, and short and probably has seen more than his share of horror. He may have seen friends and family members die from malnutrition, disease, or violence and witnessed tremendous injustice done to the weak or vulnerable.&lt;/p&gt;
+&lt;p&gt;Despite (or because of) this harsh, early view of the universe, characters from this type of background strive to beter themselves and do their utmost to escape their plight. The character either trains incessantly, picking up knowledge any way that he can, or simply is tough and resourceful enough to go out on his own.&lt;/p&gt;
+&lt;p&gt;However, leaving this rough-and-tumble life might not be as easy as it seems. The character may still have family left behind in squalor, former comrades that take a dim view of him leaving a gang, or former &amp;#34;employers&amp;#34; that want the character to finish up their &amp;#34;contracts.&amp;#34;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MIDDLE CLASS STRUGGLES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes a character comes from modest, but comfortable conditions prior to entering a life of adventure. The character and his family did not come from vast wealth and they know the meaning of hard work to get ahead. This &amp;#34;middle class&amp;#34; background may be the hardest of all to leave, for the character had a taste of the good (or at least decent) life and finds that getting into adventuring is harder than it appears.&lt;/p&gt;
+&lt;p&gt;This broad category could include anything from a skilled technician, minor political official, professional soldier, or any other lifestyle that typically involves hard work—but with the pay to make it worthwhile. The character lived comfortably, but put in long hours to make ends meet. He&amp;#39;s no stranger to hard work and certain levels of injustice, but may have been shielded from the truly darker side of the galaxy—crime, corruption, slavery, and conflict.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE HIGH AND MIGHTY&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As the saying goes, the bigger they are, the harder they fall. Even characters from high social standing, great wealth, or an existence of comfort can still be subject to the whims of fate and find themselves cast out from the life they once knew. This fall from grace could come in many forms—scandal, poor business decisions, war and revolution, or revenge from enemies. Regardless of the method, the character is irrevocably wrenched from his world and cast into the murky shadows of EDCE OF THE EMPIRE.&lt;/p&gt;
+&lt;p&gt;Characters from this type of background include landed gentry, wealthy business owners, doctors, politicians, and any other position or upbringing that brings with it money, power, and status above that of the common rabble. After the events that push them out of that world, however, these previously entitled characters find a rough life ahead. The character might find himself fleeing his former life with only the (admittedly upscale) clothes on his back and nothing else but his abilities, skills, and will to survive in the unforgiving galaxy.&lt;/p&gt;
+&lt;p&gt;A character from this background typically finds his Obligations tied to the cause of his downfall. Perhaps his fall came from a huge gambling debt, blackmail from a family enemy, or bringing shame upon his clan that results in exile. As the wealthy and powerful typically rub elbows with those of their own social level, enemies or &amp;#34;holders&amp;#34; of the character&amp;#39;s Obligation are also typically wealthy, powerful, and influential in their own right.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;THE OUTSIDER&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A character from this background came from a society outside of the galactic norm. This includes isolated planetary systems not yet marked on the maps, prison colonies, or even the rare case of a character growing up in solitude out in the wilderness. The character is probably ill-informed about or completely unaware of the politics, customs, and even technology of the rest of the galaxy. He may be superstitious of the strange sights around him or embrace the wonders that he encounters.&lt;/p&gt;
+&lt;p&gt;This choice works better for some careers than others—a Mechanic from a primitive world stretches credulity, for example—unless the player and GM come up with a good reason for this to happen. Maybe the Mechanic character was the sole survivor of a downed ship on a backwater planet and learned his skills from tinkering with the ship&amp;#39;s equipment.&lt;/p&gt;
+&lt;p&gt;Of course, the player must come up with a good reason regarding how the character managed to leave his isolated or primitive upbringing. Perhaps his character was brought back to civilization by an explorer or slipped on board a trade vessel that landed on his planet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ENTERING LIFE AS A MISCREANT &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once a player determines his character&amp;#39;s former background, he should then consider what caused him to enter into the nebulous and dangerous world of EDCE OF THE EMPIRE. Was it because of a single, traumatic event? Was the character put into an untenable situation from which he had to flee? Figuring out the &amp;#34;last straw&amp;#34; that pushed a character into a life on the fringe is an excellent source of inspiration for both the player and the GM.&lt;/p&gt;
+&lt;p&gt;Presented here are several &amp;#34;hooks&amp;#34; that describe ways in which a character moves from his former life into one of adventure and danger.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OPPORTUNITY KNOCKS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The simplest reason for a character to live on the fringes of society is the basic desire to grasp some opportunity or challenge oneself. A character from a hard, poor background may strive to better himself and jumps at the first chance to improve his lot. A well-off character may be bored with the steady rhythms of high society or realizes that his chances for advancement must come from his own hard work rather than waiting for things to occur. Lastly, this could be as simple as making a spur of the moment decision to board a starship bound for some far-flung part of the galaxy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A HIGHER CALLING&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Even in the rough-and-tumble world of EDGE OF THE EMPIRE, there are those who strive to change the galaxy—often for the better, but sometimes for the worse. Perhaps the character has made a vow to help others, which works nicely into the Oath Obligation. A character may receive some sort of sign that tells him to leave behind his former life and make his way to the fringes of the galaxy to serve this higher calling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ENEMIES AND ANTAGONISTS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Simply put, the character rubbed someone the wrong way and found himself fleeing his former life. Even if the player decides that the enemy may not be the source of an Obligation, or may not be around any more to cause the character grief, this could be used as a hook to reintroduce the enemy later on in a campaign.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A FAILURE OF CHARACTER&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some inherent flaw in the character causes him to leave behind the life he knew for the unknown. This background hook ties in well with some Obligations, such as Addiction, Obsession, or Betrayal. Regardless of the cause, the character finds himself shut out from his former society, left to deal with his own problems. However, the character may view this in a positive light, seeing himself freed from the pressures of scrutiny or keeping on the move to leave trouble behind.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WRONG PLACE, WRONG TIME&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The character finds himself embroiled in a life of adventure through no fault of his own. He could have been captured by pirates, the sole survivor of a deadly plague, or even something as mundane as being unemployed and forced to find some new way to bring in the credits. Regardless of the method for the character&amp;#39;s push from society, he finds it nearly impossible to return to the way that things used to be. The character must quickly adapt to his new and dangerous situation.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=0969d63f2fd17410e0f497eef699b6a5"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-21 18:54:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>34e227602fe1f010e0f497eef699b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010035</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_34e227602fe1f010e0f497eef699b681</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-21 18:54:20</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

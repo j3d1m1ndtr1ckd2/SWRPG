@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>f465c60f2f1d7010e0f497eef699b66c</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Force and Destiny recounts the dark days when the evil Empire focused on destroying everyone who dabbled&lt;/meta_description&gt;
+        &lt;number&gt;KB0010030&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-07-16&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Character Creation Overview - Force and Destiny&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-16 20:20:52&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;f465c60f2f1d7010e0f497eef699b66c&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-16 20:21:07&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;div&gt;Force and Destiny recounts the dark days when the evil Empire focused on destroying everyone who dabbled with the Force. Those Force-sensitives who hoped to survive had no choice but to remain hidden. Thus, in play, while some characters may attempt to recover lost information and embrace their connections to the Force, others may maintain that they have no such talents. Regardless of their beliefs, the inherent abilities of Force-sensitives can draw unwanted attention. Those who are strong in the Force become drawn to oppose the Galactic Empire—either out of a sense of conviction or a drive for survival.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Almost any living being in the galaxy can manifest affinity for the Force. Before beginning the process of generating the numbers and selecting the gear for each character, players and the Game Master should discuss the core concept for the campaign and consider what might bring together the group of Force-sensitive Player Characters.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CREATING A HERO&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Creating a character for Force and Destiny is done in just a few short steps (presented here), allowing players to get involved in the action right away. To create a character, each player needs access to this rulebook, a character sheet (found at the end of this book or through this app), and a pencil. Players also need access to ten-sided (d10) dice for rolling on certain charts. Finally, a few sheets of note paper are not necessary, but might be helpful.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Character generation uses a point-buy system, meaning each player has a budget of experience points he can invest in different aspects of his character. Selecting a character’s species and career determines the character’s starting characteristics and skills, as well as the character’s starting experience points. After those initial choices, players invest their experience points to improve starting characteristics, acquire training in key skills, learn special talents, and even unlock additional talent trees.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CHARACTER CONCEPT&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;The section that follows provides a way for a player to delineate a character via numbers and game mechanics. The central core of the idea for the character, however, must come from the player. Each person participating in the game needs to start out with the seed of a concept for a character who can manipulate the Force and travel throughout the Star Wars galaxy. Perhaps the character is an old hermit, someone who was once a Jedi who fought in the defense of the galaxy, but has since gone into hiding and seen his skills dwindle with disuse. Or the character might be a naive youth growing up on a homestead on the Outer Rim. He may not even realize the power that he can control, and the upcoming adventures will be a chance for him to grow into a hero who might save the galaxy.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;At the earliest stages of character creation, the players and Came Master should have a detailed discussion about the types of characters to be created. If the GM has a specific campaign framework in mind, it could require the presence of specific types of skills or even focus on a limited subset of species. A campaign that takes place exclusively on the Core Worlds might have less need for the Survival skill, while one centered on the Galactic Civil War might focus more on combat skills than on skills related to diplomacy. Sometimes the GM might want to adjust the campaign based on the players’ wishes, and the players are likely to appreciate the opportunity to tweak their initial character ideas. Information shared at this stage can help the players and Came Master work together to create characters that complement the types of stories envisioned for the campaign.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;While some character concepts can be a better fit for a campaign, seldom is a concept truly wrong. Roleplaying games often work best when everyone is willing to work in a collaborative fashion. Constructive criticism as well as meaningful compromises during character creation can lead to a more fulfilling game- play experience. Group members should be open to one another’s ideas at this stage. Working together to bring out the most fun and entertaining aspects of different characters can be a great way for the players to establish a rapport that lasts throughout a campaign.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;GENERATION STEPS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;To create a character, a player follows ten steps. Each step is summarized here and then fully explained later in the chapter.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 1: DETERMINE BACKGROUND&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Each character starts as an idea. Does a player want to play a noble and aspiring knight working to save the poor and oppressed, a backwater shaman with&lt;/div&gt;
+&lt;div&gt;mystical powers, or a deadly and feared warrior? Before starting the game, the player should take a few minutes to think about the character he wants to build and what he wants that character’s background to be. Where did the character come from, what inspired him to leave his former life and pursue a life of adventure, and when did he first realize he might have a connection to the Force?&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Perhaps the character lived a quiet life of luxury as an heir to a fortune in the Core Worlds. Alternatively, he could have been a struggling farm boy on the Outer Rim. The circumstances of his childhood—as well as the way he first encountered the Force—are certain to have colored his maturation process and his goals.&lt;/div&gt;
+&lt;div&gt;More information on developing the character’s background is in the Determine Background article.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 2: DETERMINE MORALITY&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;When creating a character in Force and Destiny, determining the character’s Morality is a key decision made early in character creation. Force-sensitives must carefully consider the implications of the choices they make, particularly as they reflect the use of their Force abilities. Morality tracks how “good” and “evil” a character is. A character’s starting Morality can affect other decisions a player makes during character creation, such as the type of character to play, the overall moral compass of the group, and the character’s starting skills, characteristics, and gear.&lt;/div&gt;
+&lt;div&gt;Morality is presented in detail starting on page 48.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 3: SELECT A SPECIES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;The Force interacts with all living things, regardless of their world of origin. Many are drawn to travel the breadth of the galaxy, interacting with other species as they answer the Force’s call. Once players determine their characters’ starting Morality, they choose what species their characters will be. A character’s species establishes initial ratings in the characteristics of Brawn, Agility, Intellect, Cunning, Willpower, and Presence. Secondary characteristics, including wound and strain thresholds, are also determined by species. Finally, species have unique intrinsic abilities that further set them apart. Of course, once chosen, characters cannot change species.&lt;/div&gt;
+&lt;div&gt;More on the various species options for characters in Force and Destiny can be found on page 54.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEPS 4 AND 5: SELECT A CAREER AND SPECIALIZATION&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Steps 4 and 5 are handled together, but represent two distinct choices that shape a Player Character: career and specializations.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;CAREER&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;After choosing a species, a player must next select the PC’s career, choosing one of the six options presented. The career chosen reflects the character’s philosophical approach to overcoming challenges, and can be thought of as a broad archetype of related skills and abilities. Each career can be explored through a range of specializations that share a common set of initial skills and focus on similar talents.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;The choice of career establishes the central focus of the character’s training, practices, and even professional experience. While not intended to limit a character, the choice of career does establish what kinds of skills and talents are going to be most readily available, as well as the roles the PC is likely to excel at within a group. Players should think of their character’s career as an archetype that forms the initial framework for constructing their PC.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Each career has six associated career skills. These skills should be marked on the character sheet to indicate that they are career skills. During this step of character creation, the player may choose three of the six starting career skills and have his character gain one rank in each of the selected skills free (experience points are not spent to gain these ranks). The player may not choose the same skill more than once. Each career also gives the player character Force rating 1.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;During play, career skills are less expensive to train and improve than non-career skills. As with species, players cannot change a character’s career during gameplay.&lt;/div&gt;
+&lt;div&gt;The six careers in Force and Destiny begin on page 63.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;SPECIALIZATIONS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;If a career is the broad framework for a Player Character’s construction, specializations can be viewed as the materials added to the framework to fill it in and give it detail and distinction. As their name implies, specializations are specific areas of focus within a career. While linked by the career’s common philosophy, each specialization takes a different, more focused approach to a particular aspect of the career. For example, while the Warrior career focuses on combat, the Warrior’s Starfighter Ace specialization emphasizes space combat, while the Shii-Cho Knight specialization allows a character to focus on lightsaber fighting.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Each specialization within a career possesses a unique talent tree, available only to those who have chosen that specialization. The specialization also gives players access to certain career skills, allowing ranks in these skills to be purchased for fewer experience points. Each character gains access to one specialization without spending experience at character creation. That specialization must be one of the specializations within the chosen career.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;Specializations grant the character access to four additional career skills, which should be marked on the character’s sheet as career skills if they are not already marked. During this step of character creation, the player may choose two of the four additional career skills from his character’s first specialization (and only his first) and gain one rank in each without spending experience. The same skill may not be chosen more than once. Remember, even if the player purchases additional specializations during Step 6, only the specialization selected during this step counts as the character’s “first” specialization. Therefore, this is the only specialization that will grant the PC a free rank in two of its career skills.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Specific specializations are presented within the context of their associated career, beginning on page 67. A full list and descriptions of each talent in this book can be found starting on page 1 36.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 6: INVEST EXPERIENCE POINTS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;The species a player selects for his character also establishes an initial pool of experience points (XP). These experience points can be spent to improve certain aspects of the character: to increase characteristics, purchase additional ranks in skills, acquire talents, learn new specializations, or even gain new Force powers. Players may spend their points in any combination of these areas, meaning that two Player Characters with the same species, career, and specialization still may end up very different from one another. During game- play, characters will earn additional experience points based on their achievements and successes. Those points can also be spent to purchase new skill ranks, specializations, Force powers, and talents.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Information about spending experience points begins on page 102.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 7: DETERMINE DERIVED ATTRIBUTES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;This step must be taken only after the player completes the previous steps. Several attributes can only be determined after a player fully establishes a character’s starting characteristics and talents. The derived attributes are wound threshold, strain threshold, defense, and soak value.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Full information on calculating these attribute values can be found on page 104.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 8: DETERMINE MOTIVATION&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;A character’s Motivation is his primary call to take action and experience adventures. For Force-sensitives, the Force is often linked to their calling, as it guides and motivates them just as it shapes the galaxy around them. In some instances, a character’s primary Motivation is an overarching philosophical belief. Other characters focus on more concrete objectives, often associated with the desire to aid family or close allies. A few choose a specific cause that they hope to achieve within their lifetime, possibly moving on to another one should they ever achieve it.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;There are three general categories of Motivation: Ambition, Cause, and Faith. Each of these Motivations has a list of specific manifestations. Alternatively, a player may obtain the Came Master’s permission and create a different Motivation and its specific details.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Motivation has an important role to play in a character’s progression. If a character acts true to Motivation, that PC may earn additional experience points at the end of a game session.&lt;/div&gt;
+&lt;div&gt;Different Motivations are presented on page 105.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 9: CHOOSE GEAR AND APPEARANCE&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Once a player has defined his character’s species, background, career, specialization, and any other important attributes, he can begin determining the descriptive details of his character. Height, weight, eye color, hair color and style (or tentacle or horn color), skin color, build, distinguishing features such as scars and tattoos, and choice of clothing are all descriptive details that can be determined narratively. This information can and often should be linked to the previous choices made for the PC; a character with a high Brawn may be more muscular, for instance, while a character raised on a desert planet may have skin that’s weathered and darkened by the punishing sun.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Each PC also starts the game with 500 credits’ worth of personal gear and weaponry. At this stage, the PC may select this gear.  Equipment selection is presented on page 107.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;STEP 10: DETERMINE GROUP RESOURCE&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;At the conclusion of the Clone Wars, the Jedi were eliminated from the galaxy. In the years that followed, Force practitioners needed to conceal their abilities or face extreme consequences. Information about the Force, particularly as encrypted in holocrons, represents a critical learning tool to any individual who wishes to learn the ways of the Jedi. Alternatively, the group may start with a ship, or even a mentor. This resource, shared among the group, is one of the things that has brought them together.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Information about starting resources begins on page 109.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=f465c60f2f1d7010e0f497eef699b66c"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-17 05:58:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>500b8cdf2f55b010e0f497eef699b644</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010030</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_500b8cdf2f55b010e0f497eef699b644</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-17 05:58:43</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

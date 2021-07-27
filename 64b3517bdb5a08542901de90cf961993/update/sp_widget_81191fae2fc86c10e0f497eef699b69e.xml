@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope, spUtil, $location) {
+        <client_script><![CDATA[api.controller=function($scope, $rootScope, spUtil, $location) {
   /* widget controller */
   var c = this;
+	
+	var img = document.createElement('img');
+	img.src = $scope.data.character.portrait;
+	img.id = 'characterPortrait';
+	document.getElementById('portraitContainer').appendChild(img);
+	
+	$rootScope.$on('sp.form.submitted', function(){
+		$scope.closeEditContainer('portrait');
+		c.server.get({action: 'updatePortrait'}).then(function(response){
+			$scope.data.character.portrait = response.data.character.portrait;
+			document.getElementById('characterPortrait').src = $scope.data.character.portrait;
+		});
+	});
 	
 	$scope.showStatusEffectDetail = function(effect){
 		$scope.data.currentEffect = effect;
@@ -128,6 +141,16 @@
 				document.getElementById('background').innerHTML = $scope.data.character.background;
 				document.getElementById('notes').value = $scope.data.character.notes;
 				var container = document.getElementById('editCharacterDescription');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+					
+				case 'portrait':
+				var container = document.getElementById('editPortrait');
 				container.style.display = 'inline';
 				if(parseInt(screen.width) < 762){
 					container.style.width = '80%';
@@ -595,6 +618,10 @@
 			container = document.getElementById('editCharacterDescription');	
 			break;
 				
+			case 'portrait':
+			container = document.getElementById('editPortrait');
+			break;
+				
 			case 'soak':
 			container = document.getElementById('editSoakContainer');	
 			break;
@@ -762,6 +789,15 @@
   background-size:cover !important;
 	opacity:.7;
   z-index:-5;
+}
+
+.panel-heading, .panel-footer{
+	background-color: black;
+  color:white;
+}
+
+#characterPortrait{
+	height: 150px;
 }
 
 .slideout-close-icon{
@@ -1582,12 +1618,20 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width:762px) and (max-width:1400px){
+  #characterPortrait{
+  	height:100px;
+  }
+  
 	#forcePowerInfoContainer{
   	max-height:450px; 
   }
 }
 
 @media only screen and (max-width:762px){
+  #characterPortrait{
+  	height:120px;
+  }
+  
   .force-powers-container,.force-headers,.force-power,.force-detail,.force-container{
   	padding:0;
   }
@@ -1808,8 +1852,22 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			notableFeatures: charGR.notable_features + '',
 			notes: charGR.notes + '',
 			otherGear: charGR.other_gear + '',
-			statusEffects: charGR.status_effects.toString().split(',')
+			statusEffects: charGR.status_effects.toString().split(','),
+			portrait: charGR.portrait + '.iix'
 		};
+	
+	if(data.character.portrait == '.iix'){
+		data.character.portrait = data.character.species.toLowerCase() + '.png';
+	}
+	//retrieve the form widget and pass current character as parameter
+	var widgetParams = {
+		table: 'x_176383_star_wars_character',
+		sys_id: characterID,
+		isPopup: true,
+		hideRelatedLists: true,
+		view: 'portrait'
+	};
+	data.updatePortraitWidget = $sp.getWidget('widget-form', widgetParams);
 	
 	//retrieve status effect details and set checked if character has any
 	data.statusEffects = [];
@@ -2247,6 +2305,11 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			data.character.notes = charGR.notes + '';
 			break;
 				
+			case 'updatePortrait':
+			charGR.get(characterID);
+			data.character.portrait = charGR.portrait + '.iix';
+			break;
+				
 			case 'saveSoak':
 			charGR.soak_value = input.soak;
 			charGR.update();
@@ -2542,7 +2605,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>993</sys_mod_count>
+        <sys_mod_count>994</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2550,7 +2613,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-07-09 20:16:23</sys_updated_on>
+        <sys_updated_on>2021-07-27 18:31:20</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2560,9 +2623,10 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 <div class="col-xs-12 character-sheet-container">
   <div class="col-xs-12 main-character-info">
     <!-- name, species, career, XP -->
-  	<span class="col-xs-12 col-md-8 name" ng-click="editCharacter('name')">{{data.character.name}}</span>
-    <span class="col-xs-12 col-md-8 star-wars-text" ng-click="editCharacter('name')">{{data.character.name}}</span>
-    <span class="col-xs-12 col-md-8 id-info"><text id="species">Species: {{data.character.species}}</text> <i class="far fa-info-circle" ng-click="editCharacter('species')"></i><br> Career:<text id="career">{{data.character.career}}</text> <i class="far fa-info-circle" ng-click="editCharacter('career')"></i><br> Specializations:<text id="specializations">{{data.character.specializationNames}}</text> <i class="far fa-info-circle" ng-click="editCharacter('specializations')"></i><br><text id="buyNewSpecializations" ng-click="editCharacter('newSpecs')"><i class="fab fa-old-republic"></i> Buy New Specializations</text></span>
+  	<span class="col-xs-4 col-md-1 portrait" id="portraitContainer" ng-click="editCharacter('portrait')"></span>
+    <span class="col-xs-8 col-md-7 name" ng-click="editCharacter('name')">{{data.character.name}}</span>
+    <span class="col-xs-8 col-md-7 sw-name star-wars-text" ng-click="editCharacter('name')">{{data.character.name}}</span>
+    <span class="col-xs-8 col-md-7 id-info"><text id="species">Species: {{data.character.species}}</text> <i class="far fa-info-circle" ng-click="editCharacter('species')"></i><br> Career:<text id="career">{{data.character.career}}</text> <i class="far fa-info-circle" ng-click="editCharacter('career')"></i><br> Specializations:<text id="specializations">{{data.character.specializationNames}}</text> <i class="far fa-info-circle" ng-click="editCharacter('specializations')"></i><br><text id="buyNewSpecializations" ng-click="editCharacter('newSpecs')"><i class="fab fa-old-republic"></i> Buy New Specializations</text></span>
     <span class="col-xs-12 col-md-4 xp-info-container">
       <span class="col-xs-12 mobile-nav-container xp-info text-center" id="xpInfo">
         <span class="col-xs-6 col-md-4 total-xp">
@@ -3086,6 +3150,13 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
       <span class="col-xs-12">
         <span class="col-xs-12" id="speciesName">{{data.character.species}}<br><text class="star-wars-text">{{data.character.species}}</text></span>
         <span class="col-xs-12" id="speciesDescription" ng-bind-html="data.character.speciesDescription"></span>
+      </span>
+    </span>
+    <!-- edit portrait -->
+    <span class="edit-character" id="editPortrait">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('portrait')"><i class="fas fa-times slideout-close-icon"></i></span>
+      <span class="col-xs-12">
+        <sp-widget widget="data.updatePortraitWidget"/>
       </span>
     </span>
     <!-- show career info -->

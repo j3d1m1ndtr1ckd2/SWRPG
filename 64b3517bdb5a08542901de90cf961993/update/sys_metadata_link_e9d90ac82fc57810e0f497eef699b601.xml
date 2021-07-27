@@ -40,7 +40,7 @@
         &lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
         &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
         &lt;sys_updated_on&gt;2021-05-24 05:57:19&lt;/sys_updated_on&gt;
-        &lt;sys_view_count&gt;1&lt;/sys_view_count&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
         &lt;text&gt;&lt;![CDATA[&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The core mechanic of the game revolves around the skill check. The skill check determines whether specific actions performed by characters succeed or fail, and any consequences that may accompany that success or failure. This core mechanic in EDGE OF THE EMPIRE is quite simple, and can be broken into two key elements:&lt;/span&gt;&lt;/p&gt;
 &lt;ol style="list-style-position: inside;"&gt;&lt;li style="font-size: 12pt;"&gt;&lt;span style="font-size: 12pt;"&gt;Roll a pool of dice.&lt;/span&gt;&lt;/li&gt;&lt;li style="font-size: 12pt;"&gt;&lt;span style="font-size: 12pt;"&gt;After all factors have been accounted for, if there is at least one Success symbol, the task succeeds.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
 &lt;p&gt;&lt;span style="font-size: 12pt;"&gt;The first element involves rolling a pool of dice. When a character wishes to attempt an action, a dice pool must be assembled. The number and type of dice are influenced by several factors, such as the character&amp;#39;s innate abilities, skill training, equipment, and the inherent difficulty of the task being attempted. The GM may decide that the environment or the situation warrants certain dice, as well—repairing a starship with ample time and the proper tools is one thing, but attempting repairs in the pouring rain, without tools, while under a hail of blaster fire is quite different. Once all the necessary dice have been assembled, the player attempting the task rolls all of the dice in his pool.&lt;/span&gt;&lt;/p&gt;
@@ -101,7 +101,7 @@
         <sys_created_on>2021-06-25 02:36:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e9d90ac82fc57810e0f497eef699b601</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>KB0010016</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -109,7 +109,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_e9d90ac82fc57810e0f497eef699b601</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-06-25 02:36:55</sys_updated_on>
+        <sys_updated_on>2021-07-15 18:21:02</sys_updated_on>
         <tablename>kb_knowledge</tablename>
     </sys_metadata_link>
 </record_update>

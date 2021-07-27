@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1091de4b2f5d7010e0f497eef699b6d5</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;EDGE OF THE EMPIRE focuses on the "fringes" of the Star Wars galaxy, including the little explored regions&lt;/meta_description&gt;
+        &lt;number&gt;KB0010031&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-07-16&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Character Creation Overview - Edge of the Empire&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-16 21:27:31&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;1091de4b2f5d7010e0f497eef699b6d5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-16 21:28:34&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;div&gt;EDGE OF THE EMPIRE focuses on the &amp;#34;fringes&amp;#34; of the Star Wars galaxy, including the little explored regions of the Outer Rim. the seedy underworld, and the outlier characters that inhabit these murky domains. The Player Characters of EDGE OF THE EMPIRE also embody this idea. Although the PCs may have come from a background of wealth, privilege, and status, they now find themselves in a situation where few things are truly black and white and even getting by from day to day is fraught with complications and danger.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;When a group of players decides to start an EDGE OF THE EMPIRE campaign, special emphasis should be placed on the background of their characters. Spending some time before the actual act of coming up with characteristics, talents, equipment, and other &amp;#34;hard&amp;#34; attributes goes a long way toward creating a vibrant, interesting character&amp;#39; for everyone to enjoy.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CHARACTER GENERATION&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Creating a character for EDGE OF THE EMPIRE is done in just a few short steps, allowing players to get-involved in the action right away. To create a character, a player needs this rulebook, a character sheet, and a pencil. Additionally, the player needs access to the dice pool (see page 10)—either his own or the group&amp;#39;s collection.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Character generation uses a point buy system, meaning each player has a budget of experience points he can invest in different aspects of his character. Characters begin with a modest experience point budget but players have the option to take on additional Obligation (debt, favors, bounties on their heads) for more experience points or additional starting funds, which is&lt;/div&gt;
+&lt;div&gt;described in-detail later in this chapter. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Selecting a character&amp;#39;s race and career determines the character&amp;#39;s starting characteristics and skills. After those initial choices, players invest their experience points to improve starting characteristics, acquire training in key skills, choose starting equipment, learn special talents, and even unlock additional talent trees.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CHARACTER CONCEPT&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Before a player starts generating attributes, he should put some thought into what sort of character he wants to play. Does he want to play a roguish pilot, quick to draw his blaster when things get sticky? A taciturn explorer driven to see everything the galaxy has to offer? In EDGE OF THE EMPIRE, any character concept found within the Star Wars universe is possible.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;The GM should give the players an idea on what sort of campaign he intends to run for the players. If the game focuses heavily on combat, the players may consider choosing more martially-oriented characters. If the campaign runs deep with intrigue, then building characters with strong social abilities and skills makes more sense. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;The GM should encourage the players to discuss what kind of careers might be the most useful during a campaign. Ideally, a group of PCs should include a mix of characters to ensure they&amp;#39;ll survive whatever the GM comes up with, keeping the campaign style in mind—someone who can fight well, someone who can pilot a ship, a person that can fix machines, and so on. Some overlap may occur, but there is enough variety in EDGE OF THE EMPIRE that even if two players choose the same career, each could offer his own unique abilities and talents.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;It should be noted that no character is ever a &amp;#34;wrong&amp;#34; choice, regardless of the campaign. The GM should never discourage a player from a particular character choice and should integrate all the character concepts into the campaign at hand. Indeed, part of the fun that comes from playing EDGE OF THE EMPIRE is the interesting mix of characters thrust together during a campaign.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;GENERATION STEPS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;To create a character, each player follows these steps. The steps are briefly explained below, then broken down into more detail throughout the course of this chapter. &lt;/div&gt;
+&lt;div&gt;1. Determine Character Concept and Background&lt;/div&gt;
+&lt;div&gt;2. Determine Starting Obligation&lt;/div&gt;
+&lt;div&gt;3. Select Character Species&lt;/div&gt;
+&lt;div&gt;4. Select Character Career&lt;/div&gt;
+&lt;div&gt;5. Select Specializations&lt;/div&gt;
+&lt;div&gt;6. Invest Experience Points&lt;/div&gt;
+&lt;div&gt;7. Determine Derived Attributes&lt;/div&gt;
+&lt;div&gt;8. Determine Starting Motivations&lt;/div&gt;
+&lt;div&gt;9. Choose Gear and Description&lt;/div&gt;
+&lt;div&gt;10. Group Chooses Starting Ship&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;DETERMINE CHARACTER CONCEPT AND BACKGROUND&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Every character starts as an idea. Does a player want to play a dashing scoundrel of a smuggler, a brawny Wookiee pilot, or a feared and competent bounty hunter? Before starting, the player should take a few moments and think about the character he wants to build and what he wants his character&amp;#39;s background to be. Basically, where did he come from, and what happened to make him into the character he is today? No person springs into being fully formed. Individuals are influenced by a lifetime of decisions and circumstances, starting from birth.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;More on determining a character&amp;#39;s background is covered on page 36.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;DETERMINE STARTING OBLIGATION&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;When creating an EDGE OF THE EMPIRE character, the player chooses a starting Obligation early on. It can inform other decisions a player makes during character creation, such as the type of character he wants to play, what sort of overall group the players collectively want, and the sorts of skills, gear, and abilities they may wish to start with. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;More on Obligation is covered on page 38.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;SELECT CHARACTER SPECIES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;The galaxy is a crowded place, full of numerous sentient species that all have their own unique abilities and beliefs. After a character&amp;#39;s Obligation is determined, the player should define the character&amp;#39;s species. Once selected, it can never be changed. A character&amp;#39;s species determines its starting characteristic ratings for Brawn, Agility, Intellect, Cunning, Willpower, and Presence. It also provides default wound threshold and strain threshold values, as well as innate abilities, bonuses, and starting XP. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;More on the various species players can choose from can be found on page 43.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;SELECT CHARACTER CAREER&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;A career sets the character along a certain path or way of life, but is by no means limiting. A career is a broad archetype or template of related skills and abilities. Within each career are a number of specializations. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Each career has eight associated career skills. These skills should be checked on the character sheet to indicate they are career skills. During this step of character creation, the player may choose four of the eight starting career skills and gain one rank in each of the selected skills free (he does not spend experience points). He may not choose the same skill more than once.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;During play, career skills are less expensive to train and improve than non-career skills. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;More on the six careers can be found on page 53.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;SELECT SPECIALIZATIONS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Each career has several specializations within its broader definition. Specializations are more focused, and provide special abilities called talents. Each character gains access to one specialization without spending experience at character creation. That specialization must be one in his chosen career. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Each specialization also includes four additional career skills. These four skills should be marked on the character sheet as career skills if they are not already marked. During this step of  character creation, the player may choose two of the four additional career skills and gain one rank in each (without spending experience).  He may not choose the same skill more than once. However, he may choose to train a skill that was also trained during the career selection step, allowing the character to start with a skill trained to level two. If the character can choose multiple Specializations at character creation (whether due to some factor of character creation or because he purchases an additional Specialization with starting experience) he must select one and only one Specialization from which to choose his two free ranks in two career skills. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;More on specific specializations can be found in the career sections starting on page 55. A full list and descriptions of each talent in this book can be found starting on page 129 or in the holocron section of this site.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;INVEST EXPERIENCE POINTS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;During character creation, experience points can be invested into one of four areas of character development: improving characteristics, training skills, acquiring talents, and learning new specializations. A player may spend experience points on any combination of these developments to create a truly unique character. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Players do gain additional experience points throughout the course of gameplay. The amount of experience they gain is determined by the GM; more information about this can be found in Chapter IX: The Game Master.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Players can spend experience points during character creation and at the end of each game session when they receive additional experience points. More about spending experience points can be found on page 92.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;DETERMINE DERIVED ATTRIBUTES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;There are several important attributes for each character that can only be determined after investing experience points. These help further define the character&amp;#39;s resilience and combat abilities. These attributes are wound threshold, strain threshold, defense, and soak value. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Specifics on how to determine derived attributes can be found starting on page 94.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;DETERMINE STARTING MOTIVATIONS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;In addition to a starting Obligation, every player should begin with a starting Motivation for his character. Motivations provide additional story elements for both the player and GM to draw from. Characters can gain additional experience point (XP) bonuses if the GM determines that the player kept true to his character&amp;#39;s Motivation throughout the course of the adventure.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;The three primary Motivations from which a player may choose for his character are Ambition, Cause, and Relationship. Once the primary Motivation is determined, the player rolls percentile dice on the appropriate specific Motivation table to provide further detail. For more information on determining and utilizing Motivations during play, see page 94.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;CHOOSE GEAR AND DESCRIPTION&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Once all of the other characteristics and derived attributes are determined, the player can then flesh out the rest of his character, such as height, weight, build, hair or skin color, planet of origin, and other cosmetic details. Ideally, background details should tie in with the character&amp;#39;s Obligations and Motivation (see page 38 and page 94 respectively). Lastly, the player comes up with the character&amp;#39;s name and selects starting gear. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;GROUP CHOOSES STARTING SHIP&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;In EDCE OF THE EMPIRE, the characters are assumed to be independent freelancers and have the advantage of starting play with their own starship to move from place to place (and adventure to adventure).  Once all of the characters have been finalized, the group should discuss the type of starship they will use as their &amp;#34;home base.&amp;#34; This section provides a list of choices from which the GM and players can select their group&amp;#39;s starship.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=1091de4b2f5d7010e0f497eef699b6d5"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-17 05:58:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f7ea001f2f55b010e0f497eef699b628</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010031</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_f7ea001f2f55b010e0f497eef699b628</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-17 05:58:25</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

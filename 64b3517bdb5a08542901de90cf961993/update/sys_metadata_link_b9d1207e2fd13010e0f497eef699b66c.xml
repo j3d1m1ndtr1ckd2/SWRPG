@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e8e33ee12fc53050e0f497eef699b69a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Playing the Game"&gt;8a5cab012f94b010e0f497eef699b62e&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;After surviving everything the Empire and the dark side of the Force has to throw at them, Player Characters&lt;/meta_description&gt;
+        &lt;number&gt;KB0010028&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-06-29&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Experience and Development&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-06-29 21:37:19&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;e8e33ee12fc53050e0f497eef699b69a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-06-29 21:37:24&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;div&gt;After surviving everything the Empire and the dark side of the Force has to throw at them, Player Characters are liable to learn from their successes—and mistakes— in order to better themselves in preparation for even greater challenges. Experience is the primary means by which players customize their characters. Each PC starts with a beginning pool of experience points that can be spent during character creation to train skills, improve characteristics, or acquire talents. During each session of a campaign, Player Characters receive additional experience, which can also be spent to improve their skills, talents, and characteristics.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;STARTING EXPERIENCE POINTS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Player Characters begin with a number of experience points (XP) based on their species. The experience points used during character creation are the same “currency” as experience points received during play. If a player chooses to spend fewer experience points than budgeted during character creation, those points carry over into the game, and the PC has more experience points to spend once the adventures begin.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;IMPROVING CHARACTERISTICS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Raising a characteristic during character creation costs ten times the value of the next highest rating. During character creation, no characteristic can be increased to higher than 5. During the course of play, no characteristic can be increased to higher than 6. Characteristics may only be purchased with experience points during character creation, not at any later time. During gameplay, characteristics can only be increased by acquiring specific high-tier talents.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;SKILL TRAINING&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Each skill has five ranks of training available. A Player Character may have already acquired several ranks of skill training from his starting career and specialization for free. PCs may train additional skills and gain additional ranks during character creation. Regardless of any species or career bonuses, no skill can be raised higher than rank 2 during character creation.&lt;/div&gt;
+&lt;div&gt;The cost for training skills falls into one of two categories: career skills and non-career skills. Training a career skill costs five times the value of the next highest rank. Training a non-career skill costs five times the value of the next highest rank plus 5 additional experience points. Players may purchase ranks in skills for their PCs during character creation or later during gameplay.&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;ACQUIRING TALENTS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Talents are acquired from a Player Character’s available talent trees, generally provided by their specialization choices. A PC can purchase any talents for which he is eligible. An eligible talent is any talent in the top row (which cost 5 experience points each), or any talent that is directly connected to an already- acquired talent. The cost of a talent varies according to which&lt;/div&gt;
+&lt;div&gt;tier it occupies. Similar talents may have different costs for different PCs, based on their specializations. Player Characters may purchase talents during character creation or later during gameplay.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;ACQUIRING NEW SPECIALIZATIONS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Each Player Character starts with a single specialization within his chosen career. However, PCs may purchase additional specializations in order to gain access to a broader range of skills and talents. There is no limit on the number of specializations a PC may possess.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Acquiring a specialization allows a Player Character to spend experience points in the new specialization’s talent tree, in addition to any he was able to access before. Most specializations have one or more bonus career skills as well. These skills now count as career skills for the PC. Player Characters can purchase specializations from any career. Purchasing an additional specialization within a PCs career costs ten times the total number of specializations he would possess after adding this new specialization. Purchasing non-career specializations costs ten times the total number of specializations he would possess after adding this new specialization, plus an additional 10 experience.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=e8e33ee12fc53050e0f497eef699b69a"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-15 18:21:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b9d1207e2fd13010e0f497eef699b66c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010028</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b9d1207e2fd13010e0f497eef699b66c</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-15 18:21:32</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

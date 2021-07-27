@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d58576652fc53050e0f497eef699b648</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Playing the Game"&gt;8a5cab012f94b010e0f497eef699b62e&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Some character attributes are based on other choices made during character creation or over the course&lt;/meta_description&gt;
+        &lt;number&gt;KB0010029&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-06-29&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Derived Attributes&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-06-29 21:40:24&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;d58576652fc53050e0f497eef699b648&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-06-29 21:40:47&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;div&gt;Some character attributes are based on other choices made during character creation or over the course of a campaign. Some of these attributes may change frequently over the course of play or may be modified by talents, equipment, or various special abilities.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;WOUND THRESHOLD&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;A character’s wound threshold represents how much physical damage he can withstand before he is knocked out. Wounds can be serious and lead to a Critical Injury. They can be treated with the Medicine skill, but it may take time to recover (droids use Mechanics to repair wounds).&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;A character’s starting wound threshold is based on species and Brawn rating. After this initial value is determined, increases to Brawn rating do not increase a character’s wound threshold; wound threshold improvements can then be acquired only by purchasing the appropriate talent, such as Toughened.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;STRAIN THRESHOLD&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;A character’s strain threshold represents how much stress a character can withstand before becoming stunned, dazed, or otherwise incapacitated. Strain represents psychological or mental damage to the character. Strain is more easily suffered than wounds, and can even be used as a resource by players to trigger certain character abilities. Thankfully, characters recover from strain more quickly than from wounds.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;A character’s starting strain threshold is determined based upon species and Willpower rating. After this initial value is determined, increases to Willpower rating&lt;/div&gt;
+&lt;div&gt;do not increase the character’s strain threshold; strain threshold improvements are then acquired only by purchasing appropriate talents, such as Grit.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;DEFENSE&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Defense determines how difficult a character is to hit in combat situations. Characters have both a ranged defense and a melee defense. A character’s default value in both ranged defense and melee defense is zero. If a character’s defense value is listed simply as “Defense” and not specifically defined by separate ranged and melee values, then the same value is applied to both ranged and melee defense.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Defense is most commonly gained by wearing armor or by adopting a defensive position in combat, such as taking cover. Some special talents may also increase one of a character’s defense ratings.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;SOAK VALUE&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;A character’s soak value determines how much incoming damage the PC can shrug off before taking real damage. The soak value is subtracted from any incoming damage to the character. Any damage remaining after subtracting the soak value becomes wounds applied against the character&amp;#39;s wound threshold.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;A character’s default soak value is equal to his Brawn rating. After this initial value is determined, increases to Brawn rating do increase the character&amp;#39;s soak value. Additional soak value bonuses are most often gained by wearing armor. Some talents may also increase a character’s innate soak value.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=d58576652fc53050e0f497eef699b648"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-15 18:21:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3fc1ec3e2fd13010e0f497eef699b677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010029</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_3fc1ec3e2fd13010e0f497eef699b677</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-15 18:21:24</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

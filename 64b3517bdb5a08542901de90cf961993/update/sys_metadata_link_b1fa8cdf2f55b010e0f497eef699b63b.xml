@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ad39eb8b2fd1b010e0f497eef699b60e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;The Galactic Civil War is one of the most dynamic and exciting times in the history of Star Wars, and&lt;/meta_description&gt;
+        &lt;number&gt;KB0010033&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-07-17&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Character Creation Overview - Age of Rebellion&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-07-17 04:02:40&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;ad39eb8b2fd1b010e0f497eef699b60e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-17 05:40:04&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;The Galactic Civil War is one of the most dynamic and exciting times in the history of Star Wars, and Age of Rebellion places characters squarely in the middle of it.  This is a time when the struggle between the Empire and those who would overthrow it comes into sharp relief.  Characters created for this era are destined to become heroes of the Rebellion - if they can succeed at the great challenges ahead of them.&lt;/p&gt;
+&lt;p&gt;Those who oppose the Empire come from all walks of life.  Players should give serious thought to the backgrounds of their player characters, as this provides foundation for all of their other character creation choices.  Some groups might wish to coordinate their stories so that they all come from the same place, sharing a special bond that keeps them together as a team.  Others might wish to go with a much more diverse approach, throwing a bunch of disparate characters together and forcing them to forge their bonds in the fires of desperate conflict.  Talking about these things ahead of time is a good idea.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;THE MAKING OF A HERO&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Creating a character for Age of Rebellion is done in just a few short steps, allowing players to get involved in the action right away.  To create a character, a player needs this rulebook, a character sheet, and a pencil.  Additionally, the player needs access to the game dice.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Character generation uses a point buy system, meaning each player has a budget of experience points to invest in different aspects of his character.  Characters begin with a modest experience point budget, but players have the option to exchange their starting Duty value for more experience points or additional starting funds, which is described in detail later in this chapter.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Selecting a character&amp;#39;s species and career determines the character&amp;#39;s starting characteristics and skills.  After those initial choices, players invest their experience points to improve starting characteristics, acquire training in key skills, choose starting equipment, learn special talents, and even unlock additional talent trees.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CHARACTER CONCEPT&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Before the first mark from a pencil is made on any paper, players should put some thought into what sort of character they want to play. Brash pilots, hardened special forces troops, idealistic ex-senators, hotshot slicers, and many other character types all make for excellent Rebels, ready to strike against the Empire. Any concept from the Star Wars universe is possible, as long as the PC is someone who has chosen to stand up against Emperor Palpatine and his war machine.&lt;/p&gt;
+&lt;p&gt;This is the best time for the Game Master to sit down with the players and discuss the nature of the campaign ahead of them. Players should also feel free to make requests concerning what they would like to do and see in the campaign, as well as to ask questions about what to expect. After all, no one enjoys making a PC whose career and talent choices do not fit in the current campaign. In a game focused primarily on a running battle against stormtroopers across a wasteland planet, the smooth-talking diplomat created to interact with locals and drum up support for the Alliance is going to be seriously out of his element. This is fine for some sessions, but imminently frustrating if the vast majority of the sessions are similar.&lt;/p&gt;
+&lt;p&gt;Most campaigns are well served by an effective mix of different concepts, resulting in Player Characters who cover many essential roles for different types of missions. Most players choose to play something at least moderately different from everyone else, if for no other reason than to look and feel unique as a hero in the story. However, two characters with the same career are still able to be quite diverse in terms of skills, talents, and equipment.  Additionally, many Age of Rebellion campaigns tend to have at least a moderate dose of military-style conflict, so having a few character who know their way around a battlefield is rarely a bad idea.&lt;/p&gt;
+&lt;p&gt;Some Game Masters relish the challenge of taking a random and diverse group and throwing them into adventures together. The group might not start out as a team working for the Alliance to Restore the Republic. They might, in fact, have little to no direct intention of becoming Rebels—at least, not until everything around them goes terribly wrong, and agents of Lord Vader are determined to capture or kill them at all costs!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;GENERATION STEPS&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;To create a character, a player follows ten steps.  Each step is summarized here and then fully explained later in this chapter.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 8pt;"&gt;STEP 1: DETERMINE&lt;/span&gt;&lt;span style="font-size: 8pt;"&gt; BACKGROUND&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A character&amp;#39;s background, or backstory, is the tale of that character’s past and usually explains how he came to be a part of the adventures that are about to unfold. If a player chooses to be a laconic starfighter pilot, what’s his story? Did he once fly for the Empire? Did he see or do things that haunt him to this day? Is that why he’s so terse and distant from others? Or did he fly for a freighter company until it was ruined by Imperial trade policies and now is flying with the Rebellion to get some payback?&lt;/p&gt;
+&lt;p&gt;A character could have any number of stories, all of which help to inform the player about how to craft the character from this starting point. A backstory also serves to help the Game Master figure out the best way to introduce and involve the character in the story.&lt;/p&gt;
+&lt;p&gt;More on character backgrounds can be found on page 43.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 2: DETERMINE DUTY&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hand-in-hand with a PC’s background, his Duty to the Rebellion is a driving part of his role in the campaign. While it’s true that the Player Characters can be said to have an overall duty to fight the Empire and restore the Republic (though not all of them might agree on the second point), each PC has a specific expression of the larger goal.  Some are oriented toward ensuring the Alliance’s technical or space combat advantages, while others are focused on destroying Imperial assets or recruiting new allies. Whatever this Duty is, it has a strong impact on both the individual’s and the group’s relationship with the Alliance, and it influences the character building process. &lt;/p&gt;
+&lt;p&gt;More on Duty is found on page 46.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 3:SELECT A SPECIES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The immense diversity of sentient life in the galaxy is one of the greatest strengths the Alliance has over the human-centric Empire. Many species have suffered terribly at the hands of xenophobic Moffs and governors, turning more and more of them toward the Alliance to offer the support and resources of their people and their planets. &lt;/p&gt;
+&lt;p&gt;The selection of a species establishes many important core aspects of a Player Character, including initial ratings in the characteristics of Brawn, Agility, Intellect, Cunning, Willpower, and Presence; starting wound and strain threshold values; special abilities innate to the particular species; and the initial pool of experience points the PC has to spend on further development during character creation. &lt;/p&gt;
+&lt;p&gt;The various species available for PCs in AGE OF REBELLION are found starting on page 51. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEPS 4 AND 5: SELECT CAREER AND SPECIALIZATIONS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Steps 4 and 5 are handled together, but represent two distinct choices that shape a Player Character; career and specializations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CAREER&lt;/strong&gt;&lt;br /&gt;The choice of a career establishes the central focus of a character’s training, education, and professional experience. While not particularly limiting, it does establish what kinds of skills and talents are going to make the most sense for the PC to possess, as well as the role the character is most likely to excel at in a group. Players should think of a career as an archetype that forms the initial framework upon which the rest of the PC is constructed.&lt;/p&gt;
+&lt;p&gt;One of the most important things the career choice does is establish which eight skills are considered career skills for the Player Character. Each of these eight should be marked on the character sheet accordingly, as they are easier to improve than other skills as the PC gains more experience. As soon as a career is selected, the player may select four of those eight skills in which to gain a free initial rank; no skill may be selected more than once.&lt;/p&gt;
+&lt;p&gt;The six careers can be found starting on page 61. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SPECIALIZATIONS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If a career is the initial framework for a Player Character’s construction, specializations can be viewed as the materials added to the framework to fill it in and give it detail and distinction. Associated with each career are three distinct specializations, each possessing unique aspects and—more specifically—a unique talent tree, which addresses the truly special things a PC can do&lt;br /&gt;for himself and his team.&lt;/p&gt;
+&lt;p&gt;After selecting a specialization, the player should take note of the specialization’s four additional bonus career skills. Any that are not already included on his career skill list should be added to the PC’s total list of career skills. The player then selects and gains a free rank in two separate skills from the bonus career skill list. If the specialization skill list repeats a skill from the career skill list, the player may invest another rank in this skill for a total of two ranks in that skill.&lt;/p&gt;
+&lt;p&gt;In any situation that allows a player to select more than one specialization at creation (whether from using experience points or by some other means), he can select only one specialization from which to choose his two free ranks in two bonus career skills.&lt;/p&gt;
+&lt;p&gt;The specializations for each career are detailed within the associated career descriptions on pages 61-101. A complete list of the talents can be found on page 139.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 6: INVEST EXPERIENCE POINTS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The selection of a species established an initial pool of experience points that act as a kind of currency. This currency can be spent on making improvements to the PC by upgrading characteristics, increasing ranks in skills, acquiring talents, adding new specializations, and increasing his Duty value. All of these choices create numerous combinations, so even two Player Characters with the same species, career, and specialization choices might end up significantly different from one another.&lt;/p&gt;
+&lt;p&gt;Additional experience points are earned by Player Characters over the course of the campaign as they fight against the Empire, enabling them to further enhance their skills and talents. GMs award these experience points according to guidelines established in Chapter IX: The Game Master Players can learn more about spending experience points, both at this stage of character creation and during the campaign, starting on page 102.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 7: DETERMINING DERIVED ATTRIBUTES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is one step that must be done in order; certain statistics cannot be established and recorded until after the initial pool of experience points is spent. There are four derived attributes:  wound threshold, strain threshold, defense, and soak value.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 8:DETERMINE MOTIVATION&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While a Player Character&amp;#39;s Duty establishes what the character must accomplish on behalf of the Alliance, Motivation determines why the PC is determined to do it. Does the character fight&lt;br /&gt;the Empire because he believes the New Order’s policies are morally wrong? Or is he looking to take vengeance upon the Empire’s minions for the wrongs they’ve committed against his people or the ones he loves? &lt;/p&gt;
+&lt;p&gt;Motivations should derive directly from the background the player has crafted for his PC. In fact, though it is possible to roll randomly on the charts in the Motivation section, players should seriously consider the specific relationship between their background, their Duty, and their Motivation. They might find it more internally consistent to select Motivations that best fit the story they’ve already begun to tell. &lt;/p&gt;
+&lt;p&gt;There are three general categories of Motivation: Belief, Connection, and Quest. Each of these Motivations has a list of specific manifestations. Additionally, with the Game Master’s permission, a player may create his own Motivation and specific details. &lt;/p&gt;
+&lt;p&gt;Motivation has an important value to the PC; playing while keeping within the Motivation may gain the Player Character bonus experience points at the end of a session. This is a pretty hefty encouragement for the player to choose a Motivation that will be comfortable to roleplay on a regular basis. &lt;/p&gt;
+&lt;p&gt;More information and charts for Motivation begin on page 104.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 9: CHOOSE GEAR AND APPEARANCE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With everything else figured out, including species, career, specialization, and derived attributes, the players can now delve into more descriptive details about their characters. This includes basic biographical data like height, weight, eye color, hair (or tentacle, or horn) color, type of skin, homeworld, and so on. Naturally, all of these aspects should tie directly into the background and other key choices the player made for the PC. &lt;/p&gt;
+&lt;p&gt;As for starting gear, a Player Character begins his career in the Alliance with 500 credits’ worth of personal weaponry, armor, and other equipment. Once the PC begins going on missions for the Rebellion, he might be granted additional gear to carry out those missions (though the PC might not always be allowed to keep such gear). &lt;/p&gt;
+&lt;p&gt;Players can do their shopping in Chapter V: Gear and Equipment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 10: ACQUIRE REBELLION RESOURCES&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Though the Alliance to Restore the Republic is strapped for resources to support its struggle against the Empire, it is not bereft of assets to assign toward its goals. Croups of agents such as the Player Characters are often given access to resources that will help them take on the Empire more efficiently.&lt;/p&gt;
+&lt;p&gt;At the beginning of the game, the Game Master can allow the PCs to select a ship for their use, or even a few starfighters, if appropriate. Alternatively, the GM can instead provide them with other resources (while replacing their exclusive use of a ship with other transportation arrangements). This includes an additional allotment of credits they can spend to obtain extra gear, as well as some form of base of operations.&lt;/p&gt;
+&lt;p&gt;More on Rebellion resources is explained beginning on page 111.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=ad39eb8b2fd1b010e0f497eef699b60e"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-17 05:58:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b1fa8cdf2f55b010e0f497eef699b63b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010033</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b1fa8cdf2f55b010e0f497eef699b63b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-17 05:58:33</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

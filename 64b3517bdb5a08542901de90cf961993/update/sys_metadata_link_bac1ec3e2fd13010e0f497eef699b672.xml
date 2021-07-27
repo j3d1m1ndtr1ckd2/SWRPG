@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b0c4bf982f41f810e0f497eef699b679</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Playing the Game"&gt;8a5cab012f94b010e0f497eef699b62e&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;After a dice pool is rolled, the players evaluate the results to resolve the outcome. The first outcome&lt;/meta_description&gt;
+        &lt;number&gt;KB0010024&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-06-26&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Interpreting the Pool&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-06-26 05:16:55&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;b0c4bf982f41f810e0f497eef699b679&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-06-26 05:17:02&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;div&gt;After a dice pool is rolled, the players evaluate the results to resolve the outcome. The first outcome to resolve is determining the success or failure of the skill check. Then, the players can determine if any significant side effects-good, bad, or both-are triggered.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;SUCCESSES &amp;amp; FAILURES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;If a skill check results in both Success symbols and Failure symbols, the total numbers of each type of symbol are compared. Each Failure symbol cancels one Success symbol.  After all Failure symbols have canceled Success symbols, a pool will either have one or more Success symbols, one or more Failure symbols, or everything evenly canceled out. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;During this step, it is important to note that a Triumph symbol contributes one Success &amp;amp; to the pool, in addition to any special effects it may trigger. Likewise, a Despair symbol contributes one Failure to the pool, in addition to its special effects.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;If all Successes and Failures in the pool are canceled out, or if there are any net Failures remaining, the skill check fails. If at least one Success remains, the skill check succeeds. Remember, a dice pool must have at least one Success symbol remaining for a skill check to succeed.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;ADVANTAGES &amp;amp; THREATS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;It is also likely that a skill check results in either Advantage symbols, Threat symbols, or both. The player adds up the total number of Threat symbols and compares them to the total number of Advantage symbols.  Each Threat symbol cancels one Advantage symbol.  After all Threat symbols have canceled Advantage symbols, a pool will have one or more Advantage symbols, one or more Threat symbols, or have everything evenly canceled out.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Having one or more net Advantage symbols indicates a positive side effect or benefit. Having one or more net Threat symbols indicates a negative side effect or complication with the check. If all the Advantages or Threats cancel each other out, there are no additional effects. This possibility for a positive or negative side effect can occur regardless of whether the task succeeds or fails. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Advantage and Threat can be used to fuel a wide variety of side effects. The player rolling the skill check generally chooses how to spend Advantage, such as triggering a weapon&amp;#39;s special ability, performing an additional maneuver, or possibly recovering some strain. Different weapons, talents, or equipment may have special uses for Advantage. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Threat is generally spent by the GM to impose some sort of complication, with more severe complications requiring more Threat. Threat can result in a number of side effects such as a task taking longer to complete than expected, suffering strain, providing an opportunity to an opponent, falling prone, or being subjected to an environmental effect. Different talents, environments,&lt;/div&gt;
+&lt;div&gt;or opponents may have special uses for Threat. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;TRIUMPH &amp;amp; DESPAIR&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Two symbols represent far more potent effects than the others. Triumph and Despair are special cases and operate slightly differently than the other symbols. Unlike Success and Failure or Advantage and Threat, Triumph and Despair do not completely cancel each other out.  Rather, they indicate an especially positive or unfortunately dire side effect.  &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Remember that it is possible for a skill check to result in both symbols. In this case, both results are interpreted separately. Just like Threat, it is possible for a skill check to succeed but still impose a Despair effect, or a skill check may fail but still trigger a Triumph effect.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;TRIUMPH&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;A Triumph symbol has two effects. First, each Triumph symbol counts as one Success symbol.  Second, a Triumph result indicates an unexpected boon or significantly beneficial effect related to the task. Many weapons and talents have side effects that can be triggered using a Triumph result. Otherwise, the scenario or GM may have other options for using Triumph. It is important to keep in mind that while a Triumph symbol does add a Success symbol to the pool, the presence of one or more Triumph symbols does not automatically mean a successful skill check.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Triumph can be thought of as an enhanced, more powerful version of Advantage. For example, a single Triumph symbol can trigger any weapon&amp;#39;s special quality or inflict a critical injury, rather than requiring a certain number of Advantage symbols.  Or, while Advantage may allow a character to recover strain, in the right situation a Triumph may allow recovery of a wound.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;DESPAIR&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;A Despair symbol also has two effects. First, each Despair symbol counts as one Failure symbol.  Second, a Despair result indicates an unfortunate consequence, significant complication, or dire effect related to the task. Opponent&amp;#39;s abilities, the environment, or the encounter description may offer different options for using Despair. Otherwise, the GM adjudicates the results of Despair symbols based on the  situation. It is important to keep in mind that while a Despair symbol does add a Failure symbol to the pool, the presence of one or more Despair symbols does not automatically mean a failed skill check. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Despair can be viewed as an upgraded, more potent form of Threat. For example, a single Despair symbol may trigger effects that would normally require several Threat symbols. Otherwise, Despair may be significant enough to warrant inflicting wounds instead of strain, mean an important piece of equipment breaks, that a weapon jams or runs out of ammo, or coupled with failure, a grenade hits an unintended target.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;UNLIMITED POSSIBILITIES&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;With the opportunity for success or failure, as well as the myriad side effects possible through multiple Advantages, Threats, Triumphs, and Despairs, no two skill checks are the same. There are hundreds of possible outcomes with almost every skill check. A character may achieve a high-magnitude success with no other complications, or a low-magnitude success with Advantages, or a moderate success with Advantages that are tempered with Despair. Likewise, failed checks may have a silver lining by also featuring Advantage or Triumph, or create truly dire situations in which failure is accompanied by both Threats and Despair. &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;The sheer number of possibilities provide opportunities to narrate truly memorable action sequences and scenes. Players and GMs alike are encouraged to take these opportunities to think about how the symbols can help move the story along and add details and special effects that create action packed sessions.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=b0c4bf982f41f810e0f497eef699b679"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-15 18:21:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bac1ec3e2fd13010e0f497eef699b672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010024</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_bac1ec3e2fd13010e0f497eef699b672</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-15 18:21:19</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>65b87f982f41f810e0f497eef699b692</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Playing the Game"&gt;8a5cab012f94b010e0f497eef699b62e&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;The standard skill check using a basic dice pool can be used to resolve the vast majority of tasks in&lt;/meta_description&gt;
+        &lt;number&gt;KB0010025&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2021-06-26&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Other Types of Checks&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2021-06-26 05:31:35&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;65b87f982f41f810e0f497eef699b692&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-06-26 05:31:43&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;div&gt;The standard skill check using a basic dice pool can be used to resolve the vast majority of tasks in a game session. However, there may be some situations that require a slightly different approach to properly resolve. In addition to the standard skill check, there are opposed checks, competitive checks, and assisted checks.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Opposed checks are often used when the success or failure of the task is strongly influenced by an opponent.  Competitive checks can be used to determine which character performs better when two or more characters are attempting the same task. Assisted checks are simply variations of other checks, but two or more characters are working together. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;OPPOSED CHECKS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Sometimes a task is more difficult to accomplish because someone is actively trying to prevent the character from succeeding, or one character is trying to overcome or bypass another character. For example, a suspected thief lies to the local governor, claiming he had nothing to do with the burglary of medical supplies.  The thief&amp;#39;s Deception check might be opposed by the governor&amp;#39;s Vigilance. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Opposed checks are most often applicable when a task involves directly opposing the task that another character is performing, or when a task involves trying to go unnoticed, undetected, or undiscovered by someone else. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Opposed checks add difficulty dice and potentially challenge dice to the skill check&amp;#39;s dice pool, similar to standard checks.  However, rather than assigning a general difficulty level to an opposed check, a quick comparison between the active and opposing characteristics and skill ratings determines the difficulty of an opposed check.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;The active character&amp;#39;s dice pool starts out using the same rules as building a basic dice pool, using ability dice and potentially upgrading some into proficiency dice based on his characteristic&lt;/div&gt;
+&lt;div&gt;and skill rating. The opposition then introduces difficulty dice and challenge dice based on its relevant characteristic and skill rating.  The opposition&amp;#39;s higher value between its characteristic and skill determines how many difficulty dice are added to the pool, while the lower value indicates how many of those dice are upgraded into challenge dice.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;COMPETITIVE CHECKS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Sometimes, several people are trying to accomplish the same goal at the same time, or are trying to determine who performs a task better than the other.  When multiple characters are  attempting the same task and trying to determine who accomplishes the task first, performs the task better, or measure some other outcome, they are engaging in a competitive check.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;For example, two characters engage in a friendly arm-wrestling contest at the local cantina. Each one has the same goal—to win the match by pinning his opponent&amp;#39;s arm. This is a competitive check to see who outperforms the other. Other competitive checks could include several pilots navigating the Kessel Run to find who completes the run in the shortest distance, or two politicians trying to win over an undecided crowd during a council hearing.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;For a competitive check, the GM assigns a difficulty level for the task, and each character involved in the competition makes a skill check based on that difficulty.  When characters make a competitive check, it is important to track how many total &amp;amp; they generate with their respective dice pools. The character with the most total successes &amp;#34;wins&amp;#34; the check.  If neither character succeeds in their check, then neither character wins, and the competitive check results in a draw.  If two or more characters generate the same number of successes, the check goes to a tiebreaker to see if the draw can be resolved.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Although advantage and triumph still provide their customary effects in these situations, they also provide one additional benefit. If the two characters tie with the number of net successes they generate, the character with the greater number of triumph becomes the winner. If the characters are also tied for number of triumph, the character with more total advantage is declared the winner.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;If the characters are still tied after evaluating these categories, the competitive check is a draw.  In this case, the GM must determine a sole winner; this case could count as all tied parties losing, or the GM may decide to resolve the draw using another competitive check, or find some other means to settle the competition.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;ASSISTED CHECKS&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;Some tasks are important or challenging enough that help is required—or at the least appreciated. Fortunately, characters can provide assistance to each other when performing a variety of tasks. Over course of normal narrative play, providing assistance is easy. A player simply needs to explain how his character is helping with the task. If the explanation is reasonable, the GM may award assistance. There are two types of assistance that can be provided—skilled assistance and unskilled assistance.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;SKILLED ASSISTANCE&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;Assistance works best when the assisting party brings additional insight or expertise to the task. When a character with a higher characteristic or skill rating provides assistance to another character, the dice pool may use one PC&amp;#39;s characteristic, and the other PC&amp;#39;s skill rating.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;UNSKILLED ASSISTANCE&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;If the assisting party does not have a higher characteristic or skill rating, so that using either rating provides no benefit to the other character, the GM may add boost dice to the dice pool (representing the fact that the additional assistance is still providing some benefit).&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;ASSISTANCE RESTRICTIONS&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;The GM may stipulate certain conditions or requirements to offer assistance. To assist with tending to an injury, the assisting character needs to be next to the person being tended to, or to assist with translating an ancient holocron, the assisting character may need access to the holocron.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Generally, only one character can provide assistance at a time. However, the GM may decide that certain situations accommodate more people. In this case, only one assisting character can offer his characteristic or skill rating—all other participating characters contribute boost dice to the check.&lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;strong&gt;ASSISTANCE AND TIMING&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;During combat or structured encounters, when initiative and the order in which people act is more important, assistance can be accomplished by performing the assist maneuver. The assist maneuver allows an ally to benefit from assistance provided by an engaged ally on his next skill check. Assistance only lasts until the assisted character&amp;#39;s next activation.&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=65b87f982f41f810e0f497eef699b692"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-07-15 18:21:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>10c16c3e2fd13010e0f497eef699b6b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010025</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_10c16c3e2fd13010e0f497eef699b6b2</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-15 18:21:09</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

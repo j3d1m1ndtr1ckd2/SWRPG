@@ -10,7 +10,16 @@
         &lt;brawn&gt;2&lt;/brawn&gt;
         &lt;cunning&gt;1&lt;/cunning&gt;
         &lt;description&gt;&lt;![CDATA[&lt;p&gt;&lt;strong&gt;Special Abilities: &lt;/strong&gt;Caamasi begin the game with one rank in either Charm or Discipline.  They still may not train Charm or Discipline above rank 2 during character creation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Memnii: &lt;/strong&gt;Caamasi often imprint significant events in their life as unfading memories called memnii.  Once per game session, a Caamasi may form a new memnis that encompasses one scene or encounter.  At any time, a Caamasi may perfectly recall any memnis that he has formed or witnessed, or share it with another Caamasi or a Force-sensitive character.&lt;/p&gt;]]&gt;&lt;/description&gt;
+&lt;p&gt;&lt;strong&gt;Memnii: &lt;/strong&gt;Caamasi often imprint significant events in their life as unfading memories called memnii.  Once per game session, a Caamasi may form a new memnis that encompasses one scene or encounter.  At any time, a Caamasi may perfectly recall any memnis that he has formed or witnessed, or share it with another Caamasi or a Force-sensitive character.&lt;/p&gt;
+&lt;div&gt;Caamasi are extremely pacifistic mammals that are known for their abilities as diplomats. They are known for their strong moral compass, but that did not protect them from a vicious Imperial atrocity that resulted in the deaths of most Caamasi.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Physiology:&lt;/strong&gt; Caamasi are furry mammals with a beak. Their fur is gray or brown and has a strong smell similar to that of Corellian Whiskey. Their two arms are long, but having only three clawed fingers means that they sometimes lack the dexterity of other sentients with five fingers. Their beak tends to be pink and has an acute sense of smell via the nose at the end of it. Their eyes are yellow, and their ears point off to the sides of their head.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Society:&lt;/strong&gt; Caamasi are a people with pacifistic ways who are almost universally beloved. In fact, their name, in some languages, translates to “trusted stranger,” or “friend from afar.” Their culture centers around the basic tenets of peace and justice. They are among the most excellent mediators in the galaxy, with their wise words bringing peace to the hearts of all. It was the Caamasi who managed to even create peace between the Kubaz and Verpine. Furthermore, the Caamasi have strong ties to the Jedi Order. Their philosophies seem so similar to those of Jedi because the Caamasi ways, in fact, inspired the Jedi. The Jedi Scholars on Ossus first constructed the Jedi Code based on Caamasi ways. In 11,000 BBY, it was the Caamasi who first motivated the Jedi to take arms against the Puis Dea controlled Republic and Chancellor Contispex XIX. The Caamasi are, unfortunately, quite rare now. With their peaceful ways at odds with Imperial philosophies, the Empire arranged a bombing of Caamas in 18 BBY. The surviving Caamasi have since relocated, living on other worlds. While some suggest using polygamy in order to create more members and regrow the species, the Caamasi are extremely monogamous.&lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Homeworld:&lt;/strong&gt; The world of Caamas was a well populated Core world. It had jungles, marshes, steppes, and rolling hills. This all changed in the Caamas Firestorm, in which Star Destroyers decimated the planet via Base Delta Zero. Only 200 Caamasi survived this incident, in addition to any others on other planets. These Caamasi were forced to leave, as the lack of vegetation has polluted the atmosphere. Ironically, many Caamasi relocated to Alderaan. One could say that they’re just looking for safe planets in all the wrong places. &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Language:&lt;/strong&gt; Caamasi speak Caamasi in addition to Basic. After the devastation of their home, they also rely heavily on memniis to communicate with their relatives.&lt;/div&gt;]]&gt;&lt;/description&gt;
         &lt;intellect&gt;2&lt;/intellect&gt;
         &lt;name&gt;Caamasi&lt;/name&gt;
         &lt;number&gt;SPE0001011&lt;/number&gt;
@@ -24,9 +33,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2020-10-14 13:24:27&lt;/sys_created_on&gt;
         &lt;sys_id&gt;d22ad82e2fbf1490e0f497eef699b634&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
-        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2020-10-14 18:22:47&lt;/sys_updated_on&gt;
+        &lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2021-07-19 18:21:41&lt;/sys_updated_on&gt;
         &lt;talent_ranks/&gt;
         &lt;willpower&gt;3&lt;/willpower&gt;
         &lt;wound_calculation/&gt;
@@ -86,15 +95,15 @@
         <sys_created_on>2020-10-15 21:24:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>61a153762f3f9490e0f497eef699b609</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Caamasi</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_61a153762f3f9490e0f497eef699b609</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-15 21:24:20</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-07-19 18:44:06</sys_updated_on>
         <tablename>x_176383_star_wars_species</tablename>
     </sys_metadata_link>
 </record_update>

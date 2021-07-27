@@ -23,6 +23,7 @@ $text-muted:#e6e8ea;
 </css_variables>
         <default>false</default>
         <enable_ais>false</enable_ais>
+        <enable_favorites>false</enable_favorites>
         <hide_portal_name>false</hide_portal_name>
         <homepage display_value="star_wars_home">a39b2bc72f371890e0f497eef699b6fc</homepage>
         <icon/>

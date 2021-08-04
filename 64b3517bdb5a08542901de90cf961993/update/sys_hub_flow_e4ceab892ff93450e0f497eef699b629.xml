@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>if a character is deleted, delete all related records for that character.</description>
+        <internal_name>cascade_character_delete</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Cascade Character Delete</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-08-04 19:18:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e4ceab892ff93450e0f497eef699b629</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cascade Character Delete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_hub_flow_e4ceab892ff93450e0f497eef699b629</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-08-04 19:18:52</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e4ceab892ff93450e0f497eef699b629^sys_idNOT INa0ceab892ff93450e0f497eef699b62c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e4ceab892ff93450e0f497eef699b629</id>
+        <name>Cascade Character Delete</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-08-04 19:18:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a0ceab892ff93450e0f497eef699b62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-08-04 19:18:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>

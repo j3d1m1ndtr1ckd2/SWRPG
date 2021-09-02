@@ -14,6 +14,12 @@
 		}
 		c.server.get({action: 'getArticles', category: sysID}).then(function(response){
 			$scope.data = response.data;
+			for(var i = 0; i < $scope.data.categories.length; i++){
+			if($scope.data.categories[i].sys_id == category.sys_id){
+				$scope.data.categories[i].selected = true;
+				break;
+			}
+		}
 		});	
 	}
 	
@@ -25,6 +31,12 @@
 	$scope.closeArticle = function(){
 		$scope.data.currentArticle = '';
 		document.getElementById('articleBody').style.display = 'none';
+	}
+	
+	$scope.toggleFavorite = function(article){
+		c.server.get({action: 'toggleFavorite', article: article, currentArticles: $scope.data.articles}).then(function(response){
+			$scope.data = response.data;
+		});
 	}
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -98,6 +110,11 @@
 .article-header{
 	font-weight:bold;
   font-size:28px;
+  margin-top:20px;
+}
+
+.category[ng-selected="true"]{
+	font-weight:bold;
 }
 	
 #articleBody{
@@ -118,6 +135,10 @@
   box-shadow:0px 0px 6px 3px silver;
 }
 
+.fa-star:hover{
+	transform: scale(1.15);
+}
+
 @keyframes slide-in-left{
   from{left:1000px}
   to{left:5%}
@@ -128,6 +149,14 @@
   	top:130px;
     font-size:11px;
     right:5%;
+  }
+  
+  .article-header{
+  	margin-top:40px;
+  }
+  
+  .favorites-container{
+  	margin-top:20px;
   }
 }
 
@@ -152,6 +181,8 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
+var user = gs.getUser();
+data.favoriteArticles = JSON.parse(user.getPreference('sw-favorite-articles')) || '';
 var swrpgKb = gs.getProperty('x_176383_star_wars.swrpg.knowledge_base_id');
 var categories = new GlideRecord('kb_category');
 categories.addQuery('parent_id', swrpgKb);
@@ -163,27 +194,72 @@ while(categories.next()){
 		sys_id: categories.sys_id + '',
 		label: categories.label + '',
 		value: categories.value + '',
-		order: categories.order
+		order: categories.order,
+		selected: false
 	};
 	data.categories.push(cat);
 }
 	
 data.selectCategoryText = 'Select a category to view articles';
 
-if(input && input.action == 'getArticles'){
-	var kb = new GlideRecord('kb_knowledge');
-	kb.addQuery('kb_knowledge_base', swrpgKb).addCondition('workflow_state', 'published').addCondition('kb_category', input.category);
-	kb.orderBy('number');
-	kb.query();
-	data.articles = [];
-	while(kb.next()){
-		var article = {
-			category: kb.kb_category.sys_id + '',
-			short_description: kb.short_description + '',
-			body: kb.text + ''
-		};
-		data.articles.push(article);
+if(input){
+	if(input.action == 'getArticles'){
+		var kb = new GlideRecord('kb_knowledge');
+		kb.addQuery('kb_knowledge_base', swrpgKb).addCondition('workflow_state', 'published').addCondition('kb_category', input.category);
+		kb.orderBy('number');
+		kb.query();
+		data.articles = [];
+		while(kb.next()){
+			var article = {
+				category: kb.kb_category.sys_id + '',
+				short_description: kb.short_description + '',
+				body: kb.text + '',
+				sys_id: kb.sys_id + '',
+				isFavorite: false
+			};
+			if(data.favoriteArticles != ''){
+				for(var i = 0; i < data.favoriteArticles.length; i++){
+					if(data.favoriteArticles[i].sys_id == article.sys_id){
+						article.isFavorite = true;
+					}
+				}
+			}	
+			data.articles.push(article);
+		}
+	} else if(input.action == 'toggleFavorite'){
+		try{
+		if(input.article.isFavorite == true){
+			input.article.isFavorite = false;
+			for(var i = 0; i < data.favoriteArticles.length; i++){
+				if(data.favoriteArticles[i].sys_id == input.article.sys_id){
+					data.favoriteArticles.splice(i,1);
+				}
+			}
+		} else{
+			input.article.isFavorite = true;
+			if(data.favoriteArticles == ''){
+				data.favoriteArticles = [];
+			}
+			data.favoriteArticles.push(input.article);
+		}
+		
+		data.currentArticle = input.article;
+		for(var j = 0; j < input.currentArticles.length; j++){
+			if(input.currentArticles[j].sys_id == input.article.sys_id){
+				if(input.currentArticles[j].isFavorite){
+					input.currentArticles[j].isFavorite = false;
+				} else{
+					input.currentArticles[j].isFavorite = true;
+				}
+			}
+		}
+		data.articles = input.currentArticles;			
+		var favorites = JSON.stringify(data.favoriteArticles);
+		user.savePreference('sw-favorite-articles', favorites);
+	} catch(e){
+		gs.addErrorMessage(e.message);
 	}
+	} 
 }
 })();]]></script>
         <servicenow>false</servicenow>
@@ -192,7 +268,7 @@ if(input && input.action == 'getArticles'){
         <sys_created_on>2021-05-28 05:59:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cb9b6a472fdc3010e0f497eef699b632</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>110</sys_mod_count>
         <sys_name>SWRPG Knowledge</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -200,8 +276,12 @@ if(input && input.action == 'getArticles'){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_cb9b6a472fdc3010e0f497eef699b632</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-07-19 17:04:55</sys_updated_on>
-        <template><![CDATA[<div class="col-xs-12 swrpg-kb-container">
+        <sys_updated_on>2021-08-11 20:27:00</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js"></script>
+</head>
+
+<div class="col-xs-12 swrpg-kb-container">
   <span class="col-xs-12 header-container">
   	<h1 id="header">Core Rulebook</h1>
     <h4 class="star-wars-text">Core Rulebook</h4>
@@ -215,13 +295,13 @@ if(input && input.action == 'getArticles'){
 	<div class="hidden-xs col-md-3 category-container">
     <span class="col-xs-12 cat-header">Select a Category<br><text class="star-wars-text">Select a Category</text></span>
     <span class="col-xs-12 categories" ng-repeat="cat in data.categories">
-      <span class="col-xs-12 category" ng-click="getArticles(cat)">
+      <span class="col-xs-12 category" ng-click="getArticles(cat)" ng-selected="{{cat.selected}}">
         {{cat.label}}
         <span class="col-xs-12 star-wars-text sw-label">{{cat.label}}</span>
       </span>
     </span>
   </div>
-  <div class="col-xs-12 col-md-9 article-container">
+  <div class="col-xs-12 col-md-6 article-container">
     <span ng-if="data.articles.length == 0 || !data.articles" class="col-xs-12 no-articles-text">
       <text class="col-xs-12">Select a category to view articles</text>
     </span>
@@ -232,13 +312,22 @@ if(input && input.action == 'getArticles'){
       </span>
     </span>
   </div>
+  <div class="col-xs-12 col-md-3 category-container favorites-container">
+    <span class="col-xs-12 cat-header">Favorite Articles<br/><text class="star-wars-text favorites-header-sub">Favorite Articles</text></span>
+    <span ng-if="data.favoriteArticles.length == 0 || !data.favoriteArticles" class="col-xs-12 no-articles-text">
+      You have no favorites
+    </span>
+    <span class="col-xs-12 categories" ng-repeat="fav in data.favoriteArticles">
+      <span class="col-xs-12 category" ng-click="openArticle(fav)">{{fav.short_description}}<br/><text class="star-wars-text">{{fav.short_description}}</text></span>
+    </span>
+  </div>
 </div>
 
 <div id="articleBody" class="article-body-container">
-	<span class="col-xs-12 close-button-container">
+	<span class="close-button-container">
     <i class="fa fa-times fa-2x" ng-click="closeArticle()"> Close</i>
   </span>
-  <h3 class="article-header">{{data.currentArticle.short_description}}</h3>
+  <h3 class="article-header">{{data.currentArticle.short_description}} <span ng-click="toggleFavorite(data.currentArticle)"><i ng-if="!data.currentArticle.isFavorite" class="far fa-star"></i> <i ng-if="data.currentArticle.isFavorite" class="fas fa-star"></i></span></h3>
   <span class="col-xs-12 article-body" ng-bind-html="data.currentArticle.body"></span>
 </div>]]></template>
     </sp_widget>

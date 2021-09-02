@@ -746,7 +746,8 @@
 	
 	$scope.purchaseVehicle = function(vehicle){
 		c.server.get({action: 'purchaseVehicle', vehicle: vehicle, vehicleID: vehicle.sysID}).then(function(response){
-			c.server.refresh();
+			//c.server.refresh();
+			$scope.data.characterVehicles = response.data.characterVehicles;
 		});
 	}
 	
@@ -756,11 +757,6 @@
 			$scope.data.skills = response.data.skills;
 		});
 	}
-	
-	/*var q = "sys_id=" + $scope.data.characterID;
-	spUtil.recordWatch($scope, "x_176383_star_wars_character", q, function(event, data) {
-   spUtil.update($scope);
-	});*/
 	
 	$scope.removeVehicle = function(vehicle){
 		if(confirm('Are you sure you want to remove this ship?')){
@@ -2495,6 +2491,13 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			myShip.character = characterID;
 			myShip.vehicle = input.vehicleID;
 			myShip.insert();
+			var charVeh = {
+				name: myShip.name + '',
+				vehicleName: myShip.vehicle.ship_name + '',
+				makeModel: myShip.vehicle.make_model + '',
+				sysID: myShip.sys_id + ''
+			};
+			data.characterVehicles.push(charVeh);
 			break;
 				
 			case 'saveForceRating':
@@ -2605,7 +2608,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>994</sys_mod_count>
+        <sys_mod_count>997</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2613,7 +2616,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-07-27 18:31:20</sys_updated_on>
+        <sys_updated_on>2021-09-01 20:42:27</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>

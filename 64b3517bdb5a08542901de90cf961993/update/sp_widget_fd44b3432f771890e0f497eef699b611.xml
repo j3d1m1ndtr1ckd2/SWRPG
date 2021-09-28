@@ -26,7 +26,6 @@
 	
 	$scope.openLargeImage = function(img){
 		$scope.data.currentImage = img;
-		spUtil.update($scope);
 		document.getElementById('largeImgContainer').style.display = 'inline';
 	}
 	
@@ -1644,7 +1643,7 @@ if(data.step == 1){
         <sys_created_on>2020-10-16 18:34:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd44b3432f771890e0f497eef699b611</sys_id>
-        <sys_mod_count>751</sys_mod_count>
+        <sys_mod_count>754</sys_mod_count>
         <sys_name>Star Wars Character Creator</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -1652,7 +1651,7 @@ if(data.step == 1){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_fd44b3432f771890e0f497eef699b611</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-07-15 17:25:16</sys_updated_on>
+        <sys_updated_on>2021-09-28 20:09:49</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

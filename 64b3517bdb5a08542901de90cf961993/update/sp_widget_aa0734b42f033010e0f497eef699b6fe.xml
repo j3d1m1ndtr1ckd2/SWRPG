@@ -34,6 +34,11 @@
 
 .details-container{
 	margin-top:20px;
+  padding:0;
+}
+
+.tabs-container{
+	padding:0;
 }
 
 .english{
@@ -67,7 +72,7 @@ data.campaignArtifactLabel = 'Campaign Artifacts';
         <sys_created_on>2021-10-04 14:36:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aa0734b42f033010e0f497eef699b6fe</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Star Wars Active Session Tabs</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -75,7 +80,7 @@ data.campaignArtifactLabel = 'Campaign Artifacts';
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_aa0734b42f033010e0f497eef699b6fe</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-10-04 16:06:50</sys_updated_on>
+        <sys_updated_on>2021-10-04 16:48:18</sys_updated_on>
         <template><![CDATA[<div class="col-xs-12 tabs-container">
 	<div class="col-xs-12 headers-container">
     <div class="col-xs-6 header" id="journalHeader" align="center" ng-click="selectTab('history')">

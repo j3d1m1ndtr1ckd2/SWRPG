@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.selectTab = function(tab){
+		try{
+		if(tab == 'history'){
+			document.getElementById('journalHeader').style.borderBottom = "2px solid white";
+			document.getElementById('campaignArtifactsHeader').style.borderBottom = "none";
+			document.getElementById('historyWidget').style.display = 'inline';
+			document.getElementById('artifactsWidget').style.display = 'none';
+		} else{
+			document.getElementById('campaignArtifactsHeader').style.borderBottom = "2px solid white";
+			document.getElementById('journalHeader').style.borderBottom = "none";
+			document.getElementById('historyWidget').style.display = 'none';
+			document.getElementById('artifactsWidget').style.display = 'inline';
+		}
+		} catch(e){
+			alert(e.message);
+		}
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#journalHeader{
+	border-bottom:2px solid white;
+}
+
+#artifactsWidget{
+	display:none;
+}
+
+.details-container{
+	margin-top:20px;
+}
+
+.english{
+	font-size:18px;
+  font-weight:bold;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_active_session_tabs</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Active Session Tabs</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+data.ticketConversationWidget = $sp.getWidget('sw-ticket-conversations');
+data.campaignArtifactsWidget = $sp.getWidget('star_wars_campaigns');
+data.rollHistoryLabel = 'Datapad';
+data.campaignArtifactLabel = 'Campaign Artifacts';
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2021-10-04 14:36:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>aa0734b42f033010e0f497eef699b6fe</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Star Wars Active Session Tabs</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_aa0734b42f033010e0f497eef699b6fe</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2021-10-04 16:06:50</sys_updated_on>
+        <template><![CDATA[<div class="col-xs-12 tabs-container">
+	<div class="col-xs-12 headers-container">
+    <div class="col-xs-6 header" id="journalHeader" align="center" ng-click="selectTab('history')">
+      <span class="col-xs-12 english">{{data.rollHistoryLabel}}</span>
+      <span class="col-xs-12 aurebesh star-wars-text">{{data.rollHistoryLabel}}</span>
+    </div>
+    <div class="col-xs-6 header" id="campaignArtifactsHeader" align="center" ng-click="selectTab('artifacts')">
+      <span class="col-xs-12 english">{{data.campaignArtifactLabel}}</span>
+      <span class="col-xs-12 aurebesh star-wars-text">{{data.campaignArtifactLabel}}</span>
+    </div>
+  </div>
+  <div class="col-xs-12 details-container">
+    <div id="historyWidget">
+    	<sp-widget widget="data.ticketConversationWidget"/>
+    </div>
+    <div id="artifactsWidget">
+    	<sp-widget widget="data.campaignArtifactsWidget"/>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

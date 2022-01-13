@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>f836fc722fb84190e0f497eef699b61e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Talents"&gt;d0ecaf012f94b010e0f497eef699b66c&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;In a galaxy filled with bold heroes and terrible villains, Player Characters are distinguished by their&lt;/meta_description&gt;
+        &lt;number&gt;KB0010056&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Talents&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 19:37:22&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;f836fc722fb84190e0f497eef699b61e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 19:38:10&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;In a galaxy filled with bold heroes and terrible villains, Player Characters are distinguished by their special abilities. Where a minor character might surrender to overwhelming odds, a hero is expected to dramatically defeat the foe and triumph. Talents set the PCs apart from the galaxy’s rank and file, providing a game mechanic by which Player Characters may perform tasks with superhuman flair and ability.&lt;/p&gt;
+&lt;p&gt;Talents generally represent specialized techniques that a character has mastered, typically through intense practice and study. A character is likely to be more successful when engaged in actions for which he has appropriate skills and talents.&lt;/p&gt;
+&lt;p&gt;It’s important to note also that talents are focused for situational use. Generally speaking, talents have more narrow applications than skills. A character who intends to use a particular skill in a broad variety of ways might be better suited by advancing the skill as opposed to learning a talent. At the same time, a character involved in a situation for which his talents are appropriate could enjoy exceptional degrees of success.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;TALENT TYPES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There are many different types of talents. Some are associated with an individual skill or closely related group of skills. These tend to be particular knacks that a character has acquired through the process of mastering that skill. In many cases, talents represent operational shortcuts— corners an experienced individual knows can be safely cut or particularly effective methods he can follow. Other such talents are simply natural abilities that fit in especially well with the use of that skill. These could include a certain mental process, a physical technique, or a learned pattern.&lt;/p&gt;
+&lt;p&gt;A number of talents are specifically associated with physical conflict. These combat talents represent techniques that a character likely learned through practice and experience. The presence of combat talents within a particular talent tree reinforces the archetypal nature of a particular specialization. Specializations that focus on avoiding physical conflict have fewer combat talents than those that are devoted to it, for example.&lt;/p&gt;
+&lt;p&gt;Every force specialization has access to Force talents, talents that may only be used by Force-sensitive characters. Force talents may grant new abilities related to the Force, provide bonuses to skill checks due to the character’s innate Force sensitivity, or do anything else a talent could do. Force talents may not be used by characters who are not Force-sensitive.&lt;/p&gt;
+&lt;p&gt;Most specialization trees offer access to Dedication. This talent is the only means by which a character can increase a characteristic rating after character creation is complete. In addition, most specialization trees in Force and Destiny offer access to the Force Rating talent. This talent permanently increases a character’s Force rating by 1 and is the only way a character can increase his Force rating.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;TALENT RANKS AND PURCHASING THE SAME TALENT MULTIPLE TIMES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Many trees have multiple entries for a single talent. This is because many of the talents can be learned repeatedly. When characters learn a talent for the second—or later—time, they gain an additional rank in the talent. With few exceptions, there is no set limit to the number of ranks a character can possess in a given talent. Instead, characters can purchase as many ranks of each talent as are present on their currently available talent trees. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Talents that are not ranked can only be purchased a single time. If a character is advancing through a specialization’s talent tree and reaches a talent without ranks that he has already acquired from another specialization’s talent tree, then he counts as having purchased that talent on his new talent tree for the purpose of purchasing additional talents in that tree. (This does not require him to spend any experience points.)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;TALENT TREES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Any time a player wishes to select a new talent for a character, he must first make certain that it is currently accessible from one of the character’s available specialization trees. Initially, characters can only purchase talents in the top row of the tree. In order to navigate to a new talent, the character must have already purchased all of the preceding talents listed on the tree, so that he can draw a “line” from the top of the tree, through purchased talents, to the new talent. All such descents must follow the available lines shown on each tree. Note that for some trees, directly descending a column is not possible, because there is a break in the listing. In these cases, the character must first descend a neighboring column, and then follow the line over before moving up or down the tree to access a desired talent. &lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=f836fc722fb84190e0f497eef699b61e"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:49:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ba8abcba2fb84190e0f497eef699b663</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010056</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ba8abcba2fb84190e0f497eef699b663</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:49:13</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

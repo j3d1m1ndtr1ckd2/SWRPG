@@ -5,7 +5,7 @@
   /* widget controller */
   var c = this;
 	
-	$scope.search = function(type){
+	/*$scope.search = function(type){
 		var query = document.getElementById('searchBox').value.toLowerCase();
 		var i;
 		switch(type){
@@ -133,7 +133,7 @@
 		if(query == '' && $scope.data.filter.section){
 			$scope.filter($scope.data.filter.section, $scope.data.filter.filter);
 		}
-	}
+	}*/
 	
 	$scope.showSection = function(section){
 		switch(section){
@@ -810,7 +810,7 @@ while(sectorGR.next()){
         <sys_created_on>2020-12-02 04:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
-        <sys_mod_count>192</sys_mod_count>
+        <sys_mod_count>198</sys_mod_count>
         <sys_name>Holocron</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -818,7 +818,7 @@ while(sectorGR.next()){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-07-09 20:16:52</sys_updated_on>
+        <sys_updated_on>2022-01-13 04:38:18</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -839,12 +839,12 @@ while(sectorGR.next()){
   <!-- species menu section -->
   <div ng-if="data.showSection == 'species'" class="col-xs-12 card-menu" id="speciesMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('species')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Species<br><text class="star-wars-text">Species</text></div>
     <div class="col-xs-12 alphabet-filter">
       <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('species', letter)">{{letter}} |</span>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySpecies">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySpecies | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('species', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -853,9 +853,9 @@ while(sectorGR.next()){
   <!-- careers menu section -->
   <div ng-if="data.showSection == 'careers'" class="col-xs-12 card-menu" id="careersMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('career')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Careers<br><text class="star-wars-text">Careers</text></div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayCareers">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayCareers | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('careers', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -864,7 +864,7 @@ while(sectorGR.next()){
   <!-- career specialization menu section -->
   <div ng-if="data.showSection == 'careerSpecializations'" class="col-xs-12 card-menu" id="careerSpecsMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('specialization')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Career Specializations<br><text class="star-wars-text">Career Specializations</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="careerSpecFilter" id="careerSpecFilter" ng-change="filter('careerSpec')" ng-model="all">
@@ -872,7 +872,7 @@ while(sectorGR.next()){
         <option ng-repeat="c in data.careers" value="{{c.name}}">{{c.name}}</option>
       </select>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySpecs">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySpecs | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('specs', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -881,7 +881,7 @@ while(sectorGR.next()){
   <!-- skills menu section -->
   <div ng-if="data.showSection == 'skills'" class="col-xs-12 card-menu" id="skillsMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('skills')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Skills<br><text class="star-wars-text">Skills</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="skillsFilter" id="skillsFilter" ng-change="filter('skills')" ng-model="all">
@@ -891,7 +891,7 @@ while(sectorGR.next()){
         <option value="Knowledge">Knowledge</option>
       </select>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySkills">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displaySkills | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('skills', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -900,12 +900,12 @@ while(sectorGR.next()){
   <!-- talents menu section -->
   <div ng-if="data.showSection == 'talents'" class="col-xs-12 card-menu" id="talentsMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('talents')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Talents<br><text class="star-wars-text">Talents</text></div>
     <div class="col-xs-12 alphabet-filter">
       <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('talents', letter)">{{letter}} |</span>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayTalents">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayTalents | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('talents', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -914,7 +914,7 @@ while(sectorGR.next()){
   <!-- Gear menu section -->
   <div ng-if="data.showSection == 'gear'" class="col-xs-12 card-menu" id="gearMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('gear')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Gear<br><text class="star-wars-text">Gear</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="gearFilter" id="gearFilter" ng-change="filter('gear')" ng-model="all">
@@ -925,10 +925,11 @@ while(sectorGR.next()){
         <option value="Black Market Items">Black Market Items</option>
         <option value="Mod">Mod</option>
         <option value="Vehicle Mod">Vehicle Mod</option>
+        <option value="Vehicle Weapon">Vehicle Weapon</option>
         <option value="Lightsaber Attachment">Lightsaber Attachments</option>
       </select>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGear">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGear | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('gear', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -937,12 +938,12 @@ while(sectorGR.next()){
   <!-- weapon qualities menu section -->
   <div ng-if="data.showSection == 'weaponQualities'" class="col-xs-12 card-menu" id="weaponQualitiesMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('wq')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Weapon Qualities<br><text class="star-wars-text">Weapon Qualities</text></div>
     <div class="col-xs-12 alphabet-filter">
       <span class="alphabet-split" ng-repeat="letter in data.alphabet" ng-click="filter('wq', letter)">{{letter}} |</span>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayWeaponQualities">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayWeaponQualities | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('wq', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -951,7 +952,7 @@ while(sectorGR.next()){
   <!-- vehicles menu section -->
   <div ng-if="data.showSection == 'vehicles'" class="col-xs-12 card-menu" id="vehiclesMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('vehicles')" type="text" placeholder="Search" class="sw-input"/></div>
+    <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Vehicles<br><text class="star-wars-text">Vehicles</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="vehicleFilter" id="vehicleFilter" ng-change="filter('vehicles')" ng-model="all">
@@ -966,7 +967,7 @@ while(sectorGR.next()){
         <option value="Capital Ship">Capital Ship</option>
       </select>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayVehicles">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayVehicles | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('vehicle', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>
@@ -988,7 +989,7 @@ while(sectorGR.next()){
 <!-- galaxy menu section -->
  <div ng-if="data.showSection == 'galaxy'" class="col-xs-12 card-menu" id="galaxyMenu">
     <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-   	<div class="col-xs-6 holocron-search"><input id="searchBox" ng-keyup="search('galaxy')" type="text" placeholder="Search" class="sw-input"/></div>
+   	<div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">The Galaxy<br><text class="star-wars-text">The Galaxy</text></div>
     <div class="col-xs-12 filter-container">
     	<select class="sw-input choice-filter" name="galaxyFilter" id="galaxyFilter" ng-change="filter('galaxy')" ng-model="all">
@@ -996,7 +997,7 @@ while(sectorGR.next()){
         <option ng-repeat="sector in data.sectors" value="{{sector}}">{{sector}}</option>
       </select>
     </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGalaxy">
+    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGalaxy | filter: searchInput">
       <span class="col-xs-12 menu-card" ng-click="showDetails('galaxy', item)">
         <span class="col-xs-12 text-center">{{item.name}}</span>
       </span>

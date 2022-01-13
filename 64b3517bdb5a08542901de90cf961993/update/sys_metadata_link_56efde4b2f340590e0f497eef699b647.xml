@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>f9ee710f2f300590e0f497eef699b6df</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Gear and Equipment"&gt;dbec6b412f94b010e0f497eef699b6ed&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;The lifeblood of every world i sits economy - what it exports and what it imports.  Some trade is local,&lt;/meta_description&gt;
+        &lt;number&gt;KB0010058&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-06&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Galactic Economics&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-06 20:09:10&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;f9ee710f2f300590e0f497eef699b6df&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-06 20:10:24&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;The lifeblood of every world i sits economy - what it exports and what it imports.  Some trade is local, such as the moisture harvested from the deserts of Tatooine and transported to its major cities.  Other trade is planetary.  Sturdy greel wood from Pii II and IV is valued throughout the core worlds, and Corellian spaceships are manufactured in the Corellia sector and sold and resold all over the galaxy.&lt;/p&gt;
+&lt;p&gt;The trade of these goods across the spacelanes also requires legions of ships, pilots, and crews, which in turn require food, fuel, and explorers to track the fastest routes through hyperspace; they also require weapons to protect cargoes from those interested in &amp;#34;harvesting&amp;#34; that which has already been gathered.&lt;/p&gt;
+&lt;p&gt;Trade federations, guilds, and local governments regulate and tax this commerce where they can. Most use this wealth to provide for the common good. Local authorities, such as those that govern Cloud City on Bespin, empower and employ a company of security guards and escort ships for the freighters who purchase their valuable Tibanna gas. This provides employment for thousands of gas miners, traders, and technicians—and blaster gas for the entire galaxy.&lt;/p&gt;
+&lt;p&gt;Of course, where there are rules, there are those who break them, and where there are tariffs, there are those who avoid them. Smugglers and black marketeers profit greatly by transporting and selling restricted or taxed goods throughout the systems. Some of these goods are of the most despicable variety, such as addictive narcotics or slaves. Some may be used for good or ill, such as weapons or explosives that might be used for anything from crime and terrorism to fighting off cruel and oppressive local regimes. Some cargoes may actually be of a heroic nature, such as those bringing medicine to a blockaded settlement or smuggling necessities to some backwater world suffering from a repressive or monopolistic government.&lt;/p&gt;
+&lt;p&gt;Characters in EDCE OF THE EMPIRE may be blackhearted scoundrels, unscrupulous smugglers, hired guns, or ruthless bounty hunters, but some genuinely see themselves as champions for common citizens oppressed by their own authorities. Of course, it doesn&amp;#39;t hurt to have a little operating margin as well.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CURRENCY&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Goods and services are paid for with &amp;#34;credits.&amp;#34; This is a universal term for everything from local units of currency with distinctive names and denominations to the galactic standard Imperial credit. All are interchangeable and can be carried as physical bills or coins, or tracked via digital cred sticks (also called &amp;#34;chips&amp;#34;). The former are most often used by criminals who don&amp;#39;t want to leave any sort of electronic trail, or by locals on distant worlds who don&amp;#39;t trust institutions based light-years away.&lt;/p&gt;
+&lt;p&gt;For the most part, these fears are unfounded. Cred sticks are encoded with values up to the currency limit of the planet that issued them, and backed by the InterGalactic Banking Clan (the IGBC).  Characters can add value to a cred stick at linked branches located throughout the galaxy; these sticks are generally secure.  They are extremely difficult to tamper with even by the savviest slicers.  Only the most elite criminal organizations can alter or manufacture fake ships, and if caught, they are dealt with immediately and severely by the IGBC security forces.  The bank&amp;#39;s rapid and draconian tactics are almost always backed by the Empire, local government forces, or both.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;MOTIVATIONS&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;There are two major motivations for the scoundrel-heroes of Edge of the Empire - Obligation and credits.  Obligation is discussed in detail in chapter II, and often involves financial responsibilities such as owing a debt to a Hutt crime lord. But even most scoundrels without financial Obligations are looking for a payout. Some are interested in raw credits and the easy life they think wealth will bring them. Others have their shifty eyes on a faster ship, a hidden base on a fringe world, or perhaps even a dowry for an expensive slave-bride. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Most jobs the party takes on should have relatively low cash rewards (see Keeping the Crew Hungry on page 151). Commodities such as replacement hyperdrives, new droids, ground transport, or even spaceships can be awarded instead—or they might be gained by taking on more Obligation (or by starting with it). This grants the party access to the tools they need to take on new adventures but avoids stockpiles of cash that would keep them from taking on new jobs.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;LOOKING OUT FOR NUMBER ONE&lt;/strong&gt;&lt;/span&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;The sad truth is, being a star-wandering adventurer and possible do-gooder doesn’t pay very well. The heroes of Force and Destiny may have strange and mystical powers at their disposal. They may be able to win lightsaber duels, lift starships with their minds, and find the truth at the heart of thorny and violent disputes, but none of these things puts food on their tables or credits in their pockets.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Characters may approach this problem in several different ways. Some may use the gear and credits they obtain in the course of their adventures (perhaps stolen from Imperial supply depots or taken from the pockets of vile criminals) to keep themselves afloat. Though there is a certain poetic justice in using the resources of their enemies against them, characters who resort to this may find themselves borrowing additional trouble. Stolen items may be tracked, and characters who attempt to sell a cargo of Imperial thermal detonators may find the Imperial Security Bureau taking an inordinate interest in them. Likewise, most crooks react violently when people pilfer from them, and nobody holds a grudge like a Hutt crime boss or Black Sun enforcer. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Some characters prefer to accept payment for their good deeds instead, reasoning that accepting rewards for their actions helps facilitate helping others at a later time. This can work, although taking money for supposedly selfless acts tends to sour these deeds. More than a few dark side Force users started down the long and slippery road to damnation by rationalizing rewards for their mystical abilities. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Finally, some adventurers take on side jobs to pay the bills in-between their adventures. This can be mind-numbingly tedious, although generally these jobs don&amp;#39;t come with life-threatening choices or moral quandaries. However, adventure can strike when one least expects it, and even a boring job can lead to something far more interesting.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;THE IMPORTANCE OF SELF-SUFFICIENCY&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;While the Rebel Alliance controls many resources and can rely on the aid of a number of sympathetic cultures and institutions, it still encourages frugality in its agents.  There are a number of reasons for this.  The Alliance needs to marshal its resources as efficiently as possible and must pay its debts so as not to make more enemies for itself.  A disgruntled business partner may not only refuse to do business with the Alliance, but may go on to inform the Empire of all that they know in order to have their revenge.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Transactions using Imperial credits tend to leave a trail.  Even those who are sympathetic to the cause can come under suspicion, followed by close scrutiny and auditing.  Leasing equipment and employing mercenaries can be an attractive option to Alliance agents who find themselves short of all resources but credits, but such decisions need careful deliberation.  Mercenaries are loyal to no one but their next paymasters.  If work should come their way from those with Imperial sympathies, any intelligence they gathered while working alongside the Alliance becomes a highly lucrative asset.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;In order to best mitigate these risks, members of the Rebel Alliance are expected to operate with minimal assistance once a mission is underway.  The leaders and administrators of the Rebellion understand that emergency purchases and shaky alliances may have to be made in the heat of the moment, but they put great store in their agents, being able to sensibly plan for what they need and think on their feet. Those agents who repeatedly require new equipment or leave clues as to their activities are often sidelined in favor of more resourceful individuals.  The best Rebel agents are not only able to make good use of the technology the alliance provides to them, but they are also able to live like an impoverished fringer should the need arise.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;ORDNANCE AND SUPPLY COMMAND&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;The Ordnance and Supply Command (OSC) is part of the command of the Rebel Alliance and is responsible for managing supplies and issuing warnings about shortfalls to all sectors of the galaxy in which the Alliance operates.  If Alliance soldiers go without food or water, or if they are sent into battle without access to the correct weapons and support, it is the OSC which is ultimately responsible.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;It is the duty of the OSC to keep track of the assets available to the Rebel Alliance and to come up with strategies in order to cope with shortages of equipment.  An example of the sort of operation carried out at the behest of the OSC is the raid on BFF-1 bulk freighter Ars Opus.  The ship was carrying a number of R2 astromech droids intended for use by the Empire.  The successful raid ensured not only that the Alliance gained access to much needed droids, but also that the Empire was simultaneously denied a valuable resource.  As such, the operation was deemed a major coup for the OSC.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;From the point of view of the PCs in a game of Age of Rebellion, the OSC can provide a vital lifeline, granting much needed supplies in times of desperation or ensuring that pieces of specialist equipment are made available for the missions most likely to make good use of them.  The OSC may well contact the PCs with orders to carry out a raid to acquire new equipment, either for the PCs&amp;#39; own use or to disseminate throughout the Rebel Alliance.  The OSC also requires information on the movement of important shipments.  Building up a good relationship with members of the OSC can be a good way for a group of rebels to ensure that they always have access to the best equipment, though they may well have to undertake a number of dangerous missions in order to warrant such a reputation.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;The OSC is careful to target only those supplies destined for use by the Empire.  It would do the Rebellion little good to garner a reputation for Piracy.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CORPORATIONS AND THE ALLIANCE TO RESTORE THE REPUBLIC&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;There are a number of corporate interests in the galaxy that have effectively thrown in with the Alliance.  Some have even been overt about their desire to see the Empire overthrown, despite the plausibly lethal consequences of going rogue.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;One such company is the Incom Corporation, famed for its reliable and innovative speeders and fightercraft.  Incom designs and manufactures the X-wing fighter that has become an iconic part of Rebel fleets.  The company, which was staunchly independent during the days of the Galactic Republic, proved resistant to attempts by the Empire to direct and control its business.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;In fact, a response to these attempts to Imperialize the company, several key engineers and designers defected to the Alliance, taking prototype X-wing fighters with them.  The Empire responded by purging the corporation, sentencing many of the remaining staff to hard labor in the Kessel spice mines.  However, they were spared their fate when a Rebel raid intercepted the transport ships bound for the prison planet.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;The Incom Corporation still works as part of the Galactic Empire, though it is devoid of the talent and drive for which it was once famous.  Its key staff and assets are now integral components of the Alliance war machine.  The fate of the company also provides a lesson to other organizations around the galaxy.  Though many of them are effectively cowed by the Empire, or keen to exploit the opportunities created by the regime, others are dissident, well aware that they could be stripped of their rights and resources at the Emperor&amp;#39;s whim.&lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=f9ee710f2f300590e0f497eef699b6df"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-06 21:50:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>56efde4b2f340590e0f497eef699b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010058</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_56efde4b2f340590e0f497eef699b647</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-06 21:50:35</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

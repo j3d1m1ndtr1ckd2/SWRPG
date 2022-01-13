@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope, spUtil) {
+        <client_script><![CDATA[api.controller=function($scope, spUtil, $location) {
   /* widget controller */
   var c = this;
+	
+	if($scope.data.goToActive){
+		alert('There is a new active session for this campaign.  Taking you there now...');
+		$location.search('sys_id', $scope.data.activeSession);
+	}
 	
 	$scope.saveDestinyPoints = function(){
 		var light = parseInt(document.getElementById('lightSideInput').value);
@@ -21,7 +26,15 @@
 	
 	var q = "sys_id=" + $scope.data.sessionDetails.sysID;
 	spUtil.recordWatch($scope, "x_176383_star_wars_game_session", q, function(event, data) {
-   spUtil.update($scope);
+   //spUtil.update($scope);
+		c.server.get({action: 'checkActive'}).then(function(response){
+			if(response.data.goToActive){
+				alert('There is a new active session for this campaign.  Taking you there now...');
+				$location.search('sys_id', response.data.activeSession);
+			} else{
+				spUtil.update($scope);
+			}
+		});
 	});
 }]]></client_script>
         <controller_as>c</controller_as>
@@ -130,6 +143,16 @@
 		data.enterDestiny = false;
 	}
 	
+	if(!sessionGR.active){
+		var newSession = new GlideRecord('x_176383_star_wars_game_session');
+		newSession.addQuery('campaign', sessionGR.campaign).addCondition('active', true);
+		newSession.query();
+		if(newSession.next()){
+			data.goToActive = true;
+			data.activeSession = newSession.sys_id + '';
+		}
+	}
+	
 	if(input){
 		if(input.action == 'startGame'){
 			sessionGR.light_side = input.light;
@@ -145,7 +168,17 @@
 				sessionGR.dark_side--;
 				sessionGR.update();
 			}
-		}	 
+		} else if(input.action == 'checkActive'){
+			if(!sessionGR.active){
+				var newSession = new GlideRecord('x_176383_star_wars_game_session');
+				newSession.addQuery('campaign', sessionGR.campaign).addCondition('active', true);
+				newSession.query();
+				if(newSession.next()){
+					data.goToActive = true;
+					data.activeSession = newSession.sys_id + '';
+				}
+			}
+		}
 	}
 })();]]></script>
         <servicenow>false</servicenow>
@@ -154,15 +187,15 @@
         <sys_created_on>2020-11-23 05:45:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4fc030932fac60d0e0f497eef699b63d</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>Star Wars Game Session</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_4fc030932fac60d0e0f497eef699b63d</sys_update_name>
-        <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-03-13 03:09:27</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-04 19:21:35</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

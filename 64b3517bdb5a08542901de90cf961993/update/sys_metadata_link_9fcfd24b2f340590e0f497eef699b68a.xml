@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>505c1e872ff00590e0f497eef699b6a2</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Gear and Equipment"&gt;dbec6b412f94b010e0f497eef699b6ed&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Black markets exist across the galaxy, from the wretched hives of lawless frontier worlds to the hidden&lt;/meta_description&gt;
+        &lt;number&gt;KB0010064&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-06&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Black Market Items&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-06 21:36:44&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;505c1e872ff00590e0f497eef699b6a2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-06 21:36:46&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Black markets exist across the galaxy, from the wretched hives of lawless frontier worlds to the hidden corners of Imperial fortresses. A smuggler might visit a black market to avoid Imperial or planetary tariffs on otherwise legal goods or to unload stolen items without the scrutiny of authorities, but he might also visit in search of contraband items unavailable at regulated ports.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;SPICE AND OTHER DRUGS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Smugglers use &amp;#34;spice&amp;#34; as one common term to describe a variety of chemical concoctions as diverse and strange as the planets of the galaxy. Despite their different origins and specific effects, however, many examples of spice share two major qualities: a pleasurable temporary effect followed by negative side effects. Even variants of spice with medicinal or therapeutic qualities have the possibility of addiction. Many varieties of spice provide a simple high followed by a crash, but some drugs, such as the infamous glitterstim produced in the spice mines of Kessel, have more exotic and sometimes unpredictable effects when ingested. For these reasons, although many variants of spice are legal in the galaxy, even those types are heavily regulated on most worlds.&lt;/p&gt;
+&lt;p&gt;Heavy regulation and illegality alike mean that spice is a popular item of contraband for smugglers across the galaxy. The Empire also enforces bans on many types of spice, but some Imperial soldiers, pilots, and scientists have been known to make use of performance enhancing substances (sometimes at the behest of their superiors and sometimes without their permission). Though running spice may be somewhat safer than trafficking weapons, it is nonetheless a dangerous occupation for a smuggler. The criminal enterprises involved in the production and distribution of drugs such as spice are rarely known for their good nature or patience. Han Solo ran seriously afoul of Jabba the Hutt when he was forced to jettison a hold full of precious glitterstim that he was transporting for the crime lord. The fact that Imperial authorities were in the midst of boarding the Millennium Falcon when Han abandoned his cargo did little to soften Jabba&amp;#39;s heart, and Han&amp;#39;s arguably reasonable choice still ended up earning him a death mark.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;UNIQUE ILLEGAL EQUIPMENT&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Certain pieces of technology are too powerful, too dangerous, or too subversive for the ruling authorities to allow civilians to use them. For instance, high-powered military-grade weapons are contraband on most worlds where public firefights are seen as a crime and not a form of entertainment. On most planets, one would need to search a black market to find most of the items listed below.&lt;/p&gt;
+&lt;p&gt;For a full list of black market items, &lt;a title="visit the holocron." href="https://dev21386.service-now.com/star_wars?id&amp;#61;holocron" target="_blank" rel="noopener noreferrer nofollow"&gt;visit the holocron.&lt;/a&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=505c1e872ff00590e0f497eef699b6a2"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-06 21:50:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9fcfd24b2f340590e0f497eef699b68a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010064</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_9fcfd24b2f340590e0f497eef699b68a</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-06 21:50:06</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

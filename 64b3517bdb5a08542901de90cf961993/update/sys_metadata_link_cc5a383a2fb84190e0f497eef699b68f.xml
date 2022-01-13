@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0869ac7a2f384190e0f497eef699b632</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Those who sign on with the Alliance become part of a great gathering of people from all over the galaxy,&lt;/meta_description&gt;
+        &lt;number&gt;KB0010052&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Step 10: Acquire Rebellion Resources - Age of Rebellion&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 18:46:27&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;0869ac7a2f384190e0f497eef699b632&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 18:46:34&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Those who sign on with the Alliance become part of a great gathering of people from all over the galaxy, united for the purpose of overthrowing the Empire.  First and foremost, the Alliance is fighting a war, a rebellion against the current ruling order.  A war is fought by soldiers, spies, and other operatives acting against the forces of the enemy, and that&amp;#39;s who the Player Characters are.&lt;/p&gt;
+&lt;p&gt;Though it struggles against the far greater might of the Empire, the Alliance is not without resources of its own, and it arms its warriors as best it can.  The typical group of PCs will act as a special team of operatives, uniting their diverse talents and training to go out into the galaxy and accomplish missions of strategic (and sometimes moral) importance for the Rebellion.  When they are sent out, they are given access to at least some of the resources they need to achieve success.&lt;/p&gt;
+&lt;p&gt;There are three options for starting resources for a group.  Based on the campaign, the GM can choose which option he would like the party to use, or he can allow them to choose it themselves.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;COMMANDEERED LAMBDA-CLASS SHUTTLE&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Many of the Rebellion&amp;#39;s resources are not built or purchased by the Alliance, but instead stolen from the Empire.  The T-4a Lambda-class long range shuttle is a slow, yet sturdy and reliable cargo and transport vessel used by the Empire.  Provided they have forged imperial ID codes, parties that want a reliable way of getting around the galaxy should choose the Lambda-class shuttle.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;Y-WING SQUADRON&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;A mainstay that has served the Alliance since its inception, the Y-wing is a trusty medium-attack fighter.  Groups who want the flexibility of multiple ships while still having hyperdrive capabilities can choose to start with a small number of Y-wings.  The party gets a number of BTL-S3 Y-wings equal to half the number of PCs in their group, rounded up.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;BASE OF OPERATIONS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Many cells of the Rebellion don&amp;#39;t send their agents far afield, but instead operate in a specific system or sector, coordinating their efforts against the Empire locally.  Groups interested in this style of play can start with a base of operations instead of a ship.  This limits their party&amp;#39;s mobility but provides them with a stable safe-haven and additional resources.  By working with the GM, the players can decide on a good, subtle location for their base (such as a garage disguised as a speeder chop shop).  Although this can limit a group&amp;#39;s ability to move throughout the galaxy, they can still get around by commissioning smugglers or other allies to transport them as needed.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;To represent the additional resources provided by a base of operations, each PC in the party starts with an additional 1,000 credits&amp;#39; worth of starting gear.&lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=0869ac7a2f384190e0f497eef699b632"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:48:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cc5a383a2fb84190e0f497eef699b68f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010052</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_cc5a383a2fb84190e0f497eef699b68f</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:48:14</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

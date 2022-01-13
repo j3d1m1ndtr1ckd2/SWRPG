@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cc9038f62f784190e0f497eef699b64a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Skills"&gt;a2cc2f012f94b010e0f497eef699b6d2&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;When playing SWRPG, characters have plenty of opportunities for bold and exciting action, from flying&lt;/meta_description&gt;
+        &lt;number&gt;KB0010053&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Skills&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 19:14:43&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;cc9038f62f784190e0f497eef699b64a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 19:28:21&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;When playing SWRPG, characters have plenty of opportunities for bold and exciting action, from flying a starfighter through a solar storm to dodging traps in the depths of an ancient evil temple. Whether characters succeed or fail in these actions is determined by their skills.&lt;/p&gt;
+&lt;p&gt;The vast majority of characters’ actions are governed by abilities they have acquired through education or experience. Any time PCs attempt an action that has a reasonable chance of success or failure, their skills come into play as a means of determining the result. In some instances, the task may be so trivial, or the character so capable, that the Game Master may not call for a check. At other times, the task might be so outlandish that the player might choose to act differently once the odds are calculated. Ultimately, when there is a reasonable chance of failure, players must depend on their characters’ skills to see them through to success.&lt;/p&gt;
+&lt;p&gt;Skill values fulfill this role in conjunction with characteristics. These two values interact to establish the number of Ability and Proficiency dice used when attempting any action. A character’s innate abilities are generally described by characteristics, while skills require learning and practice. In this way, the intersection of education and natural ability contributes to a character’s chances of success or failure.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;WHAT ARE SKILLS?&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Anything that a character might learn could be considered a skill. The galaxy is a vast place, however, and not everything a person might learn has applications that fit well within a dramatic game. To reflect this, SWRPG includes a list of the skills that are most likely to be useful in the course of dramatic adventures set within the Star Wars galaxy. The list may not cover every imaginable situation, but it should address the majority of actions that occur often during a typical game session.&lt;/p&gt;
+&lt;p&gt;Skills are divided into three categories based on their general application and use. Knowledge skills are entirely cerebral. They do not govern action—only understanding. Combat skills deal with how a character may act and react in a direct physical confrontation. Other skills may be useful during an altercation, but Combat skills can seldom be employed without violence. All skills that deal with non-combat actions are considered General skills.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;SKILL RANKS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When a character chooses to attempt an action, the player begins by forming a dice pool. The higher of the relevant characteristic and skill values is used to determine the total number of Ability dice in the pool. The smaller of these two values indicates how many of those dice are upgraded to Proficiency dice. A character who has no ranks in a skill is considered to be unskilled. This character has a value of 0 for the skill in question, so his checks for that skill are made without upgrading any Ability dice to Proficiency dice.&lt;/p&gt;
+&lt;p&gt;Aside from the game terms, it may also be useful to consider what skill ranks represent in a more narrative sense. Even a single rank in a skill represents a significant amount of time spent learning and practicing its use. It’s generally reasonable to assume that other characters in the game world rely heavily on their characteristics for actions outside their field of expertise. For example, almost everyone can pilot a speeder in routine traffic, but most characters do not have a rank of Piloting (Planetary). Instead, they default to using their Agility characteristic for this type of routine task.&lt;/p&gt;
+&lt;p&gt;Each rank of a skill represents a substantial degree of training and practice. Further, that practice must often come under strenuous conditions. A character who spends endless days performing the same task on a droid assembly line does not improve his Mechanics skill. However, if that same character were regularly working on a range of different droids that came in for repairs after being exposed to harsh environmental conditions, it’s likely that he could soon improve his skill rank.&lt;/p&gt;
+&lt;p&gt;The first two ranks of a skill represent a thorough grounding in that skill but little practical experience. Such a character may have just completed a formal education, taken part in an apprenticeship, or begun an entry-level job. At this level of competency, the PC knows the basics of the skill but hardly realizes how little he knows. He may accomplish routine tasks on a regular basis, but he is often overwhelmed by complex ones.&lt;/p&gt;
+&lt;p&gt;The third and fourth ranks are indicative of a true professional. These are individuals who have honed the skill thoroughly and can make their living at it. They might be talented and capable physicians, respected pilots, or gifted mechanics. They are aware of how much more they have to learn, but they are quite capable of handling most tasks when they have prepared for them.&lt;/p&gt;
+&lt;p&gt;Only a handful of individuals attain the fifth rank of a skill. Few can adequately appreciate the artistry of a master’s craft, so those who attain this level must deliberately challenge themselves to perfect their expertise. Characters with this degree of proficiency may have a reputation for their particular talents that extends far beyond their community. These individuals are generally driven and passionate about the skill that they have mastered.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;SKILL DESCRIPTIONS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This section details all of the skills used throughout the game. Each skill is presented with clarifications on how it may best be used, along with notes on its key differences from similar skills. In addition, examples are provided highlighting potential ways that a skill might use advantage.&lt;/p&gt;
+&lt;p&gt;Sometimes, through particular fortune, a character&amp;#39;s check may generate more success than are needed to accomplish a task. Each entry presents ways in which these additional successes may be used. These are not necessary, but are intended to add additional flavor. Game Masters and players are encouraged to work together to create alternative ways in which extra successes might appropriately and dramatically modify a given situation.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;For a full list of skills and descriptions, &lt;a title="view the holocron." href="https://dev21386.service-now.com/star_wars?id&amp;#61;holocron" target="_blank" rel="noopener noreferrer nofollow"&gt;view the holocron.&lt;/a&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=cc9038f62f784190e0f497eef699b64a"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:49:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>298a78ba2fb84190e0f497eef699b69b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010053</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_298a78ba2fb84190e0f497eef699b69b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:49:09</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

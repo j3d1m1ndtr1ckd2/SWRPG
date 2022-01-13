@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8db9120f2ff00590e0f497eef699b65b</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Gear and Equipment"&gt;dbec6b412f94b010e0f497eef699b6ed&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;It might not be as exciting as a blaster or snubfighter, but basic equipment is often the foundation&lt;/meta_description&gt;
+        &lt;number&gt;KB0010063&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-06&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Gear&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-06 21:33:55&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;8db9120f2ff00590e0f497eef699b65b&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-06 21:34:05&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;It might not be as exciting as a blaster or snubfighter, but basic equipment is often the foundation for a successful attack or business venture, especially when these are one and the same. Reliable communications, survival on inhospitable worlds, repair for recalcitrant droids, even keeping allies alive after things have gone horribly wrong are all impossible if insufficient attention was paid to outfitting personnel beforehand. After all, even a good blaster won&amp;#39;t do much if its power pack fails.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;COMMUNICATIONS&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Given the scale at which many operations are conducted, solid communications are of vital importance. There is a wide range of devices for such purposes to create reliable and even secure messaging between individuals or groups. Not all are simply a matter of ranges; some requirements can call for quiet and subtle comms for surreptitious actions, or ultra-tight comlinks to evade others attempting to listen in.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;POISONS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Poisons have been used to kill or incapacitate for untold centuries, even if they are generally considered devious and unethical. They come in all forms and styles, from skin application to respiratory vector to simple food additives. The average poison simply kills within minutes, leaving clear signs of unnatural death.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Higher-quality poisons leave no trace and can be tuned so that the victim dies at a specific time, while poorer versions are unreliable and might only cause severe indigestion or illness. Some poisons do not kill their target, but can cripple them in unpleasant ways.&lt;/p&gt;
+&lt;p&gt;There are a wide variety of poisons, far more than can be listed here. However, each poison has several rules-based components. Poisons always have a Difficulty listed; this is the Difficulty of the Resilience check the victim must make to avoid the effects. Poisons also always have an effect listed; this is the consequence for failing the Resilience check. Generally this has two parts: the primary effect, and the secondary effects that may be triggered from additional threat or despair.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CYBERNETIC ENHANCEMENTS / REPLACEMENTS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Technology is an integral part of life on almost every world in the galaxy, and for some it is an integral part of their very bodies. Some cybernetic enhancements are visible, either because the wearer cares little about what others might think of his mechanical prosthesis or because he cannot afford better. Others are near-perfect duplicates of lost limbs or are hidden within the body, and few could tell the difference without scanning devices.&lt;/p&gt;
+&lt;p&gt;Cybernetic enhancements and replacements generally increase skills or characteristics, providing raw bonuses to characters&amp;#39; abilities. The combination of purchased increases and the increases provided by cybernetics can increase a character&amp;#39;s skill or characteristic one step above the normal maximum (seven for characteristics, six for skills).&lt;/p&gt;
+&lt;p&gt;Each character may only purchase and install a number of cybernetic enhancements and replacements equal to his Brawn rating.&lt;/p&gt;
+&lt;p&gt;The cybernetic enhancements listed here are obviously mechanical in nature. The exceptions are the BioTech Industries Repli-Limb Prosthetics. These do not enhance the user as the other cybernetic devices do. However, they are designed to function identically to the original limb, and to be covered with synthflesh so that they look virtually indistinguishable to that which they replace.&lt;/p&gt;
+&lt;p&gt;One drawback of cybernetic enhancements and replacements is that they can be affected by weaponry designed to disable technology, such as ionization blasters or ion cannons. If hit by weapons that normally would only affect droids, the cybernetic enhancement temporarily stops working for the remainder of the scene or until repaired. The consequences of this depend on the enhancement in question and are left up to the GM, but should make sense (for example, a character with two malfunctioning cybernetic legs would not only lose any bonuses from the legs, but would also be unable to walk).&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;DETECTION DEVICES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Knowing the foe is only the first step—knowing what he is doing and where he is going is also important. Detection and surveillance gear helps ensure there are no unwanted visitors in the midst of illicit activities or unexpected surprises lurking in deserted areas.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;MEDICAL&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Finishing off a particularly profitable run is worth little if no one lives to enjoy the credits. Having adequate medical gear helps ensure one is always ready for his next deal, no matter how badly the previous one went. Many of these items are designed to augment and enhance (or simply permit the use of) the Medicine skill.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;SECURITY&lt;/strong&gt;&lt;/span&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Security is a two-fold operation. On one side, there is the goal of securing one&amp;#39;s own data, credits, or other valuables. On the other is the goal of penetrating vaults, data storage barriers, and other secured physical or electronic bastions. Such a battle between protection and access can flip back and forth; once a security attack goes well, the next step is usually to secure whatever is taken, lest it become the target of someone else&amp;#39;s attack.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;SURVIVAL&lt;/strong&gt;&lt;/span&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Merely being ready to face down an enemy blaster means little when faced with no food or water and no means to easily get either. Survival gear comes into play when making long treks across untamed wastelands or desolate badlands, making the journey less hazardous.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;TOOLS&lt;/strong&gt;&lt;/span&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Using tools separates sentients from other life forms, and using tools well often separates successful sentients from the rest. Tools are used to perform specific tasks or to make performing them easier; they can be almost anything from a simple hammer to a fusion power pack and everything in between. As with weapons, in desperate times almost anything can be made into a tool, though its efficiency pales in comparison to the correct item.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;For a full list of gear, &lt;a title="visit the holocron." href="https://dev21386.service-now.com/star_wars?id&amp;#61;holocron" target="_blank" rel="noopener noreferrer nofollow"&gt;visit the holocron.&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=8db9120f2ff00590e0f497eef699b65b"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-06 21:50:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a5dfd24b2f340590e0f497eef699b695</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010063</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a5dfd24b2f340590e0f497eef699b695</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-06 21:50:16</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

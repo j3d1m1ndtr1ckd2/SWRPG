@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>10b2f4fe2f384190e0f497eef699b68f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Skills"&gt;a2cc2f012f94b010e0f497eef699b6d2&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;During character creation, it’s vital that each player select the skills that cover his character’s core&lt;/meta_description&gt;
+        &lt;number&gt;KB0010054&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Choosing Skills&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 19:16:18&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;10b2f4fe2f384190e0f497eef699b68f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 19:29:02&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;During character creation, it’s vital that each player select the skills that cover his character’s core area of expertise. A Warrior must be able to use his weapon, a Consular must be able to negotiate, and a Peacekeeper must be able to lead. This doesn’t mean that every Player Character should maximize his core skills, but those who fail to take at least one rank are likely to regret it.&lt;/p&gt;
+&lt;p&gt;Skills beyond a Player Character’s central focus must be chosen carefully. Those related to a PC’s profession are substantially more economical than those outside his career. Players who spread their characters too thin at the early stages may discover that the sacrifices necessary were not worthwhile. Routine uses of a skill do not generally require a check. A retired Sage may not need to be a talented pilot if he only uses his speeder for transport and is unlikely to be piloting in a high-speed chase.&lt;/p&gt;
+&lt;p&gt;At the same time, some skills are much more likely to come up during the course of a hero’s adventures. Injuries that require Medicine are common. In some situations, it can be critical to move with Stealth. At other times, a PC’s life may depend upon his Vigilance or Athletics. Often, it’s in a group’s best interest to discuss skills collectively, so that the players and the Game Master have a shared expectation about how often particular skills are likely to be used.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;For a full list of skills with descriptions, &lt;a title="view the holocron." href="https://dev21386.service-now.com/star_wars?id&amp;#61;holocron" target="_blank" rel="noopener noreferrer nofollow"&gt;view the holocron.&lt;/a&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=10b2f4fe2f384190e0f497eef699b68f"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:48:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>255af87a2fb84190e0f497eef699b619</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010054</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_255af87a2fb84190e0f497eef699b619</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:48:19</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

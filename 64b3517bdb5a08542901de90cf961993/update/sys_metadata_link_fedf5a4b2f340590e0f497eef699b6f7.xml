@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>bdd85a072fb00590e0f497eef699b6b3</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Gear and Equipment"&gt;dbec6b412f94b010e0f497eef699b6ed&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Few heroes and villains of the galaxy wear armor because most weapons can penetrate it. But it's no guarantee,&lt;/meta_description&gt;
+        &lt;number&gt;KB0010062&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-06&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Armor&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-06 21:23:22&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;bdd85a072fb00590e0f497eef699b6b3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-06 21:23:24&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Few heroes and villains of the galaxy wear armor because most weapons can penetrate it. But it&amp;#39;s no guarantee, and having laminated armor or even a thick leather coat offers some protection against glancing blaster bolts or the rusty weapons of some backwater world&amp;#39;s inhabitants.&lt;/p&gt;
+&lt;p&gt;Some, like Imperial stormtroopers, also wear armor as a uniform. Their full-body suits not only protect them from area-effect weapons like frag grenades, but also dehumanize them to some extent, presenting a united face to the worlds the Empire attempts to bring under their rule.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;ARMOR CHARACTERISTICS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Whether it&amp;#39;s a blast helmet or a vest, all armor has the following characteristics in common. Armor also shares some characteristics with weapons, notably cost, encumbrance, hard points, and rarity, the descriptions of which can be found on page 158.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DEFENSE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The armor&amp;#39;s defense adds setback dice equal to the rating directly to the attacker&amp;#39;s pool. This reflects the armor&amp;#39;s ability to deflect damage away from the user&amp;#39;s body.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SOAK&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Soak is added to the target&amp;#39;s Brawn and subtracted from any incoming damage suffered. If an attack causes 10 damage, for example, a soak of 2 plus a Brawn of 2 reduces the damage by 4 to a total of 6.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ENCUMBRANCE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Each armor set has a listed encumbrance. This is the encumbrance value of the item when carried. However, armor is designed to be worn, and when worn, its encumbrance value decreases. Reduce the encumbrance value of all armor by 3 when worn.&lt;/p&gt;
+&lt;p&gt;For a full list of Armor, &lt;a title="view the holocron." href="https://dev21386.service-now.com/star_wars?id&amp;#61;holocron" target="_blank" rel="noopener noreferrer nofollow"&gt;view the holocron.&lt;/a&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=bdd85a072fb00590e0f497eef699b6b3"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-06 21:50:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fedf5a4b2f340590e0f497eef699b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010062</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_fedf5a4b2f340590e0f497eef699b6f7</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-06 21:50:21</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

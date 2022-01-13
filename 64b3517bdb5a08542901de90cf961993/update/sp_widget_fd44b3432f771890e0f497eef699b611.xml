@@ -10,20 +10,6 @@
 		$location.search('spa', 1);
 	}
 	
-	$scope.searchSpecies = function(){
-		var search = document.getElementById('searchBox').value.toLowerCase();
-		if(search == ''){
-			$scope.data.displaySpecies = $scope.data.species;
-		} else{
-			$scope.data.displaySpecies = [];
-			for(var i = 0; i < $scope.data.species.length; i++){
-				if($scope.data.species[i].name.toLowerCase().indexOf(search) > -1){
-					$scope.data.displaySpecies.push($scope.data.species[i]);
-				}
-			}
-		}
-	}
-	
 	$scope.openLargeImage = function(img){
 		$scope.data.currentImage = img;
 		document.getElementById('largeImgContainer').style.display = 'inline';
@@ -1643,7 +1629,7 @@ if(data.step == 1){
         <sys_created_on>2020-10-16 18:34:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fd44b3432f771890e0f497eef699b611</sys_id>
-        <sys_mod_count>754</sys_mod_count>
+        <sys_mod_count>756</sys_mod_count>
         <sys_name>Star Wars Character Creator</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -1651,7 +1637,7 @@ if(data.step == 1){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_fd44b3432f771890e0f497eef699b611</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-09-28 20:09:49</sys_updated_on>
+        <sys_updated_on>2022-01-05 16:09:00</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -1670,7 +1656,7 @@ if(data.step == 1){
     		<input type="text" ng-blur="stashName()" id="characterName" name="characterName" value="{{data.characterName}}"><br><br>
       </span>
       <span class="col-xs-12 col-md-6">
-        <input id="searchBox" class="sw-input" type="text" ng-keyup="searchSpecies()" placeholder="Search"/>
+        <input id="searchBox" class="sw-input" type="text" ng-model="speciesSearch" placeholder="Search"/>
       </span>
     </div>
     <div class="col-xs-12 species-list-container">
@@ -1679,7 +1665,7 @@ if(data.step == 1){
         <h4 class="star-wars-text">Choose a Species</h4>
       </div>
       <div class="col-xs-12 species-list">
-        <span class="col-xs-12 species-record" ng-repeat="s in data.displaySpecies">
+        <span class="col-xs-12 species-record" ng-repeat="s in data.displaySpecies | filter: speciesSearch">
           <span class="col-xs-3 species-image"><img ng-click="openLargeImage(s.image)" height="85px" width="50px" src="{{s.image}}"/><i class="fas fa-expand-alt" ng-click="openLargeImage(s.image)"></i></span>
           <span class="col-xs-6 species-name">{{s.name}}</span><br>
           <span class="col-xs-6 star-wars-text species-name-sw">{{s.name}}</span>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>7e08fc362fb84190e0f497eef699b6d8</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Talents"&gt;d0ecaf012f94b010e0f497eef699b66c&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;A description for each of the talents used in SWRPG is available in the holocron. Every entry includes&lt;/meta_description&gt;
+        &lt;number&gt;KB0010057&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Talent Descriptions&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 19:44:46&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;7e08fc362fb84190e0f497eef699b6d8&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 19:45:15&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;A description for each of the talents used in SWRPG is available in the &lt;a title="holocron" href="https://dev21386.service-now.com/star_wars?id&amp;#61;holocron" target="_blank" rel="noopener noreferrer nofollow"&gt;holocron&lt;/a&gt;. Every entry includes the information required for game play:&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;&lt;strong&gt;Activation &lt;/strong&gt;explains whether a talent is always in use (Passive) or if a character must take action to activate it (Active). If activation is required, the type of action necessary is indicated. Some talents can be activated on other characters’ turns. If this is the case, the Activation line also includes the “Out of Turn” note.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Ranked &lt;/strong&gt;indicates whether a talent can be purchased multiple times (Yes) or only once (no).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Trees&lt;/strong&gt; references the specialization talent trees that provide access to the particular talent.  Note that for ranked talents, some of these trees may allow the character to purchase the talent more than one time.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Force Talent&lt;/strong&gt; indicates that a character must be Force Sensitive (have a force rating of 1 or higher) to use the talent.  The mechanics that govern Force talents are discussed in Chapter VIII: The Force.  Some Force talents involve the use of Force powers (which are described in the same chapter), the Force die (white d12), or spending Force Points.  Note that a character without a Force rating (a non-Force sensitive) can purchase a Force talent; however he cannot use it or gain any benefits from it.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;The final paragraph in each entry details the specific game mechanics involved in using the described talent.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=7e08fc362fb84190e0f497eef699b6d8"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:48:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>726a3c7a2fb84190e0f497eef699b6b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010057</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_726a3c7a2fb84190e0f497eef699b6b9</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:48:40</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

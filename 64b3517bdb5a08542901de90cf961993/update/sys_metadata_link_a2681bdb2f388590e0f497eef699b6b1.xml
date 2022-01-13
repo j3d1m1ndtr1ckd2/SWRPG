@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1b9bcbd32ff48590e0f497eef699b6fa</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Conflict and Combat"&gt;62fcab012f94b010e0f497eef699b6fd&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;SWRPG relies on broad terms used to describe ranges and distances. Rather than have a player's attention&lt;/meta_description&gt;
+        &lt;number&gt;KB0010071&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-07&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Range Bands&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-07 19:46:29&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;1b9bcbd32ff48590e0f497eef699b6fa&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-07 20:08:40&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;SWRPG relies on broad terms used to describe ranges and distances. Rather than have a player&amp;#39;s attention focused on a grid, counting squares, SWRPG uses more abstract means to represent position, distances, and ranges, thus allowing the players to focus on the action and the adventure.&lt;/p&gt;
+&lt;p&gt;The distance between two points—people, objects, or adversaries—is defined by general range categories. These range categories are used to determine how far a ranged attack can reach, how far apart two people are from each other, how much effort is needed to move between two places, and so on. The most common ranges are short, medium, long, and extreme range. Another relative position exists—engaged—to represent characters that are in extremely close proximity to each other.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;THE FIVE RANGE BANDS &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For ease of play, distance in SWRPG is divided up into five different bands, from engaged to extreme. As always, the GM has final say in determining the range between the attacker and the target.&lt;/p&gt;
+&lt;p&gt;With the engaged status and the range bands, the GM is free to describe things dynamically and set scenes without having to worry about exact distances. Exact distances in meters do not matter. The details and adventure come first, creating a vivid picture for the players, while allowing the GM to quickly provide the mechanical information players need to use their actions and build strategies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ENGAGED &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To reflect two or more targets close enough to interact directly with each other, there is a special range status called engaged. Two characters engaged with each other are in very close proximity. A soldier needs to be engaged with a target to hit him with his vibrosword. Two or more characters engaged with each other is called an engagement.&lt;/p&gt;
+&lt;p&gt;Engaged is also used to indicate that a person is close enough to an item to use it. A slicer needs to be engaged with a security terminal to attempt to hack it. A pilot needs to be engaged with his starship to board it. A bounty hunter needs to be engaged with a tree if he wants to hide behind it for cover while stalking his prey. The engaged status simply indicates that two things are close enough to each other to directly interact.&lt;/p&gt;
+&lt;p&gt;The best way to consider engaged is as a subcategory of short range. Obviously, someone can be slightly further away if they&amp;#39;re at short range, rather than if they&amp;#39;re engaged with someone. However, the distance is relatively minor. Thus, spending a maneuver to move to engage someone or something is as much a matter of moving into combat (or out of combat) cautiously enough to avoid a return blow—or flipping open and focusing one&amp;#39;s attention on a device— as much as it is moving a physical distance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SHORT RANGE &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Short range indicates up to several meters between targets. Many thrown weapons and small firearms are most accurate at short range. Two people in short range can talk comfortably without raising their voices. Moving to another spot within short range is usually easy to do and generally only requires one maneuver.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MEDIUM RANGE &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Medium range can be up to several dozen meters away. More reliable pistols can reach to medium range. Few thrown weapons can reach this far. Two people in medium range of each other need to talk loudly to hear each other. Moving from short range to medium range takes little exertion, and generally requires one maneuver.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LONG RANGE &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Long range is further than a few dozen meters. Blaster rifles, mounted weapons, and weapons that use the Gunnery skill can reliably reach this far without too much trouble. Two people in long range of each other need to yell loudly to hear each other. Moving from medium range to long range requires two maneuvers, as it is more time consuming than moving between medium range and short range. This means that in most cases, a character cannot close the distance between short and long range in a single round, as it would take three maneuvers (one for short to medium, two for medium to long).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXTREME RANGE &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Extreme range is the farthest range at which two targets can interact. High-tech sniper weaponry and some vehicle-mounted armaments may reach out to this range. Two people at extreme range may not be able to hear each other even if they shout. Moving between long range and extreme range can be time-consuming and exerting, and requires two maneuvers. This means that in most cases, a character can move the entire distance between long and extreme range in a single round, but will suffer strain or give up his action to do so.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;PLANETARY SCALE RANGES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The distances and range bands presented here are based on the personal scale for characters. Starships and vehicles may use these range bands, or much larger range bands, based on the needs of the story. On a planet&amp;#39;s surface, these range bands may suffice, while in the depths of outer space in the midst of a heated starship battle, the range bands represent much larger distances and positions. See the starship section for more details on planetary and starship-based ranges and distances.&lt;/p&gt;
+&lt;p&gt;A good guideline is that the close range on planetary scale picks up where the extreme range of personal scale ends—it&amp;#39;s the next step in ranged bands. However, the scale is so much bigger that a single person could never use maneuvers to move next to a target that&amp;#39;s &amp;#34;close&amp;#34; to him on a planetary scale—the distance may be up to several kilometers and take hours of walking. Further range bands on a planetary scale would be even more extreme. Planetary scale ranges are explained further on page 238 in Chapter VII: Starships and Vehicles&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=1b9bcbd32ff48590e0f497eef699b6fa"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-07 20:35:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a2681bdb2f388590e0f497eef699b6b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010071</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a2681bdb2f388590e0f497eef699b6b1</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-07 20:35:56</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

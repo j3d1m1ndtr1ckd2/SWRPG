@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>929e5c322ff44190e0f497eef699b6c6</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;By this point, the Player Characters’ game statistics and personalities should be well established. The&lt;/meta_description&gt;
+        &lt;number&gt;KB0010049&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Step 9: Choose Gear and Appearance&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 18:02:41&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;929e5c322ff44190e0f497eef699b6c6&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 18:02:55&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;By this point, the Player Characters’ game statistics and personalities should be well established. The key remaining issues are to determine their personal equipment and physical appearances. These combine to add visual elements to the characters’ personae. Players should consider this an opportunity to add additional depth to their characters.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;STARTING GEAR&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Player Characters start out with 500 credits to spend on personal gear. Characters may also have earned additional credits if they modified their Morality, Obligation, or Duty modifier in Step 2.  Refer to Chapter V: Gear and Equipment for a thorough listing of available options. Note that players may not elect to purchase anything that is listed as Restricted (R) without the Game Master’s explicit approval. Player Characters are assumed to have miscellaneous incidental sundries that are not listed on their character sheet. This could include personal mementos as well as routine items like a journal or a chrono. While these items are of sentimental value, they seldom have financial value, nor are they likely to affect game mechanics. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Characters may keep any credits that are not spent on gear as part of their starting equipment. In addition, after all spending is complete, each player rolls 1d100. The value of the die roll is added to any remaining starting funds, and represents the &amp;#34;pocket money&amp;#34; characters may possess. This total represents the character’s initial spending money at the beginning of the first game session. Note that these additional starting funds cannot be spent until gameplay actually begins.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;PHYSICAL DESCRIPTION&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;There is little uniformity of appearance within a group of characters. The anatomical features of the different species vary significantly. Even within a species, there exists a broad range of different colorations and physiques. Players are encouraged to have fun with this range, creating appearances that reflect their characters’ personalities. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;An important first step is referring to the descriptions of the different species. A Nautolan’s tendrils are very different in appearance from a Twiiek’s lekku. Each of the species has distinctive features that should play an important role in describing their physical appearance. Any significant departures from those descriptions are certainly worth mentioning, and may be a way of further distinguishing the character. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Keep in mind that a character’s appearance should also mesh with his personality. A particularly flamboyant character is likely to reflect that personality in style of dress as well as in body modifications— possibly including dye, tattoos, or other permanent modifications. Conversely, characters who are more conservative only have modifications that are a traditional part of their native culture.&lt;/span&gt;&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li style="font-size: 8pt;"&gt;&lt;strong&gt;&lt;span style="font-size: 8pt;"&gt;Height, weight, and&lt;/span&gt;&lt;/strong&gt;&lt;span style="font-size: 8pt;"&gt;&lt;strong&gt; build:  &lt;/strong&gt;A character&amp;#39;s physical build is primarily determined by his species.  All of the species presented in Force and Destiny are typically 1.5 to 2 meters high, with Cereans tending toward 2 meters and Twi&amp;#39;leks tending toward the shorter 1.5 meters. However, even within the norms of a species, there can be a great deal of variation. Players should endeavor to keep their characters’ builds within reasonable limits, of course; a 4-meter human would be well outside the realms of believability. But within those limits, players are free to choose whether their characters appear thin, fat, muscular, tall, short, or any combination thereof. If players like, they can also tailor their characters’ physical appearances to match the characters’ physical characteristics: Agility and Brawn.  &lt;/span&gt;&lt;/li&gt;&lt;li style="font-size: 8pt;"&gt;&lt;strong&gt;&lt;span style="font-size: 8pt;"&gt;Hair, horns, and eye color: &lt;/span&gt;&lt;/strong&gt;&lt;span style="font-size: 8pt;"&gt; Not all species in the galaxy have hair, or even eyes. For example, Nautolans, Twi’leks, and Kel Dors do not have hair at all, while Cereans tend to only have hair growing in a fringe around the edges of their cone-shaped heads. In addition, Nautolans have black eyes without pupils. However, among those species who do have variations in eye and hair color, almost infinite variations are possible. Players can freely decide what color eyes and hair—as applicable—are appropriate for their characters. They can also decide how the characters choose to style and decorate such attributes, or if they have any particular accessories that they choose to wear.&lt;/span&gt;&lt;/li&gt;&lt;li style="font-size: 8pt;"&gt;&lt;strong&gt;Skin, scale, or fur color:  &lt;/strong&gt;Some species in Force and Destiny tend to have consistent skin coloration; for example, Kel Dors almost always have orange-brown skin. Others, such as the Twi’leks and humans, can possess a wide range of skin pigmentation, ranging from albino white through all manner of flesh tones to stranger hues such as blue or green. Other species—including the Togruta—can even have patterns in their pigmentation. Fur or hair can have even wider variance. Some individuals may even dye their hair or fur with hues that are subtle or outlandish, depending on the individual.&lt;/li&gt;&lt;li style="font-size: 8pt;"&gt;&lt;strong&gt;Scars, tattoos, and other identifying marks:  &lt;/strong&gt;This is an opportunity for players to get especially creative, because scars, tattoos, and other markings have little to do with a species’ physiology, and everything to do with an individual PC’s experiences and backstory. A tattoo may possess a deep cultural significance for the character, or it could be something the PC got as a lark after a long night at a cantina. Scars could come from exciting adventures, childhood events, or embarrassing accidents the character would prefer to forget. Characters may also possess piercings, brands, implanted corporate or government identification marks, subdermal cybercircuits, or nearly anything else the players can think of.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;PERSONALITY&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;A character’s personality is another place where players can really get creative. Traits, quirks, habits, likes and dislikes—players can be as thorough or as concise as they wish. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;A great starting point for a character’s personality is the emotional strengths and weaknesses that come with his Morality. These choices can form the core of the character’s personality, providing a solid foundation as the player creates a well-rounded and interesting character. Motivations can also provide a good basis for determining personality traits; after all, what the character is driven to accomplish can say a lot about how he acts. Morality and Motivations can be chosen so that they complement each other and work together to form a coherent personality type, but they don’t have to. Having a personality and emotions that conflict with a character’s Motivation can be a classic character trope. If a character’s Emotional Weakness is anger but his Motivation is galactic peace, that character could be fun to play as he finds himself torn between his ideals and his base instincts. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Alternatively, another good way to develop a personality for a character is to start with a base (such as the choices made with Morality) and then let the broader personality evolve over time. Sometimes the best character personalities develop over the course of the game, evolving out of the decisions the player makes naturally. Don’t be afraid to leave a character with room to grow and change. &lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=929e5c322ff44190e0f497eef699b6c6"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:48:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d7ab0ba2fb84190e0f497eef699b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010049</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_4d7ab0ba2fb84190e0f497eef699b659</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:48:50</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

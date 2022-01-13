@@ -9,7 +9,7 @@
 	img.src = $scope.data.character.portrait;
 	img.id = 'characterPortrait';
 	document.getElementById('portraitContainer').appendChild(img);
-	
+
 	$rootScope.$on('sp.form.submitted', function(){
 		$scope.closeEditContainer('portrait');
 		c.server.get({action: 'updatePortrait'}).then(function(response){
@@ -26,6 +26,14 @@
 	$scope.hideStatusEffectDetail = function(){
 		$scope.data.currentEffect = '';
 		document.getElementById('statusEffectInfoBox').style.display = 'none';
+	}
+	
+	$scope.showCritDetail = function(){
+		document.getElementById('critInjuryDescriptionInfoBox').style.display = 'inline';
+	}
+	
+	$scope.hideCritInjuryDescriptionInfoBox = function(){
+		document.getElementById('critInjuryDescriptionInfoBox').style.display = 'none';
 	}
 	
 	$scope.showSection = function(section, header){
@@ -368,6 +376,7 @@
 					
 				case 'crit':
 				var container = document.getElementById('editCritContainer');
+				document.getElementById('critDescription').innerHTML = $scope.data.character.criticalInjuriesDescription;
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '80%';
@@ -509,7 +518,8 @@
 				
 			case 'crit':
 			var crits = document.getElementById('crits').value;
-			c.server.get({action: 'saveCrit', crits: crits}).then(function(response){
+			var notes = document.getElementById('critDescription').value;
+			c.server.get({action: 'saveCrit', crits: crits, notes: notes}).then(function(response){
 				c.server.refresh();
 				$scope.closeEditContainer('crit');
 			});
@@ -1140,7 +1150,7 @@
   font-size:24px;
 }
 
-#notableFeatures, #background, #notes, #otherGearInput{
+#notableFeatures, #background, #notes, #otherGearInput, #critDescription{
 	width:100%;
   height:100px;
 }
@@ -1302,7 +1312,7 @@
 	padding-bottom:20px;
 }
 
-#statusEffectInfoBox{
+#statusEffectInfoBox, #critInjuryDescriptionInfoBox{
 	display:none;
   position:fixed;
   top:40%;
@@ -1842,6 +1852,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 			weight: charGR.weight + '',
 			criticalInjuriesInt: parseInt(charGR.critical_injuries),
 			criticalInjuriesString: charGR.critical_injuries + '',
+			criticalInjuriesDescription: charGR.critical_injury_description + '',
 			forceRatingInt: parseInt(charGR.force_rating),
 			forceRatingString: charGR.force_rating + '',
 			background: charGR.description_html + '',
@@ -2563,9 +2574,11 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
 				
 			case 'saveCrit':
 			charGR.critical_injuries = parseInt(input.crits);
+			charGR.critical_injury_description = input.notes;
 			charGR.update();
 			data.character.criticalInjuriesInt = charGR.critical_injuries;
 			data.character.criticalInjuriesString = data.character.criticalInjuriesInt + '';
+			data.character.criticalInjuriesDescription = charGR.critical_injury_description + '';
 			break;
 				
 			case 'updateStatusEffects':
@@ -2608,7 +2621,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>997</sys_mod_count>
+        <sys_mod_count>1013</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2616,7 +2629,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-09-01 20:42:27</sys_updated_on>
+        <sys_updated_on>2022-01-12 18:41:14</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2642,7 +2655,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         </span>
         <span class="col-xs-12 col-md-4 available-xp critical-injuries" ng-click="editCharacter('crit')">
           <span class="col-xs-12 xp-value">{{data.character.criticalInjuriesString}}</span>
-          <span class="col-xs-12 xp-label">Critical Injuries</span>
+          <span class="col-xs-12 xp-label">Critical Injuries<!--i class="far fa-info-circle" ng-click="showCritDetail()"></i--></span>
         </span>
         <!-- status effects -->
         <span class="col-xs-12 status-effects-container">
@@ -3152,7 +3165,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('species')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12">
         <span class="col-xs-12" id="speciesName">{{data.character.species}}<br><text class="star-wars-text">{{data.character.species}}</text></span>
-        <span class="col-xs-12" id="speciesDescription" ng-bind-html="data.character.speciesDescription"></span>
+        <span class="col-xs-12" id="speciesDescription" value="{{data.character.speciesDescription}}"></span>
       </span>
     </span>
     <!-- edit portrait -->
@@ -3194,7 +3207,9 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12">
         <label for="crits">Critical Injuries:</label><br/>
-        <input class="sw-input" type="text" id="crits" name="crits" inputmode="numeric" pattern="[0-9]*" value="{{data.character.criticalInjuriesString}}"/>
+        <input class="sw-input" type="text" id="crits" name="crits" inputmode="numeric" pattern="[0-9]*" value="{{data.character.criticalInjuriesString}}"/><br/>
+        <label for="critDescription">Critical Injury Notes:</label><br/>
+        <textarea class="sw-input" type="text" id="critDescription" name="critDescription" ng-bind-html="{{data.character.criticalInjuriesDescription}}"></textarea>
       </span>
       <span class="col-xs-12 save-edits">
        <span class="col-xs-12 save-button-container">
@@ -3381,6 +3396,13 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <span class="col-xs-12 talent-info">{{data.currentEffect.description}}</span>
       </span>
     </span>
+    <!-- crit injury description -->
+    <!--span class="status-effect-info-box" id="critInjuryDescriptionInfoBox">
+      <span class="col-xs-12 close-button" ng-click="hideCritInjuryDescriptionInfoBox()"><i class="fas fa-times"></i></span>
+      <span class="col-xs-12 talent-detail-body">
+        <span class="col-xs-12 talent-info" ng-bind-html="data.character.criticalInjuryDescription"></span>
+      </span>
+    </span-->
     <!-- edit credits -->
     <span class="edit-character" id="editCreditsContainer">
     	<span class="col-xs-12 close-button" ng-click="closeEditContainer('credits')"><i class="fas fa-times slideout-close-icon"></i></span>

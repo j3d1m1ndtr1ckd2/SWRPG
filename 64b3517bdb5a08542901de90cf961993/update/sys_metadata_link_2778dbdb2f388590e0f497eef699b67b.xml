@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6033a2432f740590e0f497eef699b6c2</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Conflict and Combat"&gt;62fcab012f94b010e0f497eef699b6fd&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Most of the gameplay in SWRPG is done on a narrative basis, with the GM describing events and the players&lt;/meta_description&gt;
+        &lt;number&gt;KB0010066&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-06&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Narrative and Structured Gameplay&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-06 22:20:33&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;6033a2432f740590e0f497eef699b6c2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-06 22:20:37&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Most of the gameplay in SWRPG is done on a narrative basis, with the GM describing events and the players describing their characters&amp;#39; actions and reactions to these events. Combat, however, requires more structured gameplay.&lt;/p&gt;
+&lt;p&gt;Narrative gameplay does not require the GM or players to keep track of the exact passage of time, and for the most part, this is perfectly acceptable. It&amp;#39;s usually enough to know that actions may take a few minutes, hours, days, or weeks (or any other amount of time). Narrative gameplay is most often used in any situation where the precise order of actions is unimportant.&lt;/p&gt;
+&lt;p&gt;Structured gameplay is, at its heart, a rules system that breaks up a character&amp;#39;s actions into what he could reasonably perform in a predetermined amount of time. It also gives each character in a scene the opportunity to perform actions in turn. It is most often used for players to play through combat situations, although the GM may decide to employ structured gameplay in certain non-combat scenes he feels would benefit from requiring the players to clearly define their characters&amp;#39; actions within a rule set.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;STRUCTURED GAMEPLAY OVERVIEW&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When using structured gameplay, the game is broken down into a series of rounds, each of which is further broken down into a series of turns. During a single round, each Player Character and Non-Player Character gets one turn, during which they have the opportunity to accomplish tasks and perform various actions.&lt;/p&gt;
+&lt;p&gt;Rounds can last for roughly a minute or so in time, although the elapsed time is deliberately not specified. Players should keep in mind that a round lasts long enough for their character to move to a new location and perform an important action. They should also remember that although each round is broken up into turns that happen sequentially in gameplay, narratively the turns are occurring at roughly the same time.&lt;/p&gt;
+&lt;p&gt;Structured gameplay events (also called encounters) such as combat follow these steps:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 1: DETERMINE INITIATIVE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At the beginning of the first round of combat, all players and NPCs need to determine in what order the characters will take their turns. This is referred to as the Initiative order.&lt;/p&gt;
+&lt;p&gt;To determine the Initiative order, each Player Character and NPC makes a Simple (-) Cool or Vigilance check. Once all Initiative checks have been made, the CM notes down the results of each check and ranks them in order, from highest number of successes to lowest number of successes. If two checks are tied, the check with more O is ranked higher. If a Player Character and an NPC are still tied, the Player Character is ranked higher.  This is the Initiative order.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 2: ASSIGN INITIATIVE SLOTS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once the GM has determined the Initiative order, he notes which results were generated by Player Characters, and which results were generated by NPCs. The results generated by Player Characters become Player Character Initiative slots. The results generated by NPCs become NPC Initiative slots.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 3: PARTICIPANTS TAKE TURNS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Beginning at the top of the Initiative order, the players and GM fill each Initiative slot one at a time with a character turn. If the Initiative slot is a Player Character Initiative slot, then the players agree on one Player Character to fill the slot from amongst the Player Characters who have not acted that round. That Player Character then takes this turn.&lt;/p&gt;
+&lt;p&gt;If the Initiative slot is an NPC Initiative slot, then the GM chooses one NPC to fill the slot from amongst the NPCs who have not acted that round. That NPC then takes this turn.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 4: ROUND ENDS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once all NPCs and Player Characters have taken a turn, the round ends. At this point, certain effects that last until the &amp;#34;end of the round&amp;#34; may end. The GM also determines if the ongoing action warrants additional rounds, or if it has been resolved. If the ongoing action continues, repeat step three using the same Initiative order generated in step 1. If the action has been resolved and the encounter is over, proceed to step 5.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STEP 5: ENCOUNTER ENDS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once the action has been resolved, the GM ends the encounter. At this point, any character abilities that may only be used &amp;#34;once per encounter&amp;#34; reset and any abilities that last &amp;#34;until the end of the encounter&amp;#34; expire. Each Player Character also has a chance to catch their breath and recover strain, and may take steps to help heal any incapacitated characters.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;THE TURN&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Each character (whether a Player Character or a Nonplayer Character) gets one turn to act during each round. During this turn, the character has the chance to undertake certain activities, such as moving from place to place, using his skills, and even attacking others. The activities the character can perform during his turn are split into three categories: Incidentals, Maneuvers, and Actions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;INCIDENTALS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Incidentals are minor activities that characters can undertake that require extremely little time or effort, such as dropping something they&amp;#39;re holding or speaking to another character. There is no hard limit to the number of incidentals a character may perform during his turn, although the GM may veto excessive numbers of them or decide they are complex enough to warrant counting as a maneuver. The following are examples of incidentals:&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Speaking to another character.&lt;/li&gt;&lt;li&gt;Dropping an item held in one&amp;#39;s hands.&lt;/li&gt;&lt;li&gt;Releasing someone the character is holding.&lt;/li&gt;&lt;li&gt;Minor movements such as shifting position, peeking around a corner, or looking behind a person.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;MANEUVERS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Maneuvers are activities that are not complex enough to warrant a skill check, but do involve time and effort on the part of a character. Characters are allowed one maneuver during their turn, and certain circumstances may allow them a second maneuver as well (see below). The following are some examples of maneuvers:&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Aiming a weapon.&lt;/li&gt;&lt;li&gt;Moving one range band closer or farther away from an enemy.&lt;/li&gt;&lt;li&gt;Opening a door.&lt;/li&gt;&lt;li&gt;Diving behind cover.&lt;/li&gt;&lt;li&gt;Standing up.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ACTIONS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Actions are important activities that are vital to a character accomplishing goals. Each character may normally only perform one action during his turn, and it will likely be the most important activity he undertakes during his turn. Actions almost always involve performing a skill check, although certain character abilities may require using an action to activate them. The following are some examples of actions:&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;Slicing a computer.&lt;/li&gt;&lt;li&gt;Opening a locked door.&lt;/li&gt;&lt;li&gt;Firing a weapon.&lt;/li&gt;&lt;li&gt;Punching or grappling an opponent.&lt;/li&gt;&lt;li&gt;Instructing allies with a series of orders.&lt;/li&gt;&lt;li&gt;Performing first aid on an ally.&lt;/li&gt;&lt;li&gt;Sneaking up on a vigilant foe.&lt;/li&gt;&lt;li&gt;Climbing a cliff.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Out of all of these options, the most common during combat is likely attacking an opponent. Attacking an opponent requires a combat skill check, sometimes referred to in shorthand as a combat check or simply an attack.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=6033a2432f740590e0f497eef699b6c2"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-07 20:36:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2778dbdb2f388590e0f497eef699b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010066</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_2778dbdb2f388590e0f497eef699b67b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-07 20:36:17</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

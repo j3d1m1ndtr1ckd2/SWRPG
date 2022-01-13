@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ee7256032ff00590e0f497eef699b6a7</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Gear and Equipment"&gt;dbec6b412f94b010e0f497eef699b6ed&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;SWRPG emphasizes sweeping stories, epic tales, and fast action. Keeping track of the weight of every&lt;/meta_description&gt;
+        &lt;number&gt;KB0010060&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-06&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Encumbrance&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-06 21:07:01&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;ee7256032ff00590e0f497eef699b6a7&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-06 21:07:12&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;SWRPG emphasizes sweeping stories, epic tales, and fast action. Keeping track of the weight of every stimpack isn&amp;#39;t fun, but knowing that a hero is loaded down with the weapons he just stole for the Rebellion is an important story element; so is having some idea of how many days worth of rations a rogue can carry as he marches across the Jundland Wastes.&lt;/p&gt;
+&lt;p&gt;In general, players and the Game Master won&amp;#39;t need to track a character&amp;#39;s encumbrance (how much he&amp;#39;s carrying on his person). Occasionally, however, it may play an important part in the story, and a player needs to know if the weight, mass, and collective bulk of the items his hero is wearing inhibits his actions.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;ENCUMBRANCE VALUES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;All of the gear listed in this chapter has an encumbrance value. Most items that can be commonly carried have a value of 0 through 5—from relatively light objects (such as credit chips or light clothing) to heavier items (like blaster rifles or gaffi sticks). The encumbrance value of armor is discussed in more detail later, and is different when it&amp;#39;s worn, where the weight is distributed appropriately, and when it&amp;#39;s carried, when it&amp;#39;s just another item.&lt;/p&gt;
+&lt;p&gt;Encumbrance doesn&amp;#39;t strictly represent weight; it also represents mass, bulk, and how easy items are to carry. A well-fitting suit of armor adds very little encumbrance, while an armful of gimer sticks have a high encumbrance because they&amp;#39;re tricky to carry.&lt;/p&gt;
+&lt;p&gt;Small items such as dataslates, most pistols, or knives have an encumbrance value of 1 or 2. Medium items, such as blaster rifles, a satchel of thermite grenades, or a grappling hook and cord, have an encumbrance value of 3 to 4. Large or heavy items such as cargo crates, repeating blaster rifles, or a heavy toolbox, are valued at 5 to 6.&lt;/p&gt;
+&lt;p&gt;If it becomes critical to the story to have more detail. 10 loosely carried incidental items have an encumbrance value of 1. If they are stored in an effective manner (such as bowcaster quarrels in a quiver or crystals in a pouch), then 20 incidental items have an encumbrance value of 1. If for some reason the character is unable to manage his gear in such a way, the GM may increase his overall encumbrance value by several points to reflect the difficulty in managing and carrying items by less efficient means.&lt;/p&gt;
+&lt;p&gt;Living beings generally have encumbrance values of 5 plus their Brawn if carried. A typical human, like a soldier for the Rebel Alliance, has a Brawn of 2, and therefore a total encumbrance value of 7. A scholar from Garos IV, with a Brawn of 1, has an encumbrance value of 6. This may be modified by specific species&amp;#39; features, such as the fatty bulk of a Hutt or the hollow bones of an avian.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;ENCUMBRANCE THRESHOLD&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Characters have an &amp;#34;encumbrance threshold&amp;#34; of 5 plus their Brawn rating, which limits how much they can carry under normal conditions and without penalty. A total encumbrance value over the threshold means the hero is &amp;#34;encumbered,&amp;#34; and suffers one setback die to all Agility and Brawn rolls for every point of encumbrance over his limit. This is cumulative with any setback dice suffered for strain or other conditions, should any be in play.&lt;/p&gt;
+&lt;p&gt;Also, if a character is encumbered by an amount equal to or greater than his Brawn rating, he no longer earns a free maneuver each turn. The character can still perform up to two maneuvers, but each maneuver costs two strain. With a Brawn of 2, for example, Luke does not get a free maneuver each turn if he&amp;#39;s carrying 9 or more points of encumbrance.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;LIFTING AND CARRYING EXCESSIVE ENCUMBRANCE&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Characters shouldn&amp;#39;t typically carry more than their encumbrance threshold. When necessity demands, however, they can do so for a short time (suffering the effects described above).&lt;/p&gt;
+&lt;p&gt;If a character needs to lift an object greater than his encumbrance threshold, such as an ally who has fallen off a gantry or ledge, he must make an Athletics check. The difficulty is Simple if the object&amp;#39;s Encumbrance value is less than or equal to the character&amp;#39;s encumbrance threshold. Add 1 to the difficulty for every point over, up to a maximum additional encumbrance of 4 and difficulty of Daunting (4 difficulty dice).  A freelancer with a Brawn of 2 and a threshold of 7, for example, tries to lift a rock with an encumbrance value of 10. That&amp;#39;s 3 over, so the difficulty is Hard (3 difficulty dice). &lt;/p&gt;
+&lt;p&gt;Additional characters may help, adding their raw Brawn to the total value of the object being lifted. In the example above, a Wookiee with a Brawn of 4 adds &amp;#43; 4 to the encumbrance threshold for that specific task.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CONCEALING GEAR&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Characters in SWRPG frequently carry small arsenals on their persons. Sometimes a character wants everyone to see the massive disruptor slung over his shoulder and the heavy blaster at his hip, knowing that intimidation can often stave off a fight. But sometimes a scoundrel needs to slip in somewhere with a little extra help, such as when Leia entered Jabba&amp;#39;s palace with a hidden thermal detonator.&lt;/p&gt;
+&lt;p&gt;Items with an encumbrance value of 1 or less can be hidden on a person easily. No roll is required for successful concealment unless a foe inspects the target up close—usually with a physical patdown. In the latter case, the searcher makes an Opposed Perception check against the target&amp;#39;s Stealth. Add boost dice to the searcher for every encumbrance point over 1 of the hidden item. If there are multiple items, use the highest. The Game Master should adjust this based on the situation. An unusually-large species might be able to easily conceal items with an encumbrance value of 2, for example.&lt;/p&gt;
+&lt;p&gt;The same rules can apply to similar situations—such as hiding a blaster rifle (encumbrance value 4) in a wagon of scrapped droid parts. The Game Master should decide what value of object can be hidden without notice, and adds boost dice for every point over that.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;ENCUMBRANCE AND VEHICLES&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Ships cargo holds can house a certain amount of encumbrance, as well. A standard cargo hold can house a wide variety of encumbrance, listed in the vehicle&amp;#39;s profile. Smuggling panels have varying limits. These small caches are usually secretly placed around the ship to avoid detection. Most smuggling panels have an encumbrance limit of 2 to 30 depending on their size and location.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=ee7256032ff00590e0f497eef699b6a7"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-06 21:50:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>41efde4b2f340590e0f497eef699b642</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010060</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_41efde4b2f340590e0f497eef699b642</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-06 21:50:30</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

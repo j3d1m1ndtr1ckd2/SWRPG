@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>16884f9b2f748590e0f497eef699b6cc</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Conflict and Combat"&gt;62fcab012f94b010e0f497eef699b6fd&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Defense, or more specifically, defense rating, is one of the factors determining how difficult it is&lt;/meta_description&gt;
+        &lt;number&gt;KB0010069&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-07&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Defense&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-07 19:31:26&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;16884f9b2f748590e0f497eef699b6cc&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-07 19:36:57&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Defense, or more specifically, defense rating, is one of the factors determining how difficult it is to land a successful attack during combat. Defense rating represents the abilities of shields, armor, or other defensive systems to deflect attacks entirely, or absorb or lessen incoming blows.&lt;/p&gt;
+&lt;p&gt;Defense rating is most commonly provided by shields, and as such is usually limited to vehicles and starships.  However, characters may gain a defense rating either through talents that increase their ability to dodge and absorb blows, armor designed to reflect and diffuse shots, or even expensive personal shield generators.&lt;/p&gt;
+&lt;p&gt;A character adds a number of setback dice equal to his defense rating to all combat checks directed against him.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;MELEE AND RANGED DEFENSE&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;A characters&amp;#39; defense rating can be characterized as one of three types: general defense rating, melee defense rating, and ranged defense rating. General defense rating works against all combat checks directed against the character. Melee defense rating only works against close combat checks directed against the character (Brawl and Melee checks). Ranged defense rating only works against ranged combat checks directed against the character (Ranged (Light), Ranged (Heavy), and Gunnery checks).&lt;/p&gt;
+&lt;p&gt;Multiple sources of defense do not stack. However, the character always uses the best defense rating available to him. If he possesses a defense rating of 1 against all attacks, but a defense rating of 2 against melee attacks, he applies the defense 2 against all close combat attacks.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=16884f9b2f748590e0f497eef699b6cc"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-07 20:35:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c5681bdb2f388590e0f497eef699b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010069</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c5681bdb2f388590e0f497eef699b6aa</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-07 20:35:50</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

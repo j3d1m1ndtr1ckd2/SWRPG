@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c0bbd8322ff44190e0f497eef699b6a2</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;While a Player Character's Duty determines what he is attempting to accomplish as part of the Alliance,&lt;/meta_description&gt;
+        &lt;number&gt;KB0010048&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Step 8: Determine Motivation - Age of Rebellion&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 17:34:25&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;c0bbd8322ff44190e0f497eef699b6a2&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 17:34:40&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;While a Player Character&amp;#39;s Duty determines what he is attempting to accomplish as part of the Alliance, his Motivation determines why he does what he does, and why he sought to join up in the first place.  Duty can play a key role in the Game Master&amp;#39;s plotting efforts as he generates missions and stories, and Motivation can play just as vital a role in aiding players with their roleplaying and decision-making.  Motivations are not intended as straitjackets, restricting a PC tightly around a highly limited concept.  Instead, they are meant to act as underlying guides to the player&amp;#39;s decision-making process as he determines his character&amp;#39;s likely reaction to various situations.&lt;/p&gt;
+&lt;p&gt;While many players will wish to determine their PC&amp;#39;s motivation as part of the character creation process, others might enjoy randomly generating a motivation, and the challenge of figuring out how it fits with their background and other character generation decisions.  Either way, Table 2-5: Random Motivation can be helpful in providing the three key sources of motivation for and Age of Rebellion game.  Once this general type of motivation is established, the players may then roll on or select from the following tables to determine a more specific manifestation of that Motivation.&lt;/p&gt;
+&lt;p&gt;While Motivations and Duties can often be tied together very intricately, there are no hard-and-fast rules for ensuring they do.  Players are encouraged to come up with interesting and creative combinations that tell their PCs&amp;#39; unique stories.  Additionally, some or all of the players in a group may decide to discuss and coordinate their motivations.  This could indicate a shared story, reflecting interests that are connected in some intricate way.  As long as the players and the Game Master are all comfortable with this, it can be an excellent way to craft a long-term story together.&lt;/p&gt;
+&lt;p&gt;Although Duty has a very specific effect on game play in both the short and long term of a campaign, motivation serves a more general function for the roleplay and storytelling aspects of the game.  GMs can certainly use motivation to effectively guide Player Characters where they want them to go, and motivation also serves as an excellent source for awarding bonus experience points.  More on these ideas can be found in Chapter IX: The Game Master.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/sys_attachment.do?sys_id&amp;#61;31e41cba2f744190e0f497eef699b66c" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;TYPES OF MOTIVATION&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are three types of motivations in Age of Rebellion: Belief, Connection, and Quest.  Whether a player rolled a result randomly or selected the type, he needs to narrow the type down to a specific result.  In most cases, rolling percentile dice on the appropriate chart is the way to go.  However, some Game Masters might want to permit their players to choose specific motivations to best suit their characters&amp;#39; backgrounds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 8pt;"&gt;BELIEF&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;A Player Character with a motivation from this type is driven by a set of beliefs that form how he sees the galaxy and his role in it.  He serves the Alliance because his beliefs support the goals of the Rebellion or are absolutely in contradiction with those of the Empire.  He might not need to spread his beliefs to others, but he will epitomize those beliefs in word and deed, and he hopes that his beliefs will have a hand in building what will arise after the empire falls.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 8pt;"&gt;CONNECTION&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;The Player Character has some kind of connection or relationship to the Alliance that draws him to its cause.  He might not have had any desire to fight in the Rebellion otherwise, joining only because the Connection he is tied to is a part of it or because serving the Alliance somehow enhances the connection.  Over time, his commitment to the Rebellion could become more personally ingrained, but it all begins with the desires or influences of another.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;QUEST&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;A Player Character with this type of Motivation seeks something specific from his participation in the Rebellion.  He joined as a means to complete his Quest, and he believes that serving the Alliance or defeating the Empire will result in the achievement of his ultimate goal.  Some quests have a specific object or person that is the target, while others are more open-ended and may never be fully complete.  The quest might be the primary drive for the PC, yet he could also come to embrace the larger goals of the Rebellion as equally important, or perhaps ascendant over his own needs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;MOTIVATIONS IN PLAY&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Motivations are excellent guides for roleplaying, giving the player a foundation from which to consider decisions as well as determine reactions to circumstances.  A PC with the motivation of Belief (Justice) will certainly see things differently from another PC who has Connections (The Underworld).  This shouldn&amp;#39;t necessarily create impossible tension, but it may well give cause for some interesting conversations when the group attempts to determine a course of action.  One might want to avoid any interactions with known crime lords, for example, while the other may think it the best possible solution to a problem.&lt;/p&gt;
+&lt;p&gt;Motivations should never be treated as blinders, disabling a character&amp;#39;s ability to consider all sides of a situation to make a rational decision.  Quite often, those who fight the Empire must do so with every tool at their disposal, and what may be wrong for a person normally is sometimes the only choice for a given challenge.  Players should not feel they must sacrifice the enjoyment of the game for themselves and their fellow players simply because a given motivation would guide them away from an otherwise reasonable decision.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CALLING ON MOTIVATIONS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are two interesting ways in which a Game Master might call upon a PC&amp;#39;s motivation to enhance the game.  In the first instance, he may use a motivation to provide incentive to a given character to pursue a direction that facilitates the story in some way.  For example, he may give to a PC with the motivation of Quest (The Jedi) the information that an ancient holocron is in the possession of an Imperial governor he wants the team to deal with as part of a story. Alternatively (or at the same time), he may inform a separate Player Character with Belief (Species Rights) that the same governor is responsible for reducing the local non-human population to an oppressed class.&lt;/p&gt;
+&lt;p&gt;Another way the Game Master might call on motivation is to present a bonus toward resolving an action when a Player Character&amp;#39;s motivation comes into play.  The player needs to invoke and roleplay that motivation in order to justify such a bonus, and the decision is entirely up to the GM based on appropriateness and how well the player integrates the motivation into his decisions and actions.  More on this is found in Chapter IX: The Game Master.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CHANGING MOTIVATIONS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Personal growth is a constant process for sentient beings, and such growth can often bring fairly dramatic changes to one&amp;#39;s perspectives.  As well, certain life events can cause a significant shift in how a person sees the galaxy and his place in it.  In such situations, it may well be appropriate for a character to change his motivation.&lt;/p&gt;
+&lt;p&gt;For example, a PC with the motivation of Connection (Economic) probably began his career with the Alliance strictly as a matter of business.  He was out to see that his investments were protected and effectively used, and he was determined to ensure his company&amp;#39;s place in the greater scheme of things when the war was over.  After more than a few hairy missions, with a few painful losses and his own life having been saved by someone far more altruistic, he&amp;#39;s begun to see the fight against the Empire differently.&lt;/p&gt;
+&lt;p&gt;At this stage, the player of this character may wish to discuss a motivation shift for his PC.  Perhaps he wants to change it to Connection (Friends), indicating his deeper caring for the team with which he serves.  Maybe he&amp;#39;s changed enough at heart that Belief (Honor) or Belief (Justice) are closer to what he feels now, or he&amp;#39;s determined he&amp;#39;s now committed to a Quest (Vengeance) due to the loss of some of those friends.  Regardless of what he selects, the decision should certainly be one driven by the story: he should not roll randomly for his new motivation.&lt;/p&gt;
+&lt;p&gt;Such motivation changes should be rare, and a player wishing to make such a change needs to work this out with the Game Master.  If allowed, the PC needs to show a commitment to this new motivation, and he will no longer receive any experience point bonuses for roleplaying the previous motivation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SECRET MOTIVATIONS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the joys of roleplaying with a group of players is the opportunity to reveal a character&amp;#39;s story to the other players.  Coming right out and revealing motivations openly may not always allow for such discovery, which is why players need not openly discuss their choices or random rolls with each other.  Certainly, some may choose to do so anyway, enjoying the character creation process openly with their fellow players.  That&amp;#39;s fine, too.&lt;/p&gt;
+&lt;p&gt;However, if a player wishes to keep his character&amp;#39;s motivation secret for other reasons, he could generate a second, &amp;#34;false&amp;#34; motivation about which he is more open.  Doing this creates the illusion of openness with his fellow players, as well as creating a false front for his PC where the other characters are concerned.  This is especially useful if the real motivation of the PC is one that is at odds with the overall goals and beliefs of the group.&lt;/p&gt;
+&lt;p&gt;For example, consider a group that mostly has Player Characters motivated by compatible Beliefs and Quests (Honor, Freedom, Justice, Etc.), yet one PC generated the Motivation of Connection (Intelligence).  He discusses this with the Game Master, wishing to change his originally rolled Duty of Combat Victory to Internal Security; he&amp;#39;s decided that someone in Alliance Intelligence is convinced that a member of the PC team is a spy for the Empire, and it&amp;#39;s his job to uncover that traitor!  The Game Master loves the idea, agreeing with the player that neither should tell the rest of the players.  As far as they are all concerned, his character&amp;#39;s Duty is still Combat Victory and his character&amp;#39;s motivation is Belief (The Republic).  The potential for this story&amp;#39;s future is enormous.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src="/sys_attachment.do?sys_id&amp;#61;c97b1c7a2f744190e0f497eef699b6e1" /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src="/sys_attachment.do?sys_id&amp;#61;5a8b54be2f744190e0f497eef699b64d" /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src="/sys_attachment.do?sys_id&amp;#61;dd9bd0be2f744190e0f497eef699b6db" /&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=c0bbd8322ff44190e0f497eef699b6a2"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:49:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>248a78ba2fb84190e0f497eef699b696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010048</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_248a78ba2fb84190e0f497eef699b696</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:49:04</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

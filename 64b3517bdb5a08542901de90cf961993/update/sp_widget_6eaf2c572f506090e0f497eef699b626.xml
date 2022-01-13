@@ -5,6 +5,14 @@
   /* widget controller */
   var c = this;
 	
+	$scope.showVehicleInfo = function(){
+		document.getElementById('vehicleInfoFlyout').style.display = 'inline';
+	}
+	
+	$scope.hideVehicleInfo = function(){
+		document.getElementById('vehicleInfoFlyout').style.display = 'none';
+	}
+	
 	$scope.editVehicle = function(section){
 		switch(section){
 			case 'name':
@@ -39,6 +47,7 @@
 				
 			case 'crit':
 			var container = document.getElementById('editVehicleCrits');
+			document.getElementById('vehicleCritDescription').innerHTML = $scope.data.vehicle.critDescription;
 			container.style.display = 'inline';
 			if(parseInt(screen.width) < 762){
 				container.style.width = '80%';
@@ -192,7 +201,8 @@
 				
 			case 'crit':
 			var crit = parseInt(document.getElementById('vehicleInputCrit').value);
-			c.server.get({action: 'saveCrit', crits: crit}).then(function(response){
+			var critDescription = document.getElementById('vehicleCritDescription').value;
+			c.server.get({action: 'saveCrit', crits: crit, critDescription: critDescription}).then(function(response){
 				c.server.refresh();
 				$scope.closeEditContainer('crit');
 			});
@@ -522,6 +532,47 @@ label,.sw-input{
   text-align:left;
 }
 
+#vehicleCritDescription{
+	width:100%;
+  height:100px;
+  text-align:left;
+}
+
+.vehicle-info-flyout-container{
+	display:none;
+  position:fixed;
+  top:15%;
+  left:5%;
+  width:90%;
+  max-height:600px;
+  overflow-y:scroll;
+  background-color: black;
+  border: 2px groove #1933f4;
+  border-radius:15px;
+  box-shadow: 0px 0px 8px 3px #1933f4;
+  padding:20px;
+}
+
+.flyout-header{
+	text-align:center;
+  font-weight:bold;
+  font-size:24px;
+}
+
+.vehicle-detail{
+	margin-bottom:10px;
+  text-align:center;
+}
+
+.detail-label{
+	font-weight:bold;
+  font-size:18px;
+}
+
+.detail-value{
+	font-size:16px;
+}
+
 @media only screen and (min-width:762px) and (max-width:1400px){
   .fa-starship-freighter{
    	left:38.8%; 
@@ -648,7 +699,8 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 		vehicleSysId: vehicleGR.vehicle.sys_id + '',
 		characterVehicleSysId: vehicleGR.sys_id + '',
 		cargo: vehicleGR.cargo_hold + '',
-		crits: vehicleGR.critical_injuries + ''
+		crits: vehicleGR.critical_injuries + '',
+		critDescription: vehicleGR.critical_injuries_description + ''
 	};
 	
 	if(vehicleGR.vehicle.primary_hyperdrive_class != ''){
@@ -715,6 +767,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 				
 			case 'saveCrit':
 			vehicleGR.critical_injuries = input.crits;
+			vehicleGR.critical_injuries_description = input.critDescription;
 			vehicleGR.update();
 			break;
 				
@@ -769,7 +822,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>220</sys_mod_count>
+        <sys_mod_count>233</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -777,7 +830,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-07-06 18:34:33</sys_updated_on>
+        <sys_updated_on>2022-01-13 06:27:17</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -788,7 +841,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
   <div class="col-xs-12 main-vehicle-info">
     <span class="col-xs-12 col-md-8 transponder-code" ng-click="editVehicle('name')">{{data.vehicle.nickName}}</span>
     <span class="col-xs-12 col-md-8 star-wars-text">{{data.vehicle.nickName}}</span>
-    <span class="col-xs-12 col-md-8 vehicle-main-info">Ship: {{data.vehicle.shipName}}</span>
+    <span class="col-xs-12 col-md-8 vehicle-main-info">Ship: {{data.vehicle.shipName}} <i class="far fa-info-circle" ng-click="showVehicleInfo()"></i></span>
     <span class="col-xs-12 col-md-8 vehicle-main-info">Type: {{data.vehicle.type}}</span>
     <span class="col-xs-12 col-md-8 vehicle-main-info" ng-click="editVehicle('hp')">Hard Points: {{data.vehicle.hp}}</span>
   </div>
@@ -976,7 +1029,9 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
   <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-times"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputCrit">Critical Hits:</label><br>
-    <input class="sw-input" type="text" id="vehicleInputCrit" name="vehicleInputCrit" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.crits}}"/>
+    <input class="sw-input" type="text" id="vehicleInputCrit" name="vehicleInputCrit" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.crits}}"/><br/>
+    <label for="vehicleCritDescription">Critical Hit Notes:</label><br/>
+    <textarea class="sw-input" type="text" id="vehicleCritDescription" name="vehicleCritDescription" ng-bind-html="{{data.vehicle.critDescription}}"></textarea>
   </span>
   <span class="col-xs-12 save-edits">
   	<span class="col-xs-12 save-button-container">
@@ -1044,6 +1099,34 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
   	<span class="col-xs-12 save-button-container">
     	<button class="save-edits-button" ng-click="saveEdits('cargo')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
     </span>
+  </span>
+</span>
+
+<!-- vehicle info flyout -->
+<span class="col-xs-12 vehicle-info-flyout-container" id="vehicleInfoFlyout">
+  <span class="col-xs-12 close-button" ng-click="hideVehicleInfo()"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 vehicle-info">
+    <span class="col-xs-12 flyout-header">Vehicle Info<br/><text class="star-wars-text">Vehicle Info</text></span>
+    <span class="col-xs-12 col-md-3 vehicle-detail">
+      <span class="col-xs-12 detail-label">Hyperdrive:</span>
+      <span class="col-xs-12 detail-value">{{data.vehicle.hyperdrive}}</span>
+    </span>
+    <span class="col-xs-12 col-md-3 vehicle-detail">
+      <span class="col-xs-12 detail-label">Navicomputer:</span>
+      <span class="col-xs-12 detail-value">{{data.vehicle.navicomputer}}</span>
+    </span>
+    <span class="col-xs-12 col-md-3 vehicle-detail">
+      <span class="col-xs-12 detail-label">Sensor Range:</span>
+      <span class="col-xs-12 detail-value">{{data.vehicle.sensorRange}}</span>
+    </span>
+    <span class="col-xs-12 col-md-3 vehicle-detail">
+      <span class="col-xs-12 detail-label">Maximum Altitude:</span>
+      <span class="col-xs-12 detail-value">{{data.vehicle.maximumAltitude}}</span>
+    </span>
+    <span class="col-xs-12 detail-label">Description:</span>
+    <span class="col-xs-12 vehicle-description detail-value" ng-bind-html="data.vehicle.description"></span>
+    <span class="col-xs-12 detail-label">Notes:</span>
+    <span class="col-xs-12 vehicle-description detail-value" ng-bind-html="data.vehicle.notes"></span>
   </span>
 </span>]]></template>
     </sp_widget>

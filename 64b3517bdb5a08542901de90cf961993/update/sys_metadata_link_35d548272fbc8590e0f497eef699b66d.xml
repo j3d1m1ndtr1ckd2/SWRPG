@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3ff1f7572ff88590e0f497eef699b675</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Conflict and Combat"&gt;62fcab012f94b010e0f497eef699b6fd&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;In the fast-paced, high-action setting of SWRPG, characters are sure to find themselves in the thick&lt;/meta_description&gt;
+        &lt;number&gt;KB0010075&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-07&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Wounds, Strain, and States of Health&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-07 22:46:13&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;3ff1f7572ff88590e0f497eef699b675&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-07 22:46:27&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;In the fast-paced, high-action setting of SWRPG, characters are sure to find themselves in the thick of things, and are likely going to pick up a few cuts and bruises along the way. A character&amp;#39;s health is tracked using two separate yet similar systems: strain and wounds.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;WOUNDS AND WOUND THRESHOLD &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A wide variety of effects can inflict physical damage - blaster shots, an angry wampa&amp;#39;s claws, frag grenades, and falling. Damage to a character&amp;#39;s physical body is tracked using wounds. Each point of damage inflicts one wound on a character. A character can only withstand so many wounds before he is incapacitated. This is represented by the character&amp;#39;s wound threshold.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXCEEDING WOUND THRESHOLD &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When a PC suffers wounds greater than his wound threshold, he is knocked out and incapacitated until his wounds are reduced so that they no longer exceed his wound threshold (likely through healing). He also immediately suffers one Critical Injury. In some rare and dire circumstances, this could result in the PC&amp;#39;s death.&lt;/p&gt;
+&lt;p&gt;When non-Player Characters and creatures suffer wounds greater than their wound threshold, they are defeated (unless they are a high-level opponent such as a nemesis). Being defeated by exceeding their wound threshold usually entails death, but the overall interpretation is up to the GM. The GM can decide that they pass out due to shock, are so crippled that they can no longer fight, are knocked unconscious, or any other option that fits his plans for the ongoing narrative. Since non-nemesis characters do not track strain separately, but apply strain damage as wounds to their wound threshold, what happens once they are defeated may also depend on whether they were defeated due to strain damage or wound damage.&lt;/p&gt;
+&lt;p&gt;When wounds exceed a character&amp;#39;s wound threshold, the character should track how many wounds he&amp;#39;s exceeded the threshold by, to a maximum of twice the wound threshold. He must heal wounds until his wounds are below his wound threshold before he is no longer incapacitated.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;STRAIN AND STRAIN THRESHOLD &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While wounds and injury represent potentially life-threatening damage, a number of other stressors and effects can impair a character. Collectively, this is referred to as strain. Any effect that impairs the character, but does not inflict physical harm or wounds, is considered strain. Spending hours wandering through Tatooine&amp;#39;s blistering deserts, a minor shock from an electric console, being battered around the inside of a trash compactor—all of these could represent types of strain. Weapons with a stun setting or other effects that impair or hinder a character generate strain.&lt;/p&gt;
+&lt;p&gt;Additionally, effects that would cause stress, fear, anxiety, or emotional turmoil also generate strain. Losing one&amp;#39;s cool in combat during a bombardment, being berated by a superior officer, waking up to realize one has been imprisoned by the Hutts, or being boarded by an Imperial search team while smuggling goods could all represent incidents that result in strain on a character.&lt;/p&gt;
+&lt;p&gt;Strain can accumulate slowly as environmental effects, or be gained in chunks when a PC is rattled by an effect that doesn&amp;#39;t cause damage, but does impair him.&lt;/p&gt;
+&lt;p&gt;Characters can also voluntarily suffer strain to trigger certain effects. The most common use is to voluntarily suffer two points of strain to gain one additional maneuver during a character&amp;#39;s turn.&lt;/p&gt;
+&lt;p&gt;Some special talents may require the character to suffer one or more points of strain to activate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXCEEDING STRAIN THRESHOLD &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When a character has suffered strain greater than his strain threshold, he becomes incapacitated until his strain is reduced so that it no longer exceeds his strain threshold. He is likely unconscious, or may just be so dazed and staggered that he&amp;#39;s completely unaware of his surroundings and unable to interact with them.&lt;/p&gt;
+&lt;p&gt;When Non-Player Characters and creatures suffer strain, they generally apply them directly to their wound threshold (unless they are a nemesis and track strain separately).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;CRITICAL INJURIES &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A particularly dangerous type of wound is a Critical Injury. A Critical Injury is often the result of a critical hit from an attack during combat, but characters can also suffer them from exceeding their wound threshold, or through other means. Each time a character suffers a Critical Injury, the player rolls d100 on Table 6-10: Critical Injury Result to determine the extent of the injury.&lt;/p&gt;
+&lt;p&gt;The short-term effects of some injuries are temporary, and may only disorient or afflict the character for a brief amount of time. Other injuries are more serious and represent some sort of long-term debilitation or impairment. These injuries continue to affect the character until he receives the proper medical treatment to recover from the injury.&lt;/p&gt;
+&lt;p&gt;Regardless, a Critical Injury remains with the character until it is properly healed; even if the short-term effect of the Critical Injury has passed, the status of having a Critical Injury remains. Each Critical Injury a character suffers from adds &amp;#43;10 to any subsequent Critical Injury check. Essentially. Critical Injury is cumulative, and left untreated, even a number of relatively minor Critical Injuries can lead to devastating results.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cdn.discordapp.com/attachments/825048553713827872/825225244926279710/unknown.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;OTHER ONGOING STATUS EFFECTS &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Characters in SWRPG can suffer status effects beyond being wounded or incapacitated. These status effects can change what a character can do during an encounter, and can be very dangerous. Alternatively, inflicting them on others can be a very potent ability indeed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;STAGGERED &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A staggered character cannot perform actions (including downgrading actions to maneuvers). Most effects that stagger a character last for a set duration. If a set duration is not specified, the staggered effect lasts until the end of the character&amp;#39;s next turn. If a character is staggered multiple times, each instance increases the total duration of the effect by the instance&amp;#39;s specified duration, but may not increase the total duration beyond the scope of the present encounter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IMMOBILIZED &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An immobilized character cannot perform maneuvers (including maneuvers purchased via strain or spending advantage).  Most effects that immobilize a character last for a set duration. If a set duration is not specified, immobilization lasts until the end of the character&amp;#39;s next turn. If a character is immobilized multiple times, each instance increases the total duration of the effect by the instance&amp;#39;s specified duration, but may not increase the total duration beyond the scope of the present encounter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DISORIENTED &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A disoriented character adds 1 setback die to all checks he makes. Most effects that disorient a character last for a set duration. If a set duration is not specified, disorientation lasts until the end of the character&amp;#39;s next turn. If a character is disoriented multiple times, each instance increases the total duration of the effect by the instance&amp;#39;s specified duration, but may not increase the total duration beyond the scope of the present encounter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;DEATH &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The dangerous galaxy of SWRPG puts the Player Characters in treacherous situations, and even the most stalwart character cannot survive everything. A time may come when a PC faces his ultimate fate and perishes.&lt;/p&gt;
+&lt;p&gt;If a character ever rolls (or. through multiple or untreated Critical Injuries, otherwise suffers) a result of 141 or higher on Table 6-10: Critical Injury Result, he dies. A dead character cannot be brought back to life. Similarly, a destroyed droid character may not be restored—it is assumed that his central processing unit was irrevocably damaged. Either way. the player should move on and create a new character to continue the adventure.&lt;/p&gt;
+&lt;p&gt;For more on the death of a Player Character, see Chapter IX: The Game Master.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=3ff1f7572ff88590e0f497eef699b675"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-07 23:54:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>35d548272fbc8590e0f497eef699b66d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010075</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_35d548272fbc8590e0f497eef699b66d</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-07 23:54:24</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

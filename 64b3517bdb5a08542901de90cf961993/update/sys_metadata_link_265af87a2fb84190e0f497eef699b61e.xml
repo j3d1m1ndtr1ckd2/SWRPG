@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>21d72c3e2ff44190e0f497eef699b648</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Character Creation"&gt;057c2f4d2f54b010e0f497eef699b632&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;As part of their Obligation, each group starts the game with a starship. This is the final part of character&lt;/meta_description&gt;
+        &lt;number&gt;KB0010051&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-05&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Step 10: Selecting a Ship - Edge of the Empire&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-05 18:33:42&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;21d72c3e2ff44190e0f497eef699b648&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-05 18:34:07&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;As part of their Obligation, each group starts the game with a starship. This is the final part of character creation. The GM can choose one of these three ships as his group&amp;#39;s starter vessel. Alternatively, experienced groups can select their own ship, so long as that ship costs no more than 120,000 credits and is approved by the GM.&lt;/p&gt;
+&lt;p&gt;All three of these starting ships are selected to perform different roles. The Wayfarer is primarily a cargo hauler, but reasonably modifiable. The YT-1300 is even more modifiable, making it the most flexible option for a group. The Firespray is probably the most dangerous ship, but also the least modifiable of the three. It&amp;#39;s also fairly limited in the tasks it can perform. More on these, and other ships can be found in Chapter VII.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;WAYFARER MEDIUM TRANSPORT&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;This ship is good for larger groups, as it has ample room for crew, passengers, and lots of cargo. It&amp;#39;s a larger and less maneuverable vessel, so it can&amp;#39;t easily mix it up with starfighters. Groups with an enthusiastic and dedicated pilot character may want to look elsewhere. However, groups that just need a tough ship that can haul cargo, explore the galaxy, and take a beating should consider the Wayfarer.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;YT-1300 LIGHT FREIGHTER&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;One of the most common light freighters in the galaxy, the YT-1300 certainly pushed Corellian Engineering Corporation into center stage. The YT-1 300 is quick, rugged, and almost endlessly modifiable. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Besides being identifiably iconic, the YT-1300 is a good starship to start groups off with because it can perform well in a variety of roles. It can haul cargo, or with some modifications, can be upgunned or hot-rodded into a smuggling or bounty hunting vessel. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;FIRESPRAY SYSTEM PATROL CRAFT&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;The Firespray was considered a revolutionary design in patrol craft when first constructed during the waning years of the Old Republic, and is a good choice for smaller groups looking to pursue careers in bounty hunting or enforcement (and perhaps piracy). The ship has tough armor and powerful drives, and starts out with a relatively potent weaponry loadout. However, its small size makes it a poor choice for moving cargo. &lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=21d72c3e2ff44190e0f497eef699b648"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-05 19:48:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>265af87a2fb84190e0f497eef699b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010051</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_265af87a2fb84190e0f497eef699b61e</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-05 19:48:24</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

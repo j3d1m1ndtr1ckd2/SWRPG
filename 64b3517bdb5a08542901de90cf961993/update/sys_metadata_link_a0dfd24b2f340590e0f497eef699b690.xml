@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>7ccc9a4f2ff00590e0f497eef699b6ee</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Gear and Equipment"&gt;dbec6b412f94b010e0f497eef699b6ed&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;Equipment and weapons in the Star Wars galaxy are made in every conceivable way. Some are handcrafted,&lt;/meta_description&gt;
+        &lt;number&gt;KB0010065&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-06&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Customization and Modification&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-06 21:49:30&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;7ccc9a4f2ff00590e0f497eef699b6ee&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-06 21:49:33&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;Equipment and weapons in the Star Wars galaxy are made in every conceivable way. Some are handcrafted, like the custom bowcasters of the Wookiee homeworld, Kashyyyk. Others might be stamped out of an assembly line on an industrial world like Coruscant. Even the latter may have a drastically different look from similar products made on other worlds. The holdout blaster carried by Han Solo looks nothing like the one carried by Lando Calrissian.&lt;/p&gt;
+&lt;p&gt;The statistics and rules for gear in SWRPG are framed in fairly general categories to present clear, simple, and unified rules for their use, but the look of your character&amp;#39;s gear can be tailored both cosmetically (meaning it has no game effect) and mechanically (which changes its basic rules or statistics).&lt;/p&gt;
+&lt;p&gt;In general, players can purchase attachments to customize their gear. Attachments are physical items that attach to or are installed in items, vehicles, and weapons to add capabilities or improve performance. Attachments have a set of base modifiers that they automatically grant when installed. Installing an attachment is a fairly simple process (as they are designed for easy installation) and simply requires a few minutes of uninterrupted work.&lt;/p&gt;
+&lt;p&gt;Attachments slot into the hard points listed in a piece of equipment&amp;#39;s stat block. Each attachment gives the ship, vehicle, or weapon some sort of bonus or edge (an extra point or two of speed for a hot-rod ship engine, or more soak for a suit of armor, for instance). In most cases, that&amp;#39;s as far as it goes. The player spends his money for his new attachment and he is left with an improved and unique piece of equipment specifically tailored to his needs. However, if the player wishes to further customize and personalize a piece of equipment, he uses the mod system.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;MODDING ATTACHMENTS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Most attachments have a listed series of mods. These are additional modifications that a skilled mechanic can make to the attachment to further improve the weapon or item&amp;#39;s performance. These are listed under each attachment&amp;#39;s modification options.&lt;/p&gt;
+&lt;p&gt;All of these modification options are potential mods for gear. Some of the modification options have a number listed before them, indicating that the option can be installed multiple times. Otherwise, each option can only be installed once.&lt;/p&gt;
+&lt;p&gt;Modifications represent dedicated mechanics&amp;#39; and gearheads&amp;#39; ability to tweak and customize their gear. They are potential customizations available to those skilled with devices and gear. Of course, even the most talented mechanic can only do so much with a particular piece of tech, which is why each attachment has a discrete list of modification options.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;INSTALLING MODS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To install a mod, the user selects one uninstalled modification option. He then spends 100 credits on components and supplies, makes sure he has a toolkit, spends a couple hours at a work bench, and makes a Hard (3 difficulty dice) Mechanic&amp;#39;s check.&lt;/p&gt;
+&lt;p&gt;If he succeeds, he successfully installs the mod on his gear, and the item now benefits from the bonus provided by the mod. If he fails, however, the mod is not installed, and he may not attempt to install that mod again. If he failed and his check generated at least one despair, the attachment is also rendered useless by his tinkering.&lt;/p&gt;
+&lt;p&gt;Each additional mod installed in an attachment beyond the first increases the difficulty of the Mechanics check by one, and costs an additional 100 credits beyond the base cost.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TYPES OF MODS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are several types of mods, each falling into one of the following broad categories.&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;&lt;li&gt;&lt;strong&gt;Damage mods:&lt;/strong&gt; This mod increases the damage dealt by the weapon.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Weapon quality mods:&lt;/strong&gt; This mod adds a listed quality to the weapon. Some qualities have values that can increase; if this is the case, then the mod lists it as &amp;#34;Quality (&amp;#43;1)&amp;#34; indicating that it can increase an existing quality if it is already present or adds the quality at rating 1 if it&amp;#39;s not there.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Innate talent mods:&lt;/strong&gt; This mod grants the user the listed talent only when wielding this gear and only affecting this gear. For example, if a blaster had the Innate Talent (Quick Draw), the user would be able to use Quick Draw to draw or stow his blaster, but none of his other gear.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Skill and characteristic bonuses:&lt;/strong&gt; This mod grants the user a bonus in the listed skill or characteristic as if he had &amp;#43; 1 rank in that skill or characteristic when using the modded item.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Additional mod:&lt;/strong&gt; Some mods may not fall into any of the listed categories. If a mod does something specific and unique, it is described in the entry.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;WEAPON ATTACHMENTS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;The longer the average fringer lives with a weapon, the more likely it is that he will modify it in some way to increase its performance or otherwise better suit his tastes and needs. The following is a selection of common attachments and modifications that can be installed on personal weapons. Due to the very personal nature of customization, it is nearly impossible to catalog every possible modification a fringer could make to his equipment, and the following list, while detailed, is far from comprehensive. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;It should be noted that, even with taking a weapon&amp;#39;s customization hard points into account, there is limited space on even the largest weapon, and only a few spots where attachments can be mounted. For example, under-barrel attachments such as bipods and auxiliary weapons can only be mounted to long arms like blaster rifles or slugthrower rifles. In addition, using under-barrel attachments as an example, rifle-sized weapons can only mount one under-barrel attachment due to space limitations. Players and Came Masters should use common sense when choosing attachments, and are advised to pay close attention to the attachment descriptions that note where attachments can be mounted and what weapons they can be mounted to.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;ARMOR ATTACHMENTS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 8pt;"&gt;Armor, like personal weapons, has a number of customization hard points and can be just as easily modified as a blaster or slugthrower. By design, armor attachments are more defensive in nature, leaning towards special coatings or environmental sealants, as well as enhanced optics and built-in communications. As with weapons, a fair amount of common sense on the part of the players and Game Master is required when modifying armor. Most suits of armor can only hold one environmental system, such as cold or heat resistance, or one type of optical enhancement in the helmet.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For a full list of weapon and armor attachments, &lt;a title="visit the holocron." href="https://dev21386.service-now.com/star_wars?id&amp;#61;holocron" target="_blank" rel="noopener noreferrer nofollow"&gt;visit the holocron.&lt;/a&gt;&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=7ccc9a4f2ff00590e0f497eef699b6ee"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-06 21:50:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a0dfd24b2f340590e0f497eef699b690</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010065</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_a0dfd24b2f340590e0f497eef699b690</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-06 21:50:11</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

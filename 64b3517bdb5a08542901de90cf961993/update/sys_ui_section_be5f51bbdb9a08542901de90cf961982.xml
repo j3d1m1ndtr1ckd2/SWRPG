@@ -4,13 +4,13 @@
             <element>soak_value</element>
             <position>0</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>021b21a12f813050e0f497eef699b649</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>705268c92fcd0510e0f497eef699b618</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>strain_threshold</element>
             <position>1</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>861b21a12f813050e0f497eef699b649</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>f45268c92fcd0510e0f497eef699b618</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>wounds_threshold</element>
             <position>2</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>0e1b21a12f813050e0f497eef699b649</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>7c5268c92fcd0510e0f497eef699b618</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>status_effects</element>
             <position>3</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>821b21a12f813050e0f497eef699b64a</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>f05268c92fcd0510e0f497eef699b619</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>0a1b21a12f813050e0f497eef699b64a</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>785268c92fcd0510e0f497eef699b619</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>critical_injuries</element>
             <position>5</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>461b21a12f813050e0f497eef699b657</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>fc5268c92fcd0510e0f497eef699b619</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>strain_current</element>
             <position>6</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>ca1b21a12f813050e0f497eef699b657</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>745268c92fcd0510e0f497eef699b61a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,41 @@
             <element>wounds_current</element>
             <position>7</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-06-29 16:13:30</sys_created_on>
-            <sys_id>421b21a12f813050e0f497eef699b658</sys_id>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>f85268c92fcd0510e0f497eef699b61a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-06-29 16:13:30</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>705268c92fcd0510e0f497eef699b61b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>critical_injury_description</element>
+            <position>9</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-01-12 17:49:46</sys_created_on>
+            <sys_id>f45268c92fcd0510e0f497eef699b61b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Combat Tracking" display_value="Combat Tracking" name="x_176383_star_wars_character" sys_domain="global" view="Default view">be5f51bbdb9a08542901de90cf961982</sys_ui_section>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-01-12 17:49:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

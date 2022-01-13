@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>df155ae62f25b010e0f497eef699b6ef</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>2b02ec892fcd0510e0f497eef699b6c3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>57155ae62f25b010e0f497eef699b6f0</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>af02ec892fcd0510e0f497eef699b6c3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>species</element>
             <position>2</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>db155ae62f25b010e0f497eef699b6f0</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>2702ec892fcd0510e0f497eef699b6c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>career</element>
             <position>3</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>53155ae62f25b010e0f497eef699b6f1</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>ab02ec892fcd0510e0f497eef699b6c4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>career_specializations</element>
             <position>4</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>d7155ae62f25b010e0f497eef699b6f1</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>2302ec892fcd0510e0f497eef699b6c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>5f155ae62f25b010e0f497eef699b6f1</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>a702ec892fcd0510e0f497eef699b6c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>portrait</element>
             <position>6</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>d3155ae62f25b010e0f497eef699b6f2</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>2f02ec892fcd0510e0f497eef699b6c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>credits</element>
             <position>7</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:23</sys_created_on>
-            <sys_id>5b155ae62f25b010e0f497eef699b6f2</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>a302ec892fcd0510e0f497eef699b6c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:23</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>player</element>
             <position>8</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:24</sys_created_on>
-            <sys_id>df155ae62f25b010e0f497eef699b6f2</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>2b02ec892fcd0510e0f497eef699b6c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:24</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>total_xp</element>
             <position>9</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:24</sys_created_on>
-            <sys_id>57155ae62f25b010e0f497eef699b6f3</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>af02ec892fcd0510e0f497eef699b6c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:24</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>available_xp</element>
             <position>10</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:24</sys_created_on>
-            <sys_id>db155ae62f25b010e0f497eef699b6f3</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>2702ec892fcd0510e0f497eef699b6c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:24</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>defense_ranged</element>
             <position>11</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:24</sys_created_on>
-            <sys_id>53155ae62f25b010e0f497eef699b6f4</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>ab02ec892fcd0510e0f497eef699b6c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:24</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>defense_melee</element>
             <position>12</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:24</sys_created_on>
-            <sys_id>d7155ae62f25b010e0f497eef699b6f4</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>2302ec892fcd0510e0f497eef699b6c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:24</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -186,13 +186,13 @@
             <element>force_rating</element>
             <position>13</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:24</sys_created_on>
-            <sys_id>5f155ae62f25b010e0f497eef699b6f4</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>a702ec892fcd0510e0f497eef699b6c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:24</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -200,13 +200,13 @@
             <element>campaign</element>
             <position>14</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2021-07-27 18:22:24</sys_created_on>
-            <sys_id>d3155ae62f25b010e0f497eef699b6f5</sys_id>
+            <sys_created_on>2022-01-12 17:48:34</sys_created_on>
+            <sys_id>e302ec892fcd0510e0f497eef699b6d5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character" sys_domain="global" view="Default view">bd0c99f3db9a08542901de90cf961903</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2021-07-27 18:22:24</sys_updated_on>
+            <sys_updated_on>2022-01-12 17:48:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

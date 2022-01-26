@@ -272,7 +272,7 @@ if(input){
         <sys_created_on>2021-05-28 05:59:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cb9b6a472fdc3010e0f497eef699b632</sys_id>
-        <sys_mod_count>113</sys_mod_count>
+        <sys_mod_count>114</sys_mod_count>
         <sys_name>SWRPG Knowledge</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -280,7 +280,7 @@ if(input){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_cb9b6a472fdc3010e0f497eef699b632</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-01-05 18:52:35</sys_updated_on>
+        <sys_updated_on>2022-01-26 18:40:50</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -289,6 +289,9 @@ if(input){
   <span class="col-xs-12 header-container">
   	<h1 id="header">Core Rulebook</h1>
     <h4 class="star-wars-text">Core Rulebook</h4>
+    <span class="col-xs-12 search-container">
+      <input ng-model="rulesSearch" type="text" class="sw-input" placeholder="Search...">
+    </span>
   </span>
   <div class="col-xs-12 hidden-lg category-select-container">
     <label class="col-xs-12 cat-header">Select a Category<br><text class="star-wars-text">Select a Category</text></label>
@@ -309,7 +312,7 @@ if(input){
     <span ng-if="data.articles.length == 0 || !data.articles" class="col-xs-12 no-articles-text">
       <text class="col-xs-12">Select a category to view articles</text>
     </span>
-    <span class="col-xs-12 col-md-4 article" ng-repeat="article in data.articles">
+    <span class="col-xs-12 col-md-4 article" ng-repeat="article in data.articles | filter:rulesSearch">
       <span class="article-card col-xs-12" ng-click="openArticle(article)">
         {{article.short_description}}
         <span class="col-xs-12 star-wars-text sw-label">{{article.short_description}}</span>

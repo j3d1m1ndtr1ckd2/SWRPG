@@ -2621,7 +2621,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1013</sys_mod_count>
+        <sys_mod_count>1015</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2629,7 +2629,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-01-12 18:41:14</sys_updated_on>
+        <sys_updated_on>2022-01-14 19:51:40</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -3165,7 +3165,7 @@ var charGR = new GlideRecord('x_176383_star_wars_character');
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('species')"><i class="fas fa-times slideout-close-icon"></i></span>
       <span class="col-xs-12">
         <span class="col-xs-12" id="speciesName">{{data.character.species}}<br><text class="star-wars-text">{{data.character.species}}</text></span>
-        <span class="col-xs-12" id="speciesDescription" value="{{data.character.speciesDescription}}"></span>
+        <span class="col-xs-12" id="speciesDescription" ng-bind-html="data.character.speciesDescription"></span>
       </span>
     </span>
     <!-- edit portrait -->

@@ -511,298 +511,311 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
 	try{
-	var chars = new GlideRecord('x_176383_star_wars_character');
-	//chars.addQuery('player', gs.getUserID()).addCondition('u_campaign', '!=', '');
-	chars.addEncodedQuery('player=javascript:gs.getUserID()^campaignISNOTEMPTY');
-	chars.query();
-	var myCampaigns = [];
-	while(chars.next()){
-		myCampaigns.push(chars.campaign.sys_id + '');
-	}
-	
-data.showSection = 'parent';
-data.parentMenu = ['Species', 'Careers', 'Career Specializations', 'Skills', 'Talents', 'Gear', 'Weapon Qualities', 'Vehicles', 'The Force', 'The Galaxy'];
-data.alphabet = ['All','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-	
-data.species = [];
-data.displaySpecies = [];
-var speciesGR = new GlideRecord('x_176383_star_wars_species');
-speciesGR.orderBy('name');
-speciesGR.query();
-while(speciesGR.next()){
-	var sp = {
-		name: speciesGR.name + '',
-		startingXP: speciesGR.starting_xp + '',
-		baseWound: speciesGR.base_wound_threshold + '',
-		baseStrain: speciesGR.base_strain_threshold + '',
-		brawn: speciesGR.brawn + '',
-		agility: speciesGR.agility + '',
-		intellect: speciesGR.intellect + '',
-		willpower: speciesGR.willpower + '',
-		cunning: speciesGR.cunning + '',
-		presence: speciesGR.presence + '',
-		description: speciesGR.description + '',
-		sysID: speciesGR.sys_id + '',
-		image: speciesGR.name.toLowerCase() + '.png'
-	};
-	data.species.push(sp);
-}
-data.displaySpecies = data.species;
-	
-data.displayCareers = [];
-data.careers = [];
-var careerGR = new GlideRecord('x_176383_star_wars_career');
-careerGR.orderBy('name');
-careerGR.query();
-while(careerGR.next()){
-	var c = {
-		name: careerGR.name + '',
-		description: careerGR.description + '',
-		sysID: careerGR.sysID + ''
-	};
-	data.careers.push(c);
-}
-data.displayCareers = data.careers;
-	
-data.specializations = [];
-data.displaySpecs = [];
-var specs = new GlideRecord('x_176383_star_wars_career_specialization');
-specs.orderBy('career.name');
-specs.orderBy('name');
-specs.query();
-while(specs.next()){
-	var s = {
-		name: specs.name + '',
-		description: specs.description + '',
-		career: specs.career.getDisplayValue(),
-		sysID: specs.sys_id + ''
-	};
-	data.specializations.push(s);
-}
-data.displaySpecs = data.specializations;
-	
-data.talents = [];
-data.displayTalents = [];
-var talent = new GlideRecord('x_176383_star_wars_talents');
-talent.orderBy('name');
-talent.query();
-while(talent.next()){
-	var t = {
-		name: talent.name + '',
-		description: talent.description + '',
-		passiveOrActive: talent.passive_or_active.getDisplayValue(),
-		force: talent.force_talent + '',
-		sysID: talent.sys_id + ''
-	};
-	data.talents.push(t);
-}
-data.displayTalents = data.talents;
-	
-data.skills = [];
-data.displaySkills = [];
-var skill = new GlideRecord('x_176383_star_wars_skills');
-skill.orderBy('name');
-skill.query();
-while(skill.next()){
-	var sk = {
-		name: skill.name + '',
-		type: skill.type.getDisplayValue(),
-		description: skill.description + '',
-		sysID: skill.sys_id + ''
-	};
-	data.skills.push(sk);
-}
-data.displaySkills = data.skills;
-	
-data.weaponQualities = [];
-data.displayWeaponQualities = [];
-var wqgr = new GlideRecord('x_176383_star_wars_weapon_quality');
-wqgr.orderBy('name');
-wqgr.query();
-while(wqgr.next()){
-	var wq = {
-		name: wqgr.name + '',
-		description: wqgr.description + '',
-		sysID: wqgr.sys_id + ''
-	};
-	data.weaponQualities.push(wq);
-}
-data.displayWeaponQualities = data.weaponQualities;
-	
-data.gear = [];
-data.displayGear = [];
-var gearGR = new GlideRecord('x_176383_star_wars_gear');
-//gearGR.orderBy('type');
-gearGR.orderBy('name');
-gearGR.query();
-while(gearGR.next()){
-	var g = {
-		name: gearGR.name + '',
-		type: gearGR.type.getDisplayValue(),
-		encumbrance: gearGR.encumbrance + '',
-		hp: gearGR.hard_points + '',
-		price: gearGR.price.getDisplayValue(),
-		rarity: gearGR.rarity + '',
-		description: gearGR.description_html + '',
-		damage: gearGR.base_damage + '',
-		crit: gearGR.critical_rating + '',
-		skillUsed: gearGR.skill_used.getDisplayValue(),
-		range: gearGR.range.getDisplayValue(),
-		defense: gearGR.defense + '',
-		soak: gearGR.soak + '',
-		hpRequired: gearGR.hp_required + '',
-		sysID: gearGR.sys_id + ''
-	};
-	var specials = new GlideRecord('x_176383_star_wars_gear_special');
-	specials.addQuery('item', g.sysID);
-	specials.orderBy('weapon_quality.name');
-	specials.query();
-	var specialsString = '';
-	while(specials.next()){
-		specialsString += specials.weapon_quality.getDisplayValue() + ' ' + specials.rank;
-		if(specials.hasNext()){
-			specialsString += ', ';
+		var chars = new GlideRecord('x_176383_star_wars_character');
+		//chars.addQuery('player', gs.getUserID()).addCondition('u_campaign', '!=', '');
+		chars.addEncodedQuery('player=javascript:gs.getUserID()^campaignISNOTEMPTY');
+		chars.query();
+		var myCampaigns = [];
+		while(chars.next()){
+			myCampaigns.push(chars.campaign.sys_id + '');
 		}
-	}
-	g.specials = specialsString;
-	data.gear.push(g);
-}
-data.displayGear = data.gear;
-	
-data.force = [];
-var forceGR = new GlideRecord('x_176383_star_wars_force_power');
-forceGR.orderBy('name');
-forceGR.query();
-while(forceGR.next()){
-	var f = {
-		name: forceGR.name + '',
-		minRating: forceGR.minimum_force_rating + '',
-		cost: forceGR.cost_to_purchase + '',
-		description: forceGR.description + '',
-		sysID: forceGR.sys_id + ''
-	};
-	data.force.push(f);
-}
-	
-data.forceEnhancements = [];
-var forceEnhancements = new GlideRecord('x_176383_star_wars_force_power_enhancement');
-forceEnhancements.orderBy('force_power');
-forceEnhancements.orderBy('cost_to_purchase');
-forceEnhancements.query();
-while(forceEnhancements.next()){
-	var fe = {
-		type: forceEnhancements.type.getDisplayValue(),
-		power: forceEnhancements.force_power.getDisplayValue(),
-		powerID: forceEnhancements.force_power.sys_id + '',
-		cost: forceEnhancements.cost_to_purchase + '',
-		description: forceEnhancements.description + ''
-	};
-	data.forceEnhancements.push(fe);
-}
-	
-data.vehicles = [];
-data.displayVehicles = [];
-var vehicle = new GlideRecord('x_176383_star_wars_vehicle');
-//vehicle.orderBy('type');
-vehicle.orderBy('ship_name');
-vehicle.query();
-while(vehicle.next()){
-	var v = {
-		name: vehicle.ship_name + '',
-		price: vehicle.price.getDisplayValue(),
-		rarity: vehicle.rarity + '',
-		makeModel: vehicle.make_model + '',
-		type: vehicle.type.getDisplayValue(),
-		silhouette: vehicle.silhouette + '',
-		hp: vehicle.hard_points + '',
-		armor: vehicle.armor + '',
-		speed: vehicle.speed + '',
-		handling: vehicle.handling + '',
-		htThreshold: vehicle.hull_trauma_threshold + '',
-		ssThreshold: vehicle.system_strain_threshold + '',
-		defenseFore: vehicle.defense_fore + '',
-		defenseAft: vehicle.defense_aft + '',
-		defensePort: vehicle.defense_port + '',
-		defenseStarboard: vehicle.defense_starboard + '',
-		maxAltitude: vehicle.maximum_altitude + '',
-		sensorRange: vehicle.sensor_range.getDisplayValue(),
-		description: vehicle.description + '',
-		notes: vehicle.notes + '',
-		sysID: vehicle.sys_id + ''
-	};
-	
-	if(vehicle.primary_hyperdrive_class != ''){
-		v.hyperdrive = 'Primary Class: ' + vehicle.primary_hyperdrive_class + '; backup class: ' + vehicle.backup_hyperdrive_class;
-	} else{
-		v.hyperdrive = 'None';
-	}
-	
-	if(vehicle.navicomputer){
-		v.navicomputer = 'Yes';
-	} else{
-		v.navicomputer = 'No';
-	}
-	
-	var vGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
-	//vGear.addQuery('vehicle', v.sysID).addCondition('gear.type', 'vehicle_weapon').addCondition('sys_class_name', '!=', 'x_176383_star_wars_character_vehicle_gear');
-	vGear.addEncodedQuery('sys_class_name!=x_176383_star_wars_character_vehicle_gear^ORsys_class_name=NULL^gear.type=vehicle_weapon');
-	vGear.addQuery('vehicle', v.sysID);
-	vGear.orderBy('gear.name');
-	vGear.query();
-	var vGearString = '';
-	while(vGear.next()){
-		vGearString += vGear.gear.getDisplayValue() + ': ' + vGear.quantity;
-		if(vGear.hasNext()){
-			vGearString += ', ';
+
+		data.showSection = 'parent';
+		data.parentMenu = ['Species', 'Careers', 'Career Specializations', 'Skills', 'Talents', 'Gear', 'Weapon Qualities', 'Vehicles', 'The Force', 'The Galaxy'];
+		data.alphabet = ['All','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+		data.species = [];
+		data.displaySpecies = [];
+		var speciesGR = new GlideRecord('x_176383_star_wars_species');
+		speciesGR.orderBy('name');
+		speciesGR.query();
+		while(speciesGR.next()){
+			var sp = {
+				name: speciesGR.name + '',
+				startingXP: speciesGR.starting_xp + '',
+				baseWound: speciesGR.base_wound_threshold + '',
+				baseStrain: speciesGR.base_strain_threshold + '',
+				brawn: speciesGR.brawn + '',
+				agility: speciesGR.agility + '',
+				intellect: speciesGR.intellect + '',
+				willpower: speciesGR.willpower + '',
+				cunning: speciesGR.cunning + '',
+				presence: speciesGR.presence + '',
+				description: speciesGR.description + '',
+				sysID: speciesGR.sys_id + '',
+				image: speciesGR.name.toLowerCase() + '.png'
+			};
+			data.species.push(sp);
 		}
-	}
-	v.gear = vGearString;
-	data.vehicles.push(v);
-}
-data.displayVehicles = data.vehicles;
-	
-data.galaxy = [];
-data.displayGalaxy = [];
-var galaxyGR = new GlideRecord('x_176383_star_wars_the_galaxy');
-//galaxyGR.orderBy('sector');
-galaxyGR.orderBy('name');
-galaxyGR.query();
-var addToList = false;
-while(galaxyGR.next()){
-	addToList = false;
-	if(galaxyGR.getValue('u_campaigns') != '' && galaxyGR.getValue('u_campaigns')){
-		for(var i = 0; i < myCampaigns.length; i++){
-			if(galaxyGR.getValue('u_campaigns').indexOf(myCampaigns[i]) > -1){
-				addToList = true;
+		data.displaySpecies = data.species;
+
+		data.displayCareers = [];
+		data.careers = [];
+		var careerGR = new GlideRecord('x_176383_star_wars_career');
+		careerGR.orderBy('name');
+		careerGR.query();
+		while(careerGR.next()){
+			var c = {
+				name: careerGR.name + '',
+				description: careerGR.description + '',
+				sysID: careerGR.sysID + ''
+			};
+			data.careers.push(c);
+		}
+		data.displayCareers = data.careers;
+
+		data.specializations = [];
+		data.displaySpecs = [];
+		var specs = new GlideRecord('x_176383_star_wars_career_specialization');
+		specs.orderBy('career.name');
+		specs.orderBy('name');
+		specs.query();
+		while(specs.next()){
+			var s = {
+				name: specs.name + '',
+				description: specs.description + '',
+				career: specs.career.getDisplayValue(),
+				sysID: specs.sys_id + ''
+			};
+			data.specializations.push(s);
+		}
+		data.displaySpecs = data.specializations;
+
+		data.talents = [];
+		data.displayTalents = [];
+		var talent = new GlideRecord('x_176383_star_wars_talents');
+		talent.orderBy('name');
+		talent.query();
+		var addTalent;
+		while(talent.next()){
+			addTalent = false;
+			if(talent.getValue('campaigns') != '' && talent.getValue('campaigns')){
+				for(var i = 0; i < myCampaigns.length; i++){
+					if(talent.getValue('campaigns').indexOf(myCampaigns[i]) > -1){
+						addTalent = true;
+					}
+				}
+			} else{
+				addTalent = true;
+			}
+			if(addTalent){
+				var t = {
+					name: talent.name + '',
+					description: talent.description + '',
+					passiveOrActive: talent.passive_or_active.getDisplayValue(),
+					force: talent.force_talent + '',
+					sysID: talent.sys_id + ''
+				};
+				data.talents.push(t);
 			}
 		}
-	} else{
-		addToList = true;
+		data.displayTalents = data.talents;
+
+		data.skills = [];
+		data.displaySkills = [];
+		var skill = new GlideRecord('x_176383_star_wars_skills');
+		skill.orderBy('name');
+		skill.query();
+		while(skill.next()){
+			var sk = {
+				name: skill.name + '',
+				type: skill.type.getDisplayValue(),
+				description: skill.description + '',
+				sysID: skill.sys_id + ''
+			};
+			data.skills.push(sk);
+		}
+		data.displaySkills = data.skills;
+
+		data.weaponQualities = [];
+		data.displayWeaponQualities = [];
+		var wqgr = new GlideRecord('x_176383_star_wars_weapon_quality');
+		wqgr.orderBy('name');
+		wqgr.query();
+		while(wqgr.next()){
+			var wq = {
+				name: wqgr.name + '',
+				description: wqgr.description + '',
+				sysID: wqgr.sys_id + ''
+			};
+			data.weaponQualities.push(wq);
+		}
+		data.displayWeaponQualities = data.weaponQualities;
+
+		data.gear = [];
+		data.displayGear = [];
+		var gearGR = new GlideRecord('x_176383_star_wars_gear');
+		//gearGR.orderBy('type');
+		gearGR.orderBy('name');
+		gearGR.query();
+		while(gearGR.next()){
+			var g = {
+				name: gearGR.name + '',
+				type: gearGR.type.getDisplayValue(),
+				encumbrance: gearGR.encumbrance + '',
+				hp: gearGR.hard_points + '',
+				price: gearGR.price.getDisplayValue(),
+				rarity: gearGR.rarity + '',
+				description: gearGR.description_html + '',
+				damage: gearGR.base_damage + '',
+				crit: gearGR.critical_rating + '',
+				skillUsed: gearGR.skill_used.getDisplayValue(),
+				range: gearGR.range.getDisplayValue(),
+				defense: gearGR.defense + '',
+				soak: gearGR.soak + '',
+				hpRequired: gearGR.hp_required + '',
+				sysID: gearGR.sys_id + ''
+			};
+			var specials = new GlideRecord('x_176383_star_wars_gear_special');
+			specials.addQuery('item', g.sysID);
+			specials.orderBy('weapon_quality.name');
+			specials.query();
+			var specialsString = '';
+			while(specials.next()){
+				specialsString += specials.weapon_quality.getDisplayValue() + ' ' + specials.rank;
+				if(specials.hasNext()){
+					specialsString += ', ';
+				}
+			}
+			g.specials = specialsString;
+			data.gear.push(g);
+		}
+		data.displayGear = data.gear;
+
+		data.force = [];
+		var forceGR = new GlideRecord('x_176383_star_wars_force_power');
+		forceGR.orderBy('name');
+		forceGR.query();
+		while(forceGR.next()){
+			var f = {
+				name: forceGR.name + '',
+				minRating: forceGR.minimum_force_rating + '',
+				cost: forceGR.cost_to_purchase + '',
+				description: forceGR.description + '',
+				sysID: forceGR.sys_id + ''
+			};
+			data.force.push(f);
+		}
+
+		data.forceEnhancements = [];
+		var forceEnhancements = new GlideRecord('x_176383_star_wars_force_power_enhancement');
+		forceEnhancements.orderBy('force_power');
+		forceEnhancements.orderBy('cost_to_purchase');
+		forceEnhancements.query();
+		while(forceEnhancements.next()){
+			var fe = {
+				type: forceEnhancements.type.getDisplayValue(),
+				power: forceEnhancements.force_power.getDisplayValue(),
+				powerID: forceEnhancements.force_power.sys_id + '',
+				cost: forceEnhancements.cost_to_purchase + '',
+				description: forceEnhancements.description + ''
+			};
+			data.forceEnhancements.push(fe);
+		}
+
+		data.vehicles = [];
+		data.displayVehicles = [];
+		var vehicle = new GlideRecord('x_176383_star_wars_vehicle');
+		//vehicle.orderBy('type');
+		vehicle.orderBy('ship_name');
+		vehicle.query();
+		while(vehicle.next()){
+			var v = {
+				name: vehicle.ship_name + '',
+				price: vehicle.price.getDisplayValue(),
+				rarity: vehicle.rarity + '',
+				makeModel: vehicle.make_model + '',
+				type: vehicle.type.getDisplayValue(),
+				silhouette: vehicle.silhouette + '',
+				hp: vehicle.hard_points + '',
+				armor: vehicle.armor + '',
+				speed: vehicle.speed + '',
+				handling: vehicle.handling + '',
+				htThreshold: vehicle.hull_trauma_threshold + '',
+				ssThreshold: vehicle.system_strain_threshold + '',
+				defenseFore: vehicle.defense_fore + '',
+				defenseAft: vehicle.defense_aft + '',
+				defensePort: vehicle.defense_port + '',
+				defenseStarboard: vehicle.defense_starboard + '',
+				maxAltitude: vehicle.maximum_altitude + '',
+				sensorRange: vehicle.sensor_range.getDisplayValue(),
+				description: vehicle.description + '',
+				notes: vehicle.notes + '',
+				sysID: vehicle.sys_id + ''
+			};
+
+			if(vehicle.primary_hyperdrive_class != ''){
+				v.hyperdrive = 'Primary Class: ' + vehicle.primary_hyperdrive_class + '; backup class: ' + vehicle.backup_hyperdrive_class;
+			} else{
+				v.hyperdrive = 'None';
+			}
+
+			if(vehicle.navicomputer){
+				v.navicomputer = 'Yes';
+			} else{
+				v.navicomputer = 'No';
+			}
+
+			var vGear = new GlideRecord('x_176383_star_wars_vehicle_gear');
+			//vGear.addQuery('vehicle', v.sysID).addCondition('gear.type', 'vehicle_weapon').addCondition('sys_class_name', '!=', 'x_176383_star_wars_character_vehicle_gear');
+			vGear.addEncodedQuery('sys_class_name!=x_176383_star_wars_character_vehicle_gear^ORsys_class_name=NULL^gear.type=vehicle_weapon');
+			vGear.addQuery('vehicle', v.sysID);
+			vGear.orderBy('gear.name');
+			vGear.query();
+			var vGearString = '';
+			while(vGear.next()){
+				vGearString += vGear.gear.getDisplayValue() + ': ' + vGear.quantity;
+				if(vGear.hasNext()){
+					vGearString += ', ';
+				}
+			}
+			v.gear = vGearString;
+			data.vehicles.push(v);
+		}
+		data.displayVehicles = data.vehicles;
+
+		data.galaxy = [];
+		data.displayGalaxy = [];
+		var galaxyGR = new GlideRecord('x_176383_star_wars_the_galaxy');
+		//galaxyGR.orderBy('sector');
+		galaxyGR.orderBy('name');
+		galaxyGR.query();
+		var addToList = false;
+		while(galaxyGR.next()){
+			addToList = false;
+			if(galaxyGR.getValue('u_campaigns') != '' && galaxyGR.getValue('u_campaigns')){
+				for(var i = 0; i < myCampaigns.length; i++){
+					if(galaxyGR.getValue('u_campaigns').indexOf(myCampaigns[i]) > -1){
+						addToList = true;
+					}
+				}
+			} else{
+				addToList = true;
+			}
+			if(addToList){
+				var galaxy = {
+					name: galaxyGR.name + '',
+					sector: galaxyGR.sector.getDisplayValue(),
+					description: galaxyGR.description + ''
+				};
+				data.galaxy.push(galaxy);
+			}
+		}
+		data.displayGalaxy = data.galaxy;
+
+		data.sectors = [];
+		var sectorGR = new GlideRecord('sys_choice');
+		sectorGR.addQuery('element', 'sector').addCondition('name', 'x_176383_star_wars_the_galaxy');
+		sectorGR.query();
+		while(sectorGR.next()){
+			data.sectors.push(sectorGR.label + '');
+		}
+	} catch(e){
+		gs.addErrorMessage(e.message);
 	}
-	if(addToList){
-		var galaxy = {
-			name: galaxyGR.name + '',
-			sector: galaxyGR.sector.getDisplayValue(),
-			description: galaxyGR.description + ''
-		};
-		data.galaxy.push(galaxy);
-	}
-}
-data.displayGalaxy = data.galaxy;
-	
-data.sectors = [];
-var sectorGR = new GlideRecord('sys_choice');
-sectorGR.addQuery('element', 'sector').addCondition('name', 'x_176383_star_wars_the_galaxy');
-sectorGR.query();
-while(sectorGR.next()){
-	data.sectors.push(sectorGR.label + '');
-}
-} catch(e){
-	gs.addErrorMessage(e.message);
-}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -810,7 +823,7 @@ while(sectorGR.next()){
         <sys_created_on>2020-12-02 04:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
-        <sys_mod_count>198</sys_mod_count>
+        <sys_mod_count>199</sys_mod_count>
         <sys_name>Holocron</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -818,7 +831,7 @@ while(sectorGR.next()){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-01-13 04:38:18</sys_updated_on>
+        <sys_updated_on>2022-01-24 04:59:26</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

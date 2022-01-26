@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>abf08fd32f418d10e0f497eef699b692</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power"&gt;
+    &lt;x_176383_star_wars_force_power action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;5&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Through their strong connection to the Force, force-sensitives can stretch their normal visual senses far beyond what would otherwise be possible.  When they use this ability, little can be kept from their sight.  Even in times of utter darkness or obscuring smoke, they can see as well as if it were a clear day.  In combat, it becomes a powerful and frightening skill, as such characters can strike their opponents from out of nowhere and still often remain undetected.&lt;/p&gt;
+&lt;p&gt;For those who have lost their sight, either through injury, illness, or genetics, this power is especially beneficial.  All Force users, however, can benefit from Farsight, as it has far greater application than mere sight in the darkness.  The power can also provide exceptional visual acuity and even allow users to see through intervening obstacles.  With the Force as their guide, they can picture everything from training droids to exhaust ports, the clarity allowing them to better seek out their foes and aid their friends.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BASIC POWER&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In its most basic form, Farsight allows the Force user to see in situations in which normal visual detection would be impossible, such as in total darkness or heavily obscuring smoke.  Using Farsight, it is even possible for those without eyes or who have lost their sight to see with perfect vision.&lt;/p&gt;
+&lt;p&gt;The user may spend 1 force point to see out to medium range for the remainder of the round (or one minute in narrative time), and can see everything most sentients can see on a well-lit day.  This functions even if the user normally can&amp;#39;t see due to darkness or blindness.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;minimum_force_rating&gt;1&lt;/minimum_force_rating&gt;
+        &lt;name&gt;Farsight&lt;/name&gt;
+        &lt;number&gt;FORCE0001015&lt;/number&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-20 05:16:33&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;abf08fd32f418d10e0f497eef699b692&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-20 05:16:33&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_force_power&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-20 06:16:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>de40939f2f818d10e0f497eef699b6e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Farsight</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_de40939f2f818d10e0f497eef699b6e1</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-20 06:16:07</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power</tablename>
+    </sys_metadata_link>
+</record_update>

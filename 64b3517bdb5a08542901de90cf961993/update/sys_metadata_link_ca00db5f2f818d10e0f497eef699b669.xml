@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>95d78f5f2f418d10e0f497eef699b658</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power_enhancement"&gt;
+    &lt;x_176383_star_wars_force_power_enhancement action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;The user may spend 2 force points to see in every direction simultaneously, noticing and observing things in a full 360 degree arc.  The user may not activate this multiple times.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;force_power display_value="Farsight"&gt;abf08fd32f418d10e0f497eef699b692&lt;/force_power&gt;
+        &lt;number&gt;FENH0001149&lt;/number&gt;
+        &lt;pre_req_force_enhancements&gt;5b07035f2f418d10e0f497eef699b6f9,0a85cf9b2f418d10e0f497eef699b650&lt;/pre_req_force_enhancements&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-20 05:40:15&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;95d78f5f2f418d10e0f497eef699b658&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-20 05:41:09&lt;/sys_updated_on&gt;
+        &lt;type&gt;control&lt;/type&gt;
+    &lt;/x_176383_star_wars_force_power_enhancement&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-20 06:15:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ca00db5f2f818d10e0f497eef699b669</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ca00db5f2f818d10e0f497eef699b669</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-20 06:15:00</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power_enhanceme</tablename>
+    </sys_metadata_link>
+</record_update>

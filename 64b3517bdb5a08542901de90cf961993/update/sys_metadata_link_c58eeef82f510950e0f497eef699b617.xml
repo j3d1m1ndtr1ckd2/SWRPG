@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>f04c216b2fc1cd10e0f497eef699b618</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="kb_knowledge"&gt;
+    &lt;kb_knowledge action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;article_type&gt;text&lt;/article_type&gt;
+        &lt;author display_value="Ben Fisher"&gt;bf532351db8303002901de90cf96196d&lt;/author&gt;
+        &lt;can_read_user_criteria/&gt;
+        &lt;cannot_read_user_criteria/&gt;
+        &lt;category/&gt;
+        &lt;cmdb_ci/&gt;
+        &lt;description/&gt;
+        &lt;direct&gt;false&lt;/direct&gt;
+        &lt;disable_commenting&gt;false&lt;/disable_commenting&gt;
+        &lt;disable_suggesting&gt;false&lt;/disable_suggesting&gt;
+        &lt;display_attachments&gt;false&lt;/display_attachments&gt;
+        &lt;flagged&gt;false&lt;/flagged&gt;
+        &lt;image/&gt;
+        &lt;kb_category display_value="Starships and Vehicles"&gt;211d2f412f94b010e0f497eef699b699&lt;/kb_category&gt;
+        &lt;kb_knowledge_base display_value="Star Wars RPG"&gt;4a4a278d2f54b010e0f497eef699b694&lt;/kb_knowledge_base&gt;
+        &lt;language&gt;en&lt;/language&gt;
+        &lt;meta/&gt;
+        &lt;meta_description&gt;VEHICLE CHARACTERISTICS From the tiniest, fastest swoop bike to a massive and lumbering Imperial-class&lt;/meta_description&gt;
+        &lt;number&gt;KB0010077&lt;/number&gt;
+        &lt;parent/&gt;
+        &lt;published&gt;2022-01-24&lt;/published&gt;
+        &lt;rating/&gt;
+        &lt;retired/&gt;
+        &lt;roles/&gt;
+        &lt;short_description&gt;Vehicle Characteristics&lt;/short_description&gt;
+        &lt;source/&gt;
+        &lt;sys_class_name&gt;kb_knowledge&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-20 17:58:30&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;f04c216b2fc1cd10e0f497eef699b618&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-24 19:38:59&lt;/sys_updated_on&gt;
+        &lt;sys_view_count&gt;0&lt;/sys_view_count&gt;
+        &lt;taxonomy_topic/&gt;
+        &lt;text&gt;&lt;![CDATA[&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;VEHICLE CHARACTERISTICS &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From the tiniest, fastest swoop bike to a massive and lumbering Imperial-class Star Destroyer, all ships and vehicles share a number of characteristics. These characteristics define such attributes as the strength of a ship&amp;#39;s shields or how quickly a speeder accelerates off the line. These characteristics cover the bulk of important mechanical information about starships and vehicles.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Handling:&lt;/strong&gt; The measure of a ship or vehicle&amp;#39;s agility and how well it responds to its pilot.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speed:&lt;/strong&gt; A ship or vehicle&amp;#39;s raw speed and how quickly it accelerates.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Silhouette:&lt;/strong&gt; An abstract of the general size of a vehicle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Defense:&lt;/strong&gt; A ship&amp;#39;s first line of defense against attack and accident. Typically representative of a ship&amp;#39;s ray and particle shields, defense also represents any factors, technological or otherwise, that prevent damage from reaching a vehicle&amp;#39;s armor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Armor:&lt;/strong&gt; The measure of a ship or vehicle&amp;#39;s armor, similar to soak on the personal scale.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hull Trauma Threshold:&lt;/strong&gt; A reflection of the sturdiness of a ship or vehicle&amp;#39;s construction, and its ability to sustain damage and keep operating.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;System Strain Threshold:&lt;/strong&gt; The limit to which a ship or vehicle can be pushed or knocked about before important systems overload or shut down.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Customization Hard Points:&lt;/strong&gt; The number of spots available on a ship or vehicle for customization and upgrade.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HANDLING&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Generally speaking, handling reflects a ship or vehicle&amp;#39;s inherent agility and the ways in which it responds to its pilot and crew. Handling is dictated by a number of factors. While size is certainly the most obvious—a Z-95 Headhunter or Firespray Patrol Boat is, by nature, more maneuverable than a Victory-class Star Destroyer —other factors such as shape, control systems, mass, or just general awkwardness all contribute to handling. In game terms, a ship or vehicle&amp;#39;s handling characteristic dictates the number of • or H it adds to a player&amp;#39;s dice pool. Baseline handling is 0, with extremely agile ships adding • and slow or plodding ships adding • to all Piloting checks. Pilots add • equal to a ship&amp;#39;s negative handling value or • equal to a ship or vehicle&amp;#39;s positive handling value.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SPEED &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An abstraction of both speed and acceleration, a ship or vehicle&amp;#39;s speed characteristic dictates how fast an object moves relative to its environment and what maneuvers are available to the pilot. The listed speed is a &amp;#34;maximum&amp;#34; value the ship or vehicle can travel. A pilot can always choose to go slower than his maximum speed. Speed 0 indicates a stationary ship or vehicle, with higher values indicating an increased speed accordingly (speed 1, for example, might be a slow moving AT-AT walker or ponderous transport ship, while speed 5 might be a nimble TIE fighter or cloud car).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SILHOUETTE &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Much like the speed characteristic, silhouette is an abstract number used to describe a ship or vehicle&amp;#39;s size and mass relative to other ships and vehicles. Silhouette factors heavily into scale, and is used to calculate the difficulty of attacking targets of different sizes. Generally, large ships are easy to hit, and small ships are hard to hit. Some specialized ships, such as the Lancer-class Anti-Starfighter Frigate, are exceptions to this rule as they are large ships fitted with smaller, lighter guns than their size and class would suggest, thereby filling specific roles within fleets. Silhouettes range from 0 to 10. Silhouette 0 is something smaller than a human (such as a specific starship component, a Jawa, or an astromech droid) and silhouette 1 is something the size of an adult human. Most starfighters and light freighters range from silhouette 3 to 4. Silhouette 10 is reserved for the very largest of space stations or starships, such as the Death Star.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HULL TRAUMA THRESHOLD &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hull trauma threshold is a reflection of a ship or vehicle&amp;#39;s sturdiness and resistance to damage. The strength of a capital ship&amp;#39;s keel, the sturdiness of a speeder truck&amp;#39;s chassis, or the general spaceworthiness of a starfighter&amp;#39;s spaceframe are all measured by hull trauma threshold. Like the wound threshold of a Player Character, hull trauma threshold represents the amount of physical damage that a ship or vehicle can suffer before it is either crippled or destroyed. Hull trauma threshold is measured in planetary scale, meaning that one point of hull trauma equals ten wounds on an individual.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SYSTEM STRAIN THRESHOLD &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;System strain threshold represents how well a ship or vehicle&amp;#39;s internal systems handle the workaday abuse heaped on them by their owners and the galaxy at large. It is an aggregate of the efficiency and status of computer and navigation systems, engines and hyperspace drives, power generators, and a host of other delicate systems necessary to ensure peak performance. Once a ship or vehicle suffers strain exceeding its system strain characteristic, its systems begin overloading and shutting down until they can be repaired or rebooted. This negatively affects a vehicle&amp;#39;s performance and can even temporarily cripple it on occasion, causing larger complications for its crew and passengers.&lt;/p&gt;
+&lt;p&gt;The factors that can cause a ship or vehicle to suffer strain are numerous and varied. Most commonly, a vehicle suffers strain due to the actions of its crew as they push it to (or beyond) its breaking point. Pushing sublight engines past their safe operating limits while outrunning a pursuer or firing weapons until their barrels glow are prime examples of this kind of strain. Vehicles also suffer strain due to freak accidents caused by excess threat, environmental hazards like rogue asteroids or ionized nebulae, or the effects of special weapons such as ion cannons.&lt;/p&gt;
+&lt;p&gt;One difference between system strain and regular strain is that &lt;strong&gt;system strain cannot be recovered by spending&lt;/strong&gt; &lt;strong&gt;advantage&lt;/strong&gt;. It can only be restored through actions taken by the crew, or it recovers one system strain for every full day spent without suffering more system strain.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;strong&gt;CUSTOMIZATION HARD POINTS &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Every starship and vehicle produced in the galaxy is customizable to some degree. While many, like starfighters and most military vessels, are built for specific purposes and have very little room for modification, other civilian and commercial ships and vehicles are designed to be modular for ease of personalization and customization. The majority of freighters and transports fall squarely into this latter group, with highly modular hulls that can be configured in myriad ways to carry any kind of cargo imaginable. To this end, all ships and vehicles have a number of customization hard points that can be used to tweak a vehicle&amp;#39;s performance, characteristics, or armament to suit the needs of its owners.&lt;/p&gt;
+&lt;p&gt;The number of customization hard points a ship or vehicle possesses is determined more by its make and model than by its size. A Firespray-class patrol boat is relatively small yet easy to customize due to its construction, while a massive, kilometer-long Imperial ll class Star Destroyer has little to no customization potential despite its size, due to the specialized nature of its mission and design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style="font-size: 12pt;"&gt;PROTECTION &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To protect their passengers, crews, and precious cargos, ships and vehicles in the Star Wars galaxy use a number of methods to avoid or deflect damage. In general terms, a ship or vehicle&amp;#39;s protection is an amalgam of its maneuverability, the durability of its hull or chassis, the strength of its shields, and the thickness of its armor. Some ships have obscure types of protection such as focused gravity waves, clusters of point defense laser cannons, or launchers full of micro-missiles used to intercept incoming starfighters, shuttles, and ordnance. Whatever form these protections take. EDGE OF THE EMPIRE divides them into two discrete statistics: defense and armor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DEFENSE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Defense reflects a ship or vehicle&amp;#39;s ability to completely deflect or reduce the damage of incoming attacks or collisions through use of deflector shields, point defense systems, raw speed, or other, more esoteric, technologies. This is a crucial protective system, and is the first line of defense for the majority of space-going vessels and even some ground vehicles. Defense works the same as described on page 206; each point adds 1 setback die to any incoming attack roll made against a ship or vehicle. The amount of failures generated by the setback dice added to the attacker&amp;#39;s dice pool has the potential to greatly reduce or even negate any damage from the attack or collision, and the threat generated also lessens the chance of critical hits.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SILHOUETTE AND DEFENSE ZONES &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ships (and those rare vehicles with defense) have a number of defense zones dictated by their silhouette. Anything with silhouette 4 or lower has two defense zones: forward and aft. Ships with silhouette 5 or higher have four defense zones: forward, aft, port, and starboard. Every ship comes with a pre-set defense rating for each of its defense zones dictated by its computer system and the factory settings of its shield generators. The maximum amount of defense a ship or vehicle can have in any of its defense zones is four points, regardless of its size. For example, the sturdy BTL-A4 Y-wing attack starfighter has a silhouette of three and two defense zones, forward and aft. The default setting of the Y-wing&amp;#39;s defense rating is one point of defense to the forward zone, and one point aft.&lt;/p&gt;
+&lt;p&gt;Most types of defense, especially the common ray and particle deflector shields found on the ships of the majority of spacefaring species, can be assigned or &amp;#34;angled&amp;#34; to different zones to shore up defense where it&amp;#39;s needed the most. This is done by re-routing power from one zone to another, reducing the defense at one part of the ship to bolster it somewhere else. In the case of the Y-wing above, if it were being pursued by a TIE fighter, the pilot could re-route power from the forward defense zone to the aft defense zone, giving the Y-wing two points of defense aft and none forward until the power is reset. The Y-wing adds 2 setback dice to the TIE fighter&amp;#39;s attacks, but any attacks made against the forward defense zone suffer no setback dice.&lt;/p&gt;
+&lt;p&gt;Each ship and vehicle has a chart displaying its default shield settings by defense zone. For ships with silhouette 4 and lower, this is represented by two numbers, one for the forward zone and one for the aft zone. For ships of silhouette 5 or higher with multiple defense zones, this is represented by four numbers indicating the forward zone, the port zone, the starboard zone, and the aft zone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ARMOR &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Armor is a starships second line of defense, and the only protection available to the majority of ground vehicles. It soaks up damage from attacks and impacts that are able to penetrate a ship&amp;#39;s defense. The more passive of the two types of protection, starship and vehicle armor is made of a number of materials from common durasteel to rare carbon composites and advanced polycarbonites. Much like personal body armor worn by Player Characters, a ship or vehicle&amp;#39;s armor soaks a number of damage points equal to its rating. As it is based on planetary scale, one point of a ship&amp;#39;s armor is equivalent to ten points of soak on a personal scale.&lt;/p&gt;]]&gt;&lt;/text&gt;
+        &lt;topic&gt;General&lt;/topic&gt;
+        &lt;use_count&gt;0&lt;/use_count&gt;
+        &lt;valid_to&gt;2100-01-01&lt;/valid_to&gt;
+        &lt;wiki/&gt;
+        &lt;workflow_state&gt;published&lt;/workflow_state&gt;
+    &lt;/kb_knowledge&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=f04c216b2fc1cd10e0f497eef699b618"/&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-24 19:39:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c58eeef82f510950e0f497eef699b617</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB0010077</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_c58eeef82f510950e0f497eef699b617</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-24 19:39:27</sys_updated_on>
+        <tablename>kb_knowledge</tablename>
+    </sys_metadata_link>
+</record_update>

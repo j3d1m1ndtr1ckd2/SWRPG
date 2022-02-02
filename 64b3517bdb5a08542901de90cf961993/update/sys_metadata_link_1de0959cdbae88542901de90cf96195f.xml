@@ -5,6 +5,7 @@
         <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
     &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
         &lt;career&gt;false&lt;/career&gt;
+        &lt;characteristic&gt;intellect&lt;/characteristic&gt;
         &lt;cost_to_next_rank/&gt;
         &lt;description&gt;&lt;![CDATA[&lt;div&gt;The galaxy could scarcely function without the constant assistance of computers. Devices everywhere are linked together and coordinated by computers and droid brains. Those talented with&lt;/div&gt;
 &lt;div&gt;computers can sometimes exploit these resources, or they might know how best to avoid those systems under computer control. Many people are so unconsciously dependent upon computers that those who can cleverly manipulate them may commit crimes without their victims even being aware of the offenses. Even using the HoloNet for communications or entertainment requires the use of computers—particularly if there are forces interfering with the system. This skill also governs the repair of a damaged computer system, defensive actions against an intruding slicer, and routine maintenance necessary to keep the software on a computer or droid running effectively.&lt;/div&gt;
@@ -30,9 +31,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2020-01-20 18:02:47&lt;/sys_created_on&gt;
         &lt;sys_id&gt;aadf851cdbae88542901de90cf961953&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
-        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2020-11-19 07:00:38&lt;/sys_updated_on&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-31 04:48:05&lt;/sys_updated_on&gt;
         &lt;type&gt;general&lt;/type&gt;
     &lt;/x_176383_star_wars_skills&gt;
 &lt;/record_update&gt;
@@ -42,15 +43,15 @@
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1de0959cdbae88542901de90cf96195f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Computers (Int)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_1de0959cdbae88542901de90cf96195f</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 19:34:28</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-31 04:50:10</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

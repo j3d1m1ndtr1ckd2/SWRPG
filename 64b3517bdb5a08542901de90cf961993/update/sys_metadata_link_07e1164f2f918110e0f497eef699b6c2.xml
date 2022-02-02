@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>47cd2d312fd58110e0f497eef699b6ce</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;10&lt;/base_damage&gt;
+        &lt;critical_rating&gt;3&lt;/critical_rating&gt;
+        &lt;defense/&gt;
+        &lt;description/&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;Bounties on droids are not common, but they are frequently profitable, as any droid considered irreplaceable enough to mark in such a fashion is often extremely valuable.  As such, some bounty hunters invest in ion pulse warheads for their micro-rockets, which can disable droids without permanent damage.  The power of an ion rocket can even create a power surge in unshielded non-sentient equipment that burns out capacitors or damages circuits.&lt;/p&gt;
+&lt;p&gt;The Sunder quality of an ion micro-rocket can only be activated to damage powered equipment, such as sensors, blasters, or vibro-blades.  It cannot be used to damage items that operate without power, as they have no circuitry to disrupt.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;1&lt;/encumbrance&gt;
+        &lt;hard_points&gt;1&lt;/hard_points&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Ion Micro-Rocket&lt;/name&gt;
+        &lt;number&gt;GEAR0001219&lt;/number&gt;
+        &lt;price&gt;100&lt;/price&gt;
+        &lt;range&gt;short&lt;/range&gt;
+        &lt;rarity&gt;6&lt;/rarity&gt;
+        &lt;skill_used display_value="Ranged - Heavy (Ag)"&gt;d8a0d55cdbae88542901de90cf9619c0&lt;/skill_used&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_gear&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-01-27 17:30:38&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;47cd2d312fd58110e0f497eef699b6ce&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-27 17:30:52&lt;/sys_updated_on&gt;
+        &lt;type&gt;weapon&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-31 17:20:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>07e1164f2f918110e0f497eef699b6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ion Micro-Rocket</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_07e1164f2f918110e0f497eef699b6c2</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-31 17:20:52</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

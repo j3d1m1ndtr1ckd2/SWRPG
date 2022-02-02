@@ -5,6 +5,7 @@
         <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
     &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
         &lt;career&gt;false&lt;/career&gt;
+        &lt;characteristic&gt;cunning&lt;/characteristic&gt;
         &lt;cost_to_next_rank/&gt;
         &lt;description&gt;&lt;![CDATA[&lt;div&gt;Life on the galaxy&amp;#39;s fringe—and in the less savory portions of the Core Worlds—is filled with treachery. A stranger can seldom be trusted, and a friend might turn traitor for the right compensation. Those who manage to survive in such an environment soon learn to recognize the warning signs that come with danger as well as those that might signal an opportunity. Knowing where to go for help when times are hard can be just as important as knowing how to avoid an unwinnable confrontation. &lt;/div&gt;
 &lt;div&gt; &lt;/div&gt;
@@ -24,9 +25,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2020-01-20 18:05:02&lt;/sys_created_on&gt;
         &lt;sys_id&gt;e350595cdbae88542901de90cf9619e1&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
-        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2020-11-19 18:34:18&lt;/sys_updated_on&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-31 04:48:58&lt;/sys_updated_on&gt;
         &lt;type&gt;general&lt;/type&gt;
     &lt;/x_176383_star_wars_skills&gt;
 &lt;/record_update&gt;
@@ -36,15 +37,15 @@
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d5e0959cdbae88542901de90cf961977</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Streetwise (Cun)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_d5e0959cdbae88542901de90cf961977</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 20:05:08</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-31 04:50:23</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

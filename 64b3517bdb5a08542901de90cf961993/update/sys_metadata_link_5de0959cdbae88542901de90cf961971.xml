@@ -5,6 +5,7 @@
         <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
     &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
         &lt;career&gt;false&lt;/career&gt;
+        &lt;characteristic&gt;presence&lt;/characteristic&gt;
         &lt;cost_to_next_rank/&gt;
         &lt;description&gt;&lt;![CDATA[&lt;div&gt;Often, the easiest way to get someone&amp;#39;s cooperation is by giving them exactly what they want. The art of Negotiation deals with determining exactly how much of what a subject wants must be surrendered in order to get a particular good or service in return. A master negotiator might need to make only the most minimal of sacrifices in exchange for a vital service, while a novice could be forced to dramatically overpay particularly if he lets his desperation show. This skill is essential for anyone who regularly deals in traded goods, but is also vitally important to anyone whose&lt;/div&gt;
 &lt;div&gt;livelihood depends upon selling their services. &lt;/div&gt;
@@ -23,9 +24,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2020-01-20 18:04:12&lt;/sys_created_on&gt;
         &lt;sys_id&gt;d720d55cdbae88542901de90cf9619b9&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
-        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2020-11-19 17:46:14&lt;/sys_updated_on&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-31 04:48:37&lt;/sys_updated_on&gt;
         &lt;type&gt;general&lt;/type&gt;
     &lt;/x_176383_star_wars_skills&gt;
 &lt;/record_update&gt;
@@ -35,15 +36,15 @@
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5de0959cdbae88542901de90cf961971</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Negotiation (Pr)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_5de0959cdbae88542901de90cf961971</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 19:34:34</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-31 04:50:16</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

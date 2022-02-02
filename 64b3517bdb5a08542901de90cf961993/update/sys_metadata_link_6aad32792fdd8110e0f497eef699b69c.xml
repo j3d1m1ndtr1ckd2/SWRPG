@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e167b23d2f9d8110e0f497eef699b696</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_vehicle_gear">
+    <x_176383_star_wars_vehicle_gear action="INSERT_OR_UPDATE">
+        <fire_arc>foreward</fire_arc>
+        <gear display_value="Proton Torpedo Launcher">39e135cb2f142090e0f497eef699b6bd</gear>
+        <mount_location>foreward</mount_location>
+        <quantity>1</quantity>
+        <sys_class_name>x_176383_star_wars_vehicle_gear</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-27 22:52:12</sys_created_on>
+        <sys_id>e167b23d2f9d8110e0f497eef699b696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-27 22:52:12</sys_updated_on>
+        <vehicle display_value="Mandalorian Protectorate Starfighter">e056b23d2f9d8110e0f497eef699b6dd</vehicle>
+    </x_176383_star_wars_vehicle_gear>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-01-27 23:19:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6aad32792fdd8110e0f497eef699b69c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2022-01-27 14:52:12</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_6aad32792fdd8110e0f497eef699b69c</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-27 23:19:34</sys_updated_on>
+        <tablename>x_176383_star_wars_vehicle_gear</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -5,6 +5,7 @@
         <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
     &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
         &lt;career&gt;false&lt;/career&gt;
+        &lt;characteristic&gt;willpower&lt;/characteristic&gt;
         &lt;cost_to_next_rank/&gt;
         &lt;description&gt;&lt;![CDATA[&lt;div&gt;There are boundless horrors present across the span of the galaxy. Some—like the rancor, the wampa, and the krayt dragon—are natural entities, which are horrifically violent as an outgrowth of their environs. Others, such as Sithspawn horrors or the Death Star, are deliberate creations made by sentient life, which serve little purpose save to spread terror and destruction. Through the course of their adventures, characters may often encounter creatures that seek to dismember or devour them. The ability to maintain their composure and react in an effective manner is governed by their Discipline. This skill represents a character&amp;#39;s ability to overcome his biological instincts, so that he can overcome things that might induce utter panic in a person of lesser resolve. &lt;/div&gt;
 &lt;div&gt; &lt;/div&gt;
@@ -23,9 +24,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2020-01-20 18:03:25&lt;/sys_created_on&gt;
         &lt;sys_id&gt;f7ffc9d8dbae88542901de90cf961925&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
-        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2020-11-19 17:27:31&lt;/sys_updated_on&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-31 04:48:16&lt;/sys_updated_on&gt;
         &lt;type&gt;general&lt;/type&gt;
     &lt;/x_176383_star_wars_skills&gt;
 &lt;/record_update&gt;
@@ -35,15 +36,15 @@
         <sys_created_on>2020-01-20 18:07:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51e0959cdbae88542901de90cf96197d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Discipline (Will)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_51e0959cdbae88542901de90cf96197d</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 19:34:40</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-31 04:50:27</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

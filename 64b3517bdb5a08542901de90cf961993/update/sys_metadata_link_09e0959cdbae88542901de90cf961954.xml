@@ -5,6 +5,7 @@
         <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_skills"&gt;
     &lt;x_176383_star_wars_skills action="INSERT_OR_UPDATE"&gt;
         &lt;career&gt;false&lt;/career&gt;
+        &lt;characteristic&gt;agility&lt;/characteristic&gt;
         &lt;cost_to_next_rank/&gt;
         &lt;description&gt;&lt;![CDATA[&lt;div&gt;When a character needs to go somewhere without being seen, it often requires him to balance upon unstable surfaces, crawl through narrow openings, or even to tumble down from a dangerous height. Overcoming these types of challenges requires a tremendous sense of balance and a heightened degree of flexibility. While both of those abilities depend heavily upon a person&amp;#39;s natural characteristics, they can be further developed through regimens of practice and exercise. &lt;/div&gt;
 &lt;div&gt; &lt;/div&gt;
@@ -25,9 +26,9 @@
         &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
         &lt;sys_created_on&gt;2020-01-20 18:03:08&lt;/sys_created_on&gt;
         &lt;sys_id&gt;73ef415cdbae88542901de90cf9619f3&lt;/sys_id&gt;
-        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
-        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
-        &lt;sys_updated_on&gt;2020-11-19 07:08:37&lt;/sys_updated_on&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-01-31 04:48:09&lt;/sys_updated_on&gt;
         &lt;type&gt;general&lt;/type&gt;
     &lt;/x_176383_star_wars_skills&gt;
 &lt;/record_update&gt;
@@ -37,15 +38,15 @@
         <sys_created_on>2020-01-20 18:07:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>09e0959cdbae88542901de90cf961954</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Coordination (Ag)</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_09e0959cdbae88542901de90cf961954</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 19:34:15</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-01-31 04:49:57</sys_updated_on>
         <tablename>x_176383_star_wars_skills</tablename>
     </sys_metadata_link>
 </record_update>

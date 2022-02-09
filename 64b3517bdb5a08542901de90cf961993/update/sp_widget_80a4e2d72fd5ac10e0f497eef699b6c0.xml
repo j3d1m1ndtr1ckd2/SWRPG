@@ -38,6 +38,12 @@
 		c.server.refresh();
 	}
 	
+	$scope.toggleNPCVisibility = function(character, showOrHide){
+		c.server.get({action: 'npcVisibility', character:character, showHide: showOrHide}).then(function(response){
+			c.server.refresh();
+		});
+	}
+	
 	$rootScope.$on('sp.form.submitted', function(evt, data){
 		$scope.closeNewCampaign();
 		c.server.refresh();
@@ -63,16 +69,16 @@
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.campaigns-container{
-	padding-bottom:600px;
+  padding-bottom:600px;
 }
 
 .panel-heading,.panel-footer{
-	background-color:black;
+  background-color:black;
   color:white;
 }
 
 .sw-input{
-	border:1px groove #e21414;
+  border:1px groove #e21414;
   background-color:black;
   border-radius:20px;
   margin-bottom:10px;
@@ -80,7 +86,7 @@
 }
 
 #addXPButton{
-	background:transparent;
+  background:transparent;
   padding:5px 15px 5px 15px;
   border:1px groove #54f403;
   border-radius:20px;
@@ -88,55 +94,55 @@
 }
 
 .add-xp-section{
-	padding-bottom:15px;
+  padding-bottom:15px;
 }
-	
+
 .fa-swords-laser{
-	color:#e21414;
+  color:#e21414;
   font-size:22px;
   padding: 10px 5px 0px 0px;
 }
-	
+
 .header{
-	font-size:26px;
+  font-size:26px;
 }
 
 .create-new-campaign{
-	margin-bottom:40px;
+  margin-bottom:40px;
 }
 
 .create-campaign-container{
-	position:fixed;
+  position:fixed;
   top:50px;
   left:10px;
   width:98%;
   animation: slideInLeft .5s;
   z-index:5;
 }
-	
+
 .campaigns-header{
-	margin-bottom:40px;
+  margin-bottom:40px;
 }
 
 .back-button{
   padding:0;
-	text-align:left;
+  text-align:left;
   z-index:4;
   margin-top:40px;
 }
 
 #starfighterBackButton{
-	transform: rotate(270deg);
+  transform: rotate(270deg);
   color:#e17012;
 }
 
 .campaign{
-	margin-bottom:20px;
+  margin-bottom:20px;
 }
 
 .campaign-body{
   text-align:center;
-	background-color:black;
+  background-color:black;
   border:1px groove #1933f4;
   border-radius:20px;
   box-shadow:0px 0px 6px 3px #1933f4;
@@ -145,17 +151,17 @@
 }
 
 .name{
-	font-size:20px;
+  font-size:20px;
   font-weight:bold;
 }
 
 .gm{
-	font-size:18px;
+  font-size:18px;
 }
 
 .view-campaign-button{
   margin-top:15px;
-	background:transparent;
+  background:transparent;
   padding:5px 15px 5px 15px;
   border:1px groove #54f403;
   border-radius:20px;
@@ -163,35 +169,67 @@
 }
 
 .detail-header{
-	margin-top:20px;
+  margin-top:20px;
   margin-bottom:20px;
   font-size:18px;
 }
 
 a{
-	color:white !important;
+  color:white !important;
 }
 
 a:hover{
-	color:lightgray !important;
+  color:lightgray !important;
 }
 
 .character{
-	background-color:black;
+  background-color:black;
   margin-bottom:15px;
   border:1px groove #1933f4;
   border-radius:20px;
   box-shadow:0px 0px 6px 3px #1933f4;
 }
 
+.search-container{
+  text-align:right;
+  position: absolute;
+  top: 40px;
+  right: 5px;
+}
+
+.npc{
+  padding:5px;
+}
+
+.gm-button{
+	text-align:center;
+  margin-bottom:1rem;
+}
+
+.visibility-button{
+	background:transparent;
+  padding:5px 15px 5px 15px;
+  border-radius:20px;
+}
+
+.make-visible-button{
+	border:1px groove #54f403;
+  box-shadow:0px 0px 6px 3px #54f403;
+}
+
+.hide-button{
+	border:1px groove #e21414;
+  box-shadow:0px 0px 6px 3px #e21414;
+}
+
 .character-details{
   padding-top:20px;
-	font-size:16px;
+  font-size:16px;
   text-align:center;
 }
 
 .vehicle{
-	background-color:black;
+  background-color:black;
   margin-bottom:15px;
   border:1px groove #1933f4;
   border-radius:20px;
@@ -203,16 +241,16 @@ a:hover{
 }
 
 .note-selector{
-	text-align:center;
+  text-align:center;
   padding:10px;
 }
 
 .date{
-	font-size:18px;
+  font-size:18px;
 }
 
 .session-note-detail-container{
-	position:fixed;
+  position:fixed;
   top:100px;
   max-height:450px;
   overflow-y:scroll;
@@ -226,20 +264,20 @@ a:hover{
 }
 
 .close-button-container{
-	margin-top:20px;
+  margin-top:20px;
 }
 
 .fa-times{
   margin-right:20px;
-	color:#e21414;
+  color:#e21414;
 }
 
 .session-record-buttons{
-	margin-bottom:40px;
+  margin-bottom:40px;
 }
 
 .session-button{
-	font-size:18px;
+  font-size:18px;
   color:white;
   border:1px groove #54f403;
   border-radius:20px;
@@ -252,7 +290,7 @@ a:hover{
   font-size:16px;
   font-weight:bold;
   padding:15px;
-	text-align:center;
+  text-align:center;
 }
 
 @keyframes slideInLeft{
@@ -262,16 +300,16 @@ a:hover{
 
 @media only screen and (max-width:762px){
   .character-details,.character{
-  	padding-left:0;
+    padding-left:0;
     padding-right:0;
   }
-  
+
   .session-note-detail-container{
     left:10px;
   }
-  
+
   .active-session-button{
-  	margin-bottom:20px;
+    margin-bottom:20px;
   }
 }</css>
         <data_table>sp_instance</data_table>
@@ -288,18 +326,18 @@ a:hover{
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
 	var userID = gs.getUserID();
 	data.userID = userID;
-var characters = new GlideRecord('x_176383_star_wars_character');
+	var characters = new GlideRecord('x_176383_star_wars_character');
 	characters.addQuery('player', userID).addCondition('campaign', '!=', '');
 	characters.query();
 	var campaignsString = '';
 	while(characters.next()){
 		campaignsString += characters.campaign + ',';
 	}
-	
+
 	data.currentCampaignID = $sp.getParameter('campaign') || '';
 	data.currentCampaign = '';
 	data.campaigns = [];
@@ -319,110 +357,134 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 		}
 		data.campaigns.push(campaign);
 	}
-	
+
 	//if we are refreshing the page after selecting a campaign, auto-populate that same campaign vs. returning to home campaign view
 	if(data.currentCampaign != ''){
-			//retrieve all characters within the selected campaign
-			data.campaignCharacters = [];
-			var characterIDString = '';
-			characters = new GlideRecord('x_176383_star_wars_character');
-			characters.addQuery('campaign', data.currentCampaignID);
-			characters.orderBy('name');
-			characters.query();
-			while(characters.next()){
-				characterIDString += characters.sys_id + ',';
-				var cObj = {
-					name: characters.name + '',
-					player: characters.player.getDisplayValue(),
-					sysID: characters.sys_id + '',
-					species: characters.species.getDisplayValue(),
-					speciesImg: characters.portrait + '.iix',
-					career: characters.career.getDisplayValue()
-				};
-				if(cObj.speciesImg == '.iix'){
-					cObj.speciesImg = cObj.species.toLowerCase() + '.png';
-				}
+		data.isGm = (userID == data.currentCampaign.gmID) ? true : false;
+		//retrieve all characters within the selected campaign
+		data.campaignCharacters = [];
+		data.npcs = [];
+		var characterIDString = '';
+		characters = new GlideRecord('x_176383_star_wars_character');
+		characters.addQuery('campaign', data.currentCampaignID);
+		characters.orderBy('name');
+		characters.query();
+		while(characters.next()){
+			//characterIDString += characters.sys_id + ',';
+			var cObj = {
+				name: characters.name + '',
+				player: characters.player.getDisplayValue(),
+				sysID: characters.sys_id + '',
+				species: characters.species.getDisplayValue(),
+				speciesImg: characters.portrait + '.iix',
+				career: characters.career.getDisplayValue(),
+				visible: characters.visible_to_players ? true:false
+			};
+			if(cObj.speciesImg == '.iix'){
+				cObj.speciesImg = cObj.species.toLowerCase() + '.png';
+			}
+
+			if(characters.player.sys_id != data.currentCampaign.gmID){
 				data.campaignCharacters.push(cObj);
+				characterIDString += characters.sys_id + ',';
+			} else if(cObj.visible && !data.isGm){
+				data.npcs.push(cObj);
+			} else if(data.isGm){
+				data.npcs.push(cObj);
+				characterIDString += characters.sys_id + ',';
 			}
-			
-			//retrieve all vehicles assigned to a character within this campaign.
-			data.campaignVehicles = [];
-			var vehicles = new GlideRecord('x_176383_star_wars_character_vehicle');
-			vehicles.addQuery('character', 'IN', characterIDString);
-			vehicles.orderBy('name');
-			vehicles.query();
-			while(vehicles.next()){
-				var vObj = {
-					name: vehicles.name + '',
-					shipName: vehicles.vehicle.ship_name + '',
-					type: vehicles.vehicle.type.getDisplayValue(),
-					sysID: vehicles.sys_id + ''
-				};
-				data.campaignVehicles.push(vObj);
+		}
+
+		//retrieve all vehicles assigned to a character within this campaign.
+		data.campaignVehicles = [];
+		var vehicles = new GlideRecord('x_176383_star_wars_character_vehicle');
+		vehicles.addQuery('character', 'IN', characterIDString);
+		vehicles.orderBy('name');
+		vehicles.query();
+		while(vehicles.next()){
+			var vObj = {
+				character: vehicles.character.getDisplayValue(),
+				name: vehicles.name + '',
+				shipName: vehicles.vehicle.ship_name + '',
+				type: vehicles.vehicle.type.getDisplayValue(),
+				sysID: vehicles.sys_id + ''
+			};
+			data.campaignVehicles.push(vObj);
+		}
+
+		//retrieve campaign session notes
+		data.notes = [];
+		data.noteDates = [];
+		var notes = new GlideRecord('x_176383_star_wars_session_note');
+		notes.addQuery('campaign', data.currentCampaignID);
+		notes.orderByDesc('session_date');
+		notes.orderBy('character.name');
+		notes.query();
+		while(notes.next()){
+			var notesObj = {
+				sysID: notes.sys_id + '',
+				character: notes.character.getDisplayValue(),
+				notes: notes.notes + '',
+				date: notes.session_date + ''
+			};
+			if(notes.character.player == userID){
+				notesObj.canEdit = true;
+			} else{
+				notesObj.canEdit = false;
 			}
-			
-			//retrieve campaign session notes
-			data.notes = [];
-			data.noteDates = [];
-			var notes = new GlideRecord('x_176383_star_wars_session_note');
-			notes.addQuery('campaign', data.currentCampaignID);
-			notes.orderByDesc('session_date');
-			notes.orderBy('character.name');
-			notes.query();
-			while(notes.next()){
-				var notesObj = {
-					sysID: notes.sys_id + '',
-					character: notes.character.getDisplayValue(),
-					notes: notes.notes + '',
-					date: notes.session_date + ''
-				};
-				if(notes.character.player == userID){
-					notesObj.canEdit = true;
-				} else{
-					notesObj.canEdit = false;
-				}
-				data.notes.push(notesObj);
-				if(notes.session_date.getDisplayValue() != data.noteDates[data.noteDates.length - 1]){
-					data.noteDates.push(notes.session_date + '');
-				}
+			data.notes.push(notesObj);
+			if(notes.session_date.getDisplayValue() != data.noteDates[data.noteDates.length - 1]){
+				data.noteDates.push(notes.session_date + '');
 			}
-			data.hasActiveSession = false;
-			var sessionGR = new GlideRecord('x_176383_star_wars_game_session');
-			sessionGR.addQuery('campaign', data.currentCampaignID).addCondition('active', true);
-			sessionGR.query();
-			if(sessionGR.next()){
-				data.hasActiveSession = true;
-				data.activeSessionID = sessionGR.sys_id + '';
-			}
+		}
+		data.hasActiveSession = false;
+		var sessionGR = new GlideRecord('x_176383_star_wars_game_session');
+		sessionGR.addQuery('campaign', data.currentCampaignID).addCondition('active', true);
+		sessionGR.query();
+		if(sessionGR.next()){
+			data.hasActiveSession = true;
+			data.activeSessionID = sessionGR.sys_id + '';
+		}
 	}
-	
-	
+
+
 	if(input){
 		if(input.action == 'showCampaignDetail'){
 			data.currentCampaign = input.campaign;
+			data.isGm = (userID == data.currentCampaign.gmID) ? true : false;
 			//retrieve all characters within the selected campaign
 			data.campaignCharacters = [];
+			data.npcs = [];
 			var characterIDString = '';
 			characters = new GlideRecord('x_176383_star_wars_character');
 			characters.addQuery('campaign', input.campaign.sysID);
 			characters.orderBy('name');
 			characters.query();
 			while(characters.next()){
-				characterIDString += characters.sys_id + ',';
 				var cObj = {
 					name: characters.name + '',
 					player: characters.player.getDisplayValue(),
 					sysID: characters.sys_id + '',
 					species: characters.species.getDisplayValue(),
 					speciesImg: characters.portrait + '.iix',
-					career: characters.career.getDisplayValue()
+					career: characters.career.getDisplayValue(),
+					visible: characters.visible_to_players ? true:false
 				};
 				if(cObj.speciesImg == '.iix'){
 					cObj.speciesImg = cObj.species.toLowerCase() + '.png';
 				}
-				data.campaignCharacters.push(cObj);
+
+				if(characters.player.sys_id != data.currentCampaign.gmID){
+					data.campaignCharacters.push(cObj);
+					characterIDString += characters.sys_id + ',';
+				} else if(cObj.visible && !data.isGm){
+					data.npcs.push(cObj); 
+				} else if(data.isGm){
+					data.npcs.push(cObj);
+					characterIDString += characters.sys_id + ',';
+				}
 			}
-			
+
 			//retrieve all vehicles assigned to a character within this campaign.
 			data.campaignVehicles = [];
 			var vehicles = new GlideRecord('x_176383_star_wars_character_vehicle');
@@ -438,7 +500,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 				};
 				data.campaignVehicles.push(vObj);
 			}
-			
+
 			//retrieve campaign session notes
 			data.notes = [];
 			data.noteDates = [];
@@ -500,6 +562,11 @@ var characters = new GlideRecord('x_176383_star_wars_character');
 			character.available_xp += input.xp;
 			character.update();
 			gs.addInfoMessage(input.xp + ' XP added to ' + character.getDisplayValue());
+		} else if(input.action == 'npcVisibility'){
+			var character = new GlideRecord('x_176383_star_wars_character');
+			character.get(input.character.sysID);
+			character.visible_to_players = input.showHide;
+			character.update();
 		}
 	}
 })();]]></script>
@@ -509,7 +576,7 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>177</sys_mod_count>
+        <sys_mod_count>223</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -517,13 +584,13 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-10-04 15:45:11</sys_updated_on>
+        <sys_updated_on>2022-02-09 22:20:41</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
 
 <div class="col-xs-12 campaigns-container">
-	<div class="col-xs-12 campaigns-header">
+  <div class="col-xs-12 campaigns-header">
     <span class="col-xs-12 header text-center">Campaigns</span>
     <span class="col-xs-12 header star-wars-text text-center">Campaigns</span>
   </div>
@@ -558,6 +625,39 @@ var characters = new GlideRecord('x_176383_star_wars_character');
     <div ng-if="data.currentCampaign.gmID == data.userID" id="campaignIdButton">
       <span class="col-xs-12 campaign-id-title">Campaign ID: {{data.currentCampaign.sysID}}</span>
     </div>
+    <!-- session notes -->
+    <span class="col-xs-12 campaign-notes">
+      <span class="col-xs-12 detail-header text-center">Session Notes<br><text class="star-wars-text">Session Notes</text></span>
+      <span class="col-xs-12 session-record-buttons text-center">
+        <span ng-if="data.hasActiveSession" class="col-xs-12 col-md-6 active-session-button">
+          <button class="session-button">
+            <a href="?id=star_wars_game_session&table=x_176383_star_wars_game_session&sys_id={{data.activeSessionID}}&campaign={{data.currentCampaign.sysID}}">Active Session</a>
+          </button>
+        </span>
+        <span ng-if="data.currentCampaign.gmID == data.userID" class="col-xs-12 col-md-6" ng-click="newSession()">
+          <button class="session-button" id="newSessionButton">
+            <a href="{{data.newSessionURL}}">New Session</a>
+          </button>
+        </span>
+      </span>
+      <span class="col-xs-12 col-md-2" ng-repeat="date in data.noteDates">
+        <span class="col-xs-12 character note-selector">
+          <span class="col-xs-12 character-detail date">{{date}}</span>
+          <span class="col-xs-12 view-details-button-container">
+            <button class="text-center view-campaign-button notes-button" ng-click="viewNotes(date)">View Notes</button>
+          </span>
+        </span>
+      </span>
+    </span>
+    <!-- session notes details -->
+    <span ng-if="data.currentNotesDate" class="session-note-detail-container">
+      <span class="pull-right close-button-container"><i class="fas fa-times fa-2x" ng-click="closeNotesContainer()"></i></span>
+      <span ng-if="note.date == data.currentNotesDate" class="col-xs-12 session-note" ng-repeat="note in data.notes">
+        <span class="col-xs-12 note-detail date">{{note.character}}: <a href="?id=form&table=x_176383_star_wars_session_note&sys_id={{note.sysID}}" target="_blank"><i ng-if="note.canEdit" class="fas fa-pen-fancy"> Edit</i></a></span>
+        <span class="col-xs-12 note-detail" ng-bind-html="note.notes"></span>
+      </span>
+    </span>
+    <!-- characters -->
     <span class="col-xs-12 col-md-6 campaign-characters">
       <span class="col-xs-12 detail-header text-center">Characters<br><text class="star-wars-text">Characters</text></span>
       <span class="col-xs-12 character" ng-repeat="character in data.campaignCharacters">
@@ -577,46 +677,42 @@ var characters = new GlideRecord('x_176383_star_wars_character');
         </span>
       </span>
     </span>
+    <!-- Vehicles -->
     <span class="col-xs-12 col-md-6 campaign-vehicles">
       <span class="col-xs-12 detail-header text-center">Vehicles<br><text class="star-wars-text">Vehicles</text></span>
-      <span class="col-xs-12 vehicle" ng-repeat="vehicle in data.campaignVehicles">
+      <span class="col-xs-12 search-container">
+        <input type="text" ng-model="vehicleFilter" class="sw-input" placeholder="Filter Vehicles...">
+      </span>
+      <span class="col-xs-12 vehicle" ng-repeat="vehicle in data.campaignVehicles | filter:vehicleFilter">
         <a href="?id=star_wars_vehicle_sheet&vehicleID={{vehicle.sysID}}">
-        	<span class="col-xs-12 character-detail">Ship Name: {{vehicle.name}}</span>
+          <span class="col-xs-12 character-detail">Owner: {{vehicle.character}}</span>
+          <span class="col-xs-12 character-detail">Ship Name: {{vehicle.name}}</span>
           <span class="col-xs-12 character-detail">Model: {{vehicle.shipName}}</span>
           <span class="col-xs-12 character-detail">Type: {{vehicle.type}}</span>
         </a>
       </span>
     </span>
-    <!-- session notes -->
-    <span class="col-xs-12 campaign-notes">
-      <span class="col-xs-12 detail-header text-center">Session Notes<br><text class="star-wars-text">Session Notes</text></span>
-      <span class="col-xs-12 session-record-buttons text-center">
-        <span ng-if="data.hasActiveSession" class="col-xs-12 col-md-6 active-session-button">
-          <button class="session-button">
-            <a href="?id=star_wars_game_session&table=x_176383_star_wars_game_session&sys_id={{data.activeSessionID}}&campaign={{data.currentCampaign.sysID}}">Active Session</a>
-          </button>
-        </span>
-        <span ng-if="data.currentCampaign.gmID == data.userID" class="col-xs-12 col-md-6" ng-click="newSession()">
-          <button class="session-button" id="newSessionButton">
-            <a href="{{data.newSessionURL}}">New Session</a>
-          </button>
-        </span>
+    <!-- npcs -->
+    <span class="col-xs-12 npcs-container">
+      <span class="col-xs-12 detail-header text-center npc-header">NPCs<br><text class="star-wars-text">NPCs</text></span>
+      <span class="col-xs-12 search-container">
+        <input type="text" ng-model="npcFilter" class="sw-input" placeholder="Filter NPCs...">
       </span>
-      <span class="col-xs-12 col-md-2" ng-repeat="date in data.noteDates">
-        <span class="col-xs-12 character note-selector">
-        	<span class="col-xs-12 character-detail date">{{date}}</span>
-        	<span class="col-xs-12 view-details-button-container">
-          	<button class="text-center view-campaign-button notes-button" ng-click="viewNotes(date)">View Notes</button>
-        	</span>
-      	</span>
-      </span>
-    </span>
-    <!-- session notes details -->
-    <span ng-if="data.currentNotesDate" class="session-note-detail-container">
-      <span class="pull-right close-button-container"><i class="fas fa-times fa-2x" ng-click="closeNotesContainer()"></i></span>
-      <span ng-if="note.date == data.currentNotesDate" class="col-xs-12 session-note" ng-repeat="note in data.notes">
-        <span class="col-xs-12 note-detail date">{{note.character}}: <a href="?id=form&table=x_176383_star_wars_session_note&sys_id={{note.sysID}}" target="_blank"><i ng-if="note.canEdit" class="fas fa-pen-fancy"> Edit</i></a></span>
-        <span class="col-xs-12 note-detail" ng-bind-html="note.notes"></span>
+      <span class="col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="character in data.npcs | filter: npcFilter">
+        <span class="col-xs-12 character npc">
+          <span class="col-xs-3 species-img"><img src="{{character.speciesImg}}" height="150" width="75"/></span>
+          <span class="col-xs-9 character-details">
+            <a href="?id=star_wars_character_sheet&character_id={{character.sysID}}">
+              <span class="col-xs-12 character-detail">Name: {{character.name}}</span>
+              <span class="col-xs-12 character-detail">Species: {{character.species}}</span>
+              <span class="col-xs-12 character-detail">Career: {{character.career}}</span>
+            </a>
+          </span>
+          <span ng-if="data.isGm" class="col-xs-12 gm-button">
+            <button ng-if="!character.visible" class="make-visible-button visibility-button" ng-click="toggleNPCVisibility(character, true)">Show NPC</button>
+            <button ng-if="character.visible" class="hide-button visibility-button" ng-click="toggleNPCVisibility(character, false)">Hide NPC</button>
+          </span>
+        </span>
       </span>
     </span>
   </div>

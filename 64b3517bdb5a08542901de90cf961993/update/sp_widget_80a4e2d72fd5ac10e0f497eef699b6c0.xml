@@ -78,10 +78,6 @@
 }
 
 .sw-input{
-  border:1px groove #e21414;
-  background-color:black;
-  border-radius:20px;
-  margin-bottom:10px;
   text-align:center;
 }
 
@@ -188,6 +184,10 @@ a:hover{
   border:1px groove #1933f4;
   border-radius:20px;
   box-shadow:0px 0px 6px 3px #1933f4;
+  
+  .species-img{
+  	padding:0;
+  }
 }
 
 .search-container{
@@ -319,6 +319,8 @@ a:hover{
   .search-container{
   	position:relative;
     text-align:center;
+    top:initial;
+    right:initial;
   }
 }</css>
         <data_table>sp_instance</data_table>
@@ -585,7 +587,7 @@ a:hover{
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>224</sys_mod_count>
+        <sys_mod_count>228</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -593,7 +595,7 @@ a:hover{
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-02-10 15:31:58</sys_updated_on>
+        <sys_updated_on>2022-02-16 19:34:29</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -670,7 +672,7 @@ a:hover{
     <span class="col-xs-12 col-md-6 campaign-characters">
       <span class="col-xs-12 detail-header text-center">Characters<br><text class="star-wars-text">Characters</text></span>
       <span class="col-xs-12 character" ng-repeat="character in data.campaignCharacters">
-        <span class="col-xs-3 species-img"><img src="{{character.speciesImg}}" height="150" width="75"/></span>
+        <span class="col-xs-3 species-img"><img src="{{character.speciesImg}}" height="150" width="130"/></span>
         <span class="col-xs-9 character-details">
           <a href="?id=star_wars_character_sheet&character_id={{character.sysID}}">
             <span class="col-xs-12 character-detail">Name: {{character.name}}</span>
@@ -709,7 +711,7 @@ a:hover{
       </span>
       <span class="col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="character in data.npcs | filter: npcFilter">
         <span class="col-xs-12 character npc">
-          <span class="col-xs-3 species-img"><img src="{{character.speciesImg}}" height="150" width="75"/></span>
+          <span class="col-xs-3 species-img"><img src="{{character.speciesImg}}" height="150" width="130"/></span>
           <span class="col-xs-9 character-details">
             <a href="?id=star_wars_character_sheet&character_id={{character.sysID}}">
               <span class="col-xs-12 character-detail">Name: {{character.name}}</span>

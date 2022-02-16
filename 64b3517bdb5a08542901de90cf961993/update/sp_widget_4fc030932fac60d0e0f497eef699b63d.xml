@@ -2,14 +2,18 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[api.controller=function($scope, spUtil, $location) {
-  /* widget controller */
-  var c = this;
-	
+	/* widget controller */
+	var c = this;
+
 	if($scope.data.goToActive){
 		alert('There is a new active session for this campaign.  Taking you there now...');
-		$location.search('sys_id', $scope.data.activeSession);
+		if($scope.data.page == 'star_wars_character_sheet'){
+			$location.search('session_id', response.data.activeSession);
+		} else{
+			$location.search('sys_id', response.data.activeSession);
+		}
 	}
-	
+
 	$scope.saveDestinyPoints = function(){
 		var light = parseInt(document.getElementById('lightSideInput').value);
 		var dark = parseInt(document.getElementById('darkSideInput').value);
@@ -17,20 +21,24 @@
 			c.server.refresh();
 		});
 	}
-	
+
 	$scope.useDestinyPoint = function(side){
 		c.server.get({action: 'useDestinyPoint', side: side}).then(function(response){
 			c.server.refresh();
 		});
 	}
-	
+
 	var q = "sys_id=" + $scope.data.sessionDetails.sysID;
 	spUtil.recordWatch($scope, "x_176383_star_wars_game_session", q, function(event, data) {
-   //spUtil.update($scope);
+		//spUtil.update($scope);
 		c.server.get({action: 'checkActive'}).then(function(response){
 			if(response.data.goToActive){
 				alert('There is a new active session for this campaign.  Taking you there now...');
-				$location.search('sys_id', response.data.activeSession);
+				if($scope.data.page == 'star_wars_character_sheet'){
+					$location.search('session_id', response.data.activeSession);
+				} else{
+					$location.search('sys_id', response.data.activeSession);
+				}
 			} else{
 				spUtil.update($scope);
 			}
@@ -123,10 +131,10 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 	data.isGM = false;
-	var gameSession = $sp.getParameter('sys_id');
+	data.page = $sp.getParameter('id');
+	var gameSession = $sp.getParameter('session_id') || options.sessionID || $sp.getParameter('sys_id');
 	var sessionGR = new GlideRecord('x_176383_star_wars_game_session');
 	sessionGR.get(gameSession);
-	
 	if(sessionGR.campaign.game_master == gs.getUserID()){
 		data.isGM = true;
 	}
@@ -187,15 +195,15 @@
         <sys_created_on>2020-11-23 05:45:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4fc030932fac60d0e0f497eef699b63d</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>Star Wars Game Session</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_4fc030932fac60d0e0f497eef699b63d</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-10-04 19:21:35</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-02-16 16:11:06</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

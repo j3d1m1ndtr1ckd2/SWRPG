@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.savePreferences = function(){
+		for(var i = 0; i < $scope.data.preferences.length; i++){
+			if($scope.data.preferences[i].type == 'boolean'){
+				$scope.data.preferences[i].value = document.querySelector('#' + $scope.data.preferences[i].name).checked;
+			} else{
+				$scope.data.preferences[i].value = document.querySelector('#' + $scope.data.preferences[i].name).value;		
+			}
+		}
+		c.server.get({action: 'savePreferences', preferences: $scope.data.preferences});
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.preferences-container{
+  display:flex;
+  flex-flow:column nowrap;
+
+  .preferences-header{
+    flex:1 0 auto;
+    order:0;
+    align-self:center;
+  }
+
+  .preferences-body{
+    flex:1 0 auto;
+    order:1;
+    align-self:flex-start;
+    display:flex;
+    flex-flow:column wrap;
+
+    .preference{
+      display:flex;
+      flex-flow:column wrap;
+      justify-content:center;
+      align-items:flex-start;
+      
+      .pref-title{
+        order:0;
+        flex:1 0 auto;
+      }
+
+      .pref-boolean,.pref-string{
+        order:1;
+        flex:0 0 auto;
+      }
+    }
+  }
+
+  .preferences-button-container{
+    order:2;
+    flex:1 0 auto;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+
+    .save-preference-button{
+      background: transparent;
+      box-shadow: 0px 0px 4px 2px #1933f4;
+      border: 1px groove #1933f4;
+      border-radius: 20px;
+      padding: 3px 25px 3px 25px;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>star_wars_user_preferences</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars User Preferences</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.preferences = JSON.parse(gs.getProperty('x_176383_star_wars.swrpg.user_preferences'));
+	var user = gs.getUser();
+	for(var i = 0; i < data.preferences.length; i++){
+		data.preferences[i].value = user.getPreference(data.preferences[i].name) || '';
+	}
+
+	if(input){
+		if(input.action == 'savePreferences'){
+			try{
+			var user = gs.getUser();
+			for(var i = 0; i < input.preferences.length; i++){
+				user.savePreference(input.preferences[i].name, input.preferences[i].value);
+			}
+				gs.addInfoMessage('User Preferences Successfully Modded');
+			} catch(e){
+				gs.addErrorMessage('Error modding user preferences: ' + e.message);
+			}
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-02-14 17:54:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47df52632f690190e0f497eef699b644</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Star Wars User Preferences</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_47df52632f690190e0f497eef699b644</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-02-14 20:12:38</sys_updated_on>
+        <template><![CDATA[<div class="preferences-container">
+  <div class="preferences-header">
+    <span class="english-text"><h2>Mos Espa Modder Shop</h2></span>
+    <span class="star-wars-text"><h4 class="star-wars-text">Mos Espa Modder Shop</h4></span>
+  </div>
+  <div class="preferences-body">
+    <span class="preference" ng-repeat-start="pref in data.preferences" ng-switch="pref.type">
+      <span class="pref-title pref-detail">{{pref.description}}</span>
+      <span class="pref-detail pref-boolean" ng-switch-when="boolean">
+        <input class="sw-input" type="checkbox" id="{{pref.name}}" ng-checked="{{pref.value}}" value="{{pref.value}}">
+      </span>
+      <span class="pref-detail pref-string" ng-switch-when="string">
+        <input class="sw-input" type="text" id="{{pref.name}}" value="{{pref.value}}">
+      </span>
+      <span class="pref-detail pref-string" ng-switch-when="number">
+        <input class="sw-input" type="text" id="{{pref.name}}" value="{{pref.value}}" pattern="[0-9]*" inputmode="numeric">
+      </span>
+    </span>
+    <hr ng-repeat-end>
+  </div>
+  <div class="preferences-button-container">
+    <button class="save-preference-button" ng-click="savePreferences()">Save<br/><text class="star-wars-text">Save</text></button>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

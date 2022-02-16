@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $location, spUtil) {
+	/* widget controller */
+	var c = this;
+
+	if($scope.data.sessionID != ''){
+		$location.search('session_id', $scope.data.sessionID);
+	}
+
+	$scope.displayOption = function(obj){
+		spUtil.get(obj.widgetID, obj.widgetParms).then(function(response){
+			c.currentWidget = response;
+			c.showEmbeddedWidget = true;
+		});
+
+		//draggable code
+		setTimeout(dragElement(document.getElementById("draggableContainer")),1000);
+
+		function dragElement(elmnt) {
+			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+			if (document.getElementById('draggableContainerheader')) {
+				// if present, the header is where you move the DIV from:
+				document.getElementById('draggableContainerheader').onmousedown = dragMouseDown;
+			} else {
+				// otherwise, move the DIV from anywhere inside the DIV:
+				elmnt.onmousedown = dragMouseDown;
+			}
+
+			function dragMouseDown(e) {
+				e = e || window.event;
+				e.preventDefault();
+				// get the mouse cursor position at startup:
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				document.onmouseup = closeDragElement;
+				// call a function whenever the cursor moves:
+				document.onmousemove = elementDrag;
+			}
+
+			function elementDrag(e) {
+				e = e || window.event;
+				e.preventDefault();
+				// calculate the new cursor position:
+				pos1 = pos3 - e.clientX;
+				pos2 = pos4 - e.clientY;
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				// set the element's new position:
+				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+			}
+
+			function closeDragElement() {
+				// stop moving when mouse button is released:
+				document.onmouseup = null;
+				document.onmousemove = null;
+			}
+		}
+	}
+
+	$scope.closeWidget = function(){
+		c.clearme = true;
+		c.showEmbeddedWidget = false;
+		c.currentWidget = '';
+		setTimeout(function(){
+			c.clearme = false;
+		},100);
+		spUtil.update($scope);
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.gametable-parent-container{
+  display:flex;
+  flex-flow:column nowrap;
+
+  .container-visible{
+    display:inline;
+  }
+
+  .container-hidden{
+    display:none;
+  }
+
+  .open-button-container{
+    order:0;
+    font-size:1.8rem;
+    position: fixed;
+    right: -3.2rem;
+    top: 50%;
+    transform: rotate(270deg);
+    border-radius: 25px 25px 0 0px;
+    padding: 10px 0 10px 0;
+    background-color: black;
+    border: 1px groove #e21414;
+    box-shadow: 0px 0px 8px 5px darkgrey;
+    z-index: 10000;
+
+    .open-button{
+      padding:1rem;
+    }
+  }
+
+  .options-closed{
+    width:0;
+  }
+
+  .options-open{
+    width:25%;
+  }
+
+  .gametable-container{
+    display:flex;
+    flex-flow:column nowrap;
+    background-color:black;
+    border: 1px groove #e21414;
+    transition:all .5s ease-in-out;
+    position:fixed;
+    right:0;
+    top:0;
+    height:100%;
+
+    .close-button-container{
+      order: 0;
+      flex:0 0 auto;
+      align-self:flex-end;
+      margin-top:1.5rem;
+      margin-right:1rem;
+
+      .fa-swords-laser{
+        font-size:1.8rem;
+        color:red;
+      }
+    }
+
+    .options-container{
+      order: 0;
+      flex:0 0 auto;
+      display:flex;
+      flex-flow:column nowrap;
+
+      .gametable-option{
+        padding:1.5rem;
+        border-bottom:1px solid lightgray;
+      }
+    }
+  }
+
+  .embedded-widget-container{
+    position:absolute;
+    top:5%;
+    left:6.5rem;
+    width:90%;
+    background-color:black;
+    display:flex;
+    flex-flow:column nowrap;
+    border: 2px groove #1933f4;
+    border-radius:2rem;
+    box-shadow: 0px 0px 8px 3px #1933f4;
+    padding:2rem;
+    resize:both;
+    overflow:auto;
+
+    .close-button-container{
+      cursor: move;
+      text-align:right;
+      order: 0;
+      flex:0 0 auto;
+      align-self:flex-end;
+      padding:3rem;
+
+      .fa-swords-laser{
+        font-size:1.8rem;
+        color:red;
+      }
+    }
+
+    .gt-widget{
+      margin:1rem;
+    }
+  }
+}
+
+@media (max-width:992px){
+  .gametable-parent-container{
+    display:none;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_character_sheet_gameboard</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Character Sheet Gameboard</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var character = new GlideRecord('x_176383_star_wars_character');
+	character.get($sp.getParameter('character_id'));
+	var session = new GlideRecord('x_176383_star_wars_game_session');
+	session.addActiveQuery().addCondition('campaign', character.campaign);
+	session.query();
+	var sessionID = '';
+	if(session.next()){
+		sessionID = session.sys_id + '';
+	}
+	data.sessionID = sessionID;
+	if(data.sessionID != ''){
+		data.gametableOptions = [];
+
+		var destiny = {
+			widgetID: 'star_wars_game_session',
+			widgetParms: {sessionID: sessionID},
+			label: 'Destiny Points'
+		};
+		data.gametableOptions.push(destiny);
+
+
+		var diceRoller = {
+			widgetID: 'star_wars_rpg_dice_roller',
+			widgetParms: {sessionID: sessionID},
+			label: 'Dice Roller'
+		};
+		data.gametableOptions.push(diceRoller);	
+
+		var holocron = {
+			widgetID: 'holocron',
+			widgetParms: {},
+			label: 'Holocron'
+		};
+		data.gametableOptions.push(holocron);
+
+		var rulebook = {
+			widgetID: 'swrpg_knowledge',
+			widgetParms: {},
+			label: 'Core Rulebook'
+		};
+		data.gametableOptions.push(rulebook);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-02-14 20:28:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d1130f2f2f2d0190e0f497eef699b6ed</sys_id>
+        <sys_mod_count>217</sys_mod_count>
+        <sys_name>Star Wars Character Sheet Gameboard</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_d1130f2f2f2d0190e0f497eef699b6ed</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-02-16 18:03:14</sys_updated_on>
+        <template><![CDATA[<div ng-if="data.sessionID != ''" class="gametable-parent-container" ng-init="c.clearme = false; c.showEmbeddedWidget = false; c.showOpenButton = true">
+  <div ng-class="{'container-visible':c.showOpenButton, 'container-hidden':!c.showOpenButton}" class="open-button-container" ng-init="c.showGametable = false" ng-click="c.showOpenButton = false">
+    <span class="open-button" ng-click="c.showGametable = true">Open Gametable</span>
+  </div>
+  <div class="gametable-container" ng-class="{'options-open': c.showGametable, 'options-closed': !c.showGametable}">
+    <span class="close-button-container" ng-class="{'container-visible':c.showGametable, 'container-hidden':!c.showGametable}"><i class="fas fa-swords-laser" ng-click="c.showOpenButton = true; c.showGametable = false"></i></span>
+    <div class="options-container" ng-init="c.currentWidget = '';c.subWidget = ''">
+      <span class="gametable-option" ng-repeat="gto in data.gametableOptions" ng-click="displayOption(gto)">{{gto.label}}</span>
+    </div>
+  </div>
+  <div ng-show="c.showEmbeddedWidget" ng-if="!c.clearme" class="embedded-widget-container" id="draggableContainer">
+    <div class="close-button-container col-xs-12" id="draggableContainerheader"><i class="fas fa-swords-laser fa-2x" ng-click="closeWidget()"></i></div>
+    <sp-widget ng-if="c.showEmbeddedWidget" class="gt-widget" widget="c.currentWidget"/>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

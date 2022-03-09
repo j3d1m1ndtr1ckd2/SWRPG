@@ -7,6 +7,22 @@
 
 	if($scope.data.sessionID != ''){
 		$location.search('session_id', $scope.data.sessionID);
+
+		var q = "sys_id=" + $scope.data.sessionID;
+		spUtil.recordWatch($scope, "x_176383_star_wars_game_session", q, function(event, data) {
+			c.server.get({action: 'checkActive', sessionID: $scope.data.sessionID}).then(function(response){
+				if(response.data.goToActive){
+					alert('There is a new active session for this campaign.  Click OK to refresh.');
+					if($scope.data.page == 'star_wars_character_sheet'){
+						$location.search('session_id', response.data.activeSession);
+					} else{
+						$location.search('sys_id', response.data.activeSession);
+					}
+				} else{
+					spUtil.update($scope);
+				}
+			});
+		});
 	}
 
 	$scope.displayOption = function(obj){
@@ -245,6 +261,18 @@
 		};
 		data.gametableOptions.push(rulebook);
 	}
+	
+	if(input){
+		if(input.action == 'checkActive'){
+				var newSession = new GlideRecord('x_176383_star_wars_game_session');
+				newSession.addQuery('campaign', character.campaign).addCondition('active', true);
+				newSession.query();
+				if(newSession.next() && newSession.sys_id != input.sessionID){
+					data.goToActive = true;
+					data.activeSession = newSession.sys_id + '';
+				}
+		}
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -252,7 +280,7 @@
         <sys_created_on>2022-02-14 20:28:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d1130f2f2f2d0190e0f497eef699b6ed</sys_id>
-        <sys_mod_count>217</sys_mod_count>
+        <sys_mod_count>219</sys_mod_count>
         <sys_name>Star Wars Character Sheet Gameboard</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -260,7 +288,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_d1130f2f2f2d0190e0f497eef699b6ed</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-02-16 18:03:14</sys_updated_on>
+        <sys_updated_on>2022-02-20 13:21:22</sys_updated_on>
         <template><![CDATA[<div ng-if="data.sessionID != ''" class="gametable-parent-container" ng-init="c.clearme = false; c.showEmbeddedWidget = false; c.showOpenButton = true">
   <div ng-class="{'container-visible':c.showOpenButton, 'container-hidden':!c.showOpenButton}" class="open-button-container" ng-init="c.showGametable = false" ng-click="c.showOpenButton = false">
     <span class="open-button" ng-click="c.showGametable = true">Open Gametable</span>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>137d46722f4a8150e0f497eef699b608</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_signature_ability"&gt;
+    &lt;x_176383_star_wars_signature_ability action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Consular"&gt;95705ab92fe35050e0f497eef699b6c9&lt;/career&gt;
+        &lt;cost_to_purchase&gt;30&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Once per game session as an incidental, the character may spend 2 destiny points.  For the rest of the round, whenever that character makes a Charm, Coercion, Deception, or Negotiation check, the character downgrades the difficulty of the check the number of times needed to remove all Challenge dice from the pool, before rolling the dice.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Unmatched Negotiation&lt;/name&gt;
+        &lt;number&gt;SIG0001009&lt;/number&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-03-09 05:20:04&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;137d46722f4a8150e0f497eef699b608&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-03-09 05:20:04&lt;/sys_updated_on&gt;
+        &lt;unlock_criteria&gt;{"healer":"d0cf78d42f3bd850e0f497eef699b630,5510c5182f3bd850e0f497eef699b62f","niman disciple":"5dcac9142f7bd850e0f497eef699b630,594ac9902f7bd850e0f497eef699b68a","sage":"cded17dc2fb31c50e0f497eef699b62a,517ddf9c2fb31c50e0f497eef699b673"}&lt;/unlock_criteria&gt;
+    &lt;/x_176383_star_wars_signature_ability&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-03-09 05:44:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1b45d6be2f4a8150e0f497eef699b62b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Unmatched Negotiation</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_1b45d6be2f4a8150e0f497eef699b62b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-03-09 05:44:14</sys_updated_on>
+        <tablename>x_176383_star_wars_signature_ability</tablename>
+    </sys_metadata_link>
+</record_update>

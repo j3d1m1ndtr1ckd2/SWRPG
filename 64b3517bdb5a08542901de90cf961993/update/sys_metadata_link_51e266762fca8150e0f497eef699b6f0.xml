@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>567e5e7e2f8a8150e0f497eef699b68e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_force_power"&gt;
+    &lt;x_176383_star_wars_force_power action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;The basic power of Endure allows a force user to temporarily ignore the effects of injury.  The basic power has one way to commit force dice:&lt;/p&gt;
+&lt;p&gt;When the character suffers a Critical Injury with a severity no greater than Easy (1 difficulty die), the character may activate Endure as an out-of-turn incidental, committing one force die.  While the force die remains committed, the character ignores the effects of that critical injury.  This mean they do not apply any results from the critical injury or add &amp;#43;10 to further rolls on the Critical Injury Result table while the force die remains committed.  When this ongoing effect ends, the character suffers all effects of the critical injury unless it has been treated.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;minimum_force_rating&gt;1&lt;/minimum_force_rating&gt;
+        &lt;name&gt;Endure&lt;/name&gt;
+        &lt;number&gt;FORCE0001016&lt;/number&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-03-09 06:26:48&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;567e5e7e2f8a8150e0f497eef699b68e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-03-09 06:26:48&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_force_power&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-03-09 06:43:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>51e266762fca8150e0f497eef699b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Endure</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_51e266762fca8150e0f497eef699b6f0</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-03-09 06:43:38</sys_updated_on>
+        <tablename>x_176383_star_wars_force_power</tablename>
+    </sys_metadata_link>
+</record_update>

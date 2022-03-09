@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>17eb34f62f028150e0f497eef699b63f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_signature_ability_upgrade"&gt;
+    &lt;x_176383_star_wars_signature_ability_upgrade action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Unmatched Pursuit lasts for 1 additional round per Duration Upgrade.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Duration&lt;/name&gt;
+        &lt;pre_requisite_upgrades&gt;037b34f62f028150e0f497eef699b638,f51c38762f028150e0f497eef699b624&lt;/pre_requisite_upgrades&gt;
+        &lt;signature_ability display_value="Unmatched Pursuit"&gt;dfd938362f028150e0f497eef699b62f&lt;/signature_ability&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-03-08 23:14:21&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;17eb34f62f028150e0f497eef699b63f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-03-08 23:17:43&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_signature_ability_upgrade&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-03-09 04:58:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>15ca0a3e2f0a8150e0f497eef699b670</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_15ca0a3e2f0a8150e0f497eef699b670</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-03-09 04:58:14</sys_updated_on>
+        <tablename>x_176383_star_wars_signature_ability_upg</tablename>
+    </sys_metadata_link>
+</record_update>

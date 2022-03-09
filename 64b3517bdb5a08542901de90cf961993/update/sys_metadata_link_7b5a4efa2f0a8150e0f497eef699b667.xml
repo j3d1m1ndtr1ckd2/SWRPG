@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c282a2462f8a4d10e0f497eef699b616</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_signature_ability"&gt;
+    &lt;x_176383_star_wars_signature_ability action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Seeker"&gt;c1a6afeb2f235850e0f497eef699b628&lt;/career&gt;
+        &lt;cost_to_purchase&gt;30&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Once per session as an action, the character may spend two Destiny Points and make a hard (3 difficulty dice) perception check.  If successful, for the next two rounds the character may spend one maneuver to add one automatic triumph to his next combat check made in that turn.  In addition, for the next two rounds, when the character inflicts a critical injury on a rival NPC, the target is immediately incapacitated in the same way as a minion NPC would be.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Unexpected Demise&lt;/name&gt;
+        &lt;number&gt;SIG0001001&lt;/number&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-03-06 22:50:47&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c282a2462f8a4d10e0f497eef699b616&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-03-07 22:18:05&lt;/sys_updated_on&gt;
+        &lt;unlock_criteria&gt;{"ataru striker":"d78d4bb72f5ce090e0f497eef699b654,875d8fb72f5ce090e0f497eef699b68d","hermit":"7b97c2902f89b810e0f497eef699b661,4e87ced42f49b810e0f497eef699b6da","hunter":"f05f873b2f5ce090e0f497eef699b600,089f4b3b2f5ce090e0f497eef699b67d","pathfinder":"6642dffb2f5ce090e0f497eef699b69f,6d52933f2f5ce090e0f497eef699b6d0"}&lt;/unlock_criteria&gt;
+    &lt;/x_176383_star_wars_signature_ability&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-03-09 04:56:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7b5a4efa2f0a8150e0f497eef699b667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Unexpected Demise</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_7b5a4efa2f0a8150e0f497eef699b667</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-03-09 04:56:29</sys_updated_on>
+        <tablename>x_176383_star_wars_signature_ability</tablename>
+    </sys_metadata_link>
+</record_update>

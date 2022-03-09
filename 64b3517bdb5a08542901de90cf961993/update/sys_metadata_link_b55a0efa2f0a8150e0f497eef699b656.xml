@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a60041fe2f028150e0f497eef699b673</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_signature_ability"&gt;
+    &lt;x_176383_star_wars_signature_ability action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Bounty Hunter"&gt;6a1a8b8b2fb31890e0f497eef699b6e8&lt;/career&gt;
+        &lt;cost_to_purchase&gt;30&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Once per game session, the character may choose a minion NPC to be her mark.  She must know this NPC&amp;#39;s identity and basic personal information (or have another lead of comparable quality, per the GM&amp;#39;s discretion), and must know that the NPC is on the same planet.  She spends 2 destiny points and makes a Hard (3 difficulty dice) Streetwise check.  If she succeeds, the character tracks down the chosen mark, and a new encounter begins as the character reaches the mark&amp;#39;s location.&lt;/p&gt;
+&lt;p&gt;The exact nature of this encounter, as well as the circumstances under which it takes place, must be approved by the GM.  When making the skill check to activate Always Get My Mark, the GM can add boost or setback dice for any situational effects that might affect the difficulty of the check.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Always Get My Mark&lt;/name&gt;
+        &lt;number&gt;SIG0001006&lt;/number&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-03-08 23:39:11&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;a60041fe2f028150e0f497eef699b673&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-03-08 23:39:11&lt;/sys_updated_on&gt;
+        &lt;unlock_criteria&gt;{"assassin":"7813c56f2f846050e0f497eef699b6f1,4443cdeb2f846050e0f497eef699b69e","gadgeteer":"be9585232fc46050e0f497eef699b6b4,bdc581232fc46050e0f497eef699b633","survivalist":"bee7c1a32fc46050e0f497eef699b6e4,a2d7c1a32fc46050e0f497eef699b6e1","martial artist":"5f3454652f910110e0f497eef699b680,e86490a52f910110e0f497eef699b655"}&lt;/unlock_criteria&gt;
+    &lt;/x_176383_star_wars_signature_ability&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-03-09 04:56:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b55a0efa2f0a8150e0f497eef699b656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Always Get My Mark</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_b55a0efa2f0a8150e0f497eef699b656</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-03-09 04:56:21</sys_updated_on>
+        <tablename>x_176383_star_wars_signature_ability</tablename>
+    </sys_metadata_link>
+</record_update>

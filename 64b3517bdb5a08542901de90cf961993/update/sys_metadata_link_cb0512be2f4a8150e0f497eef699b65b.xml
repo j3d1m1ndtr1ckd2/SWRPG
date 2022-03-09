@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e4a0d6762f4a8150e0f497eef699b68f</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_signature_ability_upgrade"&gt;
+    &lt;x_176383_star_wars_signature_ability_upgrade action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;10&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;While Unmatched Negotiation is active, allied characters engaged with the character who make Negotiation, Charm, Deception, or Coercion checks may downgrade the difficulty of those checks once.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Increase Effect&lt;/name&gt;
+        &lt;pre_requisite_upgrades&gt;46cf42762f4a8150e0f497eef699b671&lt;/pre_requisite_upgrades&gt;
+        &lt;signature_ability display_value="Unmatched Negotiation"&gt;137d46722f4a8150e0f497eef699b608&lt;/signature_ability&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-03-09 05:29:26&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;e4a0d6762f4a8150e0f497eef699b68f&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-03-09 05:29:26&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_signature_ability_upgrade&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-03-09 05:43:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cb0512be2f4a8150e0f497eef699b65b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_cb0512be2f4a8150e0f497eef699b65b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-03-09 05:43:07</sys_updated_on>
+        <tablename>x_176383_star_wars_signature_ability_upg</tablename>
+    </sys_metadata_link>
+</record_update>

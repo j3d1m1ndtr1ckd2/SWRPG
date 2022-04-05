@@ -219,58 +219,62 @@
         <script><![CDATA[(function() {
 	/* populate the 'data' object */
 	/* e.g., data.table = $sp.getValue('table'); */
-	var character = new GlideRecord('x_176383_star_wars_character');
-	character.get($sp.getParameter('character_id'));
-	var session = new GlideRecord('x_176383_star_wars_game_session');
-	session.addActiveQuery().addCondition('campaign', character.campaign);
-	session.query();
-	var sessionID = '';
-	if(session.next()){
-		sessionID = session.sys_id + '';
+	var user = gs.getUser();
+	data.showGameTable = user.getPreference('show_character_sheet_gametable');
+	if(data.showGameTable == 'true'){
+		var character = new GlideRecord('x_176383_star_wars_character');
+		character.get($sp.getParameter('character_id'));
+		var session = new GlideRecord('x_176383_star_wars_game_session');
+		session.addActiveQuery().addCondition('campaign', character.campaign);
+		session.query();
+		var sessionID = '';
+		if(session.next()){
+			sessionID = session.sys_id + '';
+		}
+		data.sessionID = sessionID;
+		if(data.sessionID != ''){
+			data.gametableOptions = [];
+
+			var destiny = {
+				widgetID: 'star_wars_game_session',
+				widgetParms: {sessionID: sessionID},
+				label: 'Destiny Points'
+			};
+			data.gametableOptions.push(destiny);
+
+
+			var diceRoller = {
+				widgetID: 'star_wars_rpg_dice_roller',
+				widgetParms: {sessionID: sessionID},
+				label: 'Dice Roller'
+			};
+			data.gametableOptions.push(diceRoller);	
+
+			var holocron = {
+				widgetID: 'holocron',
+				widgetParms: {},
+				label: 'Holocron'
+			};
+			data.gametableOptions.push(holocron);
+
+			var rulebook = {
+				widgetID: 'swrpg_knowledge',
+				widgetParms: {},
+				label: 'Core Rulebook'
+			};
+			data.gametableOptions.push(rulebook);
+		}
 	}
-	data.sessionID = sessionID;
-	if(data.sessionID != ''){
-		data.gametableOptions = [];
 
-		var destiny = {
-			widgetID: 'star_wars_game_session',
-			widgetParms: {sessionID: sessionID},
-			label: 'Destiny Points'
-		};
-		data.gametableOptions.push(destiny);
-
-
-		var diceRoller = {
-			widgetID: 'star_wars_rpg_dice_roller',
-			widgetParms: {sessionID: sessionID},
-			label: 'Dice Roller'
-		};
-		data.gametableOptions.push(diceRoller);	
-
-		var holocron = {
-			widgetID: 'holocron',
-			widgetParms: {},
-			label: 'Holocron'
-		};
-		data.gametableOptions.push(holocron);
-
-		var rulebook = {
-			widgetID: 'swrpg_knowledge',
-			widgetParms: {},
-			label: 'Core Rulebook'
-		};
-		data.gametableOptions.push(rulebook);
-	}
-	
 	if(input){
 		if(input.action == 'checkActive'){
-				var newSession = new GlideRecord('x_176383_star_wars_game_session');
-				newSession.addQuery('campaign', character.campaign).addCondition('active', true);
-				newSession.query();
-				if(newSession.next() && newSession.sys_id != input.sessionID){
-					data.goToActive = true;
-					data.activeSession = newSession.sys_id + '';
-				}
+			var newSession = new GlideRecord('x_176383_star_wars_game_session');
+			newSession.addQuery('campaign', character.campaign).addCondition('active', true);
+			newSession.query();
+			if(newSession.next() && newSession.sys_id != input.sessionID){
+				data.goToActive = true;
+				data.activeSession = newSession.sys_id + '';
+			}
 		}
 	}
 })();]]></script>
@@ -280,7 +284,7 @@
         <sys_created_on>2022-02-14 20:28:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d1130f2f2f2d0190e0f497eef699b6ed</sys_id>
-        <sys_mod_count>219</sys_mod_count>
+        <sys_mod_count>222</sys_mod_count>
         <sys_name>Star Wars Character Sheet Gameboard</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -288,8 +292,8 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_d1130f2f2f2d0190e0f497eef699b6ed</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-02-20 13:21:22</sys_updated_on>
-        <template><![CDATA[<div ng-if="data.sessionID != ''" class="gametable-parent-container" ng-init="c.clearme = false; c.showEmbeddedWidget = false; c.showOpenButton = true">
+        <sys_updated_on>2022-03-09 17:42:39</sys_updated_on>
+        <template><![CDATA[<div ng-if="data.showGameTable == 'true' && data.sessionID != ''" class="gametable-parent-container" ng-init="c.clearme = false; c.showEmbeddedWidget = false; c.showOpenButton = true">
   <div ng-class="{'container-visible':c.showOpenButton, 'container-hidden':!c.showOpenButton}" class="open-button-container" ng-init="c.showGametable = false" ng-click="c.showOpenButton = false">
     <span class="open-button" ng-click="c.showGametable = true">Open Gametable</span>
   </div>

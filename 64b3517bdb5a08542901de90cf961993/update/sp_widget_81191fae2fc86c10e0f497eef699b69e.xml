@@ -102,7 +102,9 @@
 
 	$scope.purchaseNewSpec = function(newSpec){
 		c.server.get({action: 'buyNewSpec', spec: newSpec}).then(function(response){
-			c.server.refresh();
+			c.server.refresh().then(function(){
+				setTimeout(clearDiceRolls, 100);
+			});
 		});
 	}
 
@@ -111,26 +113,34 @@
 			return false;
 		} else{
 			c.server.get({action: 'buySignatureAbility', ability: ability, talentTree: talentTree}).then(function(response){
-				c.server.refresh();
+				c.server.refresh().then(function(){
+					setTimeout(clearDiceRolls, 100);
+				});
 			});
 		}
 	}
 
 	$scope.purchaseSignatureAbilityUpgrade = function(upgrade){
 		c.server.get({action: 'buySignatureAbilityUpgrade', upgrade: upgrade}).then(function(response){
-			c.server.refresh();
+			c.server.refresh().then(function(){
+				setTimeout(clearDiceRolls, 100);
+			});
 		});
 	}
 
 	$scope.purchaseForcePower = function(power){
 		c.server.get({action: 'buyForcePower', power: power}).then(function(response){
-			c.server.refresh();
+			c.server.refresh().then(function(){
+				setTimeout(clearDiceRolls, 100);
+			});
 		});
 	}
 
 	$scope.purchaseForceEnhancement = function(enhancement){
 		c.server.get({action: 'buyForceEnhancement', enh: enhancement}).then(function(response){
-			c.server.refresh();
+			c.server.refresh().then(function(){
+				setTimeout(clearDiceRolls, 100);
+			});
 		});
 	}
 
@@ -511,7 +521,7 @@
 						$scope.data.character = response.data.character;
 						$scope.data.skills = response.data.skills;
 						$scope.closeEditContainer('characteristics');
-						clearDiceRolls();
+						setTimeout(clearDiceRolls, 100);
 					});
 				} else{
 					alert('Characteristics cannot be raised above 6.');
@@ -538,18 +548,20 @@
 				var quantity = parseInt(document.getElementById('gearQuantityInput').value);
 				c.server.get({action: 'saveGearQuantity', gearID: $scope.data.currentGear.sysID, quantity: quantity}).then(function(response){
 					document.getElementById('gearQuantityInput').value = null;
-					c.server.refresh();
-					$scope.closeEditContainer('gearQuantity');
-					setTimeout(clearDiceRolls, 1000);
+					c.server.refresh().then(function(){
+						$scope.closeEditContainer('gearQuantity');
+						setTimeout(clearDiceRolls, 100);
+					});
 				});
 				break;
 
 			case 'forceRating':
 				var forceRating = parseInt(document.getElementById('forceRatingInput').value);
 				c.server.get({action: 'saveForceRating', forceRating: forceRating}).then(function(response){
-					c.server.refresh();
-					$scope.closeEditContainer('forceRating');
-					setTimeout(clearDiceRolls, 1500);
+					c.server.refresh().then(function(){
+						$scope.closeEditContainer('forceRating');
+						setTimeout(clearDiceRolls, 100);
+					});
 				});
 				break;
 
@@ -562,17 +574,20 @@
 				var hardPoints = document.getElementById('gearHardPoints').value;
 				var location = document.getElementById('gearLocation').value;
 				c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints, location: location}).then(function(response){
-					c.server.refresh();
-					$scope.closeEditContainer('gearEdit');
-					setTimeout(clearDiceRolls, 1000);
+					c.server.refresh().then(function(){
+						$scope.closeEditContainer('gearEdit');
+						setTimeout(clearDiceRolls, 100);
+					});	
 				});
 				break;
 
 			case 'otherGear':
 				var og = document.getElementById('otherGearInput').value;
 				c.server.get({action: 'saveOtherGear', gear: og}).then(function(response){
-					c.server.refresh();
-					$scope.closeEditContainer('otherGear');
+					c.server.refresh().then(function(){
+						$scope.closeEditContainer('otherGear');
+						setTimeout(clearDiceRolls, 100);
+					});
 				});
 				break;
 
@@ -580,9 +595,10 @@
 				var crits = document.getElementById('crits').value;
 				var notes = document.getElementById('critDescription').value;
 				c.server.get({action: 'saveCrit', crits: crits, notes: notes}).then(function(response){
-					c.server.refresh();
-					$scope.closeEditContainer('crit');
-					setTimeout(clearDiceRolls, 1000);
+					c.server.refresh().then(function(){
+						$scope.closeEditContainer('crit');
+						setTimeout(clearDiceRolls, 100);
+					});
 				});
 
 			default:
@@ -814,8 +830,10 @@
 	$scope.purchaseTalent = function(item){
 		c.server.get({action: 'purchaseTalent', talent: item, talentID: item.sysID}).then(function(response){
 			$scope.data.character = response.data.character;
-			c.server.refresh();
 			$scope.closeEditContainer('talentInfoBox');
+			c.server.refresh().then(function(){
+				setTimeout(clearDiceRolls, 200);	
+			});
 		});
 	}
 
@@ -830,14 +848,16 @@
 		c.server.get({action: 'saveSkill', skill: skill}).then(function(response){
 			$scope.data.character = response.data.character;
 			$scope.data.skills = response.data.skills;
-			setTimeout(buildDiceRolls, 200);
+			setTimeout(clearDiceRolls, 200);
 		});
 	}
 
 	$scope.removeVehicle = function(vehicle){
 		if(confirm('Are you sure you want to remove this ship?')){
 			c.server.get({action: 'removeVehicle', vehicle: vehicle}).then(function(response){
-				c.server.refresh();
+				c.server.refresh().then(function(){
+					setTimeout(clearDiceRolls, 200);
+				});
 			});
 		}
 	}
@@ -849,7 +869,7 @@
 		});
 	}
 
-	setTimeout(buildDiceRolls, 10);
+	setTimeout(clearDiceRolls, 10);
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.image-background{
@@ -2562,9 +2582,6 @@ input:checked + .slider:before {
 				upgrades: util.getCharacterSignatureAbilityUpgrades(charSa.signature_ability.sys_id.toString())
 			};
 			purchasedAbilities += obj.sys_id + ',';
-			/*for(var i = 0; i < obj.upgrades.length; i++){
-					purchasedUpgrades += obj.upgrades[i].sys_id + ',';
-				}*/
 			purchasedUpgrades += obj.upgrades.idString;
 			data.characterSignatureAbilities.push(obj);
 			data.showSignatureAbilities = true;
@@ -2600,7 +2617,6 @@ input:checked + .slider:before {
 
 					return 0;
 				});
-
 				for(var i = 0; i < tempTalentArray.length; i++){
 					if(tempTalentArray[i].career == sa.career && specsUsed.indexOf(tempTalentArray[i].careerSpec) == -1){
 						if(sa.unlock_criteria[tempTalentArray[i].careerSpecDisplay.toLowerCase()].indexOf(tempTalentArray[i].talentTreeID) > -1){
@@ -2649,7 +2665,7 @@ input:checked + .slider:before {
 						unlockedBy: unlockedBy
 					};
 
-					if(data.character.signatureAbilitiesUnlocked > data.characterSignatureAbilities.length){
+					if(data.character.availableXPInt >= saObj.costToPurchase){
 						saObj.canPurchase = true;
 					} else{
 						saObj.canPurchase = false;
@@ -3064,7 +3080,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1241</sys_mod_count>
+        <sys_mod_count>1259</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -3072,7 +3088,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-03-08 23:03:28</sys_updated_on>
+        <sys_updated_on>2022-04-05 16:31:29</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -3610,7 +3626,7 @@ input:checked + .slider:before {
       </span>
       <span class="col-xs-12 description-field">
         <span class="col-xs-12 desc-label">Notable Features:</span>
-        <span class="col-xs-12 desc-value">{{data.character.notableFeatures}}</span>
+        <span class="col-xs-12 desc-value" ng-bind-html="data.character.notableFeatures"></span>
       </span>
       <span class="col-xs-12 description-field">
         <span class="col-xs-12 desc-label">Background:</span>

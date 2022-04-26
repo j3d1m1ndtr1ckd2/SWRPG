@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	//build roll visual
+	function buildDiceRolls(){
+		for(var i = 0; i < $scope.data.skills.length; i++){
+			var parentElement = document.getElementById($scope.data.skills[i].sysID);
+
+			if($scope.data.skills[i].rankInt != $scope.data.skills[i].characteristic){
+				for(var j = 0; j < $scope.data.skills[i].abilityDice; j++){
+					var icon = document.createElement("i");
+					icon.classList.add('fas', 'fa-dice-d8', 'ability-dice', 'dice');
+					parentElement.appendChild(icon);
+				}
+			}
+
+			for(var j = 0; j < $scope.data.skills[i].upgrades; j++){
+				var icon = document.createElement("i");
+				icon.classList.add('fas', 'fa-dice-d12', 'proficiency-dice', 'dice');
+				parentElement.appendChild(icon);
+			}
+		}
+	}
+	
+	setTimeout(buildDiceRolls,200);
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.sw-offline-character-sheet-container{
+ // display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  border: 1px solid black;
+  border-radius:6px;
+  padding:1rem;
+  margin-top:2rem;
+
+  .header{
+    order: 0;
+    text-align: center;
+    font-weight:bold;
+    font-size: 2.2rem;
+  }
+
+  .header-row{
+    border-bottom: 1px solid black;
+  }
+
+  th, td{
+    padding: .5rem;
+  }
+
+  .container-title{
+    text-align:center;
+    background-color:white;
+    font-weight:bold;
+    font-style:italic;
+    font-size:2.6rem;
+  }
+
+  .primary-detail-container{
+    order: 0;
+    //display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .name-species-career-spec{
+      order: 0;
+      margin-left: 2rem;
+      //display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+
+      .pd{
+        padding: .5rem;
+      }
+    }
+
+    .xp-statuses{
+      order: 1;
+      //display: flex;
+      flex-flow: column nowrap;
+      margin-right: 2rem;
+
+      .xp-crit{
+        order: 0;
+       // display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap:1rem;
+
+        .pd{
+          border:1px solid black;
+          border-radius: 6px;
+          padding:1rem;
+          text-align:center;
+        }
+      }
+
+      .status-effects{
+        margin-top:2rem;
+        order: 1;
+        //display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+
+        .se{
+         // display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .skills-and-talents{
+    order: 1;
+    //display:flex; 
+    flex-flow: row nowrap;
+		column-gap: 2rem;
+
+    .skill-container{
+      order: 0;
+      flex: 0 0 20%;
+      align-self: flex-start;
+      //display:flex;
+      flex-flow: column nowrap;
+      justify-content:space-between;
+      align-items: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      /*.skills-header{
+      order: 0;
+      text-align: center;
+      font-weight:bold;
+      font-size: 2.2rem;
+    }*/
+
+      .skills-table{
+        .skills{
+          border: 1px solid black;
+
+          /*.header-row{
+          border-bottom: 1px solid black;
+        }*/
+
+          /*th, td{
+          padding: .5rem;
+        }*/
+
+          .skill-detail{
+            border-bottom: 1px solid black;
+
+            .dice-roll{
+              .ability-dice{
+                color: green;
+              }
+
+              .proficiency-dice{
+                color: gold;
+              }
+            }
+
+            .skill-rank{
+              text-align:center;
+            }
+          }
+        }
+      }
+    }
+
+    .talents-container{
+      order: 1;
+      flex: 0 0 80%;
+      //display: flex;
+      flex-flow: column nowrap;
+			margin-top: 2rem;
+      padding: .5rem;
+      
+      .talents-header{
+        order: 0;
+      }
+
+      .talents-table{
+        .talents{
+          .talent-name-spacing{
+          	min-width: 20rem;
+          }
+        }
+      }
+
+    }
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_offline_character_sheet</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Offline Character Sheet</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+try{
+		var util = new x_176383_star_wars.starWarsUtil();
+		var user = gs.getUser();
+		data.showRankOneBadge = user.getPreference('show_rank_one_talent_badge');
+		var characterID = $sp.getParameter('character_id');
+		data.characterID = characterID;
+		data.playerID = gs.getUserID();
+		var charGR = new GlideRecord('x_176383_star_wars_character');
+		charGR.get(characterID);
+		/*if(data.playerID == charGR.player.sys_id || gs.hasRole('admin')){
+			data.canEdit = true;
+		} else{
+			data.canEdit = false;
+		}*/
+		data.character = {
+			name: charGR.name + '' || 'Name your character',
+			species: charGR.species.getDisplayValue(),
+			speciesDescription: charGR.species.description + '',
+			career: charGR.career.getDisplayValue(),
+			careerID: charGR.career.sys_id + '',
+			specializationIDs: charGR.career_specializations.toString(),
+			specializationNames: '',
+			brawn: charGR.brawn + '',
+			agility: charGR.agility + '',
+			intellect: charGR.intellect + '',
+			cunning: charGR.cunning + '',
+			willpower: charGR.willpower + '',
+			presence: charGR.presence + '',
+			availableXPInt: parseInt(charGR.available_xp),
+			availableXPString: charGR.available_xp + '',
+			totalXPInt: parseInt(charGR.total_xp),
+			totalXPString: charGR.total_xp + '',
+			strainCurrentInt: parseInt(charGR.strain_current),
+			strainCurrentString: charGR.strain_current + '',
+			strainThresholdInt: parseInt(charGR.strain_threshold),
+			strainThresholdString: charGR.strain_threshold + '',
+			woundCurrentInt: parseInt(charGR.wounds_current),
+			woundCurrentString: charGR.wounds_current + '',
+			woundThresholdInt: parseInt(charGR.wounds_threshold),
+			woundThresholdString: charGR.wounds_threshold + '',
+			soakInt: parseInt(charGR.soak_value),
+			soakString: charGR.soak_value + '',
+			rangedDefenseInt: parseInt(charGR.defense_ranged),
+			rangedDefenseString: charGR.defense_ranged + '',
+			meleeDefenseInt: parseInt(charGR.defense_melee),
+			meleeDefenseString: charGR.defense_melee + '',
+			creditsInt: parseInt(charGR.credits),
+			creditsString: charGR.credits + '',
+			age: charGR.age + '',
+			eyes: charGR.eyes + '',
+			hair: charGR.hair + '',
+			gender: charGR.gender + '',
+			height: charGR.height + '',
+			weight: charGR.weight + '',
+			criticalInjuriesInt: parseInt(charGR.critical_injuries),
+			criticalInjuriesString: charGR.critical_injuries + '',
+			criticalInjuriesDescription: charGR.critical_injury_description + '',
+			forceRatingInt: parseInt(charGR.force_rating),
+			forceRatingString: charGR.force_rating + '',
+			background: charGR.description_html + '',
+			notableFeatures: charGR.notable_features + '',
+			notes: charGR.notes + '',
+			otherGear: charGR.other_gear + '',
+			statusEffects: charGR.status_effects.toString().split(','),
+			portrait: charGR.portrait + '.iix',
+			signatureAbilitiesUnlocked: parseInt(charGR.signature_abilities_unlocked)
+		};
+
+		if(data.character.portrait == '.iix'){
+			data.character.portrait = data.character.species.toLowerCase() + '.png';
+		}
+		//retrieve the form widget and pass current character as parameter
+		/*var widgetParams = {
+			table: 'x_176383_star_wars_character',
+			sys_id: characterID,
+			isPopup: true,
+			hideRelatedLists: true,
+			view: 'portrait'
+		};
+		data.updatePortraitWidget = $sp.getWidget('widget-form', widgetParams);
+*/
+		//retrieve status effect details and set checked if character has any
+		data.statusEffects = [];
+		var statusEffects = new GlideRecord('x_176383_star_wars_status_effects');
+		statusEffects.query();
+		while(statusEffects.next()){
+			var se = {
+				name: statusEffects.getDisplayValue(),
+				sys_id: statusEffects.getUniqueValue(),
+				description: statusEffects.description + '',
+				checked: false
+			};
+			for(var i = 0; i < data.character.statusEffects.length; i++){
+				if(se.sys_id == data.character.statusEffects[i]){
+					se.checked = true; 
+				}
+			}
+			data.statusEffects.push(se);
+		}
+
+		//retrieve career info to display when info button clicked.
+		data.careerInfo = {
+			name:charGR.career.getDisplayValue(),
+			description:charGR.career.description + ''
+		};
+
+		//retrieve career specialization display values
+		data.specializationInfo = [];
+		//data.availableSpecs = [];
+		var spec = new GlideRecord('x_176383_star_wars_career_specialization');
+		//spec.addQuery('sys_id', 'IN', data.character.specializationIDs);
+		//spec.addQuery('career', data.character.careerID).addOrCondition('career', '');
+		spec.orderBy('name');
+		spec.query();
+		while(spec.next()){
+			if(data.character.specializationIDs.indexOf(spec.sys_id.toString()) > -1){
+				var specObj = {
+					name: spec.name + '',
+					description: spec.description + ''
+				};
+				data.specializationInfo.push(specObj);
+				if(data.character.specializationNames == ''){
+					data.character.specializationNames = spec.getDisplayValue();
+				} else{
+					data.character.specializationNames += ', ' + spec.getDisplayValue();
+				}
+			} /*else{
+				var spObj = {
+					name: spec.getDisplayValue(),
+					sysID: spec.sys_id + '',
+					careerID: spec.career.sys_id + '',
+					careerName: spec.career.getDisplayValue(),
+					costToPurchase: (data.character.specializationIDs.split(',').length + 1) * 10,
+					careerSkills: spec.specialization_skills + '',
+					description: spec.description + ''
+				};
+				if(spec.career.sys_id.toString() != data.character.careerID){
+					spObj.costToPurchase += 10;
+				}
+				if(spObj.costToPurchase <= data.character.availableXPInt){
+					spObj.canPurchase = true;
+				} else{
+					spObj.canPurchase = false;
+				}
+				data.availableSpecs.push(spObj);
+			}*/
+		}
+
+		//set background image
+		//remove the db_image check once all images are loaded
+		/*var imgCheck = data.character.career.toLowerCase() + '.png';
+		var img = new GlideRecord('db_image');
+		img.addQuery('name', imgCheck);
+		img.query();
+		if(img.next()){
+			data.backgroundURL = '/' + img.name;
+		} else{
+			data.backgroundURL = '/sw_space.jpg';
+		}*/
+
+		//retrieve talents
+		data.talents = [];
+		//var signatureAbilityTalentArray = [];
+		//var purchasedTalentIDs = [];
+		var talent = new GlideRecord('x_176383_star_wars_character_talents_m2m');
+		talent.addQuery('character', characterID);
+		talent.orderBy('talent.talent.name');
+		talent.query();
+		var index = 0;
+		while(talent.next()){
+			//purchasedTalentIDs.push(talent.talent.sys_id + '');
+			if(index > 0 && data.talents[index - 1].name == talent.talent.talent.getDisplayValue()){
+				data.talents[index - 1].ranks = (parseInt(data.talents[index - 1].ranks) + 1) + '';
+			} else{
+				var rec = {
+					name: talent.talent.talent.getDisplayValue(),
+					talentID: talent.talent.talent.sys_id + '',
+					talentTreeID: talent.talent.sys_id + '',
+					ranks: '1',
+					description: talent.talent.talent.description + '',
+					forceTalent: talent.talent.talent.force_talent + '',
+					passiveActive: talent.talent.talent.passive_or_active + '',
+					tier: talent.talent.rank + '',
+					career: talent.talent.career_specialization.career + '',
+					careerSpec: talent.talent.career_specialization.sys_id + '',
+					careerSpecDisplay: talent.talent.career_specialization.getDisplayValue(),
+					careerSpecTalentID: talent.sys_id + ''
+				};
+				data.talents.push(rec);
+				index++;
+			}
+
+			//populate an array of each individual talent without ranking to check if signature abilities unlocked
+			/*var rec = {
+				name: talent.talent.talent.getDisplayValue(),
+				talentID: talent.talent.talent.sys_id + '',
+				talentTreeID: talent.talent.sys_id + '',
+				ranks: '1',
+				description: talent.talent.talent.description + '',
+				forceTalent: talent.talent.talent.force_talent + '',
+				passiveActive: talent.talent.talent.passive_or_active + '',
+				tier: talent.talent.rank + '',
+				career: talent.talent.career_specialization.career + '',
+				careerSpec: talent.talent.career_specialization.sys_id + '',
+				careerSpecDisplay: talent.talent.career_specialization.getDisplayValue(),
+				careerSpecTalentID: talent.sys_id + ''
+			};
+			signatureAbilityTalentArray.push(rec);*/
+		}
+		//retrieve talent tree
+		//retrieve talent trees for specializations
+		/*data.availableTalents = [];
+		var talentTree = new GlideRecord('x_176383_star_wars_career_specialization_talent_tree_m2m');
+		talentTree.addQuery('career_specialization', 'IN', data.character.specializationIDs);
+		talentTree.orderBy('career_specialization');
+		talentTree.orderBy('rank');
+		talentTree.orderBy('talent.name');
+		talentTree.query();
+		while(talentTree.next()){
+			var t = {
+				sysID: talentTree.sys_id + '',
+				name: talentTree.talent.getDisplayValue(),
+				tier: parseInt(talentTree.rank),
+				tierString: talentTree.rank + '',
+				specID: talentTree.career_specialization.sys_id + '',
+				specName: talentTree.career_specialization.getDisplayValue(),
+				costToPurchase: parseInt(talentTree.xp_cost),
+				description: talentTree.talent.description + '',
+				activeOrPassive: talentTree.talent.passive_or_active.getDisplayValue(),
+				forceTalent: talentTree.talent.force_talent + '',
+				preReqs: talentTree.pre_requisite_talents.toString().split(','),
+				preReqDisplay: [],
+				isPurchased: false
+			};
+			if((t.tier == 1 || t.preReqs[0] == '') && t.costToPurchase <= data.character.availableXPInt){
+				t.canPurchase = true;
+			}
+			data.availableTalents.push(t);
+		}
+
+		for(var i = 0; i < data.availableTalents.length; i++){
+			for(var j = 0; j < purchasedTalentIDs.length; j++){
+				if(data.availableTalents[i].preReqs.join().indexOf(purchasedTalentIDs[j]) >= 0 && data.character.availableXPInt >= data.availableTalents[i].costToPurchase){
+					data.availableTalents[i].canPurchase = true;
+				}
+				if(data.availableTalents[i].sysID == purchasedTalentIDs[j]){
+					data.availableTalents[i].isPurchased = true;
+				}
+			}
+			//build pre-req display
+			for(var k = 0; k < data.availableTalents[i].preReqs.length; k++){
+				for(var l = 0; l < data.availableTalents.length; l++){
+					if(data.availableTalents[i].preReqs[k].toString() == data.availableTalents[l].sysID){
+						var tObj = {
+							name: data.availableTalents[l].name,
+							tier: data.availableTalents[l].tierString
+						};
+						data.availableTalents[i].preReqDisplay.push(tObj);
+					}
+				}
+
+				for(l = 0; l < data.talents.length; l++){
+					if(data.availableTalents[i].preReqs[k].toString() == data.talents[l].careerSpecTalentID){
+						var tObj = {
+							name: data.availableTalents[l].name,
+							tier: data.availableTalents[l].tierString
+						};
+						data.availableTalents[i].preReqDisplay.push(tObj);
+					}
+				}
+			}
+		}*/
+
+		//retrieve character skills and values
+		data.skills = [];
+		var ataru = JSON.parse(gs.getProperty('x_176383_star_wars.sw.ataru_technique'));
+		var makashi = JSON.parse(gs.getProperty('x_176383_star_wars.sw.makashi_technique'));
+		var niman = JSON.parse(gs.getProperty('x_176383_star_wars.sw.niman_technique'));
+		var shien = JSON.parse(gs.getProperty('x_176383_star_wars.sw.shien_technique'));
+		var soresu = JSON.parse(gs.getProperty('x_176383_star_wars.sw.soresu_technique'));
+		var skills = new GlideRecord('x_176383_star_wars_m2m_character_skills');
+		skills.addQuery('character', characterID);
+		skills.orderBy('skill.name');
+		skills.query();
+		while(skills.next()){
+			var rec = {
+				name: skills.skill.name + '',
+				characteristic: parseInt(data.character[skills.skill.characteristic]),
+				characteristicString: skills.skill.characteristic.toString(),
+				rankInt: parseInt(skills.rank),
+				rankString: skills.rank + '',
+				costToNextRank: parseInt(skills.cost_to_next_rank),
+				isCareer: skills.career + '',
+				description: skills.skill.description + '',
+				sysID: skills.sys_id + ''
+			};
+
+			//if character is force user, check if they have a talent that changes the characteristic for lightsaber checks
+			var lightsaber = gs.getProperty('x_176383_star_wars.sw.lightsaber_skill');
+			if(data.character.forceRatingInt > 0 && skills.skill.sys_id == lightsaber){
+				for(var i = 0; i < data.talents.length; i++){
+					switch(data.talents[i].talentID){
+						case ataru.talent:
+							rec.characteristic = parseInt(data.character[ataru.characteristic]);
+							rec.characteristicString = ataru.characteristic;
+							break;
+
+						case makashi.talent:
+							rec.characteristic = parseInt(data.character[makashi.characteristic]);
+							rec.characteristicString = makashi.characteristic;
+							break;
+
+						case niman.talent:
+							rec.characteristic = parseInt(data.character[niman.characteristic]);
+							rec.characteristicString = niman.characteristic;
+							break;
+
+						case shien.talent:
+							rec.characteristic = parseInt(data.character[shien.characteristic]);
+							rec.characteristicString = shien.characteristic;
+							break;
+
+						case soresu.talent:
+							rec.characteristic = parseInt(data.character[soresu.characteristic]);
+							rec.characteristicString = soresu.characteristic;
+							break;
+
+						default:
+							break;
+					}
+				}
+			}
+
+			if(rec.characteristic > rec.rankInt){
+				rec.upgrades = rec.rankInt;
+				rec.abilityDice = rec.characteristic - rec.upgrades;
+			} else if(rec.rankInt > rec.characteristic){
+				rec.upgrades = rec.characteristic;
+				rec.abilityDice = rec.rankInt - rec.upgrades;
+			} else{
+				rec.upgrades = rec.abilityDice = rec.rankInt;
+			}
+			data.skills.push(rec);
+		}
+
+		//retrieve inventory list
+	/*	data.availableGear = [];
+		var gear = new GlideRecord('x_176383_star_wars_gear');
+		gear.addQuery('type', '!=', 'vehicle_weapon').addCondition('type', '!=', 'vehicle_mod');
+		gear.orderBy('type');
+		gear.orderBy('name');
+		gear.query();
+		while(gear.next()){
+			var g = {
+				name: gear.name + '',
+				encumbrance: gear.encumbrance + '',
+				rarity: gear.rarity + '',
+				type: gear.type.getDisplayValue(),
+				typeID: gear.type + '',
+				skillUsed: gear.skill_used.getDisplayValue(),
+				price: gear.price + '',
+				defense: gear.defense + '',
+				soak: gear.soak + '',
+				damage: gear.base_damage + '',
+				range: gear.range.getDisplayValue(),
+				hardPoints: gear.hard_points + '',
+				description: gear.description_html + '',
+				crit: gear.critical_rating + '',
+				hpRequired: gear.hp_required + '',
+				sysID: gear.sys_id + ''
+			};
+			data.availableGear.push(g);
+		}
+		data.availableGearAll = data.availableGear;
+*/
+		//retrieve current character gear
+		data.characterGear = [];
+		var cg = new GlideRecord('x_176383_star_wars_character_gear_m2m');
+		cg.addQuery('character', characterID);
+		//cg.orderBy('item.type');
+		cg.orderBy('item.name');
+		cg.query();
+		while(cg.next()){
+			var cgObj = {
+				name: cg.item.getDisplayValue(),
+				quantity: cg.quantity + '',
+				location: cg.location.getDisplayValue(),
+				locValue: cg.location + '',
+				damage: cg.damage + '',
+				crit: cg.critical_rating + '',
+				defense: cg.defense + '',
+				soak: cg.soak + '',
+				encumbrance: cg.item.encumbrance + '',
+				type: cg.item.type.getDisplayValue(),
+				typeID: cg.item.type + '',
+				skillUsed: cg.item.skill_used.getDisplayValue(),
+				range: cg.range.getDisplayValue(),
+				rangeID: cg.range + '',
+				hardPoints: cg.hard_points + '',
+				hpRequired: cg.item.hp_required + '',
+				description: cg.item.description_html + '',
+				sysID: cg.sys_id + '',
+				iconID: cg.sys_id + 'Chevron'
+			};
+			var wq = new GlideRecord('x_176383_star_wars_character_gear_special');
+			wq.addQuery('character_gear', cg.sys_id);
+			wq.orderBy('weapon_quality.name');
+			wq.query();
+			var qualityString = '';
+			while(wq.next()){
+				if(qualityString == ''){
+					qualityString = wq.weapon_quality.getDisplayValue() + ': ' + wq.rank;
+				} else{
+					qualityString += ', ' + wq.weapon_quality.getDisplayValue() + ': ' + wq.rank;
+				}
+			}
+			cgObj.weaponQualities = qualityString;
+			data.characterGear.push(cgObj);
+		}
+
+		//gear types
+		data.gearTypes = [];
+		var choiceGR = new GlideRecord('sys_choice');
+		choiceGR.addQuery('name', 'x_176383_star_wars_gear').addCondition('element', 'type').addCondition('value', 'DOES NOT CONTAIN', 'vehicle');
+		choiceGR.orderBy('label');
+		choiceGR.query();
+		while(choiceGR.next()){
+			var choiceObj = {
+				name: choiceGR.label + '',
+				value: choiceGR.value + ''
+			};
+			data.gearTypes.push(choiceObj);
+		}
+
+		//retrieve list of vehicles
+		/*data.vehicles = [];
+		data.vehiclesAll = [];
+		var vehicle = new GlideRecord('x_176383_star_wars_vehicle');
+		vehicle.orderBy('type');
+		vehicle.orderBy('ship_name');
+		vehicle.query();
+		while(vehicle.next()){
+			var vObj = {
+				shipName: vehicle.ship_name + '',
+				makeModel: vehicle.make_model + '',
+				type: vehicle.type.getDisplayValue(),
+				typeID: vehicle.type + '',
+				sysID: vehicle.sys_id + '',
+				price: vehicle.price + '',
+				silhouette: vehicle.silhouette + '',
+				hp: vehicle.hard_points + '',
+				handling: vehicle.handling + '',
+				speed: vehicle.speed + '',
+				armor: vehicle.armor + '',
+				defenseFore: vehicle.defense_fore + '',
+				defenseAft: vehicle.defense_aft + '',
+				defensePort: vehicle.defense_port + '',
+				defenseStarboard: vehicle.defense_starboard + '',
+				hullThreshold: vehicle.hull_trauma_threshold + '',
+				ssThreshold: vehicle.system_strain_threshold + '',
+				maximumAltitude: vehicle.maximum_altitude + '',
+				sensorRange: vehicle.sensor_range.getDisplayValue(),
+				description: vehicle.description + ''
+			};
+			if(vehicle.primary_hyperdrive_class == ''){
+				vObj.hyperdrive = 'None';
+			} else{
+				vObj.hyperdrive = 'Primary Class: ' + vehicle.primary_hyperdrive_class + ', Backup Class: ' + vehicle.backup_hyperdrive_class;
+			}
+
+			if(vehicle.navicomputer == true){
+				vObj.navicomputer = 'Yes';
+			} else{
+				vObj.navicomputer = 'No';
+			}
+			data.vehicles.push(vObj);
+		}
+		data.vehiclesAll = data.vehicles;*/
+		//retrieve character vehicles
+		data.characterVehicles = [];
+		var cv = new GlideRecord('x_176383_star_wars_character_vehicle');
+		cv.addQuery('character', characterID);
+		cv.orderBy('name');
+		cv.query();
+		while(cv.next()){
+			var v = {
+				name: cv.name + '',
+				vehicleName: cv.vehicle.ship_name + '',
+				makeModel: cv.vehicle.make_model + '',
+				sysID: cv.sys_id + ''
+			};
+			data.characterVehicles.push(v);
+		}
+
+		//retrieve force powers and enhancements
+		data.characterPowers = [];
+		var cForce = new GlideRecord('x_176383_star_wars_character_force_power');
+		cForce.addQuery('character', data.characterID);
+		cForce.orderBy('force_power.name');
+		cForce.query();
+		while(cForce.next()){
+			var cForceObj = {
+				name: cForce.force_power.getDisplayValue(),
+				description: cForce.force_power.description + '',
+				sysID: cForce.force_power.sys_id + ''
+			};
+			data.characterPowers.push(cForceObj);
+		}
+
+		data.cForceEnhancements = [];
+		//data.ownedEnhancements = [];
+		var cfe = new GlideRecord('x_176383_star_wars_character_force_enhancements');
+		cfe.addQuery('character', data.characterID);
+		cfe.orderBy('character_force_power.force_power.name');
+		cfe.orderBy('character_force_enhcancement.type');
+		cfe.query();
+		while(cfe.next()){
+			if(data.cForceEnhancements.length == 0){
+				var cfeObj = {
+					type: cfe.character_force_enhcancement.type.getDisplayValue(),
+					description: cfe.character_force_enhcancement.description + '',
+					ranks: 1,
+					forceID: cfe.character_force_power.force_power.sys_id + '',
+					enhancementID: cfe.character_force_enhcancement.sys_id + ''
+				};
+				data.cForceEnhancements.push(cfeObj); 
+			} else if(data.cForceEnhancements[data.cForceEnhancements.length - 1].type == cfe.character_force_enhcancement.type.getDisplayValue() &&  data.cForceEnhancements[data.cForceEnhancements.length - 1].description.toString() == cfe.character_force_enhcancement.description.toString()){
+				data.cForceEnhancements[data.cForceEnhancements.length - 1].ranks++;
+			} else{
+				var cfeObj = {
+					type: cfe.character_force_enhcancement.type.getDisplayValue(),
+					description: cfe.character_force_enhcancement.description + '',
+					ranks: 1,
+					forceID: cfe.character_force_power.force_power.sys_id + '',
+					enhancementID: cfe.character_force_enhcancement.sys_id + ''
+				};
+				data.cForceEnhancements.push(cfeObj);
+			}
+			//data.ownedEnhancements.push(cfe.character_force_enhcancement.sys_id + '');
+		}
+
+		/*data.forcePowers = [];
+		var force = new GlideRecord('x_176383_star_wars_force_power');
+		force.orderBy('name');
+		force.query();
+		while(force.next()){
+			if(JSON.stringify(data.characterPowers).indexOf(force.sys_id.toString()) == -1){
+				var forceObj = {
+					name: force.name + '',
+					minRating: force.minimum_force_rating + '',
+					costToPurchase: force.cost_to_purchase + '',
+					description: force.description + '',
+					isPurchased: false,
+					canPurchase: false,
+					sysID: force.sys_id + ''
+				};
+				if(parseInt(forceObj.costToPurchase) <= data.character.availableXPInt && parseInt(forceObj.minRating) <= data.character.forceRatingInt){
+					forceObj.canPurchase = true;
+				}
+				data.forcePowers.push(forceObj);
+			}
+		}*/
+
+		//retrieve force power enhancements
+		/*data.forceEnhancements = [];
+		var fe = new GlideRecord('x_176383_star_wars_force_power_enhancement');
+		fe.orderBy('force_power.name');
+		fe.orderBy('number');
+		fe.query();
+		while(fe.next()){
+			if(JSON.stringify(data.ownedEnhancements).indexOf(fe.sys_id.toString()) == -1 && JSON.stringify(data.characterPowers).indexOf(fe.force_power.sys_id.toString()) > -1){
+				var feObj = {
+					type: fe.type.getDisplayValue(),
+					preReqs: fe.pre_req_force_enhancements + '',
+					forcePower: fe.force_power.getDisplayValue(),
+					forcePowerID: fe.force_power.sys_id + '',
+					costToPurchase: fe.cost_to_purchase + '',
+					description: fe.description + '',
+					canPurchase: false,
+					isPurchased: false,
+					sysID: fe.sys_id + ''
+				};
+				var preReqArray = feObj.preReqs.split(',');
+				for(var i = 0; i < preReqArray.length; i++){
+					if((preReqArray.length == 0 || JSON.stringify(data.ownedEnhancements).indexOf(preReqArray[i]) > -1) && parseInt(feObj.costToPurchase) <= data.character.availableXPInt){
+						feObj.canPurchase = true;
+					}
+				}
+				data.forceEnhancements.push(feObj);
+			}
+		}*/
+
+		//character signature abilities
+		//get unlocked signature abilities first
+		data.characterSignatureAbilities = [];
+		var purchasedAbilities = '';
+		var purchasedUpgrades = '';
+		var specsUsed = '';
+		var charSa = new GlideRecord('x_176383_star_wars_character_signature_ability');
+		charSa.addQuery('character', data.characterID);
+		charSa.orderBy('signature_ability.name');
+		charSa.query();
+		while(charSa.next()){
+			specsUsed += charSa.career_specialization.sys_id + ',';
+			var obj = {
+				name: charSa.signature_ability.getDisplayValue(),
+				specialization: charSa.career_specialization.getDisplayValue(),
+				sys_id: charSa.signature_ability.sys_id + '',
+				description: charSa.signature_ability.description + '',
+				upgrades: util.getCharacterSignatureAbilityUpgrades(charSa.signature_ability.sys_id.toString())
+			};
+			purchasedAbilities += obj.sys_id + ',';
+			purchasedUpgrades += obj.upgrades.idString;
+			data.characterSignatureAbilities.push(obj);
+			data.showSignatureAbilities = true;
+		}
+
+		//available signature abilities
+		/*data.availableSignatureAbilities = [];
+		data.signatureAbilitiesUnlockAvailableFor = [];
+		var sa = new GlideRecord('x_176383_star_wars_signature_ability');
+		sa.addQuery('career', data.character.careerID);
+		sa.query();
+		while(sa.next()){
+			var unlockedBy = [];
+			var signatureAbilityPurchased = false;
+			for(var i = 0; i < data.characterSignatureAbilities.length; i++){
+				if(sa.sys_id == data.characterSignatureAbilities[i].sys_id){
+					signatureAbilityPurchased = true;
+				}
+			}
+			if(!signatureAbilityPurchased){
+				var addAvailable = false;
+				var tempTalentArray = signatureAbilityTalentArray;
+				tempTalentArray.sort(function(a,b){
+					var x = a.careerSpecDisplay.toLowerCase();
+					var y = b.careerSpecDisplay.toLowerCase();
+					if(x < y){
+						return -1;
+					}
+
+					if(x > y){
+						return 1;
+					}
+
+					return 0;
+				});
+				for(var i = 0; i < tempTalentArray.length; i++){
+					if(tempTalentArray[i].career == sa.career && specsUsed.indexOf(tempTalentArray[i].careerSpec) == -1){
+						if(sa.unlock_criteria[tempTalentArray[i].careerSpecDisplay.toLowerCase()].indexOf(tempTalentArray[i].talentTreeID) > -1){
+							var unlockObj = {};*/
+							/*unlockObj.specializationDisplay = tempTalentArray[i].careerSpecDisplay;
+							unlockObj.specializationID = tempTalentArray[i].careerSpec;
+							unlockedBy.push(unlockObj);*/
+							/*if(unlockedBy.length == 0){
+								unlockObj.specializationDisplay = tempTalentArray[i].careerSpecDisplay;
+								unlockObj.specializationID = tempTalentArray[i].careerSpec;
+								unlockObj.count = 1;
+								unlockedBy.push(unlockObj);
+							} else{ 
+								var addNew = true;
+								var updateIndex = 0;
+								for(var j = 0; j < unlockedBy.length; j++){
+									if(unlockedBy[j].specializationID == tempTalentArray[i].careerSpec){
+										addNew = false;
+										updateIndex = j;
+									}
+								}
+
+								if(addNew){
+									unlockObj = {};
+									unlockObj.specializationDisplay = tempTalentArray[i].careerSpecDisplay;
+									unlockObj.specializationID = tempTalentArray[i].careerSpec;
+									unlockObj.count = 1;
+									unlockedBy.push(unlockObj);
+								} else{
+									unlockedBy[updateIndex].count++;
+									if(unlockedBy[updateIndex].count == 2){
+										addAvailable = true;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				if(addAvailable){
+					var saObj = {
+						name: sa.getDisplayValue(),
+						sys_id: sa.getUniqueValue(),
+						description: sa.description + '',
+						costToPurchase: parseInt(sa.cost_to_purchase),
+						unlockedBy: unlockedBy
+					};
+
+					if(data.character.availableXPInt >= saObj.costToPurchase){
+						saObj.canPurchase = true;
+					} else{
+						saObj.canPurchase = false;
+					}
+					data.availableSignatureAbilities.push(saObj);
+					data.showSignatureAbilities = true;
+				}
+			}
+		}*/
+		//available signature ability upgrades
+		/*data.availableSignatureAbilityUpgrades = [];
+		var upgrades = new GlideRecord('x_176383_star_wars_signature_ability_upgrade');
+		upgrades.addQuery('sys_id', 'NOT IN', purchasedUpgrades).addCondition('signature_ability', 'IN', purchasedAbilities);
+		upgrades.orderBy('cost_to_purchase');
+		upgrades.orderBy('name');
+		upgrades.query();
+		while(upgrades.next()){
+			var upgradeObj = {
+				name: upgrades.getDisplayValue(),
+				sys_id: upgrades.sys_id + '',
+				description: upgrades.description + '',
+				costToPurchase: parseInt(upgrades.cost_to_purchase),
+				prereqs: upgrades.pre_requisite_upgrades + '',
+				ability: upgrades.signature_ability.getDisplayValue(),
+				canPurchase: false
+			};
+
+			var prereqArray = upgradeObj.prereqs.split(',');
+			for(var i = 0; i < prereqArray.length; i++){
+				if(prereqArray.length == 0 || (purchasedUpgrades.indexOf(prereqArray[i]) > -1 && upgradeObj.costToPurchase <= data.character.availableXPInt)){
+					upgradeObj.canPurchase = true;
+				}
+			}
+			data.availableSignatureAbilityUpgrades.push(upgradeObj);
+		}*/
+} catch(e){
+	console.log('Offline character sheet error: ' + e.message);
+}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-04-13 03:59:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>590d8e022ffe4110e0f497eef699b6a3</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_name>Star Wars Offline Character Sheet</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_590d8e022ffe4110e0f497eef699b6a3</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-04-14 05:00:52</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/035f51c999.js"></script>
+</head>
+
+<div class="sw-offline-character-sheet-container col-xs-12">
+  <div class="container-title col-xs-12">SWRPG Character Sheet</div>
+  <div class="primary-detail-container col-xs-12">
+    <div class="name-species-career-spec col-xs-5">
+      <span class="pd name col-xs-12"><b>Name:</b> {{data.character.name}}</span>
+      <span class="pd species col-xs-12"><b>Species:</b> {{data.character.species}}</span>
+      <span class="pd career col-xs-12"><b>Career:</b> {{data.character.career}}</span>
+      <span class="pd specializations col-xs-12"><b>Career Specializations:</b> {{data.character.specializationNames}}</span>
+    </div>
+    <div class="xp-statuses col-xs-6">
+      <div class="xp-crit col-xs-12">
+        <span class="pd total-xp col-xs-4">{{data.character.totalXPString}}<br>Total XP</span>
+        <span class="pd available-xp col-xs-4">{{data.character.availableXPString}}<br>Available XP</span>
+        <span class="pd crits col-xs-4">{{data.character.criticalInjuriesString}}<br>Critical Injuries</span>
+      </div>
+      <div class="status-effects col-xs-12">
+        <span class="se col-xs-4" ng-repeat="status in data.statusEffects">
+          <span>{{status.name}}</span>
+          <i class="fa" ng-class="{'fa-check-square': status.checked, 'fa-square-o': !status.checked}"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="skills-and-talents col-xs-12" align="center">
+    <div class="skill-container col-xs-12">
+      <div class="skills-header header">Skills</div>
+      <div class="skills-table">
+        <table class="skills">
+          <tr class="header-row">
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Rank</th>
+          </tr>
+          <tr class="skill-detail" ng-repeat="skill in data.skills">
+            <td>{{skill.name}}</td>
+            <td id="{{skill.sysID}}" class="dice-roll"></td>
+            <td class="skill-rank">{{skill.rankString}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="talents-container col-xs-12">
+      <div class="talents-header header">Talents</div>
+      <div class="talents-table">
+        <table class="talents">
+          <tr>
+            <th class="talent-name-spacing">Name</th>
+            <th>Description</th>
+          </tr>
+          <tr class="talent-detail" ng-repeat="talent in data.talents">
+            <td class="talent-name-spacing">{{talent.name}} <i ng-if="talent.forceTalent == 'true'" class="fab fa-jedi-order"></i> <span ng-if="data.showRankOneBadge == 'true'" class="badge">{{talent.ranks}}</span><span ng-if="data.showRankOneBadge == 'false' && talent.ranks > 1" class="badge">{{talent.ranks}}</span></td>
+            <td ng-bind-html="talent.description"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="gear-container col-xs-12">
+    <div class="gear-header header">Gear</div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

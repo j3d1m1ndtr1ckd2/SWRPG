@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6cf1114c2f030d10e0f497eef699b6ad</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
+    <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <campaigns/>
+        <description>(Maneuver) The character may spend one Destiny point to perform a Terrifying Kill maneuver immediately after conducting a successful attack where the target is incapacitated or suffers a critical injury (the character must still be able to perform maneuvers, and may not perform more than two maneuvers in a turn).  The character rolls force dice no greater than his force rating, and may spend force points to inflict 1 strain on any other characters within short range of that target (and may do so multiple times).  A character who has purchased this talent automatically gains 1 conflict at the beginning of a game session.</description>
+        <field_to_update/>
+        <force_talent>true</force_talent>
+        <how_much_to_add/>
+        <name>Terrifying Kill</name>
+        <number>TAL0001319</number>
+        <passive_or_active>active</passive_or_active>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-04-19 04:52:08</sys_created_on>
+        <sys_id>6cf1114c2f030d10e0f497eef699b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-04-19 04:52:08</sys_updated_on>
+        <table_to_update/>
+    </x_176383_star_wars_talents>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-04-20 15:48:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ab6270242f07cd10e0f497eef699b66b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Terrifying Kill</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_ab6270242f07cd10e0f497eef699b66b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-04-20 15:48:43</sys_updated_on>
+        <tablename>x_176383_star_wars_talents</tablename>
+    </sys_metadata_link>
+</record_update>

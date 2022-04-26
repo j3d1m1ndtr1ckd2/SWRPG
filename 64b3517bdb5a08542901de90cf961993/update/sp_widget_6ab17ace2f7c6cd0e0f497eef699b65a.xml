@@ -5,136 +5,6 @@
   /* widget controller */
   var c = this;
 	
-	/*$scope.search = function(type){
-		var query = document.getElementById('searchBox').value.toLowerCase();
-		var i;
-		switch(type){
-			case 'species':
-			if(query == ''){
-				$scope.data.displaySpecies = $scope.data.species;
-			} else{
-					$scope.data.displaySpecies = [];
-					for(i = 0; i < $scope.data.species.length; i++){
-						if($scope.data.species[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.species[i].description.toLowerCase().indexOf(query) > -1){
-							$scope.data.displaySpecies.push($scope.data.species[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'career':
-			if(query == ''){
-				$scope.data.displayCareers = $scope.data.careers;
-			} else{
-				$scope.data.displayCareers = [];
-				for(i = 0; i < $scope.data.careers.length; i++){
-					if($scope.data.careers[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.careers[i].description.toLowerCase().indexOf(query) > -1){
-						 $scope.data.displayCareers.push($scope.data.careers[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'specialization':
-			if(query == ''){
-				$scope.data.displaySpecs = $scope.data.specializations;
-			} else{
-				$scope.data.displaySpecs = [];
-				for(i = 0; i < $scope.data.specializations.length; i++){
-					if($scope.data.specializations[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.specializations[i].description.toLowerCase().indexOf(query) > -1){
-						 $scope.data.displaySpecs.push($scope.data.specializations[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'skills':
-			if(query == ''){
-				$scope.data.displaySkills = $scope.data.skills;
-			} else{
-				$scope.data.displaySkills = [];
-				for(i = 0; i < $scope.data.skills.length; i++){
-					if($scope.data.skills[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.skills[i].description.toLowerCase().indexOf(query) > -1){
-						$scope.data.displaySkills.push($scope.data.skills[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'talents':
-			if(query == ''){
-				$scope.data.displayTalents = $scope.data.talents;
-			} else{
-				$scope.data.displayTalents = [];
-				for(i = 0; i < $scope.data.talents.length; i++){
-					if($scope.data.talents[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.talents[i].description.toLowerCase().indexOf(query) > -1){
-						$scope.data.displayTalents.push($scope.data.talents[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'gear':
-			if(query == ''){
-				$scope.data.displayGear = $scope.data.gear;
-			} else{
-				$scope.data.displayGear = [];
-				for(i = 0; i < $scope.data.gear.length; i++){
-					if($scope.data.gear[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.gear[i].description.toLowerCase().indexOf(query) > -1){
-						$scope.data.displayGear.push($scope.data.gear[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'wq':
-			if(query == ''){
-				$scope.data.displayWeaponQualities = $scope.data.weaponQualities;
-			} else{
-				$scope.data.displayWeaponQualities = [];
-				for(i = 0; i < $scope.data.weaponQualities.length; i++){
-					if($scope.data.weaponQualities[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.weaponQualities[i].description.toLowerCase().indexOf(query) > -1){
-						$scope.data.displayWeaponQualities.push($scope.data.weaponQualities[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'vehicles':
-			if(query == ''){
-				$scope.data.displayVehicles = $scope.data.vehicles;
-			} else{
-				$scope.data.displayVehicles = [];
-				for(i = 0; i < $scope.data.vehicles.length; i++){
-					if($scope.data.vehicles[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.vehicles[i].description.toLowerCase().indexOf(query) > -1){
-						$scope.data.displayVehicles.push($scope.data.vehicles[i]);
-					}
-				}
-			}
-			break;
-				
-			case 'galaxy':
-			if(query == ''){
-				$scope.data.displayGalaxy = $scope.data.galaxy;
-			} else{
-				$scope.data.displayGalaxy = [];
-				for(i = 0; i < $scope.data.galaxy.length; i++){
-					if($scope.data.galaxy[i].name.toLowerCase().indexOf(query) > -1 || $scope.data.galaxy[i].description.toLowerCase().indexOf(query) > -1){
-						$scope.data.displayGalaxy.push($scope.data.galaxy[i]);
-					}
-				}
-			}
-			break;
-				
-			default:
-				break;
-		}
-		
-		if(query == '' && $scope.data.filter.section){
-			$scope.filter($scope.data.filter.section, $scope.data.filter.filter);
-		}
-	}*/
-	
 	$scope.showSection = function(section){
 		switch(section){
 			case 'parent':
@@ -362,66 +232,66 @@
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.holocron-header{
-	text-align:center;
+  text-align:center;
   font-size:32px;
   font-weight: bold;
   margin-bottom:40px;
 }
 
 .holocron-search{
-	text-align:right;
+  text-align:right;
 }
 
 #searchBox{
-	margin-top:25px;
+  margin-top:25px;
 }
 
 .section-header{
-	font-size:26px;
+  font-size:26px;
   font-weight:bold;
   margin-bottom:20px;
 }
 
 .holocron-home{
-	margin-bottom:20px;
+  margin-bottom:20px;
 }
 
 .filter-container{
-	margin-bottom:20px;
+  margin-bottom:20px;
 }
 
 .choice-filter{
-	font-size:16px;
+  font-size:16px;
 }
 
 .description{
-	padding-bottom:20px;
+  padding-bottom:20px;
   font-size:16px;
 }
 
 .fa-space-station-moon-alt{
-	color:darkgray;
+  color:darkgray;
 }
 
 .info-header{
-	margin-top:20px;
+  margin-top:20px;
   margin-bottom:40px;
   font-size:26px;
   font-weight:bold;
 }
 
 .info-sub-header{
-	margin-bottom:20px;
+  margin-bottom:20px;
   font-size:22px;
 }
 
 .info-detail{
-	font-size:16px;
+  font-size:16px;
   margin-bottom:10px;
 }
 
 .info-detail-container{
-	position:fixed;
+  position:fixed;
   background-color:black;
   top:80px;
   left:10px;
@@ -432,15 +302,109 @@
   max-height:500px;
   overflow-y:scroll;
   z-index:2;
+  
+  .career-specialization-talent-tree{
+  	display: inline-flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:2rem;
+    text-align:center;
+    
+    .cs-talent-tree-header{
+    	order:0;
+      font-size:2.2rem;
+      margin-bottom:2rem;
+    }
+    
+    .cs-talent-tree-talents{
+    	order:1;
+      display:flex;
+      flex-flow:row wrap;
+      column-gap:.5rem;
+      row-gap:1.5rem;
+      
+      .cs-talent-tree{
+ 				border:.1rem solid #54f403;
+        border-radius:1.5rem;
+        padding:.5rem;
+        flex:0 0 24%;
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content:flex-start;
+        align-items:center;
+        row-gap: .5rem;
+        padding:.5rem;
+        
+        .talent-name{
+        	font-size:1.4rem;
+        }
+      }
+    }
+  }
+
+  .signature-abilities{
+		text-align:center;
+    
+    .signature-abilities-header{
+    	font-size:2.2rem;
+    }
+    
+    .signature-ability{
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:center;
+      align-items:center;
+
+      .signature-ability-name{
+        order:0;
+        font-size:1.8rem;
+        margin-top:2rem;
+        margin-bottom:1.5rem;
+      }
+      
+      .signature-ability-description{
+				order:1;
+        margin-bottom:1.5rem;
+      }
+      
+      .signature-ability-upgrades-header{
+      	order:2;  
+        font-size:1.6rem;
+        margin-bottom:2rem;
+      }
+      
+      .signature-ability-upgrades{
+      	order:2;
+        display:flex;
+        flex-flow:row wrap;
+        column-gap:.5rem;
+        row-gap:1rem;
+        padding-bottom:2rem;    
+        
+        .signature-ability-upgrade{
+        	flex:0 0 33%;
+          order:1;
+          display:flex;
+          flex-flow:column nowrap;
+          justify-content:center;
+          align-items:center;
+          border:1px solid #54f403;
+          padding:.5rem;
+          border-radius:1.5rem;
+        }
+      }
+    }
+  }
 }
 
 .close-button{
-	color:red;
+  color:red;
   margin-top:10px;
 }
 
 .menu-card{
-	border-radius:5px;
+  border-radius:5px;
   background-color:black;
   border:1px groove #1933f4;
   box-shadow:0px 0px 3px 1px darkgray;
@@ -449,24 +413,24 @@
 }
 
 .menu-card:hover{
-	transform:scale(1.25);
+  transform:scale(1.25);
   box-shadow: 0px 0px 8px 3px #1933f4;
   z-index:1;
 }
 
 .characteristics{
-	margin-top:20px;
+  margin-top:20px;
   margin-bottom:20px;
 }
 
 .characteristic{
-	border: 1px groove #e21414;
+  border: 1px groove #e21414;
   border-radius: 5px;
   text-align:center;
 }
 
 .alphabet-filter{
-	text-align:center;
+  text-align:center;
   margin-bottom:20px;
 }
 
@@ -476,25 +440,29 @@
 }
 
 .sw-input{
-	border:1px groove #e21414;
+  border:1px groove #e21414;
   background-color:black;
   border-radius:20px;
   margin-bottom:10px;
 }
 
 .enhancement-card{
-	border:1px groove darkgray;
+  border:1px groove darkgray;
   box-shadow:0px 0px 6px 2px darkgray;
   min-height:330px;
 }
 
 .e-detail{
-	margin-top:20px;
+  margin-top:20px;
 }
 
 @media only screen and (max-width:762px){
-	.info-detail-container{
-  	width:95%; 
+  .info-detail-container{
+    width:95%; 
+    
+    .signature-ability-upgrade, .cs-talent-tree{
+    	flex:0 0 100% !important;
+    }
   }  
 }</css>
         <data_table>sp_instance</data_table>
@@ -561,8 +529,36 @@
 			var c = {
 				name: careerGR.name + '',
 				description: careerGR.description + '',
-				sysID: careerGR.sysID + ''
+				sysID: careerGR.sys_id + '',
+				signature_abilities: []
 			};
+			
+			var sigAbilities = new GlideRecord('x_176383_star_wars_signature_ability');
+			sigAbilities.addQuery('career', c.sysID);
+			sigAbilities.orderBy('name');
+			sigAbilities.query();
+			while(sigAbilities.next()){
+				var saObj = {
+					name: sigAbilities.name + '',
+					sysID: sigAbilities.sys_id + '',
+					description: sigAbilities.description + '',
+					upgrades: []
+				};
+				
+				var upgrades = new GlideRecord('x_176383_star_wars_signature_ability_upgrade');
+				upgrades.addQuery('signature_ability', saObj.sysID);
+				upgrades.orderBy('cost_to_purchase');
+				upgrades.query();
+				while(upgrades.next()){
+					var upgradeObj = {
+						name: upgrades.name + '',
+						cost: upgrades.cost_to_purchase + '',
+						description: upgrades.description + ''
+					};	
+					saObj.upgrades.push(upgradeObj);
+				}
+				c.signature_abilities.push(saObj);
+			}
 			data.careers.push(c);
 		}
 		data.displayCareers = data.careers;
@@ -578,8 +574,24 @@
 				name: specs.name + '',
 				description: specs.description + '',
 				career: specs.career.getDisplayValue(),
-				sysID: specs.sys_id + ''
+				sysID: specs.sys_id + '',
+				talent_tree: []
 			};
+			
+			//build specialization talent tree
+			var stt = new GlideRecord('x_176383_star_wars_career_specialization_talent_tree_m2m');
+			stt.addQuery('career_specialization', s.sysID);
+			stt.orderBy('rank');
+			stt.query();
+			while(stt.next()){
+				var sttObj = {
+					talent: stt.talent.getDisplayValue(),
+					tier: stt.rank + '',
+					cost: stt.xp_cost + '',
+					description: stt.talent.description + ''
+				};
+				s.talent_tree.push(sttObj);
+			}
 			data.specializations.push(s);
 		}
 		data.displaySpecs = data.specializations;
@@ -823,7 +835,7 @@
         <sys_created_on>2020-12-02 04:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
-        <sys_mod_count>199</sys_mod_count>
+        <sys_mod_count>225</sys_mod_count>
         <sys_name>Holocron</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -831,13 +843,13 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-01-24 04:59:26</sys_updated_on>
+        <sys_updated_on>2022-04-26 22:31:07</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
 
 <div class="col-xs-12 holocron-container">
-	<div class="col-xs-12 holocron-header">
+  <div class="col-xs-12 holocron-header">
     Holocron<br>
     <text class="star-wars-text">Holocron</text>
   </div>
@@ -845,7 +857,7 @@
   <div ng-if="data.showSection == 'parent'" class="col-xs-12 card-menu" id="parentMenu">
     <div class="col-xs-12 col-md-3" ng-repeat="item in data.parentMenu">
       <span class="col-xs-12 menu-card" ng-click="showSection(item)">
-      	<span class="col-xs-12 text-center">{{item}}</span>
+        <span class="col-xs-12 text-center">{{item}}</span>
       </span>
     </div>
   </div>
@@ -880,7 +892,7 @@
     <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Career Specializations<br><text class="star-wars-text">Career Specializations</text></div>
     <div class="col-xs-12 filter-container">
-    	<select class="sw-input choice-filter" name="careerSpecFilter" id="careerSpecFilter" ng-change="filter('careerSpec')" ng-model="all">
+      <select class="sw-input choice-filter" name="careerSpecFilter" id="careerSpecFilter" ng-change="filter('careerSpec')" ng-model="all">
         <option value="all">All</option>
         <option ng-repeat="c in data.careers" value="{{c.name}}">{{c.name}}</option>
       </select>
@@ -897,7 +909,7 @@
     <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Skills<br><text class="star-wars-text">Skills</text></div>
     <div class="col-xs-12 filter-container">
-    	<select class="sw-input choice-filter" name="skillsFilter" id="skillsFilter" ng-change="filter('skills')" ng-model="all">
+      <select class="sw-input choice-filter" name="skillsFilter" id="skillsFilter" ng-change="filter('skills')" ng-model="all">
         <option value="all">All</option>
         <option value="Combat">Combat</option>
         <option value="General">General</option>
@@ -930,7 +942,7 @@
     <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Gear<br><text class="star-wars-text">Gear</text></div>
     <div class="col-xs-12 filter-container">
-    	<select class="sw-input choice-filter" name="gearFilter" id="gearFilter" ng-change="filter('gear')" ng-model="all">
+      <select class="sw-input choice-filter" name="gearFilter" id="gearFilter" ng-change="filter('gear')" ng-model="all">
         <option value="all">All</option>
         <option value="Weapon">Weapon</option>
         <option value="Armor">Armor</option>
@@ -968,7 +980,7 @@
     <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
     <div class="col-xs-12 section-header text-center">Vehicles<br><text class="star-wars-text">Vehicles</text></div>
     <div class="col-xs-12 filter-container">
-    	<select class="sw-input choice-filter" name="vehicleFilter" id="vehicleFilter" ng-change="filter('vehicles')" ng-model="all">
+      <select class="sw-input choice-filter" name="vehicleFilter" id="vehicleFilter" ng-change="filter('vehicles')" ng-model="all">
         <option value="all">All</option>
         <option value="Airspeeder">Airspeeder</option>
         <option value="Landspeeder">Landspeeder</option>
@@ -1000,22 +1012,22 @@
   </div>
 </div>
 <!-- galaxy menu section -->
- <div ng-if="data.showSection == 'galaxy'" class="col-xs-12 card-menu" id="galaxyMenu">
-    <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
-   	<div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
-    <div class="col-xs-12 section-header text-center">The Galaxy<br><text class="star-wars-text">The Galaxy</text></div>
-    <div class="col-xs-12 filter-container">
-    	<select class="sw-input choice-filter" name="galaxyFilter" id="galaxyFilter" ng-change="filter('galaxy')" ng-model="all">
-        <option value="all">All</option>
-        <option ng-repeat="sector in data.sectors" value="{{sector}}">{{sector}}</option>
-      </select>
-    </div>
-    <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGalaxy | filter: searchInput">
-      <span class="col-xs-12 menu-card" ng-click="showDetails('galaxy', item)">
-        <span class="col-xs-12 text-center">{{item.name}}</span>
-      </span>
-    </div>
+<div ng-if="data.showSection == 'galaxy'" class="col-xs-12 card-menu" id="galaxyMenu">
+  <div class="col-xs-6 holocron-home" ng-click="showSection('parent')"><i class="fad fa-space-station-moon-alt fa-3x"></i> Home</div>
+  <div class="col-xs-6 holocron-search"><input id="searchBox" ng-model="searchInput" type="text" placeholder="Search" class="sw-input"/></div>
+  <div class="col-xs-12 section-header text-center">The Galaxy<br><text class="star-wars-text">The Galaxy</text></div>
+  <div class="col-xs-12 filter-container">
+    <select class="sw-input choice-filter" name="galaxyFilter" id="galaxyFilter" ng-change="filter('galaxy')" ng-model="all">
+      <option value="all">All</option>
+      <option ng-repeat="sector in data.sectors" value="{{sector}}">{{sector}}</option>
+    </select>
   </div>
+  <div class="col-xs-12 col-md-3" ng-repeat="item in data.displayGalaxy | filter: searchInput">
+    <span class="col-xs-12 menu-card" ng-click="showDetails('galaxy', item)">
+      <span class="col-xs-12 text-center">{{item.name}}</span>
+    </span>
+  </div>
+</div>
 
 <!-- info sections -->
 <!-- species -->
@@ -1063,6 +1075,22 @@
   <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+  <!-- signature abilities -->
+  <span class="col-xs-12 signature-abilities">
+    <span class="signature-abilities-header">Signature Abilities<br/><text class="star-wars-text">Signature Abilities</text></span>
+    <span class="signature-ability" ng-repeat="sa in data.currentRecord.signature_abilities">
+      <span class="signature-ability-name">{{sa.name}}<br/><text class="star-wars-text">{{sa.name}}</text></span>
+      <span class="signature-ability-description" ng-bind-html="sa.description"></span>
+      <span class="signature-ability-upgrades-header">Signature Ability Upgrades<br><text class="star-wars-text">Signature Ability Upgrades</text></span>
+      <span class="signature-ability-upgrades">
+        <span class="signature-ability-upgrade" ng-repeat="upgrade in sa.upgrades">
+          <span class="upgrade-name">{{upgrade.name}}<br/><text class="star-wars-text">{{upgrade.name}}</text></span>
+          <span class="upgrade-cost">XP Cost to Purchase: {{upgrade.cost}}</span>
+          <span class="upgrade-description" ng-bind-html="upgrade.description"></span>
+        </span>
+      </span>
+    </span>
+  </span>
 </div>
 <!-- career specializations -->
 <div ng-if="data.showDetails == 'careerSpecs'" class="col-xs-12 info-detail-container">
@@ -1070,6 +1098,16 @@
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 info-detail info-sub-header text-center">Career: {{data.currentRecord.career}}</span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
+  <span class="career-specialization-talent-tree">
+    <span class="cs-talent-tree-header">Talent Tree<br><text class="star-wars-text">Talent Tree</text></span>
+    <span class="cs-talent-tree-talents">
+      <span class="cs-talent-tree" ng-repeat="tt in data.currentRecord.talent_tree">
+        <span class="talent-name">{{tt.talent}}<br><text class="star-wars-text">{{tt.talent}}</text></span>
+        <span class="talent-cost">XP Cost: {{tt.cost}}</span>
+        <span class="talent-description" ng-bind-html="tt.description"></span>
+      </span>
+    </span>
+  </span>
 </div>
 <!-- skills -->
 <div ng-if="data.showDetails == 'skills'" class="col-xs-12 info-detail-container">

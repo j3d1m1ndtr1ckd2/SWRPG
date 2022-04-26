@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>6efe828e2f038950e0f497eef699b6a7</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_signature_ability"&gt;
+    &lt;x_176383_star_wars_signature_ability action="INSERT_OR_UPDATE"&gt;
+        &lt;career display_value="The Guardian"&gt;05f5a6d22fe7d050e0f497eef699b6c8&lt;/career&gt;
+        &lt;cost_to_purchase&gt;30&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;Many of the most iconic scenes in stories of heroism and sacrifice begin with two combatants drawing (or igniting) their blades to fight a duel to the death.  This signature ability allows a Guardian to force a single foe into a duel, preventing both participants from attacking others for several rounds.  Guardians can use this signature ability to give allies a chance to recover and regroup, to distract a powerful foe while comrades clear out weaker enemies, or even to stave off a single deadly combatant while allies make their escape.  Characters who have mastered this signature ability can provide substantial boons to their allies while they fight the duel, giving them the best chance to complete important tasks without interruption.  Of course, any use of this signature ability represents a considerable risk on the part of the Guardian, for it means bearing the entire burden of fighting a particular foe, if only for a short time.  Such duels have been the finest moments of many Guardians, but also their last.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BASE&lt;/strong&gt; &lt;strong&gt;ABILITY:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once per game session, when in combat with one or more enemies, the character may spend 2 destiny points and make a Hard (3 difficulty dice) Discipline check to challenge a single chosen foe to a duel.  For the duration of the duel, the two characters can only make attacks targeting each other, and no other characters can target the dueling characters with attacks (or otherwise interfere).  Fated Duel and its effects also end if either combatant is incapacitated.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Fated Duel&lt;/name&gt;
+        &lt;number&gt;SIG0001014&lt;/number&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-04-25 14:54:16&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;6efe828e2f038950e0f497eef699b6a7&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-04-26 15:10:32&lt;/sys_updated_on&gt;
+        &lt;unlock_criteria&gt;{"peacekeeper":"9cbe5b592f882810e0f497eef699b624,1f7fd7992f882810e0f497eef699b6a7","protector":"991784222f006c10e0f497eef699b647,f5a64cae2fcc2c10e0f497eef699b615","soresu defender":"f68b70a32f846050e0f497eef699b6c3,583974a32f846050e0f497eef699b678"}&lt;/unlock_criteria&gt;
+    &lt;/x_176383_star_wars_signature_ability&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-04-25 15:06:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ac81e4e2f438950e0f497eef699b6cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Fated Duel</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_3ac81e4e2f438950e0f497eef699b6cb</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-04-26 15:10:40</sys_updated_on>
+        <tablename>x_176383_star_wars_signature_ability</tablename>
+    </sys_metadata_link>
+</record_update>

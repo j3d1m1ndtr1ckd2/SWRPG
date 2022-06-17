@@ -40,11 +40,20 @@
 	document.getElementById('portraitContainer').appendChild(img);
 
 	$rootScope.$on('sp.form.submitted', function(){
-		$scope.closeEditContainer('portrait');
-		c.server.get({action: 'updatePortrait'}).then(function(response){
-			$scope.data.character.portrait = response.data.character.portrait;
-			document.getElementById('characterPortrait').src = $scope.data.character.portrait;
-		});
+		if(!$scope.data.editingPortrait){
+			$location.search('id', 'star_wars_character_sheet');
+			$location.search('character_id', $scope.data.characterID);
+			$location.search('query', null);
+			$location.search('spa', null);
+			$scope.closeEditContainer('gearQuality');
+			$scope.saveEdits('gearEdits');
+		} else{
+			$scope.closeEditContainer('portrait');		
+			c.server.get({action: 'updatePortrait'}).then(function(response){
+				$scope.data.character.portrait = response.data.character.portrait;
+				document.getElementById('characterPortrait').src = $scope.data.character.portrait;
+			});
+		}
 	});
 
 	$scope.showStatusEffectDetail = function(effect){
@@ -196,7 +205,7 @@
 		$scope.toggleMobileNavMenu();
 	}
 
-	$scope.editCharacter = function(section, item){
+	$scope.editCharacter = function(section, item, secondaryItem){
 		if($scope.data.canEdit || section == 'career' || section == 'specializations' || section == 'species'){
 			switch(section){
 				case 'description':
@@ -213,12 +222,43 @@
 					break;
 
 				case 'portrait':
+					$scope.data.editingPortrait = true;
 					var container = document.getElementById('editPortrait');
 					container.style.display = 'inline';
 					if(parseInt(screen.width) < 762){
 						container.style.width = '80%';
 					} else{
 						container.style.width = '40%';
+					}
+					break;
+
+				case 'gearQuality':
+					try{
+						$scope.data.currentGear = item;
+						var widgetParams = {
+							table: 'x_176383_star_wars_character_gear_special',
+							query: 'character_gear=' + item.sysID,
+							isPopup: true
+						};
+						if(secondaryItem){
+							widgetParams.sys_id = secondaryItem.sys_id;
+						} else{
+							widgetParams.sys_id = -1;
+						}
+						$location.search('spa', 1);
+						$location.search('query', widgetParams.query);
+						spUtil.get('widget-form', widgetParams).then(function(response){
+							$scope.data.gearQualityWidget = response;	
+						});
+						var container = document.getElementById('editGearQuality');
+						container.style.display = 'inline';
+						if(parseInt(screen.width) < 762){
+							container.style.width = '80%';
+						} else{
+							container.style.width = '40%';
+						}
+					} catch(e){
+						alert(e.message);
 					}
 					break;
 
@@ -566,6 +606,7 @@
 				break;
 
 			case 'gearEdits':
+				var name = document.getElementById('gearName').value;
 				var crit = document.getElementById('gearCritRating').value;
 				var defense = document.getElementById('gearDefense').value;
 				var damage = document.getElementById('gearDamage').value;
@@ -573,10 +614,10 @@
 				var soak = document.getElementById('gearSoak').value;
 				var hardPoints = document.getElementById('gearHardPoints').value;
 				var location = document.getElementById('gearLocation').value;
-				c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints, location: location}).then(function(response){
+				c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints, location: location, name: name}).then(function(response){
 					c.server.refresh().then(function(){
 						$scope.closeEditContainer('gearEdit');
-						setTimeout(clearDiceRolls, 100);
+						setTimeout(clearDiceRolls, 10);
 					});	
 				});
 				break;
@@ -706,7 +747,12 @@
 				break;
 
 			case 'portrait':
+				$scope.data.editingPortrait = false;
 				container = document.getElementById('editPortrait');
+				break;
+
+			case 'gearQuality':
+				container = document.getElementById('editGearQuality');
 				break;
 
 			case 'soak':
@@ -1171,7 +1217,7 @@
   display:flex;
   flex-flow:row nowrap;
   justify-content:space-between;
-  
+
   .signature-ability-talent-tree-container{
     flex:1 1 auto;
     padding:1rem;
@@ -1276,6 +1322,10 @@
   margin-bottom:10px;
 }
 
+.full-width-input{
+  width:100%;
+}
+
 .edit-character{
   display:none;
   width:0;
@@ -1310,6 +1360,18 @@
   text-align:center;
   font-size:18px;
   margin-top:20px;
+}
+
+#addGearSpecialsButton{
+  background:transparent;
+  box-shadow: 0px 0px 4px 2px #d306d3;
+  border: 1px groove #d306d3;
+  border-radius:20px;
+  padding:3px 25px 3px 25px;
+  text-align:center;
+  font-size:18px;
+  margin-top:20px;
+  margin-right:2rem;
 }
 
 #swSaveButton{
@@ -1438,6 +1500,10 @@
   border:1px groove #54f403;
   border-radius:20px;
   box-shadow:0px 0px 6px 2px #54f403;
+}
+
+.item-quality:hover{
+  text-decoration:underline;
 }
 
 .marketplace-item{
@@ -2049,6 +2115,7 @@ input:checked + .slider:before {
 			hideRelatedLists: true,
 			view: 'portrait'
 		};
+		data.editingPortrait = false;
 		data.updatePortraitWidget = $sp.getWidget('widget-form', widgetParams);
 
 		//retrieve status effect details and set checked if character has any
@@ -2339,8 +2406,21 @@ input:checked + .slider:before {
 				description: gear.description_html + '',
 				crit: gear.critical_rating + '',
 				hpRequired: gear.hp_required + '',
-				sysID: gear.sys_id + ''
+				sysID: gear.sys_id + '',
+				gearQualityArray: []
 			};
+			
+			var gearSpecial = new GlideRecord('x_176383_star_wars_gear_special');
+			gearSpecial.addQuery('item', g.sysID);
+			gearSpecial.query();
+			while(gearSpecial.next()){
+				gsObj = {
+					name: gearSpecial.weapon_quality.getDisplayValue(),
+					rank: gearSpecial.rank + '',
+					sys_id: gearSpecial.sys_id + ''
+				};
+				g.gearQualityArray.push(gsObj);
+			}
 			data.availableGear.push(g);
 		}
 		data.availableGearAll = data.availableGear;
@@ -2354,7 +2434,7 @@ input:checked + .slider:before {
 		cg.query();
 		while(cg.next()){
 			var cgObj = {
-				name: cg.item.getDisplayValue(),
+				name: cg.name.toString() || cg.item.getDisplayValue(),
 				quantity: cg.quantity + '',
 				location: cg.location.getDisplayValue(),
 				locValue: cg.location + '',
@@ -2372,7 +2452,8 @@ input:checked + .slider:before {
 				hpRequired: cg.item.hp_required + '',
 				description: cg.item.description_html + '',
 				sysID: cg.sys_id + '',
-				iconID: cg.sys_id + 'Chevron'
+				iconID: cg.sys_id + 'Chevron',
+				gearQualityArray: []
 			};
 			var wq = new GlideRecord('x_176383_star_wars_character_gear_special');
 			wq.addQuery('character_gear', cg.sys_id);
@@ -2380,6 +2461,12 @@ input:checked + .slider:before {
 			wq.query();
 			var qualityString = '';
 			while(wq.next()){
+				var wqObj = {
+					name: wq.weapon_quality.getDisplayValue(),
+					sys_id: wq.sys_id + '',
+					rank: wq.rank + ''
+				};
+				cgObj.gearQualityArray.push(wqObj);
 				if(qualityString == ''){
 					qualityString = wq.weapon_quality.getDisplayValue() + ': ' + wq.rank;
 				} else{
@@ -2830,7 +2917,7 @@ input:checked + .slider:before {
 					data.character.creditsInt = parseInt(charGR.credits);
 					data.character.creditsString = data.character.creditsInt + '';
 					cg = new GlideRecord('x_176383_star_wars_character_gear_m2m');
-					cg.addQuery('item.name', input.item.name).addCondition('character', characterID);
+					cg.addQuery('item.name', input.item.name).addCondition('character', characterID).addCondition('item.type', 'gear');
 					cg.query();
 					if(cg.next()){
 						cg.quantity = (parseInt(cg.quantity) + parseInt(input.quantity));
@@ -2941,6 +3028,7 @@ input:checked + .slider:before {
 				case 'saveGearEdit':
 					var gedit = new GlideRecord('x_176383_star_wars_character_gear_m2m');
 					gedit.get(input.gearID);
+					gedit.name = input.name;
 					gedit.critical_rating = input.crit;
 					gedit.defense = input.defense;
 					gedit.damage = input.damage;
@@ -3080,7 +3168,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1259</sys_mod_count>
+        <sys_mod_count>1327</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -3088,7 +3176,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-04-05 16:31:29</sys_updated_on>
+        <sys_updated_on>2022-06-17 01:57:42</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -3468,7 +3556,8 @@ input:checked + .slider:before {
                   </span>
                   <span ng-if="item.typeID == 'weapon' || item.typeID == 'mod' || item.typeID == 'armor'" class="col-xs-4 gear-detail">
                     <span class="col-xs-12 gear-detail-label">Special:</span>
-                    <span class="col-xs-12 gear-detail-value">{{item.weaponQualities}}</span>
+                    <!--span class="col-xs-12 gear-detail-value">{{item.weaponQualities}}</span-->
+                    <span class="col-xs-12 gear-detail-value"><span class="item-quality" ng-click="editCharacter('gearQuality', item, wq)" ng-repeat="wq in item.gearQualityArray">{{wq.name}}: {{wq.rank}}, </span></span>
                   </span>
                   <span ng-if="item.typeID == 'armor'" class="col-xs-4 gear-detail">
                     <span class="col-xs-12 gear-detail-label">Defense:</span>
@@ -3546,7 +3635,8 @@ input:checked + .slider:before {
         </span>
         <span ng-if="data.currentGearItem.typeID == 'weapon' || data.currentGearItem.typeID == 'mod' || data.currentGearItem.typeID == 'armor'" class="col-xs-4 gear-detail">
           <span class="col-xs-12 gear-detail-label">Special:</span>
-          <span class="col-xs-12 gear-detail-value">{{data.currentGearItem.weaponQualities}}</span>
+          <!--span class="col-xs-12 gear-detail-value">{{data.currentGearItem.weaponQualities}}</span-->
+          <span class="col-xs-12 gear-detail-value"><span ng-repeat="wq in data.currentGearItem.gearQualityArray">{{wq.name}}: {{wq.rank}}, </span></span>
         </span>
         <span ng-if="data.currentGearItem.typeID == 'armor'" class="col-xs-4 gear-detail">
           <span class="col-xs-12 gear-detail-label">Defense:</span>
@@ -3697,7 +3787,7 @@ input:checked + .slider:before {
     <!-- edit portrait -->
     <span class="edit-character" id="editPortrait">
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('portrait')"><i class="fas fa-swords-laser slideout-close-icon"></i></span>
-      <span class="col-xs-12">
+      <span ng-if="data.editingPortrait" class="col-xs-12">
         <sp-widget widget="data.updatePortraitWidget"/>
       </span>
     </span>
@@ -4052,6 +4142,10 @@ input:checked + .slider:before {
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearEdit')"><i class="fas fa-swords-laser slideout-close-icon"></i></span>
       <span class="col-xs-12 cg-name text-center">{{data.currentGear.name}}<br><text class="star-wars-text">{{data.currentGear.name}}</text></span>
       <span class="col-xs-12 cg-edit-body">
+        <span class="col-xs-12 gear-edit-input">
+          <label for="gearName">Name</label><br>
+          <input class="sw-input full-width-input" type="text" id="gearName" name="gearName" value="{{data.currentGear.name}}"/>
+        </span>
         <span class="col-xs-12 col-md-4 gear-edit-input">
           <label for="gearCritRating">Critical Rating</label><br>
           <input class="sw-input" type="text" id="gearCritRating" name="gearCritRating" inputmode="numeric" pattern="[0-9]*" value="{{data.currentGear.crit}}"/>
@@ -4093,8 +4187,16 @@ input:checked + .slider:before {
       </span>
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">
+          <button id="addGearSpecialsButton" ng-click="editCharacter('gearQuality', data.currentGear)">Add Gear Quality<br><text class="star-wars-text">Add Gear Quality</text></button>
           <button id="saveEditsButton" ng-click="saveEdits('gearEdits')">Save<br><text class="star-wars-text">Save</text></button>
         </span>
+      </span>
+    </span>
+    <!-- edit gear quality -->
+    <span class="edit-character" id="editGearQuality">
+      <span class="col-xs-12 close-button" ng-click="closeEditContainer('gearQuality')"><i class="fas fa-swords-laser slideout-close-icon"></i></span>
+      <span ng-if="data.currentGear" class="col-xs-12">
+        <sp-widget widget="data.gearQualityWidget"/>
       </span>
     </span>
     <!-- edit other gear -->

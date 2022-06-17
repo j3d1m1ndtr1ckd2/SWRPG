@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>97f99f972fcb0910e0f497eef699b69a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_signature_ability_upgrade"&gt;
+    &lt;x_176383_star_wars_signature_ability_upgrade action="INSERT_OR_UPDATE"&gt;
+        &lt;cost_to_purchase&gt;15&lt;/cost_to_purchase&gt;
+        &lt;description&gt;&lt;![CDATA[&lt;p&gt;After activating Unmatched Vigilance, the character may immediately perform one free maneuver.&lt;/p&gt;]]&gt;&lt;/description&gt;
+        &lt;name&gt;Combat Readiness&lt;/name&gt;
+        &lt;pre_requisite_upgrades&gt;0db997972fcb0910e0f497eef699b6ee,414f1b972fcb0910e0f497eef699b6bd&lt;/pre_requisite_upgrades&gt;
+        &lt;signature_ability display_value="Unmatched Vigilance"&gt;0147df532fcb0910e0f497eef699b653&lt;/signature_ability&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-04-29 17:05:08&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;97f99f972fcb0910e0f497eef699b69a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-04-29 17:47:01&lt;/sys_updated_on&gt;
+    &lt;/x_176383_star_wars_signature_ability_upgrade&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-04-29 17:48:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6114afd72f0f0910e0f497eef699b63b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_6114afd72f0f0910e0f497eef699b63b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-04-29 17:48:12</sys_updated_on>
+        <tablename>x_176383_star_wars_signature_ability_upg</tablename>
+    </sys_metadata_link>
+</record_update>

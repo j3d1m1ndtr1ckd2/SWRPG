@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="range" table="x_176383_star_wars_character_gear_m2m" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>range</element>
+            <name>x_176383_star_wars_character_gear_m2m</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-06-16 14:54:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>99b8c2322f845910e0f497eef699b6da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>range</sys_name>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_choice_x_176383_star_wars_character_gear_m2m_range</sys_update_name>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-06-16 14:54:47</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>range</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Engaged</label>
+            <language>en</language>
+            <name>x_176383_star_wars_character_gear_m2m</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-06-16 14:54:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11b8c2322f845910e0f497eef699b6da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-06-16 14:54:47</sys_updated_on>
+            <value>engaged</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>range</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Short</label>
+            <language>en</language>
+            <name>x_176383_star_wars_character_gear_m2m</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-06-16 14:54:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>15b8c2322f845910e0f497eef699b6dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-06-16 14:54:48</sys_updated_on>
+            <value>short</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>range</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medium</label>
+            <language>en</language>
+            <name>x_176383_star_wars_character_gear_m2m</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-06-16 14:54:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95b8c2322f845910e0f497eef699b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-06-16 14:54:48</sys_updated_on>
+            <value>medium</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>range</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Long</label>
+            <language>en</language>
+            <name>x_176383_star_wars_character_gear_m2m</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-06-16 14:54:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>19b8c2322f845910e0f497eef699b6de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-06-16 14:54:48</sys_updated_on>
+            <value>long</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>range</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Extreme</label>
+            <language>en</language>
+            <name>x_176383_star_wars_character_gear_m2m</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2022-06-16 14:54:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>99b8c2322f845910e0f497eef699b6df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2022-06-16 14:54:48</sys_updated_on>
+            <value>extreme</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

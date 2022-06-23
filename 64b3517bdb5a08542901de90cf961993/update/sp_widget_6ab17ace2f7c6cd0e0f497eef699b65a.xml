@@ -835,7 +835,7 @@
         <sys_created_on>2020-12-02 04:12:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ab17ace2f7c6cd0e0f497eef699b65a</sys_id>
-        <sys_mod_count>225</sys_mod_count>
+        <sys_mod_count>226</sys_mod_count>
         <sys_name>Holocron</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -843,7 +843,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6ab17ace2f7c6cd0e0f497eef699b65a</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-04-26 22:31:07</sys_updated_on>
+        <sys_updated_on>2022-06-23 05:23:19</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -1032,7 +1032,7 @@
 <!-- info sections -->
 <!-- species -->
 <div ng-if="data.showDetails == 'species'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 col-md-3 img-container">
     <img src="{{data.currentRecord.image}}" height="300px" width="180px"/>
@@ -1072,7 +1072,7 @@
 </div>
 <!-- careers -->
 <div ng-if="data.showDetails == 'careers'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
   <!-- signature abilities -->
@@ -1094,7 +1094,7 @@
 </div>
 <!-- career specializations -->
 <div ng-if="data.showDetails == 'careerSpecs'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 info-detail info-sub-header text-center">Career: {{data.currentRecord.career}}</span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
@@ -1111,21 +1111,21 @@
 </div>
 <!-- skills -->
 <div ng-if="data.showDetails == 'skills'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 info-detail info-sub-header text-center">Type: {{data.currentRecord.type}}</span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
 </div>
 <!-- Talents -->
 <div ng-if="data.showDetails == 'talents'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}} <i ng-if="data.currentRecord.force == 'true'" class="fab fa-jedi-order"></i><br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 info-detail info-sub-header text-center">{{data.currentRecord.passiveOrActive}}</span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
 </div>
 <!-- gear -->
 <div ng-if="data.showDetails == 'gear'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}} <i ng-if="data.currentRecord.force == 'true'" class="fab fa-jedi-order"></i><br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 info-sub-header text-center">Type: {{data.currentRecord.type}}</span>
   <span class="col-xs-12 info-detail-body">
@@ -1146,13 +1146,13 @@
 </div>
 <!-- weapon qualities -->
 <div ng-if="data.showDetails == 'weaponQualities'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>
 </div>
 <!-- vehicles -->
 <div ng-if="data.showDetails == 'vehicle'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 info-detail info-sub-header text-center">Type: {{data.currentRecord.type}}</span>
   <span class="col-xs-12 info-detail-body">
@@ -1181,7 +1181,7 @@
 </div>
 <!-- The Force -->
 <div ng-if="data.showDetails == 'force'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-6 info-sub-header text-center">Minimum Force Rating Required: {{data.currentRecord.minRating}}</span>
   <span class="col-xs-6 info-sub-header text-center">XP Cost: {{data.currentRecord.cost}}</span>
@@ -1197,7 +1197,7 @@
 </div>
 <!-- the galaxy -->
 <div ng-if="data.showDetails == 'galaxy'" class="col-xs-12 info-detail-container">
-  <span class="pull-right close-button"><i class="fas fa-times fa-2x" ng-click="hideDetails()"></i></span>
+  <span class="pull-right close-button"><i class="fas fa-swords-laser fa-2x" ng-click="hideDetails()"></i></span>
   <span class="col-xs-12 info-header text-center">{{data.currentRecord.name}}<br><text class="star-wars-text">{{data.currentRecord.name}}</text></span>
   <span class="col-xs-12 info-sub-header text-center">{{data.currentRecord.sector}}<br><text class="star-wars-text">{{data.currentRecord.sector}}</text></span>
   <span class="col-xs-12 description" ng-bind-html="data.currentRecord.description"></span>

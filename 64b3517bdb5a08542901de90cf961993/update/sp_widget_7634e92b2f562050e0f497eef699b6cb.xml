@@ -5,6 +5,13 @@
   /* widget controller */
   var c = this;
 	
+	$scope.modifyOrder = function(combatant){
+		var order = prompt('Order:');
+		c.server.get({action: 'modifyOrder', combatant: combatant, newOrder: order}).then(function(response){
+			c.server.refresh();
+		});
+	}
+	
 	$scope.openCombatTracker = function(){
 		document.getElementById('combatTrackerExpanded').style.display = 'inline';
 		document.getElementById('openCombatTrackerButton').style.display = 'none';
@@ -245,134 +252,139 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-var campaign = $sp.getParameter('campaign');
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var campaign = $sp.getParameter('campaign');
 	data.campaign = campaign;
-var campaignGR = new GlideRecord('x_176383_star_wars_campaign');
+	var campaignGR = new GlideRecord('x_176383_star_wars_campaign');
 	campaignGR.get(campaign);
 	if(campaignGR.game_master.sys_id == gs.getUserID()){
 		data.isGM = true;
 	} else{
 		data.isGM = false;
 	}
-var combatTracker = new GlideRecord('x_176383_star_wars_combat_tracker');
-		combatTracker.addQuery('campaign', campaign).addCondition('active', true);
-		combatTracker.query();
-		if(combatTracker.next()){
-			data.combat = {
-				inCombat: true,
-				sysID: combatTracker.sys_id + '',
-				round: combatTracker.round + ''
-			};
-		} else{
-			data.combat = {
-				inCombat: false,
-				sysID: null,
-				round: null
-			};
-		}
-
-if(data.combat.inCombat){
-	data.combatants = [];
-	var combatants = new GlideRecord('x_176383_star_wars_combatant');
-			combatants.addQuery('combat_tracker', data.combat.sysID);
-			combatants.orderBy('order');
-			combatants.query();
-			while(combatants.next()){
-				var rec = {
-					sysID: combatants.sys_id + '',
-					type: combatants.type + '',
-					typeDisplay: combatants.type.getDisplayValue(),
-					order: combatants.order + '',
-					active: combatants.active,
-					status: combatants.status + ''
-				};
-				data.combatants.push(rec);
-			}				
-}
-	
-if(input){
-	if(input.action == 'newEncounter'){
-		combatTracker.initialize();
-		combatTracker.campaign = campaign;
-		combatTracker.insert();
-		data.combat.inCombat = true;
-		data.combat.sysID = combatTracker.sys_id + '';
-		data.combat.round = 1;
-	} else if(input.action == 'addCombatant'){
-		var combatant = new GlideRecord('x_176383_star_wars_combatant');
-		combatant.initialize();
-		combatant.combat_tracker = data.combat.sysID;
-		combatant.order = data.combatants.length + 1;
-		combatant.type = input.type;
-		if(data.combatants.length == 0){
-			combatant.status = 'going';
-		}
-		combatant.insert();
-		var rec = {
-			sysID: combatant.sys_id + '',
-			type: combatant.type + '',
-			typeDisplay: combatant.type.getDisplayValue(),
-			order: combatant.order + '',
-			active: combatant.active,
-			status: combatant.status + ''
+	var combatTracker = new GlideRecord('x_176383_star_wars_combat_tracker');
+	combatTracker.addQuery('campaign', campaign).addCondition('active', true);
+	combatTracker.query();
+	if(combatTracker.next()){
+		data.combat = {
+			inCombat: true,
+			sysID: combatTracker.sys_id + '',
+			round: combatTracker.round + ''
 		};
-		data.combatants.push(rec);
-	} else if(input.action == 'removeCombatant'){
-		var combatant = new GlideRecord('x_176383_star_wars_combatant');
-		combatant.get(input.sysID);
-		combatant.deleteRecord();
-		combatant = new GlideRecord('x_176383_star_wars_combatant');
-		combatant.addQuery('order', '>', input.order);
-		combatant.query();
-		while(combatant.next()){
-			combatant.order -= 1;
-			combatant.update();
-		}
-	} else if(input.action == 'nextTurn'){
-		var combatant = new GlideRecord('x_176383_star_wars_combatant');
-		combatant.addQuery('status', 'going').addCondition('combat_tracker', data.combat.sysID);
-		combatant.query();
-		var currentOrder;
-		if(combatant.next()){
-			currentOrder = combatant.order;
-			combatant.status = 'gone';
-			combatant.update();
-			if(currentOrder < data.combatants.length){
-				combatant = new GlideRecord('x_176383_star_wars_combatant');
-				combatant.addQuery('order', currentOrder + 1).addCondition('combat_tracker', data.combat.sysID);
-				combatant.query();
-				if(combatant.next()){
-					combatant.status = 'going';
-					combatant.update();
-				}
-			} else{
-				combatant = new GlideRecord('x_176383_star_wars_combatant');
-				combatant.addQuery('combat_tracker', data.combat.sysID);
-				combatant.orderBy('order');
-				combatant.query();
-				while(combatant.next()){
-					if(combatant.order == 1){
-						combatant.status = 'going';
-					} else{
-						combatant.status = 'pending';
-					}
-					combatant.update();
-				}
-				combatTracker = new GlideRecord('x_176383_star_wars_combat_tracker');
-				combatTracker.get(data.combat.sysID);
-				combatTracker.round ++;
-				combatTracker.update();
+	} else{
+		data.combat = {
+			inCombat: false,
+			sysID: null,
+			round: null
+		};
+	}
+
+	if(data.combat.inCombat){
+		data.combatants = [];
+		var combatants = new GlideRecord('x_176383_star_wars_combatant');
+		combatants.addQuery('combat_tracker', data.combat.sysID);
+		combatants.orderBy('order');
+		combatants.query();
+		while(combatants.next()){
+			var rec = {
+				sysID: combatants.sys_id + '',
+				type: combatants.type + '',
+				typeDisplay: combatants.type.getDisplayValue(),
+				order: combatants.order + '',
+				active: combatants.active,
+				status: combatants.status + ''
+			};
+			data.combatants.push(rec);
+		}				
+	}
+
+	if(input){
+		if(input.action == 'newEncounter'){
+			combatTracker.initialize();
+			combatTracker.campaign = campaign;
+			combatTracker.insert();
+			data.combat.inCombat = true;
+			data.combat.sysID = combatTracker.sys_id + '';
+			data.combat.round = 1;
+		} else if(input.action == 'addCombatant'){
+			var combatant = new GlideRecord('x_176383_star_wars_combatant');
+			combatant.initialize();
+			combatant.combat_tracker = data.combat.sysID;
+			combatant.order = (data.combatants.length + 1) * 100;
+			combatant.type = input.type;
+			if(data.combatants.length == 0){
+				combatant.status = 'going';
 			}
-		}
-	} else if(input.action == 'endEncounter'){
+			combatant.insert();
+			var rec = {
+				sysID: combatant.sys_id + '',
+				type: combatant.type + '',
+				typeDisplay: combatant.type.getDisplayValue(),
+				order: combatant.order + '',
+				active: combatant.active,
+				status: combatant.status + ''
+			};
+			data.combatants.push(rec);
+		} else if(input.action == 'removeCombatant'){
+			var combatant = new GlideRecord('x_176383_star_wars_combatant');
+			combatant.get(input.sysID);
+			combatant.deleteRecord();
+			combatant = new GlideRecord('x_176383_star_wars_combatant');
+			combatant.addQuery('order', '>', input.order);
+			combatant.query();
+			while(combatant.next()){
+				combatant.order -= 1;
+				combatant.update();
+			}
+		} else if(input.action == 'nextTurn'){
+			var combatant = new GlideRecord('x_176383_star_wars_combatant');
+			combatant.addQuery('status', 'going').addCondition('combat_tracker', data.combat.sysID);
+			combatant.query();
+			var currentOrder;
+			if(combatant.next()){
+				currentOrder = combatant.order;
+				combatant.status = 'gone';
+				combatant.update();
+				if(currentOrder < data.combatants.length){
+					combatant = new GlideRecord('x_176383_star_wars_combatant');
+					combatant.addQuery('order', currentOrder + 1).addCondition('combat_tracker', data.combat.sysID);
+					combatant.query();
+					if(combatant.next()){
+						combatant.status = 'going';
+						combatant.update();
+					}
+				} else{
+					combatant = new GlideRecord('x_176383_star_wars_combatant');
+					combatant.addQuery('combat_tracker', data.combat.sysID);
+					combatant.orderBy('order');
+					combatant.query();
+					while(combatant.next()){
+						if(combatant.order == 1){
+							combatant.status = 'going';
+						} else{
+							combatant.status = 'pending';
+						}
+						combatant.update();
+					}
+					combatTracker = new GlideRecord('x_176383_star_wars_combat_tracker');
+					combatTracker.get(data.combat.sysID);
+					combatTracker.round ++;
+					combatTracker.update();
+				}
+			}
+		} else if(input.action == 'endEncounter'){
 			combatTracker = new GlideRecord('x_176383_star_wars_combat_tracker');
 			combatTracker.get(data.combat.sysID);
 			combatTracker.active = false;
 			combatTracker.update();
+		} else if(input.action == 'modifyOrder'){
+			combatTracker = new GlideRecord('x_176383_star_wars_combatant');
+			combatTracker.get(input.combatant.sysID);
+			combatTracker.order = parseInt(input.newOrder);
+			combatTracker.update();
+		}
 	}
-}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -380,7 +392,7 @@ if(input){
         <sys_created_on>2021-02-19 03:58:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7634e92b2f562050e0f497eef699b6cb</sys_id>
-        <sys_mod_count>114</sys_mod_count>
+        <sys_mod_count>119</sys_mod_count>
         <sys_name>Combat Tracker</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -388,7 +400,7 @@ if(input){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_7634e92b2f562050e0f497eef699b6cb</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-03-04 04:27:49</sys_updated_on>
+        <sys_updated_on>2022-06-23 05:49:16</sys_updated_on>
         <template><![CDATA[<div class="collapsed-combat-tracker-button" id="openCombatTrackerButton" ng-click="openCombatTracker()">
   <span class="text-center primary-text col-xs-12">Combat Tracker</span>
   <span class="col-xs-12 text-center star-wars-text secondary-text">Combat Tracker</span>
@@ -418,7 +430,7 @@ if(input){
      </span>
      <span class="col-xs-12 combatants-container">
         <span class="col-xs-12 combatant" ng-if="c.active" ng-repeat="c in data.combatants">
-          <span class="col-xs-4 combatant-detail combatant-type">{{c.typeDisplay}}</span>
+          <span class="col-xs-4 combatant-detail combatant-type">{{c.typeDisplay}}<br/><a ng-if="data.isGM" href="javascript:void(0)" ng-click="modifyOrder(c)">{{c.order}}</a></span>
           <span ng-if="data.isGM" class="col-xs-2 combatant-detail">
             <i ng-if="c.status == 'pending'" class="far fa-lock-alt"></i>
             <i ng-if="c.status == 'going'" class="fas fa-sword-laser-alt"></i>

@@ -330,47 +330,56 @@
 			var combatant = new GlideRecord('x_176383_star_wars_combatant');
 			combatant.get(input.sysID);
 			combatant.deleteRecord();
-			combatant = new GlideRecord('x_176383_star_wars_combatant');
-			combatant.addQuery('order', '>', input.order);
-			combatant.query();
-			while(combatant.next()){
-				combatant.order -= 1;
-				combatant.update();
-			}
 		} else if(input.action == 'nextTurn'){
 			var combatant = new GlideRecord('x_176383_star_wars_combatant');
-			combatant.addQuery('status', 'going').addCondition('combat_tracker', data.combat.sysID);
+			combatant.addQuery('combat_tracker', data.combat.sysID);
+			combatant.orderBy('order');
 			combatant.query();
-			var currentOrder;
-			if(combatant.next()){
-				currentOrder = combatant.order;
-				combatant.status = 'gone';
-				combatant.update();
-				if(currentOrder < data.combatants.length){
-					combatant = new GlideRecord('x_176383_star_wars_combatant');
-					combatant.addQuery('order', currentOrder + 1).addCondition('combat_tracker', data.combat.sysID);
-					combatant.query();
-					if(combatant.next()){
+			var combatants = [];
+			while(combatant.next()){
+				var combatantRec = {
+					order: parseInt(combatant.order),
+					status: combatant.status + '',
+					sys_id: combatant.sys_id + ''
+				};
+				combatants.push(combatantRec);
+			}
+			var newRound = false;
+			for(var i = 0; i < combatants.length; i++){
+				if(combatants[i].status == 'going'){
+					combatant.get(combatants[i].sys_id);
+					combatant.status = 'gone';
+					combatant.update();
+					var compare = i + 1;
+					if(compare < combatants.length){
+						var combatant = new GlideRecord('x_176383_star_wars_combatant');
+						combatant.get(combatants[i+1].sys_id);
 						combatant.status = 'going';
 						combatant.update();
+					} else{
+						combatTracker = new GlideRecord('x_176383_star_wars_combat_tracker');
+						combatTracker.get(data.combat.sysID);
+						combatTracker.round++;
+						combatTracker.update();
+						newRound = true;
 					}
-				} else{
-					combatant = new GlideRecord('x_176383_star_wars_combatant');
-					combatant.addQuery('combat_tracker', data.combat.sysID);
-					combatant.orderBy('order');
-					combatant.query();
-					while(combatant.next()){
-						if(combatant.order == 1){
-							combatant.status = 'going';
-						} else{
-							combatant.status = 'pending';
-						}
+				}
+			}
+			if(newRound){
+				var combatant = new GlideRecord('x_176383_star_wars_combatant');
+				combatant.addQuery('combat_tracker', data.combat.sysID);
+				combatant.orderBy('order');
+				combatant.query();
+				var index = 0;
+				while(combatant.next()){
+					if(index == 0){
+						combatant.status = 'going';
+						combatant.update();
+					} else{
+						combatant.status = 'pending';
 						combatant.update();
 					}
-					combatTracker = new GlideRecord('x_176383_star_wars_combat_tracker');
-					combatTracker.get(data.combat.sysID);
-					combatTracker.round ++;
-					combatTracker.update();
+					index++;
 				}
 			}
 		} else if(input.action == 'endEncounter'){
@@ -392,7 +401,7 @@
         <sys_created_on>2021-02-19 03:58:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7634e92b2f562050e0f497eef699b6cb</sys_id>
-        <sys_mod_count>119</sys_mod_count>
+        <sys_mod_count>138</sys_mod_count>
         <sys_name>Combat Tracker</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -400,7 +409,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_7634e92b2f562050e0f497eef699b6cb</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-06-23 05:49:16</sys_updated_on>
+        <sys_updated_on>2022-07-01 15:02:16</sys_updated_on>
         <template><![CDATA[<div class="collapsed-combat-tracker-button" id="openCombatTrackerButton" ng-click="openCombatTracker()">
   <span class="text-center primary-text col-xs-12">Combat Tracker</span>
   <span class="col-xs-12 text-center star-wars-text secondary-text">Combat Tracker</span>

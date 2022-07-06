@@ -1,266 +1,301 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope) {
-  /* widget controller */
-  var c = this;
+        <client_script><![CDATA[api.controller=function($scope, spUtil, $location, $rootScope) {
+	/* widget controller */
+	var c = this;
 	
+	$rootScope.$on('sp.form.submitted', function(){
+		$scope.closeEditContainer('mods');
+		c.server.refresh();
+	});
+
 	$scope.showVehicleInfo = function(){
 		document.getElementById('vehicleInfoFlyout').style.display = 'inline';
 	}
-	
+
 	$scope.hideVehicleInfo = function(){
 		document.getElementById('vehicleInfoFlyout').style.display = 'none';
 	}
-	
-	$scope.editVehicle = function(section){
+
+	$scope.editVehicle = function(section, sys_id){
+		try{
 		switch(section){
 			case 'name':
-			var container = document.getElementById('editVehicleName');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleName');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'hp':
-			var container = document.getElementById('editVehicleHP');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleHP');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'speed':
-			var container = document.getElementById('editVehicleSpeed');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleSpeed');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'crit':
-			var container = document.getElementById('editVehicleCrits');
-			document.getElementById('vehicleCritDescription').innerHTML = $scope.data.vehicle.critDescription;
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleCrits');
+				document.getElementById('vehicleCritDescription').innerHTML = $scope.data.vehicle.critDescription;
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'handling':
-			var container = document.getElementById('editVehicleHandling');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleHandling');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'armor':
-			var container = document.getElementById('editVehicleArmor');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleArmor');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'hullTrauma':
-			var container = document.getElementById('editVehicleHullTrauma');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleHullTrauma');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'systemStrain':
-			var container = document.getElementById('editVehicleSystemStrain');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleSystemStrain');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'defense':
-			var container = document.getElementById('editVehicleDefense');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}
-			break;
-				
+				var container = document.getElementById('editVehicleDefense');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
+			case 'mods':
+				var widgetParams = {
+					table: 'x_176383_star_wars_character_vehicle_gear',
+					query: 'character_vehicle=' + $scope.data.vehicle.characterVehicleSysId + '^vehicle=' + $scope.data.vehicle.vehicleSysId,
+					isPopup: true,
+					sys_id: sys_id
+				};
+				$location.search('spa', 1);
+				$location.search('query', widgetParams.query);
+				spUtil.get('widget-form', widgetParams).then(function(response){
+					$scope.data.vehicleModWidget = response;
+				});
+				var container = document.getElementById('editVehicleMods');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}
+				break;
+
 			case 'cargo':
-			document.getElementById('cargo').value = $scope.data.vehicle.cargo;
-			var container = document.getElementById('editCargo');
-			container.style.display = 'inline';
-			if(parseInt(screen.width) < 762){
-				container.style.width = '80%';
-			} else{
-				container.style.width = '40%';
-			}	
-			break;
-				
+				document.getElementById('cargo').value = $scope.data.vehicle.cargo;
+				var container = document.getElementById('editCargo');
+				container.style.display = 'inline';
+				if(parseInt(screen.width) < 762){
+					container.style.width = '80%';
+				} else{
+					container.style.width = '40%';
+				}	
+				break;
+
 			default:
 				break;
 		}
+		} catch(e){
+			console.log(e.message);
+		}
 	}
-	
+
 	$scope.closeEditContainer = function(section){
 		var container = '';
 		switch(section){
 			case 'name':
-			container = document.getElementById('editVehicleName');
-			break;
-				
+				container = document.getElementById('editVehicleName');
+				break;
+
 			case 'hp':
-			container = document.getElementById('editVehicleHP');
-			break;
-				
+				container = document.getElementById('editVehicleHP');
+				break;
+
 			case 'speed':
-			container = document.getElementById('editVehicleSpeed');
-			break;
-				
+				container = document.getElementById('editVehicleSpeed');
+				break;
+
 			case 'handling':
-			container = document.getElementById('editVehicleHandling');
-			break;
-				
+				container = document.getElementById('editVehicleHandling');
+				break;
+
 			case 'armor':
-			container = document.getElementById('editVehicleArmor');
-			break;
-				
+				container = document.getElementById('editVehicleArmor');
+				break;
+
 			case 'hullTrauma':
-			container = document.getElementById('editVehicleHullTrauma');
-			break;
-				
+				container = document.getElementById('editVehicleHullTrauma');
+				break;
+
 			case 'systemStrain':
-			container = document.getElementById('editVehicleSystemStrain');
-			break;
-				
+				container = document.getElementById('editVehicleSystemStrain');
+				break;
+
 			case 'defense':
-			container = document.getElementById('editVehicleDefense');
-			break;
-				
+				container = document.getElementById('editVehicleDefense');
+				break;
+
 			case 'cargo':
-			container = document.getElementById('editCargo');
-			break;
-				
+				container = document.getElementById('editCargo');
+				break;
+
 			case 'crit':
-			container = document.getElementById('editVehicleCrits');
-			break;
-				
+				container = document.getElementById('editVehicleCrits');
+				break;
+
+			case 'mods':
+				$location.search('query', null);
+				container = document.getElementById('editVehicleMods');
+				break;
+
 			default:
 				break;
 		}
-		
+
 		container.style.width = null;
 		container.style.display = 'none';
 	}
-	
+
 	$scope.saveEdits = function(section){
 		switch(section){
 			case 'name':
-			var name = document.getElementById('vehicleNameInput').value;
-			c.server.get({action: 'saveName', name: name}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('name');
-			});
-			break;
-				
+				var name = document.getElementById('vehicleNameInput').value;
+				c.server.get({action: 'saveName', name: name}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('name');
+				});
+				break;
+
 			case 'hp':
-			var hp = parseInt(document.getElementById('vehicleHPInput').value);
-			c.server.get({action: 'saveHP', hp: hp}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('hp');
-			});
-			break;
-				
+				var hp = parseInt(document.getElementById('vehicleHPInput').value);
+				c.server.get({action: 'saveHP', hp: hp}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('hp');
+				});
+				break;
+
 			case 'speed':
-			var speed = parseInt(document.getElementById('vehicleInputSpeed').value);
-			c.server.get({action: 'saveSpeed', speed: speed}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('speed');
-			});
-			break;
-				
+				var speed = parseInt(document.getElementById('vehicleInputSpeed').value);
+				c.server.get({action: 'saveSpeed', speed: speed}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('speed');
+				});
+				break;
+
 			case 'crit':
-			var crit = parseInt(document.getElementById('vehicleInputCrit').value);
-			var critDescription = document.getElementById('vehicleCritDescription').value;
-			c.server.get({action: 'saveCrit', crits: crit, critDescription: critDescription}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('crit');
-			});
-			break;
-				
+				var crit = parseInt(document.getElementById('vehicleInputCrit').value);
+				var critDescription = document.getElementById('vehicleCritDescription').value;
+				c.server.get({action: 'saveCrit', crits: crit, critDescription: critDescription}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('crit');
+				});
+				break;
+
 			case 'handling':
-			var handling = parseInt(document.getElementById('vehicleInputHandling').value);
-			c.server.get({action: 'saveHandling', handling: handling}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('handling');
-			});
-			break;
-				
+				var handling = parseInt(document.getElementById('vehicleInputHandling').value);
+				c.server.get({action: 'saveHandling', handling: handling}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('handling');
+				});
+				break;
+
 			case 'armor':
-			var armor = parseInt(document.getElementById('vehicleInputArmor').value);
-			c.server.get({action: 'saveArmor', armor: armor}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('armor');
-			});
-			break;
-				
+				var armor = parseInt(document.getElementById('vehicleInputArmor').value);
+				c.server.get({action: 'saveArmor', armor: armor}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('armor');
+				});
+				break;
+
 			case 'hullTrauma':
-			var threshold = parseInt(document.getElementById('vehicleInputHullTraumaThreshold').value);
-			var current = parseInt(document.getElementById('vehicleInputHullTraumaCurrent').value);
-			c.server.get({action: 'saveHullTrauma', threshold: threshold, current: current}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('hullTrauma');
-			});
-			break;
-				
+				var threshold = parseInt(document.getElementById('vehicleInputHullTraumaThreshold').value);
+				var current = parseInt(document.getElementById('vehicleInputHullTraumaCurrent').value);
+				c.server.get({action: 'saveHullTrauma', threshold: threshold, current: current}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('hullTrauma');
+				});
+				break;
+
 			case 'systemStrain':
-			var threshold = parseInt(document.getElementById('vehicleInputSystemStrainThreshold').value);
-			var current = parseInt(document.getElementById('vehicleInputSystemStrainCurrent').value);
-			c.server.get({action: 'saveSystemStrain', threshold: threshold, current: current}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('systemStrain');
-			});
-			break;
-				
+				var threshold = parseInt(document.getElementById('vehicleInputSystemStrainThreshold').value);
+				var current = parseInt(document.getElementById('vehicleInputSystemStrainCurrent').value);
+				c.server.get({action: 'saveSystemStrain', threshold: threshold, current: current}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('systemStrain');
+				});
+				break;
+
 			case 'defense':
-			var fore = parseInt(document.getElementById('vehicleInputDefenseFore').value);
-			var starboard = parseInt(document.getElementById('vehicleInputDefenseStarboard').value);
-			var aft = parseInt(document.getElementById('vehicleInputDefenseAft').value);
-			var port = parseInt(document.getElementById('vehicleInputDefensePort').value);
-			c.server.get({action: 'saveDefense', fore: fore, starboard: starboard, aft: aft, port: port}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('defense');
-			});
-			break;
-				
+				var fore = parseInt(document.getElementById('vehicleInputDefenseFore').value);
+				var starboard = parseInt(document.getElementById('vehicleInputDefenseStarboard').value);
+				var aft = parseInt(document.getElementById('vehicleInputDefenseAft').value);
+				var port = parseInt(document.getElementById('vehicleInputDefensePort').value);
+				c.server.get({action: 'saveDefense', fore: fore, starboard: starboard, aft: aft, port: port}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('defense');
+				});
+				break;
+
 			case 'cargo':
-			var cargo = document.getElementById('cargo').value;
-			c.server.get({action: 'saveCargo', cargo: cargo}).then(function(response){
-				c.server.refresh();
-				$scope.closeEditContainer('cargo');
-			});
-			break;
-				
+				var cargo = document.getElementById('cargo').value;
+				c.server.get({action: 'saveCargo', cargo: cargo}).then(function(response){
+					c.server.refresh();
+					$scope.closeEditContainer('cargo');
+				});
+				break;
+
 			default:
 				break;
 		}
@@ -268,7 +303,7 @@
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.image-background{
-	position:fixed;
+  position:fixed;
   top:65px;
   left:0;
   height: 1000px; /* You must set a specified height */
@@ -276,36 +311,40 @@
   background-attachment: fixed;
   background-repeat:no-repeat;
   background-size:cover !important;
-	opacity:.7;
+  opacity:.7;
   z-index:-5;
 }
 
 .vehicle-characteristic-body{
-	margin-bottom:40px;
+  margin-bottom:40px;
 }
 
 .characteristics-header,.weapons-header{
-	text-align:center;
+  text-align:center;
   font-size:28px;
   margin-bottom:20px;
 }
 
 .main-vehicle-info{
-	margin-bottom:30px;
+  margin-bottom:30px;
 }
 
 .transponder-code{
-	font-size:28px;
+  font-size:28px;
   font-weight:bold;
 }
 
 .vehicle-main-info{
-	font-size:18px;
+  font-size:18px;
   text-shadow: 0px 2px 2px black !important;
 }
 
+.wd-name:hover{
+	text-decoration:underline;
+}
+
 .edit-vehicle{
-	display:none;
+  display:none;
   width:0;
   position:fixed;
   top:0;
@@ -315,70 +354,81 @@
   background-color:black;
   border:1px groove #e21414;
   transition:all 1s ease-in-out;
+  
+  .close-button{
+  	background:transparent;
+  }
+  
+  .widget-container{
+    .panel-heading, .panel-footer, .panel{
+      background:transparent;
+      color: white;
+    }
+  }
 }
 
 .vehicle-characteristic-label{
   border-radius:20px 20px 0px 0px;
-	background-color: #2f3860;
+  background-color: #2f3860;
 }
 
 .threshold,.current{
-	padding:0;
+  padding:0;
   font-size:16px;
 }
 
 .threshold{
-	border-radius:0px 0px 0px 20px;
+  border-radius:0px 0px 0px 20px;
   background-color:#e21414;
 }
 
 .current{
-	border-radius:0px 0px 20px 0px;
+  border-radius:0px 0px 20px 0px;
   background-color:#1933f4;
 }
 
 .threshold-container{
-	border-radius:0px 0px 0px 20px;
+  border-radius:0px 0px 0px 20px;
   background-color:black;
-	border-right:1px groove white;
+  border-right:1px groove white;
   padding:0;
 }
 
 .current-container{
-	border-radius: 0px 0px 20px 0px;
+  border-radius: 0px 0px 20px 0px;
   background-color:black;
   padding:0;
 }
 
 .vehicle-characteristic{
   border-radius:0px 0px 20px 20px;
-	background-color:black;
+  background-color:black;
   padding:10px 10px 10px 10px;
 }
 
 .characteristic-container{
-	text-align:center;
+  text-align:center;
   font-size:18px;
   margin-bottom:20px;
 }
 
 .close-button{
-	color:#e21414;
+  color:#e21414;
   margin-top:20px;
   text-align:right;
   font-size:24px;
 }
 
 .save-edits{
-	text-align:center;
+  text-align:center;
 }
 
 label,.sw-input{
-	font-size:16px;
+  font-size:16px;
 }
 
 .save-edits-button{
-	background:transparent;
+  background:transparent;
   box-shadow: 0px 0px 4px 2px #1933f4;
   border: 1px groove #1933f4;
   border-radius:20px;
@@ -389,7 +439,7 @@ label,.sw-input{
 }
 
 .sw-input{
-	border:1px groove #e21414;
+  border:1px groove #e21414;
   background-color:black;
   border-radius:20px;
   margin-bottom:10px;
@@ -397,7 +447,7 @@ label,.sw-input{
 }
 
 .fa-starship-freighter{
-	transform:rotate(270deg);
+  transform:rotate(270deg);
   font-size:100px;
   position:absolute;
   top:130px;
@@ -407,23 +457,23 @@ label,.sw-input{
 }
 
 .defense-header{
-	text-align:center;
+  text-align:center;
   margin-bottom:20px;
 }
 
 .defense{
-	box-shadow:0px 0px 6px 2px lightgray;
+  box-shadow:0px 0px 6px 2px lightgray;
 }
 
 #defenseHeaderText{
-	background-color:#2f3860;
+  background-color:#2f3860;
   font-size:18px;
   padding:5px 15px 5px 15px;
   border-radius:20px;
 }
 
 #defenseFore{
-	position:absolute;
+  position:absolute;
   top:50px;
   left:41.5%;
   background-color:black;
@@ -433,7 +483,7 @@ label,.sw-input{
 }
 
 #defensePort{
-	position:absolute;
+  position:absolute;
   top:160px;
   left:160px;
   background-color:black;
@@ -443,7 +493,7 @@ label,.sw-input{
 }
 
 #defenseStarboard{
-	position:absolute;
+  position:absolute;
   top:160px;
   right:160px;
   background-color:black;
@@ -453,7 +503,7 @@ label,.sw-input{
 }
 
 #defenseAft{
-	position:absolute;
+  position:absolute;
   top:260px;
   left:41.5%;
   background-color:black;
@@ -463,30 +513,30 @@ label,.sw-input{
 }
 
 .defense-value{
-	font-size:18px;
+  font-size:18px;
   padding:5px 0px 5px 0px;
 }
 
 .defense-label{
   border-radius:0px 0px 20px 20px;
-	background-color:#e21414;
+  background-color:#e21414;
 }
 
 .badge{
-	background-color:#2b2a2a;
+  background-color:#2b2a2a;
 }
 
 .weapons-container{
-	margin-top:20px;
+  margin-top:20px;
 }
 
 .weapons-body{
-	padding:0;
+  padding:0;
   background-color:black;
 }
 
 .weapon-headers{
-	border-bottom:2px groove white;
+  border-bottom:2px groove white;
   padding:0;
   font-size:18px;
   font-weight:bold;
@@ -494,53 +544,66 @@ label,.sw-input{
 }
 
 .wd-number{
-	padding-left:40px;
+  padding-left:40px;
 }
 
 .weapons{
-	padding:1rem 0;
+  padding:1rem 0;
   font-size:16px;
   border-bottom:1px dotted white;
   margin-bottom:10px;
 }
 
 .cargo-hold-container{
-	padding-bottom:50px;
+  padding-bottom:50px;
 }
 
 .cargo-hold-body{
-	background:black;
+  background:black;
   font-size:16px;
   padding-top:10px;
   padding-bottom:10px;
 }
 
 .cargo-hold-header{
-	font-size:28px;
+  font-size:28px;
   margin-bottom:20px;
 }
 
 .edit-cargo-button{
-	font-size: 16px;
+  font-size: 16px;
   text-align: right;
   color: #e21414;
   margin-bottom: 20px;
 }
 
+.edit-mods-link-container{
+  text-align:right;
+  padding:1rem;
+  
+  .sw-button{
+    font-size:1.6rem;
+    background: transparent;
+    color: #e21414;
+  }
+}
+
+
+
 #cargo{
-	width:100%;
+  width:100%;
   height:200px;
   text-align:left;
 }
 
 #vehicleCritDescription{
-	width:100%;
+  width:100%;
   height:100px;
   text-align:left;
 }
 
 .vehicle-info-flyout-container{
-	display:none;
+  display:none;
   position:fixed;
   top:15%;
   left:5%;
@@ -555,30 +618,30 @@ label,.sw-input{
 }
 
 .flyout-header{
-	text-align:center;
+  text-align:center;
   font-weight:bold;
   font-size:24px;
 }
 
 .vehicle-detail{
-	margin-bottom:10px;
+  margin-bottom:10px;
   text-align:center;
 }
 
 .detail-label{
-	font-weight:bold;
+  font-weight:bold;
   font-size:18px;
 }
 
 .detail-value{
-	font-size:16px;
+  font-size:16px;
 }
 
 @media only screen and (min-width:762px) and (max-width:1400px){
   .fa-starship-freighter{
-   	left:38.8%; 
+    left:38.8%; 
   }
-  
+
   #defenseFore{
     left:37%;
   }
@@ -598,22 +661,22 @@ label,.sw-input{
 
 @media only screen and (max-width:762px){
   #vehicleSheetContainer{
-  	padding:0;
+    padding:0;
   }
-  
+
   .characteristic-container{
-  	padding-right:2px;
+    padding-right:2px;
     padding-left:2px;
   }
-  
+
   .vehicle-characteristic-body,.primary-vehicle-characteristics{
-  	padding:0;
+    padding:0;
   }
-  
+
   .fa-starship-freighter{
-   	left:36%; 
+    left:36%; 
   }
-  
+
   #defenseFore{
     left:32.5%;
   }
@@ -629,29 +692,29 @@ label,.sw-input{
   #defenseAft{
     left:32.5%;
   }
-  
+
   .weapons-container{
-  	padding-top:75%;
+    padding-top:75%;
     padding-right:2px;
     padding-left:2px;
   }
-  
+
   .mods-container{
-  	padding-top:0 !important;
+    padding-top:0 !important;
   }
-  
+
   .weapons-body,.weapon-headers,.weapon-header{
-  	padding:0;
+    padding:0;
     font-size:13px;
   }
-  
+
   .weapon-detail{
-  	font-size:11px;
+    font-size:11px;
     padding:0;
   }
-  
+
   .wd-number{
-  	padding:0;
+    padding:0;
     text-align:center;
   }
 }</css>
@@ -823,7 +886,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>237</sys_mod_count>
+        <sys_mod_count>267</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -831,7 +894,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-01-27 23:16:57</sys_updated_on>
+        <sys_updated_on>2022-07-06 18:57:19</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -927,7 +990,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <span class="col-xs-5 weapon-header">Special</span>
       </span>
       <span class="col-xs-12 weapons" ng-repeat="w in data.vehicleGear">
-        <span class="col-xs-2 weapon-detail">{{w.name}} <span class="badge">{{w.quantity}}</span></span>
+        <span class="col-xs-2 weapon-detail wd-name" ng-click="editVehicle('mods', w.sysID)">{{w.name}} <span class="badge">{{w.quantity}}</span></span>
         <span class="col-xs-2 weapon-detail wd-number">{{w.damage}}</span>
         <span class="col-xs-2 weapon-detail">{{w.range}}</span>
         <span class="col-xs-1 weapon-detail wd-number">{{w.crit}}</span>
@@ -939,12 +1002,13 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
   <div class="col-xs-12 weapons-container mods-container">
     <span class="col-xs-12 weapons-header">Vehicle Mods<br/><text class="star-wars-text">Vehicle Mods</text></span>
     <span class="col-xs-12 weapons-body">
+      <span class="col-xs-12 edit-mods-link-container"><button class="sw-button" ng-click="editVehicle('mods', -1)"><i class="fas fa-tools"></i> Visit Dry Dock</button></span>
       <span class="col-xs-12 weapon-headers">
         <span class="col-xs-2 weapon-header">Mod</span>
         <span class="col-xs-10 weapon-header">Description</span>
       </span>
       <span class="col-xs-12 weapons" ng-repeat="m in data.vehicleMods">
-        <span class="col-xs-2 weapon-detail">{{m.name}}</span>
+        <span class="col-xs-2 weapon-detail wd-name" ng-click="editVehicle('mods', m.sysID)">{{m.name}}</span>
         <span class="col-xs-10 weapon-detail" ng-bind-html="m.description"></span>
       </span>
     </span>
@@ -962,7 +1026,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 <!-- edit vehicle info sections -->
 <!-- edit vehicle name -->
 <span class="edit-vehicle" id="editVehicleName">
-	<span class="col-xs-12 close-button" ng-click="closeEditContainer('name')"><i class="fas fa-times"></i></span>
+	<span class="col-xs-12 close-button" ng-click="closeEditContainer('name')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleNameInput">Name/Transponder Code:</label><br/>
     <input class="sw-input" type="text" id="vehicleNameInput" name="vehicleNameInput" value="{{data.vehicle.nickName}}"/>
@@ -975,7 +1039,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle hard points -->
 <span class="edit-vehicle" id="editVehicleHP">
-	<span class="col-xs-12 close-button" ng-click="closeEditContainer('hp')"><i class="fas fa-times"></i></span>
+	<span class="col-xs-12 close-button" ng-click="closeEditContainer('hp')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleHPInput">Hard Points:</label><br/>
     <input class="sw-input" type="text" id="vehicleHPInput" name="vehicleHPInput" value="{{data.vehicle.hp}}"/>
@@ -988,7 +1052,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle speed -->
 <span class="edit-vehicle" id="editVehicleSpeed">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('speed')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('speed')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputSpeed">Speed:</label><br>
     <input class="sw-input" type="text" id="vehicleInputSpeed" name="vehicleInputSpeed" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.speed}}"/>
@@ -1001,7 +1065,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle handling -->
 <span class="edit-vehicle" id="editVehicleHandling">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('handling')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('handling')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputHandling">Handling:</label><br>
     <input class="sw-input" type="text" id="vehicleInputHandling" name="vehicleInputHandling" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.handling}}"/>
@@ -1014,7 +1078,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle armor -->
 <span class="edit-vehicle" id="editVehicleArmor">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('armor')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('armor')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputArmor">Armor:</label><br>
     <input class="sw-input" type="text" id="vehicleInputArmor" name="vehicleInputArmor" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.armor}}"/>
@@ -1027,12 +1091,12 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle critical hits -->
 <span class="edit-vehicle" id="editVehicleCrits">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputCrit">Critical Hits:</label><br>
     <input class="sw-input" type="text" id="vehicleInputCrit" name="vehicleInputCrit" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.crits}}"/><br/>
     <label for="vehicleCritDescription">Critical Hit Notes:</label><br/>
-    <textarea class="sw-input" type="text" id="vehicleCritDescription" name="vehicleCritDescription" ng-bind-html="{{data.vehicle.critDescription}}"></textarea>
+    <textarea class="sw-input" type="text" id="vehicleCritDescription" name="vehicleCritDescription" ng-bind-html="data.vehicle.critDescription"></textarea>
   </span>
   <span class="col-xs-12 save-edits">
   	<span class="col-xs-12 save-button-container">
@@ -1042,7 +1106,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle hull trauma -->
 <span class="edit-vehicle" id="editVehicleHullTrauma">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('hullTrauma')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('hullTrauma')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputHullTraumaThreshold">Hull Trauma Threshold:</label><br>
     <input class="sw-input" type="text" id="vehicleInputHullTraumaThreshold" name="vehicleInputHullTraumaThreshold" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.htThreshold}}"/><br>
@@ -1057,7 +1121,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle system strain -->
 <span class="edit-vehicle" id="editVehicleSystemStrain">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('systemStrain')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('systemStrain')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputSystemStrainThreshold">System Strain Threshold:</label><br>
     <input class="sw-input" type="text" id="vehicleInputSystemStrainThreshold" name="vehicleInputSystemStrainThreshold" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.ssThreshold}}"/><br>
@@ -1072,7 +1136,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 </span>
 <!-- edit vehicle defense -->
 <span class="edit-vehicle" id="editVehicleDefense">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('defense')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('defense')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 edit-vehicle-info-container">
     <label for="vehicleInputDefenseFore">Defense Fore:</label><br>
     <input class="sw-input" type="text" id="vehicleInputDefenseFore" name="vehicleInputDefenseFore" inputmode="numeric" pattern="[0-9]*" value="{{data.vehicle.defenseFore}}"/><br>
@@ -1089,9 +1153,16 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
     </span>
   </span>
 </span>
+<!-- edit vehicle mods -->
+<span class="edit-vehicle" id="editVehicleMods">
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('mods')"><i class="fas fa-swords-laser"></i></span>
+  <span class="widget-container">
+    <sp-widget widget="data.vehicleModWidget" />
+  </span>
+</span>
 <!-- edit cargo hold -->
 <span class="edit-vehicle" id="editCargo">
-  <span class="col-xs-12 close-button" ng-click="closeEditContainer('cargo')"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="closeEditContainer('cargo')"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 description-field">
    <label for="cargo">Cargo Hold:</label><br>
    <textarea class="sw-input" type="text" id="cargo" name="cargo"></textarea>
@@ -1105,7 +1176,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 
 <!-- vehicle info flyout -->
 <span class="col-xs-12 vehicle-info-flyout-container" id="vehicleInfoFlyout">
-  <span class="col-xs-12 close-button" ng-click="hideVehicleInfo()"><i class="fas fa-times"></i></span>
+  <span class="col-xs-12 close-button" ng-click="hideVehicleInfo()"><i class="fas fa-swords-laser"></i></span>
   <span class="col-xs-12 vehicle-info">
     <span class="col-xs-12 flyout-header">Vehicle Info<br/><text class="star-wars-text">Vehicle Info</text></span>
     <span class="col-xs-12 col-md-3 vehicle-detail">

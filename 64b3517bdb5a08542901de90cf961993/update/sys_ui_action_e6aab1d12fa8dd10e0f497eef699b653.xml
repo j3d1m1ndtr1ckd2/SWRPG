@@ -26,7 +26,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Delete Gear Quality</name>
+        <name>Delete</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[current.deleteRecord();]]></script>
@@ -36,22 +36,22 @@
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>ben.fisher</sys_created_by>
-        <sys_created_on>2022-06-16 22:35:13</sys_created_on>
+        <sys_created_on>2022-07-06 18:35:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>13a177322f409910e0f497eef699b6cc</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Delete Gear Quality</sys_name>
+        <sys_id>e6aab1d12fa8dd10e0f497eef699b653</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
-        <sys_update_name>sys_ui_action_13a177322f409910e0f497eef699b6cc</sys_update_name>
+        <sys_update_name>sys_ui_action_e6aab1d12fa8dd10e0f497eef699b653</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-07-06 18:58:53</sys_updated_on>
-        <table>x_176383_star_wars_character_gear_special</table>
+        <sys_updated_on>2022-07-06 18:35:44</sys_updated_on>
+        <table>x_176383_star_wars_character_vehicle_gear</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

@@ -617,7 +617,8 @@
 				var soak = document.getElementById('gearSoak').value;
 				var hardPoints = document.getElementById('gearHardPoints').value;
 				var location = document.getElementById('gearLocation').value;
-				c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints, location: location, name: name}).then(function(response){
+				var description = document.getElementById('gearDescription').value;
+				c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints, location: location, name: name, description: description}).then(function(response){
 					$scope.data.characterGear = response.data.characterGear;
 					$scope.closeEditContainer('gearEdit');
 				});
@@ -1436,6 +1437,10 @@
 
 .gear-item-details{
   font-size:16px;
+}
+
+#gearDescription{
+	width:100%;
 }
 
 .cg-name{
@@ -2359,6 +2364,7 @@ input:checked + .slider:before {
 					break;
 
 				case 'deleteGear':
+					var cg = new GlideRecord('x_176383_star_wars_character_gear_m2m');
 					cg.get(input.sysID);
 					cg.deleteRecord();
 					for(var i = 0; i < data.characterGear.length; i++){
@@ -2539,6 +2545,7 @@ input:checked + .slider:before {
 					gedit.range = input.range;
 					gedit.hard_points = input.hp;
 					gedit.location = input.location;
+					gedit.description = input.description;
 					gedit.update();
 					data.currentGear = null;
 					data.characterGear = util.buildCharacterGear(data.characterID);
@@ -2704,7 +2711,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1414</sys_mod_count>
+        <sys_mod_count>1417</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2712,7 +2719,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-06-29 16:46:14</sys_updated_on>
+        <sys_updated_on>2022-08-03 16:48:58</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2738,7 +2745,7 @@ input:checked + .slider:before {
         </span>
         <span class="col-xs-12 col-md-4 available-xp critical-injuries" ng-click="editCharacter('crit')">
           <span class="col-xs-12 xp-value">{{data.character.criticalInjuriesString}}</span>
-          <span class="col-xs-12 xp-label">Critical Injuries<!--i class="far fa-info-circle" ng-click="showCritDetail()"></i--></span>
+          <span class="col-xs-12 xp-label">Critical Injuries</span>
         </span>
         <!-- status effects -->
         <span class="col-xs-12 status-effects-container">
@@ -3715,6 +3722,10 @@ input:checked + .slider:before {
             <option value="on_person">On Person</option>
             <option value="on_ship">On Ship</option>
           </select>
+        </span>
+        <span class="col-xs-12 gear-edit-input">
+          <label for="gearDescription">Description</label><br>
+          <textarea class="sw-input" id="gearDescription" rows="5" value="{{data.currentGear.description}}">{{data.currentGear.description}}</textarea>
         </span>
       </span>
       <span class="col-xs-12 save-edits">

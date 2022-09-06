@@ -4,6 +4,7 @@
         <documentkey>179454222fbf1490e0f497eef699b611</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
     <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <campaigns/>
         <description>(Action) The character may take the Stim Application action. To perform this action, he must have access to drugs, a medpac, or stimpacks. He makes a Average (2 difficulty dice) Medicine check. If successful, one ally he is engaged with (including himself) increases one characteristic of the character's choice by one for the remainder of the encounter, and suffers four strain. A single character's&#13;
 individual characteristics may each only be increased once by Stim Application during an encounter.</description>
         <field_to_update/>
@@ -27,15 +28,15 @@ individual characteristics may each only be increased once by Stim Application d
         <sys_created_on>2020-10-15 22:34:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e0c1ebf22ff3d490e0f497eef699b678</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Stim Application</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_e0c1ebf22ff3d490e0f497eef699b678</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-10-15 22:34:43</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-09-06 20:39:55</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

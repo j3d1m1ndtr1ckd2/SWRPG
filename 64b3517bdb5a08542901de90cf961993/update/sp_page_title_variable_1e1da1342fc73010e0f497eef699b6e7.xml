@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page_title_variable">
     <sp_page_title_variable action="INSERT_OR_UPDATE">
         <column_name>sys_id</column_name>
+        <filter_condition/>
         <id_parameter>campaign</id_parameter>
+        <order>100</order>
         <source_field>name</source_field>
         <source_table>x_176383_star_wars_campaign</source_table>
         <sp_page display_value="star_wars_game_session">bfb0bcdf2f6c60d0e0f497eef699b64d</sp_page>

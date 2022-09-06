@@ -4,6 +4,7 @@
         <documentkey>87b5e0f0db624c542901de90cf9619a0</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
     <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <campaigns/>
         <description>The difficulty of any Charm, Coercion, and Deception checks attempted against the character is upgraded once for each rank of Nobody's Fool.</description>
         <field_to_update/>
         <force_talent>false</force_talent>
@@ -26,15 +27,15 @@
         <sys_created_on>2020-01-24 22:09:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a5cee6a5dba240942901de90cf961989</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Nobody's fool</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_a5cee6a5dba240942901de90cf961989</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-19 20:10:41</sys_updated_on>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-09-06 20:35:13</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

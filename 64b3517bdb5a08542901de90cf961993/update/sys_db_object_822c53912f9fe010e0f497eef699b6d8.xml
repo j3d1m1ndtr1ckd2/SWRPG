@@ -9,7 +9,6 @@
         <create_access>true</create_access>
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
-        <extension_model/>
         <is_extendable>false</is_extendable>
         <label>Character Gear Special</label>
         <live_feed_enabled>false</live_feed_enabled>
@@ -19,9 +18,7 @@
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class display_value="Gear Special" name="x_176383_star_wars_gear_special">29b010a82f946450e0f497eef699b68d</super_class>
-        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
-        <sys_class_path/>
         <sys_created_by>ben.fisher</sys_created_by>
         <sys_created_on>2021-04-03 06:01:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>

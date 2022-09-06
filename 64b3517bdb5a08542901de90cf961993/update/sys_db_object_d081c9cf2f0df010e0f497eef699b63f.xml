@@ -9,7 +9,6 @@
         <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
-        <extension_model/>
         <is_extendable>false</is_extendable>
         <label>Character Vehicle Gear</label>
         <live_feed_enabled>false</live_feed_enabled>
@@ -19,9 +18,7 @@
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class display_value="Vehicle Gear" name="x_176383_star_wars_vehicle_gear">b296b1432f542090e0f497eef699b60c</super_class>
-        <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
-        <sys_class_path/>
         <sys_created_by>ben.fisher</sys_created_by>
         <sys_created_on>2021-07-04 05:04:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>

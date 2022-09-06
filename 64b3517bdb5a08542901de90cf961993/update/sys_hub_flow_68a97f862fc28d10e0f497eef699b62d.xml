@@ -17,6 +17,7 @@
         <name>Unlock Signature Ability</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -98,6 +99,7 @@
         <value>talent.rank=5^talent.career_specialization.careerSAMEAScareer</value>
         <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
     </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=68a97f862fc28d10e0f497eef699b62d"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=68a97f862fc28d10e0f497eef699b62d^sys_idNOT INeca97f862fc28d10e0f497eef699b62f"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>68a97f862fc28d10e0f497eef699b62d</id>
@@ -117,6 +119,7 @@
         <sys_updated_by>ben.fisher</sys_updated_by>
         <sys_updated_on>2022-03-07 05:07:09</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=eca97f862fc28d10e0f497eef699b62f"/>
     <sys_hub_flow_input action="delete_multiple" query="model=68a97f862fc28d10e0f497eef699b62d^sys_idNOT IN162ebb8e2fc28d10e0f497eef699b69d,922ebb8e2fc28d10e0f497eef699b6a4"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -149,6 +152,7 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -197,6 +201,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -232,6 +237,7 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -280,10 +286,18 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=68a97f862fc28d10e0f497eef699b62d"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_68a97f862fc28d10e0f497eef699b62d^sys_idNOT INde2e77ce2fc28d10e0f497eef699b671,de2ebb8e2fc28d10e0f497eef699b6a2"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
@@ -335,4 +349,9 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=68a97f862fc28d10e0f497eef699b62d"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=68a97f862fc28d10e0f497eef699b62d"/>
 </record_update>

@@ -4,6 +4,7 @@
         <documentkey>85fc3981dbaa8c542901de90cf9619b7</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_176383_star_wars_talents">
     <x_176383_star_wars_talents action="INSERT_OR_UPDATE">
+        <campaigns/>
         <description>(Incidental) Once per game session, the character may remove 2 setback dice from any one skill check.</description>
         <field_to_update/>
         <force_talent>true</force_talent>
@@ -26,7 +27,7 @@
         <sys_created_on>2020-01-24 22:09:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a1cee6a5dba240942901de90cf961986</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Sense danger</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -34,7 +35,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_metadata_link_a1cee6a5dba240942901de90cf961986</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2021-08-23 19:46:06</sys_updated_on>
+        <sys_updated_on>2022-09-06 20:38:21</sys_updated_on>
         <tablename>x_176383_star_wars_talents</tablename>
     </sys_metadata_link>
 </record_update>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c0cd0fc82fed1510e0f497eef699b688</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_176383_star_wars_gear"&gt;
+    &lt;x_176383_star_wars_gear action="INSERT_OR_UPDATE"&gt;
+        &lt;base_damage&gt;10&lt;/base_damage&gt;
+        &lt;critical_rating&gt;2&lt;/critical_rating&gt;
+        &lt;defense/&gt;
+        &lt;description/&gt;
+        &lt;description_html&gt;&lt;![CDATA[&lt;p&gt;The Amban Phase Pulse blaster is an unconventional disruptor sniper rifle. While most blasters generate bolts by energizing Tibanna gas, the Amban relies on specialized disruptor cartridges that must be reloaded for every shot.&lt;/p&gt;
+&lt;p&gt;This limits the weapon’s rate of fire, but the devastating effectiveness of the blasts more than compensates for this. &lt;/p&gt;
+&lt;p&gt;At close range the Amban’s dual  prongs may be used as a shock prod, delivering enough of a jolt to daze even the most resilient of adversaries. As with all disruptor weapons the Amban Blaster is extremely restricted in both Imperial and New Republic jurisdictions.&lt;/p&gt;
+&lt;p&gt;Can be used as a melee weapon as well with the following stats:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Damage: &lt;/strong&gt;&amp;#43;3&lt;strong&gt; | Crit: &lt;/strong&gt;4&lt;strong&gt; | Range: &lt;/strong&gt;Engaged &lt;strong&gt;| Qualities: &lt;/strong&gt;Concussive 1, Stun Damage&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The ammunition for this weapon is just as hard to find as the weapon itself.  Each round costs 15 credits.  If a target dies from the result of being hit by a blast from this blaster, their body is completely vaporized and instantly turns to a pile of ash.&lt;/p&gt;
+&lt;p&gt;Disruptors cannot benefit from mods that increase range or grant multiple shots.&lt;/p&gt;]]&gt;&lt;/description_html&gt;
+        &lt;encumbrance&gt;5&lt;/encumbrance&gt;
+        &lt;hard_points&gt;2&lt;/hard_points&gt;
+        &lt;hp_required/&gt;
+        &lt;name&gt;Amban Phase Pulse Blaster&lt;/name&gt;
+        &lt;number&gt;GEAR0001227&lt;/number&gt;
+        &lt;price&gt;7500&lt;/price&gt;
+        &lt;range&gt;extreme&lt;/range&gt;
+        &lt;rarity&gt;9&lt;/rarity&gt;
+        &lt;skill_used display_value="Ranged - Heavy (Ag)"&gt;d8a0d55cdbae88542901de90cf9619c0&lt;/skill_used&gt;
+        &lt;soak/&gt;
+        &lt;sys_class_name&gt;x_176383_star_wars_gear&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;ben.fisher&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-08-21 20:36:06&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c0cd0fc82fed1510e0f497eef699b688&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;ben.fisher&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-08-21 20:44:21&lt;/sys_updated_on&gt;
+        &lt;type&gt;weapon&lt;/type&gt;
+    &lt;/x_176383_star_wars_gear&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2022-08-21 20:44:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>23b11f802f215510e0f497eef699b6e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Amban Phase Pulse Blaster</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_metadata_link_23b11f802f215510e0f497eef699b6e5</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2022-08-21 20:44:47</sys_updated_on>
+        <tablename>x_176383_star_wars_gear</tablename>
+    </sys_metadata_link>
+</record_update>

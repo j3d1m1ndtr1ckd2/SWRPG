@@ -602,7 +602,8 @@
 
 			case 'forceRating':
 				var forceRating = parseInt(document.getElementById('forceRatingInput').value);
-				c.server.get({action: 'saveForceRating', forceRating: forceRating}).then(function(response){
+				var committed = parseInt(document.getElementById('forceCommittedInput').value);
+				c.server.get({action: 'saveForceRating', forceRating: forceRating, forceCommitted: committed}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('forceRating');
 				});
@@ -1440,7 +1441,7 @@
 }
 
 #gearDescription{
-	width:100%;
+  width:100%;
 }
 
 .cg-name{
@@ -1669,14 +1670,23 @@
   font-size:18px;
 }
 
-#forceRatingValue{
-  background-color:white;
-  border-radius:20px;
-  box-shadow:0px 0px 12px 6px #1933f4;
-}
+.force-rating-numbers{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:flex-start;
+  align-items:center;
+  column-gap:3rem;
+  row-gap:3rem;
+  
+  .force-rating-value{
+    background-color:white;
+    border-radius:20px;
+    box-shadow:0px 0px 12px 6px #1933f4;
+  }
 
-#forceRatingInt{
-  color:black;
+  .force-rating-int{
+    color:black;
+  }
 }
 
 #purchaseForcePowersButtonContainer{
@@ -2098,6 +2108,8 @@ input:checked + .slider:before {
 			criticalInjuriesDescription: charGR.critical_injury_description + '',
 			forceRatingInt: parseInt(charGR.force_rating),
 			forceRatingString: charGR.force_rating + '',
+			forceCommittedInt: parseInt(charGR.force_committed),
+			forceCommittedString: charGR.force_committed + '',
 			background: charGR.description_html + '',
 			notableFeatures: charGR.notable_features + '',
 			notes: charGR.notes + '',
@@ -2568,9 +2580,12 @@ input:checked + .slider:before {
 
 				case 'saveForceRating':
 					charGR.force_rating = input.forceRating;
+					charGR.force_committed = input.forceCommitted;
 					charGR.update();
 					data.character.forceRatingInt = parseInt(charGR.force_rating);
 					data.character.forceRatingString = data.character.forceRatingInt + '';
+					data.character.forceCommittedInt = parseInt(charGR.force_committed);
+					data.character.forceCommittedString = data.character.forceCommittedInt + '';
 					break;
 
 				case 'buyForcePower':
@@ -2711,7 +2726,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1417</sys_mod_count>
+        <sys_mod_count>1431</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2719,7 +2734,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-08-03 16:48:58</sys_updated_on>
+        <sys_updated_on>2022-09-06 19:23:49</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2987,9 +3002,15 @@ input:checked + .slider:before {
     <span class="col-xs-12 col-md-9 character-details-container mobile-nav-container force-container" id="forceContainer">
       <span class="col-xs-12 edit-container" id="purchaseForcePowersButtonContainer" ng-click="editCharacter('forcePowers')"><i class="fab fa-jedi-order"></i> Meditate</span>
       <span class="col-xs-12" id="forceRating">
-        <span class="col-xs-12 col-md-3 center-text" id="forceRatingValue" ng-click="editCharacter('forceRating')">
-          <span class="col-xs-12 dv-header">Force Rating</span>
-          <span class="col-xs-12 threshold-value text-center" id="forceRatingInt">{{data.character.forceRatingString}}</span>
+        <span class="force-rating-numbers">
+          <span class="col-xs-12 col-md-3 center-text force-rating-value" id="forceRatingValue" ng-click="editCharacter('forceRating')">
+            <span class="col-xs-12 dv-header">Force Rating</span>
+            <span class="col-xs-12 threshold-value text-center force-rating-int" id="forceRatingInt">{{data.character.forceRatingString}}</span>
+          </span>
+          <span class="col-xs-12 col-md-3 center-text force-rating-value" ng-click="editCharacter('forceRating')">
+            <span class="col-xs-12 dv-header">Force Dice Committed</span>
+            <span class="col-xs-12 threshold-value text-center force-rating-int">{{data.character.forceCommittedString}}</span>
+          </span>
         </span>
         <span ng-if="data.character.forceRatingInt == 0" class="col-xs-12 no-message-or-powers" id="noForceMessageContainer">
           <span class="col-xs-12 text-center">You are not force sensitive.  Purchase a talent or specialization that grants force rating to become force sensitive.</span>
@@ -3417,7 +3438,9 @@ input:checked + .slider:before {
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('forceRating')"><i class="fas fa-swords-laser slideout-close-icon"></i></span>
       <span class="col-xs-12 edit-force-rating-body">
         <label for="forceRatingInput">Force Rating:</label><br>
-        <input class="sw-input" type="text" id="forceRatingInput" name="forceRatingInput" value="{{data.character.forceRatingString}}" inputmode="numeric" pattern="[0-9]*">
+        <input class="sw-input" type="text" id="forceRatingInput" name="forceRatingInput" value="{{data.character.forceRatingString}}" inputmode="numeric" pattern="[0-9]*"><br/>
+        <label for="forceCommittedInput">Force Dice Committed:</label><br>
+        <input class="sw-input" type="text" id="forceCommittedInput" name="forceCommittedInput" value="{{data.character.forceCommittedString}}" inputmode="numeric" pattern="[0-9]">
       </span>
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">

@@ -2,7 +2,6 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_groups" table="x_176383_star_wars_the_galaxy">
         <active>true</active>
         <array>false</array>
-        <array_denormalized>false</array_denormalized>
         <attributes>no_sort=true,slushbucket_ref_no_expand=true</attributes>
         <audit>false</audit>
         <calculation/>
@@ -25,6 +24,7 @@
         <element>u_groups</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="">glide_list</internal_type>
@@ -42,7 +42,6 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
@@ -50,7 +49,6 @@
         <sys_created_on>2020-12-14 20:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cef400922f05ec14e0f497eef699b61f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Available for</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -66,6 +64,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>

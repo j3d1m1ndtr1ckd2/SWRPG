@@ -17,6 +17,7 @@
         <name>Cascade Character Delete</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -43,6 +44,8 @@
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e4ceab892ff93450e0f497eef699b629"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=e4ceab892ff93450e0f497eef699b629^sys_idNOT INa0ceab892ff93450e0f497eef699b62c"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>e4ceab892ff93450e0f497eef699b629</id>
@@ -62,4 +65,19 @@
         <sys_updated_by>ben.fisher</sys_updated_by>
         <sys_updated_on>2021-08-04 19:18:52</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a0ceab892ff93450e0f497eef699b62c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e4ceab892ff93450e0f497eef699b629"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e4ceab892ff93450e0f497eef699b629"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e4ceab892ff93450e0f497eef699b629"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e4ceab892ff93450e0f497eef699b629"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e4ceab892ff93450e0f497eef699b629"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e4ceab892ff93450e0f497eef699b629"/>
 </record_update>

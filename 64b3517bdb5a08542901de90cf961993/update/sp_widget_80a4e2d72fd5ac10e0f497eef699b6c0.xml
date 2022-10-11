@@ -7,9 +7,9 @@
 	
 	$scope.viewCampaign = function(campaign){
 		c.server.get({action: 'showCampaignDetail', campaign: campaign}).then(function(response){
-			$scope.data = response.data;
 			$location.search('campaign', campaign.sysID);
 			$location.search('spa', 1);
+			c.server.refresh();
 		});
 	}
 	
@@ -587,7 +587,7 @@ a:hover{
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>228</sys_mod_count>
+        <sys_mod_count>230</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -595,7 +595,7 @@ a:hover{
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-02-16 19:34:29</sys_updated_on>
+        <sys_updated_on>2022-10-11 14:05:39</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>

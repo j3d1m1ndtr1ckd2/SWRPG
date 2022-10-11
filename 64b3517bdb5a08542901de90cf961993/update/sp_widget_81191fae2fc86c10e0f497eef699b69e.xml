@@ -110,6 +110,7 @@
 	}
 
 	$scope.purchaseNewSpec = function(newSpec){
+		c.isSubmitting = true;
 		c.server.get({action: 'buyNewSpec', spec: newSpec}).then(function(response){
 			$scope.data.character = response.data.character;
 			$scope.data.specializationInfo = response.data.specializationInfo;
@@ -117,6 +118,7 @@
 			$scope.data.talens = response.data.talents;
 			$scope.data.availableTalents = response.data.availableTalents;
 			$scope.data.skills = response.data.skills;
+			c.isSubmitting = false;
 			setTimeout(clearDiceRolls, 100);
 		});
 	}
@@ -125,39 +127,47 @@
 		if(!confirm('A talent tree may only be used to unlock one signature ability.  Are you sure you want to assign this talent tree to ' + ability.name + '?')){
 			return false;
 		} else{
+			c.isSubmitting = true;
 			c.server.get({action: 'buySignatureAbility', ability: ability, talentTree: talentTree}).then(function(response){
 				$scope.data.characterSignatureAbilities = response.data.characterSignatureAbilities;
 				$scope.data.availableSignatureAbilities = response.data.availableSignatureAbilities;
 				$scope.data.availableSignatureAbilityUpgrades = response.data.availableSignatureAbilityUpgrades;
 				$scope.data.character = response.data.character;
+				c.isSubmitting = false;
 			});
 		}
 	}
 
 	$scope.purchaseSignatureAbilityUpgrade = function(upgrade){
+		c.isSubmitting = true;
 		c.server.get({action: 'buySignatureAbilityUpgrade', upgrade: upgrade}).then(function(response){
 			$scope.data.characterSignatureAbilities = response.data.characterSignatureAbilities;
 			$scope.data.availableSignatureAbilityUpgrades = response.data.availableSignatureAbilityUpgrades;
 			$scope.data.character = response.data.character;
+			c.isSubmitting = false;
 		});
 	}
 
 	$scope.purchaseForcePower = function(power){
+		c.isSubmitting = true;
 		c.server.get({action: 'buyForcePower', power: power}).then(function(response){
 			$scope.data.characterPowers = response.data.characterPowers;
 			$scope.data.forcePowers = response.data.forcePowers;
 			$scope.data.forceEnhancements = response.data.forceEnhancements;
 			$scope.data.character = response.data.character;
 		});
+		c.isSubmitting = false;
 	}
 
 	$scope.purchaseForceEnhancement = function(enhancement){
+		c.isSubmitting = true;
 		c.server.get({action: 'buyForceEnhancement', enh: enhancement}).then(function(response){
 			$scope.data.cForceEnhancements = response.data.cForceEnhancements;
 			$scope.data.ownedEnhancements = response.data.ownedEnhancements;
 			$scope.data.forceEnhancements = response.data.forceEnhancements;
 			$scope.data.character = response.data.character;
 		});
+		c.isSubmitting = false;
 	}
 
 	$scope.showForceInfo = function(power){
@@ -518,6 +528,7 @@
 				c.server.get({action: 'saveCharacterDescription', gender: gender, age: age, eyes: eyes, height: height, weight: weight, hair: hair, notableFeatures: notableFeatures, background: background, notes: notes}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('description');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -526,6 +537,7 @@
 				c.server.get({action: 'saveSoak', soak: soak}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('soak');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -535,6 +547,7 @@
 				c.server.get({action: 'saveWounds', threshold: woundsThreshold, current: woundsCurrent}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('wounds');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -544,6 +557,7 @@
 				c.server.get({action: 'saveStrain', threshold: strainThreshold, current: strainCurrent}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('strain');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -553,6 +567,7 @@
 				c.server.get({action: 'saveDefense', ranged: ranged, melee: melee}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('defense');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -568,6 +583,7 @@
 						$scope.data.character = response.data.character;
 						$scope.data.skills = response.data.skills;
 						$scope.closeEditContainer('characteristics');
+						c.isSubmitting = false;
 						setTimeout(clearDiceRolls, 100);
 					});
 				} else{
@@ -580,6 +596,7 @@
 				c.server.get({action: 'saveName', name: name}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('name');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -588,6 +605,7 @@
 				c.server.get({action: 'saveCredits', credits: creds}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('credits');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -597,6 +615,7 @@
 					document.getElementById('gearQuantityInput').value = null;
 					$scope.data.characterGear = response.data.characterGear;	
 					$scope.closeEditContainer('gearQuantity');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -606,6 +625,7 @@
 				c.server.get({action: 'saveForceRating', forceRating: forceRating, forceCommitted: committed}).then(function(response){
 					$scope.data.character = response.data.character;
 					$scope.closeEditContainer('forceRating');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -621,6 +641,7 @@
 				var description = document.getElementById('gearDescription').value;
 				c.server.get({action: 'saveGearEdit', gearID: $scope.data.currentGear.sysID, crit: crit, defense: defense, damage: damage, range: range, soak: soak, hp: hardPoints, location: location, name: name, description: description}).then(function(response){
 					$scope.data.characterGear = response.data.characterGear;
+					c.isSubmitting = false;
 					$scope.closeEditContainer('gearEdit');
 				});
 				break;
@@ -630,6 +651,7 @@
 				c.server.get({action: 'saveOtherGear', gear: og}).then(function(response){
 					$scope.data.character = response.data.character;	
 					$scope.closeEditContainer('otherGear');
+					c.isSubmitting = false;
 				});
 				break;
 
@@ -637,12 +659,14 @@
 				var crits = document.getElementById('crits').value;
 				var notes = document.getElementById('critDescription').value;
 				c.server.get({action: 'saveCrit', crits: crits, notes: notes}).then(function(response){
-					$scope.data.character = response.data.character;	
+					$scope.data.character = response.data.character;
+					c.isSubmitting = false;
 					$scope.closeEditContainer('crit');
 				});
 				break;
 
 			default:
+				c.isSubmitting = false;
 				break;
 		}
 	}
@@ -724,9 +748,11 @@
 		var quantity = document.getElementById(qID).value;
 		var tempPrice = parseInt(quantity) * parseInt(item.price);
 		if(tempPrice <= $scope.data.character.creditsInt){
+			c.isSubmitting = true;
 			c.server.get({action: 'purchaseItem', item: item, quantity: quantity, price: tempPrice}).then(function(response){
 				$scope.data.characterGear = response.data.characterGear;
 				$scope.data.character = response.data.character;
+				c.isSubmitting = false;
 			});
 		} else{
 			alert('You lack the necessary funds to purchase that item or quantity');
@@ -874,6 +900,7 @@
 	}
 
 	$scope.purchaseTalent = function(item){
+		c.isSubmitting = true;
 		c.server.get({action: 'purchaseTalent', talent: item, talentID: item.sysID}).then(function(response){
 			$scope.data.character = response.data.character;
 			$scope.data.talents = response.data.talents;
@@ -881,20 +908,23 @@
 			$scope.data.availableSignatureAbilities = response.data.availableSignatureAbilities;
 			$scope.data.showSignatureAbilities = response.data.showSignatureAbilities;
 			$scope.closeEditContainer('talentInfoBox');
+			c.isSubmitting = false;
 		});
 	}
 
 	$scope.purchaseVehicle = function(vehicle){
+		c.isSubmitting = true;
 		c.server.get({action: 'purchaseVehicle', vehicle: vehicle, vehicleID: vehicle.sysID}).then(function(response){
 			$scope.data.characterVehicles = response.data.characterVehicles;
+			c.isSubmitting = false;
 		});
 	}
 
 	$scope.increaseSkill = function(skill){
+		c.isSubmitting = true;
 		c.server.get({action: 'saveSkill', skill: skill}).then(function(response){
-			//$scope.data.character = response.data.character;
-			//$scope.data.skills = response.data.skills;
 			$scope.data = response.data;
+			c.isSubmitting = false;
 			setTimeout(clearDiceRolls, 100);
 		});
 	}
@@ -2730,7 +2760,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1432</sys_mod_count>
+        <sys_mod_count>1447</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2738,14 +2768,14 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-09-24 12:14:06</sys_updated_on>
+        <sys_updated_on>2022-10-10 15:40:05</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
 
 <div class="col-xs-12 image-background" style="background: url({{data.backgroundURL}})"></div>
 
-<div class="col-xs-12 character-sheet-container">
+<div class="col-xs-12 character-sheet-container" ng-init="c.isSubmitting = false">
   <div class="col-xs-12 main-character-info">
     <!-- name, species, career, XP -->
     <span class="col-xs-4 col-md-1 portrait" id="portraitContainer" ng-click="editCharacter('portrait')"></span>
@@ -3203,7 +3233,6 @@ input:checked + .slider:before {
         </span>
         <span ng-if="data.currentGearItem.typeID == 'weapon' || data.currentGearItem.typeID == 'mod' || data.currentGearItem.typeID == 'armor'" class="col-xs-4 gear-detail">
           <span class="col-xs-12 gear-detail-label">Special:</span>
-          <!--span class="col-xs-12 gear-detail-value">{{data.currentGearItem.weaponQualities}}</span-->
           <span class="col-xs-12 gear-detail-value"><span ng-repeat="wq in data.currentGearItem.gearQualityArray">{{wq.name}}: {{wq.rank}}, </span></span>
         </span>
         <span ng-if="data.currentGearItem.typeID == 'armor'" class="col-xs-4 gear-detail">
@@ -3339,7 +3368,7 @@ input:checked + .slider:before {
         </span>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
-            <button id="saveEditsButton" ng-click="saveEdits('description')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+            <button id="saveEditsButton" ng-click="saveEdits('description'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
       </span>
@@ -3385,7 +3414,7 @@ input:checked + .slider:before {
         <span class="col-xs-12 specialization-name">{{sp.name}} <i ng-if="data.character.careerID == sp.careerID" class="far fa-medal"></i><br><text class="star-wars-text">{{sp.name}}</text></span>
         <span class="col-xs-12 specialization-name">Career: {{sp.careerName}}</span>
         <span class="col-xs-12 specialization-name">XP Cost: {{sp.costToPurchase}}</span>
-        <span ng-if="sp.canPurchase" class="col-xs-12 text-center vehicle-detail talent-detail force-power-detail" id="purchaseSpecButton"><button class="purchase-gear-button" ng-click="purchaseNewSpec(sp)">Purchase</button></span>
+        <span ng-if="sp.canPurchase" class="col-xs-12 text-center vehicle-detail talent-detail force-power-detail" id="purchaseSpecButton"><button class="purchase-gear-button" ng-click="purchaseNewSpec(sp)" ng-disabled="c.isSubmitting">Purchase</button></span>
         <span class="col-xs-12 specialization-description" ng-bind-html="sp.description"></span>
       </span>
     </span>
@@ -3400,7 +3429,7 @@ input:checked + .slider:before {
       </span>
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">
-          <button id="saveEditsButton" ng-click="saveEdits('crit')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+          <button id="saveEditsButton" ng-click="saveEdits('crit'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
         </span>
       </span>
     </span>
@@ -3419,7 +3448,7 @@ input:checked + .slider:before {
             <span class="col-xs-5 skill-detail">{{skill.name}} <i ng-if="skill.isCareer == 'true'" class="far fa-medal"></i></span>
             <span class="col-xs-2 skill-detail">{{skill.rankString}}</span>
             <span class="col-xs-2 skill-detail">{{skill.costToNextRank}} XP</span>
-            <span class="col-xs-3 skill-detail skill-increase-button" ng-if="skill.costToNextRank <= data.character.availableXPInt && skill.rankInt < 5"><button id="increaseSkillButton" ng-click="increaseSkill(skill)"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
+            <span class="col-xs-3 skill-detail skill-increase-button" ng-if="skill.costToNextRank <= data.character.availableXPInt && skill.rankInt < 5"><button id="increaseSkillButton" ng-click="increaseSkill(skill)" ng-disabled="c.isSubmitting"><i class="fad fa-swords-laser lightsabers-plus-minus"></i></button></span>
           </span>
         </span>
       </span>
@@ -3433,7 +3462,7 @@ input:checked + .slider:before {
       </span>
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">
-          <button id="saveEditsButton" ng-click="saveEdits('name')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+          <button id="saveEditsButton" ng-click="saveEdits('name'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
         </span>
       </span>
     </span>
@@ -3448,7 +3477,7 @@ input:checked + .slider:before {
       </span>
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">
-          <button id="saveEditsButton" ng-click="saveEdits('forceRating')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+          <button id="saveEditsButton" ng-click="saveEdits('forceRating'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
         </span>
       </span>
     </span>
@@ -3471,7 +3500,7 @@ input:checked + .slider:before {
           <span class="col-xs-12 force-power" ng-if="!p.isPurchased && p.canPurchase" ng-repeat="p in data.forcePowers">
             <span class="col-xs-6 force-power-detail">{{p.name}} <i class="far fa-info-circle" ng-click="showForceInfo(p)"></i></span>
             <span class="col-xs-2 force-power-detail">{{p.costToPurchase}}</span>
-            <span class="col-xs-2 vehicle-detail talent-detail force-power-detail"><button class="purchase-gear-button" ng-click="purchaseForcePower(p)">Purchase</button></span>
+            <span class="col-xs-2 vehicle-detail talent-detail force-power-detail"><button class="purchase-gear-button" ng-click="purchaseForcePower(p)" ng-disabled="c.isSubmitting">Purchase</button></span>
           </span>
         </span>
         <!-- enhancements -->
@@ -3486,7 +3515,7 @@ input:checked + .slider:before {
             <span class="col-xs-2 fe-name force-power-detail">{{enh.forcePower}} - {{enh.type}}</span>
             <span class="col-xs-6 force-power-detail" ng-bind-html="enh.description"></span>
             <span class="col-xs-2 force-power-detail">{{enh.costToPurchase}}</span>
-            <span class="col-xs-2 vehicle-detail talent-detail force-power-detail"><button class="purchase-gear-button" ng-click="purchaseForceEnhancement(enh)">Purchase</button></span>
+            <span class="col-xs-2 vehicle-detail talent-detail force-power-detail"><button class="purchase-gear-button" ng-click="purchaseForceEnhancement(enh)" ng-disabled="c.isSubmitting">Purchase</button></span>
           </span>
         </span>
       </span>
@@ -3515,7 +3544,7 @@ input:checked + .slider:before {
               <span class="signature-ability-talent-tree-container" ng-repeat="tt in ability.unlockedBy">
                 <span class="signature-ability-talent-tree">
                   <span class="signature-ability-tt-name">{{tt.specializationDisplay}}</span>
-                  <button ng-if="ability.canPurchase" class="purchase-gear-button purchase-signature-ability-button" ng-click="purchaseSignatureAbility(ability, tt)">Purchase</button>
+                  <button ng-if="ability.canPurchase" class="purchase-gear-button purchase-signature-ability-button" ng-click="purchaseSignatureAbility(ability, tt)" ng-disabled="c.isSubmitting">Purchase</button>
                 </span>
               </span>
             </span>
@@ -3533,7 +3562,7 @@ input:checked + .slider:before {
             <span class="col-xs-2 force-power-detail fe-name">{{upgrade.name}} -<br>{{upgrade.ability}}</span>
             <span class="col-xs-6 force-power-detail" ng-bind-html="upgrade.description"></span>
             <span class="col-xs-2 force-power-detail">{{upgrade.costToPurchase}}</span>
-            <span class="col-xs-2 force-power-detail"><button ng-if="upgrade.canPurchase" class="purchase-gear-button" ng-click="purchaseSignatureAbilityUpgrade(upgrade)">Purchase</button></span>
+            <span class="col-xs-2 force-power-detail"><button ng-if="upgrade.canPurchase" class="purchase-gear-button" ng-click="purchaseSignatureAbilityUpgrade(upgrade)" ng-disabled="c.isSubmitting">Purchase</button></span>
           </span>
         </span>
       </span>
@@ -3566,7 +3595,7 @@ input:checked + .slider:before {
           <span class="col-xs-4 vehicle-detail talent-detail">{{v.shipName}} <i class="far fa-info-circle" ng-click="toggleVehicleInfo(v)"></i></span>
           <span class="col-xs-3 vehicle-detail talent-detail">{{v.type}}</span>
           <span class="col-xs-3 vehicle-detail talent-detail">{{v.price}}</span>
-          <span class="col-xs-2 vehicle-detail talent-detail"><button class="purchase-gear-button" ng-click="purchaseVehicle(v)">Purchase</button></span>
+          <span class="col-xs-2 vehicle-detail talent-detail"><button class="purchase-gear-button" ng-click="purchaseVehicle(v)" ng-disabled="c.isSubmitting">Purchase</button></span>
         </span>
       </span>
     </span>
@@ -3592,7 +3621,7 @@ input:checked + .slider:before {
         <span class="col-xs-4 col-md-3 vehicle-info talent-info">Navicomputer:<br>{{data.currentVehicleInfo.navicomputer}}</span>
         <span class="col-xs-4 col-md-3 vehicle-info talent-info">Hyperdrive:<br>{{data.currentVehicleInfo.hyperdrive}}</span>
         <span class="col-xs-12 talent-info" ng-bind-html="data.currentVehicleInfo.description" style="margin-top:20px;"></span>
-        <span class="col-xs-12 vehicle-detail talent-detail" id="vehicleInfoPurchaseContainer"><button class="purchase-gear-button" ng-click="purchaseVehicle(data.currentVehicleInfo)">Purchase</button></span>
+        <span class="col-xs-12 vehicle-detail talent-detail" id="vehicleInfoPurchaseContainer"><button class="purchase-gear-button" ng-click="purchaseVehicle(data.currentVehicleInfo)" ng-disabled="c.isSubmitting">Purchase</button></span>
       </span>
     </span>
     <!-- edit talents -->
@@ -3611,7 +3640,7 @@ input:checked + .slider:before {
             <span class="col-xs-6 talent-detail">{{item.name}} <i ng-if="item.forceTalent == 'true'" class="fab fa-jedi-order"></i> <i class="far fa-info-circle" ng-click="toggleTalentInfo(item)"></i><br/>{{item.specName}}</span>
             <span class="col-xs-2 talent-detail">{{item.tierString}}</span>
             <span class="col-xs-2 talent-detail">{{item.costToPurchase}}</span>
-            <span ng-if="item.canPurchase" class="col-xs-2 talent-detail"><button class="purchase-gear-button" ng-click="purchaseTalent(item)">Purchase</button></span>
+            <span ng-if="item.canPurchase" class="col-xs-2 talent-detail"><button class="purchase-gear-button" ng-click="purchaseTalent(item)" ng-disabled="c.isSubmitting">Purchase</button></span>
           </span>
         </span>
       </span>
@@ -3630,7 +3659,7 @@ input:checked + .slider:before {
           </span>
         </span>
       </span>
-      <span class="col-xs-12 talent-detail" id="talentInfoPurchaseContainer"><button ng-if="data.currentTalentInfo.canPurchase" class="purchase-gear-button" ng-click="purchaseTalent(data.currentTalentInfo)">Purchase</button></span>
+      <span class="col-xs-12 talent-detail" id="talentInfoPurchaseContainer"><button ng-if="data.currentTalentInfo.canPurchase" class="purchase-gear-button" ng-click="purchaseTalent(data.currentTalentInfo)" ng-disabled="c.isSubmitting">Purchase</button></span>
     </span>
     <!-- status effect info -->
     <span class="status-effect-info-box" id="statusEffectInfoBox">
@@ -3648,7 +3677,7 @@ input:checked + .slider:before {
       </span>
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">
-          <button id="saveEditsButton" ng-click="saveEdits('credits')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+          <button id="saveEditsButton" ng-click="saveEdits('credits'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
         </span>
       </span>
     </span>
@@ -3666,7 +3695,7 @@ input:checked + .slider:before {
         </span>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
-            <button id="saveEditsButton" ng-click="saveEdits('gearQuantity')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+            <button id="saveEditsButton" ng-click="saveEdits('gearQuantity'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
       </span>
@@ -3698,7 +3727,7 @@ input:checked + .slider:before {
             <span class="col-xs-6 item-detail">{{item.name}} <i class="far fa-info-circle" ng-click="showGearInfo(item)"></i></span>
             <span class="col-xs-2 item-detail">{{item.price}}</span>
             <input class="col-xs-2 sw-input" type="text" id="{{item.name}}QuantityInput" name="{{item.name}}QuantityInput" inputmode="numeric" pattern="[0-9]*" value="1"/>
-            <span class="col-xs-2 item-detail"><button class="purchase-gear-button" ng-click="purhcaseItem(item)">Purchase</button></span>
+            <span class="col-xs-2 item-detail"><button class="purchase-gear-button" ng-click="purhcaseItem(item)" ng-disabled="c.isSubmitting">Purchase</button></span>
           </span>
         </span>
       </span>
@@ -3758,7 +3787,7 @@ input:checked + .slider:before {
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">
           <button id="addGearSpecialsButton" ng-click="editCharacter('gearQuality', data.currentGear)">Add Gear Quality<br><text class="star-wars-text">Add Gear Quality</text></button>
-          <button id="saveEditsButton" ng-click="saveEdits('gearEdits')">Save<br><text class="star-wars-text">Save</text></button>
+          <button id="saveEditsButton" ng-click="saveEdits('gearEdits'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text">Save</text></button>
         </span>
       </span>
     </span>
@@ -3778,7 +3807,7 @@ input:checked + .slider:before {
       </span>
       <span class="col-xs-12 save-edits">
         <span class="col-xs-12 save-button-container">
-          <button id="saveEditsButton" ng-click="saveEdits('otherGear')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+          <button id="saveEditsButton" ng-click="saveEdits('otherGear'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
         </span>
       </span>
     </span>
@@ -3790,7 +3819,7 @@ input:checked + .slider:before {
         <input class="sw-input" type="text" id="soakInput" name="soakInput" inputmode="numeric" patter="[0-9]*" value="{{data.character.soakString}}"/>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
-            <button id="saveEditsButton" ng-click="saveEdits('soak')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+            <button id="saveEditsButton" ng-click="saveEdits('soak'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
       </span>
@@ -3809,7 +3838,7 @@ input:checked + .slider:before {
         </span>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
-            <button id="saveEditsButton" ng-click="saveEdits('wounds')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+            <button id="saveEditsButton" ng-click="saveEdits('wounds'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
       </span>
@@ -3828,7 +3857,7 @@ input:checked + .slider:before {
         </span>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
-            <button id="saveEditsButton" ng-click="saveEdits('strain')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+            <button id="saveEditsButton" ng-click="saveEdits('strain'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
       </span>
@@ -3847,7 +3876,7 @@ input:checked + .slider:before {
         </span>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
-            <button id="saveEditsButton" ng-click="saveEdits('defense')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+            <button id="saveEditsButton" ng-click="saveEdits('defense'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
       </span>
@@ -3882,7 +3911,7 @@ input:checked + .slider:before {
         </span>
         <span class="col-xs-12 save-edits">
           <span class="col-xs-12 save-button-container">
-            <button id="saveEditsButton" ng-click="saveEdits('characteristics')">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+            <button id="saveEditsButton" ng-click="saveEdits('characteristics'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
           </span>
         </span>
       </span>

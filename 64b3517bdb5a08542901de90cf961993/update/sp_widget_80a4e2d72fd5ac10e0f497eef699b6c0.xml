@@ -213,11 +213,13 @@ a:hover{
 }
 
 .make-visible-button{
-	border:1px groove #54f403;
-  box-shadow:0px 0px 6px 3px #54f403;
+  margin-top:1rem;
+	border:1px groove #d306d3;
+  box-shadow:0px 0px 6px 3px #d306d3;
 }
 
 .hide-button{
+  margin-top:1rem;
 	border:1px groove #e21414;
   box-shadow:0px 0px 6px 3px #e21414;
 }
@@ -587,7 +589,7 @@ a:hover{
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>230</sys_mod_count>
+        <sys_mod_count>235</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -595,7 +597,7 @@ a:hover{
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-10-11 14:05:39</sys_updated_on>
+        <sys_updated_on>2022-11-04 22:46:33</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -718,6 +720,11 @@ a:hover{
               <span class="col-xs-12 character-detail">Species: {{character.species}}</span>
               <span class="col-xs-12 character-detail">Career: {{character.career}}</span>
             </a>
+          </span>
+          <span ng-if="data.currentCampaign.gmID == data.userID" class="col-xs-12 add-xp-section text-center">
+            <label for="addXP{{character.sysID}}">XP to Add:</label><br/>
+            <input class="sw-input" type="text" name="addXP{{character.sysID}}" id="addXP{{character.sysID}}" inputmode="numeric" pattern="[0-9]*" value="0"/><br/>
+            <button id="addXPButton" ng-click="addXP(character)">Add XP</button>
           </span>
           <span ng-if="data.isGm" class="col-xs-12 gm-button">
             <button ng-if="!character.visible" class="make-visible-button visibility-button" ng-click="toggleNPCVisibility(character, true)">Show NPC</button>

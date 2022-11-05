@@ -225,6 +225,16 @@
 	$scope.editCharacter = function(section, item, secondaryItem){
 		if($scope.data.canEdit || section == 'career' || section == 'specializations' || section == 'species'){
 			switch(section){
+				case 'addXP':
+					var container = document.getElementById('editCharacterXP');
+					container.style.display = 'inline';
+					if(parseInt(screen.width) < 762){
+						container.style.width = '80%';
+					} else{
+						container.style.width = '40%';
+					}
+					break;
+					
 				case 'description':
 					document.getElementById('notableFeatures').innerHTML = $scope.data.character.notableFeatures;
 					document.getElementById('background').innerHTML = $scope.data.character.background;
@@ -515,6 +525,18 @@
 
 	$scope.saveEdits = function(section){
 		switch(section){
+			case 'addXP':
+				var xpToAdd = parseInt(document.getElementById('addXP').value);
+				c.server.get({action: 'addXP', xpToAdd: xpToAdd}).then(function(response){
+					$scope.data = response.data;
+					$scope.closeEditContainer('addXP');
+					c.isSubmitting = false;
+					c.server.refresh().then(function(){
+						clearDiceRolls();
+					});
+				});
+				break;
+				
 			case 'description':
 				var gender = document.getElementById('gender').value;
 				var age = parseInt(document.getElementById('age').value);
@@ -768,6 +790,10 @@
 		var container = '';
 
 		switch(section){
+			case 'addXP':
+				container = document.getElementById('editCharacterXP');
+				break;
+			
 			case 'description':
 				container = document.getElementById('editCharacterDescription');	
 				break;
@@ -2089,7 +2115,8 @@ input:checked + .slider:before {
 		data.playerID = gs.getUserID();
 		var charGR = new GlideRecord('x_176383_star_wars_character');
 		charGR.get(characterID);
-		if(data.playerID == charGR.player.sys_id || gs.hasRole('admin')){
+		data.isGM = checkGM(charGR.campaign);
+		if(data.playerID == charGR.player.sys_id || gs.hasRole('admin') || data.isGM){
 			data.canEdit = true;
 		} else{
 			data.canEdit = false;
@@ -2298,6 +2325,15 @@ input:checked + .slider:before {
 		//process character updates
 		if(input){
 			switch(input.action){
+				case 'addXP':
+					charGR.available_xp += input.xpToAdd;
+					charGR.update();
+					data.character.availableXPInt = parseInt(charGR.available_xp);
+					data.character.availableXPString = data.character.availableXPInt + '';
+					data.character.totalXPInt = parseInt(charGR.total_xp);
+					data.character.totalXPString = data.character.totalXPInt + '';
+					break;
+					
 				case 'saveCharacterDescription':
 					charGR.gender = input.gender;
 					charGR.age = input.age;
@@ -2753,6 +2789,18 @@ input:checked + .slider:before {
 	} catch(e){
 		gs.addErrorMessage(e.message);
 	}
+	
+	function checkGM(campaign){
+		if(campaign != ''){
+			var campaignGR = new GlideRecord('x_176383_star_wars_campaign');
+			campaignGR.get(campaign);
+			if(campaignGR.game_master == gs.getUserID()){
+				return true;
+			} else{
+				return false;
+			}
+		}
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -2760,7 +2808,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1447</sys_mod_count>
+        <sys_mod_count>1460</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2768,7 +2816,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-10-10 15:40:05</sys_updated_on>
+        <sys_updated_on>2022-11-05 15:50:22</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2788,7 +2836,7 @@ input:checked + .slider:before {
           <span class="col-xs-12 xp-value">{{data.character.totalXPString}}</span>
           <span class="col-xs-12 xp-label">TOTAL XP</span>
         </span>
-        <span class="col-xs-6 col-md-4 available-xp">
+        <span class="col-xs-6 col-md-4 available-xp" ng-click="editCharacter('addXP')">
           <span class="col-xs-12 xp-value">{{data.character.availableXPString}}</span>
           <span class="col-xs-12 xp-label">AVAILABLE XP</span>
         </span>
@@ -3418,6 +3466,19 @@ input:checked + .slider:before {
         <span class="col-xs-12 specialization-description" ng-bind-html="sp.description"></span>
       </span>
     </span>
+    <!-- add XP -->
+    <span class="edit-character" id="editCharacterXP">
+    	<span class="col-xs-12 close-button" ng-click="closeEditContainer('addXP')"><i class="fas fa-swords-laser slideout-close-icon"></i></span>
+      <span class="col-xs-12">
+        <label for="addXP">Add XP:</label><br/>
+        <input class="sw-input" type="text" id="addXP" name="addXP" inputmode="numeric" pattern="[0-9]"/>
+      </span>
+      <span class="col-xs-12 save-edits">
+        <span class="col-xs-12 save-button-container">
+          <button id="saveEditsButton" ng-click="saveEdits('addXP'); c.isSubmitting = true" ng-disabled="c.isSubmitting">Save<br><text class="star-wars-text" id="swSaveButton">Save</text></button>
+        </span>
+      </span>
+    </span>  
     <!-- edit critical injuries -->
     <span class="edit-character" id="editCritContainer">
       <span class="col-xs-12 close-button" ng-click="closeEditContainer('crit')"><i class="fas fa-swords-laser slideout-close-icon"></i></span>

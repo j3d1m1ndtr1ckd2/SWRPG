@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $location, spUtil, $rootScope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.openNewDetailForm = function(sysID){
+	var parameters = {
+			table: $scope.data.detailTable,
+			sys_id: sysID
+		};
+		spUtil.get('widget-form', parameters).then(function(response){
+			c.showModal = true;
+			$scope.data.newDetailForm = response;
+		});
+	}
+	
+	$rootScope.$on('sp.form.submitted', function(evt, data){
+		c.showModal = false;
+		c.server.refresh();		
+	});
+	
+	$scope.toggleSideNav = function(bool){
+		if(bool){
+			c.sideNavOpen = false;
+		} else{
+			c.sideNavOpen = true;
+		}
+	}
+	
+	$scope.goTo = function(detail){
+		$location.search('detail', detail);
+		$location.search('sys_id', null);
+		$location.search('spa', null);
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.image-background{
+  position:fixed;
+  top:65px;
+  left:0;
+  height: 1000px; /* You must set a specified height */
+  background-position: center !important; /* Center the image */
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover !important;
+  opacity:.7;
+  z-index:-5;
+}
+
+.star-wars-campaign-detail-container{
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+
+  .star-wars-campaign-detail-header-container{
+    order:0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+
+  .star-wars-new-detail-button-container{
+    order:1;
+
+    .star-wars-new-detail-button{
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content:center;
+      align-items:center;
+      padding:1rem;
+      border: 1px groove #54f403;
+      border-radius:2rem;
+      box-shadow: 0px 0px 6px 3px #54f403;
+      background-color:transparent;
+      column-gap:2rem;
+      margin-top:2rem;
+      margin-bottom:2rem;
+      background-color:black;
+
+      #swndb-first-icon{
+        order:0;
+        font-size:3rem;
+      }
+
+      .swndb-text-container{
+        order:1;
+        display:flex;
+        flex-flow:column wrap;
+        justify-content:center;
+        align-items:center;
+
+        .swndb-label{
+          font-size:1.8rem;
+        }
+
+        .swndb-label-aurebesh{
+          font-size:1.4rem;
+        }
+      }
+
+      #swndb-second-icon{
+        order:2;
+        font-size:3rem;
+      }
+    }
+  }
+
+  .star-wars-campaign-detail-body{
+    order:2;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+
+    .star-wars-campaign-detail-body-header-container{
+      order:0;
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:center;
+      align-items:center;
+
+      .star-wars-campaign-detail-body-header{
+        order:0;
+        font-size:2.4rem;
+      }
+
+      .star-wars-campaign-detail-body-sub-header{
+        order:1;
+        font-size:1.8rem;
+      }
+      
+      .star-wars-detail-search-container{
+      	order:2;
+        margin-top:1rem;
+        
+        .sw-input{
+        	padding:.5rem;
+        }
+      }
+    }
+    
+    .star-wars-sessions-tab-selector{
+    	order:1;
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content:center;
+      align-items:center;
+      width:100%;
+      margin-top:2rem;
+      column-gap:20rem;
+      
+      .session-tab-selector{
+      	font-size:1.5rem;
+        font-weight:bold;
+        text-align:center;
+      }
+      
+      .active-session-tab{
+      	border-bottom:.1rem solid white;
+      }
+    }
+
+    .star-wars-campaign-detail-records-container{
+      order:2;
+      display:flex;
+      flex-flow:row wrap;
+      justify-content:center;
+      align-items:center;
+      column-gap:2rem;
+      row-gap:2rem;
+      margin-top: 2rem;
+      padding:2rem;
+
+      .star-wars-campaign-detail-record{
+        padding: 2rem;
+        border: 1px solid #1933f4;
+        border-radius: 2rem;
+        box-shadow: 0px 0px 6px 3px #1933f4;
+        display: flex;
+        flex-basis:auto;
+        min-height:5rem;
+        flow-flow: column wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .5rem;
+        font-size:1.6rem;
+        min-width:25rem;
+        background-color:black;
+
+        .star-wars-campaign-detail-links-container{
+          display:flex;
+          flex-flow:row nowrap;
+          justify-content:space-between;
+          align-items:center;
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+.star-wars-new-detail-form-container{
+  display: flex;
+  position: fixed;
+  top: 20rem;
+  flex-flow: column nowrap;
+  row-gap: 2rem;
+  width: 90%;
+  left: 6rem;
+  background-color: black;
+  overflow-y: scroll;
+  max-height: 70rem;
+  padding-top:1rem;
+  background: black;
+  border: .1rem solid silver;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.5rem 0.2rem silver;
+  z-index:1;
+
+  .star-wars-new-detail-form-close-button-container{
+    order:0;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+    align-items:center;
+
+    .fa-swords-laser{
+      font-size:3rem;
+      color:#e21414;
+    }
+  }
+
+  .star-wars-new-detail-widget-container{
+    order:1;
+  }
+}
+
+.star-wars-gm-side-nav{
+  position: fixed;
+  top: 15rem;
+  left: 2rem;
+  background-color:black;
+
+  .swgmsn-open-close-button-container{
+    margin-bottom:4.5rem;
+
+    .fa-starfighter{
+      font-size:3.5rem;
+      color:#FF0000;
+      transition:all .5s ease-in-out;
+    }
+  }
+
+  .side-nav-open-icon{
+    text-align:right;
+    transform: rotate(270deg);
+    text-align:center;
+  }
+
+  .side-nav-closed-icon{
+    text-align:left;
+    transform: rotate(90deg);
+  }
+
+  .swgmsn-buttons{
+    transition: all .5s ease-in-out;
+
+    .swgmsn-button{
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:center;
+      align-items:center;
+      font-size:3rem;
+
+      .fa-user-bounty-hunter{
+        color:#587059;
+      }
+
+      .fa-sword-laser{
+        color:#54f403;
+      }
+
+      .fa-book-journal-whills{
+        color:#624a2e;
+      }
+
+      .button-icon{
+        order:0;
+      }
+
+      .swgmsn-button-label{
+        order:1;
+        font-size:1.8rem;
+      }
+    }
+  }
+
+  .side-nav-open{
+    width:12rem;
+    display:flex;
+    flex-flow:column nowrap;
+    row-gap:2rem;
+  }
+
+  .side-nav-closed{
+    display:none;
+    width:0;
+  }
+}
+
+.star-wars-detail-flyout{
+  position:fixed;
+  top:15rem;
+  padding:2rem;
+  left:15rem;
+  width:80%;
+  max-height:70rem;
+  overflow-y:scroll;
+  //display:flex;
+  flex-flow:column nowrap;
+  justify-content:center;
+  align-items:center;
+  background: black;
+  border: .1rem solid silver;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.5rem 0.2rem silver;
+
+  .close-button-container{
+    order:0;
+    text-align:right;
+    font-size:2.5rem;
+    color:red;
+    width:100%;
+    padding:.5rem 1rem;
+  }
+
+  .star-wars-full-detail-flyout-body{
+    order:1;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+
+    .full-detail-title{
+      order:0;
+    }
+
+    .full-detail-sub-title{
+      order:1;
+    }
+    
+    .session-plan-tabs{
+    	order:2;
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content:space-evenly;
+      align-items:center;
+      width:100%;
+      margin-bottom:2rem;
+      
+      .session-plan-tab{
+        text-align:center;
+      	font-size:1.5rem;
+        font-weight:bold;
+      }
+      
+      .swfdf-outline-tab{
+      	order:0;
+      }
+      
+      .swfdf-gm-notes-tab{
+      	order:1;
+      }
+      
+      .full-detail-active-tab{
+      	border-bottom:.1rem solid white;
+      }
+    }
+
+    .full-detail-description{
+      order:3;
+    }
+  }
+}
+
+@media only screen and (max-width:762px){
+  .star-wars-campaign-detail-container{
+    .star-wars-campaign-detail-body{
+      .star-wars-sessions-tab-selector{
+      	column-gap:10rem;
+      }
+      
+      .star-wars-campaign-detail-records-container{
+      	flex-flow:column wrap;
+        
+        .star-wars-campaign-detail-record{
+        	width:100%;
+        }
+      }
+    }
+  }
+  
+  .star-wars-new-detail-form-container{
+    left:1rem;
+    top:8rem;
+    width:95%;
+    //max-height:60rem;
+    padding-bottom:20rem;
+    z-index:11;
+  }
+  
+  .star-wars-detail-flyout{
+  	left:1rem;
+    top:8rem;
+    width:95%;
+    z-index:11;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_campaign_detail</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars Campaign Detail</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+var campaignID = $sp.getParameter('campaign');
+data.detail = $sp.getParameter('detail');
+	var util = new starWarsGMUtil();
+	var campaignGR = new GlideRecord('x_176383_star_wars_campaign');
+	campaignGR.get(campaignID);
+	data.campaignDisplay = campaignGR.getDisplayValue();
+	
+	if(data.detail == 'orgs'){
+		data.detailTable = 'x_176383_star_wars_organization';
+		data.detailIcon = 'fa-solid fa-user-bounty-hunter';
+		data.sectionHeader = "Organizations";
+		data.newDetailButtonLabel = "Organization";
+		data.records = util.getCampaignOrgs(campaignID);
+	} else if(data.detail == 'locations'){
+		data.sectionHeader = "Locations";
+		data.detailIcon = 'fa-solid fa-space-station-moon';
+		data.newDetailButtonLabel = "Location";
+		data.detailTable = 'x_176383_star_wars_location';
+		data.records = util.getCampaignLocations(campaignID);
+	} else if(data.detail == 'artifacts'){
+		data.newDetailButtonLabel = "Artifact";
+		data.detailIcon = 'fa-solid fa-sword-laser';
+		data.detailTable = 'x_176383_star_wars_special_item_artifact';
+		data.sectionHeader = 'Artifacts';
+		data.records = util.getCampaignArtifacts(campaignID);
+	} else{
+		data.newDetailButtonLabel = "Session Plan";
+		data.detailIcon = 'fa-duotone fa-book-journal-whills';
+		data.detailTable = 'x_176383_star_wars_session_plan';
+		data.sectionHeader = 'Session Plans';
+		var sessions = util.getCampaignSessionPlans(campaignID);
+		data.openSessions = sessions.openSessions;
+		data.completedSessions = sessions.completedSessions;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2023-01-09 05:29:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2d884a952f582950e0f497eef699b689</sys_id>
+        <sys_mod_count>151</sys_mod_count>
+        <sys_name>Star Wars Campaign Detail</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_2d884a952f582950e0f497eef699b689</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2023-01-17 15:41:56</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 image-background" style="background: url('sw_space.jpg')"></div>
+
+<!-- main display body of campaign details -->
+<div class="star-wars-campaign-detail-container" ng-init="c.showModal = false; c.showFullDetails = false; c.detailRec = ''">
+  <div class="star-wars-campaign-detail-header-container">
+    <h1 class="star-wars-campaign-detail-header">{{data.campaignDisplay}}</h1>
+    <h4 class="star-wars-campaign-detail-sub-header star-wars-text">{{data.campaignDisplay}}</h4>
+    <span class="star-wars-new-detail-button-container">
+      <button class="star-wars-new-detail-button" ng-click="openNewDetailForm(-1)">
+        <i id="swndb-first-icon" class="{{data.detailIcon}}"></i>
+        <span class="swndb-text-container">
+          <span class="swndb-label">New {{data.newDetailButtonLabel}}</span>
+          <span class="swndb-label-aurebesh star-wars-text">New {{data.newDetailButtonLabel}}</span>
+        </span>
+        <i id="swndb-second-icon" class="{{data.detailIcon}}"></i>
+      </button>
+    </span>
+  </div>
+  <div class="star-wars-campaign-detail-body" ng-init="c.filter = ''">
+    <div class="star-wars-campaign-detail-body-header-container">
+      <span class="star-wars-campaign-detail-body-header">{{data.sectionHeader}}:</span>
+      <span class="star-wars-campaign-detail-body-sub-header star-wars-text">{{data.sectionHeader}}:</span>
+      <span class="star-wars-detail-search-container">
+        <input class="sw-input" type="text" ng-model="c.filter" placeholder="Search..."/>
+      </span>
+    </div>
+    <div ng-if="data.detail == 'sessions'" class="star-wars-sessions-tab-selector" ng-init="c.activeSessionTab = 'open'; data.records = data.openSessions">
+      <span class="session-tab-selector" ng-class="{'active-session-tab': c.activeSessionTab == 'open'}" ng-click="c.activeSessionTab = 'open'; data.records = data.openSessions">Open<br><text class="star-wars-text">Open</text></span>
+      <span class="session-tab-selector" ng-class="{'active-session-tab': c.activeSessionTab == 'completed'}" ng-click="c.activeSessionTab = 'completed'; data.records = data.completedSessions">Completed<br><text class="star-wars-text">Completed</text></span>
+    </div>
+    <div class="star-wars-campaign-detail-records-container">
+      <div class="star-wars-campaign-detail-record" ng-repeat="rec in data.records | filter: c.filter">
+        <span class="star-wars-campaign-detail detail-title"><b>Name:</b> {{rec.name}}</span>
+        <span class="star-wars-campaign-detail sub-detail" ng-if="data.detail == 'locations'"><b>Planet:</b> {{rec.planet}}</span>
+        <span class="star-wars-campaign-detail sub-detail" ng-if="data.detail == 'artifacts'"><b>Location:</b> {{rec.location}}</span>
+        <span class="star-wars-campaign-detail-links-container">
+          <a href="#" ng-click="c.showFullDetails = true; c.detailRec = rec">View Details</a>
+          <a href="#" ng-click="openNewDetailForm(rec.sys_id)">Edit</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- flyout widget to create new or edit existing campaign detail -->
+<div ng-if="c.showModal" class="star-wars-new-detail-form-container">
+  <div class="star-wars-new-detail-form-close-button-container" ng-click="c.showModal = false"><i class="fa-regular fa-swords-laser"></i></div>
+  <div class="star-wars-new-detail-widget-container"><sp-widget widget="data.newDetailForm"></sp-widget></div>
+</div>
+
+<!-- flyout details -->
+<div ng-if="c.showFullDetails" class="star-wars-detail-flyout">
+  <div class="close-button-container" ng-click="c.showFullDetails = false">
+    <i class="fa-regular fa-swords-laser"></i>
+  </div>
+  <div class="star-wars-full-detail-flyout-body">
+    <h3 class="full-detail-title">{{c.detailRec.name}}</h3>
+    <p class="full-detail-sub-title star-wars-text">{{c.detailRec.name}}</p>
+    <span ng-if="data.detail == 'sessions'" class="session-plan-tabs" ng-init="c.detailRec.description = c.detailRec.outline; c.activeTab = 'outline'">
+      <span class="swfdf-outline-tab session-plan-tab" ng-class="{'full-detail-active-tab': c.activeTab == 'outline'}" ng-click="c.activeTab = 'outline'; c.detailRec.description = c.detailRec.outline">Outline<br><text class="star-wars-text">Outline</text></span>
+      <span class="swfdf-gm-notes-tab session-plan-tab" ng-class="{'full-detail-active-tab': c.activeTab == 'gm_notes'}" ng-click="c.activeTab = 'gm_notes'; c.detailRec.description = c.detailRec.gm_notes">GM Notes<br><text class="star-wars-text">GM Notes</text></span>
+    </span>
+    <span class="full-detail-description" ng-bind-html="c.detailRec.description"></span>
+  </div>
+</div>
+
+<!-- quick nav side panel -->
+<div class="star-wars-gm-side-nav" ng-init="c.sideNavOpen = false">
+  <div class="swgmsn-open-close-button-container" ng-class="{'side-nav-open-icon': c.sideNavOpen == true, 'side-nav-closed-icon': c.sideNavOpen == false}" ng-click="toggleSideNav(c.sideNavOpen)">
+    <i class="fa-duotone fa-starfighter"></i>
+  </div>
+  <div class="swgmsn-buttons" ng-class="{'side-nav-open': c.sideNavOpen, 'side-nav-closed': !c.sideNavOpen}">
+    <div class="swgmsn-button" ng-click="goTo('orgs')">
+      <i class="fa-solid fa-user-bounty-hunter button-icon"></i>
+      <span class="swgmsn-button-label">Organizations</span>
+    </div>
+    <div class="swgmsn-button" ng-click="goTo('locations')">
+      <i class="fa-solid fa-space-station-moon button-icon"></i>
+      <span class="swgmsn-button-label">Locations</span>
+    </div>
+    <div class="swgmsn-button" ng-click="goTo('artifacts')">
+      <i class="fa-solid fa-sword-laser button-icon"></i>
+    	<span class="swgmsn-button-label">Artifacts</span>
+    </div>
+    <div class="swgmsn-button" ng-click="goTo('sessions')">
+      <i class="fa-duotone fa-book-journal-whills button-icon"></i>
+    	<span class="swgmsn-button-label">Session Plans</span>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

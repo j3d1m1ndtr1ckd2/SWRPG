@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.image-background{
+  position:fixed;
+  top:65px;
+  left:0;
+  height: 1000px; /* You must set a specified height */
+  background-position: center !important; /* Center the image */
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover !important;
+  opacity:.7;
+  z-index:-5;
+}
+
+.gm-home-container{
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+
+  .gm-home-header-container{
+    order:0;
+    display:flex;
+    flex-flow:column wrap;
+    align-items:center;
+    margin-bottom:4rem;
+
+    .gm-home-header{
+      order:0;
+    }
+
+    .gm-home-sub-header{
+      order:1;
+    }
+  }
+
+  .gm-home-campaigns-container{
+    order:1;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    column-gap:4rem;
+    row-gap:4rem;
+    padding-bottom:2rem;
+
+    .campaign-container{
+      display:flex;
+      flex-flow:column wrap;
+      justify-content:center;
+      align-items:center;
+      flex:0 0 auto;
+      border: 1px groove #1933f4;
+      box-shadow: 0px 0px 6px 3px #1933f4;
+      border-radius:2rem;
+      padding:1rem;
+      background-color:black;
+
+      .campaign-header{
+        order:0;
+        font-size:2.2rem;
+      }
+
+      .campaign-sub-header{
+        order:1;
+        font-size:1.8rem;
+      }
+
+      .campaign-detail-count-container{
+        order:2;
+        display:flex;
+        flex-flow:row wrap;
+        column-gap:1rem;
+        row-gap:2rem;
+        margin-top:2rem;
+        justify-content:center;
+
+        a{
+          color:white;
+
+          .campaign-detail-count{
+            display:flex;
+            flex-flow:column wrap;
+            justify-content:center;
+            align-items:center;
+
+            .campaign-detail-icon{
+              order:0;
+              font-size:2.5rem;
+            }
+
+            .campaign-detail-label{
+              order:1;
+              font-size:1.6rem;
+            }
+
+            .campaign-detail-sub-label{
+              order:2;
+              font-size:1.2rem;
+            }
+
+            .campaign-detail-integer{
+              order:3;
+              font-size:2.5rem;
+            }
+          }
+          
+          .campaign-detail-count:hover{
+          	transform:scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:762px){
+  .gm-home-container{
+    .gm-home-campaigns-container{
+      .campaign-container{
+      	max-width:100%;
+      }
+    }
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>star_wars_gm_home</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Star Wars GM Home</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+var util = new starWarsGMUtil();
+	data.campaigns = util.getMyCampaigns();
+	console.log(data.campaigns);
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2023-01-05 00:39:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>50cf58c82f98ed10e0f497eef699b626</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Star Wars GM Home</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sp_widget_50cf58c82f98ed10e0f497eef699b626</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2023-01-14 06:15:57</sys_updated_on>
+        <template><![CDATA[<head>
+  <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="col-xs-12 image-background" style="background: url('sw_space.jpg')"></div>
+
+<div class="gm-home-container">
+  <div class="gm-home-header-container">
+    <h1 class="gm-home-header">Game Master Home</h1>
+    <h4 class="gm-home-sub-header star-wars-text">Game Master Home</h4>
+  </div>
+  <div class="gm-home-campaigns-container">
+    <div class="campaign-container" ng-repeat="c in data.campaigns">
+      <div class="campaign-header">{{c.name}}</div>
+      <div class="campaign-sub-header star-wars-text">{{c.name}}</div>
+      <div class="campaign-detail-count-container">
+        <a href="?id=star_wars_campaign_detail&campaign={{c.sys_id}}&detail=orgs">
+          <span class="campaign-detail-count">
+            <span class="campaign-detail-icon"><i class="fa-solid fa-user-bounty-hunter"></i></span>
+            <span class="campaign-detail-label">Organizations</span>
+            <span class="campaign-detail-sub-label star-wars-text">Organizations</span>
+            <span class="campaign-detail-integer">{{c.organizationCount}}</span>
+          </span>
+        </a>
+        <a href="?id=star_wars_campaign_detail&campaign={{c.sys_id}}&detail=locations">
+          <span class="campaign-detail-count">
+            <span class="campaign-detail-icon"><i class="fa-solid fa-space-station-moon"></i></span>
+            <span class="campaign-detail-label">Locations</span>
+            <span class="campaign-detail-sub-label star-wars-text">Locations</span>
+            <span class="campaign-detail-integer">{{c.locationCount}}</span>
+          </span>
+        </a>
+        <a href="?id=star_wars_campaign_detail&campaign={{c.sys_id}}&detail=artifacts">
+          <span class="campaign-detail-count">
+            <span class="campaign-detail-icon"><i class="fa-solid fa-sword-laser"></i></span>
+            <span class="campaign-detail-label">Artifacts</span>
+            <span class="campaign-detail-sub-label star-wars-text">Artifacts</span>
+            <span class="campaign-detail-integer">{{c.artifactCount}}</span>
+          </span>
+        </a>
+        <a href="?id=star_wars_campaign_detail&campaign={{c.sys_id}}&detail=sessions">
+          <span class="campaign-detail-count">
+            <span class="campaign-detail-icon"><i class="fa-duotone fa-book-journal-whills"></i></span>
+            <span class="campaign-detail-label">Session Plans</span>
+            <span class="campaign-detail-sub-label star-wars-text">Session Plans</span>
+            <span class="campaign-detail-integer">{{c.sessionPlanCount}}</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_176383_star_wars.starWarsGMUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>starWarsGMUtil</name>
+        <script><![CDATA[var starWarsGMUtil = Class.create();
+starWarsGMUtil.prototype = {
+	initialize: function() {
+	},
+	
+	getCampaignOrgs: function(campaign){
+		var orgs = new GlideRecord('x_176383_star_wars_organization');
+		orgs.addQuery('campaign', campaign);
+		orgs.orderBy('name');
+		orgs.query();
+		var orgsArray = [];
+		while(orgs.next()){
+			var orgRec = {
+				name: orgs.getDisplayValue(),
+				sys_id: orgs.getUniqueValue(),
+				active: orgs.active,
+				description: orgs.description + '',
+			};
+			orgsArray.push(orgRec);
+		}
+		return orgsArray;
+	},
+	
+	getCampaignLocations: function(campaign){
+		var locations = new GlideRecord('x_176383_star_wars_location');
+		locations.addQuery('campaign', campaign);
+		locations.orderBy('planet');
+		locations.orderBy('name');
+		var locationsArray = [];
+		locations.query();
+		while(locations.next()){
+			var locRec = {
+				name: locations.getDisplayValue(),
+				sys_id: locations.getUniqueValue(),
+				planetID: locations.planet.sys_id + '',
+				planet: locations.planet.getDisplayValue(),
+				description: locations.description + ''
+			};
+			locationsArray.push(locRec);
+		}
+		return locationsArray;
+	},
+	
+	getCampaignArtifacts: function(campaign){
+		var artifacts = new GlideRecord('x_176383_star_wars_special_item_artifact');
+		artifacts.addQuery('campaign', campaign);
+		artifacts.orderBy('location');
+		artifacts.orderBy('name');
+		artifacts.query();
+		var artifactsArray = [];
+		while(artifacts.next()){
+			var artRec = {
+				name: artifacts.getDisplayValue(),
+				sys_id: artifacts.getUniqueValue(),
+				locationID: artifacts.location.sys_id + '',
+				location: artifacts.location.getDisplayValue(),
+				description: artifacts.description + ''
+			};
+			artifactsArray.push(artRec);
+		}
+		return artifactsArray;
+	},
+	
+	getCampaignSessionPlans: function(campaign){
+		var sessionPlans = new GlideRecord('x_176383_star_wars_session_plan');
+		sessionPlans.addQuery('campaign', campaign);
+		sessionPlans.orderBy('order');
+		sessionPlans.query();
+		var openSessionPlansArray = [];
+		var completedSessionPlansArray = [];
+		while(sessionPlans.next()){
+			var spRec = {
+				name: sessionPlans.getDisplayValue(),
+				sys_id: sessionPlans.getUniqueValue(),
+				order: sessionPlans.order,
+				completed: sessionPlans.completed,
+				outline: sessionPlans.outline + '',
+				gm_notes: sessionPlans.gm_notes + '',
+			};
+			if(spRec.completed){
+				completedSessionPlansArray.push(spRec);
+			} else{
+				openSessionPlansArray.push(spRec);
+			}
+		}
+		var returnObj = {
+			openSessions: openSessionPlansArray,
+			completedSessions: completedSessionPlansArray
+		};
+		return returnObj;
+	},
+
+	getMyCampaigns: function(){
+		var campaignGR = new GlideRecord('x_176383_star_wars_campaign');
+		campaignGR.addQuery('game_master', gs.getUserID());
+		campaignGR.orderBy('name');
+		campaignGR.query();
+		var campaigns = [];
+		while(campaignGR.next()){
+			var rec = {
+				name: campaignGR.getDisplayValue(),
+				sys_id: campaignGR.getUniqueValue(),
+			};
+			rec.locationCount = this._getLocationCount(rec.sys_id);
+			rec.organizationCount = this._getOrgCount(rec.sys_id);
+			rec.artifactCount = this._getArtifactCount(rec.sys_id);
+			rec.sessionPlanCount = this._getSessionPlanCount(rec.sys_id);
+			campaigns.push(rec);
+		}
+		return campaigns;
+	},
+	
+	_getLocationCount: function(campaign){
+		var locationGR = new GlideRecord('x_176383_star_wars_location');
+		locationGR.addQuery('campaign', campaign);
+		locationGR.query();
+		return locationGR.getRowCount();
+	},
+	
+	_getOrgCount: function(campaign){
+		var orgCount = new GlideRecord('x_176383_star_wars_organization');
+		orgCount.addQuery('campaign', campaign);
+		orgCount.query();
+		return orgCount.getRowCount();
+	},
+	
+	_getArtifactCount: function(campaign){
+		var artCount = new GlideRecord('x_176383_star_wars_special_item_artifact');
+		artCount.addQuery('campaign', campaign);
+		artCount.query();
+		return artCount.getRowCount();
+	},
+	
+	_getSessionPlanCount: function(campaign){
+		var spCount = new GlideRecord('x_176383_star_wars_session_plan');
+		spCount.addQuery('campaign', campaign);
+		spCount.query();
+		return spCount.getRowCount();
+	},
+	
+	type: 'starWarsGMUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2023-01-07 06:09:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>170ebbec2f542550e0f497eef699b6d9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>starWarsGMUtil</sys_name>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_script_include_170ebbec2f542550e0f497eef699b6d9</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2023-01-14 05:37:30</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -2,11 +2,11 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[api.controller=function($scope, $location, spUtil, $rootScope) {
-  /* widget controller */
-  var c = this;
-	
+	/* widget controller */
+	var c = this;
+
 	$scope.openNewDetailForm = function(sysID){
-	var parameters = {
+		var parameters = {
 			table: $scope.data.detailTable,
 			sys_id: sysID
 		};
@@ -15,12 +15,20 @@
 			$scope.data.newDetailForm = response;
 		});
 	}
-	
+
 	$rootScope.$on('sp.form.submitted', function(evt, data){
 		c.showModal = false;
-		c.server.refresh();		
+		c.server.refresh().then(function(response){
+			if($scope.data.detail == 'sessions'){
+				if(c.activeSessionTab == 'open'){
+					$scope.data.records = response.data.openSessions;
+				} else{
+					$scope.data.records = response.data.completedSessions;
+				}
+			}
+		});		
 	});
-	
+
 	$scope.toggleSideNav = function(bool){
 		if(bool){
 			c.sideNavOpen = false;
@@ -28,7 +36,7 @@
 			c.sideNavOpen = true;
 		}
 	}
-	
+
 	$scope.goTo = function(detail){
 		$location.search('detail', detail);
 		$location.search('sys_id', null);
@@ -437,15 +445,15 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-var campaignID = $sp.getParameter('campaign');
-data.detail = $sp.getParameter('detail');
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var campaignID = $sp.getParameter('campaign');
+	data.detail = $sp.getParameter('detail');
 	var util = new starWarsGMUtil();
 	var campaignGR = new GlideRecord('x_176383_star_wars_campaign');
 	campaignGR.get(campaignID);
 	data.campaignDisplay = campaignGR.getDisplayValue();
-	
+
 	if(data.detail == 'orgs'){
 		data.detailTable = 'x_176383_star_wars_organization';
 		data.detailIcon = 'fa-solid fa-user-bounty-hunter';
@@ -480,7 +488,7 @@ data.detail = $sp.getParameter('detail');
         <sys_created_on>2023-01-09 05:29:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2d884a952f582950e0f497eef699b689</sys_id>
-        <sys_mod_count>151</sys_mod_count>
+        <sys_mod_count>159</sys_mod_count>
         <sys_name>Star Wars Campaign Detail</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -488,7 +496,7 @@ data.detail = $sp.getParameter('detail');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_2d884a952f582950e0f497eef699b689</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-01-17 15:41:56</sys_updated_on>
+        <sys_updated_on>2023-01-19 14:45:27</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>

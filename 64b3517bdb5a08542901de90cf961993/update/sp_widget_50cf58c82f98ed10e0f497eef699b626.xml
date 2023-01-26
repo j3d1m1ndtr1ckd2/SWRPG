@@ -81,6 +81,7 @@
 
         a{
           color:white;
+          flex:1 0 32%;
 
           .campaign-detail-count{
             display:flex;
@@ -153,7 +154,7 @@ var util = new starWarsGMUtil();
         <sys_created_on>2023-01-05 00:39:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>50cf58c82f98ed10e0f497eef699b626</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Star Wars GM Home</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -161,7 +162,7 @@ var util = new starWarsGMUtil();
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_50cf58c82f98ed10e0f497eef699b626</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-01-14 06:15:57</sys_updated_on>
+        <sys_updated_on>2023-01-26 22:00:38</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>
@@ -200,6 +201,14 @@ var util = new starWarsGMUtil();
             <span class="campaign-detail-label">Artifacts</span>
             <span class="campaign-detail-sub-label star-wars-text">Artifacts</span>
             <span class="campaign-detail-integer">{{c.artifactCount}}</span>
+          </span>
+        </a>
+        <a href="?id=star_wars_campaign_detail&campaign={{c.sys_id}}&detail=characters">
+          <span class="campaign-detail-count">
+            <span class="campaign-detail-icon"><i class="fa-solid fa-user-hair-buns"></i></span>
+            <span class="campaign-detail-label">(N)PCs</span>
+            <span class="campaign-detail-sub-label star-wars-text">(N)PCs</span>
+            <span class="campaign-detail-integer">{{c.charactersCount}}</span>
           </span>
         </a>
         <a href="?id=star_wars_campaign_detail&campaign={{c.sys_id}}&detail=sessions">

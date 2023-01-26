@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <css/>
+        <css>/*hiding pieces of the campaigns details widget*/
+.campaigns-container{
+	.campaigns-header,.back-button,.session-record-buttons{
+		display:none;
+	}
+  
+  .campaign-detail-body{
+    .header, #campaignIdButton, .campaign-notes{
+    	display:none;
+    }
+  }
+}</css>
         <draft>false</draft>
         <dynamic_title_structure/>
         <id>star_wars_campaign_detail</id>
@@ -16,7 +27,7 @@
         <sys_created_on>2023-01-09 05:29:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ae5802952f582950e0f497eef699b66a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>star_wars_campaign_detail</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -24,7 +35,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_page_ae5802952f582950e0f497eef699b66a</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-01-09 05:29:12</sys_updated_on>
+        <sys_updated_on>2023-01-26 21:37:08</sys_updated_on>
         <title>Star Wars Campaign Detail</title>
         <use_seo_script>false</use_seo_script>
     </sp_page>

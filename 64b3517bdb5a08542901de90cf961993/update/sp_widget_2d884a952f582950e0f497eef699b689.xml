@@ -8,7 +8,8 @@
 	$scope.openNewDetailForm = function(sysID){
 		var parameters = {
 			table: $scope.data.detailTable,
-			sys_id: sysID
+			sys_id: sysID,
+			query: 'campaign=' + $scope.data.campaignID
 		};
 		spUtil.get('widget-form', parameters).then(function(response){
 			c.showModal = true;
@@ -393,6 +394,7 @@
     }
 
     .full-detail-description{
+      width:100%;
       order:3;
     }
   }
@@ -448,6 +450,7 @@
 	/* populate the 'data' object */
 	/* e.g., data.table = $sp.getValue('table'); */
 	var campaignID = $sp.getParameter('campaign');
+	data.campaignID = campaignID;
 	data.detail = $sp.getParameter('detail');
 	var util = new starWarsGMUtil();
 	var campaignGR = new GlideRecord('x_176383_star_wars_campaign');
@@ -472,6 +475,13 @@
 		data.detailTable = 'x_176383_star_wars_special_item_artifact';
 		data.sectionHeader = 'Artifacts';
 		data.records = util.getCampaignArtifacts(campaignID);
+	} else if(data.detail == 'characters'){
+		data.sectionHeader = '(N)PCs';
+		data.detailIcon = 'fa-user-hair-buns';
+		data.detailTable = '';
+		data.newDetailButtonLabel = 'hide';
+		data.records = '';
+		data.detailWidget = $sp.getWidget('star_wars_campaigns');
 	} else{
 		data.newDetailButtonLabel = "Session Plan";
 		data.detailIcon = 'fa-duotone fa-book-journal-whills';
@@ -488,7 +498,7 @@
         <sys_created_on>2023-01-09 05:29:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2d884a952f582950e0f497eef699b689</sys_id>
-        <sys_mod_count>159</sys_mod_count>
+        <sys_mod_count>165</sys_mod_count>
         <sys_name>Star Wars Campaign Detail</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -496,7 +506,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_2d884a952f582950e0f497eef699b689</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-01-19 14:45:27</sys_updated_on>
+        <sys_updated_on>2023-01-26 21:50:03</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>
@@ -508,7 +518,7 @@
   <div class="star-wars-campaign-detail-header-container">
     <h1 class="star-wars-campaign-detail-header">{{data.campaignDisplay}}</h1>
     <h4 class="star-wars-campaign-detail-sub-header star-wars-text">{{data.campaignDisplay}}</h4>
-    <span class="star-wars-new-detail-button-container">
+    <span ng-if="data.newDetailButtonLabel != 'hide'" class="star-wars-new-detail-button-container">
       <button class="star-wars-new-detail-button" ng-click="openNewDetailForm(-1)">
         <i id="swndb-first-icon" class="{{data.detailIcon}}"></i>
         <span class="swndb-text-container">
@@ -523,7 +533,7 @@
     <div class="star-wars-campaign-detail-body-header-container">
       <span class="star-wars-campaign-detail-body-header">{{data.sectionHeader}}:</span>
       <span class="star-wars-campaign-detail-body-sub-header star-wars-text">{{data.sectionHeader}}:</span>
-      <span class="star-wars-detail-search-container">
+      <span ng-if="data.newDetailButtonLabel != 'hide'" class="star-wars-detail-search-container">
         <input class="sw-input" type="text" ng-model="c.filter" placeholder="Search..."/>
       </span>
     </div>
@@ -532,7 +542,7 @@
       <span class="session-tab-selector" ng-class="{'active-session-tab': c.activeSessionTab == 'completed'}" ng-click="c.activeSessionTab = 'completed'; data.records = data.completedSessions">Completed<br><text class="star-wars-text">Completed</text></span>
     </div>
     <div class="star-wars-campaign-detail-records-container">
-      <div class="star-wars-campaign-detail-record" ng-repeat="rec in data.records | filter: c.filter">
+      <div ng-if="data.records" class="star-wars-campaign-detail-record" ng-repeat="rec in data.records | filter: c.filter">
         <span class="star-wars-campaign-detail detail-title"><b>Name:</b> {{rec.name}}</span>
         <span class="star-wars-campaign-detail sub-detail" ng-if="data.detail == 'locations'"><b>Planet:</b> {{rec.planet}}</span>
         <span class="star-wars-campaign-detail sub-detail" ng-if="data.detail == 'artifacts'"><b>Location:</b> {{rec.location}}</span>
@@ -540,6 +550,9 @@
           <a href="#" ng-click="c.showFullDetails = true; c.detailRec = rec">View Details</a>
           <a href="#" ng-click="openNewDetailForm(rec.sys_id)">Edit</a>
         </span>
+      </div>
+      <div ng-if="data.detail == 'characters'" class="campaign-characters-container">
+        <sp-widget widget="data.detailWidget"/>
       </div>
     </div>
   </div>
@@ -584,6 +597,10 @@
     <div class="swgmsn-button" ng-click="goTo('artifacts')">
       <i class="fa-solid fa-sword-laser button-icon"></i>
     	<span class="swgmsn-button-label">Artifacts</span>
+    </div>
+    <div class="swgmsn-button" ng-click="goTo('characters')">
+      <i class="fa-solid fa-user-hair-buns"></i>
+    	<span class="swgmsn-button-label">(N)PCs</span>
     </div>
     <div class="swgmsn-button" ng-click="goTo('sessions')">
       <i class="fa-duotone fa-book-journal-whills button-icon"></i>

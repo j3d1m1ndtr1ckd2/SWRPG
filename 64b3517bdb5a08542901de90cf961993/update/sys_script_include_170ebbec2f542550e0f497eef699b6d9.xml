@@ -113,6 +113,7 @@ starWarsGMUtil.prototype = {
 			rec.locationCount = this._getLocationCount(rec.sys_id);
 			rec.organizationCount = this._getOrgCount(rec.sys_id);
 			rec.artifactCount = this._getArtifactCount(rec.sys_id);
+			rec.charactersCount = this._getCharactersCount(rec.sys_id);
 			rec.sessionPlanCount = this._getSessionPlanCount(rec.sys_id);
 			campaigns.push(rec);
 		}
@@ -140,6 +141,13 @@ starWarsGMUtil.prototype = {
 		return artCount.getRowCount();
 	},
 	
+	_getCharactersCount: function(campaign){
+		var cCount = new GlideRecord('x_176383_star_wars_character');
+		cCount.addQuery('campaign', campaign);
+		cCount.query();
+		return cCount.getRowCount();
+	},
+	
 	_getSessionPlanCount: function(campaign){
 		var spCount = new GlideRecord('x_176383_star_wars_session_plan');
 		spCount.addQuery('campaign', campaign);
@@ -154,7 +162,7 @@ starWarsGMUtil.prototype = {
         <sys_created_on>2023-01-07 06:09:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>170ebbec2f542550e0f497eef699b6d9</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>starWarsGMUtil</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy>read</sys_policy>
@@ -162,6 +170,6 @@ starWarsGMUtil.prototype = {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_script_include_170ebbec2f542550e0f497eef699b6d9</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-01-14 05:37:30</sys_updated_on>
+        <sys_updated_on>2023-01-26 21:59:59</sys_updated_on>
     </sys_script_include>
 </record_update>

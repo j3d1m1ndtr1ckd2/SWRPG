@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope,spUtil) {
-  /* widget controller */
-  var c = this;
+        <client_script><![CDATA[api.controller=function($scope, spUtil, $rootScope) {
+	/* widget controller */
+	var c = this;
+	
+	$scope.setDicePool = function(dp){
+		$scope.data.dicePool = [];
+		dp.map($scope.processArray);
+	}
+	
+	$scope.processArray = function(die){
+		$scope.data.dicePool.push(die);
+	}
+
 	$scope.addDie = function(die){
 		var tempDie = {
 			'name': die.name,
@@ -12,7 +22,7 @@
 		};
 		$scope.data.dicePool.push(tempDie);
 	}
-	
+
 	$scope.removeDie = function(die){
 		for(var i = 0; i < $scope.data.dicePool.length; i++){
 			if($scope.data.dicePool[i].name == die.name){
@@ -21,12 +31,12 @@
 			}
 		}
 	}
-	
+
 	$scope.clearPool = function(){
 		$scope.data.dicePool = [];
 		$scope.data.displayResults = [];
 	}
-	
+
 	$scope.roll = function(){
 		try{
 			var results = [];
@@ -61,75 +71,75 @@
 						}
 					}
 				}
-				
-			//build roll string to pass to journal
+
+				//build roll string to pass to journal
 				switch($scope.data.dicePool[i].name){
 					case 'boost':
-					boostRolled++;
-					break;
-						
+						boostRolled++;
+						break;
+
 					case 'ability':
-					abilityRolled++;
-					break;
-						
+						abilityRolled++;
+						break;
+
 					case 'proficiency':
-					proficiencyRolled++;
-					break;
-						
+						proficiencyRolled++;
+						break;
+
 					case 'setback':
-					setbackRolled++;
-					break;
-					
+						setbackRolled++;
+						break;
+
 					case 'difficulty':
-					difficultyRolled++;
-					break;
-						
+						difficultyRolled++;
+						break;
+
 					case 'challenge':
-					challengeRolled++;
-					break;
-						
+						challengeRolled++;
+						break;
+
 					case 'force':
-					forceRolled++;
-					break;
-						
+						forceRolled++;
+						break;
+
 					case 'crit':
-					critRolled++;
-					break;
+						critRolled++;
+						break;
 				}
 			}
-			
+
 			if(boostRolled > 0){
-					rolledString += boostRolled + ' Boost, ';
-				}
-				
-				if(abilityRolled > 0){
-					rolledString += abilityRolled + ' Ability, ';
-				}
-				
-				if(proficiencyRolled > 0){
-					rolledString += proficiencyRolled + ' Proficiency, ';
-				}
-				
-				if(setbackRolled > 0){
-					rolledString += setbackRolled + ' Setback, ';
-				}
-				
-				if(difficultyRolled > 0){
-					rolledString += difficultyRolled + ' Difficulty, ';
-				}
-				
-				if(challengeRolled > 0){
-					rolledString += challengeRolled + ' Challenge, ';
-				}
-			
-				if(critRolled > 0){
-					rolledString += critRolled + ' D100, ';
-				}
-				
-				if(forceRolled > 0){
-					rolledString += forceRolled + ' Force';
-				}
-			
+				rolledString += boostRolled + ' Boost, ';
+			}
+
+			if(abilityRolled > 0){
+				rolledString += abilityRolled + ' Ability, ';
+			}
+
+			if(proficiencyRolled > 0){
+				rolledString += proficiencyRolled + ' Proficiency, ';
+			}
+
+			if(setbackRolled > 0){
+				rolledString += setbackRolled + ' Setback, ';
+			}
+
+			if(difficultyRolled > 0){
+				rolledString += difficultyRolled + ' Difficulty, ';
+			}
+
+			if(challengeRolled > 0){
+				rolledString += challengeRolled + ' Challenge, ';
+			}
+
+			if(critRolled > 0){
+				rolledString += critRolled + ' D100, ';
+			}
+
+			if(forceRolled > 0){
+				rolledString += forceRolled + ' Force';
+			}
+
 			results = resultString.split(',');
 			var successes = 0;
 			var failures = 0;
@@ -143,52 +153,52 @@
 			for(var k = 0; k < results.length; k++){				
 				switch(results[k]){
 					case 'success':
-					successes++;
-					break;
-						
+						successes++;
+						break;
+
 					case 'advantage':
-					advantage++;
-					break;
-						
+						advantage++;
+						break;
+
 					case 'triumph':
-					successes++;
-					triumph++;
-					break;
-						
+						successes++;
+						triumph++;
+						break;
+
 					case 'failure':
-					failures++;
-					break;
-						
+						failures++;
+						break;
+
 					case 'threat':
-					threat++;
-					break;
-						
+						threat++;
+						break;
+
 					case 'despair':
-					failures++;
-					despair++;
-					break;
-						
+						failures++;
+						despair++;
+						break;
+
 					case 'dark':
-					dark++;
-					break;
-						
+						dark++;
+						break;
+
 					case 'light':
-					light++;
-					break;
-						
+						light++;
+						break;
+
 					case 'blank':
-					break;
-						
+						break;
+
 					default:
-					if(crit == ''){
-						crit = results[k];
-					} else{
-						crit += ', ' + results[k];
-					}
-					break;
+						if(crit == ''){
+							crit = results[k];
+						} else{
+							crit += ', ' + results[k];
+						}
+						break;
 				}
 			}
-			
+
 			$scope.data.displayResults = [];
 			if(crit != ''){
 				var critObj = {
@@ -198,7 +208,7 @@
 				};
 				$scope.data.displayResults.push(critObj);
 			}
-				 
+
 			if((successes - failures) > 0){
 				var drObj = {
 					'name': 'success',
@@ -214,7 +224,7 @@
 				};
 				$scope.data.displayResults.push(drObj);
 			}
-			
+
 			if((advantage - threat) > 0){
 				var drObj = {
 					'name': 'advantage',
@@ -230,7 +240,7 @@
 				};
 				$scope.data.displayResults.push(drObj);
 			}
-			
+
 			if(triumph > 0){
 				var drObj = {
 					'name': 'triumph',
@@ -239,7 +249,7 @@
 				};
 				$scope.data.displayResults.push(drObj);
 			}
-			
+
 			if(despair > 0){
 				var drObj = {
 					'name': 'despair',
@@ -248,7 +258,7 @@
 				};
 				$scope.data.displayResults.push(drObj);
 			}
-			
+
 			if(dark > 0){
 				var drObj = {
 					'name': 'dark',
@@ -256,7 +266,7 @@
 				}
 				$scope.data.displayResults.push(drObj);
 			}
-			
+
 			if(light > 0){
 				var drObj = {
 					'name': 'light',
@@ -264,18 +274,107 @@
 				};
 				$scope.data.displayResults.push(drObj);
 			}
-			
-		individualDiceResultString += '\nSuccesses: ' + successes + ', Failures: ' + failures + ', Advantage: ' + advantage + ', Threat: ' + threat + ', Triumph: ' + triumph + ', Despair: ' + despair;
-			console.log('dice roller client has this sessionID: ' + $scope.data.sessionID);
-		c.server.get({action: 'updateJournal', result: $scope.data.displayResults, rolled: rolledString, fullResult: individualDiceResultString, sessionID: $scope.data.sessionID});
+
+			individualDiceResultString += '\nSuccesses: ' + successes + ', Failures: ' + failures + ', Advantage: ' + advantage + ', Threat: ' + threat + ', Triumph: ' + triumph + ', Despair: ' + despair;
+			c.server.get({action: 'updateJournal', result: $scope.data.displayResults, rolled: rolledString, fullResult: individualDiceResultString, sessionID: $scope.data.sessionID, dicePool: $scope.data.dicePool}).then(function(response){
+				$scope.data.diceHistory = response.data.diceHistory;
+			});
 		} catch(e){
 			alert(e.message);
 		}
 	}
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.dice-roller-container{
-	margin-top:40px;
+        <css>.dice-history-container{
+  position:fixed;
+  top:20%;
+  left:20%;
+  background-color:black;
+  width:60%;
+  max-height:60rem;
+  overflow-y:scroll;
+  display:flex;
+  flex-flow:column wrap;
+  padding:2rem;
+  border: 1px solid darkgray;
+  box-shadow: 0px 0px 8px 5px darkgrey;
+  border-radius: 2rem;
+  z-index:10000;
+
+  .close-button-container{
+    order:0;
+    float:right;
+
+    .fa-swords-laser{
+      color:#e21414;
+      font-size:2rem;
+    }
+  }
+
+  .dice-history-display-container{
+    order:1;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    row-gap:2rem;
+
+    .dice-history-header-container{
+      order:0;
+      text-align:center;
+    }
+
+    .dice-history-body-container{
+      order:1;
+      display:flex;
+      flex-flow:row wrap;
+      column-gap:1.5rem;
+      row-gap:2.5rem;
+
+      .dice-history-empty{
+        text-align:center;
+      }
+
+      .dice-history-roll{
+        padding:1rem;
+        border-radius: 20px;
+        border: 1px groove #54f403;
+        box-shadow: 0px 0px 6px 2px #54f403;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:center;
+        align-items:center;
+        column-gap:.5rem;
+        row-gap:.5rem;
+
+        .dice-history-pool{
+          i{
+            font-size:1.6rem;
+          }
+        }
+      }
+
+      .dice-history-roll:hover{
+        transform:scale(1.1);
+      }
+    }
+  }
+}
+
+.dice-history-icon-container{
+	position:absolute;
+  bottom:2rem;
+  left:2rem;
+  
+  .dice-history-icon{
+    .fa-history{
+    	font-size:2rem;
+    }
+  }
+}
+
+.dice-roller-container{
+  margin-top:40px;
   background-color:black;
   border-radius:20px;
   border:1px groove #e21414;
@@ -285,7 +384,7 @@
 }
 
 .sw-input,.dice-pool-button{
-	background:transparent;
+  background:transparent;
   border:1px groove #e21414;
   border-radius:20px;
   padding:5px 15px 5px 15px;
@@ -293,88 +392,105 @@
 }
 
 .dice-legend{
-	text-align:center;
+  text-align:center;
   margin-top:20px;
   margin-bottom:40px;
 }
 
 .dice-pool-results-container{
   margin-top:20px;
-	text-align:center;
+  text-align:center;
   font-size:28px;
 }
 
 .dice-pool-container{
-	font-size:28px;
+  font-size:28px;
   font-weight:bold;
   margin-top:40px;
 }
 
 .dice-header{
-	text-align:center;
+  text-align:center;
   font-size:32px;
   font-weight:bold;
 }
 
 .dice{
-	font-size:22px;
+  font-size:22px;
   text-align:center;
 }
 
 .dice-icon{
-	font-size:28px;
+  font-size:28px;
 }
 
 #force,.force{
-	color:white;
+  color:white;
 }
 
 #challenge,.challenge{
-	color:red;
+  color:red;
 }
 
 #proficiency,.proficiency{
-	color:yellow;
+  color:yellow;
 }
 
 #difficulty,.difficulty{
-	color:purple;
+  color:purple;
 }
 
 #ability,.ability{
-	color:green;
+  color:green;
 }
 
 #setback,.setback{
-	color:black;
+  color:black;
   text-shadow:0px 0px white;
 }
 
 #boost,.boost{
-	color:lightblue;
+  color:lightblue;
 }
 
 .dice-pool-buttons-container,.dice-pool-container{
-	text-align:center;
+  text-align:center;
 }
 
 .dice-pool-buttons-container{
-	margin-top:20px;
+  margin-top:20px;
 }
 
 @media only screen and (max-width:762px){
   .dice-icon{
-  	padding:0;
+    padding:0;
+  }
+
+  .dice-history-container{
+    width:96%;
+    left:2%;
+
+    .dice-history-body-container{
+      justify-content:center;
+      align-items:center;
+
+      .dice-history-roll{
+        width:100%;
+        .dice-history-pool{
+          text-align:center;
+        }
+      }
+    }
   }
 }
 
 @media only screen and (min-width:900px){
-	.split-7{
-		width:14%;
-	}
-  
+  .split-7{
+    width:14%;
+  }
+
   .split-8{
-  	width:12.5%;
+    width:12.5%;
   }
 }</css>
         <data_table>sp_instance</data_table>
@@ -391,145 +507,163 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
 	//assign a number to a result or set of results.
-	data.dicePool = [];
-	
-	data.dice = [];
-	var boostDie = {
-		'name': 'boost',
-		'1': 'blank',
-		'2': 'blank',
-		'3': 'success',
-		'4': 'success,advantage',
-		'5': 'advantage,advantage',
-		'6': 'advantage',
-		'icon': 'fas fa-dice-d6',
-		'max': 6
-	};
-	data.dice.push(boostDie);
-	
-	var abilityDie = {
-		'name': 'ability',
-		'1': 'blank',
-		'2': 'success',
-		'3': 'success',
-		'4': 'success,success',
-		'5': 'advantage',
-		'6': 'advantage',
-		'7': 'success,advantage',
-		'8': 'advantage,advantage',
-		'icon': 'fas fa-dice-d8',
-		'max': 8
-	};
-	data.dice.push(abilityDie);
-	
-	var proficiencyDie = {
-		'name': 'proficiency',
-		'1': 'blank',
-		'2': 'success',
-		'3': 'success',
-		'4': 'success,success',
-		'5': 'success,success',
-		'6': 'advantage',
-		'7': 'success,advantage',
-		'8': 'success,advantage',
-		'9': 'success,advantage',
-		'10': 'advantage,advantage',
-		'11': 'advantage,advantage',
-		'12': 'triumph',
-		'icon': 'fas fa-dice-d12',
-		'max': 12
-	};
-	data.dice.push(proficiencyDie);
-	
-	var setbackDie = {
-		'name': 'setback',
-		'1': 'blank',
-		'2': 'blank',
-		'3': 'failure',
-		'4': 'failure',
-		'5': 'threat',
-		'6': 'threat',
-		'icon': 'fas fa-dice-d6',
-		'max': 6
-	};
-	data.dice.push(setbackDie);
-	
-	var difficultyDie = {
-		'name': 'difficulty',
-		'1': 'blank',
-		'2': 'failure',
-		'3': 'failure,failure',
-		'4': 'threat',
-		'5': 'threat',
-		'6': 'threat',
-		'7': 'threat,threat',
-		'8': 'failure,threat',
-		'icon': 'fas fa-dice-d8',
-		'max': 8
-	};
-	data.dice.push(difficultyDie);
-	
-	var challengeDie = {
-		'name': 'challenge',
-		'1': 'blank',
-		'2': 'failure',
-		'3': 'failure',
-		'4': 'failure,failure',
-		'5': 'failure,failure',
-		'6': 'threat',
-		'7': 'threat',
-		'8': 'failure,threat',
-		'9': 'failure,threat',
-		'10': 'threat,threat',
-		'11': 'threat,threat',
-		'12': 'despair',
-		'icon': 'fas fa-dice-d12',
-		'max': 12
-	};
-	data.dice.push(challengeDie);
-	
-	var forceDie = {
-		'name': 'force',
-		'1': 'dark',
-		'2': 'dark',
-		'3': 'dark',
-		'4': 'dark',
-		'5': 'dark',
-		'6': 'dark',
-		'7': 'dark,dark',
-		'8': 'light',
-		'9': 'light',
-		'10': 'light,light',
-		'11': 'light,light',
-		'12': 'light,light',
-		'icon': 'fas fa-dice-d12',
-		'max': 12
-	};
-	data.dice.push(forceDie);
-	
-	var critDie = {
-		'name': 'crit',
-		'icon': 'fas fa-dice-d10',
-		'max': 100
-	};
-	data.dice.push(critDie);
-	data.sessionID = $sp.getParameter('session_id') || options.sessionID || $sp.getParameter('sys_id');
-	if(input){
-		if(input.action == 'updateJournal'){
-			var resultString = '';
-			for(var i = 0; i < input.result.length; i++){
-				resultString += input.result[i].result + ' ' + input.result[i].name + '\n';
-			}
-			console.log('dice roller server script has sessionID of: ' + input.sessionID);
-			var session = new GlideRecord('x_176383_star_wars_game_session');
-			var sessionID = input.sessionID; 
-			session.get(sessionID);
-			session.dice_roll_history = input.rolled + '\n\nIndividual Dice Results:\n' + input.fullResult + '\n\nNet Result:\n' + resultString;
-			session.update();
+	try{
+		data.dicePool = [];
+
+		data.dice = [];
+		var boostDie = {
+			'name': 'boost',
+			'1': 'blank',
+			'2': 'blank',
+			'3': 'success',
+			'4': 'success,advantage',
+			'5': 'advantage,advantage',
+			'6': 'advantage',
+			'icon': 'fas fa-dice-d6',
+			'max': 6
+		};
+		data.dice.push(boostDie);
+
+		var abilityDie = {
+			'name': 'ability',
+			'1': 'blank',
+			'2': 'success',
+			'3': 'success',
+			'4': 'success,success',
+			'5': 'advantage',
+			'6': 'advantage',
+			'7': 'success,advantage',
+			'8': 'advantage,advantage',
+			'icon': 'fas fa-dice-d8',
+			'max': 8
+		};
+		data.dice.push(abilityDie);
+
+		var proficiencyDie = {
+			'name': 'proficiency',
+			'1': 'blank',
+			'2': 'success',
+			'3': 'success',
+			'4': 'success,success',
+			'5': 'success,success',
+			'6': 'advantage',
+			'7': 'success,advantage',
+			'8': 'success,advantage',
+			'9': 'success,advantage',
+			'10': 'advantage,advantage',
+			'11': 'advantage,advantage',
+			'12': 'triumph',
+			'icon': 'fas fa-dice-d12',
+			'max': 12
+		};
+		data.dice.push(proficiencyDie);
+
+		var setbackDie = {
+			'name': 'setback',
+			'1': 'blank',
+			'2': 'blank',
+			'3': 'failure',
+			'4': 'failure',
+			'5': 'threat',
+			'6': 'threat',
+			'icon': 'fas fa-dice-d6',
+			'max': 6
+		};
+		data.dice.push(setbackDie);
+
+		var difficultyDie = {
+			'name': 'difficulty',
+			'1': 'blank',
+			'2': 'failure',
+			'3': 'failure,failure',
+			'4': 'threat',
+			'5': 'threat',
+			'6': 'threat',
+			'7': 'threat,threat',
+			'8': 'failure,threat',
+			'icon': 'fas fa-dice-d8',
+			'max': 8
+		};
+		data.dice.push(difficultyDie);
+
+		var challengeDie = {
+			'name': 'challenge',
+			'1': 'blank',
+			'2': 'failure',
+			'3': 'failure',
+			'4': 'failure,failure',
+			'5': 'failure,failure',
+			'6': 'threat',
+			'7': 'threat',
+			'8': 'failure,threat',
+			'9': 'failure,threat',
+			'10': 'threat,threat',
+			'11': 'threat,threat',
+			'12': 'despair',
+			'icon': 'fas fa-dice-d12',
+			'max': 12
+		};
+		data.dice.push(challengeDie);
+
+		var forceDie = {
+			'name': 'force',
+			'1': 'dark',
+			'2': 'dark',
+			'3': 'dark',
+			'4': 'dark',
+			'5': 'dark',
+			'6': 'dark',
+			'7': 'dark,dark',
+			'8': 'light',
+			'9': 'light',
+			'10': 'light,light',
+			'11': 'light,light',
+			'12': 'light,light',
+			'icon': 'fas fa-dice-d12',
+			'max': 12
+		};
+		data.dice.push(forceDie);
+
+		var critDie = {
+			'name': 'crit',
+			'icon': 'fas fa-dice-d10',
+			'max': 100
+		};
+		data.dice.push(critDie);
+		data.sessionID = $sp.getParameter('session_id') || options.sessionID || $sp.getParameter('sys_id');
+		var user = gs.getUser();
+		var prefName = data.sessionID + '_' + user.getID() + '_sw_roll_history';
+		var diceHistory = user.getPreference(prefName);
+		if(diceHistory){
+			data.diceHistory = JSON.parse(diceHistory);
 		}
+
+		if(input){
+			if(input.action == 'updateJournal'){
+				var resultString = '';
+				for(var i = 0; i < input.result.length; i++){
+					resultString += input.result[i].result + ' ' + input.result[i].name + '\n';
+				}
+				var session = new GlideRecord('x_176383_star_wars_game_session');
+				var sessionID = input.sessionID; 
+				session.get(sessionID);
+				session.dice_roll_history = input.rolled + '\n\nIndividual Dice Results:\n' + input.fullResult + '\n\nNet Result:\n' + resultString;
+				session.update();
+				if(!diceHistory){
+					diceHistory = [input.dicePool];
+					user.savePreference(prefName, JSON.stringify(diceHistory));
+					data.diceHistory = diceHistory;
+				} else{
+					data.diceHistory.push(input.dicePool);
+					user.savePreference(prefName, JSON.stringify(data.diceHistory));
+				}
+			}
+		}
+	} catch(e){
+		console.log(e.message);
 	}
 })();]]></script>
         <servicenow>false</servicenow>
@@ -538,7 +672,7 @@
         <sys_created_on>2020-11-24 15:52:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bc55c43b2f2ce0d0e0f497eef699b621</sys_id>
-        <sys_mod_count>146</sys_mod_count>
+        <sys_mod_count>269</sys_mod_count>
         <sys_name>Star Wars RPG Dice Roller</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -546,7 +680,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_bc55c43b2f2ce0d0e0f497eef699b621</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-02-16 16:04:18</sys_updated_on>
+        <sys_updated_on>2023-02-16 20:04:04</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -600,6 +734,28 @@
     <span ng-repeat="result in data.displayResults">
       {{result.result}} <img ng-if="result.name != 'dark' && result.name != 'light'" src="{{result.img}}" height="30px" width="30px"/> <i ng-if="result.name == 'dark'" class="fas fa-circle" style="text-shadow:0px 0px 5px white;color:black;"></i><i ng-if="result.name == 'light'" class="fas fa-circle" style="color:white;"></i>
     </span>
+  </div>
+  <div class="dice-history-icon-container" ng-init="c.showDiceRollHistory = false">
+    <span class="dice-history-icon"><i class="far fa-history" ng-click="c.showDiceRollHistory = true"></i></span>
+  </div>
+</div>
+
+<div ng-if="c.showDiceRollHistory" class="dice-history-container">
+  <div class="close-button-container">
+    <span class="pull-right"><i class="far fa-swords-laser" ng-click="c.showDiceRollHistory = false"></i></span>
+  </div>
+  <div class="dice-history-display-container">
+    <div class="dice-history-header-container">
+      <span class="dice-history-header"><h3>Dice Roll History<br><text class="star-wars-text">Dice Roll History</text></h3></span>
+    </div>
+    <div class="dice-history-body-container">
+      <span ng-if="!data.diceHistory" class="dice-history-empty">You have not rolled yet this session<br><text class="star-wars-text">You have not rolled yet this session</text></span>
+      <span ng-if="data.diceHistory" class="dice-history-roll" ng-repeat="dh in data.diceHistory" ng-click="setDicePool(dh)">
+        <span class="dice-history-pool" ng-repeat="dp in dh">
+          <i class="{{dp.icon}} {{dp.name}}"></i>
+        </span>
+      </span>
+    </div>
   </div>
 </div>]]></template>
     </sp_widget>

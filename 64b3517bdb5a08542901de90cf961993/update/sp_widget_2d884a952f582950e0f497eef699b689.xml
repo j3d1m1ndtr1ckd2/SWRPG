@@ -4,12 +4,14 @@
         <client_script><![CDATA[api.controller=function($scope, $location, spUtil, $rootScope) {
 	/* widget controller */
 	var c = this;
+	var queryString = 'campaign=' + $scope.data.campaignID;
+	$location.search('query', queryString);
+	$location.search('spa', 1);
 
 	$scope.openNewDetailForm = function(sysID){
 		var parameters = {
 			table: $scope.data.detailTable,
-			sys_id: sysID,
-			query: 'campaign=' + $scope.data.campaignID
+			sys_id: sysID
 		};
 		spUtil.get('widget-form', parameters).then(function(response){
 			c.showModal = true;
@@ -498,7 +500,7 @@
         <sys_created_on>2023-01-09 05:29:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2d884a952f582950e0f497eef699b689</sys_id>
-        <sys_mod_count>165</sys_mod_count>
+        <sys_mod_count>169</sys_mod_count>
         <sys_name>Star Wars Campaign Detail</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -506,7 +508,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_2d884a952f582950e0f497eef699b689</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-01-26 21:50:03</sys_updated_on>
+        <sys_updated_on>2023-02-17 15:44:39</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>

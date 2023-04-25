@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
     <sp_css_include action="INSERT_OR_UPDATE">
+        <lazy_load>false</lazy_load>
         <name>Star Wars Styling tweaks</name>
         <source>local</source>
         <sp_css display_value="Star Wars Styling Tweaks">dd3bbcb52f31e410e0f497eef699b6e8</sp_css>

@@ -200,5 +200,6 @@ button:focus {&#13;
         <sys_update_name>sp_theme_e6fd27032f771890e0f497eef699b686</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-24 05:50:46</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_theme>
 </record_update>

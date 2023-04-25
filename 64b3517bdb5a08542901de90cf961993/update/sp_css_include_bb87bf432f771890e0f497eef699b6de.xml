@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
     <sp_css_include action="INSERT_OR_UPDATE">
+        <lazy_load>false</lazy_load>
         <name>Aurebesh [Star Wars]</name>
         <source>local</source>
         <sp_css display_value="Aurebesh [Star Wars]">6477fb4b2f771890e0f497eef699b635</sp_css>

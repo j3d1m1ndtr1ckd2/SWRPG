@@ -7,7 +7,7 @@
 	var queryString = 'campaign=' + $scope.data.campaignID;
 	$location.search('query', queryString);
 	$location.search('spa', 1);
-
+	
 	$scope.openNewDetailForm = function(sysID){
 		var parameters = {
 			table: $scope.data.detailTable,
@@ -21,6 +21,7 @@
 
 	$rootScope.$on('sp.form.submitted', function(evt, data){
 		c.showModal = false;
+		$location.search('id', 'star_wars_campaign_detail');
 		c.server.refresh().then(function(response){
 			if($scope.data.detail == 'sessions'){
 				if(c.activeSessionTab == 'open'){
@@ -166,7 +167,7 @@
       column-gap:20rem;
       
       .session-tab-selector{
-      	font-size:1.5rem;
+      	font-size:2rem;
         font-weight:bold;
         text-align:center;
       }
@@ -203,6 +204,10 @@
         font-size:1.6rem;
         min-width:25rem;
         background-color:black;
+        
+        .star-wars-campaign-detail{
+        	font-size:1.8rem;
+        }
 
         .star-wars-campaign-detail-links-container{
           display:flex;
@@ -361,10 +366,12 @@
 
     .full-detail-title{
       order:0;
+      font-size:3rem;
     }
 
     .full-detail-sub-title{
       order:1;
+      font-size:2.2rem;
     }
     
     .session-plan-tabs{
@@ -378,7 +385,7 @@
       
       .session-plan-tab{
         text-align:center;
-      	font-size:1.5rem;
+      	font-size:1.8rem;
         font-weight:bold;
       }
       
@@ -398,6 +405,7 @@
     .full-detail-description{
       width:100%;
       order:3;
+      font-size:1.8rem;
     }
   }
 }
@@ -405,12 +413,15 @@
 @media only screen and (max-width:762px){
   .star-wars-campaign-detail-container{
     .star-wars-campaign-detail-body{
+      width:100%;
+      
       .star-wars-sessions-tab-selector{
       	column-gap:10rem;
       }
       
       .star-wars-campaign-detail-records-container{
       	flex-flow:column wrap;
+        width:100%;
         
         .star-wars-campaign-detail-record{
         	width:100%;
@@ -500,7 +511,7 @@
         <sys_created_on>2023-01-09 05:29:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2d884a952f582950e0f497eef699b689</sys_id>
-        <sys_mod_count>169</sys_mod_count>
+        <sys_mod_count>179</sys_mod_count>
         <sys_name>Star Wars Campaign Detail</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -508,7 +519,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_2d884a952f582950e0f497eef699b689</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-02-17 15:44:39</sys_updated_on>
+        <sys_updated_on>2023-03-09 16:00:42</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>

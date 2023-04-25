@@ -8,6 +8,7 @@
 	$scope.setDicePool = function(dp){
 		$scope.data.dicePool = [];
 		dp.map($scope.processArray);
+		c.showDiceRollHistory = false;
 	}
 	
 	$scope.processArray = function(die){
@@ -294,7 +295,8 @@
   max-height:60rem;
   overflow-y:scroll;
   display:flex;
-  flex-flow:column wrap;
+  flex-flow:column nowrap;
+  row-gap:1.5rem;
   padding:2rem;
   border: 1px solid darkgray;
   box-shadow: 0px 0px 8px 5px darkgrey;
@@ -303,7 +305,8 @@
 
   .close-button-container{
     order:0;
-    float:right;
+    display:flex;
+    justify-content:flex-end;
 
     .fa-swords-laser{
       color:#e21414;
@@ -657,7 +660,7 @@
 					user.savePreference(prefName, JSON.stringify(diceHistory));
 					data.diceHistory = diceHistory;
 				} else{
-					data.diceHistory.push(input.dicePool);
+					data.diceHistory.unshift(input.dicePool);
 					user.savePreference(prefName, JSON.stringify(data.diceHistory));
 				}
 			}
@@ -672,7 +675,7 @@
         <sys_created_on>2020-11-24 15:52:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bc55c43b2f2ce0d0e0f497eef699b621</sys_id>
-        <sys_mod_count>269</sys_mod_count>
+        <sys_mod_count>280</sys_mod_count>
         <sys_name>Star Wars RPG Dice Roller</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -680,7 +683,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_bc55c43b2f2ce0d0e0f497eef699b621</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-02-16 20:04:04</sys_updated_on>
+        <sys_updated_on>2023-02-27 18:48:21</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -742,7 +745,7 @@
 
 <div ng-if="c.showDiceRollHistory" class="dice-history-container">
   <div class="close-button-container">
-    <span class="pull-right"><i class="far fa-swords-laser" ng-click="c.showDiceRollHistory = false"></i></span>
+    <span><i class="far fa-swords-laser" ng-click="c.showDiceRollHistory = false"></i></span>
   </div>
   <div class="dice-history-display-container">
     <div class="dice-history-header-container">

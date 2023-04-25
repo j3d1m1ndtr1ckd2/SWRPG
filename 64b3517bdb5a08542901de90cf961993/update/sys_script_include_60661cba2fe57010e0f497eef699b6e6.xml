@@ -537,7 +537,8 @@ starWarsUtil.prototype = {
 				var wqObj = {
 					name: wq.weapon_quality.getDisplayValue(),
 					sys_id: wq.sys_id + '',
-					rank: wq.rank + ''
+					rank: wq.rank + '',
+					description: wq.weapon_quality.description + ''
 				};
 				cgObj.gearQualityArray.push(wqObj);
 				if(qualityString == ''){
@@ -736,7 +737,7 @@ starWarsUtil.prototype = {
         <sys_created_on>2021-07-28 03:50:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>60661cba2fe57010e0f497eef699b6e6</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>starWarsUtil</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy>read</sys_policy>
@@ -744,6 +745,6 @@ starWarsUtil.prototype = {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_script_include_60661cba2fe57010e0f497eef699b6e6</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-08-03 16:45:01</sys_updated_on>
+        <sys_updated_on>2023-04-25 17:06:58</sys_updated_on>
     </sys_script_include>
 </record_update>

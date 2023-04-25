@@ -801,12 +801,19 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 			gearSpecial.addQuery('vehicle_gear', obj.sysID);
 			gearSpecial.orderBy('weapon_quality.name');
 			gearSpecial.query();
+			obj.wq = [];
 			while(gearSpecial.next()){
-				if(obj.specials == ''){
+				/*if(obj.specials == ''){
 					obj.specials = gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
 				} else{
 					obj.specials += '; ' + gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
-				}
+				}*/
+				var rec = {
+					name: gearSpecial.weapon_quality.getDisplayValue(),
+					rating: gearSpecial.rating + '',
+					description: gearSpecial.weapon_quality.description + ''
+				};
+				obj.wq.push(rec);
 			}
 			data.vehicleGear.push(obj);
 		} else{
@@ -886,7 +893,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>267</sys_mod_count>
+        <sys_mod_count>270</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -894,7 +901,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-07-06 18:57:19</sys_updated_on>
+        <sys_updated_on>2023-04-25 18:52:51</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -994,7 +1001,9 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <span class="col-xs-2 weapon-detail wd-number">{{w.damage}}</span>
         <span class="col-xs-2 weapon-detail">{{w.range}}</span>
         <span class="col-xs-1 weapon-detail wd-number">{{w.crit}}</span>
-        <span class="col-xs-5 weapon-detail">{{w.specials}}</span>
+        <span class="col-xs-5 weapon-detail">{{w.specials}};
+          <span class="weapon-qualities" ng-repeat="wq in w.wq" data-toggle="tooltip" title="{{wq.description}}">{{wq.name}}: {{wq.rating}}; </span>
+        </span>
       </span>
     </span>
   </div>

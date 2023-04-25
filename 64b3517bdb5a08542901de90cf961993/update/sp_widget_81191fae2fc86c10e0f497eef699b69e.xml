@@ -1116,7 +1116,6 @@
 
 .characteristic{
   background-color:black;
-  border:2px groove black;
 }
 
 .c-value{
@@ -2274,7 +2273,6 @@ input:checked + .slider:before {
 
 		//retrieve current character gear
 		data.characterGear = util.buildCharacterGear(data.characterID);
-
 		//gear types
 		data.gearTypes = [];
 		var choiceGR = new GlideRecord('sys_choice');
@@ -2811,7 +2809,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1462</sys_mod_count>
+        <sys_mod_count>1465</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2819,7 +2817,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-11-15 17:31:38</sys_updated_on>
+        <sys_updated_on>2023-04-25 17:14:51</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -3205,8 +3203,7 @@ input:checked + .slider:before {
                   </span>
                   <span ng-if="item.typeID == 'weapon' || item.typeID == 'mod' || item.typeID == 'armor'" class="col-xs-4 gear-detail">
                     <span class="col-xs-12 gear-detail-label">Special:</span>
-                    <!--span class="col-xs-12 gear-detail-value">{{item.weaponQualities}}</span-->
-                    <span class="col-xs-12 gear-detail-value"><span class="item-quality" ng-click="editCharacter('gearQuality', item, wq)" ng-repeat="wq in item.gearQualityArray">{{wq.name}}: {{wq.rank}}, </span></span>
+                    <span class="col-xs-12 gear-detail-value"><span class="item-quality" ng-click="editCharacter('gearQuality', item, wq)" ng-repeat="wq in item.gearQualityArray" data-toggle="tooltip" title="{{wq.description}}">{{wq.name}}: {{wq.rank}}, </span></span>
                   </span>
                   <span ng-if="item.typeID == 'armor'" class="col-xs-4 gear-detail">
                     <span class="col-xs-12 gear-detail-label">Defense:</span>

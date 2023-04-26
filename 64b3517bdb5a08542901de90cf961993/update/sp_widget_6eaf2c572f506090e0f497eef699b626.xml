@@ -367,6 +367,44 @@
   }
 }
 
+.gear-quality-info-container{
+	position:fixed;
+  top:20%;
+  left:10%;
+  width:80%;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:center;
+  align-items:center;
+  row-gap:1.5rem;
+  max-height:600px;
+  overflow-y:scroll;
+  border-radius:5px;
+  border:1px groove #1933f4;
+  box-shadow:0px 0px 6px 3px #1933f4;
+  background-color:black;
+  padding:2rem;
+  z-index:5;
+  
+  .close-button{
+  	order: 0;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+  }
+  
+  .gear-quality-info-header{
+  	order:1;
+    width:100%;
+    text-align:center;
+  }
+  
+  .gear-quality-description{
+  	order:2;
+    font-size:1.6rem;
+  }
+}
+
 .vehicle-characteristic-label{
   border-radius:20px 20px 0px 0px;
   background-color: #2f3860;
@@ -803,11 +841,6 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
 			gearSpecial.query();
 			obj.wq = [];
 			while(gearSpecial.next()){
-				/*if(obj.specials == ''){
-					obj.specials = gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
-				} else{
-					obj.specials += '; ' + gearSpecial.weapon_quality.getDisplayValue() + ': ' + gearSpecial.rating;
-				}*/
 				var rec = {
 					name: gearSpecial.weapon_quality.getDisplayValue(),
 					rating: gearSpecial.rating + '',
@@ -893,7 +926,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_created_on>2020-11-10 19:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6eaf2c572f506090e0f497eef699b626</sys_id>
-        <sys_mod_count>270</sys_mod_count>
+        <sys_mod_count>273</sys_mod_count>
         <sys_name>Star Wars Vehicle Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -901,7 +934,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_6eaf2c572f506090e0f497eef699b626</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-04-25 18:52:51</sys_updated_on>
+        <sys_updated_on>2023-04-26 19:21:55</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -986,7 +1019,7 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
      </span>
   </div>
   <!-- vehicle weapons-->
-  <div class="col-xs-12 weapons-container">
+  <div class="col-xs-12 weapons-container" ng-init="c.showWeaponQualityInfo = false; c.weaponQuality = ''">
     <span class="col-xs-12 weapons-header">Weapons<br><text class="star-wars-text">Weapons</text></span>
     <span class="col-xs-12 weapons-body">
       <span class="col-xs-12 weapon-headers">
@@ -1002,11 +1035,20 @@ var vehicleGR = new GlideRecord('x_176383_star_wars_character_vehicle');
         <span class="col-xs-2 weapon-detail">{{w.range}}</span>
         <span class="col-xs-1 weapon-detail wd-number">{{w.crit}}</span>
         <span class="col-xs-5 weapon-detail">{{w.specials}};
-          <span class="weapon-qualities" ng-repeat="wq in w.wq" data-toggle="tooltip" title="{{wq.description}}">{{wq.name}}: {{wq.rating}}; </span>
+          <span class="weapon-qualities" ng-repeat="wq in w.wq">{{wq.name}}: {{wq.rating}}; <i class="far fa-info-circle" ng-click="c.showWeaponQualityInfo = true; c.weaponQuality = wq"></i></span>
         </span>
       </span>
     </span>
   </div>
+  
+  <!-- vehicle weapon quality description -->
+  <span ng-if="c.showWeaponQualityInfo" class="gear-quality-info-container">
+      <span class="col-xs-12 close-button" ng-click="c.showWeaponQualityInfo = false"><i class="fas fa-swords-laser"></i></span>
+      <span class="gear-quality-info-header">
+        <h3>{{c.weaponQuality.name}}<br><text class="star-wars-text">{{c.weaponQuality.name}}</text></h3>
+      </span>
+      <span class="gear-quality-description" ng-bind-html="c.weaponQuality.description"></span>
+    </span>
   <!-- vehicle mods -->
   <div class="col-xs-12 weapons-container mods-container">
     <span class="col-xs-12 weapons-header">Vehicle Mods<br/><text class="star-wars-text">Vehicle Mods</text></span>

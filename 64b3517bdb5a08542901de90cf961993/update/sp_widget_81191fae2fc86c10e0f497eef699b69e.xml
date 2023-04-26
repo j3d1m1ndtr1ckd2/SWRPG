@@ -1826,6 +1826,44 @@
   z-index:5;
 }
 
+.gear-quality-info-container{
+	position:fixed;
+  top:20%;
+  left:10%;
+  width:80%;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:center;
+  align-items:center;
+  row-gap:1.5rem;
+  max-height:600px;
+  overflow-y:scroll;
+  border-radius:5px;
+  border:1px groove #1933f4;
+  box-shadow:0px 0px 6px 3px #1933f4;
+  background-color:black;
+  padding:2rem;
+  z-index:5;
+  
+  .close-button{
+  	order: 0;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+  }
+  
+  .gear-quality-info-header{
+  	order:1;
+    width:100%;
+    text-align:center;
+  }
+  
+  .gear-quality-description{
+  	order:2;
+    font-size:1.6rem;
+  }
+}
+
 #forceEnhancementShop{
   display:none;
 }
@@ -2809,7 +2847,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1465</sys_mod_count>
+        <sys_mod_count>1473</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2817,7 +2855,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-04-25 17:14:51</sys_updated_on>
+        <sys_updated_on>2023-04-26 19:22:02</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -3162,7 +3200,7 @@ input:checked + .slider:before {
             <span class="col-xs-2 gear-header">Quantity:</span>
             <span class="col-xs-2 gear-header" ng-click="toggleGearInfo('all')"><i class="fal fa-chevron-left gear-info-icon" id="allChevron"></i></span>
           </span>
-          <span class="col-xs-12 gear-item-container">
+          <span class="col-xs-12 gear-item-container" ng-init="c.showGearQualityInfo = false; c.gearQuality = ''">
             <div class="col-xs-12 cg-types" ng-repeat="gearType in data.gearTypes"><text class="gear-type-text">{{gearType.name}}</text>
               <div class="col-xs-12 cg-item" ng-if="item.typeID == gearType.value" ng-repeat="item in data.characterGear" id="parent{{item.sysID}}">
                 <span class="col-xs-8 gear-detail item-name">{{item.name}}</span>
@@ -3203,7 +3241,7 @@ input:checked + .slider:before {
                   </span>
                   <span ng-if="item.typeID == 'weapon' || item.typeID == 'mod' || item.typeID == 'armor'" class="col-xs-4 gear-detail">
                     <span class="col-xs-12 gear-detail-label">Special:</span>
-                    <span class="col-xs-12 gear-detail-value"><span class="item-quality" ng-click="editCharacter('gearQuality', item, wq)" ng-repeat="wq in item.gearQualityArray" data-toggle="tooltip" title="{{wq.description}}">{{wq.name}}: {{wq.rank}}, </span></span>
+                    <span class="col-xs-12 gear-detail-value"><span class="item-quality" ng-repeat="wq in item.gearQualityArray"><span ng-click="editCharacter('gearQuality', item, wq)">{{wq.name}}:</span> {{wq.rank}} <i class="far fa-info-circle" ng-click="c.showGearQualityInfo = true; c.gearQuality = wq"></i>, </span></span>
                   </span>
                   <span ng-if="item.typeID == 'armor'" class="col-xs-4 gear-detail">
                     <span class="col-xs-12 gear-detail-label">Defense:</span>
@@ -3296,6 +3334,15 @@ input:checked + .slider:before {
           <span class="col-xs-12 gear-detail-value" ng-bind-html="data.currentGearItem.description"></span>
         </span>
       </span>
+    </span>
+    
+    <!-- gear quality info container -->
+    <span ng-if="c.showGearQualityInfo" class="gear-quality-info-container">
+      <span class="col-xs-12 close-button" ng-click="c.showGearQualityInfo = false"><i class="fas fa-swords-laser"></i></span>
+      <span class="gear-quality-info-header">
+        <h3>{{c.gearQuality.name}}<br><text class="star-wars-text">{{c.gearQuality.name}}</text></h3>
+      </span>
+      <span class="gear-quality-description" ng-bind-html="c.gearQuality.description"></span>
     </span>
     <!-- vehicles container -->
     <span class="col-xs-12 col-md-9 character-details-container mobile-nav-container vehicles-container" id="vehiclesContainer">

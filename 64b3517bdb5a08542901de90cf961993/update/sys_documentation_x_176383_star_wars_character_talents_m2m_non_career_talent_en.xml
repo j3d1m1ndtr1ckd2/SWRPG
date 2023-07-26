@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="non_career_talent" label="Non-Career Talent" language="en" table="x_176383_star_wars_character_talents_m2m">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>non_career_talent</element>
+            <help/>
+            <hint/>
+            <label>Non-Career Talent</label>
+            <language>en</language>
+            <name>x_176383_star_wars_character_talents_m2m</name>
+            <plural>Non-Career Talents</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2023-05-18 18:03:34</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2e1a4d432f7ee510e0f497eef699b643</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Non-Career Talent</sys_name>
+            <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+            <sys_update_name>sys_documentation_x_176383_star_wars_character_talents_m2m_non_career_talent_en</sys_update_name>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2023-05-18 18:03:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

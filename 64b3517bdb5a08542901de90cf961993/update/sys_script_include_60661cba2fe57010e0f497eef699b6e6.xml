@@ -11,7 +11,7 @@
 starWarsUtil.prototype = {
 	initialize: function() {
 	},
-	
+
 	getCareers: function(){
 		var careerArray = [];
 		var careers = new GlideRecord('x_176383_star_wars_career');
@@ -55,7 +55,7 @@ starWarsUtil.prototype = {
 			gs.error('starWarsUtil error: ' + e.message);
 		}
 	},
-	
+
 	getCharacterSignatureAbilities: function(characterID){
 		var purchasedAbilities = '';
 		var purchasedUpgrades = '';
@@ -119,7 +119,7 @@ starWarsUtil.prototype = {
 		};
 		return upgradeReturn;
 	},
-	
+
 	buildAvailableSignatureAbilities: function(character, signatureAbilityTalentArray, characterSignatureAbilities, specsUsed){
 		var availableSignatureAbilities = [];
 		var sa = new GlideRecord('x_176383_star_wars_signature_ability');
@@ -205,7 +205,7 @@ starWarsUtil.prototype = {
 		}
 		return availableSignatureAbilities;
 	},
-	
+
 	buildAvailableSignatureAbilityUpgrades: function(purchasedUpgrades, purchasedAbilities, character){
 		var availableSignatureAbilityUpgrades = [];
 		var upgrades = new GlideRecord('x_176383_star_wars_signature_ability_upgrade');
@@ -388,7 +388,7 @@ starWarsUtil.prototype = {
 		var index = 0;
 		while(talent.next()){
 			purchasedTalentIDs.push(talent.talent.sys_id + '');
-			if(index > 0 && talents[index - 1].name == talent.talent.talent.getDisplayValue()){
+			if(index > 0 && (talents[index - 1].name == talent.talent.talent.getDisplayValue() || talents[index - 1].name == talent.non_career_talent.getDisplayValue())){
 				talents[index - 1].ranks = (parseInt(talents[index - 1].ranks) + 1) + '';
 			} else{
 				var rec = {
@@ -405,26 +405,37 @@ starWarsUtil.prototype = {
 					careerSpecDisplay: talent.talent.career_specialization.getDisplayValue(),
 					careerSpecTalentID: talent.sys_id + ''
 				};
+
+				if(rec.talentID == ''){
+					rec.name = talent.non_career_talent.getDisplayValue();
+					rec.talentID = talent.non_career_talent.sys_id + '';
+					rec.description = talent.non_career_talent.description + '';
+					rec.passiveActive = talent.non_career_talent.passive_or_active + '';
+					rec.forceTalent = talent.non_career_talent.force_talent + '';
+				}
+
 				talents.push(rec);
 				index++;
 			}
 
 			//populate an array of each individual talent without ranking to check if signature abilities unlocked
-			var rec = {
-				name: talent.talent.talent.getDisplayValue(),
-				talentID: talent.talent.talent.sys_id + '',
-				talentTreeID: talent.talent.sys_id + '',
-				ranks: '1',
-				description: talent.talent.talent.description + '',
-				forceTalent: talent.talent.talent.force_talent + '',
-				passiveActive: talent.talent.talent.passive_or_active + '',
-				tier: talent.talent.rank + '',
-				career: talent.talent.career_specialization.career + '',
-				careerSpec: talent.talent.career_specialization.sys_id + '',
-				careerSpecDisplay: talent.talent.career_specialization.getDisplayValue(),
-				careerSpecTalentID: talent.sys_id + ''
-			};
-			signatureAbilityTalentArray.push(rec);
+			if(talent.talent != ''){
+				var rec = {
+					name: talent.talent.talent.getDisplayValue(),
+					talentID: talent.talent.talent.sys_id + '',
+					talentTreeID: talent.talent.sys_id + '',
+					ranks: '1',
+					description: talent.talent.talent.description + '',
+					forceTalent: talent.talent.talent.force_talent + '',
+					passiveActive: talent.talent.talent.passive_or_active + '',
+					tier: talent.talent.rank + '',
+					career: talent.talent.career_specialization.career + '',
+					careerSpec: talent.talent.career_specialization.sys_id + '',
+					careerSpecDisplay: talent.talent.career_specialization.getDisplayValue(),
+					careerSpecTalentID: talent.sys_id + ''
+				};
+				signatureAbilityTalentArray.push(rec);
+			}
 		}
 		//retrieve talent tree
 		//retrieve talent trees for specializations
@@ -737,7 +748,7 @@ starWarsUtil.prototype = {
         <sys_created_on>2021-07-28 03:50:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>60661cba2fe57010e0f497eef699b6e6</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>starWarsUtil</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy>read</sys_policy>
@@ -745,6 +756,6 @@ starWarsUtil.prototype = {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sys_script_include_60661cba2fe57010e0f497eef699b6e6</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-04-25 17:06:58</sys_updated_on>
+        <sys_updated_on>2023-05-18 20:31:50</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_176383_star_wars_character</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Species specific char creation tweaks</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	//duplicate the durable talent for Gen'dai on insert
+	if(current.species == gs.getProperty('x_176383_star_wars.gendai_species_id')){
+		var newTalent = new GlideRecord('x_176383_star_wars_character_talents_m2m');
+		newTalent.addQuery('non_career_talent', '!=', '').addCondition('character', current.sys_id);
+		newTalent.query();
+		if(newTalent.next()){
+			var ct = new GlideRecord('x_176383_star_wars_character_talents_m2m');
+			ct.initialize();
+			ct.character = current.character;
+			ct.non_career_talent = current.non_career_talent;
+			ct.insert();
+		}
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>ben.fisher</sys_created_by>
+        <sys_created_on>2023-05-18 19:02:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4786d54b2fbee510e0f497eef699b69b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Species specific char creation tweaks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
+        <sys_update_name>sys_script_4786d54b2fbee510e0f497eef699b69b</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2023-05-18 20:37:57</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4786d54b2fbee510e0f497eef699b69b"/>
+</record_update>

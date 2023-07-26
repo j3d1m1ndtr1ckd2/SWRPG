@@ -410,6 +410,20 @@
   }
 }
 
+@media only screen and (min-width:763px) and (max-width:1280px){
+  .star-wars-new-detail-form-container{
+  	top:5rem;
+    max-height:55rem;
+    z-index:11;
+  }
+  
+  .star-wars-detail-flyout{
+    top:5rem;
+    max-height:55rem;
+    z-index:11;
+  }
+}
+
 @media only screen and (max-width:762px){
   .star-wars-campaign-detail-container{
     .star-wars-campaign-detail-body{
@@ -511,7 +525,7 @@
         <sys_created_on>2023-01-09 05:29:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2d884a952f582950e0f497eef699b689</sys_id>
-        <sys_mod_count>179</sys_mod_count>
+        <sys_mod_count>183</sys_mod_count>
         <sys_name>Star Wars Campaign Detail</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -519,7 +533,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_2d884a952f582950e0f497eef699b689</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-03-09 16:00:42</sys_updated_on>
+        <sys_updated_on>2023-07-07 14:24:06</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>

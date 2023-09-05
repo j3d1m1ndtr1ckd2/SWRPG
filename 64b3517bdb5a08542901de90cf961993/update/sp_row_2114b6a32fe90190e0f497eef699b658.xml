@@ -2,6 +2,7 @@
     <sp_row action="INSERT_OR_UPDATE">
         <class_name/>
         <order>1</order>
+        <semantic_tag/>
         <sp_column/>
         <sp_container display_value="Star Wars User Preferences - Container 1">99043ae32fe90190e0f497eef699b6b2</sp_container>
         <sys_class_name>sp_row</sys_class_name>

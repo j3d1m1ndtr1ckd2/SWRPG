@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars Campaign Detail - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="star_wars_campaign_detail">ae5802952f582950e0f497eef699b66a</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

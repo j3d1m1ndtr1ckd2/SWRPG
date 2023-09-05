@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars Offline Character Sheet - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="star_wars_offline_character_sheet">ab9cc68e2ffe4110e0f497eef699b6cc</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

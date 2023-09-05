@@ -4,6 +4,7 @@
         <acls/>
         <active>false</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <compiler_build/>
@@ -206,6 +207,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=162ebb8e2fc28d10e0f497eef699b69d"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -291,6 +293,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=922ebb8e2fc28d10e0f497eef699b6a4"/>
     <sys_hub_flow_output action="delete_multiple" query="model=68a97f862fc28d10e0f497eef699b62d"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=68a97f862fc28d10e0f497eef699b62d"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=68a97f862fc28d10e0f497eef699b62d"/>

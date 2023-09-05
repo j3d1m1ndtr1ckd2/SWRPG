@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars Knowledge - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="star_wars_knowledge">778848e32fd4b010e0f497eef699b624</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

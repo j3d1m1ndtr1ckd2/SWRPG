@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars User Preferences - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="sw_user_preferences">5d0432a32fe90190e0f497eef699b67c</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

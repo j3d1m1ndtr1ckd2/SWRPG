@@ -601,7 +601,7 @@ a:hover{
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>240</sys_mod_count>
+        <sys_mod_count>241</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -609,7 +609,7 @@ a:hover{
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-05-16 14:03:48</sys_updated_on>
+        <sys_updated_on>2023-09-05 18:27:30</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -676,7 +676,7 @@ a:hover{
     </span>
     <!-- session notes details -->
     <span ng-if="data.currentNotesDate" class="session-note-detail-container">
-      <span class="pull-right close-button-container"><i class="fas fa-times fa-2x" ng-click="closeNotesContainer()"></i></span>
+      <span class="pull-right close-button-container" ng-click="closeNotesContainer()"><i class="fas fa-times fa-2x"></i></span>
       <span ng-if="note.date == data.currentNotesDate" class="col-xs-12 session-note" ng-repeat="note in data.notes">
         <span class="col-xs-12 note-detail date">{{note.character}}: <a href="?id=form&table=x_176383_star_wars_session_note&sys_id={{note.sysID}}" target="_blank"><i ng-if="note.canEdit" class="fas fa-pen-fancy"> Edit</i></a></span>
         <span class="col-xs-12 note-detail" ng-bind-html="note.notes"></span>

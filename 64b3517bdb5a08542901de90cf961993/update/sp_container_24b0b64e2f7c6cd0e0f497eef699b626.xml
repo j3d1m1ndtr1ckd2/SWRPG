@@ -8,6 +8,7 @@
         <container_class_name>background-image</container_class_name>
         <name>Holocron - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="holocron">acb0b64e2f7c6cd0e0f497eef699b622</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

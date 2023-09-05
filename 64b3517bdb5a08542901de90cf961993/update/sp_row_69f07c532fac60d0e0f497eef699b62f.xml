@@ -2,6 +2,7 @@
     <sp_row action="INSERT_OR_UPDATE">
         <class_name/>
         <order>1</order>
+        <semantic_tag/>
         <sp_column/>
         <sp_container display_value="Star Wars Game Session - Container 1">b3b0bcdf2f6c60d0e0f497eef699b651</sp_container>
         <sys_class_name>sp_row</sys_class_name>

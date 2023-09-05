@@ -2,6 +2,7 @@
     <sp_css_include action="INSERT_OR_UPDATE">
         <lazy_load>false</lazy_load>
         <name>Aurebesh [Star Wars]</name>
+        <rtl_css_file_url/>
         <source>local</source>
         <sp_css display_value="Aurebesh [Star Wars]">6477fb4b2f771890e0f497eef699b635</sp_css>
         <sys_class_name>sp_css_include</sys_class_name>

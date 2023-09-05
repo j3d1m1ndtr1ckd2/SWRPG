@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars Vehicle Sheet - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="star_wars_vehicle_sheet">8d8f6c572f506090e0f497eef699b61c</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

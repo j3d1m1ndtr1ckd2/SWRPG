@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars My Characters - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="star_wars_my_characters">dd1a56b62f88ac10e0f497eef699b63a</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

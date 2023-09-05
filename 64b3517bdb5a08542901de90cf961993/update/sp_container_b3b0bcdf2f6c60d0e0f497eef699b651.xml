@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars Game Session - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="star_wars_game_session">bfb0bcdf2f6c60d0e0f497eef699b64d</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

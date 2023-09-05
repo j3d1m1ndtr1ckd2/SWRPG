@@ -8,6 +8,7 @@
         <container_class_name/>
         <name>Star Wars Login - Container 1</name>
         <order>1</order>
+        <semantic_tag/>
         <sp_page display_value="star_wars_login">3c1da0c92f6e6410e0f497eef699b606</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>

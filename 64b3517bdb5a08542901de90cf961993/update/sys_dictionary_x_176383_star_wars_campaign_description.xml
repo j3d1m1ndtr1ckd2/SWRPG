@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_176383_star_wars_campaign">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="description" table="x_176383_star_wars_campaign">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Description</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,15 +26,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>description</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="HTML">html</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>5000</max_length>
         <name>x_176383_star_wars_campaign</name>
         <next_element/>
         <primary>false</primary>
@@ -51,17 +51,17 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>ben.fisher</sys_created_by>
-        <sys_created_on>2020-11-14 22:32:27</sys_created_on>
+        <sys_created_on>2023-09-13 14:00:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>08f0826c2fa8a490e0f497eef699b62e</sys_id>
-        <sys_name>x_176383_star_wars_campaign</sys_name>
+        <sys_id>4dbdf7b02f19b910e0f497eef699b6a6</sys_id>
+        <sys_name>Description</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
-        <sys_update_name>sys_dictionary_x_176383_star_wars_campaign_null</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-09-13 11:07:24</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_176383_star_wars_campaign_description</sys_update_name>
+        <sys_updated_by>ben.fisher</sys_updated_by>
+        <sys_updated_on>2023-09-13 14:00:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

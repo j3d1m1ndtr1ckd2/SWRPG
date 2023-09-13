@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope, $rootScope, $location) {
+        <client_script><![CDATA[api.controller=function($scope, $rootScope, $location, spUtil) {
   /* widget controller */
   var c = this;
 	
@@ -11,6 +11,18 @@
 			$location.search('spa', 1);
 			c.server.refresh();
 		});
+	}
+	
+	$scope.editCampaign = function(c){
+		spUtil.get('widget-form', {table: 'x_176383_star_wars_campaign', omitHeaderOptions: true,	sys_id: c.sysID}).then(function(response){
+			$scope.data.formWidget = response;
+			$scope.data.createCampaign = true;
+		});
+	}
+	
+	$scope.showCampaignDescription = function(c){
+		$scope.data.showCampaignDescription = true; 
+		$scope.data.currentDescriptionCampaign = c;
 	}
 	
 	$scope.goBack = function(){
@@ -46,7 +58,7 @@
 	
 	$rootScope.$on('sp.form.submitted', function(evt, data){
 		$scope.closeNewCampaign();
-		c.server.refresh();
+		//c.server.refresh();
 	});
 	
 	$scope.newSession = function(){
@@ -114,9 +126,9 @@
   width:98%;
   animation: slideInLeft .5s;
   z-index:5;
-  
+
   .close-button{
-  	margin-bottom:1.5rem;
+    margin-bottom:1.5rem;
   }
 }
 
@@ -148,6 +160,22 @@
   box-shadow:0px 0px 6px 3px #1933f4;
   padding-top:10px;
   padding-bottom:10px;
+
+  .view-details-button-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    .edit-campaign-button{
+      background:transparent;
+      padding:5px 15px 5px 15px;
+      border:1px groove #d306d3;
+      border-radius:20px;
+      box-shadow:0px 0px 6px 3px #d306d3;
+    }
+  }
 }
 
 .name{
@@ -160,7 +188,6 @@
 }
 
 .view-campaign-button{
-  margin-top:15px;
   background:transparent;
   padding:5px 15px 5px 15px;
   border:1px groove #54f403;
@@ -188,9 +215,9 @@ a:hover{
   border:1px groove #1933f4;
   border-radius:20px;
   box-shadow:0px 0px 6px 3px #1933f4;
-  
+
   .species-img{
-  	padding:0;
+    padding:0;
   }
 }
 
@@ -206,25 +233,25 @@ a:hover{
 }
 
 .gm-button{
-	text-align:center;
+  text-align:center;
   margin-bottom:1rem;
 }
 
 .visibility-button{
-	background:transparent;
+  background:transparent;
   padding:5px 15px 5px 15px;
   border-radius:20px;
 }
 
 .make-visible-button{
   margin-top:1rem;
-	border:1px groove #d306d3;
+  border:1px groove #d306d3;
   box-shadow:0px 0px 6px 3px #d306d3;
 }
 
 .hide-button{
   margin-top:1rem;
-	border:1px groove #e21414;
+  border:1px groove #e21414;
   box-shadow:0px 0px 6px 3px #e21414;
 }
 
@@ -267,9 +294,9 @@ a:hover{
   box-shadow: 0px 0px 4px 2px #54f403;
   z-index:5;
   padding-bottom:20px;
-  
+
   .note-detail{
-  	font-size:1.6rem;
+    font-size:1.6rem;
   }
 }
 
@@ -296,6 +323,48 @@ a:hover{
   box-shadow: 0px 0px 4px 2px #54f403;
 }
 
+.campaign-description-flyout-container{
+  position: fixed;
+  background-color: black;
+  top: 80px;
+  left: 10px;
+  width: 98%;
+  border-radius: 5px;
+  border: 1px groove #54f403;
+  box-shadow: 0px 0px 4px 2px #54f403;
+  max-height: 500px;
+  overflow-y: scroll;
+  z-index: 2;
+  display:flex;
+  flex-flow: column nowrap;
+  padding:2rem;
+  
+  .close-container{
+  	order: 0;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .campaign-description-body{
+  	order: 0;
+    display:flex;
+    flex-flow: column nowrap;
+    
+    .campaign-description-header{
+    	order: 0;
+      width: 100%;
+      text-align: center;
+      font-size:2.2rem;
+    }
+    
+    .campaign-description{
+    	order: 1;
+      width: 100%;
+      font-size: 1.8rem;
+    }
+  }
+}
+
 #campaignIdButton{
   font-size:16px;
   font-weight:bold;
@@ -310,9 +379,9 @@ a:hover{
 
 @media only screen and (max-width:762px){
   .campaigns-container, .campaigns-body, .campaign-detail-body{
-  	padding:0;
+    padding:0;
   }
-  
+
   .character-details,.character{
     padding-left:0;
     padding-right:0;
@@ -325,13 +394,13 @@ a:hover{
   .active-session-button{
     margin-bottom:20px;
   }
-  
+
   .npcs-container{
-  	padding:0;
+    padding:0;
   }
-  
+
   .search-container{
-  	position:relative;
+    position:relative;
     text-align:center;
     top:initial;
     right:initial;
@@ -355,6 +424,8 @@ a:hover{
 	/* e.g., data.table = $sp.getValue('table'); */
 	var userID = gs.getUserID();
 	data.userID = userID;
+	data.showCampaignDescription = false;
+	data.currentDescriptionCampaign = '';
 	var characters = new GlideRecord('x_176383_star_wars_character');
 	characters.addQuery('player', userID).addCondition('campaign', '!=', '');
 	characters.query();
@@ -375,7 +446,8 @@ a:hover{
 			gm: campaigns.game_master.getDisplayValue(),
 			gmID: campaigns.game_master.sys_id + '',
 			sysID: campaigns.sys_id + '',
-			name: campaigns.name + ''
+			name: campaigns.name + '',
+			description: campaigns.description + ''
 		};
 		if(data.currentCampaignID == campaigns.sys_id.toString()){
 			data.currentCampaign = campaign;
@@ -562,7 +634,6 @@ a:hover{
 		} else if(input.action == 'newCampaign'){
 			var widgetFormVariables = {
 				table: 'x_176383_star_wars_campaign',
-				view: 'portal',
 				omitHeaderOptions: true,
 				sys_id: -1
 			};
@@ -601,7 +672,7 @@ a:hover{
         <sys_created_on>2020-12-30 20:58:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80a4e2d72fd5ac10e0f497eef699b6c0</sys_id>
-        <sys_mod_count>241</sys_mod_count>
+        <sys_mod_count>280</sys_mod_count>
         <sys_name>Star Wars Campaigns</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -609,7 +680,7 @@ a:hover{
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_80a4e2d72fd5ac10e0f497eef699b6c0</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-09-05 18:27:30</sys_updated_on>
+        <sys_updated_on>2023-09-13 22:46:20</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js" crossorigin="anonymous"></script>
 </head>
@@ -633,9 +704,11 @@ a:hover{
     <span class="col-xs-12 col-md-4 campaign" ng-repeat="c in data.campaigns">
       <span class="col-xs-12 campaign-body">
         <span class="col-xs-12 name">{{c.name}}</span>
+        <span class="col-xs-12 description-link"><a href="javascript:void(0)" ng-click="showCampaignDescription(c)">View Description</a></span>
         <span class="col-xs-12 gm">Game Master: {{c.gm}}</span>
         <span class="col-xs-12 view-details-button-container">
           <button class="view-campaign-button" ng-click="viewCampaign(c)">View Details</button>
+          <button ng-if="c.gmID == data.userID" class="edit-campaign-button" ng-click="editCampaign(c)">Edit Details</button>
         </span>
       </span>
     </span>
@@ -746,6 +819,15 @@ a:hover{
       </span>
     </span>
   </div>
+</div>
+
+<!-- campaign description flyout -->
+<div ng-if="data.showCampaignDescription" class="campaign-description-flyout-container">
+  <span class="close-container" ng-click="data.showCampaignDescription = false; data.currentDescriptionCampaign = ''"><i class="fas fa-times fa-2x"></i></span>
+  <span class="campaign-description-body">
+    <span class="campaign-description-header">{{data.currentDescriptionCampaign.name}}<br><text class="star-wars-text">{{data.currentDescriptionCampaign.name}}</text></span>
+    <span class="campaign-description" ng-bind-html="data.currentDescriptionCampaign.description"></span>
+  </span>
 </div>]]></template>
     </sp_widget>
 </record_update>

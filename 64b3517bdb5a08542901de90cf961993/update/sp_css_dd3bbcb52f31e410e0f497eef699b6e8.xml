@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
     <sp_css action="INSERT_OR_UPDATE">
         <css>.datepicker-days,.panel-body{&#13;
-	background-color:black !important;&#13;
+  background-color:black !important;&#13;
+}&#13;
+&#13;
+.form-group{&#13;
+  .type-reference{&#13;
+    .field-has-reference{&#13;
+      .reference{&#13;
+        .select2-container{&#13;
+          a{&#13;
+            color:black !important;&#13;
+          }&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
 }&#13;
 &#13;
 .self-registration-link{&#13;
-	font-size:24px;&#13;
+  font-size:24px;&#13;
 }&#13;
 &#13;
 .sw-input{&#13;
-	border: 1px groove #e21414;&#13;
-    background-color: black;&#13;
-    border-radius: 20px;&#13;
-    margin-bottom: 10px;&#13;
+  border: 1px groove #e21414;&#13;
+  background-color: black;&#13;
+  border-radius: 20px;&#13;
+  margin-bottom: 10px;&#13;
 }&#13;
 &#13;
 .dismiss-notifications{&#13;
-	color:red !important;&#13;
+  color:red !important;&#13;
 }&#13;
 &#13;
 @media only screen and (max-width:762px){&#13;
   .timeline-before{&#13;
-  	border-right:none !important;&#13;
+    border-right:none !important;&#13;
   }&#13;
 }</css>
         <name>Star Wars Styling Tweaks</name>
@@ -30,7 +44,7 @@
         <sys_created_on>2021-01-19 17:58:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>dd3bbcb52f31e410e0f497eef699b6e8</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Star Wars Styling Tweaks</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -38,7 +52,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_css_dd3bbcb52f31e410e0f497eef699b6e8</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-02-14 19:27:52</sys_updated_on>
+        <sys_updated_on>2023-09-13 17:22:45</sys_updated_on>
         <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_css>
 </record_update>

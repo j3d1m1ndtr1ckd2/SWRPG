@@ -17,6 +17,11 @@
 		});
 	}
 	
+	$scope.viewDescription = function(campaign){
+		c.showCampaignDescription = true;
+		c.currentCampaign = campaign;
+	}
+	
 	$rootScope.$on('sp.form.submitted', function(evt, data){
 		c.showNewCampaignForm = false;
 		c.server.refresh();
@@ -102,9 +107,13 @@
         order:1;
         font-size:1.8rem;
       }
+      
+      .description-link{
+      	order:2;
+      }
 
       .campaign-detail-count-container{
-        order:2;
+        order:3;
         display:flex;
         flex-flow:row wrap;
         column-gap:1rem;
@@ -154,17 +163,19 @@
 
 .new-campaign-flyout-container{
 	position:fixed;
-  top:20%;
+  top:10%;
   left:20%;
   width:60%;
   display:flex;
-  flex-flow:column wrap;
+  flex-flow:column nowrap;
   row-gap:2rem;
   background-color:black;
   border:1px solid #1933f4;
   box-shadow: 0px 0px 6px 3px #1933f4;
   border-radius: 2rem;
   padding:1.5rem;
+  max-height:70rem;
+  overflow-y:scroll;
   
   .new-campaign-flyout-header-container{
   	order:0;
@@ -172,6 +183,25 @@
     .close-button{
     	color: red;
       font-size:3rem;
+    }
+  }
+  
+  .campaign-description-container{
+  	display:flex;
+    flex-flow: column nowrap;
+    row-gap: 2rem;
+    
+    .campaign-description-header{
+    	order: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    
+    .campaign-description{
+    	order: 1;
+      width: 100%;
+      font-size: 1.8rem;
     }
   }
 }
@@ -214,7 +244,6 @@
   /* e.g., data.table = $sp.getValue('table'); */
 var util = new starWarsGMUtil();
 	data.campaigns = util.getMyCampaigns();
-	console.log(data.campaigns);
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -222,7 +251,7 @@ var util = new starWarsGMUtil();
         <sys_created_on>2023-01-05 00:39:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>50cf58c82f98ed10e0f497eef699b626</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>Star Wars GM Home</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -230,14 +259,14 @@ var util = new starWarsGMUtil();
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_50cf58c82f98ed10e0f497eef699b626</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-02-02 20:08:32</sys_updated_on>
+        <sys_updated_on>2023-09-13 21:46:13</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>
 
 <div class="col-xs-12 image-background" style="background: url('sw_space.jpg')"></div>
 
-<div class="gm-home-container" ng-init="c.showNewCampaignForm = false">
+<div class="gm-home-container" ng-init="c.showNewCampaignForm = false; c.showCampaignDescription = false; c.currentCampaign = ''">
   <div class="gm-home-header-container">
     <h1 class="gm-home-header">Game Master Home</h1>
     <h4 class="gm-home-sub-header star-wars-text">Game Master Home</h4>
@@ -249,6 +278,7 @@ var util = new starWarsGMUtil();
       <div class="campaign-container" ng-repeat="c in data.campaigns">
         <div class="campaign-header">{{c.name}}</div>
         <div class="campaign-sub-header star-wars-text">{{c.name}}</div>
+        <div class="description-link"><a href="#" ng-click="viewDescription(c)">View Description</a></div>
         <div class="campaign-detail-count-container">
           <a href="?id=star_wars_campaign_detail&campaign={{c.sys_id}}&detail=orgs">
             <span class="campaign-detail-count">
@@ -303,6 +333,17 @@ var util = new starWarsGMUtil();
     <div class="new-campaign-flyout-widget-container">
       <sp-widget widget="data.newCampaignWidget"/>
     </div>
-  </div>]]></template>
+  </div>
+
+<!-- view campaign description -->
+<div ng-if="c.showCampaignDescription" class="new-campaign-flyout-container">
+  <div class="new-campaign-flyout-header-container">
+      <span class="pull-right close-button" ng-click="c.showCampaignDescription = false"><i class="fa-solid fa-swords-laser"></i></span>
+    </div>
+    <div class="campaign-description-container">
+      <span class="campaign-description-header">{{c.currentCampaign.name}}<br><text class="star-wars-text">{{c.currentCampaign.name}}</text></span>
+      <span class="campaign-description" ng-bind-html="c.currentCampaign.description"></span>
+    </div>
+</div>]]></template>
     </sp_widget>
 </record_update>

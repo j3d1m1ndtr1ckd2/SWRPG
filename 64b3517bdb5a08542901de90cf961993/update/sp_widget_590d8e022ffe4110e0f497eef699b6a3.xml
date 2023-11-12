@@ -24,6 +24,7 @@
 				parentElement.appendChild(icon);
 			}
 		}
+		$scope.data.skillContainerHeight = document.getElementById('offlineCharacterSheet').clientHeight + 'px';
 	}
 	
 	$scope.showCharacter = function(){
@@ -590,7 +591,7 @@ try{
         <sys_created_on>2022-04-13 03:59:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>590d8e022ffe4110e0f497eef699b6a3</sys_id>
-        <sys_mod_count>128</sys_mod_count>
+        <sys_mod_count>139</sys_mod_count>
         <sys_name>Star Wars Offline Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -598,7 +599,7 @@ try{
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_590d8e022ffe4110e0f497eef699b6a3</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2022-09-15 18:58:12</sys_updated_on>
+        <sys_updated_on>2023-11-12 06:05:57</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -610,7 +611,7 @@ try{
   <button ng-click="showCharacter()">Select Character</button>
 </div>
 
-<div ng-if="data.showCharacter" class="sw-offline-character-sheet-container col-xs-12">
+<div ng-if="data.showCharacter" id="offlineCharacterSheet" class="sw-offline-character-sheet-container col-xs-12">
   <div class="container-title col-xs-12">SWRPG Character Sheet</div>
   <div class="primary-detail-container col-xs-12">
     <div class="name-species-career-spec col-xs-5">
@@ -633,8 +634,8 @@ try{
       </div>
     </div>
   </div>
-  <div class="skills-and-talents col-xs-12" align="center">
-    <div class="skill-container col-xs-12">
+  <div class="skills-and-talents" align="center">
+    <div class="skill-container col-xs-12 col-md-3" style="height: {{data.skillContainerHeight}}">
       <div class="skills-header header">Skills</div>
       <div class="skills-table">
         <table class="skills">
@@ -651,7 +652,7 @@ try{
         </table>
       </div>
     </div>
-    <div class="talents-container col-xs-12">
+    <div class="talents-container col-xs-12 col-md-9">
       <div class="talents-header header">Talents</div>
       <div class="talents-table">
         <table class="talents">
@@ -668,8 +669,8 @@ try{
         </table>
       </div>
     </div>
-  </div>
-  <div class="gear-container col-xs-12">
+  <!--/div-->
+  <div class="gear-container col-xs-12 col-md-9">
     <div class="gear-header header">Gear</div>
     <div class="header">Current Credits: {{data.character.creditsString}}</div>
     <table class="gear">
@@ -699,7 +700,7 @@ try{
       <div class="col-xs-12" ng-bind-html="data.character.otherGear"></div>
     </div>
   </div>
-  <div class="force-powers-container col-xs-12">
+  <div class="force-powers-container col-xs-12 col-md-9">
     <div class="header">Force Powers</div>
     <div class="force-rating col-xs-6" align="center">
       <span class="col-xs-12 heading">Force Rating:</span>
@@ -739,7 +740,7 @@ try{
       </table>
     </div>
   </div>
-  <div class="signature-abilities-container col-xs-12">
+  <div class="signature-abilities-container col-xs-12 col-md-9">
     <div class="header">Signature Abilities</div>
     <div class="signature-ability-body">
       <table>
@@ -770,7 +771,7 @@ try{
       </table>
     </div>
   </div>
-  <div class="vehicle-container col-xs-12">
+  <div class="vehicle-container col-xs-12 col-md-9">
     <div class="header">Vehicles</div>
     <div class="vehicles-body-container" align="center">
       <table class="vehicles">
@@ -787,7 +788,7 @@ try{
       </table>
     </div>
   </div>
-  <div class="character-description-container col-xs-12">
+  <div class="character-description-container col-xs-12 col-md-9">
     <div class="header">Character Description</div>
     <div class="identifying-characteristics col-xs-12" align="center">
       <b>Gender:</b> {{data.character.gender}} <b>Age:</b> {{data.character.age}} <b>Eyes:</b> {{data.character.eyes}} <b>Height:</b> {{data.character.height}} <b>Weight:</b> {{data.character.weight}}

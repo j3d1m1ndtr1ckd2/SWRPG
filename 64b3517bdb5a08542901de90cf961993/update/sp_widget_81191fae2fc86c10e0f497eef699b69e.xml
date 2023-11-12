@@ -1893,6 +1893,10 @@
 
 .status-effect-label{
   font-size:16px;
+  
+  &amp;:hover{
+  	cursor: pointer;
+  }
 }
 
 //W3 schools slider css
@@ -2849,7 +2853,7 @@ input:checked + .slider:before {
         <sys_created_on>2020-10-27 13:34:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81191fae2fc86c10e0f497eef699b69e</sys_id>
-        <sys_mod_count>1488</sys_mod_count>
+        <sys_mod_count>1493</sys_mod_count>
         <sys_name>Star Wars Character Sheet</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -2857,7 +2861,7 @@ input:checked + .slider:before {
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_81191fae2fc86c10e0f497eef699b69e</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-09-07 18:12:47</sys_updated_on>
+        <sys_updated_on>2023-11-11 20:21:43</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -2888,7 +2892,7 @@ input:checked + .slider:before {
         <!-- status effects -->
         <span class="col-xs-12 status-effects-container">
           <span class="col-xs-4 status-effect-switch" ng-repeat="effect in data.statusEffects">
-            <label class="status-effect-label" for="effect.name">{{effect.name}} <i class="far fa-info-circle" ng-click="showStatusEffectDetail(effect)"></i></label><br/>
+            <span ng-click="showStatusEffectDetail(effect)"><label class="status-effect-label" for="effect.name">{{effect.name}} <i class="far fa-info-circle"></i></label></span><br/>
             <label id="effect.name" class="switch">
               <input type="checkbox" ng-checked="{{effect.checked}}" ng-click="updateStatus(effect)">
               <span class="slider round"></span>
@@ -2975,7 +2979,7 @@ input:checked + .slider:before {
           <span class="col-xs-2 skill-rank-header">RANK</span>
         </span>
         <span class="col-xs-12 skill" ng-repeat="skill in data.skills">
-          <span class="col-xs-6 skill-name">{{skill.name}} <i ng-if="skill.isCareer == 'true'" class="far fa-medal"></i> <i class="far fa-info-circle" ng-click="showSkillInfo(skill)"></i></span>
+          <span class="col-xs-6 skill-name">{{skill.name}} <i ng-if="skill.isCareer == 'true'" class="far fa-medal"></i> <span ng-click="showSkillInfo(skill)"><i class="far fa-info-circle"></i></span></span>
           <span class="col-xs-4 skill-roll" id="{{skill.sysID}}"></span>
           <span class="col-xs-2 skill-rank"  ng-click="editCharacter('skills')">{{skill.rankString}}</span>
         </span>
@@ -3003,7 +3007,7 @@ input:checked + .slider:before {
           <span class="col-md-12 sw-section-label star-wars-text">SIGNATURE ABILITIES</span>
         </span>
         <!--span class="col-md-2 section" id="forceSelector" ng-click="showSection('forceContainer', 'forceSelector')"-->
-        <span class="section" id="forceSelector" ng-click="showSection('forceContainer', 'forceSelector')">
+        <span ng-if="data.character.forceRatingInt > 0" class="section" id="forceSelector" ng-click="showSection('forceContainer', 'forceSelector')">
           <span class="col-md-12 section-label">FORCE POWERS</span>
           <span class="col-md-12 sw-section-label star-wars-text">FORCE POWERS</span>
         </span>
@@ -3052,7 +3056,7 @@ input:checked + .slider:before {
         <span ng-if="data.showSignatureAbilities" class="col-xs-12 nav-button" ng-click="showMobileSection('signatureAbilitiesContainer')">
           <i class="fas fa-sword-laser-alt"></i> Signature Abilities<br><text class="star-wars-text">Signature Abilities</text>
         </span>
-        <span class="col-xs-12 nav-button" ng-click="showMobileSection('forceContainer')">
+        <span ng-if="data.character.forceRatingInt > 0" class="col-xs-12 nav-button" ng-click="showMobileSection('forceContainer')">
           <i class="fab fa-jedi-order"></i> Force Powers<br><text class="star-wars-text">Force Powers</text>
         </span>
       </span>
@@ -3149,7 +3153,7 @@ input:checked + .slider:before {
             <span class="col-xs-9 force-header">Description</span>
           </span>
           <span class="col-xs-12 force-power" ng-repeat="power in data.characterPowers">
-            <span class="col-xs-3 force-detail">{{power.name}} <i class="far fa-info-circle" ng-click="showForceInfo(power)"></i></span>
+            <span class="col-xs-3 force-detail">{{power.name}} <span ng-click="showForceInfo(power)"><i class="far fa-info-circle"></i></span></span>
             <span class="col-xs-9 force-detail" ng-bind-html="power.description"></span>
           </span>
         </span>
@@ -3608,7 +3612,7 @@ input:checked + .slider:before {
             <span class="col-xs-4 force-power-header"></span>
           </span>
           <span class="col-xs-12 force-power" ng-if="!p.isPurchased && p.canPurchase" ng-repeat="p in data.forcePowers">
-            <span class="col-xs-6 force-power-detail">{{p.name}} <i class="far fa-info-circle" ng-click="showForceInfo(p)"></i></span>
+            <span class="col-xs-6 force-power-detail">{{p.name}} <span ng-click="showForceInfo(p)"><i class="far fa-info-circle"></i></span></span>
             <span class="col-xs-2 force-power-detail">{{p.costToPurchase}}</span>
             <span class="col-xs-2 vehicle-detail talent-detail force-power-detail"><button class="purchase-gear-button" ng-click="purchaseForcePower(p)" ng-disabled="c.isSubmitting">Purchase</button></span>
           </span>
@@ -3702,7 +3706,7 @@ input:checked + .slider:before {
           <span class="col-xs-2 vehicle-header"></span>
         </span>
         <span class="col-xs-12 vehicles-list talent-item" ng-repeat="v in data.vehicles">
-          <span class="col-xs-4 vehicle-detail talent-detail">{{v.shipName}} <i class="far fa-info-circle" ng-click="toggleVehicleInfo(v)"></i></span>
+          <span class="col-xs-4 vehicle-detail talent-detail">{{v.shipName}} <span ng-click="toggleVehicleInfo(v)"><i class="far fa-info-circle"></i></span></span>
           <span class="col-xs-3 vehicle-detail talent-detail">{{v.type}}</span>
           <span class="col-xs-3 vehicle-detail talent-detail">{{v.price}}</span>
           <span class="col-xs-2 vehicle-detail talent-detail"><button class="purchase-gear-button" ng-click="purchaseVehicle(v)" ng-disabled="c.isSubmitting">Purchase</button></span>
@@ -3747,7 +3751,7 @@ input:checked + .slider:before {
         <span class="col-xs-12" id="purchaseTalentsContainer">
           <!--span class="col-xs-12 talent-item" ng-if="item.canPurchase && !item.isPurchased" ng-repeat="item in data.availableTalents"-->
           <span class="col-xs-12 talent-item" ng-if="!item.isPurchased" ng-repeat="item in data.availableTalents">
-            <span class="col-xs-6 talent-detail">{{item.name}} <i ng-if="item.forceTalent == 'true'" class="fab fa-jedi-order"></i> <i class="far fa-info-circle" ng-click="toggleTalentInfo(item)"></i><br/>{{item.specName}}</span>
+            <span class="col-xs-6 talent-detail">{{item.name}} <i ng-if="item.forceTalent == 'true'" class="fab fa-jedi-order"></i> <span ng-click="toggleTalentInfo(item)"><i class="far fa-info-circle"></i></span><br/>{{item.specName}}</span>
             <span class="col-xs-2 talent-detail">{{item.tierString}}</span>
             <span class="col-xs-2 talent-detail">{{item.costToPurchase}}</span>
             <span ng-if="item.canPurchase" class="col-xs-2 talent-detail"><button class="purchase-gear-button" ng-click="purchaseTalent(item)" ng-disabled="c.isSubmitting">Purchase</button></span>
@@ -3834,7 +3838,7 @@ input:checked + .slider:before {
             <span class="col-xs-2 marketplace-header"></span>
           </span>
           <span class="col-xs-12 marketplace-item" ng-repeat="item in data.availableGear">
-            <span class="col-xs-6 item-detail">{{item.name}} <i class="far fa-info-circle" ng-click="showGearInfo(item)"></i></span>
+            <span class="col-xs-6 item-detail">{{item.name}} <span ng-click="showGearInfo(item)"><i class="far fa-info-circle"></i></span></span>
             <span class="col-xs-2 item-detail">{{item.price}}</span>
             <input class="col-xs-2 sw-input" type="text" id="{{item.name}}QuantityInput" name="{{item.name}}QuantityInput" inputmode="numeric" pattern="[0-9]*" value="1"/>
             <span class="col-xs-2 item-detail"><button class="purchase-gear-button" ng-click="purhcaseItem(item)" ng-disabled="c.isSubmitting">Purchase</button></span>

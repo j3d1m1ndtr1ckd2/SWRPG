@@ -63,13 +63,14 @@
 }
 
 .swrpg-kb-container{
-	background-color:black;
+	background: transparent;
   margin-bottom:50px;
 }
 
 .category-container{
 	border:1px groove lightgray;
   border-radius:15px;
+  background-color: black;
 }
 
 .category{
@@ -90,6 +91,7 @@
   text-align:center;
   margin-top:20px;
   padding-top:15px;
+  background-color: black;
 }
 
 .article-card:hover{
@@ -272,7 +274,7 @@ if(input){
         <sys_created_on>2021-05-28 05:59:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cb9b6a472fdc3010e0f497eef699b632</sys_id>
-        <sys_mod_count>115</sys_mod_count>
+        <sys_mod_count>118</sys_mod_count>
         <sys_name>SWRPG Knowledge</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -280,7 +282,7 @@ if(input){
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_cb9b6a472fdc3010e0f497eef699b632</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-07-14 21:16:22</sys_updated_on>
+        <sys_updated_on>2023-11-12 05:33:27</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/035f51c999.js"></script>
 </head>
@@ -334,7 +336,7 @@ if(input){
 	<span class="close-button-container" ng-click="closeArticle()">
     <i class="fa fa-times fa-2x"> Close</i>
   </span>
-  <h3 class="article-header">{{data.currentArticle.short_description}} <span ng-click="toggleFavorite(data.currentArticle)"><i ng-if="!data.currentArticle.isFavorite" class="far fa-star"></i> <i ng-if="data.currentArticle.isFavorite" class="fas fa-star"></i></span></h3>
+  <h3 class="article-header">{{data.currentArticle.short_description}} <span ng-click="toggleFavorite(data.currentArticle)"><i ng-class="{'far fa-star': !data.currentArticle.isFavorite, 'fas fa-star': data.currentArticle.isFavorite}"></i></span></h3>
   <span class="col-xs-12 article-body" ng-bind-html="data.currentArticle.body"></span>
 </div>]]></template>
     </sp_widget>

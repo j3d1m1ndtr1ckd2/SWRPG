@@ -3,140 +3,168 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:20</sys_created_on>
-            <sys_id>69dcb0942f3bd850e0f497eef699b616</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>1f09c25e2f2bb110e0f497eef699b692</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:20</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>talent</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:20</sys_created_on>
-            <sys_id>65dcb0942f3bd850e0f497eef699b617</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>1709c25e2f2bb110e0f497eef699b693</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:20</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>character</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:20</sys_created_on>
-            <sys_id>e9dcb0942f3bd850e0f497eef699b617</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>1b09c25e2f2bb110e0f497eef699b693</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:20</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:20</sys_created_on>
-            <sys_id>61dcb0942f3bd850e0f497eef699b618</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>1f09c25e2f2bb110e0f497eef699b693</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:20</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>rank</element>
             <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:21</sys_created_on>
-            <sys_id>e5dcb0942f3bd850e0f497eef699b618</sys_id>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>1309c25e2f2bb110e0f497eef699b694</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:21</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>limited_use</element>
+            <position>5</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>1709c25e2f2bb110e0f497eef699b694</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>used</element>
+            <position>6</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>1b09c25e2f2bb110e0f497eef699b694</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:21</sys_created_on>
-            <sys_id>6ddcb0942f3bd850e0f497eef699b618</sys_id>
+            <position>7</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>d3090ade2f2bb110e0f497eef699b6f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:21</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:21</sys_created_on>
-            <sys_id>e1dcb0942f3bd850e0f497eef699b619</sys_id>
+            <position>8</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>d7090ade2f2bb110e0f497eef699b6f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:21</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>table_to_update</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:21</sys_created_on>
-            <sys_id>69dcb0942f3bd850e0f497eef699b619</sys_id>
+            <position>9</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>db090ade2f2bb110e0f497eef699b6f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:21</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>field_to_update</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2020-10-07 16:09:21</sys_created_on>
-            <sys_id>eddcb0942f3bd850e0f497eef699b619</sys_id>
+            <position>10</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>df090ade2f2bb110e0f497eef699b6f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2020-10-07 16:09:21</sys_updated_on>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>non_career_talent</element>
-            <position>9</position>
+            <position>11</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2023-05-18 18:03:34</sys_created_on>
-            <sys_id>661a4d432f7ee510e0f497eef699b63f</sys_id>
+            <sys_created_on>2024-01-07 17:41:23</sys_created_on>
+            <sys_id>d3090ade2f2bb110e0f497eef699b6f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_character_talents_m2m" sys_domain="global" view="Default view">11dcb0542f3bd850e0f497eef699b682</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2023-05-18 18:03:34</sys_updated_on>
+            <sys_updated_on>2024-01-07 17:41:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

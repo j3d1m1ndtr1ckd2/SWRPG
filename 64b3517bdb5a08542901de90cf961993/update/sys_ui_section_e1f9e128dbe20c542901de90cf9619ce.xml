@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2022-01-24 04:50:45</sys_created_on>
-            <sys_id>ba13e3a02f1d8550e0f497eef699b6f2</sys_id>
+            <sys_created_on>2024-01-07 17:26:16</sys_created_on>
+            <sys_id>6d95ca162f2bb110e0f497eef699b617</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_talents" sys_domain="global" view="Default view">e1f9e128dbe20c542901de90cf9619ce</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2022-01-24 04:50:45</sys_updated_on>
+            <sys_updated_on>2024-01-07 17:26:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2022-01-24 04:50:45</sys_created_on>
-            <sys_id>3213e3a02f1d8550e0f497eef699b6f3</sys_id>
+            <sys_created_on>2024-01-07 17:26:16</sys_created_on>
+            <sys_id>6595ca162f2bb110e0f497eef699b618</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_talents" sys_domain="global" view="Default view">e1f9e128dbe20c542901de90cf9619ce</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2022-01-24 04:50:45</sys_updated_on>
+            <sys_updated_on>2024-01-07 17:26:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>description</element>
             <position>2</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2022-01-24 04:50:45</sys_created_on>
-            <sys_id>b613e3a02f1d8550e0f497eef699b6f3</sys_id>
+            <sys_created_on>2024-01-07 17:26:16</sys_created_on>
+            <sys_id>6995ca162f2bb110e0f497eef699b618</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_talents" sys_domain="global" view="Default view">e1f9e128dbe20c542901de90cf9619ce</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2022-01-24 04:50:45</sys_updated_on>
+            <sys_updated_on>2024-01-07 17:26:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>passive_or_active</element>
             <position>3</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2022-01-24 04:50:45</sys_created_on>
-            <sys_id>3e13e3a02f1d8550e0f497eef699b6f3</sys_id>
+            <sys_created_on>2024-01-07 17:26:16</sys_created_on>
+            <sys_id>6d95ca162f2bb110e0f497eef699b618</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_talents" sys_domain="global" view="Default view">e1f9e128dbe20c542901de90cf9619ce</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2022-01-24 04:50:45</sys_updated_on>
+            <sys_updated_on>2024-01-07 17:26:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,27 +60,41 @@
             <element>force_talent</element>
             <position>4</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2022-01-24 04:50:45</sys_created_on>
-            <sys_id>b213e3a02f1d8550e0f497eef699b6f4</sys_id>
+            <sys_created_on>2024-01-07 17:26:16</sys_created_on>
+            <sys_id>6195ca162f2bb110e0f497eef699b619</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_talents" sys_domain="global" view="Default view">e1f9e128dbe20c542901de90cf9619ce</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2022-01-24 04:50:45</sys_updated_on>
+            <sys_updated_on>2024-01-07 17:26:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>limited_use</element>
+            <position>5</position>
+            <sys_created_by>ben.fisher</sys_created_by>
+            <sys_created_on>2024-01-07 17:26:16</sys_created_on>
+            <sys_id>6595ca162f2bb110e0f497eef699b619</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_talents" sys_domain="global" view="Default view">e1f9e128dbe20c542901de90cf9619ce</sys_ui_section>
+            <sys_updated_by>ben.fisher</sys_updated_by>
+            <sys_updated_on>2024-01-07 17:26:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>campaigns</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>ben.fisher</sys_created_by>
-            <sys_created_on>2022-01-24 04:50:45</sys_created_on>
-            <sys_id>3a13e3a02f1d8550e0f497eef699b6f4</sys_id>
+            <sys_created_on>2024-01-07 17:26:16</sys_created_on>
+            <sys_id>6995ca162f2bb110e0f497eef699b619</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_176383_star_wars_talents" sys_domain="global" view="Default view">e1f9e128dbe20c542901de90cf9619ce</sys_ui_section>
             <sys_updated_by>ben.fisher</sys_updated_by>
-            <sys_updated_on>2022-01-24 04:50:45</sys_updated_on>
+            <sys_updated_on>2024-01-07 17:26:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

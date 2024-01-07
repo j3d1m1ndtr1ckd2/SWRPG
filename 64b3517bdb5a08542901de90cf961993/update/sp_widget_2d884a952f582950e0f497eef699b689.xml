@@ -525,7 +525,7 @@
         <sys_created_on>2023-01-09 05:29:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2d884a952f582950e0f497eef699b689</sys_id>
-        <sys_mod_count>183</sys_mod_count>
+        <sys_mod_count>186</sys_mod_count>
         <sys_name>Star Wars Campaign Detail</sys_name>
         <sys_package display_value="Star Wars RPG" source="x_176383_star_wars">64b3517bdb5a08542901de90cf961993</sys_package>
         <sys_policy/>
@@ -533,7 +533,7 @@
         <sys_scope display_value="Star Wars RPG">64b3517bdb5a08542901de90cf961993</sys_scope>
         <sys_update_name>sp_widget_2d884a952f582950e0f497eef699b689</sys_update_name>
         <sys_updated_by>ben.fisher</sys_updated_by>
-        <sys_updated_on>2023-07-07 14:24:06</sys_updated_on>
+        <sys_updated_on>2023-11-28 15:46:35</sys_updated_on>
         <template><![CDATA[<head>
   <script src="https://kit.fontawesome.com/5539187d1b.js" crossorigin="anonymous"></script>
 </head>
@@ -599,6 +599,7 @@
   <div class="star-wars-full-detail-flyout-body">
     <h3 class="full-detail-title">{{c.detailRec.name}}</h3>
     <p class="full-detail-sub-title star-wars-text">{{c.detailRec.name}}</p>
+    <p class="full-detail-sub-title order" ng-if="data.detail == 'sessions'">Order: {{c.detailRec.order}}</p>
     <span ng-if="data.detail == 'sessions'" class="session-plan-tabs" ng-init="c.detailRec.description = c.detailRec.outline; c.activeTab = 'outline'">
       <span class="swfdf-outline-tab session-plan-tab" ng-class="{'full-detail-active-tab': c.activeTab == 'outline'}" ng-click="c.activeTab = 'outline'; c.detailRec.description = c.detailRec.outline">Outline<br><text class="star-wars-text">Outline</text></span>
       <span class="swfdf-gm-notes-tab session-plan-tab" ng-class="{'full-detail-active-tab': c.activeTab == 'gm_notes'}" ng-click="c.activeTab = 'gm_notes'; c.detailRec.description = c.detailRec.gm_notes">GM Notes<br><text class="star-wars-text">GM Notes</text></span>

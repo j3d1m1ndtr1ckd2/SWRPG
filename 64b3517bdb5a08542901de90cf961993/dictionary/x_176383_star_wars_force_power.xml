@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="828767282f60e490e0f497eef699b614" label="Force Power" max_length="40" name="x_176383_star_wars_force_power" type="collection">
+        <element default="10" label="Cost to Purchase" max_length="32" name="cost_to_purchase" type="integer"/>
+        <element label="Description" max_length="2000" name="description" type="html"/>
+        <element default="1" label="Minimum Force Rating" max_length="32" name="minimum_force_rating" type="integer"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

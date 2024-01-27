@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b83f95382f68e490e0f497eef699b6f6" label="Character Force Enhancements" max_length="40" name="x_176383_star_wars_character_force_enhancements" type="collection">
+        <element label="Character" max_length="32" name="character" reference="x_176383_star_wars_character" type="reference"/>
+        <element label="Character Force Enhcancement" max_length="32" name="character_force_enhcancement" reference="x_176383_star_wars_force_power_enhancement" type="reference"/>
+        <element label="Character Force Power" max_length="32" name="character_force_power" reference="x_176383_star_wars_character_force_power" type="reference"/>
+        <index name="index">
+            <element name="character"/>
+        </index>
+        <index name="index2">
+            <element name="character_force_enhcancement"/>
+        </index>
+        <index name="index3">
+            <element name="character_force_power"/>
+        </index>
+    </element>
+</database>

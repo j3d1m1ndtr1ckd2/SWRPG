@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0f3d1d742f68e490e0f497eef699b671" label="Force Power Enhancement" max_length="40" name="x_176383_star_wars_force_power_enhancement" type="collection">
+        <element label="Can commit" max_length="32" name="can_commit" type="boolean"/>
+        <element label="Cost to Purchase" max_length="32" name="cost_to_purchase" type="integer"/>
+        <element label="Description" max_length="1000" name="description" type="html"/>
+        <element label="Force Power" mandatory="true" max_length="32" name="force_power" reference="x_176383_star_wars_force_power" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ref_ac_columns=type;force_power;cost_to_purchase,ref_ac_columns_search=true,ref_ac_order_by=force_power,ref_auto_completer=AJAXTableCompleter" label="Pre-req Force Enhancements" max_length="32" name="pre_req_force_enhancements" reference="x_176383_star_wars_force_power_enhancement" type="glide_list"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Strength" sequence="0" value="strength"/>
+                <element inactive_on_update="false" label="Magnitude" sequence="100" value="magnitude"/>
+                <element inactive_on_update="false" label="Duration" sequence="200" value="duration"/>
+                <element inactive_on_update="false" label="Range" sequence="300" value="range"/>
+                <element inactive_on_update="false" label="Control" sequence="400" value="control"/>
+                <element inactive_on_update="false" label="Mastery" sequence="500" value="mastery"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="force_power"/>
+        </index>
+    </element>
+</database>

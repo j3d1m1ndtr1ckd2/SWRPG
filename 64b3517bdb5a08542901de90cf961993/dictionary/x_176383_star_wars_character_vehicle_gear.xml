@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d081c9cf2f0df010e0f497eef699b63f" extends="x_176383_star_wars_vehicle_gear" label="Character Vehicle Gear" max_length="40" name="x_176383_star_wars_character_vehicle_gear" type="collection">
+        <element label="Character Vehicle" mandatory="true" max_length="32" name="character_vehicle" reference="x_176383_star_wars_character_vehicle" type="reference"/>
+        <index name="index">
+            <element name="character_vehicle"/>
+        </index>
+    </element>
+</database>

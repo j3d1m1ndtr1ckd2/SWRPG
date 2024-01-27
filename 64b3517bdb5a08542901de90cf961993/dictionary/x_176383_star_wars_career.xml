@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="971fa9d0db62c8542901de90cf961902" label="Career" max_length="40" name="x_176383_star_wars_career" type="collection">
+        <element label="Career skills" max_length="32" name="career_skills" reference="x_176383_star_wars_skills" type="glide_list"/>
+        <element label="Description" max_length="4000" name="description" type="html"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

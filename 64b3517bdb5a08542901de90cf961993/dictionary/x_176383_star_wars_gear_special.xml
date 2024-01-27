@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="29b010a82f946450e0f497eef699b68d" label="Gear Special" max_length="40" name="x_176383_star_wars_gear_special" type="collection">
+        <element label="Item" max_length="32" name="item" reference="x_176383_star_wars_gear" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Rank" max_length="32" name="rank" type="integer"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="Weapon Quality" max_length="32" name="weapon_quality" reference="x_176383_star_wars_weapon_quality" type="reference"/>
+        <index name="index">
+            <element name="item"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
+            <element name="weapon_quality"/>
+        </index>
+    </element>
+</database>

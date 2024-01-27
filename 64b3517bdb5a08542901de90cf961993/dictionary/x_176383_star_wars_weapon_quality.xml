@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ee7ddf142fd06450e0f497eef699b6cc" label="Weapon Quality" max_length="40" name="x_176383_star_wars_weapon_quality" type="collection">
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

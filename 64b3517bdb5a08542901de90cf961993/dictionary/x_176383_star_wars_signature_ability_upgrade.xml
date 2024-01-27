@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1e6cd64a2f4a4d10e0f497eef699b633" label="Signature Ability Upgrade" max_length="40" name="x_176383_star_wars_signature_ability_upgrade" type="collection">
+        <element label="Cost to purchase" mandatory="true" max_length="32" name="cost_to_purchase" type="integer"/>
+        <element label="Description" max_length="1000" name="description" type="html"/>
+        <element label="Name" mandatory="true" max_length="80" name="name" type="string"/>
+        <element label="Pre-requisite upgrades" max_length="32" name="pre_requisite_upgrades" reference="x_176383_star_wars_signature_ability_upgrade" reference_qual="signature_abilitySAMEASsignature_ability^EQ" reference_qual_condition="signature_abilitySAMEASsignature_ability^EQ" type="glide_list"/>
+        <element label="Signature ability" mandatory="true" max_length="32" name="signature_ability" reference="x_176383_star_wars_signature_ability" type="reference"/>
+        <index name="index">
+            <element name="signature_ability"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7dab55212f413050e0f497eef699b6ac" label="Status Effects" max_length="40" name="x_176383_star_wars_status_effects" type="collection">
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element display="true" label="Name" max_length="80" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

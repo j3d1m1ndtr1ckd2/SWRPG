@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ffdbfac72ff0a014e0f497eef699b632" label="The Galaxy" max_length="40" name="x_176383_star_wars_the_galaxy" type="collection">
+        <element label="Description" max_length="4000" name="description" type="html"/>
+        <element display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Sector" mandatory="true" max_length="100" name="sector" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="The Great Hyperlanes" sequence="0" value="the_great_hyperlanes"/>
+                <element inactive_on_update="false" label="The Deep Core" sequence="100" value="the_deep_core"/>
+                <element inactive_on_update="false" label="The Core Worlds" sequence="200" value="the_core_worlds"/>
+                <element inactive_on_update="false" label="The Colonies" sequence="300" value="the_colonies"/>
+                <element inactive_on_update="false" label="The Inner Rim" sequence="400" value="the_inner_rim"/>
+                <element inactive_on_update="false" label="The Expansion Region" sequence="500" value="the_expansion_region"/>
+                <element inactive_on_update="false" label="The Mid Rim" sequence="600" value="the_mid_rim"/>
+                <element inactive_on_update="false" label="The Outer Rim" sequence="700" value="the_outer_rim"/>
+                <element inactive_on_update="false" label="Wild Space and the Unknown Regions" sequence="800" value="wild_space_unknown_regions"/>
+                <element inactive_on_update="false" label="Hutt Space" sequence="850" value="hutt_space"/>
+                <element inactive_on_update="false" label="Sith Space" sequence="900" value="sith_space"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Campaigns" max_length="1024" name="u_campaigns" reference="x_176383_star_wars_campaign" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Available for" max_length="1024" name="u_groups" reference="sys_user_group" type="glide_list"/>
+    </element>
+</database>

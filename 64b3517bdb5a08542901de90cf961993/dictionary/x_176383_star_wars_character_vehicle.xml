@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3d413f762f1cec50e0f497eef699b6a9" label="Character Vehicle" max_length="40" name="x_176383_star_wars_character_vehicle" type="collection">
+        <element default="0" label="Armor" max_length="32" name="armor" type="integer"/>
+        <element label="Cargo hold" max_length="5000" name="cargo_hold" type="html"/>
+        <element label="Character" max_length="32" name="character" reference="x_176383_star_wars_character" type="reference"/>
+        <element default="0" label="Critical Injuries" max_length="32" name="critical_injuries" type="integer"/>
+        <element label="Critical Injuries Description" max_length="1000" name="critical_injuries_description" type="html"/>
+        <element default="0" label="Defense Aft" max_length="32" name="defense_aft" type="integer"/>
+        <element default="0" label="Defense Fore" max_length="32" name="defense_fore" type="integer"/>
+        <element default="0" label="Defense Port" max_length="32" name="defense_port" type="integer"/>
+        <element default="0" label="Defense Starboard" max_length="32" name="defense_starboard" type="integer"/>
+        <element default="0" label="Handling" max_length="32" name="handling" type="integer"/>
+        <element default="javascript:current.vehicle.hard_points" label="Hard Points" max_length="32" name="hard_points" type="integer"/>
+        <element default="0" label="Hull Trauma Current" max_length="32" name="hull_trauma_current" type="integer"/>
+        <element default="0" label="Hull Trauma Threshold" max_length="32" name="hull_trauma_threshold" type="integer"/>
+        <element label="Name" max_length="200" name="name" type="string"/>
+        <element default="0" label="Speed" max_length="32" name="speed" type="integer"/>
+        <element default="0" label="System Strain Current" max_length="32" name="system_strain_current" type="integer"/>
+        <element default="0" label="System Strain Threshold" max_length="32" name="system_strain_threshold" type="integer"/>
+        <element label="Vehicle" max_length="32" name="vehicle" reference="x_176383_star_wars_vehicle" type="reference"/>
+        <index name="index">
+            <element name="character"/>
+        </index>
+        <index name="index2">
+            <element name="vehicle"/>
+        </index>
+    </element>
+</database>

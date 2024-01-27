@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b296b1432f542090e0f497eef699b60c" label="Vehicle Gear" max_length="40" name="x_176383_star_wars_vehicle_gear" type="collection">
+        <element choice="1" label="Fire arc" max_length="40" name="fire_arc" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="All" sequence="0" value="all"/>
+                <element inactive_on_update="false" label="Foreward" sequence="100" value="foreward"/>
+                <element inactive_on_update="false" label="Aft" sequence="200" value="aft"/>
+                <element inactive_on_update="false" label="Port" sequence="300" value="port"/>
+                <element inactive_on_update="false" label="Starboard" sequence="400" value="starboard"/>
+            </choice>
+        </element>
+        <element label="Gear" max_length="32" name="gear" reference="x_176383_star_wars_gear" reference_qual="type=vehicle_weapon^ORtype=vehicle_mod^ORtype=weapon^EQ" reference_qual_condition="type=vehicle_weapon^ORtype=vehicle_mod^ORtype=weapon^EQ" type="reference"/>
+        <element choice="1" label="Mount location" max_length="40" name="mount_location" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Dorsal" sequence="0" value="dorsal"/>
+                <element inactive_on_update="false" label="Ventral" sequence="100" value="ventral"/>
+                <element inactive_on_update="false" label="Foreward" sequence="200" value="foreward"/>
+                <element inactive_on_update="false" label="Aft" sequence="300" value="aft"/>
+                <element inactive_on_update="false" label="Port" sequence="400" value="port"/>
+                <element inactive_on_update="false" label="Starboard" sequence="500" value="starboard"/>
+            </choice>
+        </element>
+        <element default="1" label="Quantity" max_length="32" name="quantity" type="integer"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="Vehicle" max_length="32" name="vehicle" reference="x_176383_star_wars_vehicle" type="reference"/>
+        <index name="index">
+            <element name="gear"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
+            <element name="vehicle"/>
+        </index>
+    </element>
+</database>

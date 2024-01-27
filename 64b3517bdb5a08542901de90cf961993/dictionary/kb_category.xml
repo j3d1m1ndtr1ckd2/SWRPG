@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ref_ac_columns_search=true,ref_ac_columns=full_category,ref_auto_completer=AJAXTableCompleter" db_object_id="e8ebaf5890300300a21c513b6aad76be" label="Knowledge Category" max_length="40" name="kb_category" type="collection">
+        <element label="Order" max_length="40" name="x_176383_star_wars_order" type="integer"/>
+    </element>
+</database>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9d3f5a8e2f4a4d10e0f497eef699b6c7" label="Character Signature Ability" max_length="40" name="x_176383_star_wars_character_signature_ability" type="collection">
+        <element label="Career specialization" max_length="32" name="career_specialization" reference="x_176383_star_wars_career_specialization" type="reference"/>
+        <element label="Character" max_length="32" name="character" reference="x_176383_star_wars_character" type="reference"/>
+        <element label="Signature ability" max_length="32" name="signature_ability" reference="x_176383_star_wars_signature_ability" type="reference"/>
+        <index name="index">
+            <element name="career_specialization"/>
+        </index>
+        <index name="index2">
+            <element name="character"/>
+        </index>
+        <index name="index3">
+            <element name="signature_ability"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="84a0e2422f8a4d10e0f497eef699b6f6" label="Character Signature Ability Upgrade" max_length="40" name="x_176383_star_wars_character_signature_ability_upgrade" type="collection">
+        <element label="Character" max_length="32" name="character" reference="x_176383_star_wars_character" type="reference"/>
+        <element label="Signature Ability Upgrade" max_length="32" name="signature_ability_upgrade" reference="x_176383_star_wars_signature_ability_upgrade" type="reference"/>
+        <index name="index">
+            <element name="character"/>
+        </index>
+        <index name="index2">
+            <element name="signature_ability_upgrade"/>
+        </index>
+    </element>
+</database>

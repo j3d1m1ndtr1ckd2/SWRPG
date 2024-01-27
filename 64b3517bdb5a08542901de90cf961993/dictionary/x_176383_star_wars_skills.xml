@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="197ccdd4dbae88542901de90cf961984" label="Skills" max_length="40" name="x_176383_star_wars_skills" type="collection">
+        <element label="Career" max_length="32" name="career" type="boolean"/>
+        <element choice="1" label="Characteristic" max_length="80" name="characteristic" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Brawn" sequence="0" value="brawn"/>
+                <element inactive_on_update="false" label="Agility" sequence="100" value="agility"/>
+                <element inactive_on_update="false" label="Intellect" sequence="200" value="intellect"/>
+                <element inactive_on_update="false" label="Cunning" sequence="300" value="cunning"/>
+                <element inactive_on_update="false" label="Willpower" sequence="400" value="willpower"/>
+                <element inactive_on_update="false" label="Presence" sequence="500" value="presence"/>
+            </choice>
+        </element>
+        <element label="Cost to next rank" max_length="32" name="cost_to_next_rank" type="integer"/>
+        <element label="Description" max_length="4000" name="description" type="html"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="max_value=5;" label="Rank" max_length="32" name="rank" type="integer"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element choice="3" default="general" label="Type" max_length="32" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="General" sequence="0" value="general"/>
+                <element inactive_on_update="false" label="Combat" sequence="100" value="combat"/>
+                <element inactive_on_update="false" label="Knowledge" sequence="200" value="knowledge"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

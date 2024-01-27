@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6e56c6dcdba2c8542901de90cf961966" label="Talents" max_length="40" name="x_176383_star_wars_talents" type="collection">
+        <element label="Campaigns" max_length="32" name="campaigns" reference="x_176383_star_wars_campaign" reference_qual="game_masterDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" reference_qual_condition="game_masterDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" type="glide_list"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Field to update" max_length="100" name="field_to_update" type="string"/>
+        <element label="Force talent" max_length="32" name="force_talent" type="boolean"/>
+        <element label="How much to add" max_length="32" name="how_much_to_add" type="integer"/>
+        <element label="Limited use" max_length="32" name="limited_use" type="boolean"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Passive or active" mandatory="true" max_length="32" name="passive_or_active" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Passive" sequence="100" value="passive"/>
+            </choice>
+        </element>
+        <element label="Table to update" max_length="100" name="table_to_update" type="string"/>
+    </element>
+</database>

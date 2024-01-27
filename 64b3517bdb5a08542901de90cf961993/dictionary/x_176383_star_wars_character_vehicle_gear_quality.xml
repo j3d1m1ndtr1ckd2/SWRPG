@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7822b53f2f813010e0f497eef699b67a" extends="x_176383_star_wars_vehicle_gear_quality" label="Character Vehicle Gear Quality" max_length="40" name="x_176383_star_wars_character_vehicle_gear_quality" type="collection"/>
+</database>

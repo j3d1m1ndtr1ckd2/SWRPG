@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8dd0ce2c2fa8a490e0f497eef699b69e" label="Campaign" max_length="40" name="x_176383_star_wars_campaign" type="collection">
+        <element label="Description" max_length="5000" name="description" type="html"/>
+        <element attributes="encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Game Master" mandatory="true" max_length="32" name="game_master" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Name" mandatory="true" max_length="200" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <index name="index">
+            <element name="game_master"/>
+        </index>
+    </element>
+</database>

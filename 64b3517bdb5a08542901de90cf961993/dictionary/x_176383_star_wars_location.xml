@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9356cb3b2f40ed10e0f497eef699b6e0" label="Location" max_length="40" name="x_176383_star_wars_location" type="collection">
+        <element label="Campaign" mandatory="true" max_length="32" name="campaign" reference="x_176383_star_wars_campaign" reference_qual="game_masterDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" reference_qual_condition="game_masterDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" type="reference"/>
+        <element label="Description" max_length="10000" name="description" type="html"/>
+        <element display="true" label="Name" mandatory="true" max_length="200" name="name" type="string"/>
+        <element label="Planet" max_length="32" name="planet" reference="x_176383_star_wars_the_galaxy" type="reference"/>
+        <index name="index">
+            <element name="campaign"/>
+        </index>
+        <index name="index2">
+            <element name="planet"/>
+        </index>
+    </element>
+</database>

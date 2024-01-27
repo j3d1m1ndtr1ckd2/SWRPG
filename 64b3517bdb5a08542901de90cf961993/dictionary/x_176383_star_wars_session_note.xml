@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="933790312fbda410e0f497eef699b682" label="Session Note" max_length="40" name="x_176383_star_wars_session_note" type="collection">
+        <element label="Campaign" mandatory="true" max_length="32" name="campaign" reference="x_176383_star_wars_campaign" type="reference"/>
+        <element label="Character" mandatory="true" max_length="32" name="character" reference="x_176383_star_wars_character" reference_qual="playerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" reference_qual_condition="playerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" type="reference"/>
+        <element label="Notes" max_length="10000" name="notes" type="html"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:new GlideDate();" label="Session date" max_length="32" name="session_date" type="glide_date"/>
+        <index name="index">
+            <element name="campaign"/>
+        </index>
+        <index name="index2">
+            <element name="character"/>
+        </index>
+    </element>
+</database>

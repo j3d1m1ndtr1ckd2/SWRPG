@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1e6ec998dbae88542901de90cf9619d1" label="Character Skills" max_length="40" name="x_176383_star_wars_m2m_character_skills" type="collection">
+        <element label="Career" max_length="32" name="career" type="boolean"/>
+        <element label="Character" max_length="32" name="character" reference="x_176383_star_wars_character" type="reference"/>
+        <element label="Cost to next rank" max_length="32" name="cost_to_next_rank" type="integer"/>
+        <element default="0" label="Rank" max_length="32" name="rank" type="integer"/>
+        <element display="true" label="Skill" max_length="32" name="skill" reference="x_176383_star_wars_skills" type="reference"/>
+        <index name="index">
+            <element name="character"/>
+        </index>
+        <index name="index2">
+            <element name="skill"/>
+        </index>
+    </element>
+</database>

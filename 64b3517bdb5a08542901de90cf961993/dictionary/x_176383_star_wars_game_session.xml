@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="defce05f2f6c60d0e0f497eef699b606" label="Game Session" max_length="40" name="x_176383_star_wars_game_session" type="collection">
+        <element default="true" label="Active" max_length="32" name="active" type="boolean"/>
+        <element label="Campaign" mandatory="true" max_length="32" name="campaign" reference="x_176383_star_wars_campaign" type="reference"/>
+        <element label="Dark side" max_length="32" name="dark_side" type="integer"/>
+        <element label="Dice roll history" max_length="10000" name="dice_roll_history" type="journal"/>
+        <element label="Dice roll history input" max_length="1000" name="dice_roll_history_input" type="journal_input"/>
+        <element label="Light side" max_length="32" name="light_side" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="campaign"/>
+        </index>
+    </element>
+</database>

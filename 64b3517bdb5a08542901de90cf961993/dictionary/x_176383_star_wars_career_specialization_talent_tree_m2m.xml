@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="64484a50dbe2c8542901de90cf961966" label="Career Specialization Talent Tree m2m" max_length="40" name="x_176383_star_wars_career_specialization_talent_tree_m2m" type="collection">
+        <element label="Career specialization" max_length="32" name="career_specialization" reference="x_176383_star_wars_career_specialization" type="reference"/>
+        <element attributes="ref_ac_columns=rank;career_specialization,ref_ac_columns_search=true,ref_ac_order_by=rank,ref_auto_completer=AJAXTableCompleter" label="Pre-requisite talents" max_length="32" name="pre_requisite_talents" reference="x_176383_star_wars_career_specialization_talent_tree_m2m" reference_qual="career_specializationSAMEAScareer_specialization^EQ" reference_qual_condition="career_specializationSAMEAScareer_specialization^EQ" type="glide_list"/>
+        <element label="Tier" max_length="32" name="rank" type="integer"/>
+        <element display="true" label="Talent" max_length="32" name="talent" reference="x_176383_star_wars_talents" type="reference"/>
+        <element label="XP cost" max_length="32" name="xp_cost" type="integer"/>
+        <index name="index">
+            <element name="career_specialization"/>
+        </index>
+        <index name="index2">
+            <element name="talent"/>
+        </index>
+    </element>
+</database>

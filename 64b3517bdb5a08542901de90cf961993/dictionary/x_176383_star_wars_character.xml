@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6784d1fbdb5a08542901de90cf9619d3" label="Character" max_length="40" name="x_176383_star_wars_character" type="collection">
+        <element label="Age" max_length="32" name="age" type="integer"/>
+        <element default="0" label="Agility" max_length="32" name="agility" type="integer"/>
+        <element label="Available XP" max_length="32" name="available_xp" type="integer"/>
+        <element label="Background" max_length="10000" name="background" type="string"/>
+        <element default="0" label="Brawn" max_length="32" name="brawn" type="integer"/>
+        <element label="Build" max_length="100" name="build" type="string"/>
+        <element label="Campaign" max_length="32" name="campaign" reference="x_176383_star_wars_campaign" type="reference"/>
+        <element label="Career" max_length="32" name="career" reference="x_176383_star_wars_career" type="reference"/>
+        <element label="Career specializations" max_length="32" name="career_specializations" reference="x_176383_star_wars_career_specialization" reference_qual="careerSAMEAScareer^EQ" reference_qual_condition="careerSAMEAScareer^EQ" type="glide_list"/>
+        <element default="500" label="Credits" max_length="32" name="credits" type="integer"/>
+        <element default="0" label="Critical Injuries" max_length="32" name="critical_injuries" type="integer"/>
+        <element label="Critical Injury Description" max_length="1000" name="critical_injury_description" type="html"/>
+        <element default="0" label="Cunning" max_length="32" name="cunning" type="integer"/>
+        <element default="0" label="Defense Melee" max_length="32" name="defense_melee" type="integer"/>
+        <element default="0" label="Defense Ranged" max_length="32" name="defense_ranged" type="integer"/>
+        <element label="Description" max_length="5000" name="description_html" type="html"/>
+        <element label="Eyes" max_length="32" name="eyes" type="string"/>
+        <element default="0" label="Force Committed" max_length="40" name="force_committed" type="integer"/>
+        <element label="Force rating" max_length="32" name="force_rating" type="integer"/>
+        <element label="Gender" max_length="100" name="gender" type="string"/>
+        <element label="Hair" max_length="100" name="hair" type="string"/>
+        <element label="Height" max_length="100" name="height" type="string"/>
+        <element default="0" label="Intellect" max_length="32" name="intellect" type="integer"/>
+        <element display="true" label="Name" mandatory="true" max_length="200" name="name" type="string"/>
+        <element label="Appearance" max_length="10000" name="notable_features" type="html"/>
+        <element label="Notes" max_length="10000" name="notes" type="html"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Other gear" max_length="5000" name="other_gear" type="html"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Player" mandatory="true" max_length="32" name="player" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
+        <element attributes="pdf_cell_type=image" label="Portrait" max_length="40" name="portrait" type="user_image"/>
+        <element default="0" label="Presence" max_length="32" name="presence" type="integer"/>
+        <element default="0" label="Signature abilities unlocked" max_length="32" name="signature_abilities_unlocked" type="integer"/>
+        <element default="0" label="Soak Value" max_length="32" name="soak_value" type="integer"/>
+        <element label="Species" max_length="32" name="species" reference="x_176383_star_wars_species" type="reference"/>
+        <element label="Status Effects" max_length="32" name="status_effects" reference="x_176383_star_wars_status_effects" type="glide_list"/>
+        <element default="0" label="Strain Current" max_length="32" name="strain_current" type="integer"/>
+        <element default="0" label="Strain Threshold" max_length="32" name="strain_threshold" type="integer"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="Total XP" max_length="32" name="total_xp" type="integer"/>
+        <element label="Visible to Players" max_length="32" name="visible_to_players" type="boolean"/>
+        <element label="Weight" max_length="40" name="weight" type="string"/>
+        <element default="0" label="Willpower" max_length="32" name="willpower" type="integer"/>
+        <element default="0" label="Wounds Current" max_length="32" name="wounds_current" type="integer"/>
+        <element default="0" label="Wounds Threshold" max_length="32" name="wounds_threshold" type="integer"/>
+        <index name="index">
+            <element name="campaign"/>
+        </index>
+        <index name="index2">
+            <element name="career"/>
+        </index>
+        <index name="index3">
+            <element name="player"/>
+        </index>
+        <index name="index4">
+            <element name="species"/>
+        </index>
+        <index name="index5">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

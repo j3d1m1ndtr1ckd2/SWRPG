@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="719b1a58db26c8542901de90cf9619c9" label="Character Talents" max_length="40" name="x_176383_star_wars_character_talents_m2m" type="collection">
+        <element label="Character" max_length="32" name="character" reference="x_176383_star_wars_character" reference_qual="player=javascript:gs.getUserID();^EQ" reference_qual_condition="player=javascript:gs.getUserID();^EQ" type="reference"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Field to update" max_length="100" name="field_to_update" type="string"/>
+        <element default="javascript: current.talent.talent.limited_use;" label="Limited use" max_length="32" name="limited_use" type="boolean"/>
+        <element label="Non-Career Talent" max_length="32" name="non_career_talent" reference="x_176383_star_wars_talents" type="reference"/>
+        <element label="Rank" max_length="32" name="rank" type="integer"/>
+        <element label="Table to update" max_length="100" name="table_to_update" type="string"/>
+        <element display="true" label="Talent" max_length="32" name="talent" reference="x_176383_star_wars_career_specialization_talent_tree_m2m" type="reference"/>
+        <element label="Used" max_length="32" name="used" type="boolean"/>
+        <index name="index">
+            <element name="character"/>
+        </index>
+        <index name="index2">
+            <element name="non_career_talent"/>
+        </index>
+        <index name="index3">
+            <element name="talent"/>
+        </index>
+    </element>
+</database>

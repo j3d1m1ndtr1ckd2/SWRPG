@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="822c53912f9fe010e0f497eef699b6d8" extends="x_176383_star_wars_gear_special" label="Character Gear Special" max_length="40" name="x_176383_star_wars_character_gear_special" type="collection">
+        <element label="Character Gear" max_length="32" name="character_gear" reference="x_176383_star_wars_character_gear_m2m" type="reference"/>
+        <index name="index">
+            <element name="character_gear"/>
+        </index>
+    </element>
+</database>
